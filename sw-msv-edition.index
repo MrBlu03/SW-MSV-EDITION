@@ -2,13 +2,14 @@
 <index>
     <info>
         <name>SW-MSV-Edition</name>
-        <description>Star Wars 5E - MSV Edition Homebrew Content</description>
-        <author>MSV</author>
-        <update version="1.0.0">
+        <description>Star Wars 5E - MSV Edition Homebrew Content for Aurora Builder. Includes 40+ species, 5 classes, weapons, items, and more.</description>
+        <author url="https://github.com/MrBlu03/SW-MSV-EDITION">MrBlu03</author>
+        <update version="1.0.1">
             <file name="sw-msv-edition.index" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/sw-msv-edition.index" />
         </update>
     </info>
     <files>
+        <file name="source.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/source.xml" />
         <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
         <file name="class-knight.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-knight.xml" />
         <file name="class-marauder.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-marauder.xml" />

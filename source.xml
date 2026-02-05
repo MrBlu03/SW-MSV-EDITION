@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>SW-MSV-Edition</name>
+    <update version="1.0.1">
+      <file name="source.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/source.xml" />
+    </update>
+  </info>
+  <element name="SW-MSV-Edition" type="Source" source="Core" id="ID_MSV_SW_MSV_EDITION">
+    <description>
+      <![CDATA[<p>Star Wars 5E - MSV Edition is a comprehensive homebrew adaptation bringing Star Wars to D&D 5th Edition. This collection includes:</p>
+      <ul>
+        <li><strong>40+ Playable Species:</strong> From iconic species like Humans, Twileks, and Wookiees to unique options like Protocol Droids and Combat Droids</li>
+        <li><strong>5 Custom Classes:</strong> Knight (Force-sensitive guardian), Marauder (aggressive Force warrior), Scout (agile specialist), Warrior (martial expert), and Inquisitor (stealthy operative)</li>
+        <li><strong>Expanded Equipment:</strong> 100+ weapons including blasters, lightsabers, vibroweapons, and more</li>
+        <li><strong>Star Wars Gear:</strong> Armor, shields, tools, healing items, explosives, and specialized equipment</li>
+        <li><strong>Fighting Styles & Maneuvers:</strong> Unique combat options tailored to the Star Wars universe</li>
+        <li><strong>Backgrounds & Languages:</strong> Galaxy-appropriate character origins and communication options</li>
+      </ul>
+      <p>This homebrew is designed to provide a complete Star Wars tabletop experience using the D&D 5E ruleset.</p>]]>
+    </description>
+    <setters>
+      <set name="abbreviation">SWMSV</set>
+      <set name="url">https://github.com/MrBlu03/SW-MSV-EDITION</set>
+      <set name="image">https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/swmsv-logo.png</set>
+      <set name="author" abbreviation="MSV" url="https://github.com/MrBlu03">MrBlu03</set>
+      <set name="official">false</set>
+      <set name="supplement">false</set>
+      <set name="core">false</set>
+      <set name="homebrew">true</set>
+      <set name="release">20250207</set>
+    </setters>
+  </element>
+</elements>
