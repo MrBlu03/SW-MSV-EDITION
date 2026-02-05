@@ -1,0 +1,204 @@
+weapons and items
+
+Strike: Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)
+Shoot: Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)
+Hilt Strike: Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. The target must make a Constitution saving throw: DC:8 + proficiency bonus + Strength or Dexterity modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed. (Damage: 1d4 kinetic)
+Slash: Action; When wielding double bladed weapon, make a melee attack that hits in a 15 feet horizontal line in front of you. (Damage: weapon damage without adding modifiers)
+Blast: Action; Blast multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes full damage. On a successful save, the target takes half damage. (Damage: Weapon Damage and add modifier)
+Flame: Action; Flame multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes full damage and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn. (Damage: Weapon Damage and add modifier)
+Off-Hand Strike: Bonus Action; When dual-wielding, make a melee attack with the melee weapon in your off-hand. (Damage: weapon damage without adding modifiers)
+Quick Shot: Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)
+Back Strike: Bonus Action; When wielding a double bladed weapon, make a melee attack with the other side of your weapon. (Damage: weapon damage without adding modifiers)
+Reload: Action; After x amount of shots your weapon needs a reload, take a full Action to fully reload your weapon.
+
+Simple Blaster:
+	blaster pistol (1d6 energy, power cell, range 50/200, Reload 16, Dexterity modifier), Shoot, Quick Shot
+	energy bow (1d6 energy, power cell, range 80/320, Reload 4, two-handed, choose Strength or Dexterity modifier), Shoot, Quick shot
+	ion pistol (1d4 ion, power cell, range 40/160, Reload 16, Dexterity modifier), Shoot, Quick Shot
+	sonic pistol (1d4 sonic, power cell, range 30/120, Reload 16, Dexterity modifier), Shoot, Quick Shot
+	cryo pistol (1d4 cold, power cell, range 30/120, Reload 8, Dexterity modifier), Shoot, Quick Shot
+	slugthrower pistol (1d6 kinetic, slug cartridge, range 40/160, Reload 16, requires Strength 11 to use, Dexterity modifier), Shoot, Quick Shot
+	disruptor pistol (1d6 acid, power cell, range 45/180, Reload 12, requires Strength 11 to use, Dexterity modifier), Shoot, Quick Shot
+	stealth pistol (1d6 energy, power cell, silent, two-handed, Reload 6, Dexterity modifier), Shoot
+	wrist blaster (1d6 energy, disguised, can't be disarmed, can still use hand but when holding something can't use weapon, power cell, range 30/120, Reload 8, Dexterity modifier), Shoot, Quick Shot
+	wrist launcher (can't be disarmed, can still use hand but when holding something can't use weapon), Shoot, Quick Shot
+		can use: darts, rockets, wrist launcher attachments
+Martial Blaster
+	blaster rifle (1d8 energy, power cell, range 105/420, Reload 12, two-handed, Dexterity modifier), Shoot
+	disruptor rifle (1d8 acid, power cell, range 120/470, Reload 9, two-handed, Dexterity modifier), Shoot
+	heavy bowcaster (1d12 energy, power cell, range 90/360, Reload 4, requires Strength 17 to use, two-handed, Dexterity modifier), Shoot
+	ion rifle (1d6 ion, power cell, range 80/320, Reload 8, two-handed, Dexterity modifier), Shoot
+	sonic rifle (1d8 sonic, power cell, range 80/320, Reload 8, requires Strength 11 to use, two-handed, Dexterity modifier), Shoot
+	slugthrower rifle (1d8 kinetic, slug cartridge, range 105/420, Reload 12, two-handed, Dexterity modifier), Shoot
+	cryo rifle (2d4 cold, power cell, range 50/200, Reload 4, requires Strength 11 to use, two-handed, Dexterity modifier), Shoot
+	railgun (1d10 ion, power cell, range 120/470, Reload 1, two-handed, Dexterity modifier), Shoot
+	arc caster (2d4 lightning, power cell, can hit a secondary target in the same line: 1d4 lightning, range 60/240, Reload 9, requires Strength 11 to use, two-handed, Dexterity modifier), Shoot
+	sniper rifle (1d12 energy, power cell, 150/600, Reload 2, requires Strength 13 to use, two-handed, Dexterity modifier), Shoot
+	minigun/rotary cannon (1d10 energy, power cell, range 75 feet cone, Reload 4, requires Strength 13 to use, two-handed, Dexterity modifier), Blast
+	flamethrower (2d6 fire, canister, range 55 feet cone, Reload 2, two-handed, Dexterity modifier), Flame
+	cycler rifle (1d10 kinetic, slug cartridge, range 100/400, Reload 4, requires Strength 12 to use, two-handed, Dexterity modifier), Shoot
+Simple Lightweapon
+	lightsaber (1d6 energy, finesse), Strike, Off-Hand Strike, Hilt Strike
+	lightstaff (1d6/2d4 energy, versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike
+Martial Lightweapon
+	crossguard saber (2d6 energy, two-handed, requires Dexterity 13 to use, Strength modifier), Strike, Hilt Strike
+	lightwhip (1d6 energy, reach: 10 feet, finesse), Strike, Off-Hand Strike
+	martial lightsaber (1d8/1d10 energy, versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike
+	lightsaber pike (1d10 energy, two-handed, reach: 10 feet, requires Dexterity 11 to use, Strength modifier), Strike, Hilt Strike
+	double bladed lightsaber (1d8 energy, two-handed, finesse), Strike, Slash, Back Strike
+Simple Vibroweapon
+	vibrospear (1d6/2d4 kinetic, versatile, thrown range 25/75, Strength modifier), Strike, Off-Hand Strike, Hilt Strike
+	vibrodagger (1d4 kinetic, thrown range 20/60, finesse), Strike, Off-Hand Strike
+	vibrostaff (1d6/2d4 kinetic, versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike
+Martial Vibroweapon
+	vibro double-blade (1d8 kinetic, two-handed, finesse), Strike, Slash, Back Strike
+	electrostaff (1d6 lightning, two-handed, finesse), Strike, Slash, Back Strike
+	vibrosword (1d8/1d10 kinetic, versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike
+	virbo-axe (1d12 kinetic, two-handed, requires Dexterity 11 to use, Strength modifier), Strike, Hilt Strike
+	vibropike (1d10 kinetic, two-handed, reach: 10 feet, requires Dexterity 11 to use, Strength modifier), Strike, Hilt Strike
+	electrowhip (1d4 lightning, reach: 10 feet, finesse), Strike, Off-Hand Strike
+	electrobaton (1d4 lightning, finesse), Strike, Off-Hand Strike
+shields
+	physical shield + 2 AC
+	small shield generator + 10 temp HP, once per long rest
+	medium shield generator + 20 temp HP, once per long rest
+	large shield generator + 40 temp HP, once per long rest
+	energy shield + 3 AC, halves the damage done by lightning damage
+armour
+	light:
+		combat suit AC: 11 + Dexterity modifier
+		fiber amor AC: 12 + Dexterity modifier
+		duranium combat suit AC: 13 + Dexterity modifier (disadvantage on stealth)
+	medium:
+		mesh armor AC: 13 + Dexterity modifier (max +2)
+		weave armor AC: 14 + Dexterity modifier (max +2)
+		beskar weave armor AC 14 + Dexterity modifier (max +2) (ability: if an enemy rolls max damage on the dice, they have to reroll and use that reroll)
+		composite armor: 15 + Dexterity modifier (max +2) (disadvantage on stealth)
+	heavy:
+		battle armor AC: 16 (disadvantage on stealth, resistant to kinetic damage)
+		assault armor AC: 17 ((disadvantage on stealth, resistant to kinetic damage)
+		durasteel armor AC: 18 (disadvantage on stealth, resistant to kinetic damage)
+tools
+	repair kit: with this you can repair weapons/armours or any technology (requires repair kit proficiency)
+			Repair Weapon: DC 10
+			Repair Armour: DC 15
+			Repair Other Technology: DC 15
+	forgery kit: with this kit you can forge documents and make counterfeit credits (requires forgery kit proficiency)
+			Make 350 Counterfeit Credits: DC 12 but might be noticable, DC 15 perfect copy.
+			Forge Documents: DC 16 but might be noticable, DC 20 perfect forgery.
+	slicing kit: with this kit you can slice terminals to open locks or disarm traps (requires slicing kit proficiency)
+			Open Locked Mechanism: DC Varies
+			Disarm Trap: DC Varies
+	hacking kit: with this kit you can hack "unconcious" droids or security systems (requires hacking kit proficieny)
+			Hack Astromech: DC 10
+			Hack Protocol Droid: DC 12
+			Hack Combat Droid: DC 15
+			Hack Security System: DC Varies
+	disguise kit: with this kit you can completely change your look (requires disguise kit proficiency)
+			Cover Injuries or Distinguishing Marks: DC 10
+			Spot a disguise being used by someone else: DC 15
+			Copy an Appearance if Possible: DC 20
+	poisoning kit: with this kit you can coat your weapons with poisons (requires poisoning kit proficiency)
+			Allows the user to Apply Poison to Vibroweapon or Slugthrowers: No DC
+			Spot a poisoned object: DC 10
+			Determine the effects of a poison: DC 20
+	jumppack and jump boots (requires jumppack proficiency):
+		Bonus Action: You can jump up to a distance or height of 25 feet without using your movement. Provokes opportunity attack when leaving or landing in enemy melee range.
+	hoverpack and hover boots (requires hoverpack proficiency):
+		bonus action: hover 15 feet up on the same spot for 2 turns. Cannot move. Advantage on ranged attacks. Disadvantage on Dexterity saving throws. Provokes oppurtunity attack when leaving or landing in enemy melee range.
+	jetpack and jet boots (requires jumppack proficiency, hoverpack proficiency and jetpack proficiency):
+		bonus action: you can jump up to a distance or height of 30 feet without using your movement. Provokes oppurtunity attack when leaving or landing in enemy melee range.
+		bonus action: hover 15 feet up on the same spot for 2 turns. Can move up to 10 feet. Advantage on ranged attacks. No disadvantage on Dexterity saving throws. Provokes oppurtunity attack when leaving or landing in enemy melee range.
+	
+
+tool proficiencies: repair kit proficiency, forgery kit proficiency, slicing kit proficiency, hacking kit proficiency, disguise kit proficiency, poisoning kit proficiency, jumppack proficiency, hoverpack proficiency, jetpack proficiency
+	
+
+rocketpack:
+		attach rockets to the back of your jump/hover/jetpack. Action: reload rocketpack, bonus action: shoot rocket.
+		Can use: rockets
+
+items:
+	Grenades: When thrown explode on impact. Throw: Action; Range 30/60.
+		thermal detenator (10d8 + 20 energy, 35 feet radius. Each target must make a DC 18 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage)
+		flashbang (15 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target is blinded for 1 round. On a successful save, the target isn't blinded)
+		cryo grenade (1d8 cold, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. The explosion creates an icy surface of 10 feet that counts as difficult terrain. Each creature walking over it must make a DC 12 Dexterity saving throw. On a failed save, the creature falls prone. On a successful save, the creature doesn't fall)
+		ion grenade (1d8 ion, 10 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage, On a successful save, the target takes half damage. Each droid must make a DC 13 Constitution saving throw. On a failed save, the droid is stunned for 1 round. On a successful save, the droid isn't stunned)
+		incendiary grenade (1d6 fire, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage and is inflicted burning for 1 turn. On a successful save, the target takes half damage. Sets ground on fire in a 10 feet radius for 3 turns. Each target standing or walking in this will be inflicted burning for 1 turn)
+		corrosive grenade (2d6 acid, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes no damage. The explosion creates an acid surface of 10 feet that reduces AC by 2)
+		gas grenade (creates gas cloud, 10 feet radius. Each creature in the gas must make a DC 13 Constitution saving throw. On a failed save, the creature becomes poisoned)
+		fragmentation grenade (2d8 kinetic, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage)
+		plasma grenade (2d8 energy, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage)
+		shock grenade (1d6 lightning but cannot reduce a creature's health to 0. 10 feet radius. The explosion creates an electrifying field that counts as difficult terrain for 3 turns in a 10 feet radius)
+		stun grenade (10 feet radius. Each target must make a DC 15 Constitution saving throw. On a failed save, the target is pushed 5 feet away from the centerpoint and is stunned for 1 round. On a successful save, the target takes isn't pushed and isn't stunned)
+
+ 	Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.
+		remote flashbang (15 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target is blinded for 1 round. On a successful save, the target isn't blinded)
+		remote cryo detonator (1d8 cold, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. The explosion creates an icy surface of 10 feet that counts as difficult terrain. Each creature walking over it must make a DC 12 Dexterity saving throw. On a failed save, the creature falls prone. On a successful save, the creature doesn't fall)
+		remote ion detonator (1d8 ion, 10 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage, On a successful save, the target takes half damage. Each droid must make a DC 13 Constitution saving throw. On a failed save, the droid is stunned for 1 round. On a successful save, the droid isn't stunned)
+		remote incendiary detonator (1d6 fire, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage and is inflicted burning for 1 turn. On a successful save, the target takes half damage. Sets ground on fire in a 10 feet radius for 3 turns. Each target standing or walking in this will be inflicted burning for 1 turn)
+		remote corrosive detonator (2d6 acid, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes no damage. The explosion creates an acid surface of 10 feet that reduces AC by 2)
+		remote gas detonator (creates gas cloud, 10 feet radius. Each creature in the gas must make a DC 13 Constitution saving throw. On a failed save, the creature becomes poisoned)
+		remote fragmentation detonator (2d8 kinetic, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage)
+		remote plasma detonator (2d8 energy, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage)
+		remote shock detonator (1d6 lightning but cannot reduce a creature's health to 0. 10 feet radius. The explosion creates an electrifying field that counts as difficult terrain for 3 turns in a 10 feet radius)
+		remote stun detonator (10 feet radius. Each target must make a DC 15 Constitution saving throw. On a failed save, the target is pushed 5 feet away from the centerpoint and is stunned for 1 round. On a successful save, the target takes isn't pushed and isn't stunned)
+
+	Mines: Explode when stepped on or shot: Place the mine, Action
+		flashbang mine (15 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target is blinded for 1 round. On a successful save, the target isn't blinded)
+		cryo mine (1d8 cold, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. The explosion creates an icy surface of 10 feet that counts as difficult terrain. Each creature walking over it must make a DC 12 Dexterity saving throw. On a failed save, the creature falls prone. On a successful save, the creature doesn't fall)
+		ion mine (1d8 ion, 10 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage, On a successful save, the target takes half damage. Each droid must make a DC 13 Constitution saving throw. On a failed save, the droid is stunned for 1 round. On a successful save, the droid isn't stunned)
+		incendiary mine (1d6 fire, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage and is inflicted burning for 1 turn. On a successful save, the target takes half damage. Sets ground on fire in a 10 feet radius for 3 turns. Each target standing or walking in this will be inflicted burning for 1 turn)
+		corrosive mine (2d6 acid, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes no damage. The explosion creates an acid surface of 10 feet that reduces AC by 2)
+		gas mine (creates gas cloud, 10 feet radius. Each creature in the gas must make a DC 13 Constitution saving throw. On a failed save, the creature becomes poisoned)
+		fragmentation mine (2d8 kinetic, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage)
+		plasma mine (2d8 energy, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage)
+		shock mine (1d6 lightning but cannot reduce a creature's health to 0. 10 feet radius. The explosion creates an electrifying field that counts as difficult terrain for 3 turns in a 10 feet radius)
+		stun mine (10 feet radius. Each target must make a DC 15 Constitution saving throw. On a failed save, the target is pushed 5 feet away from the centerpoint and is stunned for 1 round. On a successful save, the target takes isn't pushed and isn't stunned)
+
+	Darts: Can be blown out of a tube or shot out of certain weapons.
+		poison dart (1d6 kinetic. The target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage and becomes poisoned. On a successful save, the target takes half damage and doesn't become poisoned, Reload 1, Dexterity modifier)
+		sleep dart (The target must make a DC 14 Constitution saving throw. On a failed save, the target falls asleep. On a successful save, the target doesn't fall asleep, Reload 1, Dexterity modifier)
+		electrifying dart (1d6 kinetic. 1d6 lightning, The target must make a DC 14 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. Reload 1, Dexterity modifier)
+		panic dart (1d6 kinetic. The target must make a DC 14 Wisdom saving throw. On a failed save, the target becomes frightened for 1 round. On a successful save, the target doesn't become frightened. Dexterity modifier)
+		paralysis dart (1d6 kinetic. The target must make a DC 14 Constitution saving throw. On a failed save, the target becomes paralysed for 1 round, Dexterity modifier)
+
+	Rockets: When shot out explode on impact.
+		plasma rocket (2d8 energy, 5 feet radius. Each target must make a DC 14 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage, Reload 1, Dexterity modifier)
+		cryo rocket (1d8 cold, 10 feet radius. Each target must make DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. The explosion creates an icy surface of 10 feet that counts as difficult terrain. Each creature walking over it must make a DC 12 Dexterity saving throw. On a failed save, the creature falls prone. On a successful save, the creature doesn't fall)
+		ion rocket (1d8 ion, 10 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage, On a successful save, the target takes half damage. Each droid must make a DC 13 Constitution saving throw. On a failed save, the droid is stunned for 1 round. On a successful save, the droid isn't stunned)
+		incendiary rocket (1d6 fire, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage and is inflicted burning for 1 turn. On a successful save, the target takes half damage. Sets ground on fire in a 10 feet radius for 3 turns. Each target standing or walking in this will be inflicted burning for 1 turn)
+		corrosive rocket (2d6 acid, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes no damage. The explosion creates an acid surface of 10 feet that reduces AC by 2)
+		fragmentation rocket (2d8 kinetic, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage)
+
+	wrist launcher attachments:
+		fibercord whip (15 feet line, The target must make a DC 8 + proficiency + Dexterity modifier, Dexterity saving throw. On a failed save, the target is restrained. On a successful save, the target isn't restrained. If the target is restrained he target can on their turn use an Action to do a Strength saving throw against 8 + proficiency + Strength modifier of the restrainer. On a failed save, the targets stays restrained. On a successful save, the target is freed. The Restrainer can't use Bonus Actions or hold something in that hand when restraining someone, Dexterity modifier)
+		Wristflame (1d10 fire, Reload 2, canister, 15 feet line, Dexterity modifier), Flame
+
+	poisons
+		poison (The target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage and becomes poisoned. On a successful save, the target takes half damage and doesn't become poisoned)
+		sleep poison (The target must make a DC 14 Constitution saving throw. On a failed save, the target falls asleep. On a successful save, the target doesn't fall asleep)
+		paralysing poison (The target must make a DC 14 Constitution saving throw. On a failed save, the target becomes paralysed for 1 round)
+		panic poison (The target must make a DC 14 Wisdom saving throw. On a failed save, the target becomes frightened for 1 round. On a successful save, the target doesn't become frightened)
+			
+	Healing
+		Minor kolto pack (2d4 + 2 healing)
+		Medium kolto pack (4d4 + 4 healing)
+		Major kolto pack (8d4 + 8 healing)
+		bacta pack (10d4 + 20 healing)
+
+instruments (require proficiency)
+	Bandfill (The bandfill is a musical instrument, commonly used in jizz, that featured a number of mounted horn bells called reciprocator horns and a ploong sounder)
+	Chindinkalu horn (The Chidinkalu horn is a musical instrument made by the Kitonaks from the hollowed-out reeds of a chidinka. It produced low tones and is used in the rhythm section)
+	Drum (Drums are a type of percussive musical instrument)
+	Fanfar (The fanfar is a musical instrument commonly used in jizz. Fanfars appeared to be reedy instruments with a mouthpiece, and the slots along the fanfar are known as farra slots)
+	Fizzz (The Dorenian Beshniquel, also known as the Fizzz, is a short, single-reed wind instrument, which is adjusted via peel rod)
+	Flute (Flutes are a type of woodwind instrument. One type of flute is the reed flute)
+	Kloo horn (The kloo horn is a double-reeded wind instrument, larger than a Slitherhorn and a Fizzz[1] (roughly 1.5 meters tall), and one of the most commonly used instruments in the galaxy)
+	Lute (The lute-pipe is a musical instrument that is played by plucking and blowing into it)
+	Mandoviol (The mandoviol is a stringed musical instrument, it is a difficult instrument to master, but could be used to play ballads as well as energetic jizz tunes with equal aplomb)
+	Ommni box (The ommni box is a notoriously hard-to-play instrument which enhanced music, and is commonly used in jizz. It is usually used as an amplifier to attenuate and alter the bass aspects of the music)
+	Slitherhorn (The slitherhorn is a musical instrument common among jizz bands. It is similar in appearance to the kloo horn, though smaller in size)
+	Traz (The traz is a musical instrument similar in appearance and sound to the slitherhorn)
+	Valahorn (The valahorn is a type of musical instrument that is similar in appearance and sound to a Kloo horn)
+	Xantha (The Xantha is a difficult musical instrument that involved plucking strings and covering holes with one's fingers)

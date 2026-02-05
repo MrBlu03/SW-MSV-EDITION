@@ -33,33 +33,51 @@
     <rules>
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_LIGHT_ARMOUR"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_MEDIUM_ARMOUR"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_HEAVY_ARMOUR"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_SHIELDS"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS"/>
       <select type="Proficiency" name="Skill Proficiency (Warrior)" number="2" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL"/>
       <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_FIGHTING_STYLE" level="1"/>
       <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_SECOND_WIND" level="1"/>
       <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_ACTION_SURGE_X1" level="2"/>
-      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_BRUTE" level="3"/>
-      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_JETTROOPER" level="3"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_SUBCLASS" level="3"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_FEAT" level="4"/>
       <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_EXTRA_ATTACK_X1" level="5"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_FEAT" level="6"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_FEAT" level="8"/>
       <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_SUBCLASS_ABILITY" level="7"/>
       <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_INDOMITABLE_X1" level="9"/>
       <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_SUBCLASS_ABILITY" level="10"/>
       <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_EXTRA_ATTACK_X2" level="11"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_FEAT" level="12"/>
       <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_INDOMITABLE_X2" level="13"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_FEAT" level="14"/>
       <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_SUBCLASS_ABILITY" level="15"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_FEAT" level="16"/>
       <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_ACTION_SURGE_X2" level="17"/>
       <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_INDOMITABLE_X3" level="17"/>
       <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_SUBCLASS_ABILITY" level="18"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_FEAT" level="19"/>
       <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_EXTRA_ATTACK_X3" level="20"/>
-      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_SUBCLASS" level="3"/>
     </rules>
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_FIGHTING_STYLE" name="Fighting Style" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true"/>
     <description>
-      <p>You can choose one Fighting Style.</p>
+      <p>You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
+      <p class="indent"><strong><em>Marksmanship.</em></strong> You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+      <p class="indent"><strong><em>Defense.</em></strong> While you are wearing armor, you gain a +1 bonus to AC.</p>
+      <p class="indent"><strong><em>Dueling.</em></strong> When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+      <p class="indent"><strong><em>Great Weapon Fighting.</em></strong> When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+      <p class="indent"><strong><em>Protection.</em></strong> When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
     </description>
     <sheet>
-      <description>You can choose one Fighting Style.</description>
+      <description>You adopt a particular style of fighting as your specialty.</description>
     </sheet>
     <rules>
       <select type="Class Feature" name="Fighting Style" supports="Fighting Style" level="1"/>
@@ -196,6 +214,15 @@
       <p>Brute - See Warrior class description for details.</p>
     </description>
     <rules/>
+  </element>
+  <element id="ID_CLASS_WARRIOR_FEATURE_FEAT" name="Feat" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>You gain a feat of your choice.</p>
+    </description>
+    <rules>
+      <select type="Feat" name="Feat (Warrior)"/>
+    </rules>
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_SUBCLASS_ABILITY" name="Subclass Feature" type="Class Feature" source="SW-MSV-Edition">
     <description>
@@ -450,6 +477,120 @@
     <sheet>
       <description>Each weapon modification you own turns into the improved version.</description>
     </sheet>
+    <rules/>
+  </element>
+  <!-- Weapon Modifications -->
+  <element id="ID_WEAPON_MODIFICATION_INCREASED_ACCURACY" name="Increased Accuracy" type="Class Feature" source="SW-MSV-Edition">
+    <supports>Weapon Modification</supports>
+    <description>
+      <p>When you make a ranged attack, add 1d4 to your attack roll.</p>
+    </description>
+    <rules/>
+  </element>
+  <element id="ID_WEAPON_MODIFICATION_INCREASED_RANGE" name="Increased Range" type="Class Feature" source="SW-MSV-Edition">
+    <supports>Weapon Modification</supports>
+    <description>
+      <p>Increase your blaster's range by 1.5× its normal value.</p>
+    </description>
+    <rules/>
+  </element>
+  <element id="ID_WEAPON_MODIFICATION_INCREASED_DAMAGE" name="Increased Damage" type="Class Feature" source="SW-MSV-Edition">
+    <supports>Weapon Modification</supports>
+    <description>
+      <p>When a ranged attack hits, roll your damage die twice with modifiers and deal 75% rounded up of the combined result.</p>
+    </description>
+    <rules/>
+  </element>
+  <element id="ID_WEAPON_MODIFICATION_BURST_MODE" name="Burst Mode" type="Class Feature" source="SW-MSV-Edition">
+    <supports>Weapon Modification</supports>
+    <description>
+      <p>Once per turn, you may activate Burst Mode. Your ranged weapon fires twice in rapid succession. Make two attack rolls against the same target.</p>
+    </description>
+    <rules/>
+  </element>
+  <element id="ID_WEAPON_MODIFICATION_TRACKER_BOLTS" name="Tracker Bolts" type="Class Feature" source="SW-MSV-Edition">
+    <supports>Weapon Modification</supports>
+    <description>
+      <p>When a ranged attack hits, the next attack roll made against this creature has advantage.</p>
+    </description>
+    <rules/>
+  </element>
+  <element id="ID_WEAPON_MODIFICATION_EXPLOSIVE_ROUNDS" name="Explosive Rounds" type="Class Feature" source="SW-MSV-Edition">
+    <supports>Weapon Modification</supports>
+    <description>
+      <p>Ranged attacks deal area damage. When a ranged attack hits, creatures at the center of the impact take full damage, and all creatures within 5 feet of the impact point take half damage.</p>
+    </description>
+    <rules/>
+  </element>
+  <element id="ID_WEAPON_MODIFICATION_ARMOUR_PIERCING_ROUNDS" name="Armour Piercing Rounds" type="Class Feature" source="SW-MSV-Edition">
+    <supports>Weapon Modification</supports>
+    <description>
+      <p>When a ranged attack hits a creature, that creature's AC is reduced by 1 until the start of your next turn.</p>
+    </description>
+    <rules/>
+  </element>
+  <element id="ID_WEAPON_MODIFICATION_EXTENDED_MAGAZINES" name="Extended Magazines" type="Class Feature" source="SW-MSV-Edition">
+    <supports>Weapon Modification</supports>
+    <description>
+      <p>Your blaster can shoot more before needing a Reload. Increase the Ammo count 1.5x before needing a reload.</p>
+    </description>
+    <rules/>
+  </element>
+  <!-- Improved Weapon Modifications -->
+  <element id="ID_WEAPON_MODIFICATION_IMPROVED_INCREASED_ACCURACY" name="Improved Increased Accuracy" type="Class Feature" source="SW-MSV-Edition">
+    <supports>Improved Weapon Modification</supports>
+    <description>
+      <p>When you make a ranged attack, add 1d6 to your attack roll.</p>
+    </description>
+    <rules/>
+  </element>
+  <element id="ID_WEAPON_MODIFICATION_IMPROVED_INCREASED_RANGE" name="Improved Increased Range" type="Class Feature" source="SW-MSV-Edition">
+    <supports>Improved Weapon Modification</supports>
+    <description>
+      <p>Increase your blaster's range by 2× its normal value.</p>
+    </description>
+    <rules/>
+  </element>
+  <element id="ID_WEAPON_MODIFICATION_IMPROVED_INCREASED_DAMAGE" name="Improved Increased Damage" type="Class Feature" source="SW-MSV-Edition">
+    <supports>Improved Weapon Modification</supports>
+    <description>
+      <p>When a ranged attack hits, roll your damage die twice with modifiers and combine the results.</p>
+    </description>
+    <rules/>
+  </element>
+  <element id="ID_WEAPON_MODIFICATION_IMPROVED_BURST_MODE" name="Improved Burst Mode" type="Class Feature" source="SW-MSV-Edition">
+    <supports>Improved Weapon Modification</supports>
+    <description>
+      <p>Once per turn, you may activate Burst Mode. Your ranged weapon fires three times in rapid succession. Make three attack rolls against the same target.</p>
+    </description>
+    <rules/>
+  </element>
+  <element id="ID_WEAPON_MODIFICATION_IMPROVED_TRACKER_BOLTS" name="Improved Tracker Bolts" type="Class Feature" source="SW-MSV-Edition">
+    <supports>Improved Weapon Modification</supports>
+    <description>
+      <p>When a ranged attack hits, the next attack roll made against this creature has advantage. You also roll the damage die twice and take the highest result.</p>
+    </description>
+    <rules/>
+  </element>
+  <element id="ID_WEAPON_MODIFICATION_IMPROVED_EXPLOSIVE_ROUNDS" name="Improved Explosive Rounds" type="Class Feature" source="SW-MSV-Edition">
+    <supports>Improved Weapon Modification</supports>
+    <description>
+      <p>Ranged attacks deal area damage. When a ranged attack hits, creatures at the center of the impact and within 5 feet take full damage, and all creatures within 10 feet of the impact point take half damage.</p>
+    </description>
+    <rules/>
+  </element>
+  <element id="ID_WEAPON_MODIFICATION_IMPROVED_ARMOUR_PIERCING_ROUNDS" name="Improved Armour Piercing Rounds" type="Class Feature" source="SW-MSV-Edition">
+    <supports>Improved Weapon Modification</supports>
+    <description>
+      <p>When a ranged attack hits a creature, that creature's AC is reduced by 2 until the start of your next turn.</p>
+    </description>
+    <rules/>
+  </element>
+  <element id="ID_WEAPON_MODIFICATION_IMPROVED_EXTENDED_MAGAZINES" name="Improved Extended Magazines" type="Class Feature" source="SW-MSV-Edition">
+    <supports>Improved Weapon Modification</supports>
+    <description>
+      <p>Your blaster can shoot more before needing a Reload. Increase the Ammo count 2x before needing a reload.</p>
+    </description>
     <rules/>
   </element>
 </elements>

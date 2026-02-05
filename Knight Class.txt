@@ -1,0 +1,78 @@
+Knight:
+
+Strength and Charisma
+Health: d10 per Knight level + Constitution modifier
+Armour Proficiency: Light Armour, Medium Armour, and Shields
+Weapon Proficiency: Simple Blasters, Simple and Martial Lightweapons, Simple and Martial Vibroweapons
+Saving Throw Proficiencies: Wisdom and Charisma
+Skill Proficiencies, choose 2: Athletics, Intimidation, Persuasion, Insight, Performance
+Spell Save DC: 8 + Charisma modifier + Proficiency Bonus
+Funds: 7d4 × 100 Gold
+
+lv 1: Learn Force Push, Learn Force Pull, Learn Valor, Learn Minor Telekinesis, Meditation, 3 total Focus
+lv 2: Choose Lightsaber Form, Learn Saber Throw, 5 total Focus
+lv 3: Learn Force Resolution, 5 total Focus
+lv 4: Choose Feat, Learn Mind Trick, 5 total Focus
+lv 5: Extra Attack, 5 total Focus
+lv 6: Aura of Presence, 5 total Focus
+lv 7: Learn Blinding Strike, 6 total Focus
+lv 8: Choose Feat, 6 total Focus
+lv 9: Deep Meditation, 6 total Focus
+lv 10: Aura of Courage, 6 total Focus
+lv 11: Force Empowered Strikes, 7 total Focus
+lv 12: Choose Feat, 7 total Focus
+lv 13: –, 7 total Focus
+lv 14: Improved Force Resolution, 7 total Focus
+lv 15: Battle Meditation, 7 total Focus
+lv 16: Choose Feat, 8 total Focus
+lv 17: Aura of Protection, 8 total Focus
+lv 18: Aura Expansion, 8 total Focus
+lv 19: Choose Feat, 8 total Focus
+lv 20: Aura of Vigor, 9 total Focus
+
+Lightsaber Forms:
+
+Form II: Makashi (Dueling and Learn Riposte)
+  Dueling: Gain the Dueling Fighting Style
+  Riposte: 1 Focus, Reaction; When a creature misses you with a melee attack, you can make a melee weapon attack against that creature.
+
+Form III: Soresu (Learn Block and Learn Deflect)
+  Block: 1 Focus, Reaction; Block to negate a melee attack that would have hit you.
+  Deflect: 1 Focus, Reaction; Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.
+
+Form IV: Ataru (Learn Force Leap and Learn Slow Fall)
+  Force Leap: 1 Focus, Action; Jump up to twice your movement and make a melee weapon attack. This does not provoke Opportunity Attacks. Per extra Focus spent to a max of half your Knight level (rounded up), you can jump an additional 5 feet.
+  Slow Fall: 1 Focus, Reaction; Use the Force to slow yourself when falling, taking only half fall damage.
+
+Form V: Shien (Learn Redirect)
+  Redirect: 1 Focus, Reaction; Must wield a lightweapon. Use the Force to send a ranged attack that would have hit you to a creature. This counts as a ranged Force attack with the range of the incoming attack. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.
+
+Form V: Djem So (Learn Passionate Strike and Learn Deflect)
+  Passionate Strike: 2 Focus, Action; Make a melee attack and gain advantage on that attack.
+  Deflect: 1 Focus, Reaction; Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.
+
+Form VI: Niman (Force Push and Force Pull as a Bonus Action)
+  You can use Force Push and Force Pull as a Bonus Action.
+
+Form VII: Juyo (Learn Cyclone)
+  Cyclone: 2 Focus, Action; Make a flurry of attacks in one swift movement. You make two attacks that count as one attack against the same target. You roll both to hit. Per 2 extra Focus spent to a max of half your Knight level (rounded up), you make an additional attack within that flurry.
+
+Focus: Focus is the resource you use to activate certain abilities. You always start with max Focus after any rest.
+Meditation: Action / ends your turn; Meditate on the battlefield to gain 2 Focus when it is your turn again. While in this state,you can't take Reactions and you are considered Incapacitated.
+Force Push: 1 Focus, Casting Time: 1 Action; Range: Self; Components: Somatic; Duration: Instantaneous; Use the Force to push someone away. Each creature in a 15-foot line must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and are pushed 10 feet away. On a successful save, the creature takes half damage and isn't pushed. Per extra Focus spent to a max of half your Knight level (rounded up), the ability deals an additional 1d8 kinetic damage and pushes 5 extra feet.
+Force Pull: 1 Focus, Casting Time: 1 Action; Range: Self; Components: Somatic; Duration: Instantaneous; Use the Force to pull someone toward you. Each creature within a 15-foot cone originating from you must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and are pulled 10 feet closer. On a successful save, the creature takes half damage and isn't pulled. Per extra Focus spent to a max of half your Knight level (rounded up), the ability deals an additional 1d8 kinetic damage, increases the cone size by 5 feet, and pulls creatures an additional 5 feet.
+Valor: 1 Focus, Casting Time: 1 Action; Range: 30 feet; Components: None; Duration: Concentration, Up to 10 turns; You give courage to up to 3 creatures within range. The target can roll a d4 and add the number rolled to an attack roll or saving throw. Per extra Focus spent to a max of half your Knight level (rounded up), you can target one additional creature.
+Minor Telekinesis: 1 Focus, Casting Time: 1 Action; Range: 45 feet; Components: Somatic; Duration: Concentration, Up to 1 round; You use the Force to manipulate a small or medium object, or a small creature, that you can see within range. You make an ability check using your Force ability, contested by the target’s Strength check. On a success, you may suspend and/or move up to 30 feet or throw the target. If you choose to suspend the target, it remains suspended for the duration. If you throw the target, make a ranged Force attack with a range of 30/60 feet. On a hit, the target you throw at takes kinetic damage based on what is thrown: Small object: 2d4 kinetic damage, Medium object: 2d6 kinetic damage, Small creature: 1d4 kinetic damage. If a creature is thrown, the thrown small creature takes 1d8 + your Force ability modifier kinetic damage.
+Saber Throw: 1 Focus, Action; Make a ranged attack of 30/60 with your melee weapon using your Dexterity modifier for attack and damage rolls. If you are proficient with you weapon you add your proficiency bonus to the attack roll. Per extra Focus spent to a max of half your Knight level (rounded up), your range increases by 10/15 feet.
+Force Resolution: 2 Focus, Casting Time: 1 Bonus Action; Range: Self; Components: None; Duration: Instantaneous; When Incapacitated, you can use this ability to end that condition.
+Mind Trick: 2 Focus, Casting Time: 1 Action; Range: 60 feet; Components: Somatic, Verbal; Duration: Instantaneous; You wave your hand and speak a simple command to a creature you can see within range. The target makes a Wisdom saving throw. On a failed save, the creature must follow the command on its next turn. On a successful save, the creature isn't tricked and if the creature isn't in combat, it will make an Arcana check against your Spell save DC to determine whether it knows you tried to mind trick it. This ability has no effect if the target is a Droid, does not understand your language, or is not intelligent enough. Per extra Focus spent to a max of half your Knight level (rounded up), you can target an additional creature.
+Aura of Presence: Whenever you or a friendly creature within 10 feet of you must make a saving throw, that creature can add your Charisma modifier to the saving throw.
+Blinding Strike: 2 Focus, Action; When you successfully hit with a melee attack, you can use this ability to try to blind the creature you hit. The creature must make a Constitution saving throw. On a failed save, the creature is blinded for 1 round. On a successful save, the creature isn't blinded.
+Deep Meditation: Meditation upgrade: you now gain 3 Focus.
+Aura of Courage: Aura of Presence upgrade: allies cannot be Frightened.
+Force Empowered Strikes: Per 1 Focus, when making a melee attack, empower that attack using the Force and deal an additional 1d8 damage.
+Improved Force Resolution: Force Resolution upgrade: you can now use this ability on other creatures as well. Range: Touch.
+Battle Meditation: Meditation upgrade: you are no longer considered Incapacitated when using this ability.
+Aura of Protection: Aura of Presence upgrade: allies gain resistance to damage from ranged attacks.
+Aura Expansion: Aura of Presence is now 20-foot.
+Aura of Vigor: Aura of Presence upgrade: when a friendly creature starts its turn, that creature gains temporary hit points equal to your Wisdom or Charisma modifier (minimum of 1).

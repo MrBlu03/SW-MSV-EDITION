@@ -1,0 +1,81 @@
+species
+
+bith
+	int +2, dex +1, normal size/age, 30 feet, advantage on investigation checks, advantage on perception checks using hearing or smell, musician, proficient with slicing kit, vulnerable to sonic damage; speak basic, bith and one more language
+bothan
+	int +2, dex +1, slightly smaller size/normal age, 30 feet, hide or disengage as bonus action, proficient in insight and deception, basic, bothese
+cathar
+	dex +2, char +1, normal-slightly bigger size/normal age, 30 feet, unarmed strikes deal 1d6 kinetic and have finesse, darkvision, stealth proficiency, climb 30 feet, adventage on strength saving throws and athletics checks when climbing, basic, catharese
+chagrian
+	dex +2, wis +1, normal size/age, 30 feet, air and water breathe, darkvision, advantage on saving throws against poison, resistant to poison, swimming 30 feet, basic, chagri
+chiss
+	int +2, char +1, normal size/age, 30 feet, light and medium armour proficiency, sniper rifle proficiency, insight proficiency, darkvision, basic, cheunh
+devaronian
+	con +2, char +1, normal size/age, 30 feet, proficiency survival or investigation, advantage on con saving throw to avoid heat exhaustion, jungle isn't difficult terrain (entangle can still work but doesn't slow), proficiency deception or persuasion, advantage on saving throws against poison, resistant to poison, basic, devaronese 
+protocol droid
+	char +2, int or wis +1, normal size/requires maintenance, 25 feet, cannot wear armor but can get armor attached, resistant to necrotic and psychic, immune to poison, vulnerable to ion, disadvantage on saving throws the deal ion or lightning, force insensitive, cannot be healed by kolto, bacta or force powers, ability: Tune-Up: Quickly repair some damage on your body. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your level. Once you use this feature, you must finish a short or long rest before you can use it again.; history proficiency, all languages
+combat droid
+	con +2, str or dex +1, normal-slightly bigger size/requires maintenance, 30 feet, cannot wear armor but can get armour attached, resistant to necrotic and psychic, immune to poison, vulnerable to ion, disadvantage on saving throws the deal ion or lightning, force insensitive, cannot be healed by kolto, bacta or force powers, ability: Tune-Up: Quickly repair some damage on your body. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your level. Once you use this feature, you must finish a short or long rest before you can use it again.; proficiency with light and medium armour, proficiency with 2 simple or martial vibroweapons, basic, one more language, can understand binary 
+duros
+	dex +2, int +1, normal size/150 years, 30 feet, darkvision, history proficiency, basic, durese
+ewok
+	dex +2, con +1, small size/50 years, 25 feet, advantage on perception checks that rely on smell, can hide behind larger creatures, musician, nature and survival proficiency, climb 25 feet, advantage on strength saving throws and athletics checks when climbing, can only wield 2 handed weapons if versatile, can't use physical shields, ewokese, can understand basic
+gamorrean
+	str +2, con +1, normal size/70 years, 30 feet, hit points increase by 1 per level, advantage on con saving throws, vibro-axe and vibrosword proficiency, on crit add one additional weapon damage die, gamorrese, understand basic
+geonosian
+	dex +2, con +1, normal size/age, 30 feet, unarmoured or light armour: AC= 12 + dex mod, flight (halved when wearing medium or heavy armour), sonic weapon proficiency, basic, geonosian
+gran
+	con +2, wis +1, normal size/age, 30 feet, slow metabolism, advantage on perception checks that rely on sight, insight proficiency, hit points increase by 1 per level, basic, gran
+human
+	any ability +2 and 2 abilities +1 or 4 abilities +1, normal size/age, 30 feet, add 1d4 to check or saving throw or attack roll per short rest, proficieny in one weapon and skill of choosing, basic, one more language
+ithorian
+	char +2, wis +1, slightly bigger size/normal age, 30 feet, nature proficiency, As an action you can violently expel air in a 15-foot cone. When you do so, each creature in the area of the exhalation must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). A creature takes 2d6 sonic damage on a failed save, and half as much damage on a successful one. The damage increases to 4d6 at 5th level, 6d6 at 11th level, and 8d6 at 17th level. This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you complete a long rest, ithorese, understand basic
+jawa
+	dex +2, int +1, small size/normal age, 25 feet, darkvision, advantage on con saving throw to avoid heat exhaustion, sleight of hand proficiency, can hide behind larger creatures, can only wield 2 handed weapons if versatile, ion weapon proficiency, jawaese, understand basic
+kaleesh
+	str +2, dex +1, normal size/age, 30 feet, darkvision, vibropike and vibrospear proficiency, advantage on perception checks that rely on smell, survival proficiency, basic, kaleesh
+kel dor
+	wis +2, dex +1, normal size/age, 30 feet, darkvision, cannot breathe oxygen so need a mask, necrotic resistance, telepathy, basic, kel dor
+mirialan
+	dex +2, int +1, normal size/age, 35 feet, history expertise, if enemy is surprised then first attack deals extra 2d6, unarmed strikes deal 1d4 kinetic and have finesse, basic, mirialan
+mon calamari
+	char +2, int or wis +1, normal size/age, 30 feet, air and water breathe, darkvision, cold resistance, advantage on saving throws against slow, musician, swim 30 feet, basic, mon cal, one more language
+nautolan
+	dex +2, wis +1, normal size/age, 30 feet, air and water breathe, perception expertise, darkvision, unarmoured or light armour: AC= 12 + dex mod, swim 30 feet, basic, nautila
+neimoidian
+	char +2, wis +1, normal size/150 years, 30 feet, darkvision, deception and persuasion proficiency, start with addional 1000 gold, basic, pak pak
+ortolan
+	int +2, char +1, small/normal age, 25 feet, survival expertise, cold resistance, advantage on perception checks that involve hearing or smell, musician, can hide behind larger creatures, basic, ortolan
+rakata
+	str +2, int +1, slightly bigger size/normal age, 30 feet, can't use force, air and water breathe, unarmed strikes deal 1d6 kinetic, darkvision, slicing device proficiency, eat corpse(not too big) to gain temp hit points= con modifier, swim 30 feet, basic, rakata
+rattataki
+	wis +2, dex or int +1, slightly smaller size/normal age, 35 feet, acrobatics and intimidation proficiency, if enemy is surprised then first attack deals extra 2d6, unarmed strikes deal 1d4 kinetic and have finesse, basic, rattataki
+rodian
+	dex +2, con +1, normal size/age, 30 feet, climb 30 feet, darkvision, advantage on perception checks that involve hearing or smell, survival and stealth proficiency, basic, rodese
+sith pureblood
+	char +2, str or dex +1, normal size/age, 30 feet, darkvision, perception and intimidaton proficiency, basic, sith
+sullustan
+	int +2, dex +1, relatively small size/normal age, 30 feet, darkvision, advantage on perception checks that rely on hearing, persuasion expertise, basic, sullustese
+talz
+	str +2, wis +1, relatively tall size/50 years, 30 feet, darkvision, unarmoured or light armour: AC= 12 + dex mod, melee 5 feet greater, talzzi, understand basic
+togruta
+	wis +2, str or dex +1, normal size/age, 30 feet, advantage on stealth checks, survival proficiency, basic, togruti
+trandoshan
+	str +2, wis +1, relatively tall size/normal age, 30 feet, unarmed strikes deal 1d4 kinetic, darkvision, unarmoured or light armour: AC= 12 + dex mod, When you take damage, you can use your reaction and expend a Hit Die to regain hit points as long as the damage would not reduce your hit points to 0, basic, dosh
+tusken
+	con +2, str or char +1, normal size/50 years, 30 feet, animal handling proficiency, advantage on saving throws against blind, survival profiency, desert isn't diff terrain, advantage on con saving throw to avoid heat exhaustion, can't operate wrist blaster or launcher/slicing kit/other high tech, cycler rifle and vibro-axe proficiency, basic, tusken
+twi'lek
+	char +2, dex +1, normal-slightly bigger size/normal age, 30 feet, deception or persuasion proficiency, darkvision, performance proficiency, andvantage against poison saving throws, poison resistance, unarmed strikes deal 1d4 kinetic and have finesse, basic, twi'leki
+ugnaught
+	int +2, str +1, small size/200  years, 25 feet, unarmed strike (tusk) deal 1d6 kinetic, slicing kit proficiency, darkvision, acid resistance, can hide behind larger creatures, can only wield 2 handed weapons if versatile, basic, ugnaught
+weequay
+	con +2, wis or char +1, normal size/age, 30 feet, advantage on perception checks that rely on smell, on crit add one additional weapon damage die, unarmoured or light armour: AC= 13 + dex mod, proficiency of 2 vibroweapons or blasters of choice, basic, sriluurian
+wookie
+	str +2, con +1, relatively tall size/400 years, 30 feet, unarmed strikes deal 1d4 kinetic, darkvision, unarmoured or light armour: AC= 13 + dex mod, intimidation proficiency, climb 30 feet, shryiiwook, understand basic
+zabrak
+	con +2, str or dex +1, normal-slightly bigger size/normal age, 30 feet, persuasion or intimidation proficiency, when reduced to 0 instead drop to 1 HP once per long rest, hit points increase by 1 per level, unarmed strikes deal 1d4 kinetic and have finesse, basic, zabraki
+
+Subspecies:
+
+cyborg
+	arm: str + 1 or leg: dex +1, if both choose, vulnerable to ion damage, can be with any species except droids

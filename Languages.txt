@@ -1,0 +1,75 @@
+languages
+
+	Binary
+
+	Bith
+
+	Bothese
+
+	Catharese
+
+	Chagri
+
+	Chuenh
+
+	Devaronese
+
+	Dosh
+
+	Durese
+
+	Ewokese
+
+	Galactic Basic
+
+	Gamorrese
+
+	Geonosian
+
+	Gran
+
+	Ithorese
+
+	Jawaese
+
+	Kaleesh
+
+	Kel Dor
+
+	Mando'a
+
+	Mirialan
+
+	Mon Cal
+
+	Nautila
+
+	Ortolan
+
+	Pak Pak
+
+	Rakata
+
+	Rattataki
+
+	Rodese
+
+	Shyriiwook
+
+	Sith
+
+	Sriluurian
+
+	Sullustese
+
+	Talzzi
+
+	Togruti
+
+	Tusken
+
+	Twi'leki
+
+	Ugnaught
+
+	Zabraki

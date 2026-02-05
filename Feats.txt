@@ -1,0 +1,26 @@
+feats:
+
+	ability improvement: You increase one Ability by 2, or two Abilities by 1 to a max of 20
+	actor: Your Charisma increases by 1 to a max of 20, profiency bonus is doubled for deception and performance checks and grants those proficiencies.
+	alert: +5 to initiative and can't be surprised
+	athlete: Your Strength or Dexterity increases by 1 to a max of 20, When you are prone, standing up uses only 5 feet of your movement
+	charger: When you use your action to Dash, you can use a bonus action to make one melee weapon attack or to shove a creature. If you move at least 10 feet in a straight line immediately before taking this bonus action, you either gain a +5 bonus to the attack’s damage roll (if you chose to make a melee attack and hit) or push the target up to 10 feet away from you (if you chose to shove and you succeed)
+	blaster pistol expert: when you make a blaster pistol attacks within melee range, the attack rolls do not have disadvantage
+	defensive duelist: When attacked while wielding a Finesse Weapon you're Proficient with, you can use a reaction to add your Proficiency Bonus to your Armour Class, possibly causing the attack to miss
+	dual wielder:  When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack and you gain a +1 bonus to Armour Class while wielding a melee weapon in each hand. You cannot dual-wield two-handed weapons.
+	durable: Your Constitution increases by 1, to a maximum of 20, you regain full hit points each time you take a Short Rest.
+	heavily armoured: you need medium armour proifiency: You gain Armour Proficiency with Heavy Armour and your Strength increases by 1, to a maximum of 20
+	heavy armour master: you need heavy armour profiency: Your Strength increases by 1, to a maximum of 20, Incoming damage from kinetic attacks also decreases by 3 while you're wearing heavy armour.
+	lightely armoured: You gain Armour Proficiency with Light Armour and your Strength or Dexterity increases by 1, to a maximum of 20.
+	lucky: You gain 3 Luck Points, which you can use to gain Advantage on Attack Rolls, Ability Checks, or Saving Throws, or to make an enemy reroll their Attack Rolls.
+	medium armor master: When you wear Medium Armour, it doesn‘t impose Disadvantage on Stealth Checks. The bonus to Armour Class you can gain from your Dexterity Modifier also becomes +3 instead of +2.
+	mobile: Your movement speed increases by 10 feet, and difficult terrain doesn't slow you down when you Dash, If you move after making a melee attack, you don't provoke Opportunity Attacks from your target.
+	moderately armoured: you need light armour proficiency: You gain Armour Proficiency with Medium Armour and shields, and your Strength or Dexterity increases by 1, to a maximum of 20
+	polearm master: When attacking with a lightstaff, lightsaber pike, vibrostaff, vibrospear, electrostaff, vibropike you can make an Opportunity Attack when a target comes within range.
+	resilient: You increase an Ability by 1, to a maximum of 20, and gain Proficiency in that Ability's Saving Throws.
+	savage attacker: When making weapon attacks, you roll your damage dice twice and use the highest result.
+	sentinel: When an enemy within melee range attacks an ally, you can use a reaction to make a weapon attack against that enemy. Target ally must not have the Sentinel Feat, You gain Advantage on Opportunity Attacks, and when you hit a creature with an Opportunity Attack, it can no longer move for the rest of its turn.
+	sharpshooter: Your ranged weapon attacks do not receive penalties from High Ground Rules, Ranged weapon attacks with weapons you are Proficient with have a -5 penalty to their Attack Roll, but deal an additional 10 damage.
+	shield master: You gain a +2 bonus to Dexterity Saving Throws while wielding a shield. If a force ability forces you to make a Dexterity Saving Throw, you can use a reaction to shield yourself and diminish the effect's damage. On a failed Saving Throw, you only take half damage. On a successful Saving Throw, you don't take any damage.
+	skilled: You gain Proficiency in 3 Skills or 1 skill and 1 tool of your choice.
+	tough: Your hit point maximum increases by 2 for every level you have gained	

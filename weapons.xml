@@ -65,6 +65,11 @@
       <set name="reload">16</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_PISTOL</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="energy bow" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ENERGY_BOW">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
@@ -81,6 +86,11 @@
       <set name="reload">4</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ENERGY_BOW</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="ion pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_PISTOL">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
@@ -97,6 +107,11 @@
       <set name="reload">16</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ION_PISTOL</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="sonic pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SONIC_PISTOL">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
@@ -113,6 +128,11 @@
       <set name="reload">16</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SONIC_PISTOL</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="cryo pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_PISTOL">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
@@ -129,6 +149,11 @@
       <set name="reload">8</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CRYO_PISTOL</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="slugthrower pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLUGTHROWER_PISTOL">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_KINETIC</supports>
@@ -145,6 +170,11 @@
       <set name="reload">16</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SLUGTHROWER_PISTOL</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="disruptor pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DISRUPTOR_PISTOL">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
@@ -161,6 +191,11 @@
       <set name="reload">12</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DISRUPTOR_PISTOL</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="stealth pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_STEALTH_PISTOL">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
@@ -176,6 +211,10 @@
       <set name="reload">6</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_STEALTH_PISTOL</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="wrist blaster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_BLASTER">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
@@ -192,6 +231,11 @@
       <set name="reload">8</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_BLASTER</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="wrist launcher" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
@@ -205,6 +249,10 @@
       <set name="slot">onehand</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
+    </rules>
   </element>
   <element name="blaster rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BLASTER_RIFLE">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
@@ -221,6 +269,10 @@
       <set name="reload">12</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_RIFLE</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="disruptor rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DISRUPTOR_RIFLE">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
@@ -237,6 +289,10 @@
       <set name="reload">9</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DISRUPTOR_RIFLE</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="heavy bowcaster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_HEAVY_BOWCASTER">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
@@ -253,6 +309,10 @@
       <set name="reload">4</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_BOWCASTER</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="ion rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_RIFLE">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
@@ -269,6 +329,10 @@
       <set name="reload">8</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ION_RIFLE</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="sonic rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SONIC_RIFLE">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
@@ -285,6 +349,10 @@
       <set name="reload">8</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SONIC_RIFLE</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="slugthrower rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLUGTHROWER_RIFLE">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
@@ -301,6 +369,10 @@
       <set name="reload">12</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SLUGTHROWER_RIFLE</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="cryo rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_RIFLE">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
@@ -317,6 +389,10 @@
       <set name="reload">4</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CRYO_RIFLE</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="railgun" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_RAILGUN">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
@@ -333,6 +409,10 @@
       <set name="reload">1</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_RAILGUN</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="arc caster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ARC_CASTER">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
@@ -349,6 +429,10 @@
       <set name="reload">9</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ARC_CASTER</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="sniper rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SNIPER_RIFLE">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
@@ -364,6 +448,10 @@
       <set name="reload">2</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SNIPER_RIFLE</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="minigun/rotary cannon" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MINIGUN_ROTARY_CANNON">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
@@ -379,6 +467,10 @@
       <set name="reload">4</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MINIGUN/ROTARY_CANNON</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_BLAST"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="flamethrower" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FLAMETHROWER">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
@@ -394,6 +486,10 @@
       <set name="reload">2</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_FLAMETHROWER</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_FLAME"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="cycler rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CYCLER_RIFLE">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
@@ -410,6 +506,10 @@
       <set name="reload">4</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CYCLER_RIFLE</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
   </element>
   <element name="lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSABER">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
@@ -424,6 +524,11 @@
       <set name="damage" type="energy">1d6</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+    </rules>
   </element>
   <element name="lightstaff" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSTAFF">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
@@ -438,6 +543,11 @@
       <set name="damage" type="energy">1d6/2d4</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSTAFF</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+    </rules>
   </element>
   <element name="crossguard saber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CROSSGUARD_SABER">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
@@ -452,6 +562,10 @@
       <set name="damage" type="energy">2d6</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSGUARD_SABER</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+    </rules>
   </element>
   <element name="lightwhip" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTWHIP">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
@@ -466,6 +580,10 @@
       <set name="damage" type="energy">1d6</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTWHIP</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
+    </rules>
   </element>
   <element name="martial lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MARTIAL_LIGHTSABER">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
@@ -480,6 +598,11 @@
       <set name="damage" type="energy">1d8/1d10</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_LIGHTSABER</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+    </rules>
   </element>
   <element name="lightsaber pike" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSABER_PIKE">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
@@ -494,6 +617,10 @@
       <set name="damage" type="energy">1d10</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER_PIKE</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+    </rules>
   </element>
   <element name="double bladed lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DOUBLE_BLADED_LIGHTSABER">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
@@ -508,6 +635,11 @@
       <set name="damage" type="energy">1d8</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_BLADED_LIGHTSABER</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_SLASH"/>
+      <grant type="Action" id="ID_ACTION_BACK_STRIKE"/>
+    </rules>
   </element>
   <element name="vibrospear" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROSPEAR">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
@@ -523,6 +655,11 @@
       <set name="damage" type="kinetic">1d6/2d4</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSPEAR</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+    </rules>
   </element>
   <element name="vibrodagger" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBRODAGGER">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
@@ -538,6 +675,10 @@
       <set name="damage" type="kinetic">1d4</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBRODAGGER</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
+    </rules>
   </element>
   <element name="vibrostaff" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROSTAFF">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
@@ -552,6 +693,11 @@
       <set name="damage" type="kinetic">1d6/2d4</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSTAFF</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+    </rules>
   </element>
   <element name="vibro double-blade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBRO_DOUBLE_BLADE">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
@@ -566,6 +712,11 @@
       <set name="damage" type="kinetic">1d8</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBRO_DOUBLE-BLADE</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_SLASH"/>
+      <grant type="Action" id="ID_ACTION_BACK_STRIKE"/>
+    </rules>
   </element>
   <element name="electrostaff" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTROSTAFF">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
@@ -580,6 +731,11 @@
       <set name="damage" type="lightning">1d6</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ELECTROSTAFF</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_SLASH"/>
+      <grant type="Action" id="ID_ACTION_BACK_STRIKE"/>
+    </rules>
   </element>
   <element name="vibrosword" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROSWORD">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
@@ -594,6 +750,11 @@
       <set name="damage" type="kinetic">1d8/1d10</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSWORD</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+    </rules>
   </element>
   <element name="virbo-axe" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIRBO_AXE">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
@@ -608,6 +769,10 @@
       <set name="damage" type="kinetic">1d12</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_VIRBO-AXE</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+    </rules>
   </element>
   <element name="vibropike" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROPIKE">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
@@ -622,6 +787,10 @@
       <set name="damage" type="kinetic">1d10</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBROPIKE</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+    </rules>
   </element>
   <element name="electrowhip" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTROWHIP">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
@@ -636,6 +805,10 @@
       <set name="damage" type="lightning">1d4</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ELECTROWHIP</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
+    </rules>
   </element>
   <element name="electrobaton" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTROBATON">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
@@ -650,209 +823,306 @@
       <set name="damage" type="lightning">1d4</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ELECTROBATON</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
+    </rules>
   </element>
-  <element name="duranium combat suit AC: 13 + Dexterity modifier" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DURANIUM_COMBAT_SUIT_AC_13_DEXTERITY_MODIFIER">
+  <element name="combat suit" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_COMBAT_SUIT">
+    <supports>ID_INTERNAL_ARMOR_CATEGORY_LIGHT</supports>
     <description>
-      <p>disadvantage on stealth</p>
+      <p>AC: 11 + Dexterity modifier</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
-      <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DURANIUM_COMBAT_SUIT_AC:_13_+_DEXTERITY_MODIFIER</set>
+      <set name="category">Armor</set>
+      <set name="cost" currency="gp">100</set>
+      <set name="weight" lb="8">8 lb.</set>
+      <set name="slot">body</set>
+      <set name="ac">11</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_LIGHT_ARMOUR</set>
     </setters>
   </element>
-  <element name="mesh armor AC: 13 + Dexterity modifier" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MESH_ARMOR_AC_13_DEXTERITY_MODIFIER">
+  <element name="fiber armor" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_FIBER_ARMOR">
+    <supports>ID_INTERNAL_ARMOR_CATEGORY_LIGHT</supports>
     <description>
-      <p>max +2</p>
+      <p>AC: 12 + Dexterity modifier</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
-      <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MESH_ARMOR_AC:_13_+_DEXTERITY_MODIFIER</set>
+      <set name="category">Armor</set>
+      <set name="cost" currency="gp">150</set>
+      <set name="weight" lb="10">10 lb.</set>
+      <set name="slot">body</set>
+      <set name="ac">12</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_LIGHT_ARMOUR</set>
     </setters>
   </element>
-  <element name="weave armor AC: 14 + Dexterity modifier" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WEAVE_ARMOR_AC_14_DEXTERITY_MODIFIER">
+  <element name="duranium combat suit" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_DURANIUM_COMBAT_SUIT">
+    <supports>ID_INTERNAL_ARMOR_CATEGORY_LIGHT</supports>
     <description>
-      <p>max +2</p>
+      <p>AC: 13 + Dexterity modifier, disadvantage on stealth</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
-      <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WEAVE_ARMOR_AC:_14_+_DEXTERITY_MODIFIER</set>
+      <set name="category">Armor</set>
+      <set name="cost" currency="gp">200</set>
+      <set name="weight" lb="15">15 lb.</set>
+      <set name="slot">body</set>
+      <set name="ac">13</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_LIGHT_ARMOUR</set>
     </setters>
   </element>
-  <element name="beskar weave armor AC 14 + Dexterity modifier" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BESKAR_WEAVE_ARMOR_AC_14_DEXTERITY_MODIFIER">
+  <element name="mesh armor" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_MESH_ARMOR">
+    <supports>ID_INTERNAL_ARMOR_CATEGORY_MEDIUM</supports>
     <description>
-      <p>max +2) (ability: if an enemy rolls max damage on the dice, they have to reroll and use that reroll</p>
+      <p>AC: 13 + Dexterity modifier (max +2)</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
+      <set name="category">Armor</set>
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_BESKAR_WEAVE_ARMOR_AC_14_+_DEXTERITY_MODIFIER</set>
+      <set name="slot">body</set>
+      <set name="ac">13</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_MEDIUM_ARMOUR</set>
     </setters>
   </element>
-  <element name="composite armor: 15 + Dexterity modifier" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_COMPOSITE_ARMOR_15_DEXTERITY_MODIFIER">
+  <element name="weave armor" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_WEAVE_ARMOR">
+    <supports>ID_INTERNAL_ARMOR_CATEGORY_MEDIUM</supports>
     <description>
-      <p>max +2) (disadvantage on stealth</p>
+      <p>AC: 14 + Dexterity modifier (max +2)</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
+      <set name="category">Armor</set>
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_COMPOSITE_ARMOR:_15_+_DEXTERITY_MODIFIER</set>
+      <set name="slot">body</set>
+      <set name="ac">14</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_MEDIUM_ARMOUR</set>
     </setters>
   </element>
-  <element name="battle armor AC: 16" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BATTLE_ARMOR_AC_16">
+  <element name="beskar weave armor" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_BESKAR_WEAVE_ARMOR">
+    <supports>ID_INTERNAL_ARMOR_CATEGORY_MEDIUM</supports>
     <description>
-      <p>disadvantage on stealth, resistant to kinetic damage</p>
+      <p>AC: 14 + Dexterity modifier (max +2). Special: If an enemy rolls max damage on the dice, they have to reroll and use that reroll.</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
+      <set name="category">Armor</set>
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLE_ARMOR_AC:_16</set>
+      <set name="slot">body</set>
+      <set name="ac">14</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_MEDIUM_ARMOUR</set>
     </setters>
   </element>
-  <element name="assault armor AC: 17" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ASSAULT_ARMOR_AC_17">
+  <element name="composite armor" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_COMPOSITE_ARMOR">
+    <supports>ID_INTERNAL_ARMOR_CATEGORY_MEDIUM</supports>
     <description>
-      <p>(disadvantage on stealth, resistant to kinetic damage</p>
+      <p>AC: 15 + Dexterity modifier (max +2), disadvantage on stealth</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
+      <set name="category">Armor</set>
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ASSAULT_ARMOR_AC:_17</set>
+      <set name="slot">body</set>
+      <set name="ac">15</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_MEDIUM_ARMOUR</set>
     </setters>
   </element>
-  <element name="durasteel armor AC: 18" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DURASTEEL_ARMOR_AC_18">
+  <element name="battle armor" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_BATTLE_ARMOR">
+    <supports>ID_INTERNAL_ARMOR_CATEGORY_HEAVY</supports>
     <description>
-      <p>disadvantage on stealth, resistant to kinetic damage</p>
+      <p>AC: 16, disadvantage on stealth, resistant to kinetic damage</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
+      <set name="category">Armor</set>
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DURASTEEL_ARMOR_AC:_18</set>
+      <set name="slot">body</set>
+      <set name="ac">16</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_HEAVY_ARMOUR</set>
     </setters>
   </element>
-  <element name="repair kit: with this you can repair weapons/armours or any technology" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REPAIR_KIT_WITH_THIS_YOU_CAN_REPAIR_WEAPONS_ARMOURS_OR_ANY_TECHNOLOGY">
+  <element name="assault armor" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_ASSAULT_ARMOR">
+    <supports>ID_INTERNAL_ARMOR_CATEGORY_HEAVY</supports>
     <description>
-      <p>requires repair kit proficiency</p>
+      <p>AC: 17, disadvantage on stealth, resistant to kinetic damage</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
+      <set name="category">Armor</set>
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_REPAIR_KIT:_WITH_THIS_YOU_CAN_REPAIR_WEAPONS/ARMOURS_OR_ANY_TECHNOLOGY</set>
+      <set name="slot">body</set>
+      <set name="ac">17</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_HEAVY_ARMOUR</set>
     </setters>
   </element>
-  <element name="forgery kit: with this kit you can forge documents and make counterfeit credits" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FORGERY_KIT_WITH_THIS_KIT_YOU_CAN_FORGE_DOCUMENTS_AND_MAKE_COUNTERFEIT_CREDITS">
+  <element name="durasteel armor" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_DURASTEEL_ARMOR">
+    <supports>ID_INTERNAL_ARMOR_CATEGORY_HEAVY</supports>
     <description>
-      <p>requires forgery kit proficiency</p>
+      <p>AC: 18, disadvantage on stealth, resistant to kinetic damage</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
+      <set name="category">Armor</set>
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_FORGERY_KIT:_WITH_THIS_KIT_YOU_CAN_FORGE_DOCUMENTS_AND_MAKE_COUNTERFEIT_CREDITS</set>
+      <set name="slot">body</set>
+      <set name="ac">18</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_HEAVY_ARMOUR</set>
     </setters>
   </element>
-  <element name="slicing kit: with this kit you can slice terminals to open locks or disarm traps" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLICING_KIT_WITH_THIS_KIT_YOU_CAN_SLICE_TERMINALS_TO_OPEN_LOCKS_OR_DISARM_TRAPS">
+  <element name="physical shield" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_PHYSICAL_SHIELD">
+    <supports>ID_INTERNAL_ARMOR_CATEGORY_SHIELD</supports>
     <description>
-      <p>requires slicing kit proficiency</p>
+      <p>A physical shield that provides +2 AC when wielded. Must be proficient with shields.</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
-      <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SLICING_KIT:_WITH_THIS_KIT_YOU_CAN_SLICE_TERMINALS_TO_OPEN_LOCKS_OR_DISARM_TRAPS</set>
+      <set name="category">Armor</set>
+      <set name="cost" currency="gp">50</set>
+      <set name="weight" lb="5">5 lb.</set>
+      <set name="slot">offhand</set>
+      <set name="ac">+2</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_SHIELDS</set>
     </setters>
   </element>
-  <element name="hacking kit: with this kit you can hack &quot;unconcious&quot; droids or security systems" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_HACKING_KIT_WITH_THIS_KIT_YOU_CAN_HACK_UNCONCIOUS_DROIDS_OR_SECURITY_SYSTEMS">
+  <element name="small shield generator" type="Item" source="SW-MSV-Edition" id="ID_ITEM_SMALL_SHIELD_GENERATOR">
     <description>
-      <p>requires hacking kit proficieny</p>
+      <p>A small personal shield generator that provides +10 temporary hit points once per long rest.</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
-      <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_HACKING_KIT:_WITH_THIS_KIT_YOU_CAN_HACK_"UNCONCIOUS"_DROIDS_OR_SECURITY_SYSTEMS</set>
+      <set name="category">Equipment</set>
+      <set name="cost" currency="gp">500</set>
+      <set name="weight" lb="2">2 lb.</set>
+      <set name="slot">wrist</set>
     </setters>
   </element>
-  <element name="disguise kit: with this kit you can completely change your look" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DISGUISE_KIT_WITH_THIS_KIT_YOU_CAN_COMPLETELY_CHANGE_YOUR_LOOK">
+  <element name="medium shield generator" type="Item" source="SW-MSV-Edition" id="ID_ITEM_MEDIUM_SHIELD_GENERATOR">
     <description>
-      <p>requires disguise kit proficiency</p>
+      <p>A medium personal shield generator that provides +20 temporary hit points once per long rest.</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
-      <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DISGUISE_KIT:_WITH_THIS_KIT_YOU_CAN_COMPLETELY_CHANGE_YOUR_LOOK</set>
+      <set name="category">Equipment</set>
+      <set name="cost" currency="gp">1000</set>
+      <set name="weight" lb="3">3 lb.</set>
+      <set name="slot">wrist</set>
     </setters>
   </element>
-  <element name="poisoning kit: with this kit you can coat your weapons with poisons" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_POISONING_KIT_WITH_THIS_KIT_YOU_CAN_COAT_YOUR_WEAPONS_WITH_POISONS">
+  <element name="large shield generator" type="Item" source="SW-MSV-Edition" id="ID_ITEM_LARGE_SHIELD_GENERATOR">
     <description>
-      <p>requires poisoning kit proficiency</p>
+      <p>A large personal shield generator that provides +40 temporary hit points once per long rest.</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
-      <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_POISONING_KIT:_WITH_THIS_KIT_YOU_CAN_COAT_YOUR_WEAPONS_WITH_POISONS</set>
+      <set name="category">Equipment</set>
+      <set name="cost" currency="gp">2000</set>
+      <set name="weight" lb="5">5 lb.</set>
+      <set name="slot">wrist</set>
     </setters>
   </element>
-  <element name="jumppack and jump boots" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_JUMPPACK_AND_JUMP_BOOTS">
+  <element name="energy shield" type="Item" source="SW-MSV-Edition" id="ID_ITEM_ENERGY_SHIELD">
     <description>
-      <p>requires jumppack proficiency):</p>
+      <p>An energy shield that provides +3 AC and halves damage from lightning sources. Must be held in off-hand.</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
-      <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_JUMPPACK_AND_JUMP_BOOTS</set>
+      <set name="category">Equipment</set>
+      <set name="cost" currency="gp">1500</set>
+      <set name="weight" lb="2">2 lb.</set>
+      <set name="slot">offhand</set>
     </setters>
   </element>
-  <element name="hoverpack and hover boots" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_HOVERPACK_AND_HOVER_BOOTS">
+  <element name="repair kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_REPAIR_KIT">
     <description>
-      <p>requires hoverpack proficiency):</p>
+      <p>A kit containing tools and parts for repairing weapons, armor, and technology. Requires repair kit proficiency to use.</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
+      <set name="category">Tool</set>
+      <set name="cost" currency="gp">25</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_HOVERPACK_AND_HOVER_BOOTS</set>
     </setters>
   </element>
-  <element name="jetpack and jet boots" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_JETPACK_AND_JET_BOOTS">
+  <element name="forgery kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FORGERY_KIT">
     <description>
-      <p>requires jumppack proficiency, hoverpack proficiency and jetpack proficiency):</p>
+      <p>A kit containing materials for forging documents and making counterfeit credits. Requires forgery kit proficiency to use.</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
+      <set name="category">Tool</set>
+      <set name="cost" currency="gp">15</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_JETPACK_AND_JET_BOOTS</set>
+    </setters>
+  </element>
+  <element name="slicing kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_SLICING_KIT">
+    <description>
+      <p>A kit containing specialized equipment for slicing terminals to open locks or disarm traps. Requires slicing kit proficiency to use.</p>
+    </description>
+    <setters>
+      <set name="category">Tool</set>
+      <set name="cost" currency="gp">25</set>
+      <set name="weight" lb="1">1 lb.</set>
+      <set name="slot">onehand</set>
+    </setters>
+  </element>
+  <element name="hacking kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_HACKING_KIT">
+    <description>
+      <p>A kit containing tools for hacking droids or security systems. Requires hacking kit proficiency to use.</p>
+    </description>
+    <setters>
+      <set name="category">Tool</set>
+      <set name="cost" currency="gp">50</set>
+      <set name="weight" lb="1">1 lb.</set>
+      <set name="slot">onehand</set>
+    </setters>
+  </element>
+  <element name="disguise kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_DISGUISE_KIT">
+    <description>
+      <p>A kit containing cosmetics and prosthetics for completely changing your look. Requires disguise kit proficiency to use.</p>
+    </description>
+    <setters>
+      <set name="category">Tool</set>
+      <set name="cost" currency="gp">25</set>
+      <set name="weight" lb="1">1 lb.</set>
+      <set name="slot">onehand</set>
+    </setters>
+  </element>
+  <element name="poisoning kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_POISONING_KIT">
+    <description>
+      <p>A kit containing poisons and applicators for coating weapons. Requires poisoning kit proficiency to use.</p>
+    </description>
+    <setters>
+      <set name="category">Tool</set>
+      <set name="cost" currency="gp">50</set>
+      <set name="weight" lb="1">1 lb.</set>
+      <set name="slot">onehand</set>
+    </setters>
+  </element>
+  <element name="jumppack and jump boots" type="Item" source="SW-MSV-Edition" id="ID_ITEM_JUMPPACK_AND_JUMP_BOOTS">
+    <description>
+      <p>A jumppack and jump boots that allow you to jump up to 25 feet vertically or horizontally as a bonus action. Requires jumppack proficiency.</p>
+    </description>
+    <setters>
+      <set name="category">Equipment</set>
+      <set name="cost" currency="gp">500</set>
+      <set name="weight" lb="15">15 lb.</set>
+      <set name="slot">body</set>
+    </setters>
+  </element>
+  <element name="hoverpack and hover boots" type="Item" source="SW-MSV-Edition" id="ID_ITEM_HOVERPACK_AND_HOVER_BOOTS">
+    <description>
+      <p>A hoverpack and hover boots that allow you to hover up to 15 feet in the air for 2 turns as a bonus action. Requires hoverpack proficiency.</p>
+    </description>
+    <setters>
+      <set name="category">Equipment</set>
+      <set name="cost" currency="gp">750</set>
+      <set name="weight" lb="15">15 lb.</set>
+      <set name="slot">body</set>
+    </setters>
+  </element>
+  <element name="jetpack and jet boots" type="Item" source="SW-MSV-Edition" id="ID_ITEM_JETPACK_AND_JET_BOOTS">
+    <description>
+      <p>An advanced jetpack and jet boots that combine jump and hover capabilities. Allows jumping up to 30 feet or hovering with movement. Requires jumppack, hoverpack, and jetpack proficiency.</p>
+    </description>
+    <setters>
+      <set name="category">Equipment</set>
+      <set name="cost" currency="gp">1500</set>
+      <set name="weight" lb="20">20 lb.</set>
+      <set name="slot">body</set>
     </setters>
   </element>
   <element name="thermal detenator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_THERMAL_DETENATOR">
@@ -1532,112 +1802,94 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_BACTA_PACK</set>
     </setters>
   </element>
-  <element name="Bandfill" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BANDFILL">
+  <element name="Bandfill" type="Item" source="SW-MSV-Edition" id="ID_ITEM_BANDFILL">
     <description>
       <p>The bandfill is a musical instrument, commonly used in jizz, that featured a number of mounted horn bells called reciprocator horns and a ploong sounder</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
-      <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_BANDFILL</set>
+      <set name="category">Tool</set>
+      <set name="cost" currency="gp">15</set>
+      <set name="weight" lb="3">3 lb.</set>
     </setters>
   </element>
-  <element name="Chindinkalu horn" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CHINDINKALU_HORN">
+  <element name="Chindinkalu horn" type="Item" source="SW-MSV-Edition" id="ID_ITEM_CHINDINKALU_HORN">
     <description>
       <p>The Chidinkalu horn is a musical instrument made by the Kitonaks from the hollowed-out reeds of a chidinka. It produced low tones and is used in the rhythm section</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
-      <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CHINDINKALU_HORN</set>
+      <set name="category">Tool</set>
+      <set name="cost" currency="gp">25</set>
+      <set name="weight" lb="2">2 lb.</set>
     </setters>
   </element>
-  <element name="Drum" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DRUM">
+  <element name="Drum" type="Item" source="SW-MSV-Edition" id="ID_ITEM_DRUM">
     <description>
       <p>Drums are a type of percussive musical instrument</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
-      <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DRUM</set>
+      <set name="category">Tool</set>
+      <set name="cost" currency="gp">15</set>
+      <set name="weight" lb="3">3 lb.</set>
     </setters>
   </element>
-  <element name="Fanfar" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FANFAR">
+  <element name="Fanfar" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FANFAR">
     <description>
       <p>The fanfar is a musical instrument commonly used in jizz. Fanfars appeared to be reedy instruments with a mouthpiece, and the slots along the fanfar are known as farra slots</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
+      <set name="category">Tool</set>
+      <set name="cost" currency="gp">20</set>
       <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_FANFAR</set>
     </setters>
   </element>
-  <element name="Fizzz" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FIZZZ">
+  <element name="Fizzz" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FIZZZ">
     <description>
       <p>The Dorenian Beshniquel, also known as the Fizzz, is a short, single-reed wind instrument, which is adjusted via peel rod</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
+      <set name="category">Tool</set>
+      <set name="cost" currency="gp">18</set>
       <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_FIZZZ</set>
     </setters>
   </element>
-  <element name="Flute" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FLUTE">
+  <element name="Flute" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FLUTE">
     <description>
       <p>Flutes are a type of woodwind instrument. One type of flute is the reed flute</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
+      <set name="category">Tool</set>
+      <set name="cost" currency="gp">15</set>
       <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_FLUTE</set>
     </setters>
   </element>
-  <element name="Kloo horn" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_KLOO_HORN">
+  <element name="Kloo horn" type="Item" source="SW-MSV-Edition" id="ID_ITEM_KLOO_HORN">
     <description>
       <p>The kloo horn is a double-reeded wind instrument, larger than a Slitherhorn and a Fizzz[1] (roughly 1.5 meters tall), and one of the most commonly used instruments in the galaxy | Actions: and one of the most commonly used instruments in the galaxy)</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
-      <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_KLOO_HORN</set>
+      <set name="category">Tool</set>
+      <set name="cost" currency="gp">30</set>
+      <set name="weight" lb="4">4 lb.</set>
     </setters>
   </element>
-  <element name="Lute" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LUTE">
+  <element name="Lute" type="Item" source="SW-MSV-Edition" id="ID_ITEM_LUTE">
     <description>
       <p>The lute-pipe is a musical instrument that is played by plucking and blowing into it</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
-      <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LUTE</set>
+      <set name="category">Tool</set>
+      <set name="cost" currency="gp">35</set>
+      <set name="weight" lb="3">3 lb.</set>
     </setters>
   </element>
-  <element name="Mandoviol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MANDOVIOL">
+  <element name="Mandoviol" type="Item" source="SW-MSV-Edition" id="ID_ITEM_MANDOVIOL">
     <description>
       <p>The mandoviol is a stringed musical instrument, it is a difficult instrument to master, but could be used to play ballads as well as energetic jizz tunes with equal aplomb</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
-      <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MANDOVIOL</set>
+      <set name="category">Tool</set>
+      <set name="cost" currency="gp">40</set>
+      <set name="weight" lb="3">3 lb.</set>
     </setters>
   </element>
   <element name="Ommni box" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_OMMNI_BOX">
@@ -1652,52 +1904,55 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_OMMNI_BOX</set>
     </setters>
   </element>
-  <element name="Slitherhorn" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLITHERHORN">
+  <element name="Slitherhorn" type="Item" source="SW-MSV-Edition" id="ID_ITEM_SLITHERHORN">
     <description>
       <p>The slitherhorn is a musical instrument common among jizz bands. It is similar in appearance to the kloo horn, though smaller in size</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
-      <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SLITHERHORN</set>
+      <set name="category">Tool</set>
+      <set name="cost" currency="gp">28</set>
+      <set name="weight" lb="3">3 lb.</set>
     </setters>
   </element>
-  <element name="Traz" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_TRAZ">
+  <element name="Traz" type="Item" source="SW-MSV-Edition" id="ID_ITEM_TRAZ">
     <description>
       <p>The traz is a musical instrument similar in appearance and sound to the slitherhorn</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
-      <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_TRAZ</set>
+      <set name="category">Tool</set>
+      <set name="cost" currency="gp">22</set>
+      <set name="weight" lb="2">2 lb.</set>
     </setters>
   </element>
-  <element name="Valahorn" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VALAHORN">
+  <element name="Valahorn" type="Item" source="SW-MSV-Edition" id="ID_ITEM_VALAHORN">
     <description>
       <p>The valahorn is a type of musical instrument that is similar in appearance and sound to a Kloo horn</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
-      <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_VALAHORN</set>
+      <set name="category">Tool</set>
+      <set name="cost" currency="gp">32</set>
+      <set name="weight" lb="4">4 lb.</set>
     </setters>
   </element>
-  <element name="Xantha" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_XANTHA">
+  <element name="Xantha" type="Item" source="SW-MSV-Edition" id="ID_ITEM_XANTHA">
     <description>
       <p>The Xantha is a difficult musical instrument that involved plucking strings and covering holes with one's fingers</p>
     </description>
     <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
-      <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_XANTHA</set>
+      <set name="category">Tool</set>
+      <set name="cost" currency="gp">45</set>
+      <set name="weight" lb="5">5 lb.</set>
+    </setters>
+  </element>
+  <element name="rocketpack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_ROCKETPACK">
+    <description>
+      <p>An attachment for jump/hover/jetpacks that allows shooting rockets. Action: reload rocketpack. Bonus action: shoot rocket. Can use: plasma rocket, cryo rocket, ion rocket, incendiary rocket, corrosive rocket, fragmentation rocket.</p>
+    </description>
+    <setters>
+      <set name="category">Equipment</set>
+      <set name="cost" currency="gp">800</set>
+      <set name="weight" lb="10">10 lb.</set>
+      <set name="slot">body</set>
     </setters>
   </element>
 </elements>
