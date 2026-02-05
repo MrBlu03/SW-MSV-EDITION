@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+    <info>
+        <name>SW-MSV-Edition</name>
+        <description>Star Wars 5E - MSV Edition Homebrew Content</description>
+        <author>MSV</author>
+        <update version="1.0.0">
+            <file name="sw-msv-edition.index" url="https://raw.githubusercontent.com/youraccount/yourrepo/main/SW-MSV-Edition/sw-msv-edition.index" />
+        </update>
+    </info>
+    <files>
+        <file name="species.xml" url="https://raw.githubusercontent.com/youraccount/yourrepo/main/SW-MSV-Edition/species.xml" />
+        <file name="class-knight.xml" url="https://raw.githubusercontent.com/youraccount/yourrepo/main/SW-MSV-Edition/class-knight.xml" />
+        <file name="class-marauder.xml" url="https://raw.githubusercontent.com/youraccount/yourrepo/main/SW-MSV-Edition/class-marauder.xml" />
+        <file name="class-scout.xml" url="https://raw.githubusercontent.com/youraccount/yourrepo/main/SW-MSV-Edition/class-scout.xml" />
+        <file name="class-warrior.xml" url="https://raw.githubusercontent.com/youraccount/yourrepo/main/SW-MSV-Edition/class-warrior.xml" />
+        <file name="class-inquisitor.xml" url="https://raw.githubusercontent.com/youraccount/yourrepo/main/SW-MSV-Edition/class-inquisitor.xml" />
+        <file name="feats.xml" url="https://raw.githubusercontent.com/youraccount/yourrepo/main/SW-MSV-Edition/feats.xml" />
+        <file name="backgrounds.xml" url="https://raw.githubusercontent.com/youraccount/yourrepo/main/SW-MSV-Edition/backgrounds.xml" />
+        <file name="languages.xml" url="https://raw.githubusercontent.com/youraccount/yourrepo/main/SW-MSV-Edition/languages.xml" />
+        <file name="fighting-styles.xml" url="https://raw.githubusercontent.com/youraccount/yourrepo/main/SW-MSV-Edition/fighting-styles.xml" />
+        <file name="maneuvers.xml" url="https://raw.githubusercontent.com/youraccount/yourrepo/main/SW-MSV-Edition/maneuvers.xml" />
+        <file name="weapons.xml" url="https://raw.githubusercontent.com/youraccount/yourrepo/main/SW-MSV-Edition/weapons.xml" />
+        <file name="proficiencies.xml" url="https://raw.githubusercontent.com/youraccount/yourrepo/main/SW-MSV-Edition/proficiencies.xml" />
+    </files>
+</index>

@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <element name="Agent" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_AGENT">
+    <description>
+      <p>choose 2 proficiencies: deception, investigation, persuasion, stealth</p>
+      <p>2 language(s) of your choice • Equipment: badge/emblem from faction • 150 gold</p>
+      <p>
+        <strong>Personality Traits:</strong>
+      </p>
+      <ul>
+        <li>I can find common ground between the fiercest enemies, empathizing with them and always working towards peace.</li>
+        <li>I see omens in every event and action.</li>
+        <li>Nothing can shake my optimistic attitude.</li>
+        <li>I quote (or misquote) sacred texts and proverbs in almost every situation.</li>
+        <li>I am tolerant (or intolerant) of other factions and respect (or condemn) them.</li>
+        <li>I've enjoyed fine food, drink, and high society among my faction's elite. Rough living grates on me.</li>
+        <li>I have little practical experience dealing with people in the world.</li>
+      </ul>
+      <p>
+        <strong>Ideals:</strong>
+      </p>
+      <ul>
+        <li>Charity. I always try to help those in need, no matter what the personal cost.</li>
+        <li>Change. We must help bring about the changes the gods are constantly working in the world.</li>
+        <li>Power. I hope to one day rise to the top of my faith's religious hierarchy.</li>
+        <li>Faith. I trust that my leader will guide my actions, I have faith that if I work hard, things will go well.</li>
+        <li>Aspiration. I seek to prove myself worthy of my leader's favor by matching my actions against his or her teachings.</li>
+      </ul>
+      <p>
+        <strong>Bonds:</strong>
+      </p>
+      <ul>
+        <li>I will someday get revenge on the corrupt faction hierarchy who branded me a heretic.</li>
+        <li>I owe my life to the faction member who took me in when my parents died.</li>
+        <li>Everything I do is for the common people.</li>
+        <li>I will do anything to protect the faction where I served.</li>
+        <li>I seek to preserve a sacred text that my enemies consider heretical and seek to destroy.</li>
+      </ul>
+      <p>
+        <strong>Flaws:</strong>
+      </p>
+      <ul>
+        <li>I put too much trust in those who wield power within my faction's hierarchy.</li>
+        <li>My piety sometimes leads me to blindly trust those that profess faith in my faction.</li>
+        <li>I am inflexible in my thinking.</li>
+        <li>I am suspicious of strangers and expect the worst of them.</li>
+        <li>Once I pick a goal, I become obsessed with it to the detriment of everything else in my life.</li>
+      </ul>
+    </description>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Agent)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_STEALTH"/>
+      <select type="Language" name="Language (Agent)" supports="Standard||Exotic" number="2"/>
+    </rules>
+  </element>
+  <element name="Bounty Hunter" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_BOUNTY_HUNTER">
+    <description>
+      <p>choose 2 proficiencies: deception, insight, persuasion, perception</p>
+      <p>Tool Proficiencies: slicing kit • 1 language(s) of your choice • 200 gold</p>
+      <p>
+        <strong>Personality Traits:</strong>
+      </p>
+      <ul>
+        <li>I am always calm, no matter what the situation. I never raise my voice or let my emotions control me.</li>
+        <li>The first thing I do in a new place is note the locations of everything valuable or where such things could be hidden.</li>
+        <li>I would rather make a new friend than a new enemy.</li>
+        <li>I am incredibly slow to trust. Those who seem the fairest often have the most to hide.</li>
+        <li>I don't pay attention to the risks in a situation. Never tell me the odds.</li>
+        <li>The best way to get me to do something is to tell me I can't do it.</li>
+        <li>I blow up at the slightest insult.</li>
+      </ul>
+      <p>
+        <strong>Ideals:</strong>
+      </p>
+      <ul>
+        <li>Freedom. Chains are meant to be broken, as are those who would forge them.</li>
+        <li>Charity. I steal from the wealthy so that I can help people in need.</li>
+        <li>Greed. I will do whatever it takes to become wealthy.</li>
+        <li>People. I'm loyal to my friends, not to any ideals, and everyone else can jog on for all I care.</li>
+        <li>Redemption. There's a spark of good in everyone.</li>
+      </ul>
+      <p>
+        <strong>Bonds:</strong>
+      </p>
+      <ul>
+        <li>My ill-gotten gains go to support my family.</li>
+        <li>Something important was taken from me, and I aim to steal it back.</li>
+        <li>I will become the greatest thief that ever lived.</li>
+        <li>I'm guilty of a terrible crime. I hope I can redeem myself for it.</li>
+        <li>Someone I loved died because of a mistake I made. That will never happen again.</li>
+      </ul>
+      <p>
+        <strong>Flaws:</strong>
+      </p>
+      <ul>
+        <li>When faced with a choice between money and my friends, I usually choose the money.</li>
+        <li>If there's a plan, I'll forget it. If I don't forget it, I'll ignore it.</li>
+        <li>I have a tell that reveals when I'm lying.</li>
+        <li>I turn tail and run when things look bad.</li>
+        <li>An innocent person is in prison for a crime that I committed. I'm okay with that.</li>
+      </ul>
+    </description>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Bounty Hunter)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERCEPTION"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_SLICING_KIT"/>
+      <select type="Language" name="Language (Bounty Hunter)" supports="Standard||Exotic" number="1"/>
+    </rules>
+  </element>
+  <element name="Criminal" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_CRIMINAL">
+    <description>
+      <p>choose 2 proficiencies: deception, intimidation, sleight of hand, stealth</p>
+      <p>Tool Proficiencies: slicing kit • 150 gold</p>
+      <p>
+        <strong>Personality Traits:</strong>
+      </p>
+      <ul>
+        <li>I am always calm, no matter what the situation. I never raise my voice or let my emotions control me.</li>
+        <li>The first thing I do in a new place is note the locations of everything valuable or where such things could be hidden.</li>
+        <li>I would rather make a new friend than a new enemy.</li>
+        <li>I am incredibly slow to trust. Those who seem the fairest often have the most to hide.</li>
+        <li>I don't pay attention to the risks in a situation. Never tell me the odds.</li>
+        <li>The best way to get me to do something is to tell me I can't do it.</li>
+        <li>I blow up at the slightest insult.</li>
+      </ul>
+      <p>
+        <strong>Ideals:</strong>
+      </p>
+      <ul>
+        <li>Freedom. Chains are meant to be broken, as are those who would forge them.</li>
+        <li>Charity. I steal from the wealthy so that I can help people in need.</li>
+        <li>Greed. I will do whatever it takes to become wealthy.</li>
+        <li>People. I'm loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care.</li>
+        <li>Redemption. There's a spark of good in everyone.</li>
+      </ul>
+      <p>
+        <strong>Bonds:</strong>
+      </p>
+      <ul>
+        <li>My ill-gotten gains go to support my family.</li>
+        <li>Something important was taken from me, and I aim to steal it back.</li>
+        <li>I will become the greatest thief that ever lived.</li>
+        <li>I'm guilty of a terrible crime. I hope I can redeem myself for it.</li>
+        <li>Someone I loved died because of a mistake I made. That will never happen again.</li>
+      </ul>
+      <p>
+        <strong>Flaws:</strong>
+      </p>
+      <ul>
+        <li>When faced with a choice between money and my friends, I usually choose the money.</li>
+        <li>If there's a plan, I'll forget it. If I don't forget it, I'll ignore it.</li>
+        <li>I have a tell that reveals when I'm lying.</li>
+        <li>I turn tail and run when things look bad.</li>
+        <li>An innocent person is in prison for a crime that I committed. I'm okay with that.</li>
+      </ul>
+    </description>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Criminal)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_SLICING_KIT"/>
+    </rules>
+  </element>
+  <element name="Entertainer" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_ENTERTAINER">
+    <description>
+      <p>choose 2 proficiencies: acrobatics, insight, performance, sleight of hand</p>
+      <p>150 gold</p>
+      <p>
+        <strong>Personality Traits:</strong>
+      </p>
+      <ul>
+        <li>Whenever I come to a new place, I collect local rumors and spread gossip.</li>
+        <li>I'm a hopeless romantic, always searching for that special someone.</li>
+        <li>Nobody stays angry at me or around me for long, since I can defuse any amount of tension.</li>
+        <li>I love a good insult, even one directed at me.</li>
+        <li>I get bitter if I'm not the center of attention.</li>
+        <li>I'll settle for nothing less than perfection.</li>
+        <li>I change my mood or my mind as quickly as I change key in a song.</li>
+      </ul>
+      <p>
+        <strong>Ideals:</strong>
+      </p>
+      <ul>
+        <li>Tradition. The stories, legends, and songs of the past must never be forgotten, for they teach us who we are.</li>
+        <li>Creativity. The world is in need of new ideas and bold action.</li>
+        <li>Greed. I'm only in it for the money and fame.</li>
+        <li>People. I like seeing the smiles on people's faces when I perform. That's all that matters.</li>
+        <li>Honesty. Art should reflect the soul; it should come from within and reveal who we really are.</li>
+      </ul>
+      <p>
+        <strong>Bonds:</strong>
+      </p>
+      <ul>
+        <li>Someone stole my precious instrument, and someday I'll get it back.</li>
+        <li>I want to be famous, whatever it takes.</li>
+        <li>I idolize a hero of the old tales and measure my deeds against that person's.</li>
+        <li>I will do anything to prove myself superior to my hated rival.</li>
+        <li>I would do anything for the other members of my old troupe.</li>
+      </ul>
+      <p>
+        <strong>Flaws:</strong>
+      </p>
+      <ul>
+        <li>I'm a sucker for a pretty face.</li>
+        <li>A scandal prevents me from ever going home again. That kind of trouble seems to follow me around.</li>
+        <li>I once satirized a noble who still wants my head. It was a mistake that I will likely repeat.</li>
+        <li>I have trouble keeping my true feelings hidden. My sharp tongue lands me in trouble.</li>
+        <li>Despite my best efforts, I am unreliable to my friends.</li>
+      </ul>
+    </description>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Entertainer)" number="2" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND"/>
+    </rules>
+  </element>
+  <element name="Engineer" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_ENGINEER">
+    <description>
+      <p>choose 2 proficiencies: investigation, sleight of hand, athletics, history</p>
+      <p>Tool Proficiencies: repair kit • 150 gold</p>
+      <p>
+        <strong>Personality Traits:</strong>
+      </p>
+      <ul>
+        <li>I constantly compare my current situation to my past experiments, many of which went terrifyingly wrong.</li>
+        <li>I believe scientific results always comes first.</li>
+        <li>I only speak in short incomplete and concise sentences, as they are optimized for efficient communication.</li>
+        <li>I often get lost in my own thoughts and contemplation, becoming oblivious to my surroundings.</li>
+        <li>I am unable to think logically under great stress, and begin to shout random scientific words.</li>
+        <li>I do not believe in etiquette and disregard social expectations.</li>
+        <li>I was, in fact, grown and raised in a laboratory.</li>
+      </ul>
+      <p>
+        <strong>Ideals:</strong>
+      </p>
+      <ul>
+        <li>Logic. Emotions must not cloud our sense of what is right and true, or our logical thinking.</li>
+        <li>Greed. I'm only in it for the money and fame.</li>
+        <li>Free Thinking. Inquiry and curiosity are the pillars of progress.</li>
+        <li>Live and Let Live. Meddling in the affairs of others only causes trouble.</li>
+        <li>Aspiration. I work hard to be the best there is at my craft.</li>
+      </ul>
+      <p>
+        <strong>Bonds:</strong>
+      </p>
+      <ul>
+        <li>I will get revenge on the criminals that stole my research.</li>
+        <li>The school I studied at is the most important place in the world to me.</li>
+        <li>One day I will return to my home planet and prove that I am the greatest scientist of them all.</li>
+        <li>I believe my research will be the key to saving the life of a loved one.</li>
+        <li>I owe my instructor a great debt for forging me into the person I am today.</li>
+      </ul>
+      <p>
+        <strong>Flaws:</strong>
+      </p>
+      <ul>
+        <li>I fail to understand why people don't understand my technical jargon.</li>
+        <li>I experiment on myself without thinking about the long term consequences.</li>
+        <li>I am paranoid that people are out to steal my research.</li>
+        <li>I believe I work better when under the influence of intoxicants.</li>
+        <li>I work on my research to the point where I ignore my own bodily needs.</li>
+      </ul>
+    </description>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Engineer)" number="2" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND|ID_PROFICIENCY_SKILL_HISTORY"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_REPAIR_KIT"/>
+    </rules>
+  </element>
+  <element name="Jedi" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_JEDI">
+    <description>
+      <p>choose 2 proficiencies: insight, investigation, history, persuasion, arcana</p>
+      <p>1 language(s) of your choice</p>
+      <p>
+        <strong>Personality Traits:</strong>
+      </p>
+      <ul>
+        <li>I can find common ground between the fiercest enemies, empathizing with them and always working towards peace.</li>
+        <li>I see omens in every event and action. The Force tries to speak to us, we just need to listen</li>
+        <li>Nothing can shake my optimistic attitude.</li>
+        <li>I quote (or misquote) sacred Jedi texts and proverbs in almost every situation.</li>
+        <li>I am tolerant (or intolerant) of those who don't support the Jedi.</li>
+        <li>I've enjoyed fine food, drink, and high society. Rough living grates on me.</li>
+        <li>I've spent so long in the Jedi temple that I have little practical experience dealing with people in the world.</li>
+      </ul>
+      <p>
+        <strong>Ideals:</strong>
+      </p>
+      <ul>
+        <li>Charity. I always try to help those in need, no matter what the personal cost.</li>
+        <li>Change. We must help bring about the changes the Force is constantly working in the world.</li>
+        <li>Power. I hope to one day rise to the rank of Jedi Master.</li>
+        <li>Faith. I trust that the Force will guide my actions; I have faith that if I work hard, things will go well.</li>
+        <li>Aspiration. I seek to prove myself worthy of the Force by matching my actions against the Jedi teachings.</li>
+      </ul>
+      <p>
+        <strong>Bonds:</strong>
+      </p>
+      <ul>
+        <li>I will someday get revenge on those who razed my temple.</li>
+        <li>I owe my life to the Jedi who took me in when my parents died.</li>
+        <li>Everything I do is for the common people.</li>
+        <li>I will do anything to protect the temple where I served.</li>
+        <li>I seek to preserve a sacred text that my enemies seek to destroy.</li>
+      </ul>
+      <p>
+        <strong>Flaws:</strong>
+      </p>
+      <ul>
+        <li>I put too much trust in those who wield power within my temple's hierarchy.</li>
+        <li>My piety sometimes leads me to blindly trust those that profess faith in the Force.</li>
+        <li>I am inflexible in my thinking.</li>
+        <li>I am suspicious of strangers and expect the worst of them.</li>
+        <li>Once I pick a goal, I become obsessed with it to the detriment of everything else in my life.</li>
+      </ul>
+    </description>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Jedi)" number="2" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_ARCANA"/>
+      <select type="Language" name="Language (Jedi)" supports="Standard||Exotic" number="1"/>
+    </rules>
+  </element>
+  <element name="Mandalorian" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_MANDALORIAN">
+    <description>
+      <p>choose 2 proficiencies: athletics, intimidation, survival, history</p>
+      <p>Languages: mando'a language • Equipment: choose clan, hover pack proficiency • 200 gold</p>
+      <p>
+        <strong>Personality Traits:</strong>
+      </p>
+      <ul>
+        <li>I always put my clan first.</li>
+        <li>I follow the Resol'nare to the letter.</li>
+        <li>I love a good spar.</li>
+        <li>I enjoy traveling the galaxy.</li>
+        <li>I keep a small trophy on me to remind me of a past victory.</li>
+        <li>I view the force as dishonorable in combat.</li>
+        <li>I've seen the horrors of battle and try to prevent it.</li>
+      </ul>
+      <p>
+        <strong>Ideals:</strong>
+      </p>
+      <ul>
+        <li>Power. I strive to be the best warrior, no matter who stands in my way.</li>
+        <li>Respect. I have earned the respect of many, and I intend to keep it.</li>
+        <li>Freedom. I enjoy having the ability to do whatever I want.</li>
+        <li>Comradery. I'll put everything on the line for those dear to me.</li>
+        <li>Aspiration. I'll succeed in my goals, it just takes time and effort.</li>
+      </ul>
+      <p>
+        <strong>Bonds:</strong>
+      </p>
+      <ul>
+        <li>Honor is everything to me.</li>
+        <li>I will lay down my life for those beside me.</li>
+        <li>I must keep the traditions of my ancestors alive.</li>
+        <li>No matter where I go, Mandalore is my home.</li>
+        <li>In death, I will find glory.</li>
+      </ul>
+      <p>
+        <strong>Flaws:</strong>
+      </p>
+      <ul>
+        <li>I have no respect for anyone who flees. Cowardice is unacceptable.</li>
+        <li>I don't see much use in talking, a blaster is all I need to make my point.</li>
+        <li>I stick to my traditions no matter what, even at the cost of others.</li>
+        <li>I retreated once, and I've regretted it ever since.</li>
+        <li>I value a victory regardless of the ethics behind the victory.</li>
+      </ul>
+    </description>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Mandalorian)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_HISTORY"/>
+      <grant type="Language" id="ID_LANGUAGE_MANDOA_LANGUAGE"/>
+    </rules>
+  </element>
+  <element name="Mercenary" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_MERCENARY">
+    <description>
+      <p>choose 2 proficiencies: athletics, investigation, deception, intimidation</p>
+      <p>1 language(s) of your choice</p>
+      <p>
+        <strong>Personality Traits:</strong>
+      </p>
+      <ul>
+        <li>I have a crude sense of humor.</li>
+        <li>I face problems head-on. A simple, direct solution is the best path to success.</li>
+        <li>I find it good luck to have a flask of ale on me even when the most of my other belongings are gone.</li>
+        <li>I ask a lot of questions.</li>
+        <li>I never pass up a friendly wager.</li>
+        <li>I am always polite and respectful when speaking to those above my station.</li>
+        <li>I like a job well done, especially if I'm not the one doing it.</li>
+      </ul>
+      <p>
+        <strong>Ideals:</strong>
+      </p>
+      <ul>
+        <li>Fairness. We all did the work. it is only right that everyone gets a share of the reward.</li>
+        <li>Live and Let Live. You may not have a family left, but your enemy may. A little compassion goes a long way.</li>
+        <li>Measure of Last Resort. Sometimes we have to do things that we REALLY don't want to do, but we must remember that we only do them because we have to.</li>
+        <li>Debts. I never leave a favor left undone and nor will I leave those whom owe me favors on the hook.</li>
+        <li>Aspiration. I have heard a tale of a legendary person of my class. I strive to be more like them.</li>
+      </ul>
+      <p>
+        <strong>Bonds:</strong>
+      </p>
+      <ul>
+        <li>I am with friends whom I trust with my life as they should trust me with theirs.</li>
+        <li>I come from a family that dislikes weaknesses, so I push myself to know my weaknesses.</li>
+        <li>My life is my honor. I shall, until death, shape my life to what I want it to be.</li>
+        <li>Without a purpose in the world, I find myself to be broken which I do not like.</li>
+        <li>I secretly pursue a love interest that is forbidden by a family whether it is my own or my love's family.</li>
+      </ul>
+      <p>
+        <strong>Flaws:</strong>
+      </p>
+      <ul>
+        <li>I can't tell a lie for the life of me.</li>
+        <li>I judge too easily by special appearance and pride.</li>
+        <li>I am almost always carrying some ale in with my gear.</li>
+        <li>I believe that I am the only skilled person of the group and am even open about it.</li>
+        <li>I will never let a comrade stand alone, even if it gets me killed.</li>
+      </ul>
+    </description>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Mercenary)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+      <select type="Language" name="Language (Mercenary)" supports="Standard||Exotic" number="1"/>
+    </rules>
+  </element>
+  <element name="Noble" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_NOBLE">
+    <description>
+      <p>choose 2 proficiencies: deception, insight, history, persuasion</p>
+      <p>1 language(s) of your choice • 250 gold</p>
+      <p>
+        <strong>Personality Traits:</strong>
+      </p>
+      <ul>
+        <li>The common folk love me for my kindness and generosity.</li>
+        <li>No one could doubt by looking at my regal bearing that I am a cut above the unwashed masses.</li>
+        <li>I take great pains to always look my best and follow the latest fashions.</li>
+        <li>I don't like to get my hands dirty, and I won't be caught dead in unsuitable accommodations.</li>
+        <li>Despite my noble birth, I do not place myself above other folk. We all have the same blood.</li>
+        <li>My favor, once lost, is lost forever.</li>
+        <li>If you do me an injury, I will crush you, ruin your name, and salt your fields.</li>
+      </ul>
+      <p>
+        <strong>Ideals:</strong>
+      </p>
+      <ul>
+        <li>Responsibility. It is my duty to respect the authority of those above me, just as those below me must respect mine.</li>
+        <li>Independence. I must prove that I can handle myself without the coddling of my family.</li>
+        <li>Power. If I can attain more power, no one will tell me what to do.</li>
+        <li>Family. Blood runs thicker than water.</li>
+        <li>Noble Obligation. It is my duty to protect and care for the people beneath me.</li>
+      </ul>
+      <p>
+        <strong>Bonds:</strong>
+      </p>
+      <ul>
+        <li>My house's alliance with another noble family must be sustained at all costs.</li>
+        <li>Nothing is more important than the other members of my family.</li>
+        <li>I am in love with the heir of a family that my family despises.</li>
+        <li>My loyalty to my sovereign is unwavering.</li>
+        <li>The common folk must see me as a hero of the people.</li>
+      </ul>
+      <p>
+        <strong>Flaws:</strong>
+      </p>
+      <ul>
+        <li>I hide a truly scandalous secret that could ruin my family forever.</li>
+        <li>I too often hear veiled insults and threats in every word addressed to me, and I'm quick to anger.</li>
+        <li>I have an insatiable desire for carnal pleasures.</li>
+        <li>In fact, the world does revolve around me.</li>
+        <li>By my words and actions, I often bring shame to my family.</li>
+      </ul>
+    </description>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Noble)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_HISTORY"/>
+      <select type="Language" name="Language (Noble)" supports="Standard||Exotic" number="1"/>
+    </rules>
+  </element>
+  <element name="Nomad" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_NOMAD">
+    <description>
+      <p>choose 2 proficiencies: animal handling, athletics, survival, medicine</p>
+      <p>1 language(s) of your choice • 100 gold</p>
+      <p>
+        <strong>Personality Traits:</strong>
+      </p>
+      <ul>
+        <li>I watch over my friends as if they were a litter of newborn pups.</li>
+        <li>I once ran twenty-five miles without stopping to warn my clan of an approaching horde. I'd do it again if I had to.</li>
+        <li>I have a lesson for every situation, drawn from observing nature.</li>
+        <li>I place no stock in wealthy or well-mannered folk. Money and manners won't save you from a hungry rancor.</li>
+        <li>I'm always picking things up, absently fiddling with them, and sometimes accidentally breaking them.</li>
+        <li>I feel far more comfortable around animals than people.</li>
+        <li>I was, in fact, raised by wampas.</li>
+      </ul>
+      <p>
+        <strong>Ideals:</strong>
+      </p>
+      <ul>
+        <li>Greater Good. It is each person's responsibility to make the most happiness for the whole tribe.</li>
+        <li>Honor. If I dishonor myself, I dishonor my whole clan.</li>
+        <li>Might. The strongest are meant to rule.</li>
+        <li>Nature. The natural world is more important than all the constructs of civilization.</li>
+        <li>Glory. I must earn glory in battle, for myself and my clan.</li>
+      </ul>
+      <p>
+        <strong>Bonds:</strong>
+      </p>
+      <ul>
+        <li>An injury to the unspoiled wilderness of my home is an injury to me.</li>
+        <li>I will bring terrible wrath down on the Darkdoers who destroyed my homeland.</li>
+        <li>I am the last of my tribe, and it is up to me to ensure their names enter legend.</li>
+        <li>I suffer awful visions of a coming disaster and will do anything to prevent it.</li>
+        <li>It is my duty to provide children to sustain my tribe.</li>
+      </ul>
+      <p>
+        <strong>Flaws:</strong>
+      </p>
+      <ul>
+        <li>There's no room for caution in a life lived to the fullest.</li>
+        <li>I remember every insult I've received and nurse a silent resentment toward anyone who's ever wronged me.</li>
+        <li>I am slow to trust members of other species, tribes, and societies.</li>
+        <li>Violence is my answer to almost any challenge.</li>
+        <li>Don't expect me to save those who can't save themselves. It is nature's way that the strong thrive and the weak perish.</li>
+      </ul>
+    </description>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Nomad)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_MEDICINE"/>
+      <select type="Language" name="Language (Nomad)" supports="Standard||Exotic" number="1"/>
+    </rules>
+  </element>
+  <element name="Pirate" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_PIRATE">
+    <description>
+      <p>choose 2 proficiencies: athletics, deception, intimidation, sleight of hand</p>
+      <p>Tool Proficiencies: slicing kit • 50 gold</p>
+      <p>
+        <strong>Personality Traits:</strong>
+      </p>
+      <ul>
+        <li>Whether the credits comes from the split of the spoils or from a side wager, I'll get my hands on it.</li>
+        <li>When my blood gets up, my swearing could boil the icy tundra of Hoth.</li>
+        <li>I enjoy spreading the tales of my exploits, no matter who hears.</li>
+        <li>I never let witnesses escape from a raid.</li>
+        <li>I take what I need, but I don't kill without reason.</li>
+        <li>I always have an exit planned.</li>
+        <li>I assume everyone else wants to take what I have.</li>
+      </ul>
+      <p>
+        <strong>Ideals:</strong>
+      </p>
+      <ul>
+        <li>Adventure. I'm far from home, and everything is strange and wonderful!</li>
+        <li>Greater Good. I raid to weaken the Empire that threatens my people, but I don't steal from civilians.</li>
+        <li>Strength. The weak exist to feed the strong, and I am strong.</li>
+        <li>Crew. A ship is nothing without her crew. Protect your mates.</li>
+        <li>Ambition. One day I will be so much more than a captain.</li>
+      </ul>
+      <p>
+        <strong>Bonds:</strong>
+      </p>
+      <ul>
+        <li>My ill-gotten gains go to support my family.</li>
+        <li>Everything I do is for the good of my people.</li>
+        <li>My ship and many of her crew were lost to treachery, and I won't rest until I discover who was behind it.</li>
+        <li>My ship comes first, and all other loyalties simply pale in comparison.</li>
+        <li>A crew member of a ship we raided saved my life, and I don't know how to resolve that debt.</li>
+      </ul>
+      <p>
+        <strong>Flaws:</strong>
+      </p>
+      <ul>
+        <li>When faced with a choice between money and my friends, I usually choose the money.</li>
+        <li>I was drunk on watch when my ship was lost to an ambush. I can't set the shame aside.</li>
+        <li>I feel I'm entitled to a greater share of the spoils, no matter the circumstances.</li>
+        <li>I won't let myself be captured. If a raid goes sour, I'm the first to run for cover.</li>
+        <li>I get lost in the thrill of the raid and can't focus on the details of a plan.</li>
+      </ul>
+    </description>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Pirate)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_SLICING_KIT"/>
+    </rules>
+  </element>
+  <element name="Scientist" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_SCIENTIST">
+    <description>
+      <p>choose 2 proficiencies: history, medicine, nature, investigation</p>
+      <p>Tool Proficiencies: slicing kit • 1 language(s) of your choice • 100 gold</p>
+      <p>
+        <strong>Personality Traits:</strong>
+      </p>
+      <ul>
+        <li>I constantly compare my current situation to my past experiments, many of which went terrifyingly wrong.</li>
+        <li>I believe scientific results always comes first.</li>
+        <li>I only speak in short incomplete and concise sentences, as they are optimized for efficient communication.</li>
+        <li>I often get lost in my own thoughts and contemplation, becoming oblivious to my surroundings.</li>
+        <li>I am unable to think logically under great stress, and begin to shout random scientific words.</li>
+        <li>I do not believe in etiquette and disregard social expectations.</li>
+        <li>I was, in fact, grown and raised in a laboratory.</li>
+      </ul>
+      <p>
+        <strong>Ideals:</strong>
+      </p>
+      <ul>
+        <li>Logic. Emotions must not cloud our sense of what is right and true, or our logical thinking.</li>
+        <li>Greed. I'm only in it for the money and fame.</li>
+        <li>Free Thinking. Inquiry and curiosity are the pillars of progress.</li>
+        <li>Live and Let Live. Meddling in the affairs of others only causes trouble.</li>
+        <li>Aspiration. I work hard to be the best there is at my craft.</li>
+      </ul>
+      <p>
+        <strong>Bonds:</strong>
+      </p>
+      <ul>
+        <li>I will get revenge on the criminals that stole my research.</li>
+        <li>The school I studied at is the most important place in the world to me.</li>
+        <li>One day I will return to my home planet and prove that I am the greatest scientist of them all.</li>
+        <li>I believe my research will be the key to saving the life of a loved one.</li>
+        <li>I owe my instructor a great debt for forging me into the person I am today.</li>
+      </ul>
+      <p>
+        <strong>Flaws:</strong>
+      </p>
+      <ul>
+        <li>I fail to understand why people don't understand my technical jargon.</li>
+        <li>I experiment on myself without thinking about the long term consequences.</li>
+        <li>I am paranoid that people are out to steal my research.</li>
+        <li>I believe I work better when under the influence of intoxicants.</li>
+        <li>I work on my research to the point where I ignore my own bodily needs.</li>
+      </ul>
+    </description>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Scientist)" number="2" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_SLICING_KIT"/>
+      <select type="Language" name="Language (Scientist)" supports="Standard||Exotic" number="1"/>
+    </rules>
+  </element>
+  <element name="Scoundrel" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_SCOUNDREL">
+    <description>
+      <p>choose 2 proficiencies: deception, insight, performance, sleight of hand</p>
+      <p>Tool Proficiencies: forgery kit • 150 gold</p>
+      <p>
+        <strong>Personality Traits:</strong>
+      </p>
+      <ul>
+        <li>I have a joke for every occasion, especially occasions where humor is inappropriate.</li>
+        <li>Flattery is my preferred trick for getting what I want.</li>
+        <li>I'm a born gambler who can't resist taking a risk for a potential payoff.</li>
+        <li>I lie about almost everything, even when there's no good reason to.</li>
+        <li>Sarcasm and insults are my weapons of choice.</li>
+        <li>I keep multiple symbols on me and invoke whatever power might come in useful at any given moment.</li>
+        <li>I pocket anything I see that might have some value.</li>
+      </ul>
+      <p>
+        <strong>Ideals:</strong>
+      </p>
+      <ul>
+        <li>Fairness. I never target people who can't afford to lose a few creds.</li>
+        <li>Charity. I distribute the money I acquire to the people who really need it.</li>
+        <li>Creativity. I never run the same con twice.</li>
+        <li>Friendship. Material goods come and go. Bonds of friendship last forever.</li>
+        <li>Aspiration. I'm determined to make something of myself.</li>
+      </ul>
+      <p>
+        <strong>Bonds:</strong>
+      </p>
+      <ul>
+        <li>I owe everything to my mentor a horrible person who's probably rotting in jail somewhere.</li>
+        <li>Somewhere out there, I have a child who doesn't know me. I'm making the world better for him or her.</li>
+        <li>I come from a noble family, and one day I'll reclaim my lands and title from those who stole them from me.</li>
+        <li>A powerful person killed someone I love. Some day soon, I'll have my revenge.</li>
+        <li>I swindled and ruined a person who didn't deserve it, and I seek to atone for my misdeeds.</li>
+      </ul>
+      <p>
+        <strong>Flaws:</strong>
+      </p>
+      <ul>
+        <li>I'm always in debt. I spend my ill-gotten gains on decadent luxuries faster than I bring them in.</li>
+        <li>I'm convinced that no one could ever fool me the way I fool others.</li>
+        <li>I'm too greedy for my own good. I can't resist taking a risk if there's money involved.</li>
+        <li>I can't resist swindling people who are more powerful than me.</li>
+        <li>I hate to admit it and will hate myself for it, but I'll run and preserve my own hide if the going gets tough.</li>
+      </ul>
+    </description>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Scoundrel)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_FORGERY_KIT"/>
+    </rules>
+  </element>
+  <element name="Sith" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_SITH">
+    <description>
+      <p>choose 2 proficiencies: deception, insight, intimidation, history, arcana</p>
+      <p>1 language(s) of your choice</p>
+      <p>
+        <strong>Personality Traits:</strong>
+      </p>
+      <ul>
+        <li>I seek power above all else.</li>
+        <li>I prefer using a lightsaber to solve my problems.</li>
+        <li>I have a plan for any situation.</li>
+        <li>I believe everyone is beneath me.</li>
+        <li>I prefer to let someone else do my dirty work.</li>
+        <li>Hatred and anger drive every decision I make.</li>
+        <li>Lying and scheming are second nature to me.</li>
+      </ul>
+      <p>
+        <strong>Ideals:</strong>
+      </p>
+      <ul>
+        <li>Disdain. I never try to help those in need, regardless of how simple it would be.</li>
+        <li>Knowledge. The path to power and self-improvement is through knowledge.</li>
+        <li>Power. I hope to one day rise to the rank of Dark Lord of the Sith.</li>
+        <li>Might. If I become strong, I can take what I want what I deserve.</li>
+        <li>Aspiration. I'll succeed in my goals at any cost.</li>
+      </ul>
+      <p>
+        <strong>Bonds:</strong>
+      </p>
+      <ul>
+        <li>I care only about myself.</li>
+        <li>I owe my life to the Sith who took me in when my parents died.</li>
+        <li>My enemies will be defeated, even if it costs me my life.</li>
+        <li>Someone I love was killed. Some day soon, I'll have my revenge.</li>
+        <li>My loyalty to my master is unwavering.</li>
+      </ul>
+      <p>
+        <strong>Flaws:</strong>
+      </p>
+      <ul>
+        <li>I put too much trust in those who rule over me.</li>
+        <li>I will never fully trust anyone other than myself.</li>
+        <li>I am inflexible in my thinking.</li>
+        <li>My pride will probably lead to my destruction.</li>
+        <li>Failure frightens me, and I get desperate if I think I might fail.</li>
+      </ul>
+    </description>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Sith)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_ARCANA"/>
+      <select type="Language" name="Language (Sith)" supports="Standard||Exotic" number="1"/>
+    </rules>
+  </element>
+  <element name="Smuggler" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_SMUGGLER">
+    <description>
+      <p>choose 2 proficiencies: deception, sleight of hand, stealth, acrobatics</p>
+      <p>150 gold</p>
+      <p>
+        <strong>Personality Traits:</strong>
+      </p>
+      <ul>
+        <li>I always keep my wares close to me, you never know who might stumble across them otherwise.</li>
+        <li>The best way to hide is out in the open.</li>
+        <li>I'm a terrible gossip.</li>
+        <li>Being seen with any unsavory figures is a sure way to undermine my work, which is why I work out of sight.</li>
+        <li>Deflecting questions has become second nature to me, so I rarely answer straight.</li>
+        <li>I have dozens of identities and live in constant fear of answering to the wrong name.</li>
+        <li>I act irrationally confident in the face of danger, nobody suspects anything when you seem like you're in charge.</li>
+      </ul>
+      <p>
+        <strong>Ideals:</strong>
+      </p>
+      <ul>
+        <li>Ruthless. I will rise to the top of the heap by any means necessary.</li>
+        <li>Friendship. My associates are dear to me, and I want them to rise with me when I hit it big.</li>
+        <li>Dauntless. No border crossing or bribe is too difficult- that's just the coward's way of saying exciting!</li>
+        <li>Greater Good. I work for a greater cause, and ply my trade only in service to it.</li>
+        <li>Unperturbed. I only want to make a living for myself, and smuggling is just an edge I can use to do so.</li>
+      </ul>
+      <p>
+        <strong>Bonds:</strong>
+      </p>
+      <ul>
+        <li>I never wanted to be a criminal, but it pays the bills.</li>
+        <li>A bloodthirsty pirate stole a shipment from me and killed a dear friend of mine. I will have my vengeance.</li>
+        <li>Someone I cared about discovered my profession and has publicly denounced me, and I am caught between protecting my reputation and restoring our relationship.</li>
+        <li>My love interest is someone who once stole from right under my nose- but they have no idea who I am or how much I admire them for their accomplishment.</li>
+        <li>My business partners are closer to me than my family.</li>
+      </ul>
+      <p>
+        <strong>Flaws:</strong>
+      </p>
+      <ul>
+        <li>I'm so charismatic that sometimes I woo myself. Who am I, Narcissus?</li>
+        <li>Money is my greatest motivator. I'll do almost anything given enough of it, even if I'll regret it later.</li>
+        <li>I would betray anyone to save my own skin.</li>
+        <li>I detach myself from the results of my actions in order to sleep better at night.</li>
+        <li>Someone who knows me well might call me "two-faced" but those who don't have no idea what hit 'em.</li>
+      </ul>
+    </description>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Smuggler)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND"/>
+    </rules>
+  </element>
+  <element name="Soldier" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_SOLDIER">
+    <description>
+      <p>choose 2 proficiencies: athletics, intimidation, persuasion, investigation</p>
+      <p>1 language(s) of your choice • 100 gold</p>
+      <p>
+        <strong>Personality Traits:</strong>
+      </p>
+      <ul>
+        <li>I'm haunted by memories of war. I can't get the images of violence out of my mind.</li>
+        <li>I've lost too many friends, and I'm slow to make new ones.</li>
+        <li>I'm full of inspiring and cautionary tales from my military experience relevant to almost every combat situation.</li>
+        <li>I can stare down a hell hound without flinching.</li>
+        <li>I enjoy being strong and like breaking things.</li>
+        <li>I have a crude sense of humor.</li>
+        <li>I face problems head-on. A simple, direct solution is the best path to success.</li>
+      </ul>
+      <p>
+        <strong>Ideals:</strong>
+      </p>
+      <ul>
+        <li>Responsibility. I do what I must and obey just authority.</li>
+        <li>Independence. When people follow orders blindly, they embrace a kind of tyranny.</li>
+        <li>Might. In life as in war, the stronger force wins.</li>
+        <li>Live and Let Live. Ideals aren't worth killing over or going to war for.</li>
+        <li>Nation. My city, nation, or people are all that matter.</li>
+      </ul>
+      <p>
+        <strong>Bonds:</strong>
+      </p>
+      <ul>
+        <li>Someone saved my life on the battlefield. To this day, I will never leave a friend behind.</li>
+        <li>My honor is my life.</li>
+        <li>I'll never forget the crushing defeat my company suffered or the enemies who dealt it.</li>
+        <li>Those who fight beside me are those worth dying for.</li>
+        <li>I fight for those who cannot fight for themselves.</li>
+      </ul>
+      <p>
+        <strong>Flaws:</strong>
+      </p>
+      <ul>
+        <li>I have little respect for anyone who is not a proven warrior.</li>
+        <li>I made a terrible mistake in battle cost many lives and I would do anything to keep that mistake secret.</li>
+        <li>My hatred of my enemies is blind and unreasoning.</li>
+        <li>I obey the law, even if the law causes misery.</li>
+        <li>I'd rather eat my armor than admit when I'm wrong.</li>
+      </ul>
+    </description>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Soldier)" number="2" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+      <select type="Language" name="Language (Soldier)" supports="Standard||Exotic" number="1"/>
+    </rules>
+  </element>
+</elements>

@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <element id="ID_CLASS_KNIGHT" name="Knight" type="Class" source="SW-MSV-Edition">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Hit Points. Hit Dice:</em>
+           1d10 per Knight level. Hit Points at 1st Level: 10 + your Constitution modifier. Hit Points at Higher Levels: 1d10 (or 6) + your Constitution modifier per Knight level after 1st.
+        </strong>
+      </p>
+      <p class="indent">
+        <strong>
+          <em>Proficiencies. Armor:</em>
+           Light Armour, Medium Armour, Shields. Weapons: Simple Blasters, Simple and Martial Lightweapons, Simple and Martial Vibroweapons. Saving Throws: Wisdom and Charisma.
+        </strong>
+      </p>
+      <p class="indent">
+        <strong>
+          <em>Skills.</em>
+           Choose 2 from Athletics, Intimidation, Persuasion, Insight, Performance.
+        </strong>
+      </p>
+      <p class="indent">
+        <strong>
+          <em>Equipment.</em>
+           You start with 7d4 × 100 Gold.
+        </strong>
+      </p>
+      <p class="indent">
+        <strong>
+          <em>Spell Save DC.</em>
+           8 + Charisma modifier + Proficiency Bonus.
+        </strong>
+      </p>
+      <p class="indent">
+        <strong>
+          <em>Focus.</em>
+           Focus is the resource you use to activate certain abilities. Functions identically to a Monk's Ki Points. You always start with max Focus after any rest.
+        </strong>
+      </p>
+    </description>
+    <setters>
+      <set name="hd">d10</set>
+    </setters>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA"/>
+      <select type="Proficiency" name="Skill Proficiency (Knight)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE"/>
+      <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_FOCUS" level="1"/>
+      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_FORCE_PUSH" level="1"/>
+      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_FORCE_PULL" level="1"/>
+      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_VALOR" level="1"/>
+      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_MINOR_TELEKINESIS" level="1"/>
+      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_MEDITATION" level="1"/>
+      <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_LIGHTSABER_FORM" level="2"/>
+      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_SABER_THROW" level="2"/>
+      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_FORCE_RESOLUTION" level="3"/>
+      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_MIND_TRICK" level="4"/>
+      <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_EXTRA_ATTACK" level="5"/>
+      <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_AURA_OF_PRESENCE" level="6"/>
+      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_BLINDING_STRIKE" level="7"/>
+      <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_DEEP_MEDITATION" level="9"/>
+      <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_AURA_OF_COURAGE" level="10"/>
+      <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_FORCE_EMPOWERED_STRIKES" level="11"/>
+      <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_IMPROVED_FORCE_RESOLUTION" level="14"/>
+      <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_BATTLE_MEDITATION" level="15"/>
+      <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_AURA_OF_PROTECTION" level="17"/>
+      <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_AURA_EXPANSION" level="18"/>
+      <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_AURA_OF_VIGOR" level="20"/>
+      <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_LIGHTSABER_FORM" level="3"/>
+    </rules>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_FOCUS" name="Focus" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Focus is the resource you use to activate certain abilities. Functions identically to a Monk's Ki Points. You always start with max Focus after any rest.</p>
+      <p>Your Focus increases as you gain levels.</p>
+    </description>
+    <sheet>
+      <description>You have {{focus:max}} Focus points.</description>
+    </sheet>
+    <rules>
+      <stat name="focus:max" value="3" level="1"/>
+      <stat name="focus:max" value="5" level="2"/>
+      <stat name="focus:max" value="5" level="3"/>
+      <stat name="focus:max" value="5" level="4"/>
+      <stat name="focus:max" value="5" level="5"/>
+      <stat name="focus:max" value="5" level="6"/>
+      <stat name="focus:max" value="6" level="7"/>
+      <stat name="focus:max" value="6" level="8"/>
+      <stat name="focus:max" value="6" level="9"/>
+      <stat name="focus:max" value="6" level="10"/>
+      <stat name="focus:max" value="7" level="11"/>
+      <stat name="focus:max" value="7" level="12"/>
+      <stat name="focus:max" value="7" level="13"/>
+      <stat name="focus:max" value="7" level="14"/>
+      <stat name="focus:max" value="7" level="15"/>
+      <stat name="focus:max" value="8" level="16"/>
+      <stat name="focus:max" value="8" level="17"/>
+      <stat name="focus:max" value="8" level="18"/>
+      <stat name="focus:max" value="8" level="19"/>
+      <stat name="focus:max" value="9" level="20"/>
+    </rules>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_MEDITATION" name="Meditation" type="Spell" level="0" source="SW-MSV-Edition">
+    <supports/>
+    <description>
+      <p>/ ends your turn; Meditate on the battlefield to gain 2 Focus when it is your turn again. While in this state,you can't take Reactions and you are considered Incapacitated.</p>
+    </description>
+    <sheet>
+      <description>/ ends your turn; Meditate on the battlefield to gain 2 Focus when it is your turn again. While in this state,you can't take Reactions and you are considered Incapacitated.</description>
+    </sheet>
+    <setters>
+      <set name="keywords"/>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent"/>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_FORCE_PUSH" name="Force Push" type="Spell" level="0" source="SW-MSV-Edition">
+    <supports/>
+    <description>
+      <p>Use the Force to push someone away. Each creature in a 15-foot line must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and are pushed 10 feet away. On a successful save, the creature takes half damage and isn't pushed. Per extra Focus spent to a max of half your Knight level (rounded up), the ability deals an additional 1d8 kinetic damage and pushes 5 extra feet.</p>
+    </description>
+    <sheet>
+      <description>Use the Force to push someone away. Each creature in a 15-foot line must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and are pushed 10 feet away. On a successful save, the creature takes half damage and isn't pushed. Per extra Focus spent to a max of half your Knight level (rounded up), the ability deals an additional 1d8 kinetic damage and pushes 5 extra feet.</description>
+    </sheet>
+    <setters>
+      <set name="keywords"/>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 Action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent"/>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_FORCE_PULL" name="Force Pull" type="Spell" level="0" source="SW-MSV-Edition">
+    <supports/>
+    <description>
+      <p>Use the Force to pull someone toward you. Each creature within a 15-foot cone originating from you must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and are pulled 10 feet closer. On a successful save, the creature takes half damage and isn't pulled. Per extra Focus spent to a max of half your Knight level (rounded up), the ability deals an additional 1d8 kinetic damage, increases the cone size by 5 feet, and pulls creatures an additional 5 feet.</p>
+    </description>
+    <sheet>
+      <description>Use the Force to pull someone toward you. Each creature within a 15-foot cone originating from you must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and are pulled 10 feet closer. On a successful save, the creature takes half damage and isn't pulled. Per extra Focus spent to a max of half your Knight level (rounded up), the ability deals an additional 1d8 kinetic damage, increases the cone size by 5 feet, and pulls creatures an additional 5 feet.</description>
+    </sheet>
+    <setters>
+      <set name="keywords"/>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 Action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent"/>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_VALOR" name="Valor" type="Spell" level="0" source="SW-MSV-Edition">
+    <supports/>
+    <description>
+      <p>You give courage to up to 3 creatures within range. The target can roll a d4 and add the number rolled to an attack roll or saving throw. Per extra Focus spent to a max of half your Knight level (rounded up), you can target one additional creature.</p>
+    </description>
+    <sheet>
+      <description>You give courage to up to 3 creatures within range. The target can roll a d4 and add the number rolled to an attack roll or saving throw. Per extra Focus spent to a max of half your Knight level (rounded up), you can target one additional creature.</description>
+    </sheet>
+    <setters>
+      <set name="keywords"/>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 Action</set>
+      <set name="duration">Concentration, Up to 10 turns</set>
+      <set name="range">30 feet</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent"/>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_MINOR_TELEKINESIS" name="Minor Telekinesis" type="Spell" level="0" source="SW-MSV-Edition">
+    <supports/>
+    <description>
+      <p>You use the Force to manipulate a small or medium object, or a small creature, that you can see within range. You make an ability check using your Force ability, contested by the target’s Strength check. On a success, you may suspend and/or move up to 30 feet or throw the target. If you choose to suspend the target, it remains suspended for the duration. If you throw the target, make a ranged Force attack with a range of 30/60 feet. On a hit, the target you throw at takes kinetic damage based on what is thrown: Small object: 2d4 kinetic damage, Medium object: 2d6 kinetic damage, Small creature: 1d4 kinetic damage. If a creature is thrown, the thrown small creature takes 1d8 + your Force ability modifier kinetic damage.</p>
+    </description>
+    <sheet>
+      <description>You use the Force to manipulate a small or medium object, or a small creature, that you can see within range. You make an ability check using your Force ability, contested by the target’s Strength check. On a success, you may suspend and/or move up to 30 feet or throw the target. If you choose to suspend the target, it remains suspended for the duration. If you throw the target, make a ranged Force attack with a range of 30/60 feet. On a hit, the target you throw at takes kinetic damage based on what is thrown: Small object: 2d4 kinetic damage, Medium object: 2d6 kinetic damage, Small creature: 1d4 kinetic damage. If a creature is thrown, the thrown small creature takes 1d8 + your Force ability modifier kinetic damage.</description>
+    </sheet>
+    <setters>
+      <set name="keywords"/>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 Action</set>
+      <set name="duration">Concentration, Up to 1 round</set>
+      <set name="range">45 feet</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent"/>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_SABER_THROW" name="Saber Throw" type="Spell" level="0" source="SW-MSV-Edition">
+    <supports/>
+    <description>
+      <p>Make a ranged attack of 30/60 with your melee weapon using your Dexterity modifier for attack and damage rolls. If you are proficient with you weapon you add your proficiency bonus to the attack roll. Per extra Focus spent to a max of half your Knight level (rounded up), your range increases by 10/15 feet.</p>
+    </description>
+    <sheet>
+      <description>Make a ranged attack of 30/60 with your melee weapon using your Dexterity modifier for attack and damage rolls. If you are proficient with you weapon you add your proficiency bonus to the attack roll. Per extra Focus spent to a max of half your Knight level (rounded up), your range increases by 10/15 feet.</description>
+    </sheet>
+    <setters>
+      <set name="keywords"/>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent"/>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_FORCE_RESOLUTION" name="Force Resolution" type="Spell" level="0" source="SW-MSV-Edition">
+    <supports/>
+    <description>
+      <p>When Incapacitated, you can use this ability to end that condition.</p>
+    </description>
+    <sheet>
+      <description>When Incapacitated, you can use this ability to end that condition.</description>
+    </sheet>
+    <setters>
+      <set name="keywords"/>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 Bonus Action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent"/>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_MIND_TRICK" name="Mind Trick" type="Spell" level="0" source="SW-MSV-Edition">
+    <supports/>
+    <description>
+      <p>You wave your hand and speak a simple command to a creature you can see within range. The target makes a Wisdom saving throw. On a failed save, the creature must follow the command on its next turn. On a successful save, the creature isn't tricked and if the creature isn't in combat, it will make an Arcana check against your Spell save DC to determine whether it knows you tried to mind trick it. This ability has no effect if the target is a Droid, does not understand your language, or is not intelligent enough. Per extra Focus spent to a max of half your Knight level (rounded up), you can target an additional creature.</p>
+    </description>
+    <sheet>
+      <description>You wave your hand and speak a simple command to a creature you can see within range. The target makes a Wisdom saving throw. On a failed save, the creature must follow the command on its next turn. On a successful save, the creature isn't tricked and if the creature isn't in combat, it will make an Arcana check against your Spell save DC to determine whether it knows you tried to mind trick it. This ability has no effect if the target is a Droid, does not understand your language, or is not intelligent enough. Per extra Focus spent to a max of half your Knight level (rounded up), you can target an additional creature.</description>
+    </sheet>
+    <setters>
+      <set name="keywords"/>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 Action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">60 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent"/>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_AURA_OF_PRESENCE" name="Aura of Presence" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Whenever you or a friendly creature within 10 feet of you must make a saving throw, that creature can add your Charisma modifier to the saving throw.</p>
+    </description>
+    <sheet>
+      <description>Whenever you or a friendly creature within 10 feet of you must make a saving throw, that creature can add your Charisma modifier to the saving throw.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_BLINDING_STRIKE" name="Blinding Strike" type="Spell" level="0" source="SW-MSV-Edition">
+    <supports/>
+    <description>
+      <p>When you successfully hit with a melee attack, you can use this ability to try to blind the creature you hit. The creature must make a Constitution saving throw. On a failed save, the creature is blinded for 1 round. On a successful save, the creature isn't blinded.</p>
+    </description>
+    <sheet>
+      <description>When you successfully hit with a melee attack, you can use this ability to try to blind the creature you hit. The creature must make a Constitution saving throw. On a failed save, the creature is blinded for 1 round. On a successful save, the creature isn't blinded.</description>
+    </sheet>
+    <setters>
+      <set name="keywords"/>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent"/>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_DEEP_MEDITATION" name="Deep Meditation" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Meditation upgrade: you now gain 3 Focus.</p>
+    </description>
+    <sheet>
+      <description>Meditation upgrade: you now gain 3 Focus.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_AURA_OF_COURAGE" name="Aura of Courage" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Aura of Presence upgrade: allies cannot be Frightened.</p>
+    </description>
+    <sheet>
+      <description>Aura of Presence upgrade: allies cannot be Frightened.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_FORCE_EMPOWERED_STRIKES" name="Force Empowered Strikes" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Per 1 Focus, when making a melee attack, empower that attack using the Force and deal an additional 1d8 damage.</p>
+    </description>
+    <sheet>
+      <description>Per 1 Focus, when making a melee attack, empower that attack using the Force and deal an additional 1d8 damage.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_IMPROVED_FORCE_RESOLUTION" name="Improved Force Resolution" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Force Resolution upgrade: you can now use this ability on other creatures as well. Range: Touch.</p>
+    </description>
+    <sheet>
+      <description>Force Resolution upgrade: you can now use this ability on other creatures as well. Range: Touch.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_BATTLE_MEDITATION" name="Battle Meditation" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Meditation upgrade: you are no longer considered Incapacitated when using this ability.</p>
+    </description>
+    <sheet>
+      <description>Meditation upgrade: you are no longer considered Incapacitated when using this ability.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_AURA_OF_PROTECTION" name="Aura of Protection" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Aura of Presence upgrade: allies gain resistance to damage from ranged attacks.</p>
+    </description>
+    <sheet>
+      <description>Aura of Presence upgrade: allies gain resistance to damage from ranged attacks.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_AURA_EXPANSION" name="Aura Expansion" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Aura of Presence is now 20-foot.</p>
+    </description>
+    <sheet>
+      <description>Aura of Presence is now 20-foot.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_AURA_OF_VIGOR" name="Aura of Vigor" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Aura of Presence upgrade: when a friendly creature starts its turn, that creature gains temporary hit points equal to your Wisdom or Charisma modifier (minimum of 1).</p>
+    </description>
+    <sheet>
+      <description>Aura of Presence upgrade: when a friendly creature starts its turn, that creature gains temporary hit points equal to your Wisdom or Charisma modifier (minimum of 1).</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_EXTRA_ATTACK" name="Extra Attack" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+    </description>
+    <sheet>
+      <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_LIGHTSABER_FORM" name="Lightsaber Form" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Choose a Lightsaber Form that defines your combat style and grants you unique abilities.</p>
+    </description>
+    <rules>
+      <select type="Archetype" name="Knight Lightsaber Form" supports="ID_CLASS_KNIGHT"/>
+    </rules>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_LIGHTSABER_FORM" name="Lightsaber Form" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Choose a Lightsaber Form that defines your combat style and grants you unique abilities.</p>
+    </description>
+    <rules>
+      <select type="Archetype" name="Knight Lightsaber Form" supports="ID_CLASS_KNIGHT"/>
+    </rules>
+  </element>
+  <element id="ID_KNIGHT_FORM_MAKASHI" name="Form II: Makashi" type="Archetype" source="SW-MSV-Edition">
+    <supports>ID_CLASS_KNIGHT</supports>
+    <description>
+      <p>Dueling and Learn Riposte</p>
+    </description>
+    <rules>
+      <grant type="Archetype Feature" id="ID_KNIGHT_FORM_MAKASHI_ABILITY_DUELING" level="3"/>
+      <grant type="Archetype Feature" id="ID_KNIGHT_FORM_MAKASHI_ABILITY_RIPOSTE" level="3"/>
+    </rules>
+  </element>
+  <element id="ID_KNIGHT_FORM_MAKASHI_ABILITY_DUELING" name="Dueling" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Gain the Dueling Fighting Style</p>
+    </description>
+    <sheet>
+      <description>Gain the Dueling Fighting Style</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_KNIGHT_FORM_MAKASHI_ABILITY_RIPOSTE" name="Riposte" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>
+        <strong>Cost: </strong>
+        1 Focus
+      </p>
+      <p class="indent">
+        <strong>Action Type: </strong>
+        Reaction
+      </p>
+      <p>When a creature misses you with a melee attack, you can make a melee weapon attack against that creature.</p>
+    </description>
+    <sheet>
+      <description>When a creature misses you with a melee attack, you can make a melee weapon attack against that creature.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_KNIGHT_FORM_SORESU" name="Form III: Soresu" type="Archetype" source="SW-MSV-Edition">
+    <supports>ID_CLASS_KNIGHT</supports>
+    <description>
+      <p>Learn Block and Learn Deflect</p>
+    </description>
+    <rules>
+      <grant type="Archetype Feature" id="ID_KNIGHT_FORM_SORESU_ABILITY_BLOCK" level="3"/>
+      <grant type="Archetype Feature" id="ID_KNIGHT_FORM_SORESU_ABILITY_DEFLECT" level="3"/>
+    </rules>
+  </element>
+  <element id="ID_KNIGHT_FORM_SORESU_ABILITY_BLOCK" name="Block" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>
+        <strong>Cost: </strong>
+        1 Focus
+      </p>
+      <p class="indent">
+        <strong>Action Type: </strong>
+        Reaction
+      </p>
+      <p>Block to negate a melee attack that would have hit you.</p>
+    </description>
+    <sheet>
+      <description>Block to negate a melee attack that would have hit you.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_KNIGHT_FORM_SORESU_ABILITY_DEFLECT" name="Deflect" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>
+        <strong>Cost: </strong>
+        1 Focus
+      </p>
+      <p class="indent">
+        <strong>Action Type: </strong>
+        Reaction
+      </p>
+      <p>Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</p>
+    </description>
+    <sheet>
+      <description>Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_KNIGHT_FORM_ATARU" name="Form IV: Ataru" type="Archetype" source="SW-MSV-Edition">
+    <supports>ID_CLASS_KNIGHT</supports>
+    <description>
+      <p>Learn Force Leap and Learn Slow Fall</p>
+    </description>
+    <rules>
+      <grant type="Archetype Feature" id="ID_KNIGHT_FORM_ATARU_ABILITY_FORCE_LEAP" level="3"/>
+      <grant type="Archetype Feature" id="ID_KNIGHT_FORM_ATARU_ABILITY_SLOW_FALL" level="3"/>
+    </rules>
+  </element>
+  <element id="ID_KNIGHT_FORM_ATARU_ABILITY_FORCE_LEAP" name="Force Leap" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>
+        <strong>Cost: </strong>
+        1 Focus
+      </p>
+      <p class="indent">
+        <strong>Action Type: </strong>
+        Action
+      </p>
+      <p>Jump up to twice your movement and make a melee weapon attack. This does not provoke Opportunity Attacks. Per extra Focus spent to a max of half your Knight level (rounded up), you can jump an additional 5 feet.</p>
+    </description>
+    <sheet>
+      <description>Jump up to twice your movement and make a melee weapon attack. This does not provoke Opportunity Attacks. Per extra Focus spent to a max of half your Knight level (rounded up), you can jump an additional 5 feet.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_KNIGHT_FORM_ATARU_ABILITY_SLOW_FALL" name="Slow Fall" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>
+        <strong>Cost: </strong>
+        1 Focus
+      </p>
+      <p class="indent">
+        <strong>Action Type: </strong>
+        Reaction
+      </p>
+      <p>Use the Force to slow yourself when falling, taking only half fall damage.</p>
+    </description>
+    <sheet>
+      <description>Use the Force to slow yourself when falling, taking only half fall damage.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_KNIGHT_FORM_SHIEN" name="Form V: Shien" type="Archetype" source="SW-MSV-Edition">
+    <supports>ID_CLASS_KNIGHT</supports>
+    <description>
+      <p>Learn Redirect</p>
+    </description>
+    <rules>
+      <grant type="Archetype Feature" id="ID_KNIGHT_FORM_SHIEN_ABILITY_REDIRECT" level="3"/>
+    </rules>
+  </element>
+  <element id="ID_KNIGHT_FORM_SHIEN_ABILITY_REDIRECT" name="Redirect" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>
+        <strong>Cost: </strong>
+        1 Focus
+      </p>
+      <p class="indent">
+        <strong>Action Type: </strong>
+        Reaction
+      </p>
+      <p>Must wield a lightweapon. Use the Force to send a ranged attack that would have hit you to a creature. This counts as a ranged Force attack with the range of the incoming attack. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</p>
+    </description>
+    <sheet>
+      <description>Must wield a lightweapon. Use the Force to send a ranged attack that would have hit you to a creature. This counts as a ranged Force attack with the range of the incoming attack. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_KNIGHT_FORM_DJEM_SO" name="Form V: Djem So" type="Archetype" source="SW-MSV-Edition">
+    <supports>ID_CLASS_KNIGHT</supports>
+    <description>
+      <p>Learn Passionate Strike and Learn Deflect</p>
+    </description>
+    <rules>
+      <grant type="Archetype Feature" id="ID_KNIGHT_FORM_DJEM_SO_ABILITY_PASSIONATE_STRIKE" level="3"/>
+      <grant type="Archetype Feature" id="ID_KNIGHT_FORM_DJEM_SO_ABILITY_DEFLECT" level="3"/>
+    </rules>
+  </element>
+  <element id="ID_KNIGHT_FORM_DJEM_SO_ABILITY_PASSIONATE_STRIKE" name="Passionate Strike" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>
+        <strong>Cost: </strong>
+        2 Focus
+      </p>
+      <p class="indent">
+        <strong>Action Type: </strong>
+        Action
+      </p>
+      <p>Make a melee attack and gain advantage on that attack.</p>
+    </description>
+    <sheet>
+      <description>Make a melee attack and gain advantage on that attack.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_KNIGHT_FORM_DJEM_SO_ABILITY_DEFLECT" name="Deflect" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>
+        <strong>Cost: </strong>
+        1 Focus
+      </p>
+      <p class="indent">
+        <strong>Action Type: </strong>
+        Reaction
+      </p>
+      <p>Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</p>
+    </description>
+    <sheet>
+      <description>Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_KNIGHT_FORM_NIMAN" name="Form VI: Niman" type="Archetype" source="SW-MSV-Edition">
+    <supports>ID_CLASS_KNIGHT</supports>
+    <description>
+      <p>Force Push and Force Pull as a Bonus Action</p>
+    </description>
+    <rules>
+      <grant type="Archetype Feature" id="ID_KNIGHT_FORM_NIMAN_ABILITY_BONUS_ACTION_FORCE_POWERS" level="3"/>
+    </rules>
+  </element>
+  <element id="ID_KNIGHT_FORM_NIMAN_ABILITY_BONUS_ACTION_FORCE_POWERS" name="Bonus Action Force Powers" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>You can use Force Push and Force Pull as a Bonus Action.</p>
+    </description>
+    <sheet>
+      <description>You can use Force Push and Force Pull as a Bonus Action.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_KNIGHT_FORM_JUYO" name="Form VII: Juyo" type="Archetype" source="SW-MSV-Edition">
+    <supports>ID_CLASS_KNIGHT</supports>
+    <description>
+      <p>Learn Cyclone</p>
+    </description>
+    <rules>
+      <grant type="Archetype Feature" id="ID_KNIGHT_FORM_JUYO_ABILITY_CYCLONE" level="3"/>
+    </rules>
+  </element>
+  <element id="ID_KNIGHT_FORM_JUYO_ABILITY_CYCLONE" name="Cyclone" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>
+        <strong>Cost: </strong>
+        2 Focus
+      </p>
+      <p class="indent">
+        <strong>Action Type: </strong>
+        Action
+      </p>
+      <p>Make a flurry of attacks in one swift movement. You make two attacks that count as one attack against the same target. You roll both to hit. Per 2 extra Focus spent to a max of half your Knight level (rounded up), you make an additional attack within that flurry.</p>
+    </description>
+    <sheet>
+      <description>Make a flurry of attacks in one swift movement. You make two attacks that count as one attack against the same target. You roll both to hit. Per 2 extra Focus spent to a max of half your Knight level (rounded up), you make an additional attack within that flurry.</description>
+    </sheet>
+    <rules/>
+  </element>
+</elements>

@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <element id="ID_CLASS_WARRIOR" name="Warrior" type="Class" source="SW-MSV-Edition">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Hit Points. Hit Dice:</em>
+           1d10 per Warrior level. Hit Points at 1st Level: 10 + your Constitution modifier. Hit Points at Higher Levels: 1d10 (or 6) + your Constitution modifier per Warrior level after 1st.
+        </strong>
+      </p>
+      <p class="indent">
+        <strong>
+          <em>Proficiencies. Armor:</em>
+           Light Armour, Medium Armour, Heavy Armour, Shields. Weapons: Simple Blasters, Martial Blasters, Simple Vibroweapons, Martial Vibroweapons. Saving Throws: Strength and Constitution.
+        </strong>
+      </p>
+      <p class="indent">
+        <strong>
+          <em>Skills.</em>
+           Choose 2 from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Persuasion, Perception, Survival.
+        </strong>
+      </p>
+      <p class="indent">
+        <strong>
+          <em>Equipment.</em>
+           You start with 8d4 × 100 Gold.
+        </strong>
+      </p>
+    </description>
+    <setters>
+      <set name="hd">d10</set>
+    </setters>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION"/>
+      <select type="Proficiency" name="Skill Proficiency (Warrior)" number="2" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_FIGHTING_STYLE" level="1"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_SECOND_WIND" level="1"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_ACTION_SURGE_X1" level="2"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_BRUTE" level="3"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_JETTROOPER" level="3"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_EXTRA_ATTACK_X1" level="5"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_SUBCLASS_ABILITY" level="7"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_INDOMITABLE_X1" level="9"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_SUBCLASS_ABILITY" level="10"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_EXTRA_ATTACK_X2" level="11"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_INDOMITABLE_X2" level="13"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_SUBCLASS_ABILITY" level="15"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_ACTION_SURGE_X2" level="17"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_INDOMITABLE_X3" level="17"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_SUBCLASS_ABILITY" level="18"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_EXTRA_ATTACK_X3" level="20"/>
+      <grant type="Class Feature" id="ID_CLASS_WARRIOR_FEATURE_SUBCLASS" level="3"/>
+    </rules>
+  </element>
+  <element id="ID_CLASS_WARRIOR_FEATURE_FIGHTING_STYLE" name="Fighting Style" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>You can choose one Fighting Style.</p>
+    </description>
+    <sheet>
+      <description>You can choose one Fighting Style.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_WARRIOR_FEATURE_SECOND_WIND" name="Second Wind" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a Bonus Action to regain hit points equal to 1d10 + your Warrior level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+    </description>
+    <sheet>
+      <description>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a Bonus Action to regain hit points equal to 1d10 + your Warrior level. Once you use this feature, you must finish a short or long rest before you can use it again.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_WARRIOR_FEATURE_ACTION_SURGE" name="Action Surge" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional Action. Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
+    </description>
+    <sheet>
+      <description>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional Action. Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_WARRIOR_FEATURE_EXTRA_ATTACK" name="Extra Attack" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</p>
+    </description>
+    <sheet>
+      <description>Beginning at 5th level, you can attack twice, instead of once, whenever you take the attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_WARRIOR_FEATURE_INDOMITABLE" name="Indomitable" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest. You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.</p>
+    </description>
+    <sheet>
+      <description>Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest. You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_WARRIOR_FEATURE_ACTION_SURGE_X1" name="Action Surge (x1)" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>On your turn, you can take one additional action. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+    </description>
+    <sheet>
+      <description>On your turn, you can take one additional action. Once you use this feature, you must finish a short or long rest before you can use it again.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_WARRIOR_FEATURE_INDOMITABLE_X1" name="Indomitable (x1)" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>You can reroll a saving throw that you fail. If you do so, you must use the new roll. Once you use this feature, you can't use it again until you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description>You can reroll a saving throw that you fail. If you do so, you must use the new roll. Once you use this feature, you can't use it again until you finish a long rest.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_WARRIOR_FEATURE_INDOMITABLE_X2" name="Indomitable (x2)" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>You can reroll a saving throw that you fail. If you do so, you must use the new roll. Once you use this feature, you can't use it again until you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description>You can reroll a saving throw that you fail. If you do so, you must use the new roll. Once you use this feature, you can't use it again until you finish a long rest.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_WARRIOR_FEATURE_EXTRA_ATTACK_X2" name="Extra Attack (x2)" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>You can attack three times, instead of twice, whenever you take the Attack action on your turn.</p>
+    </description>
+    <sheet>
+      <description>You can attack three times, instead of twice, whenever you take the Attack action on your turn.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_WARRIOR_FEATURE_EXTRA_ATTACK_X3" name="Extra Attack (x3)" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>You can attack four times, instead of three, whenever you take the Attack action on your turn.</p>
+    </description>
+    <sheet>
+      <description>You can attack four times, instead of three, whenever you take the Attack action on your turn.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_WARRIOR_FEATURE_ACTION_SURGE_X2" name="Action Surge (x2)" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>On your turn, you can take one additional action. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+    </description>
+    <sheet>
+      <description>On your turn, you can take one additional action. Once you use this feature, you must finish a short or long rest before you can use it again.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_WARRIOR_FEATURE_INDOMITABLE_X3" name="Indomitable (x3)" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>You can reroll a saving throw that you fail. If you do so, you must use the new roll. Once you use this feature, you can't use it again until you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description>You can reroll a saving throw that you fail. If you do so, you must use the new roll. Once you use this feature, you can't use it again until you finish a long rest.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_WARRIOR_FEATURE_EXTRA_ATTACK_X1" name="Extra Attack (x1)" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+    </description>
+    <sheet>
+      <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_WARRIOR_FEATURE_JETTROOPER" name="Jettrooper" type="Class Feature" source="SW-MSV-Edition">
+    <description>
+      <p>Jettrooper - See Warrior class description for details.</p>
+    </description>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_WARRIOR_FEATURE_SUBCLASS_ABILITY" name="Subclass Feature" type="Class Feature" source="SW-MSV-Edition">
+    <description>
+      <p>You gain a feature from your Warrior subclass.</p>
+    </description>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_WARRIOR_FEATURE_BRUTE" name="Brute" type="Class Feature" source="SW-MSV-Edition">
+    <description>
+      <p>Brute - See Warrior class description for details.</p>
+    </description>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_WARRIOR_FEATURE_SUBCLASS" name="Warrior Subclass" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Choose a Warrior subclass that defines your specialized path.</p>
+    </description>
+    <rules>
+      <select type="Archetype" name="Warrior Subclass" supports="ID_CLASS_WARRIOR"/>
+    </rules>
+  </element>
+  <element id="ID_SUBCLASS_BATTLE_MASTER" name="Battle Master" type="Archetype" source="SW-MSV-Edition">
+    <supports>ID_CLASS_WARRIOR</supports>
+    <description>
+      <p>Battle Master form</p>
+    </description>
+    <rules>
+      <grant type="Archetype Feature" id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_COMBAT_SUPERIORITY" level="3"/>
+      <grant type="Archetype Feature" id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_MANEUVERS" level="3"/>
+      <grant type="Archetype Feature" id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_SUPERIORITY_DICE" level="3"/>
+      <grant type="Archetype Feature" id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_MANEUVER_SAVE_DC" level="3"/>
+      <grant type="Archetype Feature" id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_STUDENT_OF_WAR" level="3"/>
+      <grant type="Archetype Feature" id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_KNOW_YOUR_ENEMY" level="7"/>
+      <grant type="Archetype Feature" id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_IMPROVED_COMBAT_SUPERIORITY" level="10"/>
+      <grant type="Archetype Feature" id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_RELENTLESS" level="15"/>
+    </rules>
+  </element>
+  <element id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_COMBAT_SUPERIORITY" name="Combat Superiority" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>You learn maneuvers that are fueled by special dice called superiority dice.</p>
+    </description>
+    <sheet>
+      <description>You learn maneuvers that are fueled by special dice called superiority dice.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_MANEUVERS" name="Maneuvers" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>You learn three maneuvers of your choice. You can only use one maneuver per attack. You learn two additional maneuvers of your choice at 7th, 10th, and 15th level.</p>
+    </description>
+    <sheet>
+      <description>You learn three maneuvers of your choice. You can only use one maneuver per attack. You learn two additional maneuvers of your choice at 7th, 10th, and 15th level.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_SUPERIORITY_DICE" name="Superiority Dice" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest. You gain another superiority die at 7th level and one more at 15th level.</p>
+    </description>
+    <sheet>
+      <description>You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest. You gain another superiority die at 7th level and one more at 15th level.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_MANEUVER_SAVE_DC" name="Maneuver Save DC" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).</p>
+    </description>
+    <sheet>
+      <description>8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_STUDENT_OF_WAR" name="Student of War" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>You gain proficiency with one type of tool of your choice.</p>
+    </description>
+    <sheet>
+      <description>You gain proficiency with one type of tool of your choice.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_KNOW_YOUR_ENEMY" name="Know Your Enemy" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The GM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice: Strength score, Dexterity score, Constitution score, Armour Class, Current Hit Points.</p>
+    </description>
+    <sheet>
+      <description>If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The GM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice: Strength score, Dexterity score, Constitution score, Armour Class, Current Hit Points.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_IMPROVED_COMBAT_SUPERIORITY" name="Improved Combat Superiority" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Your superiority dice turn into d10s. At 18th level, they turn into d12s.</p>
+    </description>
+    <sheet>
+      <description>Your superiority dice turn into d10s. At 18th level, they turn into d12s.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_RELENTLESS" name="Relentless" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>When you roll initiative and have no superiority dice remaining, you regain 1 superiority die.</p>
+    </description>
+    <sheet>
+      <description>When you roll initiative and have no superiority dice remaining, you regain 1 superiority die.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_SUBCLASS_BRUTE" name="Brute" type="Archetype" source="SW-MSV-Edition">
+    <supports>ID_CLASS_WARRIOR</supports>
+    <description>
+      <p>Brute form</p>
+    </description>
+    <rules>
+      <grant type="Archetype Feature" id="ID_SUBCLASS_BRUTE_ABILITY_BRUTE_FORCE" level="3"/>
+      <grant type="Archetype Feature" id="ID_SUBCLASS_BRUTE_ABILITY_BRUTISH_DURABILITY" level="7"/>
+      <grant type="Archetype Feature" id="ID_SUBCLASS_BRUTE_ABILITY_ADDITIONAL_FIGHTING_STYLE" level="10"/>
+      <grant type="Archetype Feature" id="ID_SUBCLASS_BRUTE_ABILITY_DEVASTATING_CRITICAL" level="15"/>
+      <grant type="Archetype Feature" id="ID_SUBCLASS_BRUTE_ABILITY_SURVIVOR" level="18"/>
+    </rules>
+  </element>
+  <element id="ID_SUBCLASS_BRUTE_ABILITY_BRUTE_FORCE" name="Brute Force" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>You are able to strike with your weapons with especially brutal force. Whenever you hit with a weapon that you are proficient with and deal damage, the weapon’s damage increases by an amount based on your level in this class: lv 3: 1d4, lv 4: 1d4, lv 5: 1d4, lv 6: 1d4, lv 7: 1d4, lv 8: 1d4, lv 9: 1d4, lv 10: 1d6, lv 11: 1d6, lv 12: 1d6, lv 13: 1d6, lv 14: 1d6, lv 15: 1d6, lv 16: 1d8, lv 17: 1d8, lv 18: 1d8, lv 19: 1d8, lv 20: 1d10.</p>
+    </description>
+    <sheet>
+      <description>You are able to strike with your weapons with especially brutal force. Whenever you hit with a weapon that you are proficient with and deal damage, the weapon’s damage increases by an amount based on your level in this class: lv 3: 1d4, lv 4: 1d4, lv 5: 1d4, lv 6: 1d4, lv 7: 1d4, lv 8: 1d4, lv 9: 1d4, lv 10: 1d6, lv 11: 1d6, lv 12: 1d6, lv 13: 1d6, lv 14: 1d6, lv 15: 1d6, lv 16: 1d8, lv 17: 1d8, lv 18: 1d8, lv 19: 1d8, lv 20: 1d10.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_SUBCLASS_BRUTE_ABILITY_BRUTISH_DURABILITY" name="Brutish Durability" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Your toughness allows you to shrug off assaults that would devastate others. Whenever you make a saving throw, roll 1d6 and add the die to your saving throw total. If applying this bonus to a death saving throw increases the total to 20 or higher, you gain the benefits of rolling a 20 on the d20.</p>
+    </description>
+    <sheet>
+      <description>Your toughness allows you to shrug off assaults that would devastate others. Whenever you make a saving throw, roll 1d6 and add the die to your saving throw total. If applying this bonus to a death saving throw increases the total to 20 or higher, you gain the benefits of rolling a 20 on the d20.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_SUBCLASS_BRUTE_ABILITY_ADDITIONAL_FIGHTING_STYLE" name="Additional Fighting Style" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>You can choose an additional second Fighting Style.</p>
+    </description>
+    <sheet>
+      <description>You can choose an additional second Fighting Style.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_SUBCLASS_BRUTE_ABILITY_DEVASTATING_CRITICAL" name="Devastating Critical" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>When you score a critical hit with a weapon attack, you gain a bonus to that weapon’s damage roll equal to your level in this class.</p>
+    </description>
+    <sheet>
+      <description>When you score a critical hit with a weapon attack, you gain a bonus to that weapon’s damage roll equal to your level in this class.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_SUBCLASS_BRUTE_ABILITY_SURVIVOR" name="Survivor" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>You attain the pinnacle of resilience in battle. At the start of each of your turns in combat, you regain hit points equal to 5 + your Constitution modifier (minimum of 1 hit point). You don’t gain this benefit if you have 0 hit points or if you have more than half of your hit points left.</p>
+    </description>
+    <sheet>
+      <description>You attain the pinnacle of resilience in battle. At the start of each of your turns in combat, you regain hit points equal to 5 + your Constitution modifier (minimum of 1 hit point). You don’t gain this benefit if you have 0 hit points or if you have more than half of your hit points left.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_SUBCLASS_JETTROOPER" name="Jettrooper" type="Archetype" source="SW-MSV-Edition">
+    <supports>ID_CLASS_WARRIOR</supports>
+    <description>
+      <p>Jettrooper form</p>
+    </description>
+    <rules>
+      <grant type="Archetype Feature" id="ID_SUBCLASS_JETTROOPER_ABILITY_JUMP_MASTER" level="3"/>
+      <grant type="Archetype Feature" id="ID_SUBCLASS_JETTROOPER_ABILITY_HOVER_MASTER" level="3"/>
+      <grant type="Archetype Feature" id="ID_SUBCLASS_JETTROOPER_ABILITY_JETPACK_MASTER" level="7"/>
+      <grant type="Archetype Feature" id="ID_SUBCLASS_JETTROOPER_ABILITY_WEAPONS_MODIFICATION" level="10"/>
+      <grant type="Archetype Feature" id="ID_SUBCLASS_JETTROOPER_ABILITY_HEAVY_BURNERS" level="15"/>
+      <grant type="Archetype Feature" id="ID_SUBCLASS_JETTROOPER_ABILITY_IMPROVED_WEAPONS_MODIFICATION" level="18"/>
+    </rules>
+  </element>
+  <element id="ID_SUBCLASS_JETTROOPER_ABILITY_JUMP_MASTER" name="Jump Master" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Gain Jump Pack proficiency.</p>
+    </description>
+    <sheet>
+      <description>Gain Jump Pack proficiency.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_SUBCLASS_JETTROOPER_ABILITY_HOVER_MASTER" name="Hover Master" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Gain Hover Pack proficiency.</p>
+    </description>
+    <sheet>
+      <description>Gain Hover Pack proficiency.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_SUBCLASS_JETTROOPER_ABILITY_JETPACK_MASTER" name="Jetpack Master" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Gain Jetpack Proficiency.</p>
+    </description>
+    <sheet>
+      <description>Gain Jetpack Proficiency.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_SUBCLASS_JETTROOPER_ABILITY_WEAPONS_MODIFICATION" name="Weapons Modification" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>You are able to customize your ranged weapons according to your liking. You can choose one weapon modification that will apply to all ranged weapons you are using or will use. You can choose an additional weapon modification at 15th level.</p>
+    </description>
+    <sheet>
+      <description>You are able to customize your ranged weapons according to your liking. You can choose one weapon modification that will apply to all ranged weapons you are using or will use. You can choose an additional weapon modification at 15th level.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_SUBCLASS_JETTROOPER_ABILITY_HEAVY_BURNERS" name="Heavy Burners" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>When lifting off or landing with your jump/hover or jetpack or boots, creatures within 5 feet of you must make a DC 13 Constitution saving throw. On a failed save, the creature takes 1d6 kinetic damage and is pushed 5 feet away. On a successful save, the creature takes half damage and is not pushed.</p>
+    </description>
+    <sheet>
+      <description>When lifting off or landing with your jump/hover or jetpack or boots, creatures within 5 feet of you must make a DC 13 Constitution saving throw. On a failed save, the creature takes 1d6 kinetic damage and is pushed 5 feet away. On a successful save, the creature takes half damage and is not pushed.</description>
+    </sheet>
+    <rules/>
+  </element>
+  <element id="ID_SUBCLASS_JETTROOPER_ABILITY_IMPROVED_WEAPONS_MODIFICATION" name="Improved Weapons Modification" type="Archetype Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>Each weapon modification you own turns into the improved version.</p>
+    </description>
+    <sheet>
+      <description>Each weapon modification you own turns into the improved version.</description>
+    </sheet>
+    <rules/>
+  </element>
+</elements>

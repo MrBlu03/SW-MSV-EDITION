@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <element name="Binary" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_BINARY">
+    <supports>Standard</supports>
+    <description>
+      <p>The Binary language.</p>
+    </description>
+  </element>
+  <element name="Bith" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_BITH">
+    <supports>Standard</supports>
+    <description>
+      <p>The Bith language.</p>
+    </description>
+  </element>
+  <element name="Bothese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_BOTHESE">
+    <supports>Standard</supports>
+    <description>
+      <p>The Bothese language.</p>
+    </description>
+  </element>
+  <element name="Catharese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_CATHARESE">
+    <supports>Standard</supports>
+    <description>
+      <p>The Catharese language.</p>
+    </description>
+  </element>
+  <element name="Chagri" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_CHAGRI">
+    <supports>Standard</supports>
+    <description>
+      <p>The Chagri language.</p>
+    </description>
+  </element>
+  <element name="Cheunh" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_CHEUNH">
+    <supports>Standard</supports>
+    <description>
+      <p>The Cheunh language.</p>
+    </description>
+  </element>
+  <element name="Devaronese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_DEVARONESE">
+    <supports>Standard</supports>
+    <description>
+      <p>The Devaronese language.</p>
+    </description>
+  </element>
+  <element name="Dosh" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_DOSH">
+    <supports>Standard</supports>
+    <description>
+      <p>The Dosh language.</p>
+    </description>
+  </element>
+  <element name="Durese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_DURESE">
+    <supports>Standard</supports>
+    <description>
+      <p>The Durese language.</p>
+    </description>
+  </element>
+  <element name="Ewokese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_EWOKESE">
+    <supports>Standard</supports>
+    <description>
+      <p>The Ewokese language.</p>
+    </description>
+  </element>
+  <element name="Galactic Basic" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_GALACTIC_BASIC">
+    <supports>Standard</supports>
+    <description>
+      <p>The Galactic Basic language.</p>
+    </description>
+  </element>
+  <element name="Gamorrean" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_GAMORREAN">
+    <supports>Standard</supports>
+    <description>
+      <p>The Gamorrean language.</p>
+    </description>
+  </element>
+  <element name="Geonosian" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_GEONOSIAN">
+    <supports>Standard</supports>
+    <description>
+      <p>The Geonosian language.</p>
+    </description>
+  </element>
+  <element name="Gran" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_GRAN">
+    <supports>Standard</supports>
+    <description>
+      <p>The Gran language.</p>
+    </description>
+  </element>
+  <element name="Ithorese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_ITHORESE">
+    <supports>Standard</supports>
+    <description>
+      <p>The Ithorese language.</p>
+    </description>
+  </element>
+  <element name="Jawaese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_JAWAESE">
+    <supports>Standard</supports>
+    <description>
+      <p>The Jawaese language.</p>
+    </description>
+  </element>
+  <element name="Kaleesh" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_KALEESH">
+    <supports>Standard</supports>
+    <description>
+      <p>The Kaleesh language.</p>
+    </description>
+  </element>
+  <element name="Kel Dor" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_KEL_DOR">
+    <supports>Standard</supports>
+    <description>
+      <p>The Kel Dor language.</p>
+    </description>
+  </element>
+  <element name="Mando'a" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_MANDOA_LANGUAGE">
+    <supports>Standard</supports>
+    <description>
+      <p>The Mando'a language.</p>
+    </description>
+  </element>
+  <element name="Mirialan" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_MIRIALAN">
+    <supports>Standard</supports>
+    <description>
+      <p>The Mirialan language.</p>
+    </description>
+  </element>
+  <element name="Mon Cal" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_MON_CAL">
+    <supports>Standard</supports>
+    <description>
+      <p>The Mon Cal language.</p>
+    </description>
+  </element>
+  <element name="Nautila" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_NAUTILA">
+    <supports>Standard</supports>
+    <description>
+      <p>The Nautila language.</p>
+    </description>
+  </element>
+  <element name="Ortolan" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_ORTOLAN">
+    <supports>Standard</supports>
+    <description>
+      <p>The Ortolan language.</p>
+    </description>
+  </element>
+  <element name="Pak Pak" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_PAK_PAK">
+    <supports>Standard</supports>
+    <description>
+      <p>The Pak Pak language.</p>
+    </description>
+  </element>
+  <element name="Rakata" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_RAKATA">
+    <supports>Standard</supports>
+    <description>
+      <p>The Rakata language.</p>
+    </description>
+  </element>
+  <element name="Rattataki" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_RATTATAKI">
+    <supports>Standard</supports>
+    <description>
+      <p>The Rattataki language.</p>
+    </description>
+  </element>
+  <element name="Rodese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_RODESE">
+    <supports>Standard</supports>
+    <description>
+      <p>The Rodese language.</p>
+    </description>
+  </element>
+  <element name="Shyriiwook" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_SHYRIIWOOK">
+    <supports>Standard</supports>
+    <description>
+      <p>The Shyriiwook language.</p>
+    </description>
+  </element>
+  <element name="Sith" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_SITH">
+    <supports>Standard</supports>
+    <description>
+      <p>The Sith language.</p>
+    </description>
+  </element>
+  <element name="Sriluurian" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_SRILUURIAN">
+    <supports>Standard</supports>
+    <description>
+      <p>The Sriluurian language.</p>
+    </description>
+  </element>
+  <element name="Sullustese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_SULLUSTESE">
+    <supports>Standard</supports>
+    <description>
+      <p>The Sullustese language.</p>
+    </description>
+  </element>
+  <element name="Talzzi" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_TALZZI">
+    <supports>Standard</supports>
+    <description>
+      <p>The Talzzi language.</p>
+    </description>
+  </element>
+  <element name="Togruti" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_TOGRUTI">
+    <supports>Standard</supports>
+    <description>
+      <p>The Togruti language.</p>
+    </description>
+  </element>
+  <element name="Tusken" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_TUSKEN">
+    <supports>Standard</supports>
+    <description>
+      <p>The Tusken language.</p>
+    </description>
+  </element>
+  <element name="Twi'leki" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_TWILEKI">
+    <supports>Standard</supports>
+    <description>
+      <p>The Twi'leki language.</p>
+    </description>
+  </element>
+  <element name="Ugnaught" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_UGNAUGHT">
+    <supports>Standard</supports>
+    <description>
+      <p>The Ugnaught language.</p>
+    </description>
+  </element>
+  <element name="Zabraki" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_ZABRAKI">
+    <supports>Standard</supports>
+    <description>
+      <p>The Zabraki language.</p>
+    </description>
+  </element>
+</elements>

@@ -1,0 +1,1352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <element name="Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_STRIKE">
+    <description>
+      <p>Strike: Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+    </description>
+  </element>
+  <element name="Shoot" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SHOOT">
+    <description>
+      <p>Shoot: Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+    </description>
+  </element>
+  <element name="Hilt Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_HILT_STRIKE">
+    <description>
+      <p>Hilt Strike: Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. The target must make a Constitution saving throw: DC:8 + proficiency bonus + Strength or Dexterity modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed. (Damage: 1d4 kinetic)</p>
+    </description>
+  </element>
+  <element name="Slash" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SLASH">
+    <description>
+      <p>Slash: Action; When wielding double bladed weapon, make a melee attack that hits in a 15 feet horizontal line in front of you. (Damage: weapon damage without adding modifiers)</p>
+    </description>
+  </element>
+  <element name="Blast" type="Action" source="SW-MSV-Edition" id="ID_ACTION_BLAST">
+    <description>
+      <p>Blast: Action; Blast multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes full damage. On a successful save, the target takes half damage. (Damage: Weapon Damage and add modifier)</p>
+    </description>
+  </element>
+  <element name="Flame" type="Action" source="SW-MSV-Edition" id="ID_ACTION_FLAME">
+    <description>
+      <p>Flame: Action; Flame multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes full damage and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn. (Damage: Weapon Damage and add modifier)</p>
+    </description>
+  </element>
+  <element name="Off-Hand Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_OFF_HAND_STRIKE">
+    <description>
+      <p>Off-Hand Strike: Bonus Action; When dual-wielding, make a melee attack with the melee weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+    </description>
+  </element>
+  <element name="Quick Shot" type="Action" source="SW-MSV-Edition" id="ID_ACTION_QUICK_SHOT">
+    <description>
+      <p>Quick Shot: Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+    </description>
+  </element>
+  <element name="Back Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_BACK_STRIKE">
+    <description>
+      <p>Back Strike: Bonus Action; When wielding a double bladed weapon, make a melee attack with the other side of your weapon. (Damage: weapon damage without adding modifiers)</p>
+    </description>
+  </element>
+  <element name="Reload" type="Action" source="SW-MSV-Edition" id="ID_ACTION_RELOAD">
+    <description>
+      <p>Reload: Action; After x amount of shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
+    </description>
+  </element>
+  <element name="blaster pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BLASTER_PISTOL">
+    <setters>
+      <set name="damage">1d6 energy</set>
+      <set name="range">50/200</set>
+      <set name="reload">16</set>
+      <set name="category">Simple Blaster:</set>
+      <set name="proficiency">ID_WEAPON_BLASTER_PISTOL</set>
+    </setters>
+    <description>
+      <p>1d6 energy, power cell, range 50/200, Reload 16, Dexterity modifier), Shoot, Quick Shot</p>
+      <p>Actions: Shoot, Quick Shot</p>
+    </description>
+  </element>
+  <element name="energy bow" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ENERGY_BOW">
+    <setters>
+      <set name="damage">1d6 energy</set>
+      <set name="range">80/320</set>
+      <set name="reload">4</set>
+      <set name="category">Simple Blaster:</set>
+      <set name="proficiency">ID_WEAPON_ENERGY_BOW</set>
+    </setters>
+    <description>
+      <p>1d6 energy, power cell, range 80/320, Reload 4, two-handed, choose Strength or Dexterity modifier), Shoot, Quick shot</p>
+      <p>Properties: two-handed</p>
+      <p>Actions: Shoot, Quick shot</p>
+    </description>
+  </element>
+  <element name="ion pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_PISTOL">
+    <setters>
+      <set name="damage">1d4 ion</set>
+      <set name="range">40/160</set>
+      <set name="reload">16</set>
+      <set name="category">Simple Blaster:</set>
+      <set name="proficiency">ID_WEAPON_ION_PISTOL</set>
+    </setters>
+    <description>
+      <p>1d4 ion, power cell, range 40/160, Reload 16, Dexterity modifier), Shoot, Quick Shot</p>
+      <p>Actions: Shoot, Quick Shot</p>
+    </description>
+  </element>
+  <element name="sonic pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SONIC_PISTOL">
+    <setters>
+      <set name="damage">1d4 sonic</set>
+      <set name="range">30/120</set>
+      <set name="reload">16</set>
+      <set name="category">Simple Blaster:</set>
+      <set name="proficiency">ID_WEAPON_SONIC_PISTOL</set>
+    </setters>
+    <description>
+      <p>1d4 sonic, power cell, range 30/120, Reload 16, Dexterity modifier), Shoot, Quick Shot</p>
+      <p>Actions: Shoot, Quick Shot</p>
+    </description>
+  </element>
+  <element name="cryo pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_PISTOL">
+    <setters>
+      <set name="damage">1d4 cold</set>
+      <set name="range">30/120</set>
+      <set name="reload">8</set>
+      <set name="category">Simple Blaster:</set>
+      <set name="proficiency">ID_WEAPON_CRYO_PISTOL</set>
+    </setters>
+    <description>
+      <p>1d4 cold, power cell, range 30/120, Reload 8, Dexterity modifier), Shoot, Quick Shot</p>
+      <p>Actions: Shoot, Quick Shot</p>
+    </description>
+  </element>
+  <element name="slugthrower pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLUGTHROWER_PISTOL">
+    <setters>
+      <set name="damage">1d6 kinetic</set>
+      <set name="range">40/160</set>
+      <set name="reload">16</set>
+      <set name="category">Simple Blaster:</set>
+      <set name="proficiency">ID_WEAPON_SLUGTHROWER_PISTOL</set>
+    </setters>
+    <description>
+      <p>1d6 kinetic, slug cartridge, range 40/160, Reload 16, requires Strength 11 to use, Dexterity modifier), Shoot, Quick Shot</p>
+      <p>Actions: Shoot, Quick Shot</p>
+    </description>
+  </element>
+  <element name="disruptor pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DISRUPTOR_PISTOL">
+    <setters>
+      <set name="damage">1d6 acid</set>
+      <set name="range">45/180</set>
+      <set name="reload">12</set>
+      <set name="category">Simple Blaster:</set>
+      <set name="proficiency">ID_WEAPON_DISRUPTOR_PISTOL</set>
+    </setters>
+    <description>
+      <p>1d6 acid, power cell, range 45/180, Reload 12, requires Strength 11 to use, Dexterity modifier), Shoot, Quick Shot</p>
+      <p>Actions: Shoot, Quick Shot</p>
+    </description>
+  </element>
+  <element name="stealth pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_STEALTH_PISTOL">
+    <setters>
+      <set name="damage">1d6 energy</set>
+      <set name="reload">6</set>
+      <set name="category">Simple Blaster:</set>
+      <set name="proficiency">ID_WEAPON_STEALTH_PISTOL</set>
+    </setters>
+    <description>
+      <p>1d6 energy, power cell, silent, two-handed, Reload 6, Dexterity modifier), Shoot</p>
+      <p>Properties: two-handed</p>
+      <p>Actions: Shoot</p>
+    </description>
+  </element>
+  <element name="wrist blaster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_BLASTER">
+    <setters>
+      <set name="damage">1d6 energy</set>
+      <set name="range">30/120</set>
+      <set name="reload">8</set>
+      <set name="category">Simple Blaster:</set>
+      <set name="proficiency">ID_WEAPON_WRIST_BLASTER</set>
+    </setters>
+    <description>
+      <p>1d6 energy, disguised, can't be disarmed, can still use hand but when holding something can't use weapon, power cell, range 30/120, Reload 8, Dexterity modifier), Shoot, Quick Shot</p>
+      <p>Actions: Shoot, Quick Shot</p>
+    </description>
+  </element>
+  <element name="wrist launcher" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER">
+    <setters>
+      <set name="category">Simple Blaster:</set>
+      <set name="proficiency">ID_WEAPON_WRIST_LAUNCHER</set>
+    </setters>
+    <description>
+      <p>can't be disarmed, can still use hand but when holding something can't use weapon), Shoot, Quick Shot</p>
+      <p>Actions: Shoot, Quick Shot</p>
+    </description>
+  </element>
+  <element name="blaster rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BLASTER_RIFLE">
+    <setters>
+      <set name="damage">1d8 energy</set>
+      <set name="range">105/420</set>
+      <set name="reload">12</set>
+      <set name="category">Martial Blaster</set>
+      <set name="proficiency">ID_WEAPON_BLASTER_RIFLE</set>
+    </setters>
+    <description>
+      <p>1d8 energy, power cell, range 105/420, Reload 12, two-handed, Dexterity modifier), Shoot</p>
+      <p>Properties: two-handed</p>
+      <p>Actions: Shoot</p>
+    </description>
+  </element>
+  <element name="disruptor rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DISRUPTOR_RIFLE">
+    <setters>
+      <set name="damage">1d8 acid</set>
+      <set name="range">120/470</set>
+      <set name="reload">9</set>
+      <set name="category">Martial Blaster</set>
+      <set name="proficiency">ID_WEAPON_DISRUPTOR_RIFLE</set>
+    </setters>
+    <description>
+      <p>1d8 acid, power cell, range 120/470, Reload 9, two-handed, Dexterity modifier), Shoot</p>
+      <p>Properties: two-handed</p>
+      <p>Actions: Shoot</p>
+    </description>
+  </element>
+  <element name="heavy bowcaster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_HEAVY_BOWCASTER">
+    <setters>
+      <set name="damage">1d12 energy</set>
+      <set name="range">90/360</set>
+      <set name="reload">4</set>
+      <set name="category">Martial Blaster</set>
+      <set name="proficiency">ID_WEAPON_HEAVY_BOWCASTER</set>
+    </setters>
+    <description>
+      <p>1d12 energy, power cell, range 90/360, Reload 4, requires Strength 17 to use, two-handed, Dexterity modifier), Shoot</p>
+      <p>Properties: two-handed</p>
+      <p>Actions: Shoot</p>
+    </description>
+  </element>
+  <element name="ion rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_RIFLE">
+    <setters>
+      <set name="damage">1d6 ion</set>
+      <set name="range">80/320</set>
+      <set name="reload">8</set>
+      <set name="category">Martial Blaster</set>
+      <set name="proficiency">ID_WEAPON_ION_RIFLE</set>
+    </setters>
+    <description>
+      <p>1d6 ion, power cell, range 80/320, Reload 8, two-handed, Dexterity modifier), Shoot</p>
+      <p>Properties: two-handed</p>
+      <p>Actions: Shoot</p>
+    </description>
+  </element>
+  <element name="sonic rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SONIC_RIFLE">
+    <setters>
+      <set name="damage">1d8 sonic</set>
+      <set name="range">80/320</set>
+      <set name="reload">8</set>
+      <set name="category">Martial Blaster</set>
+      <set name="proficiency">ID_WEAPON_SONIC_RIFLE</set>
+    </setters>
+    <description>
+      <p>1d8 sonic, power cell, range 80/320, Reload 8, requires Strength 11 to use, two-handed, Dexterity modifier), Shoot</p>
+      <p>Properties: two-handed</p>
+      <p>Actions: Shoot</p>
+    </description>
+  </element>
+  <element name="slugthrower rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLUGTHROWER_RIFLE">
+    <setters>
+      <set name="damage">1d8 kinetic</set>
+      <set name="range">105/420</set>
+      <set name="reload">12</set>
+      <set name="category">Martial Blaster</set>
+      <set name="proficiency">ID_WEAPON_SLUGTHROWER_RIFLE</set>
+    </setters>
+    <description>
+      <p>1d8 kinetic, slug cartridge, range 105/420, Reload 12, two-handed, Dexterity modifier), Shoot</p>
+      <p>Properties: two-handed</p>
+      <p>Actions: Shoot</p>
+    </description>
+  </element>
+  <element name="cryo rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_RIFLE">
+    <setters>
+      <set name="damage">2d4 cold</set>
+      <set name="range">50/200</set>
+      <set name="reload">4</set>
+      <set name="category">Martial Blaster</set>
+      <set name="proficiency">ID_WEAPON_CRYO_RIFLE</set>
+    </setters>
+    <description>
+      <p>2d4 cold, power cell, range 50/200, Reload 4, requires Strength 11 to use, two-handed, Dexterity modifier), Shoot</p>
+      <p>Properties: two-handed</p>
+      <p>Actions: Shoot</p>
+    </description>
+  </element>
+  <element name="railgun" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_RAILGUN">
+    <setters>
+      <set name="damage">1d10 ion</set>
+      <set name="range">120/470</set>
+      <set name="reload">1</set>
+      <set name="category">Martial Blaster</set>
+      <set name="proficiency">ID_WEAPON_RAILGUN</set>
+    </setters>
+    <description>
+      <p>1d10 ion, power cell, range 120/470, Reload 1, two-handed, Dexterity modifier), Shoot</p>
+      <p>Properties: two-handed</p>
+      <p>Actions: Shoot</p>
+    </description>
+  </element>
+  <element name="arc caster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ARC_CASTER">
+    <setters>
+      <set name="damage">2d4 lightning</set>
+      <set name="range">60/240</set>
+      <set name="reload">9</set>
+      <set name="category">Martial Blaster</set>
+      <set name="proficiency">ID_WEAPON_ARC_CASTER</set>
+    </setters>
+    <description>
+      <p>2d4 lightning, power cell, can hit a secondary target in the same line: 1d4 lightning, range 60/240, Reload 9, requires Strength 11 to use, two-handed, Dexterity modifier), Shoot</p>
+      <p>Properties: two-handed</p>
+      <p>Actions: Shoot</p>
+    </description>
+  </element>
+  <element name="sniper rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SNIPER_RIFLE">
+    <setters>
+      <set name="damage">1d12 energy</set>
+      <set name="reload">2</set>
+      <set name="category">Martial Blaster</set>
+      <set name="proficiency">ID_WEAPON_SNIPER_RIFLE</set>
+    </setters>
+    <description>
+      <p>1d12 energy, power cell, 150/600, Reload 2, requires Strength 13 to use, two-handed, Dexterity modifier), Shoot</p>
+      <p>Properties: two-handed</p>
+      <p>Actions: Shoot</p>
+    </description>
+  </element>
+  <element name="minigun/rotary cannon" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MINIGUN_ROTARY_CANNON">
+    <setters>
+      <set name="damage">1d10 energy</set>
+      <set name="reload">4</set>
+      <set name="category">Martial Blaster</set>
+      <set name="proficiency">ID_WEAPON_MINIGUN_ROTARY_CANNON</set>
+    </setters>
+    <description>
+      <p>1d10 energy, power cell, range 75 feet cone, Reload 4, requires Strength 13 to use, two-handed, Dexterity modifier), Blast</p>
+      <p>Properties: two-handed</p>
+      <p>Actions: Blast</p>
+    </description>
+  </element>
+  <element name="flamethrower" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FLAMETHROWER">
+    <setters>
+      <set name="damage">2d6 fire</set>
+      <set name="reload">2</set>
+      <set name="category">Martial Blaster</set>
+      <set name="proficiency">ID_WEAPON_FLAMETHROWER</set>
+    </setters>
+    <description>
+      <p>2d6 fire, canister, range 55 feet cone, Reload 2, two-handed, Dexterity modifier), Flame</p>
+      <p>Properties: two-handed</p>
+      <p>Actions: Flame</p>
+    </description>
+  </element>
+  <element name="cycler rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CYCLER_RIFLE">
+    <setters>
+      <set name="damage">1d10 kinetic</set>
+      <set name="range">100/400</set>
+      <set name="reload">4</set>
+      <set name="category">Martial Blaster</set>
+      <set name="proficiency">ID_WEAPON_CYCLER_RIFLE</set>
+    </setters>
+    <description>
+      <p>1d10 kinetic, slug cartridge, range 100/400, Reload 4, requires Strength 12 to use, two-handed, Dexterity modifier), Shoot</p>
+      <p>Properties: two-handed</p>
+      <p>Actions: Shoot</p>
+    </description>
+  </element>
+  <element name="lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSABER">
+    <setters>
+      <set name="damage">1d6 energy</set>
+      <set name="category">Simple Lightweapon</set>
+      <set name="proficiency">ID_WEAPON_LIGHTSABER</set>
+    </setters>
+    <description>
+      <p>1d6 energy, finesse), Strike, Off-Hand Strike, Hilt Strike</p>
+      <p>Properties: finesse</p>
+      <p>Actions: Strike, Off-Hand Strike, Hilt Strike</p>
+    </description>
+  </element>
+  <element name="lightstaff" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSTAFF">
+    <setters>
+      <set name="damage">1d6/2d4 energy</set>
+      <set name="category">Simple Lightweapon</set>
+      <set name="proficiency">ID_WEAPON_LIGHTSTAFF</set>
+    </setters>
+    <description>
+      <p>1d6/2d4 energy, versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike</p>
+      <p>Properties: versatile</p>
+      <p>Actions: Strike, Off-Hand Strike, Hilt Strike</p>
+    </description>
+  </element>
+  <element name="crossguard saber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CROSSGUARD_SABER">
+    <setters>
+      <set name="damage">2d6 energy</set>
+      <set name="category">Martial Lightweapon</set>
+      <set name="proficiency">ID_WEAPON_CROSSGUARD_SABER</set>
+    </setters>
+    <description>
+      <p>2d6 energy, two-handed, requires Dexterity 13 to use, Strength modifier), Strike, Hilt Strike</p>
+      <p>Properties: two-handed</p>
+      <p>Actions: Strike, Hilt Strike</p>
+    </description>
+  </element>
+  <element name="lightwhip" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTWHIP">
+    <setters>
+      <set name="damage">1d6 energy</set>
+      <set name="category">Martial Lightweapon</set>
+      <set name="proficiency">ID_WEAPON_LIGHTWHIP</set>
+    </setters>
+    <description>
+      <p>1d6 energy, reach: 10 feet, finesse), Strike, Off-Hand Strike</p>
+      <p>Properties: finesse, reach 10ft</p>
+      <p>Actions: Strike, Off-Hand Strike</p>
+    </description>
+  </element>
+  <element name="martial lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MARTIAL_LIGHTSABER">
+    <setters>
+      <set name="damage">1d8/1d10 energy</set>
+      <set name="category">Martial Lightweapon</set>
+      <set name="proficiency">ID_WEAPON_MARTIAL_LIGHTSABER</set>
+    </setters>
+    <description>
+      <p>1d8/1d10 energy, versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike</p>
+      <p>Properties: versatile</p>
+      <p>Actions: Strike, Off-Hand Strike, Hilt Strike</p>
+    </description>
+  </element>
+  <element name="lightsaber pike" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSABER_PIKE">
+    <setters>
+      <set name="damage">1d10 energy</set>
+      <set name="category">Martial Lightweapon</set>
+      <set name="proficiency">ID_WEAPON_LIGHTSABER_PIKE</set>
+    </setters>
+    <description>
+      <p>1d10 energy, two-handed, reach: 10 feet, requires Dexterity 11 to use, Strength modifier), Strike, Hilt Strike</p>
+      <p>Properties: two-handed, reach 10ft</p>
+      <p>Actions: Strike, Hilt Strike</p>
+    </description>
+  </element>
+  <element name="double bladed lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DOUBLE_BLADED_LIGHTSABER">
+    <setters>
+      <set name="damage">1d8 energy</set>
+      <set name="category">Martial Lightweapon</set>
+      <set name="proficiency">ID_WEAPON_DOUBLE_BLADED_LIGHTSABER</set>
+    </setters>
+    <description>
+      <p>1d8 energy, two-handed, finesse), Strike, Slash, Back Strike</p>
+      <p>Properties: two-handed, finesse</p>
+      <p>Actions: Strike, Slash, Back Strike</p>
+    </description>
+  </element>
+  <element name="vibrospear" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROSPEAR">
+    <setters>
+      <set name="damage">1d6/2d4 kinetic</set>
+      <set name="range">25/75</set>
+      <set name="category">Simple Vibroweapon</set>
+      <set name="proficiency">ID_WEAPON_VIBROSPEAR</set>
+    </setters>
+    <description>
+      <p>1d6/2d4 kinetic, versatile, thrown range 25/75, Strength modifier), Strike, Off-Hand Strike, Hilt Strike</p>
+      <p>Properties: versatile, thrown</p>
+      <p>Actions: Strike, Off-Hand Strike, Hilt Strike</p>
+    </description>
+  </element>
+  <element name="vibrodagger" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBRODAGGER">
+    <setters>
+      <set name="damage">1d4 kinetic</set>
+      <set name="range">20/60</set>
+      <set name="category">Simple Vibroweapon</set>
+      <set name="proficiency">ID_WEAPON_VIBRODAGGER</set>
+    </setters>
+    <description>
+      <p>1d4 kinetic, thrown range 20/60, finesse), Strike, Off-Hand Strike</p>
+      <p>Properties: finesse, thrown</p>
+      <p>Actions: Strike, Off-Hand Strike</p>
+    </description>
+  </element>
+  <element name="vibrostaff" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROSTAFF">
+    <setters>
+      <set name="damage">1d6/2d4 kinetic</set>
+      <set name="category">Simple Vibroweapon</set>
+      <set name="proficiency">ID_WEAPON_VIBROSTAFF</set>
+    </setters>
+    <description>
+      <p>1d6/2d4 kinetic, versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike</p>
+      <p>Properties: versatile</p>
+      <p>Actions: Strike, Off-Hand Strike, Hilt Strike</p>
+    </description>
+  </element>
+  <element name="vibro double-blade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBRO_DOUBLE_BLADE">
+    <setters>
+      <set name="damage">1d8 kinetic</set>
+      <set name="category">Martial Vibroweapon</set>
+      <set name="proficiency">ID_WEAPON_VIBRO_DOUBLE_BLADE</set>
+    </setters>
+    <description>
+      <p>1d8 kinetic, two-handed, finesse), Strike, Slash, Back Strike</p>
+      <p>Properties: two-handed, finesse</p>
+      <p>Actions: Strike, Slash, Back Strike</p>
+    </description>
+  </element>
+  <element name="electrostaff" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTROSTAFF">
+    <setters>
+      <set name="damage">1d6 lightning</set>
+      <set name="category">Martial Vibroweapon</set>
+      <set name="proficiency">ID_WEAPON_ELECTROSTAFF</set>
+    </setters>
+    <description>
+      <p>1d6 lightning, two-handed, finesse), Strike, Slash, Back Strike</p>
+      <p>Properties: two-handed, finesse</p>
+      <p>Actions: Strike, Slash, Back Strike</p>
+    </description>
+  </element>
+  <element name="vibrosword" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROSWORD">
+    <setters>
+      <set name="damage">1d8/1d10 kinetic</set>
+      <set name="category">Martial Vibroweapon</set>
+      <set name="proficiency">ID_WEAPON_VIBROSWORD</set>
+    </setters>
+    <description>
+      <p>1d8/1d10 kinetic, versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike</p>
+      <p>Properties: versatile</p>
+      <p>Actions: Strike, Off-Hand Strike, Hilt Strike</p>
+    </description>
+  </element>
+  <element name="virbo-axe" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIRBO_AXE">
+    <setters>
+      <set name="damage">1d12 kinetic</set>
+      <set name="category">Martial Vibroweapon</set>
+      <set name="proficiency">ID_WEAPON_VIRBO_AXE</set>
+    </setters>
+    <description>
+      <p>1d12 kinetic, two-handed, requires Dexterity 11 to use, Strength modifier), Strike, Hilt Strike</p>
+      <p>Properties: two-handed</p>
+      <p>Actions: Strike, Hilt Strike</p>
+    </description>
+  </element>
+  <element name="vibropike" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROPIKE">
+    <setters>
+      <set name="damage">1d10 kinetic</set>
+      <set name="category">Martial Vibroweapon</set>
+      <set name="proficiency">ID_WEAPON_VIBROPIKE</set>
+    </setters>
+    <description>
+      <p>1d10 kinetic, two-handed, reach: 10 feet, requires Dexterity 11 to use, Strength modifier), Strike, Hilt Strike</p>
+      <p>Properties: two-handed, reach 10ft</p>
+      <p>Actions: Strike, Hilt Strike</p>
+    </description>
+  </element>
+  <element name="electrowhip" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTROWHIP">
+    <setters>
+      <set name="damage">1d4 lightning</set>
+      <set name="category">Martial Vibroweapon</set>
+      <set name="proficiency">ID_WEAPON_ELECTROWHIP</set>
+    </setters>
+    <description>
+      <p>1d4 lightning, reach: 10 feet, finesse), Strike, Off-Hand Strike</p>
+      <p>Properties: finesse, reach 10ft</p>
+      <p>Actions: Strike, Off-Hand Strike</p>
+    </description>
+  </element>
+  <element name="electrobaton" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTROBATON">
+    <setters>
+      <set name="damage">1d4 lightning</set>
+      <set name="category">Martial Vibroweapon</set>
+      <set name="proficiency">ID_WEAPON_ELECTROBATON</set>
+    </setters>
+    <description>
+      <p>1d4 lightning, finesse), Strike, Off-Hand Strike</p>
+      <p>Properties: finesse</p>
+      <p>Actions: Strike, Off-Hand Strike</p>
+    </description>
+  </element>
+  <element name="duranium combat suit AC: 13 + Dexterity modifier" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DURANIUM_COMBAT_SUIT_AC_13_DEXTERITY_MODIFIER">
+    <setters>
+      <set name="category">armour</set>
+      <set name="proficiency">ID_WEAPON_DURANIUM_COMBAT_SUIT_AC_13_DEXTERITY_MODIFIER</set>
+    </setters>
+    <description>
+      <p>disadvantage on stealth</p>
+    </description>
+  </element>
+  <element name="mesh armor AC: 13 + Dexterity modifier" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MESH_ARMOR_AC_13_DEXTERITY_MODIFIER">
+    <setters>
+      <set name="category">armour</set>
+      <set name="proficiency">ID_WEAPON_MESH_ARMOR_AC_13_DEXTERITY_MODIFIER</set>
+    </setters>
+    <description>
+      <p>max +2</p>
+    </description>
+  </element>
+  <element name="weave armor AC: 14 + Dexterity modifier" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WEAVE_ARMOR_AC_14_DEXTERITY_MODIFIER">
+    <setters>
+      <set name="category">armour</set>
+      <set name="proficiency">ID_WEAPON_WEAVE_ARMOR_AC_14_DEXTERITY_MODIFIER</set>
+    </setters>
+    <description>
+      <p>max +2</p>
+    </description>
+  </element>
+  <element name="beskar weave armor AC 14 + Dexterity modifier" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BESKAR_WEAVE_ARMOR_AC_14_DEXTERITY_MODIFIER">
+    <setters>
+      <set name="category">armour</set>
+      <set name="proficiency">ID_WEAPON_BESKAR_WEAVE_ARMOR_AC_14_DEXTERITY_MODIFIER</set>
+    </setters>
+    <description>
+      <p>max +2) (ability: if an enemy rolls max damage on the dice, they have to reroll and use that reroll</p>
+    </description>
+  </element>
+  <element name="composite armor: 15 + Dexterity modifier" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_COMPOSITE_ARMOR_15_DEXTERITY_MODIFIER">
+    <setters>
+      <set name="category">armour</set>
+      <set name="proficiency">ID_WEAPON_COMPOSITE_ARMOR_15_DEXTERITY_MODIFIER</set>
+    </setters>
+    <description>
+      <p>max +2) (disadvantage on stealth</p>
+    </description>
+  </element>
+  <element name="battle armor AC: 16" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BATTLE_ARMOR_AC_16">
+    <setters>
+      <set name="category">armour</set>
+      <set name="proficiency">ID_WEAPON_BATTLE_ARMOR_AC_16</set>
+    </setters>
+    <description>
+      <p>disadvantage on stealth, resistant to kinetic damage</p>
+    </description>
+  </element>
+  <element name="assault armor AC: 17" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ASSAULT_ARMOR_AC_17">
+    <setters>
+      <set name="category">armour</set>
+      <set name="proficiency">ID_WEAPON_ASSAULT_ARMOR_AC_17</set>
+    </setters>
+    <description>
+      <p>(disadvantage on stealth, resistant to kinetic damage</p>
+    </description>
+  </element>
+  <element name="durasteel armor AC: 18" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DURASTEEL_ARMOR_AC_18">
+    <setters>
+      <set name="category">armour</set>
+      <set name="proficiency">ID_WEAPON_DURASTEEL_ARMOR_AC_18</set>
+    </setters>
+    <description>
+      <p>disadvantage on stealth, resistant to kinetic damage</p>
+    </description>
+  </element>
+  <element name="repair kit: with this you can repair weapons/armours or any technology" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REPAIR_KIT_WITH_THIS_YOU_CAN_REPAIR_WEAPONS_ARMOURS_OR_ANY_TECHNOLOGY">
+    <setters>
+      <set name="category">tools</set>
+      <set name="proficiency">ID_WEAPON_REPAIR_KIT_WITH_THIS_YOU_CAN_REPAIR_WEAPONS_ARMOURS_OR_ANY_TECHNOLOGY</set>
+    </setters>
+    <description>
+      <p>requires repair kit proficiency</p>
+    </description>
+  </element>
+  <element name="forgery kit: with this kit you can forge documents and make counterfeit credits" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FORGERY_KIT_WITH_THIS_KIT_YOU_CAN_FORGE_DOCUMENTS_AND_MAKE_COUNTERFEIT_CREDITS">
+    <setters>
+      <set name="category">tools</set>
+      <set name="proficiency">ID_WEAPON_FORGERY_KIT_WITH_THIS_KIT_YOU_CAN_FORGE_DOCUMENTS_AND_MAKE_COUNTERFEIT_CREDITS</set>
+    </setters>
+    <description>
+      <p>requires forgery kit proficiency</p>
+    </description>
+  </element>
+  <element name="slicing kit: with this kit you can slice terminals to open locks or disarm traps" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLICING_KIT_WITH_THIS_KIT_YOU_CAN_SLICE_TERMINALS_TO_OPEN_LOCKS_OR_DISARM_TRAPS">
+    <setters>
+      <set name="category">tools</set>
+      <set name="proficiency">ID_WEAPON_SLICING_KIT_WITH_THIS_KIT_YOU_CAN_SLICE_TERMINALS_TO_OPEN_LOCKS_OR_DISARM_TRAPS</set>
+    </setters>
+    <description>
+      <p>requires slicing kit proficiency</p>
+    </description>
+  </element>
+  <element name="hacking kit: with this kit you can hack &quot;unconcious&quot; droids or security systems" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_HACKING_KIT_WITH_THIS_KIT_YOU_CAN_HACK_UNCONCIOUS_DROIDS_OR_SECURITY_SYSTEMS">
+    <setters>
+      <set name="category">tools</set>
+      <set name="proficiency">ID_WEAPON_HACKING_KIT_WITH_THIS_KIT_YOU_CAN_HACK_UNCONCIOUS_DROIDS_OR_SECURITY_SYSTEMS</set>
+    </setters>
+    <description>
+      <p>requires hacking kit proficieny</p>
+    </description>
+  </element>
+  <element name="disguise kit: with this kit you can completely change your look" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DISGUISE_KIT_WITH_THIS_KIT_YOU_CAN_COMPLETELY_CHANGE_YOUR_LOOK">
+    <setters>
+      <set name="category">tools</set>
+      <set name="proficiency">ID_WEAPON_DISGUISE_KIT_WITH_THIS_KIT_YOU_CAN_COMPLETELY_CHANGE_YOUR_LOOK</set>
+    </setters>
+    <description>
+      <p>requires disguise kit proficiency</p>
+    </description>
+  </element>
+  <element name="poisoning kit: with this kit you can coat your weapons with poisons" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_POISONING_KIT_WITH_THIS_KIT_YOU_CAN_COAT_YOUR_WEAPONS_WITH_POISONS">
+    <setters>
+      <set name="category">tools</set>
+      <set name="proficiency">ID_WEAPON_POISONING_KIT_WITH_THIS_KIT_YOU_CAN_COAT_YOUR_WEAPONS_WITH_POISONS</set>
+    </setters>
+    <description>
+      <p>requires poisoning kit proficiency</p>
+    </description>
+  </element>
+  <element name="jumppack and jump boots" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_JUMPPACK_AND_JUMP_BOOTS">
+    <setters>
+      <set name="category">tools</set>
+      <set name="proficiency">ID_WEAPON_JUMPPACK_AND_JUMP_BOOTS</set>
+    </setters>
+    <description>
+      <p>requires jumppack proficiency):</p>
+    </description>
+  </element>
+  <element name="hoverpack and hover boots" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_HOVERPACK_AND_HOVER_BOOTS">
+    <setters>
+      <set name="category">tools</set>
+      <set name="proficiency">ID_WEAPON_HOVERPACK_AND_HOVER_BOOTS</set>
+    </setters>
+    <description>
+      <p>requires hoverpack proficiency):</p>
+    </description>
+  </element>
+  <element name="jetpack and jet boots" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_JETPACK_AND_JET_BOOTS">
+    <setters>
+      <set name="category">tools</set>
+      <set name="proficiency">ID_WEAPON_JETPACK_AND_JET_BOOTS</set>
+    </setters>
+    <description>
+      <p>requires jumppack proficiency, hoverpack proficiency and jetpack proficiency):</p>
+    </description>
+  </element>
+  <element name="thermal detenator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_THERMAL_DETENATOR">
+    <setters>
+      <set name="category">items:</set>
+      <set name="proficiency">ID_WEAPON_THERMAL_DETENATOR</set>
+    </setters>
+    <description>
+      <p>10d8 + 20 energy, 35 feet radius. Each target must make a DC 18 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
+    </description>
+  </element>
+  <element name="flashbang" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FLASHBANG">
+    <setters>
+      <set name="category">items:</set>
+      <set name="proficiency">ID_WEAPON_FLASHBANG</set>
+    </setters>
+    <description>
+      <p>15 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target is blinded for 1 round. On a successful save, the target isn't blinded</p>
+    </description>
+  </element>
+  <element name="cryo grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_GRENADE">
+    <setters>
+      <set name="damage">1d8 cold</set>
+      <set name="category">items:</set>
+      <set name="proficiency">ID_WEAPON_CRYO_GRENADE</set>
+    </setters>
+    <description>
+      <p>1d8 cold, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. The explosion creates an icy surface of 10 feet that counts as difficult terrain. Each creature walking over it must make a DC 12 Dexterity saving throw. On a failed save, the creature falls prone. On a successful save, the creature doesn't fall</p>
+    </description>
+  </element>
+  <element name="ion grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_GRENADE">
+    <setters>
+      <set name="damage">1d8 ion</set>
+      <set name="category">items:</set>
+      <set name="proficiency">ID_WEAPON_ION_GRENADE</set>
+    </setters>
+    <description>
+      <p>1d8 ion, 10 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage, On a successful save, the target takes half damage. Each droid must make a DC 13 Constitution saving throw. On a failed save, the droid is stunned for 1 round. On a successful save, the droid isn't stunned</p>
+    </description>
+  </element>
+  <element name="incendiary grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_INCENDIARY_GRENADE">
+    <setters>
+      <set name="damage">1d6 fire</set>
+      <set name="category">items:</set>
+      <set name="proficiency">ID_WEAPON_INCENDIARY_GRENADE</set>
+    </setters>
+    <description>
+      <p>1d6 fire, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage and is inflicted burning for 1 turn. On a successful save, the target takes half damage. Sets ground on fire in a 10 feet radius for 3 turns. Each target standing or walking in this will be inflicted burning for 1 turn</p>
+    </description>
+  </element>
+  <element name="corrosive grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CORROSIVE_GRENADE">
+    <setters>
+      <set name="damage">2d6 acid</set>
+      <set name="category">items:</set>
+      <set name="proficiency">ID_WEAPON_CORROSIVE_GRENADE</set>
+    </setters>
+    <description>
+      <p>2d6 acid, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes no damage. The explosion creates an acid surface of 10 feet that reduces AC by 2</p>
+    </description>
+  </element>
+  <element name="gas grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_GAS_GRENADE">
+    <setters>
+      <set name="category">items:</set>
+      <set name="proficiency">ID_WEAPON_GAS_GRENADE</set>
+    </setters>
+    <description>
+      <p>creates gas cloud, 10 feet radius. Each creature in the gas must make a DC 13 Constitution saving throw. On a failed save, the creature becomes poisoned</p>
+    </description>
+  </element>
+  <element name="fragmentation grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FRAGMENTATION_GRENADE">
+    <setters>
+      <set name="damage">2d8 kinetic</set>
+      <set name="category">items:</set>
+      <set name="proficiency">ID_WEAPON_FRAGMENTATION_GRENADE</set>
+    </setters>
+    <description>
+      <p>2d8 kinetic, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
+    </description>
+  </element>
+  <element name="plasma grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_PLASMA_GRENADE">
+    <setters>
+      <set name="damage">2d8 energy</set>
+      <set name="category">items:</set>
+      <set name="proficiency">ID_WEAPON_PLASMA_GRENADE</set>
+    </setters>
+    <description>
+      <p>2d8 energy, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
+    </description>
+  </element>
+  <element name="shock grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SHOCK_GRENADE">
+    <setters>
+      <set name="damage">1d6 lightning</set>
+      <set name="category">items:</set>
+      <set name="proficiency">ID_WEAPON_SHOCK_GRENADE</set>
+    </setters>
+    <description>
+      <p>1d6 lightning but cannot reduce a creature's health to 0. 10 feet radius. The explosion creates an electrifying field that counts as difficult terrain for 3 turns in a 10 feet radius</p>
+    </description>
+  </element>
+  <element name="stun grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_STUN_GRENADE">
+    <setters>
+      <set name="category">items:</set>
+      <set name="proficiency">ID_WEAPON_STUN_GRENADE</set>
+    </setters>
+    <description>
+      <p>10 feet radius. Each target must make a DC 15 Constitution saving throw. On a failed save, the target is pushed 5 feet away from the centerpoint and is stunned for 1 round. On a successful save, the target takes isn't pushed and isn't stunned</p>
+    </description>
+  </element>
+  <element name="remote flashbang" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_FLASHBANG">
+    <setters>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_REMOTE_FLASHBANG</set>
+    </setters>
+    <description>
+      <p>15 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target is blinded for 1 round. On a successful save, the target isn't blinded</p>
+    </description>
+  </element>
+  <element name="remote cryo detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_CRYO_DETONATOR">
+    <setters>
+      <set name="damage">1d8 cold</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_REMOTE_CRYO_DETONATOR</set>
+    </setters>
+    <description>
+      <p>1d8 cold, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. The explosion creates an icy surface of 10 feet that counts as difficult terrain. Each creature walking over it must make a DC 12 Dexterity saving throw. On a failed save, the creature falls prone. On a successful save, the creature doesn't fall</p>
+    </description>
+  </element>
+  <element name="remote ion detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_ION_DETONATOR">
+    <setters>
+      <set name="damage">1d8 ion</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_REMOTE_ION_DETONATOR</set>
+    </setters>
+    <description>
+      <p>1d8 ion, 10 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage, On a successful save, the target takes half damage. Each droid must make a DC 13 Constitution saving throw. On a failed save, the droid is stunned for 1 round. On a successful save, the droid isn't stunned</p>
+    </description>
+  </element>
+  <element name="remote incendiary detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_INCENDIARY_DETONATOR">
+    <setters>
+      <set name="damage">1d6 fire</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_REMOTE_INCENDIARY_DETONATOR</set>
+    </setters>
+    <description>
+      <p>1d6 fire, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage and is inflicted burning for 1 turn. On a successful save, the target takes half damage. Sets ground on fire in a 10 feet radius for 3 turns. Each target standing or walking in this will be inflicted burning for 1 turn</p>
+    </description>
+  </element>
+  <element name="remote corrosive detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_CORROSIVE_DETONATOR">
+    <setters>
+      <set name="damage">2d6 acid</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_REMOTE_CORROSIVE_DETONATOR</set>
+    </setters>
+    <description>
+      <p>2d6 acid, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes no damage. The explosion creates an acid surface of 10 feet that reduces AC by 2</p>
+    </description>
+  </element>
+  <element name="remote gas detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_GAS_DETONATOR">
+    <setters>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_REMOTE_GAS_DETONATOR</set>
+    </setters>
+    <description>
+      <p>creates gas cloud, 10 feet radius. Each creature in the gas must make a DC 13 Constitution saving throw. On a failed save, the creature becomes poisoned</p>
+    </description>
+  </element>
+  <element name="remote fragmentation detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_FRAGMENTATION_DETONATOR">
+    <setters>
+      <set name="damage">2d8 kinetic</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_REMOTE_FRAGMENTATION_DETONATOR</set>
+    </setters>
+    <description>
+      <p>2d8 kinetic, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
+    </description>
+  </element>
+  <element name="remote plasma detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_PLASMA_DETONATOR">
+    <setters>
+      <set name="damage">2d8 energy</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_REMOTE_PLASMA_DETONATOR</set>
+    </setters>
+    <description>
+      <p>2d8 energy, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
+    </description>
+  </element>
+  <element name="remote shock detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_SHOCK_DETONATOR">
+    <setters>
+      <set name="damage">1d6 lightning</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_REMOTE_SHOCK_DETONATOR</set>
+    </setters>
+    <description>
+      <p>1d6 lightning but cannot reduce a creature's health to 0. 10 feet radius. The explosion creates an electrifying field that counts as difficult terrain for 3 turns in a 10 feet radius</p>
+    </description>
+  </element>
+  <element name="remote stun detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_STUN_DETONATOR">
+    <setters>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_REMOTE_STUN_DETONATOR</set>
+    </setters>
+    <description>
+      <p>10 feet radius. Each target must make a DC 15 Constitution saving throw. On a failed save, the target is pushed 5 feet away from the centerpoint and is stunned for 1 round. On a successful save, the target takes isn't pushed and isn't stunned</p>
+    </description>
+  </element>
+  <element name="flashbang mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FLASHBANG_MINE">
+    <setters>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_FLASHBANG_MINE</set>
+    </setters>
+    <description>
+      <p>15 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target is blinded for 1 round. On a successful save, the target isn't blinded</p>
+    </description>
+  </element>
+  <element name="cryo mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_MINE">
+    <setters>
+      <set name="damage">1d8 cold</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_CRYO_MINE</set>
+    </setters>
+    <description>
+      <p>1d8 cold, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. The explosion creates an icy surface of 10 feet that counts as difficult terrain. Each creature walking over it must make a DC 12 Dexterity saving throw. On a failed save, the creature falls prone. On a successful save, the creature doesn't fall</p>
+    </description>
+  </element>
+  <element name="ion mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_MINE">
+    <setters>
+      <set name="damage">1d8 ion</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_ION_MINE</set>
+    </setters>
+    <description>
+      <p>1d8 ion, 10 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage, On a successful save, the target takes half damage. Each droid must make a DC 13 Constitution saving throw. On a failed save, the droid is stunned for 1 round. On a successful save, the droid isn't stunned</p>
+    </description>
+  </element>
+  <element name="incendiary mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_INCENDIARY_MINE">
+    <setters>
+      <set name="damage">1d6 fire</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_INCENDIARY_MINE</set>
+    </setters>
+    <description>
+      <p>1d6 fire, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage and is inflicted burning for 1 turn. On a successful save, the target takes half damage. Sets ground on fire in a 10 feet radius for 3 turns. Each target standing or walking in this will be inflicted burning for 1 turn</p>
+    </description>
+  </element>
+  <element name="corrosive mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CORROSIVE_MINE">
+    <setters>
+      <set name="damage">2d6 acid</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_CORROSIVE_MINE</set>
+    </setters>
+    <description>
+      <p>2d6 acid, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes no damage. The explosion creates an acid surface of 10 feet that reduces AC by 2</p>
+    </description>
+  </element>
+  <element name="gas mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_GAS_MINE">
+    <setters>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_GAS_MINE</set>
+    </setters>
+    <description>
+      <p>creates gas cloud, 10 feet radius. Each creature in the gas must make a DC 13 Constitution saving throw. On a failed save, the creature becomes poisoned</p>
+    </description>
+  </element>
+  <element name="fragmentation mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FRAGMENTATION_MINE">
+    <setters>
+      <set name="damage">2d8 kinetic</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_FRAGMENTATION_MINE</set>
+    </setters>
+    <description>
+      <p>2d8 kinetic, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
+    </description>
+  </element>
+  <element name="plasma mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_PLASMA_MINE">
+    <setters>
+      <set name="damage">2d8 energy</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_PLASMA_MINE</set>
+    </setters>
+    <description>
+      <p>2d8 energy, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
+    </description>
+  </element>
+  <element name="shock mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SHOCK_MINE">
+    <setters>
+      <set name="damage">1d6 lightning</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_SHOCK_MINE</set>
+    </setters>
+    <description>
+      <p>1d6 lightning but cannot reduce a creature's health to 0. 10 feet radius. The explosion creates an electrifying field that counts as difficult terrain for 3 turns in a 10 feet radius</p>
+    </description>
+  </element>
+  <element name="stun mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_STUN_MINE">
+    <setters>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_STUN_MINE</set>
+    </setters>
+    <description>
+      <p>10 feet radius. Each target must make a DC 15 Constitution saving throw. On a failed save, the target is pushed 5 feet away from the centerpoint and is stunned for 1 round. On a successful save, the target takes isn't pushed and isn't stunned</p>
+    </description>
+  </element>
+  <element name="poison dart" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_POISON_DART">
+    <setters>
+      <set name="damage">1d6 kinetic</set>
+      <set name="reload">1</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_POISON_DART</set>
+    </setters>
+    <description>
+      <p>1d6 kinetic. The target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage and becomes poisoned. On a successful save, the target takes half damage and doesn't become poisoned, Reload 1, Dexterity modifier</p>
+    </description>
+  </element>
+  <element name="sleep dart" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLEEP_DART">
+    <setters>
+      <set name="reload">1</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_SLEEP_DART</set>
+    </setters>
+    <description>
+      <p>The target must make a DC 14 Constitution saving throw. On a failed save, the target falls asleep. On a successful save, the target doesn't fall asleep, Reload 1, Dexterity modifier</p>
+    </description>
+  </element>
+  <element name="electrifying dart" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTRIFYING_DART">
+    <setters>
+      <set name="damage">1d6 kinetic</set>
+      <set name="reload">1</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_ELECTRIFYING_DART</set>
+    </setters>
+    <description>
+      <p>1d6 kinetic. 1d6 lightning, The target must make a DC 14 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. Reload 1, Dexterity modifier</p>
+    </description>
+  </element>
+  <element name="panic dart" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_PANIC_DART">
+    <setters>
+      <set name="damage">1d6 kinetic</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_PANIC_DART</set>
+    </setters>
+    <description>
+      <p>1d6 kinetic. The target must make a DC 14 Wisdom saving throw. On a failed save, the target becomes frightened for 1 round. On a successful save, the target doesn't become frightened. Dexterity modifier</p>
+    </description>
+  </element>
+  <element name="paralysis dart" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_PARALYSIS_DART">
+    <setters>
+      <set name="damage">1d6 kinetic</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_PARALYSIS_DART</set>
+    </setters>
+    <description>
+      <p>1d6 kinetic. The target must make a DC 14 Constitution saving throw. On a failed save, the target becomes paralysed for 1 round, Dexterity modifier</p>
+    </description>
+  </element>
+  <element name="plasma rocket" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_PLASMA_ROCKET">
+    <setters>
+      <set name="damage">2d8 energy</set>
+      <set name="reload">1</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_PLASMA_ROCKET</set>
+    </setters>
+    <description>
+      <p>2d8 energy, 5 feet radius. Each target must make a DC 14 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage, Reload 1, Dexterity modifier</p>
+    </description>
+  </element>
+  <element name="cryo rocket" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_ROCKET">
+    <setters>
+      <set name="damage">1d8 cold</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_CRYO_ROCKET</set>
+    </setters>
+    <description>
+      <p>1d8 cold, 10 feet radius. Each target must make DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. The explosion creates an icy surface of 10 feet that counts as difficult terrain. Each creature walking over it must make a DC 12 Dexterity saving throw. On a failed save, the creature falls prone. On a successful save, the creature doesn't fall</p>
+    </description>
+  </element>
+  <element name="ion rocket" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_ROCKET">
+    <setters>
+      <set name="damage">1d8 ion</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_ION_ROCKET</set>
+    </setters>
+    <description>
+      <p>1d8 ion, 10 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage, On a successful save, the target takes half damage. Each droid must make a DC 13 Constitution saving throw. On a failed save, the droid is stunned for 1 round. On a successful save, the droid isn't stunned</p>
+    </description>
+  </element>
+  <element name="incendiary rocket" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_INCENDIARY_ROCKET">
+    <setters>
+      <set name="damage">1d6 fire</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_INCENDIARY_ROCKET</set>
+    </setters>
+    <description>
+      <p>1d6 fire, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage and is inflicted burning for 1 turn. On a successful save, the target takes half damage. Sets ground on fire in a 10 feet radius for 3 turns. Each target standing or walking in this will be inflicted burning for 1 turn</p>
+    </description>
+  </element>
+  <element name="corrosive rocket" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CORROSIVE_ROCKET">
+    <setters>
+      <set name="damage">2d6 acid</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_CORROSIVE_ROCKET</set>
+    </setters>
+    <description>
+      <p>2d6 acid, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes no damage. The explosion creates an acid surface of 10 feet that reduces AC by 2</p>
+    </description>
+  </element>
+  <element name="fragmentation rocket" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FRAGMENTATION_ROCKET">
+    <setters>
+      <set name="damage">2d8 kinetic</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_FRAGMENTATION_ROCKET</set>
+    </setters>
+    <description>
+      <p>2d8 kinetic, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
+    </description>
+  </element>
+  <element name="fibercord whip" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FIBERCORD_WHIP">
+    <setters>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_FIBERCORD_WHIP</set>
+    </setters>
+    <description>
+      <p>15 feet line, The target must make a DC 8 + proficiency + Dexterity modifier, Dexterity saving throw. On a failed save, the target is restrained. On a successful save, the target isn't restrained. If the target is restrained he target can on their turn use an Action to do a Strength saving throw against 8 + proficiency + Strength modifier of the restrainer. On a failed save, the targets stays restrained. On a successful save, the target is freed. The Restrainer can't use Bonus Actions or hold something in that hand when restraining someone, Dexterity modifier</p>
+    </description>
+  </element>
+  <element name="Wristflame" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRISTFLAME">
+    <setters>
+      <set name="damage">1d10 fire</set>
+      <set name="reload">2</set>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_WRISTFLAME</set>
+    </setters>
+    <description>
+      <p>1d10 fire, Reload 2, canister, 15 feet line, Dexterity modifier), Flame</p>
+      <p>Actions: Flame</p>
+    </description>
+  </element>
+  <element name="poison" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_POISON">
+    <setters>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_POISON</set>
+    </setters>
+    <description>
+      <p>The target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage and becomes poisoned. On a successful save, the target takes half damage and doesn't become poisoned</p>
+    </description>
+  </element>
+  <element name="sleep poison" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLEEP_POISON">
+    <setters>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_SLEEP_POISON</set>
+    </setters>
+    <description>
+      <p>The target must make a DC 14 Constitution saving throw. On a failed save, the target falls asleep. On a successful save, the target doesn't fall asleep</p>
+    </description>
+  </element>
+  <element name="paralysing poison" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_PARALYSING_POISON">
+    <setters>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_PARALYSING_POISON</set>
+    </setters>
+    <description>
+      <p>The target must make a DC 14 Constitution saving throw. On a failed save, the target becomes paralysed for 1 round</p>
+    </description>
+  </element>
+  <element name="panic poison" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_PANIC_POISON">
+    <setters>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_PANIC_POISON</set>
+    </setters>
+    <description>
+      <p>The target must make a DC 14 Wisdom saving throw. On a failed save, the target becomes frightened for 1 round. On a successful save, the target doesn't become frightened</p>
+    </description>
+  </element>
+  <element name="Minor kolto pack" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MINOR_KOLTO_PACK">
+    <setters>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_MINOR_KOLTO_PACK</set>
+    </setters>
+    <description>
+      <p>2d4 + 2 healing</p>
+    </description>
+  </element>
+  <element name="Medium kolto pack" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MEDIUM_KOLTO_PACK">
+    <setters>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_MEDIUM_KOLTO_PACK</set>
+    </setters>
+    <description>
+      <p>4d4 + 4 healing</p>
+    </description>
+  </element>
+  <element name="Major kolto pack" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MAJOR_KOLTO_PACK">
+    <setters>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_MAJOR_KOLTO_PACK</set>
+    </setters>
+    <description>
+      <p>8d4 + 8 healing</p>
+    </description>
+  </element>
+  <element name="bacta pack" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BACTA_PACK">
+    <setters>
+      <set name="category">Remote Detonators: Explosives that can be detonated at any time and anywhere: Place the explosive on any solid surface, Action; Detonate the explosive, Bonus Action.</set>
+      <set name="proficiency">ID_WEAPON_BACTA_PACK</set>
+    </setters>
+    <description>
+      <p>10d4 + 20 healing</p>
+    </description>
+  </element>
+  <element name="Bandfill" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BANDFILL">
+    <setters>
+      <set name="category">instruments (require proficiency)</set>
+      <set name="proficiency">ID_WEAPON_BANDFILL</set>
+    </setters>
+    <description>
+      <p>The bandfill is a musical instrument, commonly used in jizz, that featured a number of mounted horn bells called reciprocator horns and a ploong sounder</p>
+    </description>
+  </element>
+  <element name="Chindinkalu horn" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CHINDINKALU_HORN">
+    <setters>
+      <set name="category">instruments (require proficiency)</set>
+      <set name="proficiency">ID_WEAPON_CHINDINKALU_HORN</set>
+    </setters>
+    <description>
+      <p>The Chidinkalu horn is a musical instrument made by the Kitonaks from the hollowed-out reeds of a chidinka. It produced low tones and is used in the rhythm section</p>
+    </description>
+  </element>
+  <element name="Drum" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DRUM">
+    <setters>
+      <set name="category">instruments (require proficiency)</set>
+      <set name="proficiency">ID_WEAPON_DRUM</set>
+    </setters>
+    <description>
+      <p>Drums are a type of percussive musical instrument</p>
+    </description>
+  </element>
+  <element name="Fanfar" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FANFAR">
+    <setters>
+      <set name="category">instruments (require proficiency)</set>
+      <set name="proficiency">ID_WEAPON_FANFAR</set>
+    </setters>
+    <description>
+      <p>The fanfar is a musical instrument commonly used in jizz. Fanfars appeared to be reedy instruments with a mouthpiece, and the slots along the fanfar are known as farra slots</p>
+    </description>
+  </element>
+  <element name="Fizzz" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FIZZZ">
+    <setters>
+      <set name="category">instruments (require proficiency)</set>
+      <set name="proficiency">ID_WEAPON_FIZZZ</set>
+    </setters>
+    <description>
+      <p>The Dorenian Beshniquel, also known as the Fizzz, is a short, single-reed wind instrument, which is adjusted via peel rod</p>
+    </description>
+  </element>
+  <element name="Flute" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FLUTE">
+    <setters>
+      <set name="category">instruments (require proficiency)</set>
+      <set name="proficiency">ID_WEAPON_FLUTE</set>
+    </setters>
+    <description>
+      <p>Flutes are a type of woodwind instrument. One type of flute is the reed flute</p>
+    </description>
+  </element>
+  <element name="Kloo horn" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_KLOO_HORN">
+    <setters>
+      <set name="category">instruments (require proficiency)</set>
+      <set name="proficiency">ID_WEAPON_KLOO_HORN</set>
+    </setters>
+    <description>
+      <p>The kloo horn is a double-reeded wind instrument, larger than a Slitherhorn and a Fizzz[1] (roughly 1.5 meters tall), and one of the most commonly used instruments in the galaxy</p>
+      <p>Actions: and one of the most commonly used instruments in the galaxy)</p>
+    </description>
+  </element>
+  <element name="Lute" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LUTE">
+    <setters>
+      <set name="category">instruments (require proficiency)</set>
+      <set name="proficiency">ID_WEAPON_LUTE</set>
+    </setters>
+    <description>
+      <p>The lute-pipe is a musical instrument that is played by plucking and blowing into it</p>
+    </description>
+  </element>
+  <element name="Mandoviol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MANDOVIOL">
+    <setters>
+      <set name="category">instruments (require proficiency)</set>
+      <set name="proficiency">ID_WEAPON_MANDOVIOL</set>
+    </setters>
+    <description>
+      <p>The mandoviol is a stringed musical instrument, it is a difficult instrument to master, but could be used to play ballads as well as energetic jizz tunes with equal aplomb</p>
+    </description>
+  </element>
+  <element name="Ommni box" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_OMMNI_BOX">
+    <setters>
+      <set name="category">instruments (require proficiency)</set>
+      <set name="proficiency">ID_WEAPON_OMMNI_BOX</set>
+    </setters>
+    <description>
+      <p>The ommni box is a notoriously hard-to-play instrument which enhanced music, and is commonly used in jizz. It is usually used as an amplifier to attenuate and alter the bass aspects of the music</p>
+    </description>
+  </element>
+  <element name="Slitherhorn" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLITHERHORN">
+    <setters>
+      <set name="category">instruments (require proficiency)</set>
+      <set name="proficiency">ID_WEAPON_SLITHERHORN</set>
+    </setters>
+    <description>
+      <p>The slitherhorn is a musical instrument common among jizz bands. It is similar in appearance to the kloo horn, though smaller in size</p>
+    </description>
+  </element>
+  <element name="Traz" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_TRAZ">
+    <setters>
+      <set name="category">instruments (require proficiency)</set>
+      <set name="proficiency">ID_WEAPON_TRAZ</set>
+    </setters>
+    <description>
+      <p>The traz is a musical instrument similar in appearance and sound to the slitherhorn</p>
+    </description>
+  </element>
+  <element name="Valahorn" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VALAHORN">
+    <setters>
+      <set name="category">instruments (require proficiency)</set>
+      <set name="proficiency">ID_WEAPON_VALAHORN</set>
+    </setters>
+    <description>
+      <p>The valahorn is a type of musical instrument that is similar in appearance and sound to a Kloo horn</p>
+    </description>
+  </element>
+  <element name="Xantha" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_XANTHA">
+    <setters>
+      <set name="category">instruments (require proficiency)</set>
+      <set name="proficiency">ID_WEAPON_XANTHA</set>
+    </setters>
+    <description>
+      <p>The Xantha is a difficult musical instrument that involved plucking strings and covering holes with one's fingers</p>
+    </description>
+  </element>
+</elements>

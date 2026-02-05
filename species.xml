@@ -1,0 +1,1951 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <element name="Bith" type="Race" source="SW-MSV-Edition" id="ID_RACE_BITH">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your INT score increases by 2, DEX score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Vulnerable to sonic</p>
+      <p class="indent">Musician: Proficient with one musical instrument</p>
+      <p class="indent">Advantage on Investigation checks</p>
+      <p class="indent">Advantage on Perception checks</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Bith, One additional language of choice.</p>
+    </description>
+    <rules>
+      <stat name="int" value="2"/>
+      <stat name="dex" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_BITH"/>
+      <select type="Language" name="Language (Bith)" supports="Standard||Exotic" number="1"/>
+      <select type="Sub Race" name="Bith Subrace" supports="ID_RACE_BITH" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_BITH_CYBORG">
+    <supports>ID_RACE_BITH</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_BITH_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_BITH_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_BITH_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_BITH_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_BITH_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Bothan" type="Race" source="SW-MSV-Edition" id="ID_RACE_BOTHAN">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your INT score increases by 2, DEX score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Small.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Bothese.</p>
+    </description>
+    <rules>
+      <stat name="int" value="2"/>
+      <stat name="dex" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_SMALL"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_BOTHESE"/>
+      <select type="Sub Race" name="Bothan Subrace" supports="ID_RACE_BOTHAN" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_BOTHAN_CYBORG">
+    <supports>ID_RACE_BOTHAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_BOTHAN_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_BOTHAN_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_BOTHAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_BOTHAN_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_BOTHAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Cathar" type="Race" source="SW-MSV-Edition" id="ID_RACE_CATHAR">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your DEX score increases by 2, CHAR score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium (tall).</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Darkvision</p>
+      <p class="indent">Natural weapons: Unarmed strikes deal 1d6 kinetic damage</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Catharese.</p>
+    </description>
+    <rules>
+      <stat name="dex" value="2"/>
+      <stat name="char" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_CATHARESE"/>
+      <select type="Sub Race" name="Cathar Subrace" supports="ID_RACE_CATHAR" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_CATHAR_CYBORG">
+    <supports>ID_RACE_CATHAR</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_CATHAR_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CATHAR_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_CATHAR_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CATHAR_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_CATHAR_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Chagrian" type="Race" source="SW-MSV-Edition" id="ID_RACE_CHAGRIAN">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your DEX score increases by 2, WIS score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Darkvision</p>
+      <p class="indent">Resistant to poison</p>
+      <p class="indent">Amphibious (breathe air and water)</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Chagri.</p>
+    </description>
+    <rules>
+      <stat name="dex" value="2"/>
+      <stat name="wis" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_CHAGRI"/>
+      <select type="Sub Race" name="Chagrian Subrace" supports="ID_RACE_CHAGRIAN" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_CHAGRIAN_CYBORG">
+    <supports>ID_RACE_CHAGRIAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_CHAGRIAN_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CHAGRIAN_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_CHAGRIAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CHAGRIAN_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_CHAGRIAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Chiss" type="Race" source="SW-MSV-Edition" id="ID_RACE_CHISS">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your INT score increases by 2, CHAR score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Darkvision</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Cheunh.</p>
+    </description>
+    <rules>
+      <stat name="int" value="2"/>
+      <stat name="char" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_CHEUNH"/>
+      <select type="Sub Race" name="Chiss Subrace" supports="ID_RACE_CHISS" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_CHISS_CYBORG">
+    <supports>ID_RACE_CHISS</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_CHISS_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CHISS_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_CHISS_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CHISS_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_CHISS_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Devaronian" type="Race" source="SW-MSV-Edition" id="ID_RACE_DEVARONIAN">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your CON score increases by 2, CHAR score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Resistant to poison</p>
+      <p class="indent">Advantage on Constitution saving throws</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Devaronese.</p>
+    </description>
+    <rules>
+      <stat name="con" value="2"/>
+      <stat name="char" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_DEVARONESE"/>
+      <select type="Sub Race" name="Devaronian Subrace" supports="ID_RACE_DEVARONIAN" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_DEVARONIAN_CYBORG">
+    <supports>ID_RACE_DEVARONIAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_DEVARONIAN_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_DEVARONIAN_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_DEVARONIAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_DEVARONIAN_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_DEVARONIAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Protocol Droid" type="Race" source="SW-MSV-Edition" id="ID_RACE_PROTOCOL_DROID">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your CHAR score increases by 2, WIS score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Requires maintenance lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 25 ft.</p>
+      <p class="indent">Resistant to necrotic</p>
+      <p class="indent">Immune to poison</p>
+      <p class="indent">Vulnerable to ion</p>
+      <p class="indent">Force Insensitive: Cannot use Force powers</p>
+      <p class="indent">Integrated Armor: Cannot wear armor, but can have armor plating attached</p>
+      <p class="indent">Machine: Cannot be healed by kolto, bacta, or Force powers</p>
+      <p class="indent">Tune-Up: Bonus action to regain 1d10 + level HP (short/long rest recharge)</p>
+      <p class="indent">Languages. You can speak, read, and write All languages.</p>
+    </description>
+    <rules>
+      <stat name="char" value="2"/>
+      <stat name="wis" value="1"/>
+      <stat name="innate speed" value="25" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+    </rules>
+  </element>
+  <element name="Combat Droid" type="Race" source="SW-MSV-Edition" id="ID_RACE_COMBAT_DROID">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your CON score increases by 2, DEX score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Requires maintenance lifespan.</p>
+      <p class="indent">Size. Your size is Medium (tall).</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Resistant to necrotic</p>
+      <p class="indent">Immune to poison</p>
+      <p class="indent">Vulnerable to ion</p>
+      <p class="indent">Force Insensitive: Cannot use Force powers</p>
+      <p class="indent">Machine: Cannot be healed by kolto, bacta, or Force powers</p>
+      <p class="indent">Tune-Up: Bonus action to regain 1d10 + level HP (short/long rest recharge)</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Binary, One additional language of choice.</p>
+    </description>
+    <rules>
+      <stat name="con" value="2"/>
+      <stat name="dex" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_BINARY"/>
+      <select type="Language" name="Language (Combat Droid)" supports="Standard||Exotic" number="1"/>
+    </rules>
+  </element>
+  <element name="Duros" type="Race" source="SW-MSV-Edition" id="ID_RACE_DUROS">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your DEX score increases by 2, INT score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. 150 years lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Darkvision</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Durese.</p>
+    </description>
+    <rules>
+      <stat name="dex" value="2"/>
+      <stat name="int" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_DURESE"/>
+      <select type="Sub Race" name="Duros Subrace" supports="ID_RACE_DUROS" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_DUROS_CYBORG">
+    <supports>ID_RACE_DUROS</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_DUROS_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_DUROS_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_DUROS_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_DUROS_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_DUROS_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Ewok" type="Race" source="SW-MSV-Edition" id="ID_RACE_EWOK">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your DEX score increases by 2, CON score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. 50 years lifespan.</p>
+      <p class="indent">Size. Your size is Small.</p>
+      <p class="indent">Speed. Your base walking speed is 25 ft.</p>
+      <p class="indent">Musician: Proficient with one musical instrument</p>
+      <p class="indent">Nimble: Can hide behind creatures larger than you</p>
+      <p class="indent">Advantage on Perception checks</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Ewokese, Understands Galactic Basic (cannot speak).</p>
+    </description>
+    <rules>
+      <stat name="dex" value="2"/>
+      <stat name="con" value="1"/>
+      <stat name="innate speed" value="25" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_SMALL"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_EWOKESE"/>
+      <select type="Sub Race" name="Ewok Subrace" supports="ID_RACE_EWOK" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_EWOK_CYBORG">
+    <supports>ID_RACE_EWOK</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_EWOK_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_EWOK_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_EWOK_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_EWOK_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_EWOK_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Gamorrean" type="Race" source="SW-MSV-Edition" id="ID_RACE_GAMORREAN">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your STR score increases by 2, CON score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. 70 years lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Durable: +1 HP per level</p>
+      <p class="indent">Advantage on Constitution saving throws</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Gamorrean, Understands Galactic Basic (cannot speak).</p>
+    </description>
+    <rules>
+      <stat name="str" value="2"/>
+      <stat name="con" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_GAMORREAN"/>
+      <select type="Sub Race" name="Gamorrean Subrace" supports="ID_RACE_GAMORREAN" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_GAMORREAN_CYBORG">
+    <supports>ID_RACE_GAMORREAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_GAMORREAN_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GAMORREAN_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_GAMORREAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GAMORREAN_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_GAMORREAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Geonosian" type="Race" source="SW-MSV-Edition" id="ID_RACE_GEONOSIAN">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your DEX score increases by 2, CON score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Natural armor: AC 12 + DEX (unarmored or light armor)</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Geonosian.</p>
+    </description>
+    <rules>
+      <stat name="dex" value="2"/>
+      <stat name="con" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_GEONOSIAN"/>
+      <select type="Sub Race" name="Geonosian Subrace" supports="ID_RACE_GEONOSIAN" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_GEONOSIAN_CYBORG">
+    <supports>ID_RACE_GEONOSIAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_GEONOSIAN_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GEONOSIAN_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_GEONOSIAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GEONOSIAN_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_GEONOSIAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Gran" type="Race" source="SW-MSV-Edition" id="ID_RACE_GRAN">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your CON score increases by 2, WIS score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Durable: +1 HP per level</p>
+      <p class="indent">Slow Metabolism</p>
+      <p class="indent">Advantage on Perception checks</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Gran.</p>
+    </description>
+    <rules>
+      <stat name="con" value="2"/>
+      <stat name="wis" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_GRAN"/>
+      <select type="Sub Race" name="Gran Subrace" supports="ID_RACE_GRAN" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_GRAN_CYBORG">
+    <supports>ID_RACE_GRAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_GRAN_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GRAN_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_GRAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GRAN_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_GRAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Human" type="Race" source="SW-MSV-Edition" id="ID_RACE_HUMAN">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your any ability score increases by 2, 2 abilities score increases by 1, 4 abilities score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, One additional language of choice.</p>
+    </description>
+    <rules>
+      <stat name="any ability" value="2"/>
+      <stat name="2 abilities" value="1"/>
+      <stat name="4 abilities" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <select type="Language" name="Language (Human)" supports="Standard||Exotic" number="1"/>
+      <select type="Sub Race" name="Human Subrace" supports="ID_RACE_HUMAN" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CYBORG">
+    <supports>ID_RACE_HUMAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_HUMAN_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_HUMAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_HUMAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Ithorian" type="Race" source="SW-MSV-Edition" id="ID_RACE_ITHORIAN">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your CHAR score increases by 2, WIS score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium (tall).</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Ithorese, Understands Galactic Basic (cannot speak).</p>
+    </description>
+    <rules>
+      <stat name="char" value="2"/>
+      <stat name="wis" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_ITHORESE"/>
+      <select type="Sub Race" name="Ithorian Subrace" supports="ID_RACE_ITHORIAN" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_ITHORIAN_CYBORG">
+    <supports>ID_RACE_ITHORIAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_ITHORIAN_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ITHORIAN_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_ITHORIAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ITHORIAN_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_ITHORIAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Jawa" type="Race" source="SW-MSV-Edition" id="ID_RACE_JAWA">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your DEX score increases by 2, INT score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Small.</p>
+      <p class="indent">Speed. Your base walking speed is 25 ft.</p>
+      <p class="indent">Darkvision</p>
+      <p class="indent">Nimble: Can hide behind creatures larger than you</p>
+      <p class="indent">Advantage on Constitution saving throws</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Jawaese, Understands Galactic Basic (cannot speak).</p>
+    </description>
+    <rules>
+      <stat name="dex" value="2"/>
+      <stat name="int" value="1"/>
+      <stat name="innate speed" value="25" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_SMALL"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_JAWAESE"/>
+      <select type="Sub Race" name="Jawa Subrace" supports="ID_RACE_JAWA" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_JAWA_CYBORG">
+    <supports>ID_RACE_JAWA</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_JAWA_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_JAWA_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_JAWA_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_JAWA_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_JAWA_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Kaleesh" type="Race" source="SW-MSV-Edition" id="ID_RACE_KALEESH">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your STR score increases by 2, DEX score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Darkvision</p>
+      <p class="indent">Advantage on Perception checks</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Kaleesh.</p>
+    </description>
+    <rules>
+      <stat name="str" value="2"/>
+      <stat name="dex" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_KALEESH"/>
+      <select type="Sub Race" name="Kaleesh Subrace" supports="ID_RACE_KALEESH" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_KALEESH_CYBORG">
+    <supports>ID_RACE_KALEESH</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_KALEESH_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_KALEESH_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_KALEESH_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_KALEESH_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_KALEESH_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Kel Dor" type="Race" source="SW-MSV-Edition" id="ID_RACE_KEL_DOR">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your WIS score increases by 2, DEX score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Darkvision</p>
+      <p class="indent">Resistant to necrotic</p>
+      <p class="indent">Requires breathing apparatus in oxygen atmosphere</p>
+      <p class="indent">Telepathy</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Kel Dor.</p>
+    </description>
+    <rules>
+      <stat name="wis" value="2"/>
+      <stat name="dex" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_KEL_DOR"/>
+      <select type="Sub Race" name="Kel Dor Subrace" supports="ID_RACE_KEL_DOR" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_KEL_DOR_CYBORG">
+    <supports>ID_RACE_KEL_DOR</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_KEL_DOR_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_KEL_DOR_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_KEL_DOR_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_KEL_DOR_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_KEL_DOR_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Mirialan" type="Race" source="SW-MSV-Edition" id="ID_RACE_MIRIALAN">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your DEX score increases by 2, INT score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 35 ft.</p>
+      <p class="indent">Natural weapons: Unarmed strikes deal 1d4 kinetic damage</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Mirialan.</p>
+    </description>
+    <rules>
+      <stat name="dex" value="2"/>
+      <stat name="int" value="1"/>
+      <stat name="innate speed" value="35" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_MIRIALAN"/>
+      <select type="Sub Race" name="Mirialan Subrace" supports="ID_RACE_MIRIALAN" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_MIRIALAN_CYBORG">
+    <supports>ID_RACE_MIRIALAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_MIRIALAN_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MIRIALAN_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_MIRIALAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MIRIALAN_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_MIRIALAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Mon Calamari" type="Race" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your CHAR score increases by 2, WIS score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Darkvision</p>
+      <p class="indent">Resistant to cold</p>
+      <p class="indent">Amphibious (breathe air and water)</p>
+      <p class="indent">Musician: Proficient with one musical instrument</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Mon Cal, One additional language of choice.</p>
+    </description>
+    <rules>
+      <stat name="char" value="2"/>
+      <stat name="wis" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_MON_CAL"/>
+      <select type="Language" name="Language (Mon Calamari)" supports="Standard||Exotic" number="1"/>
+      <select type="Sub Race" name="Mon Calamari Subrace" supports="ID_RACE_MON_CALAMARI" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_CYBORG">
+    <supports>ID_RACE_MON_CALAMARI</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_MON_CALAMARI_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_MON_CALAMARI_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_MON_CALAMARI_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Nautolan" type="Race" source="SW-MSV-Edition" id="ID_RACE_NAUTOLAN">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your DEX score increases by 2, WIS score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Darkvision</p>
+      <p class="indent">Amphibious (breathe air and water)</p>
+      <p class="indent">Natural armor: AC 12 + DEX (unarmored or light armor)</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Nautila.</p>
+    </description>
+    <rules>
+      <stat name="dex" value="2"/>
+      <stat name="wis" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_NAUTILA"/>
+      <select type="Sub Race" name="Nautolan Subrace" supports="ID_RACE_NAUTOLAN" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_NAUTOLAN_CYBORG">
+    <supports>ID_RACE_NAUTOLAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_NAUTOLAN_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_NAUTOLAN_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_NAUTOLAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_NAUTOLAN_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_NAUTOLAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Neimoidian" type="Race" source="SW-MSV-Edition" id="ID_RACE_NEIMOIDIAN">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your CHAR score increases by 2, WIS score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. 150 years lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Darkvision</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Pak Pak.</p>
+    </description>
+    <rules>
+      <stat name="char" value="2"/>
+      <stat name="wis" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_PAK_PAK"/>
+      <select type="Sub Race" name="Neimoidian Subrace" supports="ID_RACE_NEIMOIDIAN" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_NEIMOIDIAN_CYBORG">
+    <supports>ID_RACE_NEIMOIDIAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_NEIMOIDIAN_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_NEIMOIDIAN_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_NEIMOIDIAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_NEIMOIDIAN_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_NEIMOIDIAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Ortolan" type="Race" source="SW-MSV-Edition" id="ID_RACE_ORTOLAN">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your INT score increases by 2, CHAR score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Small.</p>
+      <p class="indent">Speed. Your base walking speed is 25 ft.</p>
+      <p class="indent">Resistant to cold</p>
+      <p class="indent">Musician: Proficient with one musical instrument</p>
+      <p class="indent">Nimble: Can hide behind creatures larger than you</p>
+      <p class="indent">Advantage on Perception checks</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Ortolan.</p>
+    </description>
+    <rules>
+      <stat name="int" value="2"/>
+      <stat name="char" value="1"/>
+      <stat name="innate speed" value="25" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_SMALL"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_ORTOLAN"/>
+      <select type="Sub Race" name="Ortolan Subrace" supports="ID_RACE_ORTOLAN" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_ORTOLAN_CYBORG">
+    <supports>ID_RACE_ORTOLAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_ORTOLAN_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ORTOLAN_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_ORTOLAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ORTOLAN_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_ORTOLAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Rakata" type="Race" source="SW-MSV-Edition" id="ID_RACE_RAKATA">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your STR score increases by 2, INT score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium (tall).</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Darkvision</p>
+      <p class="indent">Amphibious (breathe air and water)</p>
+      <p class="indent">Natural weapons: Unarmed strikes deal 1d6 kinetic damage</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Rakata.</p>
+    </description>
+    <rules>
+      <stat name="str" value="2"/>
+      <stat name="int" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_RAKATA"/>
+      <select type="Sub Race" name="Rakata Subrace" supports="ID_RACE_RAKATA" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_RAKATA_CYBORG">
+    <supports>ID_RACE_RAKATA</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_RAKATA_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RAKATA_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_RAKATA_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RAKATA_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_RAKATA_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Rattataki" type="Race" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your WIS score increases by 2, INT score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Small.</p>
+      <p class="indent">Speed. Your base walking speed is 35 ft.</p>
+      <p class="indent">Natural weapons: Unarmed strikes deal 1d4 kinetic damage</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Rattataki.</p>
+    </description>
+    <rules>
+      <stat name="wis" value="2"/>
+      <stat name="int" value="1"/>
+      <stat name="innate speed" value="35" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_SMALL"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_RATTATAKI"/>
+      <select type="Sub Race" name="Rattataki Subrace" supports="ID_RACE_RATTATAKI" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_CYBORG">
+    <supports>ID_RACE_RATTATAKI</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_RATTATAKI_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_RATTATAKI_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_RATTATAKI_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Rodian" type="Race" source="SW-MSV-Edition" id="ID_RACE_RODIAN">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your DEX score increases by 2, CON score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Darkvision</p>
+      <p class="indent">Advantage on Perception checks</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Rodese.</p>
+    </description>
+    <rules>
+      <stat name="dex" value="2"/>
+      <stat name="con" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_RODESE"/>
+      <select type="Sub Race" name="Rodian Subrace" supports="ID_RACE_RODIAN" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_RODIAN_CYBORG">
+    <supports>ID_RACE_RODIAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_RODIAN_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RODIAN_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_RODIAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RODIAN_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_RODIAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Sith Pureblood" type="Race" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your CHAR score increases by 2, DEX score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Darkvision</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Sith.</p>
+    </description>
+    <rules>
+      <stat name="char" value="2"/>
+      <stat name="dex" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_SITH"/>
+      <select type="Sub Race" name="Sith Pureblood Subrace" supports="ID_RACE_SITH_PUREBLOOD" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_CYBORG">
+    <supports>ID_RACE_SITH_PUREBLOOD</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_SITH_PUREBLOOD_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_SITH_PUREBLOOD_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_SITH_PUREBLOOD_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Sullustan" type="Race" source="SW-MSV-Edition" id="ID_RACE_SULLUSTAN">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your INT score increases by 2, DEX score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Small.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Darkvision</p>
+      <p class="indent">Advantage on Perception checks</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Sullustese.</p>
+    </description>
+    <rules>
+      <stat name="int" value="2"/>
+      <stat name="dex" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_SMALL"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_SULLUSTESE"/>
+      <select type="Sub Race" name="Sullustan Subrace" supports="ID_RACE_SULLUSTAN" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_SULLUSTAN_CYBORG">
+    <supports>ID_RACE_SULLUSTAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_SULLUSTAN_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SULLUSTAN_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_SULLUSTAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SULLUSTAN_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_SULLUSTAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Talz" type="Race" source="SW-MSV-Edition" id="ID_RACE_TALZ">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your STR score increases by 2, WIS score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. 50 years lifespan.</p>
+      <p class="indent">Size. Your size is Medium (tall).</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Darkvision</p>
+      <p class="indent">Natural armor: AC 12 + DEX (unarmored or light armor)</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Talzzi, Understands Galactic Basic (cannot speak).</p>
+    </description>
+    <rules>
+      <stat name="str" value="2"/>
+      <stat name="wis" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_TALZZI"/>
+      <select type="Sub Race" name="Talz Subrace" supports="ID_RACE_TALZ" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TALZ_CYBORG">
+    <supports>ID_RACE_TALZ</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TALZ_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TALZ_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_TALZ_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TALZ_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_TALZ_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Togruta" type="Race" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your WIS score increases by 2, DEX score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Togruti.</p>
+    </description>
+    <rules>
+      <stat name="wis" value="2"/>
+      <stat name="dex" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_TOGRUTI"/>
+      <select type="Sub Race" name="Togruta Subrace" supports="ID_RACE_TOGRUTA" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_CYBORG">
+    <supports>ID_RACE_TOGRUTA</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TOGRUTA_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_TOGRUTA_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_TOGRUTA_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Trandoshan" type="Race" source="SW-MSV-Edition" id="ID_RACE_TRANDOSHAN">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your STR score increases by 2, WIS score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium (tall).</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Darkvision</p>
+      <p class="indent">Natural weapons: Unarmed strikes deal 1d4 kinetic damage</p>
+      <p class="indent">Natural armor: AC 12 + DEX (unarmored or light armor)</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Dosh.</p>
+    </description>
+    <rules>
+      <stat name="str" value="2"/>
+      <stat name="wis" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_DOSH"/>
+      <select type="Sub Race" name="Trandoshan Subrace" supports="ID_RACE_TRANDOSHAN" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TRANDOSHAN_CYBORG">
+    <supports>ID_RACE_TRANDOSHAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TRANDOSHAN_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRANDOSHAN_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_TRANDOSHAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRANDOSHAN_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_TRANDOSHAN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Tusken" type="Race" source="SW-MSV-Edition" id="ID_RACE_TUSKEN">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your CON score increases by 2, CHAR score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. 50 years lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Advantage on Constitution saving throws</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Tusken.</p>
+    </description>
+    <rules>
+      <stat name="con" value="2"/>
+      <stat name="char" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_TUSKEN"/>
+      <select type="Sub Race" name="Tusken Subrace" supports="ID_RACE_TUSKEN" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_CYBORG">
+    <supports>ID_RACE_TUSKEN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TUSKEN_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_TUSKEN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_TUSKEN_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Twi'Lek" type="Race" source="SW-MSV-Edition" id="ID_RACE_TWILEK">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your CHAR score increases by 2, DEX score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium (tall).</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Darkvision</p>
+      <p class="indent">Resistant to poison</p>
+      <p class="indent">Natural weapons: Unarmed strikes deal 1d4 kinetic damage</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic.</p>
+    </description>
+    <rules>
+      <stat name="char" value="2"/>
+      <stat name="dex" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <select type="Sub Race" name="Twi'Lek Subrace" supports="ID_RACE_TWILEK" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TWILEK_CYBORG">
+    <supports>ID_RACE_TWILEK</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TWILEK_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TWILEK_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_TWILEK_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TWILEK_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_TWILEK_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Ugnaught" type="Race" source="SW-MSV-Edition" id="ID_RACE_UGNAUGHT">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your INT score increases by 2, STR score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. 200 years lifespan.</p>
+      <p class="indent">Size. Your size is Small.</p>
+      <p class="indent">Speed. Your base walking speed is 25 ft.</p>
+      <p class="indent">Darkvision</p>
+      <p class="indent">Resistant to acid</p>
+      <p class="indent">Nimble: Can hide behind creatures larger than you</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Ugnaught.</p>
+    </description>
+    <rules>
+      <stat name="int" value="2"/>
+      <stat name="str" value="1"/>
+      <stat name="innate speed" value="25" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_SMALL"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_UGNAUGHT"/>
+      <select type="Sub Race" name="Ugnaught Subrace" supports="ID_RACE_UGNAUGHT" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_UGNAUGHT_CYBORG">
+    <supports>ID_RACE_UGNAUGHT</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_UGNAUGHT_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_UGNAUGHT_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_UGNAUGHT_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_UGNAUGHT_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_UGNAUGHT_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Weequay" type="Race" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your CON score increases by 2, CHAR score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium.</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Natural armor: AC 13 + DEX (unarmored or light armor)</p>
+      <p class="indent">Advantage on Perception checks</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Sriluurian.</p>
+    </description>
+    <rules>
+      <stat name="con" value="2"/>
+      <stat name="char" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_SRILUURIAN"/>
+      <select type="Sub Race" name="Weequay Subrace" supports="ID_RACE_WEEQUAY" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_CYBORG">
+    <supports>ID_RACE_WEEQUAY</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_WEEQUAY_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_WEEQUAY_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_WEEQUAY_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Wookie" type="Race" source="SW-MSV-Edition" id="ID_RACE_WOOKIE">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your STR score increases by 2, CON score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. 400 years lifespan.</p>
+      <p class="indent">Size. Your size is Medium (tall).</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Darkvision</p>
+      <p class="indent">Natural weapons: Unarmed strikes deal 1d4 kinetic damage</p>
+      <p class="indent">Natural armor: AC 13 + DEX (unarmored or light armor)</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Shyriiwook, Understands Galactic Basic (cannot speak).</p>
+    </description>
+    <rules>
+      <stat name="str" value="2"/>
+      <stat name="con" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_SHYRIIWOOK"/>
+      <select type="Sub Race" name="Wookie Subrace" supports="ID_RACE_WOOKIE" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_WOOKIE_CYBORG">
+    <supports>ID_RACE_WOOKIE</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_WOOKIE_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WOOKIE_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_WOOKIE_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WOOKIE_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_WOOKIE_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+  <element name="Zabrak" type="Race" source="SW-MSV-Edition" id="ID_RACE_ZABRAK">
+    <description>
+      <p class="indent">
+        <strong>
+          <em>Your CON score increases by 2, DEX score increases by 1</em>
+        </strong>
+      </p>
+      <p class="indent">Age. Normal lifespan.</p>
+      <p class="indent">Size. Your size is Medium (tall).</p>
+      <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Natural weapons: Unarmed strikes deal 1d4 kinetic damage</p>
+      <p class="indent">Durable: +1 HP per level</p>
+      <p class="indent">Languages. You can speak, read, and write Galactic Basic, Zabraki.</p>
+    </description>
+    <rules>
+      <stat name="con" value="2"/>
+      <stat name="dex" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Language" id="ID_LANGUAGE_ZABRAKI"/>
+      <select type="Sub Race" name="Zabrak Subrace" supports="ID_RACE_ZABRAK" optional="true"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_CYBORG">
+    <supports>ID_RACE_ZABRAK</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_ZABRAK_CYBORG" number="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_CYBORG_STR">
+    <compendium display="false"/>
+    <supports>ID_RACE_ZABRAK_CYBORG</supports>
+    <description>
+      <p class="indent">Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1"/>
+    </rules>
+  </element>
+  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_CYBORG_DEX">
+    <compendium display="false"/>
+    <supports>ID_RACE_ZABRAK_CYBORG</supports>
+    <description>
+      <p class="indent">Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+</elements>
