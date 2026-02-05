@@ -165,12 +165,6 @@
     </sheet>
     <rules/>
   </element>
-  <element id="ID_CLASS_SCOUT_FEATURE_SUBCLASS_ABILITY" name="Subclass Feature" type="Class Feature" source="SW-MSV-Edition">
-    <description>
-      <p>You gain a feature from your Scout subclass.</p>
-    </description>
-    <rules/>
-  </element>
   <element id="ID_CLASS_SCOUT_FEATURE_ASSASSIN" name="Assassin" type="Class Feature" source="SW-MSV-Edition">
     <description>
       <p>Assassin - See Scout class description for details.</p>
@@ -180,6 +174,12 @@
   <element id="ID_CLASS_SCOUT_FEATURE_OPERATIVE" name="Operative" type="Class Feature" source="SW-MSV-Edition">
     <description>
       <p>Operative - See Scout class description for details.</p>
+    </description>
+    <rules/>
+  </element>
+  <element id="ID_CLASS_SCOUT_FEATURE_SUBCLASS_ABILITY" name="Subclass Feature" type="Class Feature" source="SW-MSV-Edition">
+    <description>
+      <p>You gain a feature from your Scout subclass.</p>
     </description>
     <rules/>
   </element>
@@ -369,7 +369,9 @@
     <sheet>
       <description>You can use the Help action as a Bonus Action, and you can adopt a Fighting Style.</description>
     </sheet>
-    <rules/>
+    <rules>
+      <select type="Class Feature" name="Fighting Style" supports="Fighting Style" level="3"/>
+    </rules>
   </element>
   <element id="ID_SUBCLASS_OPERATIVE_ABILITY_SUDDEN_STRIKE" name="Sudden Strike" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true"/>

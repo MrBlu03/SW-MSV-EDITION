@@ -186,6 +186,12 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     </sheet>
     <rules/>
   </element>
+  <element id="ID_CLASS_INQUISITOR_FEATURE_TRICKSTER" name="Trickster" type="Class Feature" source="SW-MSV-Edition">
+    <description>
+      <p>Trickster - See Inquisitor class description for details.</p>
+    </description>
+    <rules/>
+  </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_MANIPULATOR" name="Manipulator" type="Class Feature" source="SW-MSV-Edition">
     <description>
       <p>Manipulator - See Inquisitor class description for details.</p>
@@ -195,12 +201,6 @@ You don't need advantage on the attack roll if another enemy of the target is wi
   <element id="ID_CLASS_INQUISITOR_FEATURE_SUBCLASS_ABILITY" name="Subclass Feature" type="Class Feature" source="SW-MSV-Edition">
     <description>
       <p>You gain a feature from your Inquisitor subclass.</p>
-    </description>
-    <rules/>
-  </element>
-  <element id="ID_CLASS_INQUISITOR_FEATURE_TRICKSTER" name="Trickster" type="Class Feature" source="SW-MSV-Edition">
-    <description>
-      <p>Trickster - See Inquisitor class description for details.</p>
     </description>
     <rules/>
   </element>

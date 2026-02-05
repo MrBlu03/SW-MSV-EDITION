@@ -486,7 +486,9 @@
     <sheet>
       <description>Gain the Dueling Fighting Style</description>
     </sheet>
-    <rules/>
+    <rules>
+      <grant type="Class Feature" id="ID_FIGHTING_STYLE_DUELING" level="3"/>
+    </rules>
   </element>
   <element id="ID_MARAUDER_FORM_MAKASHI_ABILITY_RIPOSTE" name="Riposte" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true"/>
