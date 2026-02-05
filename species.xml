@@ -2021,7 +2021,7 @@
       </select>
     </rules>
   </element>
-  <element name="Intelligence Increase" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_PROTOCOL_DROID_INT">
+  <element name="Intelligence Increase (Protocol Droid)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_PROTOCOL_DROID_INT">
     <compendium display="false"/>
     <supports>ID_RACE_PROTOCOL_DROID_ASI</supports>
     <description>
@@ -2031,7 +2031,7 @@
       <stat name="intelligence" value="1"/>
     </rules>
   </element>
-  <element name="Wisdom Increase" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_PROTOCOL_DROID_WIS">
+  <element name="Wisdom Increase (Protocol Droid)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_PROTOCOL_DROID_WIS">
     <compendium display="false"/>
     <supports>ID_RACE_PROTOCOL_DROID_ASI</supports>
     <description>
@@ -2041,7 +2041,7 @@
       <stat name="wisdom" value="1"/>
     </rules>
   </element>
-  <element name="Strength Increase" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_COMBAT_DROID_STR">
+  <element name="Strength Increase (Combat Droid)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_COMBAT_DROID_STR">
     <compendium display="false"/>
     <supports>ID_RACE_COMBAT_DROID_ASI</supports>
     <description>
@@ -2051,7 +2051,7 @@
       <stat name="strength" value="1"/>
     </rules>
   </element>
-  <element name="Dexterity Increase" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_COMBAT_DROID_DEX">
+  <element name="Dexterity Increase (Combat Droid)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_COMBAT_DROID_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_COMBAT_DROID_ASI</supports>
     <description>
@@ -2061,7 +2061,7 @@
       <stat name="dexterity" value="1"/>
     </rules>
   </element>
-  <element name="Intelligence Increase" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_INT">
+  <element name="Intelligence Increase (Mon Calamari)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_INT">
     <compendium display="false"/>
     <supports>ID_RACE_MON_CALAMARI_ASI</supports>
     <description>
@@ -2071,7 +2071,7 @@
       <stat name="intelligence" value="1"/>
     </rules>
   </element>
-  <element name="Wisdom Increase" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_WIS">
+  <element name="Wisdom Increase (Mon Calamari)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_WIS">
     <compendium display="false"/>
     <supports>ID_RACE_MON_CALAMARI_ASI</supports>
     <description>
@@ -2081,7 +2081,7 @@
       <stat name="wisdom" value="1"/>
     </rules>
   </element>
-  <element name="Dexterity Increase" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_DEX">
+  <element name="Dexterity Increase (Rattataki)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_RATTATAKI_ASI</supports>
     <description>
@@ -2091,7 +2091,7 @@
       <stat name="dexterity" value="1"/>
     </rules>
   </element>
-  <element name="Intelligence Increase" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_INT">
+  <element name="Intelligence Increase (Rattataki)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_INT">
     <compendium display="false"/>
     <supports>ID_RACE_RATTATAKI_ASI</supports>
     <description>
@@ -2101,7 +2101,7 @@
       <stat name="intelligence" value="1"/>
     </rules>
   </element>
-  <element name="Strength Increase" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_STR">
+  <element name="Strength Increase (Sith Pureblood)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_STR">
     <compendium display="false"/>
     <supports>ID_RACE_SITH_PUREBLOOD_ASI</supports>
     <description>
@@ -2111,7 +2111,7 @@
       <stat name="strength" value="1"/>
     </rules>
   </element>
-  <element name="Dexterity Increase" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_DEX">
+  <element name="Dexterity Increase (Sith Pureblood)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_SITH_PUREBLOOD_ASI</supports>
     <description>
@@ -2121,7 +2121,7 @@
       <stat name="dexterity" value="1"/>
     </rules>
   </element>
-  <element name="Strength Increase" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_STR">
+  <element name="Strength Increase (Togruta)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_STR">
     <compendium display="false"/>
     <supports>ID_RACE_TOGRUTA_ASI</supports>
     <description>
@@ -2131,7 +2131,7 @@
       <stat name="strength" value="1"/>
     </rules>
   </element>
-  <element name="Dexterity Increase" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_DEX">
+  <element name="Dexterity Increase (Togruta)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_TOGRUTA_ASI</supports>
     <description>
@@ -2141,7 +2141,7 @@
       <stat name="dexterity" value="1"/>
     </rules>
   </element>
-  <element name="Strength Increase" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_STR">
+  <element name="Strength Increase (Tusken)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_STR">
     <compendium display="false"/>
     <supports>ID_RACE_TUSKEN_ASI</supports>
     <description>
@@ -2151,7 +2151,7 @@
       <stat name="strength" value="1"/>
     </rules>
   </element>
-  <element name="Charisma Increase" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_CHA">
+  <element name="Charisma Increase (Tusken)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_CHA">
     <compendium display="false"/>
     <supports>ID_RACE_TUSKEN_ASI</supports>
     <description>
@@ -2161,7 +2161,7 @@
       <stat name="charisma" value="1"/>
     </rules>
   </element>
-  <element name="Wisdom Increase" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_WIS">
+  <element name="Wisdom Increase (Weequay)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_WIS">
     <compendium display="false"/>
     <supports>ID_RACE_WEEQUAY_ASI</supports>
     <description>
@@ -2171,7 +2171,7 @@
       <stat name="wisdom" value="1"/>
     </rules>
   </element>
-  <element name="Charisma Increase" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_CHA">
+  <element name="Charisma Increase (Weequay)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_CHA">
     <compendium display="false"/>
     <supports>ID_RACE_WEEQUAY_ASI</supports>
     <description>
@@ -2181,7 +2181,7 @@
       <stat name="charisma" value="1"/>
     </rules>
   </element>
-  <element name="Strength Increase" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_STR">
+  <element name="Strength Increase (Zabrak)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_STR">
     <compendium display="false"/>
     <supports>ID_RACE_ZABRAK_ASI</supports>
     <description>
@@ -2191,7 +2191,7 @@
       <stat name="strength" value="1"/>
     </rules>
   </element>
-  <element name="Dexterity Increase" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_DEX">
+  <element name="Dexterity Increase (Zabrak)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_ZABRAK_ASI</supports>
     <description>
