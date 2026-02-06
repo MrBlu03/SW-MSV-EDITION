@@ -346,7 +346,7 @@
     </description>
     <rules>
       <stat name="charisma" value="2"/>
-      <select type="Racial Trait" name="Intelligence or Wisdom" supports="ID_RACE_PROTOCOL_DROID_ASI" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (Protocol Droid)" supports="Protocol Droid" number="1"/>
       <stat name="innate speed" value="25" bonus="base"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
     </rules>
@@ -371,7 +371,7 @@
     </description>
     <rules>
       <stat name="constitution" value="2"/>
-      <select type="Racial Trait" name="Strength or Dexterity" supports="ID_RACE_COMBAT_DROID_ASI" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (Combat Droid)" supports="Combat Droid" number="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
@@ -663,7 +663,7 @@
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, One additional language of choice.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Human Ability Score Improvement" supports="ID_RACE_HUMAN_ASI" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (Human)" supports="Human" number="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
@@ -989,7 +989,7 @@
     </description>
     <rules>
       <stat name="charisma" value="2"/>
-      <select type="Racial Trait" name="Intelligence or Wisdom" supports="ID_RACE_MON_CALAMARI_ASI" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (Mon Calamari)" supports="Mon Calamari" number="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
@@ -1262,7 +1262,7 @@
     </description>
     <rules>
       <stat name="wisdom" value="2"/>
-      <select type="Racial Trait" name="Dexterity or Intelligence" supports="ID_RACE_RATTATAKI_ASI" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (Rattataki)" supports="Rattataki" number="1"/>
       <stat name="innate speed" value="35" bonus="base"/>
       <grant type="Size" id="ID_SIZE_SMALL"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
@@ -1369,7 +1369,7 @@
     </description>
     <rules>
       <stat name="charisma" value="2"/>
-      <select type="Racial Trait" name="Strength or Dexterity" supports="ID_RACE_SITH_PUREBLOOD_ASI" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (Sith Pureblood)" supports="Sith Pureblood" number="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
@@ -1529,7 +1529,7 @@
     </description>
     <rules>
       <stat name="wisdom" value="2"/>
-      <select type="Racial Trait" name="Strength or Dexterity" supports="ID_RACE_TOGRUTA_ASI" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (Togruta)" supports="Togruta" number="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
@@ -1637,7 +1637,7 @@
     </description>
     <rules>
       <stat name="constitution" value="2"/>
-      <select type="Racial Trait" name="Strength or Charisma" supports="ID_RACE_TUSKEN_ASI" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (Tusken)" supports="Tusken" number="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
@@ -1800,7 +1800,7 @@
     </description>
     <rules>
       <stat name="constitution" value="2"/>
-      <select type="Racial Trait" name="Wisdom or Charisma" supports="ID_RACE_WEEQUAY_ASI" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (Weequay)" supports="Weequay" number="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
@@ -1909,7 +1909,7 @@
     </description>
     <rules>
       <stat name="constitution" value="2"/>
-      <select type="Racial Trait" name="Strength or Dexterity" supports="ID_RACE_ZABRAK_ASI" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (Zabrak)" supports="Zabrak" number="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
@@ -1949,7 +1949,7 @@
   </element>
   <element name="Human Ability Score Improvement - Variant" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_VARIANT">
     <compendium display="false"/>
-    <supports>ID_RACE_HUMAN_ASI</supports>
+    <supports>Human</supports>
     <description>
       <p class="indent">+2 to one ability score, +1 to two different ability scores.</p>
     </description>
@@ -1982,7 +1982,7 @@
   </element>
   <element name="Human Ability Score Improvement - Standard" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_STANDARD">
     <compendium display="false"/>
-    <supports>ID_RACE_HUMAN_ASI</supports>
+    <supports>Human</supports>
     <description>
       <p class="indent">+1 to four different ability scores.</p>
     </description>
@@ -2021,9 +2021,9 @@
       </select>
     </rules>
   </element>
-  <element name="Intelligence Increase (Protocol Droid)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_PROTOCOL_DROID_INT">
+  <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_PROTOCOL_DROID_INT">
     <compendium display="false"/>
-    <supports>ID_RACE_PROTOCOL_DROID_ASI</supports>
+    <supports>Protocol Droid</supports>
     <description>
       <p>Your Intelligence score increases by 1.</p>
     </description>
@@ -2031,9 +2031,9 @@
       <stat name="intelligence" value="1"/>
     </rules>
   </element>
-  <element name="Wisdom Increase (Protocol Droid)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_PROTOCOL_DROID_WIS">
+  <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_PROTOCOL_DROID_WIS">
     <compendium display="false"/>
-    <supports>ID_RACE_PROTOCOL_DROID_ASI</supports>
+    <supports>Protocol Droid</supports>
     <description>
       <p>Your Wisdom score increases by 1.</p>
     </description>
@@ -2041,9 +2041,9 @@
       <stat name="wisdom" value="1"/>
     </rules>
   </element>
-  <element name="Strength Increase (Combat Droid)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_COMBAT_DROID_STR">
+  <element name="Ability Score Increase (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_COMBAT_DROID_STR">
     <compendium display="false"/>
-    <supports>ID_RACE_COMBAT_DROID_ASI</supports>
+    <supports>Combat Droid</supports>
     <description>
       <p>Your Strength score increases by 1.</p>
     </description>
@@ -2051,9 +2051,9 @@
       <stat name="strength" value="1"/>
     </rules>
   </element>
-  <element name="Dexterity Increase (Combat Droid)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_COMBAT_DROID_DEX">
+  <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_COMBAT_DROID_DEX">
     <compendium display="false"/>
-    <supports>ID_RACE_COMBAT_DROID_ASI</supports>
+    <supports>Combat Droid</supports>
     <description>
       <p>Your Dexterity score increases by 1.</p>
     </description>
@@ -2061,9 +2061,9 @@
       <stat name="dexterity" value="1"/>
     </rules>
   </element>
-  <element name="Intelligence Increase (Mon Calamari)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_INT">
+  <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_INT">
     <compendium display="false"/>
-    <supports>ID_RACE_MON_CALAMARI_ASI</supports>
+    <supports>Mon Calamari</supports>
     <description>
       <p>Your Intelligence score increases by 1.</p>
     </description>
@@ -2071,9 +2071,9 @@
       <stat name="intelligence" value="1"/>
     </rules>
   </element>
-  <element name="Wisdom Increase (Mon Calamari)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_WIS">
+  <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_WIS">
     <compendium display="false"/>
-    <supports>ID_RACE_MON_CALAMARI_ASI</supports>
+    <supports>Mon Calamari</supports>
     <description>
       <p>Your Wisdom score increases by 1.</p>
     </description>
@@ -2081,9 +2081,9 @@
       <stat name="wisdom" value="1"/>
     </rules>
   </element>
-  <element name="Dexterity Increase (Rattataki)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_DEX">
+  <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_DEX">
     <compendium display="false"/>
-    <supports>ID_RACE_RATTATAKI_ASI</supports>
+    <supports>Rattataki</supports>
     <description>
       <p>Your Dexterity score increases by 1.</p>
     </description>
@@ -2091,9 +2091,9 @@
       <stat name="dexterity" value="1"/>
     </rules>
   </element>
-  <element name="Intelligence Increase (Rattataki)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_INT">
+  <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_INT">
     <compendium display="false"/>
-    <supports>ID_RACE_RATTATAKI_ASI</supports>
+    <supports>Rattataki</supports>
     <description>
       <p>Your Intelligence score increases by 1.</p>
     </description>
@@ -2101,9 +2101,9 @@
       <stat name="intelligence" value="1"/>
     </rules>
   </element>
-  <element name="Strength Increase (Sith Pureblood)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_STR">
+  <element name="Ability Score Increase (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_STR">
     <compendium display="false"/>
-    <supports>ID_RACE_SITH_PUREBLOOD_ASI</supports>
+    <supports>Sith Pureblood</supports>
     <description>
       <p>Your Strength score increases by 1.</p>
     </description>
@@ -2111,9 +2111,9 @@
       <stat name="strength" value="1"/>
     </rules>
   </element>
-  <element name="Dexterity Increase (Sith Pureblood)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_DEX">
+  <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_DEX">
     <compendium display="false"/>
-    <supports>ID_RACE_SITH_PUREBLOOD_ASI</supports>
+    <supports>Sith Pureblood</supports>
     <description>
       <p>Your Dexterity score increases by 1.</p>
     </description>
@@ -2121,9 +2121,9 @@
       <stat name="dexterity" value="1"/>
     </rules>
   </element>
-  <element name="Strength Increase (Togruta)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_STR">
+  <element name="Ability Score Increase (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_STR">
     <compendium display="false"/>
-    <supports>ID_RACE_TOGRUTA_ASI</supports>
+    <supports>Togruta</supports>
     <description>
       <p>Your Strength score increases by 1.</p>
     </description>
@@ -2131,9 +2131,9 @@
       <stat name="strength" value="1"/>
     </rules>
   </element>
-  <element name="Dexterity Increase (Togruta)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_DEX">
+  <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_DEX">
     <compendium display="false"/>
-    <supports>ID_RACE_TOGRUTA_ASI</supports>
+    <supports>Togruta</supports>
     <description>
       <p>Your Dexterity score increases by 1.</p>
     </description>
@@ -2141,9 +2141,9 @@
       <stat name="dexterity" value="1"/>
     </rules>
   </element>
-  <element name="Strength Increase (Tusken)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_STR">
+  <element name="Ability Score Increase (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_STR">
     <compendium display="false"/>
-    <supports>ID_RACE_TUSKEN_ASI</supports>
+    <supports>Tusken</supports>
     <description>
       <p>Your Strength score increases by 1.</p>
     </description>
@@ -2151,9 +2151,9 @@
       <stat name="strength" value="1"/>
     </rules>
   </element>
-  <element name="Charisma Increase (Tusken)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_CHA">
+  <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_CHA">
     <compendium display="false"/>
-    <supports>ID_RACE_TUSKEN_ASI</supports>
+    <supports>Tusken</supports>
     <description>
       <p>Your Charisma score increases by 1.</p>
     </description>
@@ -2161,9 +2161,9 @@
       <stat name="charisma" value="1"/>
     </rules>
   </element>
-  <element name="Wisdom Increase (Weequay)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_WIS">
+  <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_WIS">
     <compendium display="false"/>
-    <supports>ID_RACE_WEEQUAY_ASI</supports>
+    <supports>Weequay</supports>
     <description>
       <p>Your Wisdom score increases by 1.</p>
     </description>
@@ -2171,9 +2171,9 @@
       <stat name="wisdom" value="1"/>
     </rules>
   </element>
-  <element name="Charisma Increase (Weequay)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_CHA">
+  <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_CHA">
     <compendium display="false"/>
-    <supports>ID_RACE_WEEQUAY_ASI</supports>
+    <supports>Weequay</supports>
     <description>
       <p>Your Charisma score increases by 1.</p>
     </description>
@@ -2181,9 +2181,9 @@
       <stat name="charisma" value="1"/>
     </rules>
   </element>
-  <element name="Strength Increase (Zabrak)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_STR">
+  <element name="Ability Score Increase (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_STR">
     <compendium display="false"/>
-    <supports>ID_RACE_ZABRAK_ASI</supports>
+    <supports>Zabrak</supports>
     <description>
       <p>Your Strength score increases by 1.</p>
     </description>
@@ -2191,9 +2191,9 @@
       <stat name="strength" value="1"/>
     </rules>
   </element>
-  <element name="Dexterity Increase (Zabrak)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_DEX">
+  <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_DEX">
     <compendium display="false"/>
-    <supports>ID_RACE_ZABRAK_ASI</supports>
+    <supports>Zabrak</supports>
     <description>
       <p>Your Dexterity score increases by 1.</p>
     </description>
