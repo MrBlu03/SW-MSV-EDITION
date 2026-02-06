@@ -23,7 +23,7 @@
       <set name="abbreviation">SWMSV</set>
       <set name="url">https://github.com/MrBlu03/SW-MSV-EDITION</set>
       <set name="image">https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/swmsv-logo.png</set>
-      <set name="author" abbreviation="MSV" url="https://github.com/MrBlu03">MrBlu03</set>
+      <set name="author" abbreviation="MSV" url="https://github.com/MrBlu03">Writen by Marcus SV and Coded by MrBlu03</set>
       <set name="official">false</set>
       <set name="supplement">false</set>
       <set name="core">false</set>
