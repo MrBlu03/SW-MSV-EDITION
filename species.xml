@@ -698,19 +698,29 @@
       <select type="Sub Race" name="Human Subrace" supports="ID_RACE_HUMAN_VARIANT" optional="true"/>
     </rules>
   </element>
-  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CYBORG">
-    <supports>ID_RACE_HUMAN_STANDARD||ID_RACE_HUMAN_VARIANT</supports>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_HUMAN_STANDARD_CYBORG">
+    <supports>ID_RACE_HUMAN_STANDARD</supports>
     <description>
       <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_HUMAN_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Human Cyborg" number="1"/>
+    </rules>
+  </element>
+  <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_HUMAN_VARIANT_CYBORG">
+    <supports>ID_RACE_HUMAN_VARIANT</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
+      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Human Cyborg" number="1"/>
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CYBORG_STR">
     <compendium display="false"/>
-    <supports>ID_RACE_HUMAN_CYBORG</supports>
+    <supports>Human Cyborg</supports>
     <description>
       <p class="indent">Your Strength score increases by 1.</p>
     </description>
@@ -720,7 +730,7 @@
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CYBORG_DEX">
     <compendium display="false"/>
-    <supports>ID_RACE_HUMAN_CYBORG</supports>
+    <supports>Human Cyborg</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1.</p>
     </description>
@@ -1982,6 +1992,7 @@
     <description>
       <p>Your Strength score increases by 1.</p>
     </description>
+    <sheet display="false"/>
     <rules>
       <stat name="strength" value="1"/>
     </rules>
@@ -1992,6 +2003,7 @@
     <description>
       <p>Your Dexterity score increases by 1.</p>
     </description>
+    <sheet display="false"/>
     <rules>
       <stat name="dexterity" value="1"/>
     </rules>
@@ -2002,6 +2014,7 @@
     <description>
       <p>Your Constitution score increases by 1.</p>
     </description>
+    <sheet display="false"/>
     <rules>
       <stat name="constitution" value="1"/>
     </rules>
@@ -2012,6 +2025,7 @@
     <description>
       <p>Your Intelligence score increases by 1.</p>
     </description>
+    <sheet display="false"/>
     <rules>
       <stat name="intelligence" value="1"/>
     </rules>
@@ -2022,6 +2036,7 @@
     <description>
       <p>Your Wisdom score increases by 1.</p>
     </description>
+    <sheet display="false"/>
     <rules>
       <stat name="wisdom" value="1"/>
     </rules>
@@ -2032,6 +2047,7 @@
     <description>
       <p>Your Charisma score increases by 1.</p>
     </description>
+    <sheet display="false"/>
     <rules>
       <stat name="charisma" value="1"/>
     </rules>
@@ -2043,6 +2059,7 @@
     <description>
       <p>Your Strength score increases by 2.</p>
     </description>
+    <sheet display="false"/>
     <rules>
       <stat name="strength" value="2"/>
     </rules>
@@ -2053,6 +2070,7 @@
     <description>
       <p>Your Dexterity score increases by 2.</p>
     </description>
+    <sheet display="false"/>
     <rules>
       <stat name="dexterity" value="2"/>
     </rules>
@@ -2063,6 +2081,7 @@
     <description>
       <p>Your Constitution score increases by 2.</p>
     </description>
+    <sheet display="false"/>
     <rules>
       <stat name="constitution" value="2"/>
     </rules>
@@ -2073,6 +2092,7 @@
     <description>
       <p>Your Intelligence score increases by 2.</p>
     </description>
+    <sheet display="false"/>
     <rules>
       <stat name="intelligence" value="2"/>
     </rules>
@@ -2083,6 +2103,7 @@
     <description>
       <p>Your Wisdom score increases by 2.</p>
     </description>
+    <sheet display="false"/>
     <rules>
       <stat name="wisdom" value="2"/>
     </rules>
@@ -2093,6 +2114,7 @@
     <description>
       <p>Your Charisma score increases by 2.</p>
     </description>
+    <sheet display="false"/>
     <rules>
       <stat name="charisma" value="2"/>
     </rules>
