@@ -86,7 +86,7 @@
       <description>Gain expertise in skills you're proficient with.</description>
     </sheet>
     <rules>
-      <select type="Class Feature" name="Expertise" number="2" supports="ID_INTERNAL_SKILL_EXPERTISE"/>
+      <select type="Class Feature" name="Expertise" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
     </rules>
   </element>
   <element id="ID_CLASS_SCOUT_FEATURE_FEAT" name="Feat" type="Class Feature" source="SW-MSV-Edition">
