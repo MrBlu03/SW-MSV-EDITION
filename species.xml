@@ -1940,8 +1940,8 @@
       <p class="indent">Age. Normal lifespan.</p>
       <p class="indent">Size. Your size is Medium (tall).</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
-      <p class="indent">Natural weapons: Unarmed strikes deal 1d4 kinetic damage</p>
-      <p class="indent">Durable: +1 HP per level</p>
+      <p class="indent">Natural Weapons. Your unarmed strikes deal 1d4 kinetic damage instead of the normal bludgeoning damage.</p>
+      <p class="indent">Durable. Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Zabraki.</p>
     </description>
     <rules>
@@ -1951,6 +1951,8 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_ZABRAKI"/>
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_ZABRAK_NATURAL_WEAPONS"/>
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_ZABRAK_DURABLE"/>
       <select type="Sub Race" name="Zabrak Subrace" supports="ID_RACE_ZABRAK" optional="true"/>
     </rules>
   </element>
@@ -2297,6 +2299,32 @@
     </description>
     <rules>
       <stat name="dexterity" value="1"/>
+    </rules>
+  </element>
+
+  <!-- Zabrak Racial Traits -->
+  <element name="Natural Weapons" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_ZABRAK_NATURAL_WEAPONS">
+    <description>
+      <p>Your unarmed strikes deal 1d4 kinetic damage instead of the normal bludgeoning damage.</p>
+    </description>
+    <sheet>
+      <description>Your unarmed strikes deal 1d4 kinetic damage.</description>
+    </sheet>
+    <rules>
+      <stat name="unarmed damage" value="1d4" />
+      <stat name="unarmed damage type" value="kinetic" />
+    </rules>
+  </element>
+
+  <element name="Durable" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_ZABRAK_DURABLE">
+    <description>
+      <p>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
+    </description>
+    <sheet>
+      <description>+1 HP per level.</description>
+    </sheet>
+    <rules>
+      <stat name="hit points per level" value="1" />
     </rules>
   </element>
 </elements>
