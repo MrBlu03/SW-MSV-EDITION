@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <element name="Bandfill" type="Item" source="SW-MSV-Edition" id="ID_ITEM_BANDFILL">
+    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    <description>
+      <p>The bandfill is a musical instrument, commonly used in jizz, that featured a number of mounted horn bells called reciprocator horns and a ploong sounder</p>
+    </description>
+    <setters>
+      <set name="category">Musical Instruments</set>
+      <set name="cost" currency="gp">15</set>
+      <set name="weight" lb="3">3 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_BANDFILL</set>
+    </setters>
+  </element>
+  
+  <element name="Chindinkalu horn" type="Item" source="SW-MSV-Edition" id="ID_ITEM_CHINDINKALU_HORN">
+    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    <description>
+      <p>The Chidinkalu horn is a musical instrument made by the Kitonaks from the hollowed-out reeds of a chidinka. It produced low tones and is used in the rhythm section</p>
+    </description>
+    <setters>
+      <set name="category">Musical Instruments</set>
+      <set name="cost" currency="gp">25</set>
+      <set name="weight" lb="2">2 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_CHINDINKALU_HORN</set>
+    </setters>
+  </element>
+  
+  <element name="Drum" type="Item" source="SW-MSV-Edition" id="ID_ITEM_DRUM">
+    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    <description>
+      <p>Drums are a type of percussive musical instrument</p>
+    </description>
+    <setters>
+      <set name="category">Musical Instruments</set>
+      <set name="cost" currency="gp">15</set>
+      <set name="weight" lb="3">3 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_DRUM</set>
+    </setters>
+  </element>
+  
+  <element name="Fanfar" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FANFAR">
+    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    <description>
+      <p>The fanfar is a musical instrument commonly used in jizz. Fanfars appeared to be reedy instruments with a mouthpiece, and the slots along the fanfar are known as farra slots</p>
+    </description>
+    <setters>
+      <set name="category">Musical Instruments</set>
+      <set name="cost" currency="gp">20</set>
+      <set name="weight" lb="1">1 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_FANFAR</set>
+    </setters>
+  </element>
+  
+  <element name="Fizzz" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FIZZZ">
+    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    <description>
+      <p>The Dorenian Beshniquel, also known as the Fizzz, is a short, single-reed wind instrument, which is adjusted via peel rod</p>
+    </description>
+    <setters>
+      <set name="category">Musical Instruments</set>
+      <set name="cost" currency="gp">18</set>
+      <set name="weight" lb="1">1 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_FIZZZ</set>
+    </setters>
+  </element>
+  
+  <element name="Flute" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FLUTE">
+    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    <description>
+      <p>Flutes are a type of woodwind instrument. One type of flute is the reed flute</p>
+    </description>
+    <setters>
+      <set name="category">Musical Instruments</set>
+      <set name="cost" currency="gp">15</set>
+      <set name="weight" lb="1">1 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_FLUTE</set>
+    </setters>
+  </element>
+  
+  <element name="Kloo horn" type="Item" source="SW-MSV-Edition" id="ID_ITEM_KLOO_HORN">
+    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    <description>
+      <p>The kloo horn is a double-reeded wind instrument, larger than a Slitherhorn and a Fizzz (roughly 1.5 meters tall), and one of the most commonly used instruments in the galaxy</p>
+    </description>
+    <setters>
+      <set name="category">Musical Instruments</set>
+      <set name="cost" currency="gp">30</set>
+      <set name="weight" lb="4">4 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_KLOO_HORN</set>
+    </setters>
+  </element>
+  
+  <element name="Lute" type="Item" source="SW-MSV-Edition" id="ID_ITEM_LUTE">
+    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    <description>
+      <p>The lute-pipe is a musical instrument that is played by plucking and blowing into it</p>
+    </description>
+    <setters>
+      <set name="category">Musical Instruments</set>
+      <set name="cost" currency="gp">35</set>
+      <set name="weight" lb="3">3 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_LUTE</set>
+    </setters>
+  </element>
+  
+  <element name="Mandoviol" type="Item" source="SW-MSV-Edition" id="ID_ITEM_MANDOVIOL">
+    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    <description>
+      <p>The mandoviol is a stringed musical instrument, it is a difficult instrument to master, but could be used to play ballads as well as energetic jizz tunes with equal aplomb</p>
+    </description>
+    <setters>
+      <set name="category">Musical Instruments</set>
+      <set name="cost" currency="gp">40</set>
+      <set name="weight" lb="3">3 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_MANDOVIOL</set>
+    </setters>
+  </element>
+  
+  <element name="Ommni box" type="Item" source="SW-MSV-Edition" id="ID_ITEM_OMMNI_BOX">
+    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    <description>
+      <p>The ommni box is a notoriously hard-to-play instrument which enhanced music, and is commonly used in jizz. It is usually used as an amplifier to attenuate and alter the bass aspects of the music</p>
+    </description>
+    <setters>
+      <set name="category">Musical Instruments</set>
+      <set name="cost" currency="gp">50</set>
+      <set name="weight" lb="8">8 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_OMMNI_BOX</set>
+    </setters>
+  </element>
+  
+  <element name="Slitherhorn" type="Item" source="SW-MSV-Edition" id="ID_ITEM_SLITHERHORN">
+    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    <description>
+      <p>The slitherhorn is a musical instrument common among jizz bands. It is similar in appearance to the kloo horn, though smaller in size</p>
+    </description>
+    <setters>
+      <set name="category">Musical Instruments</set>
+      <set name="cost" currency="gp">28</set>
+      <set name="weight" lb="3">3 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_SLITHERHORN</set>
+    </setters>
+  </element>
+  
+  <element name="Traz" type="Item" source="SW-MSV-Edition" id="ID_ITEM_TRAZ">
+    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    <description>
+      <p>The traz is a musical instrument similar in appearance and sound to the slitherhorn</p>
+    </description>
+    <setters>
+      <set name="category">Musical Instruments</set>
+      <set name="cost" currency="gp">22</set>
+      <set name="weight" lb="2">2 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_TRAZ</set>
+    </setters>
+  </element>
+  
+  <element name="Valahorn" type="Item" source="SW-MSV-Edition" id="ID_ITEM_VALAHORN">
+    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    <description>
+      <p>The valahorn is a type of musical instrument that is similar in appearance and sound to a Kloo horn</p>
+    </description>
+    <setters>
+      <set name="category">Musical Instruments</set>
+      <set name="cost" currency="gp">32</set>
+      <set name="weight" lb="4">4 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_VALAHORN</set>
+    </setters>
+  </element>
+  
+  <element name="Xantha" type="Item" source="SW-MSV-Edition" id="ID_ITEM_XANTHA">
+    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    <description>
+      <p>The Xantha is a difficult musical instrument that involved plucking strings and covering holes with one's fingers</p>
+    </description>
+    <setters>
+      <set name="category">Musical Instruments</set>
+      <set name="cost" currency="gp">45</set>
+      <set name="weight" lb="5">5 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_XANTHA</set>
+    </setters>
+  </element>
+</elements>

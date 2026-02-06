@@ -23,6 +23,7 @@
         <file name="maneuvers.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/maneuvers.xml" />
         <file name="weapons.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/weapons.xml" />
         <file name="items-armor.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-armor.xml" />
+        <file name="items-instruments.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-instruments.xml" />
         <file name="proficiencies.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/proficiencies.xml" />
     </files>
 </index>
