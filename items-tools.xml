@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <!-- Tool Proficiency Definitions -->
+  <element name="Tool: Hacking Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_HACKING_KIT" source="SW-MSV-Edition">
+    <description>
+      <p>A hacking kit contains specialized equipment for hacking unconscious droids and security systems.</p>
+    </description>
+    <rules/>
+  </element>
+
+  <element name="Tool: Disguise Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_DISGUISE_KIT" source="SW-MSV-Edition">
+    <description>
+      <p>A disguise kit contains cosmetics, hair dyes, small props, and various pieces of clothing to change your appearance.</p>
+    </description>
+    <rules/>
+  </element>
+
+  <element name="Tool: Poisoning Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_POISONING_KIT" source="SW-MSV-Edition">
+    <description>
+      <p>A poisoning kit contains the tools needed to create and apply poisons to weapons.</p>
+    </description>
+    <rules/>
+  </element>
+
+  <element name="Tool: Jumppack" type="Proficiency" id="ID_PROFICIENCY_TOOL_JUMPPACK" source="SW-MSV-Edition">
+    <description>
+      <p>Proficiency with jumppack and jump boots operation.</p>
+    </description>
+    <rules/>
+  </element>
+
+  <element name="Tool: Hoverpack" type="Proficiency" id="ID_PROFICIENCY_TOOL_HOVERPACK" source="SW-MSV-Edition">
+    <description>
+      <p>Proficiency with hoverpack and hover boots operation.</p>
+    </description>
+    <rules/>
+  </element>
+
+  <element name="Tool: Jetpack" type="Proficiency" id="ID_PROFICIENCY_TOOL_JETPACK" source="SW-MSV-Edition">
+    <description>
+      <p>Proficiency with jetpack and jet boots operation.</p>
+    </description>
+    <rules/>
+  </element>
+
+  <!-- Tool Items -->
+  <element name="Repair Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_REPAIR_KIT">
+    <supports>ID_INTERNAL_TOOL</supports>
+    <description>
+      <p>A repair kit contains tools and parts for repairing damaged equipment, weapons, armor, and droids.</p>
+      <p class="indent"><strong>Repair Weapon:</strong> DC 10</p>
+      <p class="indent"><strong>Repair Armor:</strong> DC 15</p>
+      <p class="indent"><strong>Repair Other Technology:</strong> DC 15</p>
+    </description>
+    <setters>
+      <set name="category">Tools</set>
+      <set name="cost" currency="gp">25</set>
+      <set name="weight" lb="5">5 lb.</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_REPAIR_KIT</set>
+    </setters>
+  </element>
+
+  <element name="Forgery Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FORGERY_KIT">
+    <supports>ID_INTERNAL_TOOL</supports>
+    <description>
+      <p>A forgery kit contains materials for creating false documents and counterfeit credits.</p>
+      <p class="indent"><strong>Make 350 Counterfeit Credits:</strong> DC 12 (might be noticeable) or DC 15 (perfect copy)</p>
+      <p class="indent"><strong>Forge Documents:</strong> DC 16 (might be noticeable) or DC 20 (perfect forgery)</p>
+    </description>
+    <setters>
+      <set name="category">Tools</set>
+      <set name="cost" currency="gp">15</set>
+      <set name="weight" lb="2">2 lb.</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_FORGERY_KIT</set>
+    </setters>
+  </element>
+
+  <element name="Slicing Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_SLICING_KIT">
+    <supports>ID_INTERNAL_TOOL</supports>
+    <description>
+      <p>A slicing kit contains specialized equipment for bypassing electronic locks and security systems.</p>
+      <p class="indent"><strong>Open Locked Mechanism:</strong> DC Varies</p>
+      <p class="indent"><strong>Disarm Trap:</strong> DC Varies</p>
+    </description>
+    <setters>
+      <set name="category">Tools</set>
+      <set name="cost" currency="gp">50</set>
+      <set name="weight" lb="3">3 lb.</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_SLICING_KIT</set>
+    </setters>
+  </element>
+
+  <element name="Hacking Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_HACKING_KIT">
+    <supports>ID_INTERNAL_TOOL</supports>
+    <description>
+      <p>A hacking kit contains tools for hacking unconscious droids and security systems.</p>
+      <p class="indent"><strong>Hack Astromech:</strong> DC 10</p>
+      <p class="indent"><strong>Hack Protocol Droid:</strong> DC 12</p>
+      <p class="indent"><strong>Hack Combat Droid:</strong> DC 15</p>
+      <p class="indent"><strong>Hack Security System:</strong> DC Varies</p>
+    </description>
+    <setters>
+      <set name="category">Tools</set>
+      <set name="cost" currency="gp">75</set>
+      <set name="weight" lb="4">4 lb.</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_HACKING_KIT</set>
+    </setters>
+  </element>
+
+  <element name="Disguise Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_DISGUISE_KIT">
+    <supports>ID_INTERNAL_TOOL</supports>
+    <description>
+      <p>A disguise kit contains cosmetics, hair dyes, small props, and clothing to completely change your appearance.</p>
+      <p class="indent"><strong>Cover Injuries or Distinguishing Marks:</strong> DC 10</p>
+      <p class="indent"><strong>Spot a Disguise:</strong> DC 15 (Wisdom check to spot someone else's disguise)</p>
+      <p class="indent"><strong>Copy an Appearance:</strong> DC 20</p>
+    </description>
+    <setters>
+      <set name="category">Tools</set>
+      <set name="cost" currency="gp">20</set>
+      <set name="weight" lb="3">3 lb.</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_DISGUISE_KIT</set>
+    </setters>
+  </element>
+
+  <element name="Poisoning Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_POISONING_KIT">
+    <supports>ID_INTERNAL_TOOL</supports>
+    <description>
+      <p>A poisoning kit contains the materials needed to coat weapons with poisons.</p>
+      <p class="indent"><strong>Apply Poison to Weapon:</strong> No DC (requires proficiency)</p>
+      <p class="indent"><strong>Spot Poisoned Object:</strong> DC 10</p>
+      <p class="indent"><strong>Determine Poison Effects:</strong> DC 20</p>
+    </description>
+    <setters>
+      <set name="category">Tools</set>
+      <set name="cost" currency="gp">50</set>
+      <set name="weight" lb="2">2 lb.</set>
+      <set name="type">Tool</set>
+      <set name="proficiency">ID_PROFICIENCY_TOOL_POISONING_KIT</set>
+    </setters>
+  </element>
+
+  <!-- Movement Equipment -->
+  <element name="Jumppack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_JUMPPACK">
+    <description>
+      <p>A jumppack allows you to jump up to 25 feet vertically or horizontally as a bonus action. Provokes opportunity attacks when leaving or landing in enemy melee range. Requires jumppack proficiency.</p>
+    </description>
+    <setters>
+      <set name="category">Equipment</set>
+      <set name="cost" currency="gp">350</set>
+      <set name="weight" lb="10">10 lb.</set>
+      <set name="slot">body</set>
+    </setters>
+  </element>
+
+  <element name="Jump Boots" type="Item" source="SW-MSV-Edition" id="ID_ITEM_JUMP_BOOTS">
+    <description>
+      <p>Jump boots worn with a jumppack that allow you to jump up to 25 feet vertically or horizontally as a bonus action. Requires jumppack proficiency.</p>
+    </description>
+    <setters>
+      <set name="category">Equipment</set>
+      <set name="cost" currency="gp">150</set>
+      <set name="weight" lb="5">5 lb.</set>
+      <set name="slot">boots</set>
+    </setters>
+  </element>
+
+  <element name="Hoverpack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_HOVERPACK">
+    <description>
+      <p>A hoverpack allows you to hover up to 15 feet in the air on the same spot for 2 turns as a bonus action. While hovering, you have advantage on ranged attacks and disadvantage on Dexterity saving throws. Provokes opportunity attacks when leaving or landing in enemy melee range. Requires hoverpack proficiency.</p>
+    </description>
+    <setters>
+      <set name="category">Equipment</set>
+      <set name="cost" currency="gp">500</set>
+      <set name="weight" lb="10">10 lb.</set>
+      <set name="slot">body</set>
+    </setters>
+  </element>
+
+  <element name="Hover Boots" type="Item" source="SW-MSV-Edition" id="ID_ITEM_HOVER_BOOTS">
+    <description>
+      <p>Hover boots worn with a hoverpack. Requires hoverpack proficiency.</p>
+    </description>
+    <setters>
+      <set name="category">Equipment</set>
+      <set name="cost" currency="gp">250</set>
+      <set name="weight" lb="5">5 lb.</set>
+      <set name="slot">boots</set>
+    </setters>
+  </element>
+
+  <element name="Jetpack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_JETPACK">
+    <description>
+      <p>An advanced jetpack that combines jump and hover capabilities. Allows jumping up to 30 feet or hovering up to 15 feet with movement. While hovering, you have advantage on ranged attacks and no disadvantage on Dexterity saving throws. Provokes opportunity attacks when leaving or landing in enemy melee range. Requires jumppack, hoverpack, and jetpack proficiency.</p>
+    </description>
+    <setters>
+      <set name="category">Equipment</set>
+      <set name="cost" currency="gp">1000</set>
+      <set name="weight" lb="15">15 lb.</set>
+      <set name="slot">body</set>
+    </setters>
+  </element>
+
+  <element name="Jet Boots" type="Item" source="SW-MSV-Edition" id="ID_ITEM_JET_BOOTS">
+    <description>
+      <p>Jet boots worn with a jetpack. Requires jetpack proficiency.</p>
+    </description>
+    <setters>
+      <set name="category">Equipment</set>
+      <set name="cost" currency="gp">500</set>
+      <set name="weight" lb="5">5 lb.</set>
+      <set name="slot">boots</set>
+    </setters>
+  </element>
+
+  <!-- Poisons -->
+  <element name="Poison" type="Item" source="SW-MSV-Edition" id="ID_ITEM_POISON">
+    <description>
+      <p>Basic poison that can be applied to weapons. Target must make a DC 13 Constitution saving throw. On a failed save, takes full damage and becomes poisoned. On a successful save, takes half damage and isn't poisoned.</p>
+    </description>
+    <setters>
+      <set name="category">Equipment</set>
+      <set name="cost" currency="gp">25</set>
+      <set name="weight" lb="0.5">0.5 lb.</set>
+    </setters>
+  </element>
+
+  <element name="Sleep Poison" type="Item" source="SW-MSV-Edition" id="ID_ITEM_SLEEP_POISON">
+    <description>
+      <p>Poison that induces sleep. Target must make a DC 14 Constitution saving throw. On a failed save, falls asleep. On a successful save, doesn't fall asleep.</p>
+    </description>
+    <setters>
+      <set name="category">Equipment</set>
+      <set name="cost" currency="gp">50</set>
+      <set name="weight" lb="0.5">0.5 lb.</set>
+    </setters>
+  </element>
+
+  <element name="Paralysing Poison" type="Item" source="SW-MSV-Edition" id="ID_ITEM_PARALYSING_POISON">
+    <description>
+      <p>Poison that causes paralysis. Target must make a DC 14 Constitution saving throw. On a failed save, becomes paralysed for 1 round.</p>
+    </description>
+    <setters>
+      <set name="category">Equipment</set>
+      <set name="cost" currency="gp">75</set>
+      <set name="weight" lb="0.5">0.5 lb.</set>
+    </setters>
+  </element>
+
+  <element name="Panic Poison" type="Item" source="SW-MSV-Edition" id="ID_ITEM_PANIC_POISON">
+    <description>
+      <p>Poison that induces fear. Target must make a DC 14 Wisdom saving throw. On a failed save, becomes frightened for 1 round. On a successful save, doesn't become frightened.</p>
+    </description>
+    <setters>
+      <set name="category">Equipment</set>
+      <set name="cost" currency="gp">50</set>
+      <set name="weight" lb="0.5">0.5 lb.</set>
+    </setters>
+  </element>
+
+  <!-- Wrist Launcher Attachments -->
+  <element name="Fibercord Whip" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FIBERCORD_WHIP">
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
+    <description>
+      <p>15 feet line. The target must make a DC 8 + proficiency + Dexterity modifier Dexterity saving throw. On a failed save, the target is restrained. On a successful save, the target isn't restrained. If the target is restrained, they can use an Action on their turn to make a Strength saving throw against 8 + proficiency + Strength modifier of the restrainer. On a failed save, the target stays restrained. On a successful save, the target is freed. The restrainer can't use Bonus Actions or hold something in that hand when restraining someone.</p>
+    </description>
+    <setters>
+      <set name="category">Weapons</set>
+      <set name="cost" currency="gp">100</set>
+      <set name="weight" lb="2">2 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_FIBERCORD_WHIP</set>
+    </setters>
+  </element>
+
+  <element name="Wristflame" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRISTFLAME">
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
+    <description>
+      <p>1d10 fire, canister, 15 feet line. Reload 2, Dexterity modifier. Flame action.</p>
+    </description>
+    <setters>
+      <set name="category">Weapons</set>
+      <set name="cost" currency="gp">150</set>
+      <set name="weight" lb="3">3 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="damage" type="fire">1d10</set>
+      <set name="reload">2</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WRISTFLAME</set>
+    </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_FLAME"/>
+    </rules>
+  </element>
+</elements>

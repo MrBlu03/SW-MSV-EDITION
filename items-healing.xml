@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+
+<!-- Healing Items moved from weapons.xml -->
+<element name="Minor kolto pack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_MINOR_KOLTO_PACK">
+    <description>
+      <p>2d4 + 2 healing</p>
+    </description>
+    <setters>
+      <set name="category">Healing</set>
+      <set name="cost" currency="gp">0</set>
+      <set name="weight" lb="1">1 lb.</set>
+            </setters>
+  </element>
+<element name="Medium kolto pack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_MEDIUM_KOLTO_PACK">
+    <description>
+      <p>4d4 + 4 healing</p>
+    </description>
+    <setters>
+      <set name="category">Healing</set>
+      <set name="cost" currency="gp">0</set>
+      <set name="weight" lb="1">1 lb.</set>
+            </setters>
+  </element>
+<element name="Major kolto pack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_MAJOR_KOLTO_PACK">
+    <description>
+      <p>8d4 + 8 healing</p>
+    </description>
+    <setters>
+      <set name="category">Healing</set>
+      <set name="cost" currency="gp">0</set>
+      <set name="weight" lb="1">1 lb.</set>
+            </setters>
+  </element>
+<element name="bacta pack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_BACTA_PACK">
+    <description>
+      <p>10d4 + 20 healing</p>
+    </description>
+    <setters>
+      <set name="category">Healing</set>
+      <set name="cost" currency="gp">0</set>
+      <set name="weight" lb="1">1 lb.</set>
+            </setters>
+  </element>
+</elements>

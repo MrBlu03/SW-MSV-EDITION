@@ -237,7 +237,7 @@
       <set name="slot">body</set>
     </setters>
     <rules>
-      <grant type="Grants" id="ID_INTERNAL_GRANTS_SHIELD_GENERATOR_SMALL" />
+      <grant type="Action" id="ID_ACTION_SHIELD_GENERATOR_SMALL"/>
     </rules>
   </element>
   
@@ -252,7 +252,7 @@
       <set name="slot">body</set>
     </setters>
     <rules>
-      <grant type="Grants" id="ID_INTERNAL_GRANTS_SHIELD_GENERATOR_MEDIUM" />
+      <grant type="Action" id="ID_ACTION_SHIELD_GENERATOR_MEDIUM"/>
     </rules>
   </element>
   
@@ -267,8 +267,36 @@
       <set name="slot">body</set>
     </setters>
     <rules>
-      <grant type="Grants" id="ID_INTERNAL_GRANTS_SHIELD_GENERATOR_LARGE" />
+      <grant type="Action" id="ID_ACTION_SHIELD_GENERATOR_LARGE"/>
     </rules>
+  </element>
+
+  <!-- Shield Generator Actions -->
+  <element name="Activate Small Shield Generator" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SHIELD_GENERATOR_SMALL">
+    <description>
+      <p>Bonus Action: Once per long rest, activate your shield generator to gain 10 temporary hit points.</p>
+    </description>
+    <sheet>
+      <description>Bonus Action (1/LR): Gain 10 temporary hit points.</description>
+    </sheet>
+  </element>
+
+  <element name="Activate Medium Shield Generator" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SHIELD_GENERATOR_MEDIUM">
+    <description>
+      <p>Bonus Action: Once per long rest, activate your shield generator to gain 20 temporary hit points.</p>
+    </description>
+    <sheet>
+      <description>Bonus Action (1/LR): Gain 20 temporary hit points.</description>
+    </sheet>
+  </element>
+
+  <element name="Activate Large Shield Generator" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SHIELD_GENERATOR_LARGE">
+    <description>
+      <p>Bonus Action: Once per long rest, activate your shield generator to gain 40 temporary hit points.</p>
+    </description>
+    <sheet>
+      <description>Bonus Action (1/LR): Gain 40 temporary hit points.</description>
+    </sheet>
   </element>
   
   <element name="Energy Shield" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_ENERGY_SHIELD">
