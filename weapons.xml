@@ -4,51 +4,81 @@
     <description>
       <p>Strike: Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
     </description>
+    <sheet>
+      <description>Make a melee attack with your main hand weapon.</description>
+    </sheet>
   </element>
   <element name="Shoot" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SHOOT">
     <description>
       <p>Shoot: Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
     </description>
+    <sheet>
+      <description>Make a ranged attack with your main hand weapon.</description>
+    </sheet>
   </element>
   <element name="Hilt Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_HILT_STRIKE">
     <description>
       <p>Hilt Strike: Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. The target must make a Constitution saving throw: DC:8 + proficiency bonus + Strength or Dexterity modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed. (Damage: 1d4 kinetic)</p>
     </description>
+    <sheet>
+      <description>Bonus Action: Make a melee attack with your weapon's hilt. Target saves or becomes dazed (1d4 kinetic damage).</description>
+    </sheet>
   </element>
   <element name="Slash" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SLASH">
     <description>
       <p>Slash: Action; When wielding double bladed weapon, make a melee attack that hits in a 15 feet horizontal line in front of you. (Damage: weapon damage without adding modifiers)</p>
     </description>
+    <sheet>
+      <description>Action: Attack in a 15-foot line with your double-bladed weapon.</description>
+    </sheet>
   </element>
   <element name="Blast" type="Action" source="SW-MSV-Edition" id="ID_ACTION_BLAST">
     <description>
       <p>Blast: Action; Blast multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes full damage. On a successful save, the target takes half damage. (Damage: Weapon Damage and add modifier)</p>
     </description>
+    <sheet>
+      <description>Action: Blast targets in a cone. DC 8 + prof + Dex save for half damage.</description>
+    </sheet>
   </element>
   <element name="Flame" type="Action" source="SW-MSV-Edition" id="ID_ACTION_FLAME">
     <description>
       <p>Flame: Action; Flame multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes full damage and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn. (Damage: Weapon Damage and add modifier)</p>
     </description>
+    <sheet>
+      <description>Action: Flame targets in a cone. DC 8 + prof + Dex save for half damage and reduced burning.</description>
+    </sheet>
   </element>
   <element name="Off-Hand Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_OFF_HAND_STRIKE">
     <description>
       <p>Off-Hand Strike: Bonus Action; When dual-wielding, make a melee attack with the melee weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
     </description>
+    <sheet>
+      <description>Bonus Action: Attack with your off-hand melee weapon when dual-wielding.</description>
+    </sheet>
   </element>
   <element name="Quick Shot" type="Action" source="SW-MSV-Edition" id="ID_ACTION_QUICK_SHOT">
     <description>
       <p>Quick Shot: Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
     </description>
+    <sheet>
+      <description>Bonus Action: Shoot with your off-hand ranged weapon when dual-wielding.</description>
+    </sheet>
   </element>
   <element name="Back Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_BACK_STRIKE">
     <description>
       <p>Back Strike: Bonus Action; When wielding a double bladed weapon, make a melee attack with the other side of your weapon. (Damage: weapon damage without adding modifiers)</p>
     </description>
+    <sheet>
+      <description>Bonus Action: Attack with the other side of your double-bladed weapon.</description>
+    </sheet>
   </element>
   <element name="Reload" type="Action" source="SW-MSV-Edition" id="ID_ACTION_RELOAD">
     <description>
       <p>Reload: Action; After x amount of shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
+    <sheet>
+      <description>Action: Reload your weapon.</description>
+    </sheet>
   </element>
   <element name="blaster pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BLASTER_PISTOL">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
