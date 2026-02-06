@@ -688,9 +688,9 @@
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, One additional language of choice.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Ability Score Increase +2" supports="Human Variant +2" number="1"/>
-      <select type="Racial Trait" name="Ability Score Increase +1 (1st)" supports="Human Variant +1" number="1"/>
-      <select type="Racial Trait" name="Ability Score Increase +1 (2nd)" supports="Human Variant +1" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (1st)" supports="Human Variant Two" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (2nd)" supports="Human Variant One" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (3rd)" supports="Human Variant One" number="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
@@ -1975,10 +1975,10 @@
     </rules>
   </element>
 
-  <!-- Human Standard/Variant +1 Ability Score Options -->
+  <!-- Human Standard/Variant One Ability Score Options -->
   <element name="Ability Score Increase (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_STR">
     <compendium display="false"/>
-    <supports>Human Standard, Human Variant +1</supports>
+    <supports>Human Standard, Human Variant One</supports>
     <description>
       <p>Your Strength score increases by 1.</p>
     </description>
@@ -1988,7 +1988,7 @@
   </element>
   <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_DEX">
     <compendium display="false"/>
-    <supports>Human Standard, Human Variant +1</supports>
+    <supports>Human Standard, Human Variant One</supports>
     <description>
       <p>Your Dexterity score increases by 1.</p>
     </description>
@@ -1998,7 +1998,7 @@
   </element>
   <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CON">
     <compendium display="false"/>
-    <supports>Human Standard, Human Variant +1</supports>
+    <supports>Human Standard, Human Variant One</supports>
     <description>
       <p>Your Constitution score increases by 1.</p>
     </description>
@@ -2008,7 +2008,7 @@
   </element>
   <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_INT">
     <compendium display="false"/>
-    <supports>Human Standard, Human Variant +1</supports>
+    <supports>Human Standard, Human Variant One</supports>
     <description>
       <p>Your Intelligence score increases by 1.</p>
     </description>
@@ -2018,7 +2018,7 @@
   </element>
   <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_WIS">
     <compendium display="false"/>
-    <supports>Human Standard, Human Variant +1</supports>
+    <supports>Human Standard, Human Variant One</supports>
     <description>
       <p>Your Wisdom score increases by 1.</p>
     </description>
@@ -2028,7 +2028,7 @@
   </element>
   <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CHA">
     <compendium display="false"/>
-    <supports>Human Standard, Human Variant +1</supports>
+    <supports>Human Standard, Human Variant One</supports>
     <description>
       <p>Your Charisma score increases by 1.</p>
     </description>
@@ -2036,10 +2036,10 @@
       <stat name="charisma" value="1"/>
     </rules>
   </element>
-  <!-- Human Variant +2 Ability Score Options -->
-  <element name="Ability Score Increase +2 (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_STR2">
+  <!-- Human Variant Two Ability Score Options (+2 bonus) -->
+  <element name="Ability Score Increase Two (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_STR2">
     <compendium display="false"/>
-    <supports>Human Variant +2</supports>
+    <supports>Human Variant Two</supports>
     <description>
       <p>Your Strength score increases by 2.</p>
     </description>
@@ -2047,9 +2047,9 @@
       <stat name="strength" value="2"/>
     </rules>
   </element>
-  <element name="Ability Score Increase +2 (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_DEX2">
+  <element name="Ability Score Increase Two (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_DEX2">
     <compendium display="false"/>
-    <supports>Human Variant +2</supports>
+    <supports>Human Variant Two</supports>
     <description>
       <p>Your Dexterity score increases by 2.</p>
     </description>
@@ -2057,9 +2057,9 @@
       <stat name="dexterity" value="2"/>
     </rules>
   </element>
-  <element name="Ability Score Increase +2 (Constitution)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CON2">
+  <element name="Ability Score Increase Two (Constitution)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CON2">
     <compendium display="false"/>
-    <supports>Human Variant +2</supports>
+    <supports>Human Variant Two</supports>
     <description>
       <p>Your Constitution score increases by 2.</p>
     </description>
@@ -2067,9 +2067,9 @@
       <stat name="constitution" value="2"/>
     </rules>
   </element>
-  <element name="Ability Score Increase +2 (Intelligence)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_INT2">
+  <element name="Ability Score Increase Two (Intelligence)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_INT2">
     <compendium display="false"/>
-    <supports>Human Variant +2</supports>
+    <supports>Human Variant Two</supports>
     <description>
       <p>Your Intelligence score increases by 2.</p>
     </description>
@@ -2077,9 +2077,9 @@
       <stat name="intelligence" value="2"/>
     </rules>
   </element>
-  <element name="Ability Score Increase +2 (Wisdom)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_WIS2">
+  <element name="Ability Score Increase Two (Wisdom)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_WIS2">
     <compendium display="false"/>
-    <supports>Human Variant +2</supports>
+    <supports>Human Variant Two</supports>
     <description>
       <p>Your Wisdom score increases by 2.</p>
     </description>
@@ -2087,9 +2087,9 @@
       <stat name="wisdom" value="2"/>
     </rules>
   </element>
-  <element name="Ability Score Increase +2 (Charisma)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CHA2">
+  <element name="Ability Score Increase Two (Charisma)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CHA2">
     <compendium display="false"/>
-    <supports>Human Variant +2</supports>
+    <supports>Human Variant Two</supports>
     <description>
       <p>Your Charisma score increases by 2.</p>
     </description>
