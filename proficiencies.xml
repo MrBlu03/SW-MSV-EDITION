@@ -120,4 +120,54 @@
     </description>
     <rules/>
   </element>
+  
+  <!-- Armor Proficiencies -->
+  <element name="Armor: Combat Suit" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_COMBAT_SUIT" source="SW-MSV-Edition">
+    <description><p>Combat suit proficiency</p></description>
+    <rules/>
+  </element>
+  <element name="Armor: Fiber Armor" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_FIBER_ARMOR" source="SW-MSV-Edition">
+    <description><p>Fiber armor proficiency</p></description>
+    <rules/>
+  </element>
+  <element name="Armor: Duranium Combat Suit" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_DURANIUM_COMBAT_SUIT" source="SW-MSV-Edition">
+    <description><p>Duranium combat suit proficiency</p></description>
+    <rules/>
+  </element>
+  <element name="Armor: Mesh Armor" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MESH_ARMOR" source="SW-MSV-Edition">
+    <description><p>Mesh armor proficiency</p></description>
+    <rules/>
+  </element>
+  <element name="Armor: Weave Armor" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_WEAVE_ARMOR" source="SW-MSV-Edition">
+    <description><p>Weave armor proficiency</p></description>
+    <rules/>
+  </element>
+  <element name="Armor: Beskar Weave Armor" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_BESKAR_WEAVE_ARMOR" source="SW-MSV-Edition">
+    <description><p>Beskar weave armor proficiency</p></description>
+    <rules/>
+  </element>
+  <element name="Armor: Composite Armor" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_COMPOSITE_ARMOR" source="SW-MSV-Edition">
+    <description><p>Composite armor proficiency</p></description>
+    <rules/>
+  </element>
+  <element name="Armor: Battle Armor" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_BATTLE_ARMOR" source="SW-MSV-Edition">
+    <description><p>Battle armor proficiency</p></description>
+    <rules/>
+  </element>
+  <element name="Armor: Assault Armor" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_ASSAULT_ARMOR" source="SW-MSV-Edition">
+    <description><p>Assault armor proficiency</p></description>
+    <rules/>
+  </element>
+  <element name="Armor: Durasteel Armor" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_DURASTEEL_ARMOR" source="SW-MSV-Edition">
+    <description><p>Durasteel armor proficiency</p></description>
+    <rules/>
+  </element>
+  <element name="Armor: Physical Shield" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_PHYSICAL_SHIELD" source="SW-MSV-Edition">
+    <description><p>Physical shield proficiency</p></description>
+    <rules/>
+  </element>
+  <element name="Armor: Energy Shield" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_ENERGY_SHIELD" source="SW-MSV-Edition">
+    <description><p>Energy shield proficiency</p></description>
+    <rules/>
+  </element>
 </elements>
