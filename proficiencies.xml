@@ -121,21 +121,6 @@
     <rules/>
   </element>
 
-  <!-- Skill Proficiencies -->
-  <element name="Skill: Sleight of Hand" type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND" source="SW-MSV-Edition">
-    <description>
-      <p>Whenever you attempt an act of legerdemain or manual trickery, such as planting something on someone else or concealing an object on your person, make a Dexterity (Sleight of Hand) check.</p>
-    </description>
-    <rules/>
-  </element>
-
-  <element name="Skill: Animal Handling" type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING" source="SW-MSV-Edition">
-    <description>
-      <p>When there is any question whether you can calm down a domesticated animal, keep a mount from getting spooked, or intuit an animal's intentions, make a Wisdom (Animal Handling) check.</p>
-    </description>
-    <rules/>
-  </element>
-
   <!-- Armor Proficiencies -->
   <element name="Armor: Combat Suit" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_COMBAT_SUIT" source="SW-MSV-Edition">
     <description><p>Combat suit proficiency</p></description>

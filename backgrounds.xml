@@ -153,7 +153,7 @@
       </ul>
     </description>
     <rules>
-      <select type="Proficiency" name="Skill Proficiency (Criminal)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND"/>
+      <select type="Proficiency" name="Skill Proficiency (Criminal)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_SLICING_KIT"/>
     </rules>
   </element>
@@ -205,7 +205,7 @@
       </ul>
     </description>
     <rules>
-      <select type="Proficiency" name="Skill Proficiency (Entertainer)" number="2" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND"/>
+      <select type="Proficiency" name="Skill Proficiency (Entertainer)" number="2" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND"/>
     </rules>
   </element>
   <element name="Engineer" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_ENGINEER">
@@ -256,7 +256,7 @@
       </ul>
     </description>
     <rules>
-      <select type="Proficiency" name="Skill Proficiency (Engineer)" number="2" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND|ID_PROFICIENCY_SKILL_HISTORY"/>
+      <select type="Proficiency" name="Skill Proficiency (Engineer)" number="2" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_HISTORY"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_REPAIR_KIT"/>
     </rules>
   </element>
@@ -516,7 +516,7 @@
       </ul>
     </description>
     <rules>
-      <select type="Proficiency" name="Skill Proficiency (Nomad)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_MEDICINE"/>
+      <select type="Proficiency" name="Skill Proficiency (Nomad)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_MEDICINE"/>
       <select type="Language" name="Language (Nomad)" supports="Standard||Exotic" number="1"/>
     </rules>
   </element>
@@ -568,7 +568,7 @@
       </ul>
     </description>
     <rules>
-      <select type="Proficiency" name="Skill Proficiency (Pirate)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND"/>
+      <select type="Proficiency" name="Skill Proficiency (Pirate)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_SLICING_KIT"/>
     </rules>
   </element>
@@ -673,7 +673,7 @@
       </ul>
     </description>
     <rules>
-      <select type="Proficiency" name="Skill Proficiency (Scoundrel)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND"/>
+      <select type="Proficiency" name="Skill Proficiency (Scoundrel)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_FORGERY_KIT"/>
     </rules>
   </element>
@@ -777,7 +777,7 @@
       </ul>
     </description>
     <rules>
-      <select type="Proficiency" name="Skill Proficiency (Smuggler)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND"/>
+      <select type="Proficiency" name="Skill Proficiency (Smuggler)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND"/>
     </rules>
   </element>
   <element name="Soldier" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_SOLDIER">
