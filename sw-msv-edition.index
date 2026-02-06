@@ -4,7 +4,7 @@
         <name>SW-MSV-Edition</name>
         <description>Star Wars 5E - MSV Edition Homebrew Content for Aurora Builder. Includes 40+ species, 5 classes, weapons, items, and more.</description>
         <author url="https://github.com/MrBlu03/SW-MSV-EDITION">Writen by Marcus SV and Coded by MrBlu03</author>
-        <update version="1.0.2">
+        <update version="1.0.3">
             <file name="sw-msv-edition.index" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/sw-msv-edition.index" />
         </update>
     </info>
@@ -22,6 +22,11 @@
         <file name="fighting-styles.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/fighting-styles.xml" />
         <file name="maneuvers.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/maneuvers.xml" />
         <file name="weapons.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/weapons.xml" />
+        <file name="items-armor.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-armor.xml" />
+        <file name="items-instruments.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-instruments.xml" />
+        <file name="items-tools.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-tools.xml" />
+        <file name="items-explosives.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-explosives.xml" />
+        <file name="items-healing.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-healing.xml" />
         <file name="proficiencies.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/proficiencies.xml" />
     </files>
 </index>
