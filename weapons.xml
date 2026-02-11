@@ -21,7 +21,7 @@
       <p>Hilt Strike: Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. The target must make a Constitution saving throw: DC:8 + proficiency bonus + Strength or Dexterity modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed. (Damage: 1d4 kinetic)</p>
     </description>
     <sheet>
-      <description>Bonus Action: Make a melee attack with your weapon's hilt. Target saves or becomes dazed (1d4 kinetic damage).</description>
+      <description>Bonus Action: Make a melee attack with your weapon's hilt. Target makes DC 8 + prof + STR/DEX CON save or becomes dazed. Damage: 1d4 kinetic.</description>
     </sheet>
   </element>
   <element name="Slash" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SLASH">
@@ -29,7 +29,7 @@
       <p>Slash: Action; When wielding double bladed weapon, make a melee attack that hits in a 15 feet horizontal line in front of you. (Damage: weapon damage without adding modifiers)</p>
     </description>
     <sheet>
-      <description>Action: Attack in a 15-foot line with your double-bladed weapon.</description>
+      <description>Action: Attack all targets in a 15-foot horizontal line with your double-bladed weapon. Damage: weapon damage (no modifier).</description>
     </sheet>
   </element>
   <element name="Blast" type="Action" source="SW-MSV-Edition" id="ID_ACTION_BLAST">
@@ -37,7 +37,7 @@
       <p>Blast: Action; Blast multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes full damage. On a successful save, the target takes half damage. (Damage: Weapon Damage and add modifier)</p>
     </description>
     <sheet>
-      <description>Action: Blast targets in a cone. DC 8 + prof + Dex save for half damage.</description>
+      <description>Action: Blast targets in a cone. DC 8 + prof + DEX save for half damage. Damage: weapon damage + DEX modifier.</description>
     </sheet>
   </element>
   <element name="Flame" type="Action" source="SW-MSV-Edition" id="ID_ACTION_FLAME">
@@ -53,7 +53,7 @@
       <p>Off-Hand Strike: Bonus Action; When dual-wielding, make a melee attack with the melee weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
     </description>
     <sheet>
-      <description>Bonus Action: Attack with your off-hand melee weapon when dual-wielding.</description>
+      <description>Bonus Action: Attack with your off-hand melee weapon when dual-wielding. Damage: weapon damage (no modifier).</description>
     </sheet>
   </element>
   <element name="Quick Shot" type="Action" source="SW-MSV-Edition" id="ID_ACTION_QUICK_SHOT">
@@ -61,7 +61,7 @@
       <p>Quick Shot: Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
     </description>
     <sheet>
-      <description>Bonus Action: Shoot with your off-hand ranged weapon when dual-wielding.</description>
+      <description>Bonus Action: Shoot with your off-hand ranged weapon when dual-wielding. Damage: weapon damage (no modifier).</description>
     </sheet>
   </element>
   <element name="Back Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_BACK_STRIKE">
@@ -81,7 +81,7 @@
     </sheet>
   </element>
   <element name="blaster pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BLASTER_PISTOL">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
+    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
       <p>1d6 energy, power cell, range 50/200, Reload 16, Dexterity modifier), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
     </description>
@@ -102,7 +102,7 @@
     </rules>
   </element>
   <element name="energy bow" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ENERGY_BOW">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p>1d6 energy, power cell, range 80/320, Reload 4, two-handed, choose Strength or Dexterity modifier), Shoot, Quick shot | Properties: two-handed | Actions: Shoot, Quick shot</p>
     </description>
@@ -123,7 +123,7 @@
     </rules>
   </element>
   <element name="ion pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_PISTOL">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
+    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
       <p>1d4 ion, power cell, range 40/160, Reload 16, Dexterity modifier), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
     </description>
@@ -144,7 +144,7 @@
     </rules>
   </element>
   <element name="sonic pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SONIC_PISTOL">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
+    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
       <p>1d4 sonic, power cell, range 30/120, Reload 16, Dexterity modifier), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
     </description>
@@ -165,7 +165,7 @@
     </rules>
   </element>
   <element name="cryo pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_PISTOL">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
     <description>
       <p>1d4 cold, power cell, range 30/120, Reload 8, Dexterity modifier), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
     </description>
@@ -186,7 +186,7 @@
     </rules>
   </element>
   <element name="slugthrower pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLUGTHROWER_PISTOL">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_KINETIC</supports>
+    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_KINETIC</supports>
     <description>
       <p>1d6 kinetic, slug cartridge, range 40/160, Reload 16, requires Strength 11 to use, Dexterity modifier), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
     </description>
@@ -207,7 +207,7 @@
     </rules>
   </element>
   <element name="disruptor pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DISRUPTOR_PISTOL">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
     <description>
       <p>1d6 acid, power cell, range 45/180, Reload 12, requires Strength 11 to use, Dexterity modifier), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
     </description>
@@ -228,7 +228,7 @@
     </rules>
   </element>
   <element name="stealth pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_STEALTH_PISTOL">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p>1d6 energy, power cell, silent, two-handed, Reload 6, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
     </description>
@@ -247,7 +247,7 @@
     </rules>
   </element>
   <element name="wrist blaster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_BLASTER">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
+    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
       <p>1d6 energy, disguised, can't be disarmed, can still use hand but when holding something can't use weapon, power cell, range 30/120, Reload 8, Dexterity modifier), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
     </description>
@@ -268,7 +268,7 @@
     </rules>
   </element>
   <element name="wrist launcher" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
     <description>
       <p>can't be disarmed, can still use hand but when holding something can't use weapon), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
     </description>
@@ -285,7 +285,7 @@
     </rules>
   </element>
   <element name="blaster rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BLASTER_RIFLE">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p>1d8 energy, power cell, range 105/420, Reload 12, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
     </description>
@@ -305,7 +305,7 @@
     </rules>
   </element>
   <element name="disruptor rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DISRUPTOR_RIFLE">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p>1d8 acid, power cell, range 120/470, Reload 9, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
     </description>
@@ -325,7 +325,7 @@
     </rules>
   </element>
   <element name="heavy bowcaster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_HEAVY_BOWCASTER">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p>1d12 energy, power cell, range 90/360, Reload 4, requires Strength 17 to use, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
     </description>
@@ -345,7 +345,7 @@
     </rules>
   </element>
   <element name="ion rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_RIFLE">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p>1d6 ion, power cell, range 80/320, Reload 8, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
     </description>
@@ -365,7 +365,7 @@
     </rules>
   </element>
   <element name="sonic rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SONIC_RIFLE">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p>1d8 sonic, power cell, range 80/320, Reload 8, requires Strength 11 to use, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
     </description>
@@ -385,7 +385,7 @@
     </rules>
   </element>
   <element name="slugthrower rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLUGTHROWER_RIFLE">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p>1d8 kinetic, slug cartridge, range 105/420, Reload 12, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
     </description>
@@ -405,7 +405,7 @@
     </rules>
   </element>
   <element name="cryo rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_RIFLE">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p>2d4 cold, power cell, range 50/200, Reload 4, requires Strength 11 to use, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
     </description>
@@ -425,7 +425,7 @@
     </rules>
   </element>
   <element name="railgun" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_RAILGUN">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p>1d10 ion, power cell, range 120/470, Reload 1, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
     </description>
@@ -445,7 +445,7 @@
     </rules>
   </element>
   <element name="arc caster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ARC_CASTER">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p>2d4 lightning, power cell, can hit a secondary target in the same line: 1d4 lightning, range 60/240, Reload 9, requires Strength 11 to use, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
     </description>
@@ -465,7 +465,7 @@
     </rules>
   </element>
   <element name="sniper rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SNIPER_RIFLE">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p>1d12 energy, power cell, 150/600, Reload 2, requires Strength 13 to use, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
     </description>
@@ -484,7 +484,7 @@
     </rules>
   </element>
   <element name="minigun/rotary cannon" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MINIGUN_ROTARY_CANNON">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p>1d10 energy, power cell, range 75 feet cone, Reload 4, requires Strength 13 to use, two-handed, Dexterity modifier), Blast | Properties: two-handed | Actions: Blast</p>
     </description>
@@ -503,7 +503,7 @@
     </rules>
   </element>
   <element name="flamethrower" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FLAMETHROWER">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p>2d6 fire, canister, range 55 feet cone, Reload 2, two-handed, Dexterity modifier), Flame | Properties: two-handed | Actions: Flame</p>
     </description>
@@ -522,7 +522,7 @@
     </rules>
   </element>
   <element name="cycler rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CYCLER_RIFLE">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p>1d10 kinetic, slug cartridge, range 100/400, Reload 4, requires Strength 12 to use, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
     </description>
@@ -542,7 +542,7 @@
     </rules>
   </element>
   <element name="lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSABER">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
       <p>1d6 energy, finesse), Strike, Off-Hand Strike, Hilt Strike | Properties: finesse | Actions: Strike, Off-Hand Strike, Hilt Strike</p>
     </description>
@@ -561,16 +561,17 @@
     </rules>
   </element>
   <element name="lightstaff" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSTAFF">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
     <description>
-      <p>1d6/2d4 energy, versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike | Properties: versatile | Actions: Strike, Off-Hand Strike, Hilt Strike</p>
+      <p>1d6 energy (2d4 when used with two hands), versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike | Properties: versatile | Actions: Strike, Off-Hand Strike, Hilt Strike</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="damage" type="energy">1d6/2d4</set>
+      <set name="damage" type="energy">1d6</set>
+      <set name="versatile">2d4</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSTAFF</set>
     </setters>
     <rules>
@@ -580,7 +581,7 @@
     </rules>
   </element>
   <element name="crossguard saber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CROSSGUARD_SABER">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p>2d6 energy, two-handed, requires Dexterity 13 to use, Strength modifier), Strike, Hilt Strike | Properties: two-handed | Actions: Strike, Hilt Strike</p>
     </description>
@@ -598,7 +599,7 @@
     </rules>
   </element>
   <element name="lightwhip" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTWHIP">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
     <description>
       <p>1d6 energy, reach: 10 feet, finesse), Strike, Off-Hand Strike | Properties: finesse, reach 10ft | Actions: Strike, Off-Hand Strike</p>
     </description>
@@ -616,16 +617,17 @@
     </rules>
   </element>
   <element name="martial lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MARTIAL_LIGHTSABER">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
     <description>
-      <p>1d8/1d10 energy, versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike | Properties: versatile | Actions: Strike, Off-Hand Strike, Hilt Strike</p>
+      <p>1d8 energy (1d10 when used with two hands), versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike | Properties: versatile | Actions: Strike, Off-Hand Strike, Hilt Strike</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="damage" type="energy">1d8/1d10</set>
+      <set name="damage" type="energy">1d8</set>
+      <set name="versatile">1d10</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_LIGHTSABER</set>
     </setters>
     <rules>
@@ -635,7 +637,7 @@
     </rules>
   </element>
   <element name="lightsaber pike" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSABER_PIKE">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
     <description>
       <p>1d10 energy, two-handed, reach: 10 feet, requires Dexterity 11 to use, Strength modifier), Strike, Hilt Strike | Properties: two-handed, reach 10ft | Actions: Strike, Hilt Strike</p>
     </description>
@@ -653,7 +655,7 @@
     </rules>
   </element>
   <element name="double bladed lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DOUBLE_BLADED_LIGHTSABER">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
       <p>1d8 energy, two-handed, finesse), Strike, Slash, Back Strike | Properties: two-handed, finesse | Actions: Strike, Slash, Back Strike</p>
     </description>
@@ -672,9 +674,9 @@
     </rules>
   </element>
   <element name="vibrospear" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROSPEAR">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
     <description>
-      <p>1d6/2d4 kinetic, versatile, thrown range 25/75, Strength modifier), Strike, Off-Hand Strike, Hilt Strike | Properties: versatile, thrown | Actions: Strike, Off-Hand Strike, Hilt Strike</p>
+      <p>1d6 kinetic (2d4 when used with two hands), versatile, thrown range 25/75, Strength modifier), Strike, Off-Hand Strike, Hilt Strike | Properties: versatile, thrown | Actions: Strike, Off-Hand Strike, Hilt Strike</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -682,7 +684,8 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="range">25/75</set>
-      <set name="damage" type="kinetic">1d6/2d4</set>
+      <set name="damage" type="kinetic">1d6</set>
+      <set name="versatile">2d4</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSPEAR</set>
     </setters>
     <rules>
@@ -692,7 +695,7 @@
     </rules>
   </element>
   <element name="vibrodagger" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBRODAGGER">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
     <description>
       <p>1d4 kinetic, thrown range 20/60, finesse), Strike, Off-Hand Strike | Properties: finesse, thrown | Actions: Strike, Off-Hand Strike</p>
     </description>
@@ -711,16 +714,17 @@
     </rules>
   </element>
   <element name="vibrostaff" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROSTAFF">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
     <description>
-      <p>1d6/2d4 kinetic, versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike | Properties: versatile | Actions: Strike, Off-Hand Strike, Hilt Strike</p>
+      <p>1d6 kinetic (2d4 when used with two hands), versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike | Properties: versatile | Actions: Strike, Off-Hand Strike, Hilt Strike</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="damage" type="kinetic">1d6/2d4</set>
+      <set name="damage" type="kinetic">1d6</set>
+      <set name="versatile">2d4</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSTAFF</set>
     </setters>
     <rules>
@@ -730,7 +734,7 @@
     </rules>
   </element>
   <element name="vibro double-blade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBRO_DOUBLE_BLADE">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
       <p>1d8 kinetic, two-handed, finesse), Strike, Slash, Back Strike | Properties: two-handed, finesse | Actions: Strike, Slash, Back Strike</p>
     </description>
@@ -749,7 +753,7 @@
     </rules>
   </element>
   <element name="electrostaff" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTROSTAFF">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
       <p>1d6 lightning, two-handed, finesse), Strike, Slash, Back Strike | Properties: two-handed, finesse | Actions: Strike, Slash, Back Strike</p>
     </description>
@@ -768,16 +772,17 @@
     </rules>
   </element>
   <element name="vibrosword" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROSWORD">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
     <description>
-      <p>1d8/1d10 kinetic, versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike | Properties: versatile | Actions: Strike, Off-Hand Strike, Hilt Strike</p>
+      <p>1d8 kinetic (1d10 when used with two hands), versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike | Properties: versatile | Actions: Strike, Off-Hand Strike, Hilt Strike</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="damage" type="kinetic">1d8/1d10</set>
+      <set name="damage" type="kinetic">1d8</set>
+      <set name="versatile">1d10</set>
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSWORD</set>
     </setters>
     <rules>
@@ -787,7 +792,7 @@
     </rules>
   </element>
   <element name="virbo-axe" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIRBO_AXE">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p>1d12 kinetic, two-handed, requires Dexterity 11 to use, Strength modifier), Strike, Hilt Strike | Properties: two-handed | Actions: Strike, Hilt Strike</p>
     </description>
@@ -805,7 +810,7 @@
     </rules>
   </element>
   <element name="vibropike" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROPIKE">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
     <description>
       <p>1d10 kinetic, two-handed, reach: 10 feet, requires Dexterity 11 to use, Strength modifier), Strike, Hilt Strike | Properties: two-handed, reach 10ft | Actions: Strike, Hilt Strike</p>
     </description>
@@ -823,7 +828,7 @@
     </rules>
   </element>
   <element name="electrowhip" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTROWHIP">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
     <description>
       <p>1d4 lightning, reach: 10 feet, finesse), Strike, Off-Hand Strike | Properties: finesse, reach 10ft | Actions: Strike, Off-Hand Strike</p>
     </description>
@@ -841,7 +846,7 @@
     </rules>
   </element>
   <element name="electrobaton" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTROBATON">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
       <p>1d4 lightning, finesse), Strike, Off-Hand Strike | Properties: finesse | Actions: Strike, Off-Hand Strike</p>
     </description>
@@ -858,16 +863,7 @@
       <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
     </rules>
   </element>
-  <element name="combat suit" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_COMBAT_SUIT">
-    <supports>ID_INTERNAL_ARMOR_CATEGORY_LIGHT</supports>
-    <description>
-      <p>AC: 11 + Dexterity modifier</p>
-    </description>
-    <setters>
-      <set name="category">Armor</set>
-      <set name="cost" currency="gp">100</set>
-      <set name="weight" lb="8">8 lb.</set>
-      <set name="slot">body</set>
+</elements>
       <set name="ac">11</set>
       <set name="proficiency">ID_PROFICIENCY_ARMOR_LIGHT_ARMOUR</set>
     </setters>

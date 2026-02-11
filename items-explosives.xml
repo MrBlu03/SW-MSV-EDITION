@@ -2,7 +2,7 @@
 <elements>
 
 <!-- Explosives moved from weapons.xml -->
-<element name="thermal detenator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_THERMAL_DETENATOR">
+<element name="thermal detenator" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_THERMAL_DETENATOR">
     <description>
       <p>10d8 + 20 energy, 35 feet radius. Each target must make a DC 18 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
     </description>
@@ -14,7 +14,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_THERMAL_DETENATOR</set>
     </setters>
   </element>
-<element name="flashbang" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FLASHBANG">
+<element name="flashbang" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_FLASHBANG">
     <description>
       <p>15 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target is blinded for 1 round. On a successful save, the target isn't blinded</p>
     </description>
@@ -26,7 +26,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_FLASHBANG</set>
     </setters>
   </element>
-<element name="cryo grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_GRENADE">
+<element name="cryo grenade" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_GRENADE">
     <description>
       <p>1d8 cold, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. The explosion creates an icy surface of 10 feet that counts as difficult terrain. Each creature walking over it must make a DC 12 Dexterity saving throw. On a failed save, the creature falls prone. On a successful save, the creature doesn't fall</p>
     </description>
@@ -39,7 +39,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CRYO_GRENADE</set>
     </setters>
   </element>
-<element name="ion grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_GRENADE">
+<element name="ion grenade" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_ION_GRENADE">
     <supports>ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
       <p>1d8 ion, 10 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage, On a successful save, the target takes half damage. Each droid must make a DC 13 Constitution saving throw. On a failed save, the droid is stunned for 1 round. On a successful save, the droid isn't stunned</p>
@@ -53,7 +53,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ION_GRENADE</set>
     </setters>
   </element>
-<element name="incendiary grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_INCENDIARY_GRENADE">
+<element name="incendiary grenade" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_INCENDIARY_GRENADE">
     <description>
       <p>1d6 fire, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage and is inflicted burning for 1 turn. On a successful save, the target takes half damage. Sets ground on fire in a 10 feet radius for 3 turns. Each target standing or walking in this will be inflicted burning for 1 turn</p>
     </description>
@@ -66,7 +66,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_INCENDIARY_GRENADE</set>
     </setters>
   </element>
-<element name="corrosive grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CORROSIVE_GRENADE">
+<element name="corrosive grenade" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_CORROSIVE_GRENADE">
     <description>
       <p>2d6 acid, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes no damage. The explosion creates an acid surface of 10 feet that reduces AC by 2</p>
     </description>
@@ -79,7 +79,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CORROSIVE_GRENADE</set>
     </setters>
   </element>
-<element name="gas grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_GAS_GRENADE">
+<element name="gas grenade" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_GAS_GRENADE">
     <description>
       <p>creates gas cloud, 10 feet radius. Each creature in the gas must make a DC 13 Constitution saving throw. On a failed save, the creature becomes poisoned</p>
     </description>
@@ -91,7 +91,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GAS_GRENADE</set>
     </setters>
   </element>
-<element name="fragmentation grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FRAGMENTATION_GRENADE">
+<element name="fragmentation grenade" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_FRAGMENTATION_GRENADE">
     <supports>ID_INTERNAL_DAMAGE_TYPE_KINETIC</supports>
     <description>
       <p>2d8 kinetic, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
@@ -105,7 +105,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_FRAGMENTATION_GRENADE</set>
     </setters>
   </element>
-<element name="plasma grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_PLASMA_GRENADE">
+<element name="plasma grenade" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_PLASMA_GRENADE">
     <supports>ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
       <p>2d8 energy, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
@@ -119,7 +119,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_PLASMA_GRENADE</set>
     </setters>
   </element>
-<element name="shock grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SHOCK_GRENADE">
+<element name="shock grenade" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_SHOCK_GRENADE">
     <description>
       <p>1d6 lightning but cannot reduce a creature's health to 0. 10 feet radius. The explosion creates an electrifying field that counts as difficult terrain for 3 turns in a 10 feet radius</p>
     </description>
@@ -132,7 +132,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SHOCK_GRENADE</set>
     </setters>
   </element>
-<element name="stun grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_STUN_GRENADE">
+<element name="stun grenade" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_STUN_GRENADE">
     <description>
       <p>10 feet radius. Each target must make a DC 15 Constitution saving throw. On a failed save, the target is pushed 5 feet away from the centerpoint and is stunned for 1 round. On a successful save, the target takes isn't pushed and isn't stunned</p>
     </description>
@@ -144,7 +144,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_STUN_GRENADE</set>
     </setters>
   </element>
-<element name="remote flashbang" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_FLASHBANG">
+<element name="remote flashbang" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_FLASHBANG">
     <description>
       <p>15 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target is blinded for 1 round. On a successful save, the target isn't blinded</p>
     </description>
@@ -156,7 +156,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_FLASHBANG</set>
     </setters>
   </element>
-<element name="remote cryo detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_CRYO_DETONATOR">
+<element name="remote cryo detonator" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_CRYO_DETONATOR">
     <description>
       <p>1d8 cold, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. The explosion creates an icy surface of 10 feet that counts as difficult terrain. Each creature walking over it must make a DC 12 Dexterity saving throw. On a failed save, the creature falls prone. On a successful save, the creature doesn't fall</p>
     </description>
@@ -169,7 +169,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_CRYO_DETONATOR</set>
     </setters>
   </element>
-<element name="remote ion detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_ION_DETONATOR">
+<element name="remote ion detonator" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_ION_DETONATOR">
     <supports>ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
       <p>1d8 ion, 10 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage, On a successful save, the target takes half damage. Each droid must make a DC 13 Constitution saving throw. On a failed save, the droid is stunned for 1 round. On a successful save, the droid isn't stunned</p>
@@ -183,7 +183,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_ION_DETONATOR</set>
     </setters>
   </element>
-<element name="remote incendiary detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_INCENDIARY_DETONATOR">
+<element name="remote incendiary detonator" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_INCENDIARY_DETONATOR">
     <description>
       <p>1d6 fire, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage and is inflicted burning for 1 turn. On a successful save, the target takes half damage. Sets ground on fire in a 10 feet radius for 3 turns. Each target standing or walking in this will be inflicted burning for 1 turn</p>
     </description>
@@ -196,7 +196,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_INCENDIARY_DETONATOR</set>
     </setters>
   </element>
-<element name="remote corrosive detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_CORROSIVE_DETONATOR">
+<element name="remote corrosive detonator" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_CORROSIVE_DETONATOR">
     <description>
       <p>2d6 acid, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes no damage. The explosion creates an acid surface of 10 feet that reduces AC by 2</p>
     </description>
@@ -209,7 +209,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_CORROSIVE_DETONATOR</set>
     </setters>
   </element>
-<element name="remote gas detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_GAS_DETONATOR">
+<element name="remote gas detonator" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_GAS_DETONATOR">
     <description>
       <p>creates gas cloud, 10 feet radius. Each creature in the gas must make a DC 13 Constitution saving throw. On a failed save, the creature becomes poisoned</p>
     </description>
@@ -221,7 +221,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_GAS_DETONATOR</set>
     </setters>
   </element>
-<element name="remote fragmentation detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_FRAGMENTATION_DETONATOR">
+<element name="remote fragmentation detonator" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_FRAGMENTATION_DETONATOR">
     <supports>ID_INTERNAL_DAMAGE_TYPE_KINETIC</supports>
     <description>
       <p>2d8 kinetic, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
@@ -235,7 +235,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_FRAGMENTATION_DETONATOR</set>
     </setters>
   </element>
-<element name="remote plasma detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_PLASMA_DETONATOR">
+<element name="remote plasma detonator" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_PLASMA_DETONATOR">
     <supports>ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
       <p>2d8 energy, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
@@ -249,7 +249,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_PLASMA_DETONATOR</set>
     </setters>
   </element>
-<element name="remote shock detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_SHOCK_DETONATOR">
+<element name="remote shock detonator" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_SHOCK_DETONATOR">
     <description>
       <p>1d6 lightning but cannot reduce a creature's health to 0. 10 feet radius. The explosion creates an electrifying field that counts as difficult terrain for 3 turns in a 10 feet radius</p>
     </description>
@@ -262,7 +262,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_SHOCK_DETONATOR</set>
     </setters>
   </element>
-<element name="remote stun detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_STUN_DETONATOR">
+<element name="remote stun detonator" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_STUN_DETONATOR">
     <description>
       <p>10 feet radius. Each target must make a DC 15 Constitution saving throw. On a failed save, the target is pushed 5 feet away from the centerpoint and is stunned for 1 round. On a successful save, the target takes isn't pushed and isn't stunned</p>
     </description>
@@ -274,7 +274,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_STUN_DETONATOR</set>
     </setters>
   </element>
-<element name="flashbang mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FLASHBANG_MINE">
+<element name="flashbang mine" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_FLASHBANG_MINE">
     <description>
       <p>15 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target is blinded for 1 round. On a successful save, the target isn't blinded</p>
     </description>
@@ -286,7 +286,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_FLASHBANG_MINE</set>
     </setters>
   </element>
-<element name="cryo mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_MINE">
+<element name="cryo mine" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_MINE">
     <description>
       <p>1d8 cold, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. The explosion creates an icy surface of 10 feet that counts as difficult terrain. Each creature walking over it must make a DC 12 Dexterity saving throw. On a failed save, the creature falls prone. On a successful save, the creature doesn't fall</p>
     </description>
@@ -299,7 +299,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CRYO_MINE</set>
     </setters>
   </element>
-<element name="ion mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_MINE">
+<element name="ion mine" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_ION_MINE">
     <supports>ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
       <p>1d8 ion, 10 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage, On a successful save, the target takes half damage. Each droid must make a DC 13 Constitution saving throw. On a failed save, the droid is stunned for 1 round. On a successful save, the droid isn't stunned</p>
@@ -313,7 +313,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ION_MINE</set>
     </setters>
   </element>
-<element name="incendiary mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_INCENDIARY_MINE">
+<element name="incendiary mine" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_INCENDIARY_MINE">
     <description>
       <p>1d6 fire, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage and is inflicted burning for 1 turn. On a successful save, the target takes half damage. Sets ground on fire in a 10 feet radius for 3 turns. Each target standing or walking in this will be inflicted burning for 1 turn</p>
     </description>
@@ -326,7 +326,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_INCENDIARY_MINE</set>
     </setters>
   </element>
-<element name="corrosive mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CORROSIVE_MINE">
+<element name="corrosive mine" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_CORROSIVE_MINE">
     <description>
       <p>2d6 acid, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes no damage. The explosion creates an acid surface of 10 feet that reduces AC by 2</p>
     </description>
@@ -339,7 +339,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CORROSIVE_MINE</set>
     </setters>
   </element>
-<element name="gas mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_GAS_MINE">
+<element name="gas mine" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_GAS_MINE">
     <description>
       <p>creates gas cloud, 10 feet radius. Each creature in the gas must make a DC 13 Constitution saving throw. On a failed save, the creature becomes poisoned</p>
     </description>
@@ -351,7 +351,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GAS_MINE</set>
     </setters>
   </element>
-<element name="fragmentation mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FRAGMENTATION_MINE">
+<element name="fragmentation mine" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_FRAGMENTATION_MINE">
     <supports>ID_INTERNAL_DAMAGE_TYPE_KINETIC</supports>
     <description>
       <p>2d8 kinetic, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
@@ -365,7 +365,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_FRAGMENTATION_MINE</set>
     </setters>
   </element>
-<element name="plasma mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_PLASMA_MINE">
+<element name="plasma mine" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_PLASMA_MINE">
     <supports>ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
       <p>2d8 energy, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
@@ -379,7 +379,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_PLASMA_MINE</set>
     </setters>
   </element>
-<element name="shock mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SHOCK_MINE">
+<element name="shock mine" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_SHOCK_MINE">
     <description>
       <p>1d6 lightning but cannot reduce a creature's health to 0. 10 feet radius. The explosion creates an electrifying field that counts as difficult terrain for 3 turns in a 10 feet radius</p>
     </description>
@@ -392,7 +392,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SHOCK_MINE</set>
     </setters>
   </element>
-<element name="stun mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_STUN_MINE">
+<element name="stun mine" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_STUN_MINE">
     <description>
       <p>10 feet radius. Each target must make a DC 15 Constitution saving throw. On a failed save, the target is pushed 5 feet away from the centerpoint and is stunned for 1 round. On a successful save, the target takes isn't pushed and isn't stunned</p>
     </description>
@@ -404,7 +404,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_STUN_MINE</set>
     </setters>
   </element>
-<element name="poison dart" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_POISON_DART">
+<element name="poison dart" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_POISON_DART">
     <supports>ID_INTERNAL_DAMAGE_TYPE_KINETIC</supports>
     <description>
       <p>1d6 kinetic. The target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage and becomes poisoned. On a successful save, the target takes half damage and doesn't become poisoned, Reload 1, Dexterity modifier</p>
@@ -419,7 +419,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_POISON_DART</set>
     </setters>
   </element>
-<element name="sleep dart" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLEEP_DART">
+<element name="sleep dart" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_SLEEP_DART">
     <description>
       <p>The target must make a DC 14 Constitution saving throw. On a failed save, the target falls asleep. On a successful save, the target doesn't fall asleep, Reload 1, Dexterity modifier</p>
     </description>
@@ -432,7 +432,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SLEEP_DART</set>
     </setters>
   </element>
-<element name="electrifying dart" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTRIFYING_DART">
+<element name="electrifying dart" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_ELECTRIFYING_DART">
     <supports>ID_INTERNAL_DAMAGE_TYPE_KINETIC</supports>
     <description>
       <p>1d6 kinetic. 1d6 lightning, The target must make a DC 14 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. Reload 1, Dexterity modifier</p>
@@ -447,7 +447,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ELECTRIFYING_DART</set>
     </setters>
   </element>
-<element name="panic dart" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_PANIC_DART">
+<element name="panic dart" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_PANIC_DART">
     <supports>ID_INTERNAL_DAMAGE_TYPE_KINETIC</supports>
     <description>
       <p>1d6 kinetic. The target must make a DC 14 Wisdom saving throw. On a failed save, the target becomes frightened for 1 round. On a successful save, the target doesn't become frightened. Dexterity modifier</p>
@@ -461,7 +461,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_PANIC_DART</set>
     </setters>
   </element>
-<element name="paralysis dart" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_PARALYSIS_DART">
+<element name="paralysis dart" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_PARALYSIS_DART">
     <supports>ID_INTERNAL_DAMAGE_TYPE_KINETIC</supports>
     <description>
       <p>1d6 kinetic. The target must make a DC 14 Constitution saving throw. On a failed save, the target becomes paralysed for 1 round, Dexterity modifier</p>
@@ -475,7 +475,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_PARALYSIS_DART</set>
     </setters>
   </element>
-<element name="plasma rocket" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_PLASMA_ROCKET">
+<element name="plasma rocket" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_PLASMA_ROCKET">
     <supports>ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
       <p>2d8 energy, 5 feet radius. Each target must make a DC 14 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage, Reload 1, Dexterity modifier</p>
@@ -490,7 +490,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_PLASMA_ROCKET</set>
     </setters>
   </element>
-<element name="cryo rocket" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_ROCKET">
+<element name="cryo rocket" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_ROCKET">
     <description>
       <p>1d8 cold, 10 feet radius. Each target must make DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. The explosion creates an icy surface of 10 feet that counts as difficult terrain. Each creature walking over it must make a DC 12 Dexterity saving throw. On a failed save, the creature falls prone. On a successful save, the creature doesn't fall</p>
     </description>
@@ -503,7 +503,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CRYO_ROCKET</set>
     </setters>
   </element>
-<element name="ion rocket" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_ROCKET">
+<element name="ion rocket" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_ION_ROCKET">
     <supports>ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
       <p>1d8 ion, 10 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage, On a successful save, the target takes half damage. Each droid must make a DC 13 Constitution saving throw. On a failed save, the droid is stunned for 1 round. On a successful save, the droid isn't stunned</p>
@@ -517,7 +517,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ION_ROCKET</set>
     </setters>
   </element>
-<element name="incendiary rocket" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_INCENDIARY_ROCKET">
+<element name="incendiary rocket" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_INCENDIARY_ROCKET">
     <description>
       <p>1d6 fire, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage and is inflicted burning for 1 turn. On a successful save, the target takes half damage. Sets ground on fire in a 10 feet radius for 3 turns. Each target standing or walking in this will be inflicted burning for 1 turn</p>
     </description>
@@ -530,7 +530,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_INCENDIARY_ROCKET</set>
     </setters>
   </element>
-<element name="corrosive rocket" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CORROSIVE_ROCKET">
+<element name="corrosive rocket" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_CORROSIVE_ROCKET">
     <description>
       <p>2d6 acid, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes no damage. The explosion creates an acid surface of 10 feet that reduces AC by 2</p>
     </description>
@@ -543,7 +543,7 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CORROSIVE_ROCKET</set>
     </setters>
   </element>
-<element name="fragmentation rocket" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FRAGMENTATION_ROCKET">
+<element name="fragmentation rocket" type="Item" source="SW-MSV-Edition" id="ID_WEAPON_FRAGMENTATION_ROCKET">
     <supports>ID_INTERNAL_DAMAGE_TYPE_KINETIC</supports>
     <description>
       <p>2d8 kinetic, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>

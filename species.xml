@@ -24,6 +24,7 @@
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_BITH"/>
       <select type="Language" name="Language (Bith)" supports="Standard||Exotic" number="1"/>
+      <select type="Proficiency" name="Musical Instrument (Bith)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1"/>
       <select type="Sub Race" name="Bith Subrace" supports="ID_RACE_BITH" optional="true"/>
     </rules>
   </element>
@@ -41,20 +42,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_BITH_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_BITH_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_BITH_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Bothan" type="Race" source="SW-MSV-Edition" id="ID_RACE_BOTHAN">
@@ -93,20 +102,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_BOTHAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_BOTHAN_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_BOTHAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cathar" type="Race" source="SW-MSV-Edition" id="ID_RACE_CATHAR">
@@ -147,20 +164,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_CATHAR_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CATHAR_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_CATHAR_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Chagrian" type="Race" source="SW-MSV-Edition" id="ID_RACE_CHAGRIAN">
@@ -202,20 +227,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_CHAGRIAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CHAGRIAN_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_CHAGRIAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Chiss" type="Race" source="SW-MSV-Edition" id="ID_RACE_CHISS">
@@ -255,20 +288,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_CHISS_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CHISS_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_CHISS_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Devaronian" type="Race" source="SW-MSV-Edition" id="ID_RACE_DEVARONIAN">
@@ -309,20 +350,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_DEVARONIAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_DEVARONIAN_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_DEVARONIAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Protocol Droid" type="Race" source="SW-MSV-Edition" id="ID_RACE_PROTOCOL_DROID">
@@ -416,20 +465,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_DUROS_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_DUROS_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_DUROS_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Ewok" type="Race" source="SW-MSV-Edition" id="ID_RACE_EWOK">
@@ -454,6 +511,7 @@
       <grant type="Size" id="ID_SIZE_SMALL"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_EWOKESE"/>
+      <select type="Proficiency" name="Musical Instrument (Ewok)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1"/>
       <select type="Sub Race" name="Ewok Subrace" supports="ID_RACE_EWOK" optional="true"/>
     </rules>
   </element>
@@ -471,20 +529,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_EWOK_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_EWOK_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_EWOK_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Gamorrean" type="Race" source="SW-MSV-Edition" id="ID_RACE_GAMORREAN">
@@ -525,20 +591,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_GAMORREAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GAMORREAN_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_GAMORREAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Geonosian" type="Race" source="SW-MSV-Edition" id="ID_RACE_GEONOSIAN">
@@ -578,20 +652,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_GEONOSIAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GEONOSIAN_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_GEONOSIAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Gran" type="Race" source="SW-MSV-Edition" id="ID_RACE_GRAN">
@@ -633,20 +715,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_GRAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GRAN_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_GRAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Human (Standard)" type="Race" source="SW-MSV-Edition" id="ID_RACE_HUMAN_STANDARD">
@@ -722,20 +812,28 @@
     <compendium display="false"/>
     <supports>Human Cyborg</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CYBORG_DEX">
     <compendium display="false"/>
     <supports>Human Cyborg</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Ithorian" type="Race" source="SW-MSV-Edition" id="ID_RACE_ITHORIAN">
@@ -774,20 +872,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_ITHORIAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ITHORIAN_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_ITHORIAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Jawa" type="Race" source="SW-MSV-Edition" id="ID_RACE_JAWA">
@@ -829,20 +935,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_JAWA_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_JAWA_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_JAWA_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Kaleesh" type="Race" source="SW-MSV-Edition" id="ID_RACE_KALEESH">
@@ -883,20 +997,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_KALEESH_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_KALEESH_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_KALEESH_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Kel Dor" type="Race" source="SW-MSV-Edition" id="ID_RACE_KEL_DOR">
@@ -939,20 +1061,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_KEL_DOR_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_KEL_DOR_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_KEL_DOR_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Mirialan" type="Race" source="SW-MSV-Edition" id="ID_RACE_MIRIALAN">
@@ -992,20 +1122,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_MIRIALAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MIRIALAN_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_MIRIALAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Mon Calamari" type="Race" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI">
@@ -1032,6 +1170,7 @@
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_MON_CAL"/>
       <select type="Language" name="Language (Mon Calamari)" supports="Standard||Exotic" number="1"/>
+      <select type="Proficiency" name="Musical Instrument (Mon Calamari)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1"/>
       <select type="Sub Race" name="Mon Calamari Subrace" supports="ID_RACE_MON_CALAMARI" optional="true"/>
     </rules>
   </element>
@@ -1049,20 +1188,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_MON_CALAMARI_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_MON_CALAMARI_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Nautolan" type="Race" source="SW-MSV-Edition" id="ID_RACE_NAUTOLAN">
@@ -1104,20 +1251,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_NAUTOLAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_NAUTOLAN_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_NAUTOLAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Neimoidian" type="Race" source="SW-MSV-Edition" id="ID_RACE_NEIMOIDIAN">
@@ -1157,20 +1312,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_NEIMOIDIAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_NEIMOIDIAN_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_NEIMOIDIAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Ortolan" type="Race" source="SW-MSV-Edition" id="ID_RACE_ORTOLAN">
@@ -1196,6 +1359,7 @@
       <grant type="Size" id="ID_SIZE_SMALL"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_ORTOLAN"/>
+      <select type="Proficiency" name="Musical Instrument (Ortolan)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1"/>
       <select type="Sub Race" name="Ortolan Subrace" supports="ID_RACE_ORTOLAN" optional="true"/>
     </rules>
   </element>
@@ -1213,20 +1377,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_ORTOLAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ORTOLAN_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_ORTOLAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Rakata" type="Race" source="SW-MSV-Edition" id="ID_RACE_RAKATA">
@@ -1268,20 +1440,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_RAKATA_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RAKATA_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_RAKATA_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Rattataki" type="Race" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI">
@@ -1321,20 +1501,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_RATTATAKI_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_RATTATAKI_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Rodian" type="Race" source="SW-MSV-Edition" id="ID_RACE_RODIAN">
@@ -1375,20 +1563,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_RODIAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RODIAN_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_RODIAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Sith Pureblood" type="Race" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD">
@@ -1428,20 +1624,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_SITH_PUREBLOOD_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_SITH_PUREBLOOD_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Sullustan" type="Race" source="SW-MSV-Edition" id="ID_RACE_SULLUSTAN">
@@ -1482,20 +1686,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_SULLUSTAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SULLUSTAN_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_SULLUSTAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Talz" type="Race" source="SW-MSV-Edition" id="ID_RACE_TALZ">
@@ -1536,20 +1748,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_TALZ_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TALZ_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_TALZ_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Togruta" type="Race" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA">
@@ -1588,20 +1808,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_TOGRUTA_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_TOGRUTA_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Trandoshan" type="Race" source="SW-MSV-Edition" id="ID_RACE_TRANDOSHAN">
@@ -1643,20 +1871,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_TRANDOSHAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRANDOSHAN_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_TRANDOSHAN_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Tusken" type="Race" source="SW-MSV-Edition" id="ID_RACE_TUSKEN">
@@ -1696,20 +1932,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_TUSKEN_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_TUSKEN_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Twi'Lek" type="Race" source="SW-MSV-Edition" id="ID_RACE_TWILEK">
@@ -1750,20 +1994,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_TWILEK_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TWILEK_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_TWILEK_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Ugnaught" type="Race" source="SW-MSV-Edition" id="ID_RACE_UGNAUGHT">
@@ -1805,20 +2057,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_UGNAUGHT_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_UGNAUGHT_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_UGNAUGHT_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Weequay" type="Race" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY">
@@ -1859,20 +2119,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_WEEQUAY_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_WEEQUAY_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Wookie" type="Race" source="SW-MSV-Edition" id="ID_RACE_WOOKIE">
@@ -1914,20 +2182,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_WOOKIE_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WOOKIE_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_WOOKIE_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Zabrak" type="Race" source="SW-MSV-Edition" id="ID_RACE_ZABRAK">
@@ -1970,20 +2246,28 @@
     <compendium display="false"/>
     <supports>ID_RACE_ZABRAK_CYBORG</supports>
     <description>
-      <p class="indent">Your Strength score increases by 1.</p>
+      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Strength. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="strength" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_CYBORG_DEX">
     <compendium display="false"/>
     <supports>ID_RACE_ZABRAK_CYBORG</supports>
     <description>
-      <p class="indent">Your Dexterity score increases by 1.</p>
+      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
+    <sheet>
+      <description>+1 Dexterity. Vulnerable to ion damage.</description>
+    </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
 
@@ -2324,7 +2608,8 @@
       <description>+1 HP per level.</description>
     </sheet>
     <rules>
-      <stat name="hit points per level" value="1" />
+      <stat name="hp" value="1" />
+      <stat name="hp" value="level" />
     </rules>
   </element>
 </elements>

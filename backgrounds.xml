@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
-  <element name="Agent" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_AGENT">
+  <element name="Agent" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_AGENT">
     <description>
       <p>choose 2 proficiencies: deception, investigation, persuasion, stealth</p>
       <p>2 language(s) of your choice • Equipment: badge/emblem from faction • 150 gold</p>
@@ -52,7 +52,7 @@
       <select type="Language" name="Language (Agent)" supports="Standard||Exotic" number="2"/>
     </rules>
   </element>
-  <element name="Bounty Hunter" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_BOUNTY_HUNTER">
+  <element name="Bounty Hunter" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_BOUNTY_HUNTER">
     <description>
       <p>choose 2 proficiencies: deception, insight, persuasion, perception</p>
       <p>Tool Proficiencies: slicing kit • 1 language(s) of your choice • 200 gold</p>
@@ -105,7 +105,7 @@
       <select type="Language" name="Language (Bounty Hunter)" supports="Standard||Exotic" number="1"/>
     </rules>
   </element>
-  <element name="Criminal" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_CRIMINAL">
+  <element name="Criminal" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_CRIMINAL">
     <description>
       <p>choose 2 proficiencies: deception, intimidation, sleight of hand, stealth</p>
       <p>Tool Proficiencies: slicing kit • 150 gold</p>
@@ -157,7 +157,7 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_SLICING_KIT"/>
     </rules>
   </element>
-  <element name="Entertainer" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_ENTERTAINER">
+  <element name="Entertainer" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_ENTERTAINER">
     <description>
       <p>choose 2 proficiencies: acrobatics, insight, performance, sleight of hand</p>
       <p>150 gold</p>
@@ -208,7 +208,7 @@
       <select type="Proficiency" name="Skill Proficiency (Entertainer)" number="2" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND"/>
     </rules>
   </element>
-  <element name="Engineer" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_ENGINEER">
+  <element name="Engineer" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_ENGINEER">
     <description>
       <p>choose 2 proficiencies: investigation, sleight of hand, athletics, history</p>
       <p>Tool Proficiencies: repair kit • 150 gold</p>
@@ -260,7 +260,7 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_REPAIR_KIT"/>
     </rules>
   </element>
-  <element name="Jedi" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_JEDI">
+  <element name="Jedi" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_JEDI">
     <description>
       <p>choose 2 proficiencies: insight, investigation, history, persuasion, arcana</p>
       <p>1 language(s) of your choice</p>
@@ -312,7 +312,7 @@
       <select type="Language" name="Language (Jedi)" supports="Standard||Exotic" number="1"/>
     </rules>
   </element>
-  <element name="Mandalorian" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_MANDALORIAN">
+  <element name="Mandalorian" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_MANDALORIAN">
     <description>
       <p>choose 2 proficiencies: athletics, intimidation, survival, history</p>
       <p>Languages: mando'a language • Equipment: choose clan, hover pack proficiency • 200 gold</p>
@@ -364,7 +364,7 @@
       <grant type="Language" id="ID_LANGUAGE_MANDOA_LANGUAGE"/>
     </rules>
   </element>
-  <element name="Mercenary" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_MERCENARY">
+  <element name="Mercenary" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_MERCENARY">
     <description>
       <p>choose 2 proficiencies: athletics, investigation, deception, intimidation</p>
       <p>1 language(s) of your choice</p>
@@ -416,7 +416,7 @@
       <select type="Language" name="Language (Mercenary)" supports="Standard||Exotic" number="1"/>
     </rules>
   </element>
-  <element name="Noble" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_NOBLE">
+  <element name="Noble" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_NOBLE">
     <description>
       <p>choose 2 proficiencies: deception, insight, history, persuasion</p>
       <p>1 language(s) of your choice • 250 gold</p>
@@ -468,7 +468,7 @@
       <select type="Language" name="Language (Noble)" supports="Standard||Exotic" number="1"/>
     </rules>
   </element>
-  <element name="Nomad" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_NOMAD">
+  <element name="Nomad" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_NOMAD">
     <description>
       <p>choose 2 proficiencies: animal handling, athletics, survival, medicine</p>
       <p>1 language(s) of your choice • 100 gold</p>
@@ -520,7 +520,7 @@
       <select type="Language" name="Language (Nomad)" supports="Standard||Exotic" number="1"/>
     </rules>
   </element>
-  <element name="Pirate" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_PIRATE">
+  <element name="Pirate" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_PIRATE">
     <description>
       <p>choose 2 proficiencies: athletics, deception, intimidation, sleight of hand</p>
       <p>Tool Proficiencies: slicing kit • 50 gold</p>
@@ -572,7 +572,7 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_SLICING_KIT"/>
     </rules>
   </element>
-  <element name="Scientist" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_SCIENTIST">
+  <element name="Scientist" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_SCIENTIST">
     <description>
       <p>choose 2 proficiencies: history, medicine, nature, investigation</p>
       <p>Tool Proficiencies: slicing kit • 1 language(s) of your choice • 100 gold</p>
@@ -625,7 +625,7 @@
       <select type="Language" name="Language (Scientist)" supports="Standard||Exotic" number="1"/>
     </rules>
   </element>
-  <element name="Scoundrel" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_SCOUNDREL">
+  <element name="Scoundrel" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_SCOUNDREL">
     <description>
       <p>choose 2 proficiencies: deception, insight, performance, sleight of hand</p>
       <p>Tool Proficiencies: forgery kit • 150 gold</p>
@@ -677,7 +677,7 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_FORGERY_KIT"/>
     </rules>
   </element>
-  <element name="Sith" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_SITH">
+  <element name="Sith" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_SITH">
     <description>
       <p>choose 2 proficiencies: deception, insight, intimidation, history, arcana</p>
       <p>1 language(s) of your choice</p>
@@ -729,7 +729,7 @@
       <select type="Language" name="Language (Sith)" supports="Standard||Exotic" number="1"/>
     </rules>
   </element>
-  <element name="Smuggler" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_SMUGGLER">
+  <element name="Smuggler" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_SMUGGLER">
     <description>
       <p>choose 2 proficiencies: deception, sleight of hand, stealth, acrobatics</p>
       <p>150 gold</p>
@@ -780,7 +780,7 @@
       <select type="Proficiency" name="Skill Proficiency (Smuggler)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND"/>
     </rules>
   </element>
-  <element name="Soldier" type="Background" source="SW-MSV-Edition" id="ID_BACKGROUND_SOLDIER">
+  <element name="Soldier" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_SOLDIER">
     <description>
       <p>choose 2 proficiencies: athletics, intimidation, persuasion, investigation</p>
       <p>1 language(s) of your choice • 100 gold</p>
