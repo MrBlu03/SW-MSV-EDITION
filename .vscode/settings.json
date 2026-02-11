@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^cd \"c:\\\\Users\\\\james\\\\OneDrive\\\\Docs and windows stuff\\\\documenten\\\\GitHub\\\\SW-MSV-EDITION\" ; python -c \"import xml\\.etree\\.ElementTree as ET; files=\\['backgrounds\\.xml', 'feats\\.xml', 'weapons\\.xml', 'species\\.xml'\\]; \\[print\\(f'\\{f\\} is valid'\\) for f in files if ET\\.parse\\(f\\)\\]\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

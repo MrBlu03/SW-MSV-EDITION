@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>SW-MSV-Edition</name>
-    <update version="1.0.1">
+    <update version="1.0.3">
       <file name="source.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/source.xml" />
     </update>
   </info>
@@ -28,7 +28,7 @@
       <set name="supplement">false</set>
       <set name="core">false</set>
       <set name="homebrew">true</set>
-      <set name="release">20250207</set>
+      <set name="release">20260211</set>
     </setters>
   </element>
 </elements>
