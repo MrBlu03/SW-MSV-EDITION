@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <!-- Inquisitor Spell List -->
+  <element name="Inquisitor Spells" type="Spell List" source="SW-MSV-Edition" id="ID_SPELLLIST_INQUISITOR">
+    <description>
+      <p>The following spells are available to Inquisitors.</p>
+    </description>
+    <rules>
+      <!-- Cantrips -->
+      <spell id="ID_CLASS_INQUISITOR_FEATURE_MINOR_TELEKINESIS" />
+      <spell id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_BLIND" />
+      <spell id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_CLOAK" />
+      <spell id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_FADE" />
+      <spell id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_DARKNESS" />
+      <spell id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_PHANTOM" />
+      <spell id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_DISGUISE" />
+      <spell id="ID_SUBCLASS_TRICKSTER_ABILITY_PHANTOM_STRIDE" />
+      <spell id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_ILLUSION" />
+      <spell id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_NIGHTMARE" />
+      <spell id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_SPIRIT" />
+      <spell id="ID_SUBCLASS_MANIPULATOR_ABILITY_MIND_TRAP" />
+      <spell id="ID_SUBCLASS_MANIPULATOR_ABILITY_FORCE_STASIS" />
+      <spell id="ID_SUBCLASS_MANIPULATOR_ABILITY_CONFUSE" />
+      <spell id="ID_SUBCLASS_MANIPULATOR_ABILITY_MIND_PROBE" />
+      <spell id="ID_SUBCLASS_MANIPULATOR_ABILITY_FORCE_LINK" />
+    </rules>
+  </element>
+
+  <!-- Knight Spell List -->
+  <element name="Knight Spells" type="Spell List" source="SW-MSV-Edition" id="ID_SPELLLIST_KNIGHT">
+    <description>
+      <p>The following spells are available to Knights.</p>
+    </description>
+    <rules>
+      <!-- Cantrips -->
+      <spell id="ID_CLASS_KNIGHT_FEATURE_FORCE_PUSH" />
+      <spell id="ID_CLASS_KNIGHT_FEATURE_FORCE_PULL" />
+      <spell id="ID_CLASS_KNIGHT_FEATURE_VALOR" />
+      <spell id="ID_CLASS_KNIGHT_FEATURE_MINOR_TELEKINESIS" />
+      <spell id="ID_CLASS_KNIGHT_FEATURE_SABER_THROW" />
+      <spell id="ID_CLASS_KNIGHT_FEATURE_FORCE_RESOLUTION" />
+      <spell id="ID_CLASS_KNIGHT_FEATURE_MIND_TRICK" />
+      <spell id="ID_CLASS_KNIGHT_FEATURE_BLINDING_STRIKE" />
+    </rules>
+  </element>
+
+  <!-- Marauder Spell List -->
+  <element name="Marauder Spells" type="Spell List" source="SW-MSV-Edition" id="ID_SPELLLIST_MARAUDER">
+    <description>
+      <p>The following spells are available to Marauders.</p>
+    </description>
+    <rules>
+      <!-- Cantrips -->
+      <spell id="ID_CLASS_MARAUDER_FEATURE_FORCE_PUSH" />
+      <spell id="ID_CLASS_MARAUDER_FEATURE_FORCE_PULL" />
+      <spell id="ID_CLASS_MARAUDER_FEATURE_TAUNT" />
+      <spell id="ID_CLASS_MARAUDER_FEATURE_MINOR_TELEKINESIS" />
+      <spell id="ID_CLASS_MARAUDER_FEATURE_SABER_THROW" />
+      <spell id="ID_CLASS_MARAUDER_FEATURE_FORCE_REPULSE" />
+      <spell id="ID_CLASS_MARAUDER_FEATURE_FORCE_CHOKE" />
+      <spell id="ID_CLASS_MARAUDER_FEATURE_FORCE_SHOCK" />
+      <spell id="ID_CLASS_MARAUDER_FEATURE_INTIMIDATING_PRESENCE" />
+    </rules>
+  </element>
+</elements>

@@ -43,11 +43,11 @@
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_OR_MARTIAL_LIGHTWEAPONS_WITH_FINESSE_PROPERTY" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_OR_MARTIAL_VIBROWEAPONS_WITH_FINESSE_PROPERTY" />
-      <select type="Proficiency" name="Skill Proficiency (Inquisitor)" number="4" supports="ID_MSV_PROFICIENCY_SKILL_ACROBATICS|ID_MSV_PROFICIENCY_SKILL_ATHLETICS|ID_MSV_PROFICIENCY_SKILL_DECEPTION|ID_MSV_PROFICIENCY_SKILL_INSIGHT|ID_MSV_PROFICIENCY_SKILL_INTIMIDATION|ID_MSV_PROFICIENCY_SKILL_INVESTIGATION|ID_MSV_PROFICIENCY_SKILL_PERCEPTION|ID_MSV_PROFICIENCY_SKILL_PERSUASION|ID_MSV_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_MSV_PROFICIENCY_SKILL_STEALTH" />
+      <select type="Proficiency" name="Skill Proficiency (Inquisitor)" number="4" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SPELLCASTING" level="1" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_EXPERTISE" level="1" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_ASSASSINATE" level="1" />
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_MINOR_TELEKINESIS" level="1" />
+      <grant type="Spell" id="ID_CLASS_INQUISITOR_FEATURE_MINOR_TELEKINESIS" level="1" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_CUNNING_ACTION" level="2" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_TRICKSTER" level="3" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_MANIPULATOR" level="3" />
@@ -96,7 +96,7 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <stat name="assassinate:die" value="6" bonus="die" />
     </rules>
   </element>
-  <element id="ID_CLASS_INQUISITOR_FEATURE_MINOR_TELEKINESIS" name="Minor Telekinesis" type="Class Feature" source="SW-MSV-Edition">
+  <element id="ID_CLASS_INQUISITOR_FEATURE_MINOR_TELEKINESIS" name="Minor Telekinesis" type="Spell" level="0" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: 45 feet; Components: Somatic; Duration: Concentration, Up to 1 round; You use the Force to manipulate a small or medium object, or a small creature, that you can see within range. You make an ability check using your Force ability, contested by the target’s Strength check. On a success, you may suspend and/or move up to 30 feet or throw the target. If you choose to suspend the target, it remains suspended for the duration. If you throw the target, make a ranged Force attack with a range of 30/60 feet. On a hit, the target you throw at takes kinetic damage based on what is thrown: Small object: 2d4 kinetic damage, Medium object: 2d6 kinetic damage, Small creature: 1d4 kinetic damage. If a creature is thrown, the thrown small creature takes 1d8 + your Force ability modifier kinetic damage.</p>

@@ -51,7 +51,7 @@
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_AND_MARTIAL_LIGHTWEAPONS" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_AND_MARTIAL_VIBROWEAPONS" />
-      <select type="Proficiency" name="Skill Proficiency (Knight)" number="2" supports="ID_MSV_PROFICIENCY_SKILL_ATHLETICS|ID_MSV_PROFICIENCY_SKILL_INTIMIDATION|ID_MSV_PROFICIENCY_SKILL_PERSUASION|ID_MSV_PROFICIENCY_SKILL_INSIGHT|ID_MSV_PROFICIENCY_SKILL_PERFORMANCE" />
+      <select type="Proficiency" name="Skill Proficiency (Knight)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE" />
       <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_FOCUS" level="1" />
       <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_SPELLCASTING" level="1" />
       <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_FORCE_PUSH" level="1" />
@@ -257,7 +257,7 @@
     </setters>
     <rules />
   </element>
-  <element id="ID_CLASS_KNIGHT_FEATURE_FORCE_RESOLUTION" name="Force Resolution" type="Class Feature" source="SW-MSV-Edition">
+  <element id="ID_CLASS_KNIGHT_FEATURE_FORCE_RESOLUTION" name="Force Resolution" type="Spell" level="0" source="SW-MSV-Edition">
     
     <description>
       <p>When Incapacitated, you can use this ability to end that condition.</p>

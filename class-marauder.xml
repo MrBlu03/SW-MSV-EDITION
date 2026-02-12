@@ -53,7 +53,7 @@
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS" />
-      <select type="Proficiency" name="Skill Proficiency (Marauder)" number="2" supports="ID_MSV_PROFICIENCY_SKILL_INTIMIDATION|ID_MSV_PROFICIENCY_SKILL_NATURE|ID_MSV_PROFICIENCY_SKILL_PERCEPTION|ID_MSV_PROFICIENCY_SKILL_SURVIVAL|ID_MSV_PROFICIENCY_SKILL_ATHLETICS" />
+      <select type="Proficiency" name="Skill Proficiency (Marauder)" number="2" supports="ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_ATHLETICS" />
       <grant type="Class Feature" id="ID_CLASS_MARAUDER_FEATURE_RAGE" level="1" />
       <grant type="Class Feature" id="ID_CLASS_MARAUDER_FEATURE_SPELLCASTING" level="1" />
       <grant type="Spell" id="ID_CLASS_MARAUDER_FEATURE_FORCE_PUSH" level="1" />

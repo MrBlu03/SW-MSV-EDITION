@@ -81,7 +81,7 @@
     </sheet>
   </element>
   <element name="blaster pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BLASTER_PISTOL">
-    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
       <p><strong>Blaster Pistol</strong></p>
       <p><em>1d6 energy damage, range 50/200, reload 16, one-handed</em></p>
@@ -99,7 +99,7 @@
       <set name="range">50/200</set>
       <set name="damage" type="energy">1d6</set>
       <set name="reload">16</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -108,7 +108,7 @@
     </rules>
   </element>
   <element name="energy bow" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ENERGY_BOW">
-    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p><strong>Energy Bow</strong></p>
       <p><em>1d6 energy damage, range 80/320, reload 4, two-handed</em></p>
@@ -126,7 +126,7 @@
       <set name="range">80/320</set>
       <set name="damage" type="energy">1d6</set>
       <set name="reload">4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -135,7 +135,7 @@
     </rules>
   </element>
   <element name="ion pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_PISTOL">
-    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
       <p><strong>Ion Pistol</strong></p>
       <p><em>1d4 ion damage, range 40/160, reload 16, one-handed</em></p>
@@ -153,7 +153,7 @@
       <set name="range">40/160</set>
       <set name="damage" type="ion">1d4</set>
       <set name="reload">16</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -162,7 +162,7 @@
     </rules>
   </element>
   <element name="sonic pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SONIC_PISTOL">
-    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
       <p><strong>Sonic Pistol</strong></p>
       <p><em>1d4 sonic damage, range 30/120, reload 16, one-handed</em></p>
@@ -180,7 +180,7 @@
       <set name="range">30/120</set>
       <set name="damage" type="sonic">1d4</set>
       <set name="reload">16</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -189,7 +189,7 @@
     </rules>
   </element>
   <element name="cryo pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_PISTOL">
-    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
     <description>
       <p>1d4 cold, power cell, range 30/120, Reload 8, Dexterity modifier), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
     </description>
@@ -201,7 +201,7 @@
       <set name="range">30/120</set>
       <set name="damage" type="cold">1d4</set>
       <set name="reload">8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -210,7 +210,7 @@
     </rules>
   </element>
   <element name="slugthrower pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLUGTHROWER_PISTOL">
-    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_KINETIC</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_KINETIC</supports>
     <description>
       <p>1d6 kinetic, slug cartridge, range 40/160, Reload 16, requires Strength 11 to use, Dexterity modifier), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
     </description>
@@ -222,7 +222,7 @@
       <set name="range">40/160</set>
       <set name="damage" type="kinetic">1d6</set>
       <set name="reload">16</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -231,7 +231,7 @@
     </rules>
   </element>
   <element name="disruptor pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DISRUPTOR_PISTOL">
-    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
     <description>
       <p>1d6 acid, power cell, range 45/180, Reload 12, requires Strength 11 to use, Dexterity modifier), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
     </description>
@@ -243,7 +243,7 @@
       <set name="range">45/180</set>
       <set name="damage" type="acid">1d6</set>
       <set name="reload">12</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -252,7 +252,7 @@
     </rules>
   </element>
   <element name="stealth pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_STEALTH_PISTOL">
-    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p>1d6 energy, power cell, silent, two-handed, Reload 6, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
     </description>
@@ -263,7 +263,7 @@
       <set name="slot">twohand</set>
       <set name="damage" type="energy">1d6</set>
       <set name="reload">6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -271,7 +271,7 @@
     </rules>
   </element>
   <element name="wrist blaster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_BLASTER">
-    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
       <p>1d6 energy, disguised, can't be disarmed, can still use hand but when holding something can't use weapon, power cell, range 30/120, Reload 8, Dexterity modifier), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
     </description>
@@ -283,7 +283,7 @@
       <set name="range">30/120</set>
       <set name="damage" type="energy">1d6</set>
       <set name="reload">8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -292,7 +292,7 @@
     </rules>
   </element>
   <element name="wrist launcher" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER">
-    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
     <description>
       <p>can't be disarmed, can still use hand but when holding something can't use weapon), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
     </description>
@@ -301,7 +301,7 @@
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -309,7 +309,7 @@
     </rules>
   </element>
   <element name="blaster rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BLASTER_RIFLE">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p><strong>Blaster Rifle</strong></p>
       <p><em>1d8 energy damage, range 105/420, reload 12, two-handed</em></p>
@@ -326,7 +326,7 @@
       <set name="range">105/420</set>
       <set name="damage" type="energy">1d8</set>
       <set name="reload">12</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -334,7 +334,7 @@
     </rules>
   </element>
   <element name="disruptor rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DISRUPTOR_RIFLE">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p>1d8 acid, power cell, range 120/470, Reload 9, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
     </description>
@@ -346,7 +346,7 @@
       <set name="range">120/470</set>
       <set name="damage" type="acid">1d8</set>
       <set name="reload">9</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -354,7 +354,7 @@
     </rules>
   </element>
   <element name="heavy bowcaster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_HEAVY_BOWCASTER">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p><strong>Heavy Bowcaster</strong></p>
       <p><em>1d12 energy damage, range 90/360, reload 4, two-handed</em></p>
@@ -371,7 +371,7 @@
       <set name="range">90/360</set>
       <set name="damage" type="energy">1d12</set>
       <set name="reload">4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -379,7 +379,7 @@
     </rules>
   </element>
   <element name="ion rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_RIFLE">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p><strong>Ion Rifle</strong></p>
       <p><em>1d6 ion damage, range 80/320, reload 8, two-handed</em></p>
@@ -396,7 +396,7 @@
       <set name="range">80/320</set>
       <set name="damage" type="ion">1d6</set>
       <set name="reload">8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -404,7 +404,7 @@
     </rules>
   </element>
   <element name="sonic rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SONIC_RIFLE">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p><strong>Sonic Rifle</strong></p>
       <p><em>1d8 sonic damage, range 80/320, reload 8, two-handed</em></p>
@@ -421,7 +421,7 @@
       <set name="range">80/320</set>
       <set name="damage" type="sonic">1d8</set>
       <set name="reload">8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -429,7 +429,7 @@
     </rules>
   </element>
   <element name="slugthrower rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLUGTHROWER_RIFLE">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p><strong>Slugthrower Rifle</strong></p>
       <p><em>1d8 kinetic damage, range 105/420, reload 12, two-handed</em></p>
@@ -446,7 +446,7 @@
       <set name="range">105/420</set>
       <set name="damage" type="kinetic">1d8</set>
       <set name="reload">12</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -454,7 +454,7 @@
     </rules>
   </element>
   <element name="cryo rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_RIFLE">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p><strong>Cryo Rifle</strong></p>
       <p><em>2d4 cold damage, range 50/200, reload 4, two-handed</em></p>
@@ -471,7 +471,7 @@
       <set name="range">50/200</set>
       <set name="damage" type="cold">2d4</set>
       <set name="reload">4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -479,7 +479,7 @@
     </rules>
   </element>
   <element name="railgun" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_RAILGUN">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p><strong>Railgun</strong></p>
       <p><em>1d10 ion damage, range 120/470, reload 1, two-handed</em></p>
@@ -496,7 +496,7 @@
       <set name="range">120/470</set>
       <set name="damage" type="ion">1d10</set>
       <set name="reload">1</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -504,7 +504,7 @@
     </rules>
   </element>
   <element name="arc caster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ARC_CASTER">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p><strong>Arc Caster</strong></p>
       <p><em>2d4 lightning damage, range 60/240, reload 9, two-handed</em></p>
@@ -521,7 +521,7 @@
       <set name="range">60/240</set>
       <set name="damage" type="lightning">2d4</set>
       <set name="reload">9</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -529,7 +529,7 @@
     </rules>
   </element>
   <element name="sniper rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SNIPER_RIFLE">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p><strong>Sniper Rifle</strong></p>
       <p><em>1d12 energy damage, range 150/600, reload 2, two-handed</em></p>
@@ -545,7 +545,7 @@
       <set name="slot">twohand</set>
       <set name="damage" type="energy">1d12</set>
       <set name="reload">2</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -553,7 +553,7 @@
     </rules>
   </element>
   <element name="minigun/rotary cannon" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MINIGUN_ROTARY_CANNON">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p><strong>Minigun/Rotary Cannon</strong></p>
       <p><em>1d10 energy damage, range 75 ft cone, reload 4, two-handed</em></p>
@@ -569,7 +569,7 @@
       <set name="slot">twohand</set>
       <set name="damage" type="energy">1d10</set>
       <set name="reload">4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_BLAST"/>
@@ -577,7 +577,7 @@
     </rules>
   </element>
   <element name="flamethrower" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FLAMETHROWER">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p><strong>Flamethrower</strong></p>
       <p><em>2d6 fire damage, range 55 ft cone, reload 2, two-handed</em></p>
@@ -593,7 +593,7 @@
       <set name="slot">twohand</set>
       <set name="damage" type="fire">2d6</set>
       <set name="reload">2</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_FLAME"/>
@@ -601,7 +601,7 @@
     </rules>
   </element>
   <element name="cycler rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CYCLER_RIFLE">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p><strong>Cycler Rifle</strong></p>
       <p><em>1d10 kinetic damage, range 100/400, reload 4, two-handed</em></p>
@@ -618,7 +618,7 @@
       <set name="range">100/400</set>
       <set name="damage" type="kinetic">1d10</set>
       <set name="reload">4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -626,7 +626,7 @@
     </rules>
   </element>
   <element name="lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSABER">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
       <p><strong>Lightsaber</strong></p>
       <p><em>1d6 energy damage, finesse, one-handed</em></p>
@@ -642,7 +642,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="energy">1d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -651,7 +651,7 @@
     </rules>
   </element>
   <element name="lightstaff" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSTAFF">
-    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
     <description>
       <p><strong>Lightstaff</strong></p>
       <p><em>1d6 energy damage (2d4 when used with two hands), versatile</em></p>
@@ -668,7 +668,7 @@
       <set name="slot">onehand</set>
       <set name="damage" type="energy">1d6</set>
       <set name="versatile">2d4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -677,7 +677,7 @@
     </rules>
   </element>
   <element name="crossguard saber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CROSSGUARD_SABER">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p><strong>Crossguard Saber</strong></p>
       <p><em>2d6 energy damage, two-handed</em></p>
@@ -692,7 +692,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="energy">2d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -700,7 +700,7 @@
     </rules>
   </element>
   <element name="lightwhip" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTWHIP">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
     <description>
       <p><strong>Lightwhip</strong></p>
       <p><em>1d6 energy damage, reach 10 ft, finesse</em></p>
@@ -715,7 +715,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="energy">1d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -723,7 +723,7 @@
     </rules>
   </element>
   <element name="martial lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MARTIAL_LIGHTSABER">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
     <description>
       <p><strong>Martial Lightsaber</strong></p>
       <p><em>1d8 energy damage (1d10 when used with two hands), versatile</em></p>
@@ -740,7 +740,7 @@
       <set name="slot">onehand</set>
       <set name="damage" type="energy">1d8</set>
       <set name="versatile">1d10</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -749,7 +749,7 @@
     </rules>
   </element>
   <element name="lightsaber pike" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSABER_PIKE">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
     <description>
       <p><strong>Lightsaber Pike</strong></p>
       <p><em>1d10 energy damage, two-handed, reach 10 ft</em></p>
@@ -764,7 +764,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="energy">1d10</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS_PIKE</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS_PIKE</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -772,7 +772,7 @@
     </rules>
   </element>
   <element name="double bladed lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DOUBLE_BLADED_LIGHTSABER">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
       <p><strong>Double Bladed Lightsaber</strong></p>
       <p><em>1d8 energy damage, two-handed, finesse</em></p>
@@ -788,7 +788,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="energy">1d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -797,7 +797,7 @@
     </rules>
   </element>
   <element name="vibrospear" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROSPEAR">
-    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
     <description>
       <p><strong>Vibrospear</strong></p>
       <p><em>1d6 kinetic damage (2d4 when used with two hands), versatile, thrown range 25/75</em></p>
@@ -815,7 +815,7 @@
       <set name="range">25/75</set>
       <set name="damage" type="kinetic">1d6</set>
       <set name="versatile">2d4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -824,7 +824,7 @@
     </rules>
   </element>
   <element name="vibrodagger" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBRODAGGER">
-    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
     <description>
       <p><strong>Vibrodagger</strong></p>
       <p><em>1d4 kinetic damage, thrown range 20/60, finesse</em></p>
@@ -840,7 +840,7 @@
       <set name="slot">onehand</set>
       <set name="range">20/60</set>
       <set name="damage" type="kinetic">1d4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -848,7 +848,7 @@
     </rules>
   </element>
   <element name="vibrostaff" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROSTAFF">
-    <supports>ID_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
     <description>
       <p><strong>Vibrostaff</strong></p>
       <p><em>1d6 kinetic damage (2d4 when used with two hands), versatile</em></p>
@@ -865,7 +865,7 @@
       <set name="slot">onehand</set>
       <set name="damage" type="kinetic">1d6</set>
       <set name="versatile">2d4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -874,7 +874,7 @@
     </rules>
   </element>
   <element name="vibro double-blade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBRO_DOUBLE_BLADE">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
       <p><strong>Vibro Double-Blade</strong></p>
       <p><em>1d8 kinetic damage, two-handed, finesse</em></p>
@@ -890,7 +890,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="kinetic">1d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -899,7 +899,7 @@
     </rules>
   </element>
   <element name="electrostaff" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTROSTAFF">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
       <p><strong>Electrostaff</strong></p>
       <p><em>1d6 lightning damage, two-handed, finesse</em></p>
@@ -915,7 +915,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="lightning">1d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -924,7 +924,7 @@
     </rules>
   </element>
   <element name="vibrosword" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROSWORD">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
     <description>
       <p><strong>Vibrosword</strong></p>
       <p><em>1d8 kinetic damage (1d10 when used with two hands), versatile</em></p>
@@ -941,7 +941,7 @@
       <set name="slot">onehand</set>
       <set name="damage" type="kinetic">1d8</set>
       <set name="versatile">1d10</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -950,7 +950,7 @@
     </rules>
   </element>
   <element name="virbo-axe" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIRBO_AXE">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p><strong>Virbo-Axe</strong></p>
       <p><em>1d12 kinetic damage, two-handed</em></p>
@@ -965,7 +965,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="kinetic">1d12</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -973,7 +973,7 @@
     </rules>
   </element>
   <element name="vibropike" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROPIKE">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
     <description>
       <p><strong>Vibropike</strong></p>
       <p><em>1d10 kinetic damage, two-handed, reach 10 ft</em></p>
@@ -988,7 +988,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="kinetic">1d10</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -996,7 +996,7 @@
     </rules>
   </element>
   <element name="electrowhip" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTROWHIP">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
     <description>
       <p><strong>Electrowhip</strong></p>
       <p><em>1d4 lightning damage, reach 10 ft, finesse</em></p>
@@ -1011,7 +1011,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="lightning">1d4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -1019,7 +1019,7 @@
     </rules>
   </element>
   <element name="electrobaton" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTROBATON">
-    <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
       <p><strong>Electrobaton</strong></p>
       <p><em>1d4 lightning damage, finesse</em></p>
@@ -1034,7 +1034,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="lightning">1d4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
