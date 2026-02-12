@@ -35,7 +35,7 @@
       <p class="indent">
         <strong>
           <em>Rage.</em>
-           Rage is the resource you use to activate certain abilities. Functions identically to a Monk's Ki Points. You always start with max Rage after any rest.
+           Rage is the resource you use to activate certain abilities. You gain 1 Rage when you take damage, when you become impaired, or when you miss an attack on your turn (maximum 1 Rage gain per turn). You always start with max Rage after any rest.
         </strong>
       </p>
     </description>
@@ -88,7 +88,7 @@
   <element id="ID_CLASS_MARAUDER_FEATURE_RAGE" name="Rage" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>Rage is the resource you use to activate certain abilities. Functions identically to a Monk's Ki Points. You always start with max Rage after any rest.</p>
+      <p>Rage is the resource you use to activate certain abilities. You gain 1 Rage when you take damage, when you become impaired, or when you miss an attack on your turn (maximum 1 Rage gain per turn). You always start with max Rage after any rest.</p>
       <p>Your Rage increases as you gain levels.</p>
     </description>
     <sheet>
@@ -727,18 +727,6 @@
     <description>
       <p>A Marauder's power comes from the dark side of the Force. You have learned to draw on this power to cast spells.</p>
       <p class="indent">
-        <strong>Cantrips.</strong>
-         You know two cantrips of your choice from the Marauder spell list. You learn additional Marauder cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Marauder table.
-      </p>
-      <p class="indent">
-        <strong>Spell Slots.</strong>
-         The Marauder table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
-      </p>
-      <p class="indent">
-        <strong>Spells Known of 1st Level and Higher.</strong>
-         You know three 1st-level Marauder spells of your choice. The Spells Known column of the Marauder table shows when you learn more Marauder spells of your choice. Each of these spells must be of a level for which you have spell slots.
-      </p>
-      <p class="indent">
         <strong>Spellcasting Ability.</strong>
          Charisma is your spellcasting ability for your Marauder spells, since the power of your magic relies on your ability to project your will into the world. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a Marauder spell you cast and when making an attack roll with one.
       </p>
@@ -756,8 +744,6 @@
     </sheet>
     <rules>
       <stat name="spellcasting" value="charisma" />
-      <select type="Spell" name="Cantrip (Marauder)" level="1" number="2" supports="ID_SPELLLIST_MARAUDER" />
-      <select type="Spell" name="1st Level Spell (Marauder)" level="1" number="3" supports="ID_SPELLLIST_MARAUDER" />
     </rules>
   </element>
 </elements>

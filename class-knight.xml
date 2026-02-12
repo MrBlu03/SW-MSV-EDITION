@@ -35,7 +35,7 @@
       <p class="indent">
         <strong>
           <em>Focus.</em>
-           Focus is the resource you use to activate certain abilities. Functions identically to a Monk's Ki Points. You always start with max Focus after any rest.
+           Focus is the resource you use to activate certain abilities. You always start with max Focus after any rest. You can regain Focus through the Meditation ability.
         </strong>
       </p>
     </description>
@@ -84,7 +84,7 @@
   <element id="ID_CLASS_KNIGHT_FEATURE_FOCUS" name="Focus" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>Focus is the resource you use to activate certain abilities. Functions identically to a Monk's Ki Points. You always start with max Focus after any rest.</p>
+      <p>Focus is the resource you use to activate certain abilities. You always start with max Focus after any rest. You can regain Focus through the Meditation ability.</p>
       <p>Your Focus increases as you gain levels.</p>
     </description>
     <sheet>
@@ -265,6 +265,9 @@
     <sheet>
       <description>When Incapacitated, you can use this ability to end that condition.</description>
     </sheet>
+    <setters>
+      <set name="level">0</set>
+    </setters>
     <rules />
   </element>
   <element id="ID_CLASS_KNIGHT_FEATURE_MIND_TRICK" name="Mind Trick" type="Spell" level="0" source="SW-MSV-Edition">
@@ -689,18 +692,6 @@
     <description>
       <p>A Knight's power comes from the light side of the Force. You have learned to draw on this power to cast spells.</p>
       <p class="indent">
-        <strong>Cantrips.</strong>
-         You know two cantrips of your choice from the Knight spell list. You learn additional Knight cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Knight table.
-      </p>
-      <p class="indent">
-        <strong>Spell Slots.</strong>
-         The Knight table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
-      </p>
-      <p class="indent">
-        <strong>Spells Known of 1st Level and Higher.</strong>
-         You know three 1st-level Knight spells of your choice. The Spells Known column of the Knight table shows when you learn more Knight spells of your choice. Each of these spells must be of a level for which you have spell slots.
-      </p>
-      <p class="indent">
         <strong>Spellcasting Ability.</strong>
          Charisma is your spellcasting ability for your Knight spells, since the power of your magic relies on your ability to project your will into the world. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a Knight spell you cast and when making an attack roll with one.
       </p>
@@ -718,8 +709,6 @@
     </sheet>
     <rules>
       <stat name="spellcasting" value="charisma" />
-      <select type="Spell" name="Cantrip (Knight)" level="1" number="2" supports="ID_SPELLLIST_KNIGHT" />
-      <select type="Spell" name="1st Level Spell (Knight)" level="1" number="3" supports="ID_SPELLLIST_KNIGHT" />
     </rules>
   </element>
 </elements>

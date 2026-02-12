@@ -104,6 +104,9 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: 45 feet; Components: Somatic; Duration: Concentration, Up to 1 round; You use the Force to manipulate a small or medium object, or a small creature, that you can see within range. You make an ability check using your Force ability, contested by the target’s Strength check. On a success, you may suspend and/or move up to 30 feet or throw the target. If you choose to suspend the target, it remains suspended for the duration. If you throw the target, make a ranged Force attack with a range of 30/60 feet. On a hit, the target you throw at takes kinetic damage based on what is thrown: Small object: 2d4 kinetic damage, Medium object: 2d6 kinetic damage, Small creature: 1d4 kinetic damage. If a creature is thrown, the thrown small creature takes 1d8 + your Force ability modifier kinetic damage.</description>
     </sheet>
+    <setters>
+      <set name="level">0</set>
+    </setters>
     <rules />
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_EXPERTISE" name="Expertise" type="Class Feature" source="SW-MSV-Edition">
@@ -569,15 +572,7 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <p>An Inquisitor's power comes from the dark side of the Force. You have learned to draw on this power to cast spells.</p>
       <p class="indent">
         <strong>Cantrips.</strong>
-         You know two cantrips of your choice from the Inquisitor spell list. You learn additional Inquisitor cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Inquisitor table.
-      </p>
-      <p class="indent">
-        <strong>Spell Slots.</strong>
-         The Inquisitor table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
-      </p>
-      <p class="indent">
-        <strong>Spells Known of 1st Level and Higher.</strong>
-         You know three 1st-level Inquisitor spells of your choice. The Spells Known column of the Inquisitor table shows when you learn more Inquisitor spells of your choice. Each of these spells must be of a level for which you have spell slots.
+         You know the Minor Telekinesis cantrip.
       </p>
       <p class="indent">
         <strong>Spellcasting Ability.</strong>
@@ -597,8 +592,6 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     </sheet>
     <rules>
       <stat name="spellcasting" value="charisma" />
-      <select type="Spell" name="Cantrip (Inquisitor)" level="1" number="2" supports="ID_SPELLLIST_INQUISITOR" />
-      <select type="Spell" name="1st Level Spell (Inquisitor)" level="1" number="3" supports="ID_SPELLLIST_INQUISITOR" />
     </rules>
   </element>
 </elements>

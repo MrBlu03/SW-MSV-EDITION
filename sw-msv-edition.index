@@ -28,6 +28,5 @@
         <file name="items-explosives.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-explosives.xml" />
         <file name="items-healing.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-healing.xml" />
         <file name="proficiencies.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/proficiencies.xml" />
-        <file name="spells.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/spells.xml" />
     </files>
 </index>
