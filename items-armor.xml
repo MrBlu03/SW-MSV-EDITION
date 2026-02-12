@@ -229,7 +229,7 @@
   <element name="Small Shield Generator" type="Armor" source="SW-MSV-Edition" id="ID_ITEM_SMALL_SHIELD_GENERATOR">
     <supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
     <description>
-      <p>A portable shield generator that creates a protective energy barrier providing +1 AC when equipped. Once per long rest, you can activate it as a bonus action to gain 10 temporary hit points.</p>
+      <p>A portable shield generator that creates a protective energy barrier. Once per long rest, you can activate it as a bonus action to gain 10 temporary hit points.</p>
     </description>
     <setters>
       <set name="category">Armor</set>
@@ -237,11 +237,9 @@
       <set name="weight" lb="3">3 lb.</set>
       <set name="slot">offhand</set>
       <set name="armor">Shield</set>
-      <set name="armorClass">+1</set>
       <set name="proficiency">ID_PROFICIENCY_ARMOR_SHIELDS</set>
     </setters>
     <rules>
-      <stat name="ac:shield" value="1" />
       <grant type="Action" id="ID_ACTION_SHIELD_GENERATOR_SMALL"/>
     </rules>
   </element>
@@ -249,7 +247,7 @@
   <element name="Medium Shield Generator" type="Armor" source="SW-MSV-Edition" id="ID_ITEM_MEDIUM_SHIELD_GENERATOR">
     <supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
     <description>
-      <p>A more powerful shield generator that creates a stronger protective barrier providing +2 AC when equipped. Once per long rest, you can activate it as a bonus action to gain 20 temporary hit points.</p>
+      <p>A more powerful shield generator that creates a stronger protective barrier. Once per long rest, you can activate it as a bonus action to gain 20 temporary hit points.</p>
     </description>
     <setters>
       <set name="category">Armor</set>
@@ -257,11 +255,9 @@
       <set name="weight" lb="5">5 lb.</set>
       <set name="slot">offhand</set>
       <set name="armor">Shield</set>
-      <set name="armorClass">+2</set>
       <set name="proficiency">ID_PROFICIENCY_ARMOR_SHIELDS</set>
     </setters>
     <rules>
-      <stat name="ac:shield" value="2" />
       <grant type="Action" id="ID_ACTION_SHIELD_GENERATOR_MEDIUM"/>
     </rules>
   </element>
@@ -269,7 +265,7 @@
   <element name="Large Shield Generator" type="Armor" source="SW-MSV-Edition" id="ID_ITEM_LARGE_SHIELD_GENERATOR">
     <supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
     <description>
-      <p>A heavy-duty shield generator that provides substantial protection providing +2 AC when equipped. Once per long rest, you can activate it as a bonus action to gain 40 temporary hit points.</p>
+      <p>A heavy-duty shield generator that provides substantial protection. Once per long rest, you can activate it as a bonus action to gain 40 temporary hit points.</p>
     </description>
     <setters>
       <set name="category">Armor</set>
@@ -277,11 +273,9 @@
       <set name="weight" lb="8">8 lb.</set>
       <set name="slot">offhand</set>
       <set name="armor">Shield</set>
-      <set name="armorClass">+2</set>
       <set name="proficiency">ID_PROFICIENCY_ARMOR_SHIELDS</set>
     </setters>
     <rules>
-      <stat name="ac:shield" value="2" />
       <grant type="Action" id="ID_ACTION_SHIELD_GENERATOR_LARGE"/>
     </rules>
   </element>

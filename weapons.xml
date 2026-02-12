@@ -93,7 +93,7 @@
       <set name="range">50/200</set>
       <set name="damage" type="energy">1d6</set>
       <set name="reload">16</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_PISTOL</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -114,7 +114,7 @@
       <set name="range">80/320</set>
       <set name="damage" type="energy">1d6</set>
       <set name="reload">4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ENERGY_BOW</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -135,7 +135,7 @@
       <set name="range">40/160</set>
       <set name="damage" type="ion">1d4</set>
       <set name="reload">16</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ION_PISTOL</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -156,7 +156,7 @@
       <set name="range">30/120</set>
       <set name="damage" type="sonic">1d4</set>
       <set name="reload">16</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SONIC_PISTOL</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -177,7 +177,7 @@
       <set name="range">30/120</set>
       <set name="damage" type="cold">1d4</set>
       <set name="reload">8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CRYO_PISTOL</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -198,7 +198,7 @@
       <set name="range">40/160</set>
       <set name="damage" type="kinetic">1d6</set>
       <set name="reload">16</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SLUGTHROWER_PISTOL</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -219,7 +219,7 @@
       <set name="range">45/180</set>
       <set name="damage" type="acid">1d6</set>
       <set name="reload">12</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DISRUPTOR_PISTOL</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -239,7 +239,7 @@
       <set name="slot">twohand</set>
       <set name="damage" type="energy">1d6</set>
       <set name="reload">6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_STEALTH_PISTOL</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -259,7 +259,7 @@
       <set name="range">30/120</set>
       <set name="damage" type="energy">1d6</set>
       <set name="reload">8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_BLASTER</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -277,7 +277,7 @@
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -297,7 +297,7 @@
       <set name="range">105/420</set>
       <set name="damage" type="energy">1d8</set>
       <set name="reload">12</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_RIFLE</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -317,7 +317,7 @@
       <set name="range">120/470</set>
       <set name="damage" type="acid">1d8</set>
       <set name="reload">9</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DISRUPTOR_RIFLE</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -337,7 +337,7 @@
       <set name="range">90/360</set>
       <set name="damage" type="energy">1d12</set>
       <set name="reload">4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_BOWCASTER</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -357,7 +357,7 @@
       <set name="range">80/320</set>
       <set name="damage" type="ion">1d6</set>
       <set name="reload">8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ION_RIFLE</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -377,7 +377,7 @@
       <set name="range">80/320</set>
       <set name="damage" type="sonic">1d8</set>
       <set name="reload">8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SONIC_RIFLE</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -397,7 +397,7 @@
       <set name="range">105/420</set>
       <set name="damage" type="kinetic">1d8</set>
       <set name="reload">12</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SLUGTHROWER_RIFLE</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -417,7 +417,7 @@
       <set name="range">50/200</set>
       <set name="damage" type="cold">2d4</set>
       <set name="reload">4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CRYO_RIFLE</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -437,7 +437,7 @@
       <set name="range">120/470</set>
       <set name="damage" type="ion">1d10</set>
       <set name="reload">1</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_RAILGUN</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -457,7 +457,7 @@
       <set name="range">60/240</set>
       <set name="damage" type="lightning">2d4</set>
       <set name="reload">9</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ARC_CASTER</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -476,7 +476,7 @@
       <set name="slot">twohand</set>
       <set name="damage" type="energy">1d12</set>
       <set name="reload">2</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SNIPER_RIFLE</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -495,7 +495,7 @@
       <set name="slot">twohand</set>
       <set name="damage" type="energy">1d10</set>
       <set name="reload">4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MINIGUN/ROTARY_CANNON</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_BLAST"/>
@@ -514,7 +514,7 @@
       <set name="slot">twohand</set>
       <set name="damage" type="fire">2d6</set>
       <set name="reload">2</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_FLAMETHROWER</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_FLAME"/>
@@ -534,7 +534,7 @@
       <set name="range">100/400</set>
       <set name="damage" type="kinetic">1d10</set>
       <set name="reload">4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CYCLER_RIFLE</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
@@ -552,7 +552,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="energy">1d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -572,7 +572,7 @@
       <set name="slot">onehand</set>
       <set name="damage" type="energy">1d6</set>
       <set name="versatile">2d4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSTAFF</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -591,7 +591,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="energy">2d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSGUARD_SABER</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -609,7 +609,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="energy">1d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTWHIP</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -628,7 +628,7 @@
       <set name="slot">onehand</set>
       <set name="damage" type="energy">1d8</set>
       <set name="versatile">1d10</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_LIGHTSABER</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -647,7 +647,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="energy">1d10</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER_PIKE</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS_PIKE</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -665,7 +665,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="energy">1d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_BLADED_LIGHTSABER</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -686,7 +686,7 @@
       <set name="range">25/75</set>
       <set name="damage" type="kinetic">1d6</set>
       <set name="versatile">2d4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSPEAR</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -706,7 +706,7 @@
       <set name="slot">onehand</set>
       <set name="range">20/60</set>
       <set name="damage" type="kinetic">1d4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBRODAGGER</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -725,7 +725,7 @@
       <set name="slot">onehand</set>
       <set name="damage" type="kinetic">1d6</set>
       <set name="versatile">2d4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSTAFF</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -744,7 +744,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="kinetic">1d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBRO_DOUBLE-BLADE</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -763,7 +763,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="lightning">1d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ELECTROSTAFF</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -783,7 +783,7 @@
       <set name="slot">onehand</set>
       <set name="damage" type="kinetic">1d8</set>
       <set name="versatile">1d10</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSWORD</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -802,7 +802,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="kinetic">1d12</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_VIRBO-AXE</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -820,7 +820,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="kinetic">1d10</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBROPIKE</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -838,7 +838,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="lightning">1d4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ELECTROWHIP</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -856,7 +856,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="lightning">1d4</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_ELECTROBATON</set>
+      <set name="proficiency">ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>

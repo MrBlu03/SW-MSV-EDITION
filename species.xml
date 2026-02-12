@@ -20,6 +20,7 @@
       <stat name="intelligence" value="2"/>
       <stat name="dexterity" value="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
+      <stat name="vulnerable" value="sonic"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_BITH"/>
@@ -207,6 +208,7 @@
       <stat name="dexterity" value="2"/>
       <stat name="wisdom" value="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
+      <stat name="resistant" value="poison"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_CHAGRI"/>
@@ -330,6 +332,7 @@
       <stat name="constitution" value="2"/>
       <stat name="charisma" value="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
+      <stat name="resistant" value="poison"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_DEVARONESE"/>
@@ -397,6 +400,9 @@
       <stat name="charisma" value="2"/>
       <select type="Racial Trait" name="Ability Score Increase (Protocol Droid)" supports="Protocol Droid" number="1"/>
       <stat name="innate speed" value="25" bonus="base"/>
+      <stat name="resistant" value="necrotic"/>
+      <stat name="immune" value="poison"/>
+      <stat name="vulnerable" value="ion"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
     </rules>
   </element>
@@ -422,6 +428,9 @@
       <stat name="constitution" value="2"/>
       <select type="Racial Trait" name="Ability Score Increase (Combat Droid)" supports="Combat Droid" number="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
+      <stat name="resistant" value="necrotic"/>
+      <stat name="immune" value="poison"/>
+      <stat name="vulnerable" value="ion"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_BINARY"/>
@@ -2603,12 +2612,12 @@
   <element name="Durable" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_ZABRAK_DURABLE">
     <description>
       <p>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
+      <p>When you are reduced to 0 hit points, you can drop to 1 hit point instead once per long rest.</p>
     </description>
     <sheet>
-      <description>+1 HP per level.</description>
+      <description>+1 HP per level. Once per long rest, when reduced to 0 HP, drop to 1 HP instead.</description>
     </sheet>
     <rules>
-      <stat name="hp" value="1" />
       <stat name="hp" value="level" />
     </rules>
   </element>
