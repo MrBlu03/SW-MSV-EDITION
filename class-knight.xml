@@ -267,6 +267,7 @@
     </sheet>
     <setters>
       <set name="level">0</set>
+      <set name="school">Evocation</set>
     </setters>
     <rules />
   </element>

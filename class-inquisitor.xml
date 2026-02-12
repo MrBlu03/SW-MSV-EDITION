@@ -106,6 +106,7 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     </sheet>
     <setters>
       <set name="level">0</set>
+      <set name="school">Evocation</set>
     </setters>
     <rules />
   </element>
