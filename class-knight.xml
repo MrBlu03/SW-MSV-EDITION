@@ -268,6 +268,15 @@
     <setters>
       <set name="level">0</set>
       <set name="school">Evocation</set>
+      <set name="time">1 Bonus Action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
     </setters>
     <rules />
   </element>

@@ -107,6 +107,15 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <setters>
       <set name="level">0</set>
       <set name="school">Evocation</set>
+      <set name="time">1 Action</set>
+      <set name="duration">Concentration, Up to 1 round</set>
+      <set name="range">45 feet</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
     </setters>
     <rules />
   </element>
@@ -255,6 +264,9 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <set name="hasVerbalComponent">false</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
     </setters>
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: 10 turns; Choose a target you can see within range. That creature must make a Constitution saving throw. On a failed save, the creature is blinded. On a successful save, the creature isn't blinded.</description>
@@ -275,6 +287,9 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <set name="hasVerbalComponent">false</set>
       <set name="hasSomaticComponent">false</set>
       <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
     </setters>
     <sheet>
       <description>Cantrip, Casting Time: 1 Bonus Action; Range: Self; Components: None; Duration: Until the end of your next turn; When hiding successfully, you can turn invisible.</description>
@@ -295,6 +310,9 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <set name="hasVerbalComponent">false</set>
       <set name="hasSomaticComponent">false</set>
       <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
     </setters>
     <sheet>
       <description>Cantrip, Casting Time: 1 Reaction; Range: Self; Components: None; Duration: Until the end of your next turn; When killing a creature, turn invisible.</description>
@@ -315,6 +333,9 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <set name="hasVerbalComponent">false</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
     </setters>
     <sheet>
       <description>Cantrip, Casting Time: Action; Range: 60 feet; Components: Somatic; Duration: Concentration, Up to 4 rounds; Choose a point within range and create a circle with a radius of 20 feet. The area becomes pitch black and is heavily obscured to all who stand in it except yourself.</description>
@@ -334,7 +355,10 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <set name="duration">Instantaneous</set>
       <set name="hasVerbalComponent">false</set>
       <set name="hasSomaticComponent">false</set>
-      <set name="hasMaterialComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
     </setters>
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: Self; Components: None; Duration: Instantaneous; This ability allows you to walk through walls. You may pass through up to 5 feet of solid material and must end your movement outside the wall</description>
@@ -368,6 +392,9 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <set name="hasVerbalComponent">false</set>
       <set name="hasSomaticComponent">false</set>
       <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
     </setters>
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: Self; Components: None; Duration: Concentration, Up to 10 minutes; Use the Force to disguise yourself by altering people's perception of you.</description>
@@ -388,6 +415,9 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <set name="hasVerbalComponent">false</set>
       <set name="hasSomaticComponent">false</set>
       <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
     </setters>
     <sheet>
       <description>Cantrip, Casting Time: 1 Bonus Action; Range: Up to double your movement; Components: None; Duration: Instantaneous; You can teleport to an enemy up to double your movement away. This does not break stealth unless you teleport into line of sight.</description>
@@ -408,6 +438,9 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <set name="hasVerbalComponent">false</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
     </setters>
     <sheet>
       <description>Cantrip, Casting Time: 1 Bonus Action; Range: 60 feet; Components: Somatic; Duration: 2 rounds; Use the Force to make an illusion within range. Targets who can see the illusion must make a Wisdom saving throw. On a failed save, the target becomes distracted. Creatures attacking a distracted target have advantage, and distracted targets have disadvantage on saving throws. As soon as they're hit, they are no longer distracted. On a successful save, the creature isn't distracted.</description>
@@ -428,6 +461,9 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <set name="hasVerbalComponent">false</set>
       <set name="hasSomaticComponent">false</set>
       <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
     </setters>
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: None; Duration: 1 round; Use the Force to make a creature's worst nightmare seem real. All creatures within range must make a Wisdom saving throw. On a failed save, the creature becomes frightened. On a successful save, the creature doesn't become frightened.</description>
@@ -448,6 +484,9 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <set name="hasVerbalComponent">false</set>
       <set name="hasSomaticComponent">false</set>
       <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
     </setters>
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: 15 feet; Components: None; Duration: Instantaneous; Make a dark spirit clone of yourself that has 1 Hit Point within range. This dark spirit must roll initiative, has 3/4th of your AC rounded up, and has all your abilities except your subclass abilities. You are limited to 1 spirit at a time.</description>
@@ -481,6 +520,9 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <set name="hasVerbalComponent">false</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
     </setters>
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: Until the end of their next turn; Use the Force to trap someone in their own mind. The creature must make an Intelligence saving throw. On a failed save, they become trapped. Stunning them for the duration or until they get hit. On a successful save, they don't get trapped.</description>
@@ -501,6 +543,9 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <set name="hasVerbalComponent">false</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
     </setters>
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: Concentration, Up to 1 round; Use the Force to freeze someone in place. You make an ability check using your Force ability, contested by the target's Strength check. On a success, the target is immobilized.</description>
@@ -521,6 +566,9 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <set name="hasVerbalComponent">false</set>
       <set name="hasSomaticComponent">false</set>
       <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
     </setters>
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: 60 feet; Components: None; Duration: Until the end of their next turn; Use the Force to confuse a creature. The creature must make an Wisdom saving throw. On a failed save, they must attack the nearest creature on their next turn. On a successful save, the creature is unaffected.</description>
@@ -541,6 +589,9 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <set name="hasVerbalComponent">false</set>
       <set name="hasSomaticComponent">false</set>
       <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
     </setters>
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: Touch; Components: None; Duration: 1 minute; Use the Force to forcibly read a creature’s mind, accessing both current thoughts and hidden memories. The target must be restrained in order to use this.</description>
@@ -561,6 +612,9 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <set name="hasVerbalComponent">false</set>
       <set name="hasSomaticComponent">false</set>
       <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
     </setters>
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: 60 feet; Components: None; Duration: 3 rounds; Use the Force to link your life force to a hostile creature. Whenever you take damage, the linked creature must make an Intelligence saving throw. On a failed save, the creature takes half of the damage as kinetic damage you would have taken and you take half of the damage as the damage type of the original attack. On a successful save, the creature takes no damage and you take full damage as the damage type of the original attack. You can only link to one creature.</description>
