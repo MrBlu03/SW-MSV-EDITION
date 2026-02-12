@@ -91,7 +91,7 @@
     <sheet>
       <description>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a Bonus Action to regain hit points equal to 1d10 + your Warrior level. Once you use this feature, you must finish a short or long rest before you can use it again.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_ACTION_SURGE" name="Action Surge" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -101,7 +101,7 @@
     <sheet>
       <description>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional Action. Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_EXTRA_ATTACK" name="Extra Attack" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -111,7 +111,7 @@
     <sheet>
       <description>Beginning at 5th level, you can attack twice, instead of once, whenever you take the attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_INDOMITABLE" name="Indomitable" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -121,7 +121,7 @@
     <sheet>
       <description>Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest. You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_EXTRA_ATTACK_X3" name="Extra Attack (x3)" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -131,7 +131,7 @@
     <sheet>
       <description>You can attack four times, instead of three, whenever you take the Attack action on your turn.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_INDOMITABLE_X1" name="Indomitable (x1)" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -141,7 +141,7 @@
     <sheet>
       <description>You can reroll a saving throw that you fail. If you do so, you must use the new roll. Once you use this feature, you can't use it again until you finish a long rest.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_INDOMITABLE_X2" name="Indomitable (x2)" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -151,7 +151,7 @@
     <sheet>
       <description>You can reroll a saving throw that you fail. If you do so, you must use the new roll. Once you use this feature, you can't use it again until you finish a long rest.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_ACTION_SURGE_X2" name="Action Surge (x2)" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -161,7 +161,7 @@
     <sheet>
       <description>On your turn, you can take one additional action. Once you use this feature, you must finish a short or long rest before you can use it again.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_INDOMITABLE_X3" name="Indomitable (x3)" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -171,7 +171,7 @@
     <sheet>
       <description>You can reroll a saving throw that you fail. If you do so, you must use the new roll. Once you use this feature, you can't use it again until you finish a long rest.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_ACTION_SURGE_X1" name="Action Surge (x1)" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -181,7 +181,7 @@
     <sheet>
       <description>On your turn, you can take one additional action. Once you use this feature, you must finish a short or long rest before you can use it again.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_EXTRA_ATTACK_X1" name="Extra Attack (x1)" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -191,7 +191,7 @@
     <sheet>
       <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_EXTRA_ATTACK_X2" name="Extra Attack (x2)" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -201,19 +201,19 @@
     <sheet>
       <description>You can attack three times, instead of twice, whenever you take the Attack action on your turn.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_JETTROOPER" name="Jettrooper" type="Class Feature" source="SW-MSV-Edition">
     <description>
       <p>Jettrooper - See Warrior class description for details.</p>
     </description>
-    <rules />
+
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_BRUTE" name="Brute" type="Class Feature" source="SW-MSV-Edition">
     <description>
       <p>Brute - See Warrior class description for details.</p>
     </description>
-    <rules />
+
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_FEAT" name="Feat" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -228,7 +228,7 @@
     <description>
       <p>You gain a feature from your Warrior subclass.</p>
     </description>
-    <rules />
+
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_SUBCLASS" name="Warrior Subclass" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -263,7 +263,7 @@
     <sheet>
       <description>You learn maneuvers that are fueled by special dice called superiority dice.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_MANEUVERS" name="Maneuvers" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -288,7 +288,7 @@
     <sheet>
       <description>You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest. You gain another superiority die at 7th level and one more at 15th level.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_MANEUVER_SAVE_DC" name="Maneuver Save DC" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -298,7 +298,7 @@
     <sheet>
       <description>8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_STUDENT_OF_WAR" name="Student of War" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -308,7 +308,7 @@
     <sheet>
       <description>You gain proficiency with one type of tool of your choice.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_KNOW_YOUR_ENEMY" name="Know Your Enemy" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -318,7 +318,7 @@
     <sheet>
       <description>If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The GM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice: Strength score, Dexterity score, Constitution score, Armour Class, Current Hit Points.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_IMPROVED_COMBAT_SUPERIORITY" name="Improved Combat Superiority" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -328,7 +328,7 @@
     <sheet>
       <description>Your superiority dice turn into d10s. At 18th level, they turn into d12s.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_RELENTLESS" name="Relentless" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -338,7 +338,7 @@
     <sheet>
       <description>When you roll initiative and have no superiority dice remaining, you regain 1 superiority die.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_SUBCLASS_BRUTE" name="Brute" type="Archetype" source="SW-MSV-Edition">
     <supports>ID_CLASS_WARRIOR</supports>
@@ -361,7 +361,7 @@
     <sheet>
       <description>You are able to strike with your weapons with especially brutal force. Whenever you hit with a weapon that you are proficient with and deal damage, the weapon’s damage increases by an amount based on your level in this class: lv 3: 1d4, lv 4: 1d4, lv 5: 1d4, lv 6: 1d4, lv 7: 1d4, lv 8: 1d4, lv 9: 1d4, lv 10: 1d6, lv 11: 1d6, lv 12: 1d6, lv 13: 1d6, lv 14: 1d6, lv 15: 1d6, lv 16: 1d8, lv 17: 1d8, lv 18: 1d8, lv 19: 1d8, lv 20: 1d10.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_SUBCLASS_BRUTE_ABILITY_BRUTISH_DURABILITY" name="Brutish Durability" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -371,7 +371,7 @@
     <sheet>
       <description>Your toughness allows you to shrug off assaults that would devastate others. Whenever you make a saving throw, roll 1d6 and add the die to your saving throw total. If applying this bonus to a death saving throw increases the total to 20 or higher, you gain the benefits of rolling a 20 on the d20.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_SUBCLASS_BRUTE_ABILITY_ADDITIONAL_FIGHTING_STYLE" name="Additional Fighting Style" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -393,7 +393,7 @@
     <sheet>
       <description>When you score a critical hit with a weapon attack, you gain a bonus to that weapon’s damage roll equal to your level in this class.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_SUBCLASS_BRUTE_ABILITY_SURVIVOR" name="Survivor" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -403,7 +403,7 @@
     <sheet>
       <description>You attain the pinnacle of resilience in battle. At the start of each of your turns in combat, you regain hit points equal to 5 + your Constitution modifier (minimum of 1 hit point). You don’t gain this benefit if you have 0 hit points or if you have more than half of your hit points left.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_SUBCLASS_JETTROOPER" name="Jettrooper" type="Archetype" source="SW-MSV-Edition">
     <supports>ID_CLASS_WARRIOR</supports>
@@ -427,7 +427,7 @@
     <sheet>
       <description>Gain Jump Pack proficiency.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_SUBCLASS_JETTROOPER_ABILITY_HOVER_MASTER" name="Hover Master" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -437,7 +437,7 @@
     <sheet>
       <description>Gain Hover Pack proficiency.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_SUBCLASS_JETTROOPER_ABILITY_JETPACK_MASTER" name="Jetpack Master" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -447,7 +447,7 @@
     <sheet>
       <description>Gain Jetpack Proficiency.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_SUBCLASS_JETTROOPER_ABILITY_WEAPONS_MODIFICATION" name="Weapons Modification" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -457,7 +457,7 @@
     <sheet>
       <description>You are able to customize your ranged weapons according to your liking. You can choose one weapon modification that will apply to all ranged weapons you are using or will use. You can choose an additional weapon modification at 15th level.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_SUBCLASS_JETTROOPER_ABILITY_HEAVY_BURNERS" name="Heavy Burners" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -467,7 +467,7 @@
     <sheet>
       <description>When lifting off or landing with your jump/hover or jetpack or boots, creatures within 5 feet of you must make a DC 13 Constitution saving throw. On a failed save, the creature takes 1d6 kinetic damage and is pushed 5 feet away. On a successful save, the creature takes half damage and is not pushed.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_SUBCLASS_JETTROOPER_ABILITY_IMPROVED_WEAPONS_MODIFICATION" name="Improved Weapons Modification" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -477,7 +477,7 @@
     <sheet>
       <description>Each weapon modification you own turns into the improved version.</description>
     </sheet>
-    <rules />
+
   </element>
   
   <element id="ID_WEAPON_MODIFICATION_INCREASED_ACCURACY" name="Increased Accuracy" type="Class Feature" source="SW-MSV-Edition">
@@ -485,56 +485,56 @@
     <description>
       <p>When you make a ranged attack, add 1d4 to your attack roll.</p>
     </description>
-    <rules />
+
   </element>
   <element id="ID_WEAPON_MODIFICATION_INCREASED_RANGE" name="Increased Range" type="Class Feature" source="SW-MSV-Edition">
     <supports>Weapon Modification</supports>
     <description>
       <p>Increase your blaster's range by 1.5× its normal value.</p>
     </description>
-    <rules />
+
   </element>
   <element id="ID_WEAPON_MODIFICATION_INCREASED_DAMAGE" name="Increased Damage" type="Class Feature" source="SW-MSV-Edition">
     <supports>Weapon Modification</supports>
     <description>
       <p>When a ranged attack hits, roll your damage die twice with modifiers and deal 75% rounded up of the combined result.</p>
     </description>
-    <rules />
+
   </element>
   <element id="ID_WEAPON_MODIFICATION_BURST_MODE" name="Burst Mode" type="Class Feature" source="SW-MSV-Edition">
     <supports>Weapon Modification</supports>
     <description>
       <p>Once per turn, you may activate Burst Mode. Your ranged weapon fires twice in rapid succession. Make two attack rolls against the same target.</p>
     </description>
-    <rules />
+
   </element>
   <element id="ID_WEAPON_MODIFICATION_TRACKER_BOLTS" name="Tracker Bolts" type="Class Feature" source="SW-MSV-Edition">
     <supports>Weapon Modification</supports>
     <description>
       <p>When a ranged attack hits, the next attack roll made against this creature has advantage.</p>
     </description>
-    <rules />
+
   </element>
   <element id="ID_WEAPON_MODIFICATION_EXPLOSIVE_ROUNDS" name="Explosive Rounds" type="Class Feature" source="SW-MSV-Edition">
     <supports>Weapon Modification</supports>
     <description>
       <p>Ranged attacks deal area damage. When a ranged attack hits, creatures at the center of the impact take full damage, and all creatures within 5 feet of the impact point take half damage.</p>
     </description>
-    <rules />
+
   </element>
   <element id="ID_WEAPON_MODIFICATION_ARMOUR_PIERCING_ROUNDS" name="Armour Piercing Rounds" type="Class Feature" source="SW-MSV-Edition">
     <supports>Weapon Modification</supports>
     <description>
       <p>When a ranged attack hits a creature, that creature's AC is reduced by 1 until the start of your next turn.</p>
     </description>
-    <rules />
+
   </element>
   <element id="ID_WEAPON_MODIFICATION_EXTENDED_MAGAZINES" name="Extended Magazines" type="Class Feature" source="SW-MSV-Edition">
     <supports>Weapon Modification</supports>
     <description>
       <p>Your blaster can shoot more before needing a Reload. Increase the Ammo count 1.5x before needing a reload.</p>
     </description>
-    <rules />
+
   </element>
   
   <element id="ID_WEAPON_MODIFICATION_IMPROVED_INCREASED_ACCURACY" name="Improved Increased Accuracy" type="Class Feature" source="SW-MSV-Edition">
@@ -542,55 +542,55 @@
     <description>
       <p>When you make a ranged attack, add 1d6 to your attack roll.</p>
     </description>
-    <rules />
+
   </element>
   <element id="ID_WEAPON_MODIFICATION_IMPROVED_INCREASED_RANGE" name="Improved Increased Range" type="Class Feature" source="SW-MSV-Edition">
     <supports>Improved Weapon Modification</supports>
     <description>
       <p>Increase your blaster's range by 2× its normal value.</p>
     </description>
-    <rules />
+
   </element>
   <element id="ID_WEAPON_MODIFICATION_IMPROVED_INCREASED_DAMAGE" name="Improved Increased Damage" type="Class Feature" source="SW-MSV-Edition">
     <supports>Improved Weapon Modification</supports>
     <description>
       <p>When a ranged attack hits, roll your damage die twice with modifiers and combine the results.</p>
     </description>
-    <rules />
+
   </element>
   <element id="ID_WEAPON_MODIFICATION_IMPROVED_BURST_MODE" name="Improved Burst Mode" type="Class Feature" source="SW-MSV-Edition">
     <supports>Improved Weapon Modification</supports>
     <description>
       <p>Once per turn, you may activate Burst Mode. Your ranged weapon fires three times in rapid succession. Make three attack rolls against the same target.</p>
     </description>
-    <rules />
+
   </element>
   <element id="ID_WEAPON_MODIFICATION_IMPROVED_TRACKER_BOLTS" name="Improved Tracker Bolts" type="Class Feature" source="SW-MSV-Edition">
     <supports>Improved Weapon Modification</supports>
     <description>
       <p>When a ranged attack hits, the next attack roll made against this creature has advantage. You also roll the damage die twice and take the highest result.</p>
     </description>
-    <rules />
+
   </element>
   <element id="ID_WEAPON_MODIFICATION_IMPROVED_EXPLOSIVE_ROUNDS" name="Improved Explosive Rounds" type="Class Feature" source="SW-MSV-Edition">
     <supports>Improved Weapon Modification</supports>
     <description>
       <p>Ranged attacks deal area damage. When a ranged attack hits, creatures at the center of the impact and within 5 feet take full damage, and all creatures within 10 feet of the impact point take half damage.</p>
     </description>
-    <rules />
+
   </element>
   <element id="ID_WEAPON_MODIFICATION_IMPROVED_ARMOUR_PIERCING_ROUNDS" name="Improved Armour Piercing Rounds" type="Class Feature" source="SW-MSV-Edition">
     <supports>Improved Weapon Modification</supports>
     <description>
       <p>When a ranged attack hits a creature, that creature's AC is reduced by 2 until the start of your next turn.</p>
     </description>
-    <rules />
+
   </element>
   <element id="ID_WEAPON_MODIFICATION_IMPROVED_EXTENDED_MAGAZINES" name="Improved Extended Magazines" type="Class Feature" source="SW-MSV-Edition">
     <supports>Improved Weapon Modification</supports>
     <description>
       <p>Your blaster can shoot more before needing a Reload. Increase the Ammo count 2x before needing a reload.</p>
     </description>
-    <rules />
+
   </element>
 </elements>

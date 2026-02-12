@@ -140,7 +140,7 @@
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_FORCE_PULL" name="Force Pull" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
@@ -165,7 +165,7 @@
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_TAUNT" name="Taunt" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
@@ -190,7 +190,7 @@
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_RECKLESS_ATTACK" name="Reckless Attack" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -200,7 +200,7 @@
     <sheet>
       <description>When you make your first attack on your turn, you can decide to attack recklessly. This grants you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_MINOR_TELEKINESIS" name="Minor Telekinesis" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
@@ -225,7 +225,7 @@
       <set name="isConcentration">true</set>
       <set name="isRitual">false</set>
     </setters>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_SABER_THROW" name="Saber Throw" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
@@ -250,7 +250,7 @@
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_FORCE_REPULSE" name="Force Repulse" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
@@ -275,7 +275,7 @@
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_FORCE_CHOKE" name="Force Choke" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
@@ -300,7 +300,7 @@
       <set name="isConcentration">true</set>
       <set name="isRitual">false</set>
     </setters>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_FAST_MOVEMENT" name="Fast Movement" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -310,7 +310,7 @@
     <sheet>
       <description>Gain 10 movement speed when not wearing heavy armour.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_FEARLESS" name="Fearless" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -320,7 +320,7 @@
     <sheet>
       <description>Immune to being frightened.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_ATTACK_INSTINCT" name="Attack Instinct" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -330,7 +330,7 @@
     <sheet>
       <description>Gain advantage on initiative rolls.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_FORCE_SHOCK" name="Force Shock" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
@@ -355,7 +355,7 @@
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_HATRED" name="Hatred" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -365,7 +365,7 @@
     <sheet>
       <description>Consume 3 Rage to gain an extra Action.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_RETALIATION" name="Retaliation" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -375,7 +375,7 @@
     <sheet>
       <description>When you take damage from a creature within melee distance, you can use a Reaction to strike back at them with a melee attack. You do not add your modifier to the damage.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_RELENTLESS_RAGE" name="Relentless Rage" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -385,7 +385,7 @@
     <sheet>
       <description>If you drop to 0 hit points, you can spend 1 Rage to make a DC 10 Constitution saving throw. On a failed save, you are downed. On a successful save, your hit points become 2 × Marauder level. Each time you use this feature, the DC increases by 5 until a short rest.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_INTIMIDATING_PRESENCE" name="Intimidating Presence" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
@@ -410,7 +410,7 @@
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_PERSISTENT_RAGE" name="Persistent Rage" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -420,7 +420,7 @@
     <sheet>
       <description>When you roll initiative, gain 2 Rage.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_ENRAGE" name="Enrage" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -430,7 +430,7 @@
     <sheet>
       <description>Make an unarmed strike against yourself and gain 2 Rage.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_INDOMITABLE_MIGHT" name="Indomitable Might" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -440,7 +440,7 @@
     <sheet>
       <description>If your total for a Strength check or Strength saving throw is less than your Strength score, you can use your Strength score instead.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_CHAMPION_OF_THE_DARK" name="Champion of the Dark" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -450,7 +450,7 @@
     <sheet>
       <description>Your Strength and Constitution scores increase by 4 and their maximum is now 25.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_EXTRA_ATTACK" name="Extra Attack" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -460,7 +460,7 @@
     <sheet>
       <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_LIGHTSABER_FORM" name="Lightsaber Form" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -518,7 +518,7 @@
     <sheet>
       <description>When a creature misses you with a melee attack, you can make a melee weapon attack against that creature.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_MARAUDER_FORM_SORESU" name="Form III: Soresu" type="Archetype" source="SW-MSV-Edition">
     <supports>ID_CLASS_MARAUDER</supports>
@@ -546,7 +546,7 @@
     <sheet>
       <description>Block to negate a melee attack that would have hit you.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_MARAUDER_FORM_SORESU_ABILITY_DEFLECT" name="Deflect" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -564,7 +564,7 @@
     <sheet>
       <description>Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_MARAUDER_FORM_ATARU" name="Form IV: Ataru" type="Archetype" source="SW-MSV-Edition">
     <supports>ID_CLASS_MARAUDER</supports>
@@ -592,7 +592,7 @@
     <sheet>
       <description>Jump up to twice your movement and make a melee weapon attack. This does not provoke Opportunity Attacks. Per extra Rage spent to a max of half your Marauder level (rounded up), you can jump an additional 5 feet.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_MARAUDER_FORM_ATARU_ABILITY_SLOW_FALL" name="Slow Fall" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -610,7 +610,7 @@
     <sheet>
       <description>Use the Force to slow yourself when falling, taking only half fall damage.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_MARAUDER_FORM_SHIEN" name="Form V: Shien" type="Archetype" source="SW-MSV-Edition">
     <supports>ID_CLASS_MARAUDER</supports>
@@ -637,7 +637,7 @@
     <sheet>
       <description>Must wield a lightweapon. Use the Force to send a ranged attack that would have hit you to a creature. This counts as a ranged Force attack with the range of the incoming attack. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_MARAUDER_FORM_DJEM_SO" name="Form V: Djem So" type="Archetype" source="SW-MSV-Edition">
     <supports>ID_CLASS_MARAUDER</supports>
@@ -665,7 +665,7 @@
     <sheet>
       <description>Make a melee attack and gain advantage on that attack.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_MARAUDER_FORM_DJEM_SO_ABILITY_DEFLECT" name="Deflect" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -683,7 +683,7 @@
     <sheet>
       <description>Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_MARAUDER_FORM_NIMAN" name="Form VI: Niman" type="Archetype" source="SW-MSV-Edition">
     <supports>ID_CLASS_MARAUDER</supports>
@@ -702,7 +702,7 @@
     <sheet>
       <description>You can use Force Push and Force Pull as a Bonus Action.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_MARAUDER_FORM_JUYO" name="Form VII: Juyo" type="Archetype" source="SW-MSV-Edition">
     <supports>ID_CLASS_MARAUDER</supports>
@@ -729,7 +729,7 @@
     <sheet>
       <description>Make a flurry of attacks in one swift movement. You make two attacks that count as one attack against the same target. You roll both to hit. Per 2 extra Rage spent to a max of half your Marauder level (rounded up), you make an additional attack within that flurry.</description>
     </sheet>
-    <rules />
+
   </element>
   <element id="ID_CLASS_MARAUDER_FEATURE_SPELLCASTING" name="Spellcasting" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />

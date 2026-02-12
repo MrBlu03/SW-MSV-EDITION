@@ -5,42 +5,42 @@
     <description>
       <p>A hacking kit contains specialized equipment for hacking unconscious droids and security systems.</p>
     </description>
-    <rules />
+
   </element>
 
   <element name="Tool: Disguise Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_DISGUISE_KIT" source="SW-MSV-Edition">
     <description>
       <p>A disguise kit contains cosmetics, hair dyes, small props, and various pieces of clothing to change your appearance.</p>
     </description>
-    <rules />
+
   </element>
 
   <element name="Tool: Poisoning Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_POISONING_KIT" source="SW-MSV-Edition">
     <description>
       <p>A poisoning kit contains the tools needed to create and apply poisons to weapons.</p>
     </description>
-    <rules />
+
   </element>
 
   <element name="Tool: Jumppack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JUMPPACK" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with jumppack and jump boots operation.</p>
     </description>
-    <rules />
+
   </element>
 
   <element name="Tool: Hoverpack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with hoverpack and hover boots operation.</p>
     </description>
-    <rules />
+
   </element>
 
   <element name="Tool: Jetpack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JETPACK" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with jetpack and jet boots operation.</p>
     </description>
-    <rules />
+
   </element>
 
   

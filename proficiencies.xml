@@ -4,576 +4,576 @@
     <description>
       <p>Simple blaster weapon proficiency</p>
     </description>
-    <rules />
+
   </element>
   <element name="Weapon: Martial Blasters" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS" source="SW-MSV-Edition">
     <description>
       <p>Martial blaster weapon proficiency</p>
     </description>
-    <rules />
+
   </element>
   <element name="Weapon: Simple Lightweapons" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_LIGHTWEAPONS" source="SW-MSV-Edition">
     <description>
       <p>Simple lightweapon proficiency</p>
     </description>
-    <rules />
+
   </element>
   <element name="Weapon: Martial Lightweapons" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS" source="SW-MSV-Edition">
     <description>
       <p>Martial lightweapon proficiency</p>
     </description>
-    <rules />
+
   </element>
   <element name="Weapon: Simple and Martial Lightweapons" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_AND_MARTIAL_LIGHTWEAPONS" source="SW-MSV-Edition">
     <description>
       <p>Simple and martial lightweapon proficiency</p>
     </description>
-    <rules />
+
   </element>
   <element name="Weapon: Simple Vibroweapons" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS" source="SW-MSV-Edition">
     <description>
       <p>Simple vibroweapon proficiency</p>
     </description>
-    <rules />
+
   </element>
   <element name="Weapon: Martial Vibroweapons" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS" source="SW-MSV-Edition">
     <description>
       <p>Martial vibroweapon proficiency</p>
     </description>
-    <rules />
+
   </element>
   <element name="Weapon: Simple and Martial Vibroweapons" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_AND_MARTIAL_VIBROWEAPONS" source="SW-MSV-Edition">
     <description>
       <p>Simple and martial vibroweapon proficiency</p>
     </description>
-    <rules />
+
   </element>
   <element name="Weapon: Simple or Martial Lightweapons with Finesse Property" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_OR_MARTIAL_LIGHTWEAPONS_WITH_FINESSE_PROPERTY" source="SW-MSV-Edition">
     <description>
       <p>Lightweapons with finesse property</p>
     </description>
-    <rules />
+
   </element>
   <element name="Weapon: Simple or Martial Light Weapons with Finesse Property" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_OR_MARTIAL_LIGHT_WEAPONS_WITH_FINESSE_PROPERTY" source="SW-MSV-Edition">
     <description>
       <p>Light weapons with finesse property</p>
     </description>
-    <rules />
+
   </element>
   <element name="Weapon: Simple or Martial Vibroweapons with Finesse Property" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_OR_MARTIAL_VIBROWEAPONS_WITH_FINESSE_PROPERTY" source="SW-MSV-Edition">
     <description>
       <p>Vibroweapons with finesse property</p>
     </description>
-    <rules />
+
   </element>
   <element name="Weapon: Sniper Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SNIPER_RIFLE" source="SW-MSV-Edition">
     <description>
       <p>Sniper rifle proficiency</p>
     </description>
-    <rules />
+
   </element>
   <element name="Weapon: Cycler Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_CYCLER_RIFLE" source="SW-MSV-Edition">
     <description>
       <p>Cycler rifle proficiency</p>
     </description>
-    <rules />
+
   </element>
   <element name="Tool: Slicing Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" source="SW-MSV-Edition">
     <description>
       <p>A slicing kit contains specialized equipment for bypassing electronic locks and security systems.</p>
     </description>
-    <rules />
+
   </element>
   <element name="Tool: Repair Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_REPAIR_KIT" source="SW-MSV-Edition">
     <description>
       <p>A repair kit contains tools and parts for repairing damaged equipment and droids.</p>
     </description>
-    <rules />
+
   </element>
   <element name="Tool: Forgery Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT" source="SW-MSV-Edition">
     <description>
       <p>A forgery kit contains materials for creating false documents and identification.</p>
     </description>
-    <rules />
+
   </element>
 
   
   <element name="Armor: Combat Suit" type="Proficiency" id="ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_COMBAT_SUIT" source="SW-MSV-Edition">
     <description><p>Combat suit proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Armor: Fiber Armor" type="Proficiency" id="ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_FIBER_ARMOR" source="SW-MSV-Edition">
     <description><p>Fiber armor proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Armor: Duranium Combat Suit" type="Proficiency" id="ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_DURANIUM_COMBAT_SUIT" source="SW-MSV-Edition">
     <description><p>Duranium combat suit proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Armor: Mesh Armor" type="Proficiency" id="ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_MESH_ARMOR" source="SW-MSV-Edition">
     <description><p>Mesh armor proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Armor: Weave Armor" type="Proficiency" id="ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_WEAVE_ARMOR" source="SW-MSV-Edition">
     <description><p>Weave armor proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Armor: Beskar Weave Armor" type="Proficiency" id="ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_BESKAR_WEAVE_ARMOR" source="SW-MSV-Edition">
     <description><p>Beskar weave armor proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Armor: Composite Armor" type="Proficiency" id="ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_COMPOSITE_ARMOR" source="SW-MSV-Edition">
     <description><p>Composite armor proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Armor: Battle Armor" type="Proficiency" id="ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_BATTLE_ARMOR" source="SW-MSV-Edition">
     <description><p>Battle armor proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Armor: Assault Armor" type="Proficiency" id="ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_ASSAULT_ARMOR" source="SW-MSV-Edition">
     <description><p>Assault armor proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Armor: Durasteel Armor" type="Proficiency" id="ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_DURASTEEL_ARMOR" source="SW-MSV-Edition">
     <description><p>Durasteel armor proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Armor: Physical Shield" type="Proficiency" id="ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_PHYSICAL_SHIELD" source="SW-MSV-Edition">
     <description><p>Physical shield proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Armor: Energy Shield" type="Proficiency" id="ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_ENERGY_SHIELD" source="SW-MSV-Edition">
     <description><p>Energy shield proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Blaster Pistol" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_PISTOL" source="SW-MSV-Edition">
     <description><p>Blaster Pistol proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Energy Bow" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ENERGY_BOW" source="SW-MSV-Edition">
     <description><p>Energy Bow proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Ion Pistol" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ION_PISTOL" source="SW-MSV-Edition">
     <description><p>Ion Pistol proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Sonic Pistol" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SONIC_PISTOL" source="SW-MSV-Edition">
     <description><p>Sonic Pistol proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Cryo Pistol" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CRYO_PISTOL" source="SW-MSV-Edition">
     <description><p>Cryo Pistol proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Slugthrower Pistol" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SLUGTHROWER_PISTOL" source="SW-MSV-Edition">
     <description><p>Slugthrower Pistol proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Disruptor Pistol" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_DISRUPTOR_PISTOL" source="SW-MSV-Edition">
     <description><p>Disruptor Pistol proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Stealth Pistol" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_STEALTH_PISTOL" source="SW-MSV-Edition">
     <description><p>Stealth Pistol proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Wrist Blaster" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_BLASTER" source="SW-MSV-Edition">
     <description><p>Wrist Blaster proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Wrist Launcher" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER" source="SW-MSV-Edition">
     <description><p>Wrist Launcher proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Blaster Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_RIFLE" source="SW-MSV-Edition">
     <description><p>Blaster Rifle proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Disruptor Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_DISRUPTOR_RIFLE" source="SW-MSV-Edition">
     <description><p>Disruptor Rifle proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Heavy Bowcaster" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_BOWCASTER" source="SW-MSV-Edition">
     <description><p>Heavy Bowcaster proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Ion Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ION_RIFLE" source="SW-MSV-Edition">
     <description><p>Ion Rifle proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Sonic Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SONIC_RIFLE" source="SW-MSV-Edition">
     <description><p>Sonic Rifle proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Slugthrower Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SLUGTHROWER_RIFLE" source="SW-MSV-Edition">
     <description><p>Slugthrower Rifle proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Cryo Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CRYO_RIFLE" source="SW-MSV-Edition">
     <description><p>Cryo Rifle proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Railgun" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_RAILGUN" source="SW-MSV-Edition">
     <description><p>Railgun proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Arc Caster" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ARC_CASTER" source="SW-MSV-Edition">
     <description><p>Arc Caster proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Sniper Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SNIPER_RIFLE" source="SW-MSV-Edition">
     <description><p>Sniper Rifle proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Minigun/Rotary Cannon" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_MINIGUN/ROTARY_CANNON" source="SW-MSV-Edition">
     <description><p>Minigun/Rotary Cannon proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Flamethrower" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_FLAMETHROWER" source="SW-MSV-Edition">
     <description><p>Flamethrower proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Cycler Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CYCLER_RIFLE" source="SW-MSV-Edition">
     <description><p>Cycler Rifle proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Lightsaber" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER" source="SW-MSV-Edition">
     <description><p>Lightsaber proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Lightstaff" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSTAFF" source="SW-MSV-Edition">
     <description><p>Lightstaff proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Crossguard Saber" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CROSSGUARD_SABER" source="SW-MSV-Edition">
     <description><p>Crossguard Saber proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Lightwhip" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTWHIP" source="SW-MSV-Edition">
     <description><p>Lightwhip proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Martial Lightsaber" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_LIGHTSABER" source="SW-MSV-Edition">
     <description><p>Martial Lightsaber proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Lightsaber Pike" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER_PIKE" source="SW-MSV-Edition">
     <description><p>Lightsaber Pike proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Double Bladed Lightsaber" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_BLADED_LIGHTSABER" source="SW-MSV-Edition">
     <description><p>Double Bladed Lightsaber proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Vibrospear" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSPEAR" source="SW-MSV-Edition">
     <description><p>Vibrospear proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Vibrodagger" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBRODAGGER" source="SW-MSV-Edition">
     <description><p>Vibrodagger proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Vibrostaff" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSTAFF" source="SW-MSV-Edition">
     <description><p>Vibrostaff proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Vibro Double-Blade" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBRO_DOUBLE-BLADE" source="SW-MSV-Edition">
     <description><p>Vibro Double-Blade proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Electrostaff" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ELECTROSTAFF" source="SW-MSV-Edition">
     <description><p>Electrostaff proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Vibrosword" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSWORD" source="SW-MSV-Edition">
     <description><p>Vibrosword proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Virbo-Axe" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIRBO-AXE" source="SW-MSV-Edition">
     <description><p>Virbo-Axe proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Vibropike" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROPIKE" source="SW-MSV-Edition">
     <description><p>Vibropike proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Electrowhip" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ELECTROWHIP" source="SW-MSV-Edition">
     <description><p>Electrowhip proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Electrobaton" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ELECTROBATON" source="SW-MSV-Edition">
     <description><p>Electrobaton proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Thermal Detenator" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_THERMAL_DETENATOR" source="SW-MSV-Edition">
     <description><p>Thermal Detenator proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Flashbang" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_FLASHBANG" source="SW-MSV-Edition">
     <description><p>Flashbang proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Cryo Grenade" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CRYO_GRENADE" source="SW-MSV-Edition">
     <description><p>Cryo Grenade proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Ion Grenade" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ION_GRENADE" source="SW-MSV-Edition">
     <description><p>Ion Grenade proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Incendiary Grenade" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_INCENDIARY_GRENADE" source="SW-MSV-Edition">
     <description><p>Incendiary Grenade proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Corrosive Grenade" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CORROSIVE_GRENADE" source="SW-MSV-Edition">
     <description><p>Corrosive Grenade proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Gas Grenade" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_GAS_GRENADE" source="SW-MSV-Edition">
     <description><p>Gas Grenade proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Fragmentation Grenade" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_FRAGMENTATION_GRENADE" source="SW-MSV-Edition">
     <description><p>Fragmentation Grenade proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Plasma Grenade" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_PLASMA_GRENADE" source="SW-MSV-Edition">
     <description><p>Plasma Grenade proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Shock Grenade" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SHOCK_GRENADE" source="SW-MSV-Edition">
     <description><p>Shock Grenade proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Stun Grenade" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_STUN_GRENADE" source="SW-MSV-Edition">
     <description><p>Stun Grenade proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Remote Flashbang" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_FLASHBANG" source="SW-MSV-Edition">
     <description><p>Remote Flashbang proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Remote Cryo Detonator" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_CRYO_DETONATOR" source="SW-MSV-Edition">
     <description><p>Remote Cryo Detonator proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Remote Ion Detonator" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_ION_DETONATOR" source="SW-MSV-Edition">
     <description><p>Remote Ion Detonator proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Remote Incendiary Detonator" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_INCENDIARY_DETONATOR" source="SW-MSV-Edition">
     <description><p>Remote Incendiary Detonator proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Remote Corrosive Detonator" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_CORROSIVE_DETONATOR" source="SW-MSV-Edition">
     <description><p>Remote Corrosive Detonator proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Remote Gas Detonator" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_GAS_DETONATOR" source="SW-MSV-Edition">
     <description><p>Remote Gas Detonator proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Remote Fragmentation Detonator" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_FRAGMENTATION_DETONATOR" source="SW-MSV-Edition">
     <description><p>Remote Fragmentation Detonator proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Remote Plasma Detonator" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_PLASMA_DETONATOR" source="SW-MSV-Edition">
     <description><p>Remote Plasma Detonator proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Remote Shock Detonator" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_SHOCK_DETONATOR" source="SW-MSV-Edition">
     <description><p>Remote Shock Detonator proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Remote Stun Detonator" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_REMOTE_STUN_DETONATOR" source="SW-MSV-Edition">
     <description><p>Remote Stun Detonator proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Flashbang Mine" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_FLASHBANG_MINE" source="SW-MSV-Edition">
     <description><p>Flashbang Mine proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Cryo Mine" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CRYO_MINE" source="SW-MSV-Edition">
     <description><p>Cryo Mine proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Ion Mine" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ION_MINE" source="SW-MSV-Edition">
     <description><p>Ion Mine proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Incendiary Mine" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_INCENDIARY_MINE" source="SW-MSV-Edition">
     <description><p>Incendiary Mine proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Corrosive Mine" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CORROSIVE_MINE" source="SW-MSV-Edition">
     <description><p>Corrosive Mine proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Gas Mine" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_GAS_MINE" source="SW-MSV-Edition">
     <description><p>Gas Mine proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Fragmentation Mine" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_FRAGMENTATION_MINE" source="SW-MSV-Edition">
     <description><p>Fragmentation Mine proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Plasma Mine" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_PLASMA_MINE" source="SW-MSV-Edition">
     <description><p>Plasma Mine proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Shock Mine" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SHOCK_MINE" source="SW-MSV-Edition">
     <description><p>Shock Mine proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Stun Mine" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_STUN_MINE" source="SW-MSV-Edition">
     <description><p>Stun Mine proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Poison Dart" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_POISON_DART" source="SW-MSV-Edition">
     <description><p>Poison Dart proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Sleep Dart" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SLEEP_DART" source="SW-MSV-Edition">
     <description><p>Sleep Dart proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Electrifying Dart" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ELECTRIFYING_DART" source="SW-MSV-Edition">
     <description><p>Electrifying Dart proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Panic Dart" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_PANIC_DART" source="SW-MSV-Edition">
     <description><p>Panic Dart proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Paralysis Dart" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_PARALYSIS_DART" source="SW-MSV-Edition">
     <description><p>Paralysis Dart proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Plasma Rocket" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_PLASMA_ROCKET" source="SW-MSV-Edition">
     <description><p>Plasma Rocket proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Cryo Rocket" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CRYO_ROCKET" source="SW-MSV-Edition">
     <description><p>Cryo Rocket proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Ion Rocket" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ION_ROCKET" source="SW-MSV-Edition">
     <description><p>Ion Rocket proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Incendiary Rocket" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_INCENDIARY_ROCKET" source="SW-MSV-Edition">
     <description><p>Incendiary Rocket proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Corrosive Rocket" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CORROSIVE_ROCKET" source="SW-MSV-Edition">
     <description><p>Corrosive Rocket proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Fragmentation Rocket" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_FRAGMENTATION_ROCKET" source="SW-MSV-Edition">
     <description><p>Fragmentation Rocket proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Fibercord Whip" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_FIBERCORD_WHIP" source="SW-MSV-Edition">
     <description><p>Fibercord Whip proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Wristflame" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRISTFLAME" source="SW-MSV-Edition">
     <description><p>Wristflame proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Poison" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_POISON" source="SW-MSV-Edition">
     <description><p>Poison proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Sleep Poison" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SLEEP_POISON" source="SW-MSV-Edition">
     <description><p>Sleep Poison proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Paralysing Poison" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_PARALYSING_POISON" source="SW-MSV-Edition">
     <description><p>Paralysing Poison proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Panic Poison" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_PANIC_POISON" source="SW-MSV-Edition">
     <description><p>Panic Poison proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Minor Kolto Pack" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_MINOR_KOLTO_PACK" source="SW-MSV-Edition">
     <description><p>Minor Kolto Pack proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Medium Kolto Pack" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_MEDIUM_KOLTO_PACK" source="SW-MSV-Edition">
     <description><p>Medium Kolto Pack proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Major Kolto Pack" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_MAJOR_KOLTO_PACK" source="SW-MSV-Edition">
     <description><p>Major Kolto Pack proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Bacta Pack" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_BACTA_PACK" source="SW-MSV-Edition">
     <description><p>Bacta Pack proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Weapon: Ommni Box" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_OMMNI_BOX" source="SW-MSV-Edition">
     <description><p>Ommni Box proficiency</p></description>
-    <rules />
+
   </element>
 
   
   <element name="Musical Instrument: Bandfill" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_BANDFILL" source="SW-MSV-Edition">
     <description><p>Bandfill proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Musical Instrument: Chindinkalu Horn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_CHINDINKALU_HORN" source="SW-MSV-Edition">
     <description><p>Chindinkalu horn proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Musical Instrument: Drum" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_DRUM" source="SW-MSV-Edition">
     <description><p>Drum proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Musical Instrument: Fanfar" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FANFAR" source="SW-MSV-Edition">
     <description><p>Fanfar proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Musical Instrument: Fizzz" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FIZZZ" source="SW-MSV-Edition">
     <description><p>Fizzz proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Musical Instrument: Flute" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FLUTE" source="SW-MSV-Edition">
     <description><p>Flute proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Musical Instrument: Kloo Horn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_KLOO_HORN" source="SW-MSV-Edition">
     <description><p>Kloo horn proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Musical Instrument: Lute" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_LUTE" source="SW-MSV-Edition">
     <description><p>Lute proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Musical Instrument: Mandoviol" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_MANDOVIOL" source="SW-MSV-Edition">
     <description><p>Mandoviol proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Musical Instrument: Ommni Box" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_OMMNI_BOX" source="SW-MSV-Edition">
     <description><p>Ommni box proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Musical Instrument: Slitherhorn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_SLITHERHORN" source="SW-MSV-Edition">
     <description><p>Slitherhorn proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Musical Instrument: Traz" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_TRAZ" source="SW-MSV-Edition">
     <description><p>Traz proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Musical Instrument: Valahorn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_VALAHORN" source="SW-MSV-Edition">
     <description><p>Valahorn proficiency</p></description>
-    <rules />
+
   </element>
   <element name="Musical Instrument: Xantha" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_XANTHA" source="SW-MSV-Edition">
     <description><p>Xantha proficiency</p></description>
-    <rules />
+
   </element>
 </elements>
