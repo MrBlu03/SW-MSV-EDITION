@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <elements>
   <element id="ID_CLASS_INQUISITOR" name="Inquisitor" type="Class" source="SW-MSV-Edition">
     <description>
@@ -37,42 +37,42 @@
       <set name="hd">d8</set>
     </setters>
     <rules>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_LIGHT_ARMOUR"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_SIMPLE_OR_MARTIAL_LIGHTWEAPONS_WITH_FINESSE_PROPERTY"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_SIMPLE_OR_MARTIAL_VIBROWEAPONS_WITH_FINESSE_PROPERTY"/>
-      <select type="Proficiency" name="Skill Proficiency (Inquisitor)" number="4" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH"/>
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SPELLCASTING" level="1"/>
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_EXPERTISE" level="1"/>
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_ASSASSINATE" level="1"/>
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_MINOR_TELEKINESIS" level="1"/>
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_CUNNING_ACTION" level="2"/>
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_TRICKSTER" level="3"/>
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_MANIPULATOR" level="3"/>
-      <select type="Feat" name="Feat (Inquisitor)" level="4"/>
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_UNCANNY_DODGE" level="5"/>
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_EXPERTISE" level="6"/>
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_EVASION" level="7"/>
-      <select type="Feat" name="Feat (Inquisitor)" level="8"/>
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SUBCLASS_ABILITY" level="9"/>
-      <select type="Feat" name="Feat (Inquisitor)" level="10"/>
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_RELIABLE_TALENT" level="11"/>
-      <select type="Feat" name="Feat (Inquisitor)" level="12"/>
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SUBCLASS_ABILITY" level="13"/>
-      <select type="Feat" name="Feat (Inquisitor)" level="14"/>
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SLIPPERY_MIND" level="15"/>
-      <select type="Feat" name="Feat (Inquisitor)" level="16"/>
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SUBCLASS_ABILITY" level="17"/>
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_ELUSIVE" level="18"/>
-      <select type="Feat" name="Feat (Inquisitor)" level="19"/>
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_UNSTOPPABLE" level="20"/>
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SUBCLASS" level="3"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_LIGHT_ARMOUR" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_OR_MARTIAL_LIGHTWEAPONS_WITH_FINESSE_PROPERTY" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_OR_MARTIAL_VIBROWEAPONS_WITH_FINESSE_PROPERTY" />
+      <select type="Proficiency" name="Skill Proficiency (Inquisitor)" number="4" supports="ID_MSV_PROFICIENCY_SKILL_ACROBATICS|ID_MSV_PROFICIENCY_SKILL_ATHLETICS|ID_MSV_PROFICIENCY_SKILL_DECEPTION|ID_MSV_PROFICIENCY_SKILL_INSIGHT|ID_MSV_PROFICIENCY_SKILL_INTIMIDATION|ID_MSV_PROFICIENCY_SKILL_INVESTIGATION|ID_MSV_PROFICIENCY_SKILL_PERCEPTION|ID_MSV_PROFICIENCY_SKILL_PERSUASION|ID_MSV_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_MSV_PROFICIENCY_SKILL_STEALTH" />
+      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SPELLCASTING" level="1" />
+      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_EXPERTISE" level="1" />
+      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_ASSASSINATE" level="1" />
+      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_MINOR_TELEKINESIS" level="1" />
+      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_CUNNING_ACTION" level="2" />
+      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_TRICKSTER" level="3" />
+      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_MANIPULATOR" level="3" />
+      <select type="Feat" name="Feat (Inquisitor)" level="4" />
+      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_UNCANNY_DODGE" level="5" />
+      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_EXPERTISE" level="6" />
+      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_EVASION" level="7" />
+      <select type="Feat" name="Feat (Inquisitor)" level="8" />
+      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SUBCLASS_ABILITY" level="9" />
+      <select type="Feat" name="Feat (Inquisitor)" level="10" />
+      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_RELIABLE_TALENT" level="11" />
+      <select type="Feat" name="Feat (Inquisitor)" level="12" />
+      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SUBCLASS_ABILITY" level="13" />
+      <select type="Feat" name="Feat (Inquisitor)" level="14" />
+      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SLIPPERY_MIND" level="15" />
+      <select type="Feat" name="Feat (Inquisitor)" level="16" />
+      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SUBCLASS_ABILITY" level="17" />
+      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_ELUSIVE" level="18" />
+      <select type="Feat" name="Feat (Inquisitor)" level="19" />
+      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_UNSTOPPABLE" level="20" />
+      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SUBCLASS" level="3" />
     </rules>
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_ASSASSINATE" name="Assassinate" type="Class Feature" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.</p>
       <p class="indent">You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</p>
@@ -83,31 +83,31 @@
 You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</description>
     </sheet>
     <rules>
-      <stat name="assassinate:count" value="1" level="1"/>
-      <stat name="assassinate:count" value="2" level="3"/>
-      <stat name="assassinate:count" value="3" level="5"/>
-      <stat name="assassinate:count" value="4" level="7"/>
-      <stat name="assassinate:count" value="5" level="9"/>
-      <stat name="assassinate:count" value="6" level="11"/>
-      <stat name="assassinate:count" value="7" level="13"/>
-      <stat name="assassinate:count" value="8" level="15"/>
-      <stat name="assassinate:count" value="9" level="17"/>
-      <stat name="assassinate:count" value="10" level="19"/>
-      <stat name="assassinate:die" value="6" bonus="die"/>
+      <stat name="assassinate:count" value="1" level="1" />
+      <stat name="assassinate:count" value="2" level="3" />
+      <stat name="assassinate:count" value="3" level="5" />
+      <stat name="assassinate:count" value="4" level="7" />
+      <stat name="assassinate:count" value="5" level="9" />
+      <stat name="assassinate:count" value="6" level="11" />
+      <stat name="assassinate:count" value="7" level="13" />
+      <stat name="assassinate:count" value="8" level="15" />
+      <stat name="assassinate:count" value="9" level="17" />
+      <stat name="assassinate:count" value="10" level="19" />
+      <stat name="assassinate:die" value="6" bonus="die" />
     </rules>
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_MINOR_TELEKINESIS" name="Minor Telekinesis" type="Class Feature" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: 45 feet; Components: Somatic; Duration: Concentration, Up to 1 round; You use the Force to manipulate a small or medium object, or a small creature, that you can see within range. You make an ability check using your Force ability, contested by the target’s Strength check. On a success, you may suspend and/or move up to 30 feet or throw the target. If you choose to suspend the target, it remains suspended for the duration. If you throw the target, make a ranged Force attack with a range of 30/60 feet. On a hit, the target you throw at takes kinetic damage based on what is thrown: Small object: 2d4 kinetic damage, Medium object: 2d6 kinetic damage, Small creature: 1d4 kinetic damage. If a creature is thrown, the thrown small creature takes 1d8 + your Force ability modifier kinetic damage.</p>
     </description>
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: 45 feet; Components: Somatic; Duration: Concentration, Up to 1 round; You use the Force to manipulate a small or medium object, or a small creature, that you can see within range. You make an ability check using your Force ability, contested by the target’s Strength check. On a success, you may suspend and/or move up to 30 feet or throw the target. If you choose to suspend the target, it remains suspended for the duration. If you throw the target, make a ranged Force attack with a range of 30/60 feet. On a hit, the target you throw at takes kinetic damage based on what is thrown: Small object: 2d4 kinetic damage, Medium object: 2d6 kinetic damage, Small creature: 1d4 kinetic damage. If a creature is thrown, the thrown small creature takes 1d8 + your Force ability modifier kinetic damage.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_EXPERTISE" name="Expertise" type="Class Feature" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Gain expertise in a skill you're proficient with.</p>
     </description>
@@ -115,113 +115,113 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <description>Gain expertise in a skill you're proficient with.</description>
     </sheet>
     <rules>
-      <select type="Class Feature" name="Expertise" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+      <select type="Class Feature" name="Expertise" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE" />
     </rules>
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_FEAT" name="Feat" type="Class Feature" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Choose a feat to further customize your character.</p>
     </description>
     <rules>
-      <select type="Feat" name="Feat"/>
+      <select type="Feat" name="Feat" />
     </rules>
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_CUNNING_ACTION" name="Cunning Action" type="Class Feature" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Your quick thinking and agility allow you to move and act quickly. You can take the Dash, Disengage, or Hide actions as a Bonus Action.</p>
     </description>
     <sheet>
       <description>Your quick thinking and agility allow you to move and act quickly. You can take the Dash, Disengage, or Hide actions as a Bonus Action.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_UNCANNY_DODGE" name="Uncanny Dodge" type="Class Feature" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</p>
     </description>
     <sheet>
       <description>When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_EVASION" name="Evasion" type="Class Feature" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>When making a Dexterity saving throw: On a failed save take half damage. On a successgul save take no damage (can't use when incapacitated).</p>
     </description>
     <sheet>
       <description>When making a Dexterity saving throw: On a failed save take half damage. On a successgul save take no damage (can't use when incapacitated).</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_RELIABLE_TALENT" name="Reliable Talent" type="Class Feature" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>When you make an ability check with a skill you're proficient with, the lowest you can throw is 10.</p>
     </description>
     <sheet>
       <description>When you make an ability check with a skill you're proficient with, the lowest you can throw is 10.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_SLIPPERY_MIND" name="Slippery Mind" type="Class Feature" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>You gain proficiency in Wisdom saving throws.</p>
     </description>
     <sheet>
       <description>You gain proficiency in Wisdom saving throws.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_ELUSIVE" name="Elusive" type="Class Feature" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>No attack roll can have advantage on you unless you're incapacitated.</p>
     </description>
     <sheet>
       <description>No attack roll can have advantage on you unless you're incapacitated.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_UNSTOPPABLE" name="Unstoppable" type="Class Feature" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, turn the roll into a 20 once per short rest.</p>
     </description>
     <sheet>
       <description>If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, turn the roll into a 20 once per short rest.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_TRICKSTER" name="Trickster" type="Class Feature" source="SW-MSV-Edition">
     <description>
       <p>Trickster - See Inquisitor class description for details.</p>
     </description>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_MANIPULATOR" name="Manipulator" type="Class Feature" source="SW-MSV-Edition">
     <description>
       <p>Manipulator - See Inquisitor class description for details.</p>
     </description>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_SUBCLASS_ABILITY" name="Subclass Feature" type="Class Feature" source="SW-MSV-Edition">
     <description>
       <p>You gain a feature from your Inquisitor subclass.</p>
     </description>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_SUBCLASS" name="Inquisitor Subclass" type="Class Feature" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Choose a Inquisitor subclass that defines your specialized path.</p>
     </description>
     <rules>
-      <select type="Archetype" name="Inquisitor Subclass" supports="ID_CLASS_INQUISITOR"/>
+      <select type="Archetype" name="Inquisitor Subclass" supports="ID_CLASS_INQUISITOR" />
     </rules>
   </element>
   <element id="ID_SUBCLASS_SHADOW" name="Shadow" type="Archetype" source="SW-MSV-Edition">
@@ -230,15 +230,15 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <p>Shadow form</p>
     </description>
     <rules>
-      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_BLIND" level="3"/>
-      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_CLOAK" level="3"/>
-      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_FADE" level="9"/>
-      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_DARKNESS" level="13"/>
-      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_PHANTOM" level="17"/>
+      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_BLIND" level="3" />
+      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_CLOAK" level="3" />
+      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_FADE" level="9" />
+      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_DARKNESS" level="13" />
+      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_PHANTOM" level="17" />
     </rules>
   </element>
   <element id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_BLIND" name="Force Blind" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: 10 turns; Choose a target you can see within range. That creature must make a Constitution saving throw. On a failed save, the creature is blinded. On a successful save, the creature isn't blinded.</p>
     </description>
@@ -255,10 +255,10 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: 10 turns; Choose a target you can see within range. That creature must make a Constitution saving throw. On a failed save, the creature is blinded. On a successful save, the creature isn't blinded.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_CLOAK" name="Force Cloak" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Bonus Action; Range: Self; Components: None; Duration: Until the end of your next turn; When hiding successfully, you can turn invisible.</p>
     </description>
@@ -275,10 +275,10 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>Cantrip, Casting Time: 1 Bonus Action; Range: Self; Components: None; Duration: Until the end of your next turn; When hiding successfully, you can turn invisible.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_FADE" name="Force Fade" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Reaction; Range: Self; Components: None; Duration: Until the end of your next turn; When killing a creature, turn invisible.</p>
     </description>
@@ -295,10 +295,10 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>Cantrip, Casting Time: 1 Reaction; Range: Self; Components: None; Duration: Until the end of your next turn; When killing a creature, turn invisible.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_DARKNESS" name="Force Darkness" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: Action; Range: 60 feet; Components: Somatic; Duration: Concentration, Up to 4 rounds; Choose a point within range and create a circle with a radius of 20 feet. The area becomes pitch black and is heavily obscured to all who stand in it except yourself.</p>
     </description>
@@ -315,10 +315,10 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>Cantrip, Casting Time: Action; Range: 60 feet; Components: Somatic; Duration: Concentration, Up to 4 rounds; Choose a point within range and create a circle with a radius of 20 feet. The area becomes pitch black and is heavily obscured to all who stand in it except yourself.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_PHANTOM" name="Force Phantom" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: Self; Components: None; Duration: Instantaneous; This ability allows you to walk through walls. You may pass through up to 5 feet of solid material and must end your movement outside the wall</p>
     </description>
@@ -335,7 +335,7 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: Self; Components: None; Duration: Instantaneous; This ability allows you to walk through walls. You may pass through up to 5 feet of solid material and must end your movement outside the wall</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_SUBCLASS_TRICKSTER" name="Trickster" type="Archetype" source="SW-MSV-Edition">
     <supports>ID_CLASS_INQUISITOR</supports>
@@ -343,15 +343,15 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <p>Trickster form</p>
     </description>
     <rules>
-      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_DISGUISE" level="3"/>
-      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_PHANTOM_STRIDE" level="3"/>
-      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_ILLUSION" level="9"/>
-      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_NIGHTMARE" level="13"/>
-      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_SPIRIT" level="17"/>
+      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_DISGUISE" level="3" />
+      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_PHANTOM_STRIDE" level="3" />
+      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_ILLUSION" level="9" />
+      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_NIGHTMARE" level="13" />
+      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_SPIRIT" level="17" />
     </rules>
   </element>
   <element id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_DISGUISE" name="Force Disguise" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: Self; Components: None; Duration: Concentration, Up to 10 minutes; Use the Force to disguise yourself by altering people's perception of you.</p>
     </description>
@@ -368,10 +368,10 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: Self; Components: None; Duration: Concentration, Up to 10 minutes; Use the Force to disguise yourself by altering people's perception of you.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_SUBCLASS_TRICKSTER_ABILITY_PHANTOM_STRIDE" name="Phantom Stride" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Bonus Action; Range: Up to double your movement; Components: None; Duration: Instantaneous; You can teleport to an enemy up to double your movement away. This does not break stealth unless you teleport into line of sight.</p>
     </description>
@@ -388,10 +388,10 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>Cantrip, Casting Time: 1 Bonus Action; Range: Up to double your movement; Components: None; Duration: Instantaneous; You can teleport to an enemy up to double your movement away. This does not break stealth unless you teleport into line of sight.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_ILLUSION" name="Force Illusion" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Bonus Action; Range: 60 feet; Components: Somatic; Duration: 2 rounds; Use the Force to make an illusion within range. Targets who can see the illusion must make a Wisdom saving throw. On a failed save, the target becomes distracted. Creatures attacking a distracted target have advantage, and distracted targets have disadvantage on saving throws. As soon as they're hit, they are no longer distracted. On a successful save, the creature isn't distracted.</p>
     </description>
@@ -408,10 +408,10 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>Cantrip, Casting Time: 1 Bonus Action; Range: 60 feet; Components: Somatic; Duration: 2 rounds; Use the Force to make an illusion within range. Targets who can see the illusion must make a Wisdom saving throw. On a failed save, the target becomes distracted. Creatures attacking a distracted target have advantage, and distracted targets have disadvantage on saving throws. As soon as they're hit, they are no longer distracted. On a successful save, the creature isn't distracted.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_NIGHTMARE" name="Force Nightmare" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: None; Duration: 1 round; Use the Force to make a creature's worst nightmare seem real. All creatures within range must make a Wisdom saving throw. On a failed save, the creature becomes frightened. On a successful save, the creature doesn't become frightened.</p>
     </description>
@@ -428,10 +428,10 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: None; Duration: 1 round; Use the Force to make a creature's worst nightmare seem real. All creatures within range must make a Wisdom saving throw. On a failed save, the creature becomes frightened. On a successful save, the creature doesn't become frightened.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_SPIRIT" name="Force Spirit" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: 15 feet; Components: None; Duration: Instantaneous; Make a dark spirit clone of yourself that has 1 Hit Point within range. This dark spirit must roll initiative, has 3/4th of your AC rounded up, and has all your abilities except your subclass abilities. You are limited to 1 spirit at a time.</p>
     </description>
@@ -448,7 +448,7 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: 15 feet; Components: None; Duration: Instantaneous; Make a dark spirit clone of yourself that has 1 Hit Point within range. This dark spirit must roll initiative, has 3/4th of your AC rounded up, and has all your abilities except your subclass abilities. You are limited to 1 spirit at a time.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_SUBCLASS_MANIPULATOR" name="Manipulator" type="Archetype" source="SW-MSV-Edition">
     <supports>ID_CLASS_INQUISITOR</supports>
@@ -456,15 +456,15 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <p>Manipulator form</p>
     </description>
     <rules>
-      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_MIND_TRAP" level="3"/>
-      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_FORCE_STASIS" level="3"/>
-      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_CONFUSE" level="9"/>
-      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_MIND_PROBE" level="13"/>
-      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_FORCE_LINK" level="17"/>
+      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_MIND_TRAP" level="3" />
+      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_FORCE_STASIS" level="3" />
+      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_CONFUSE" level="9" />
+      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_MIND_PROBE" level="13" />
+      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_FORCE_LINK" level="17" />
     </rules>
   </element>
   <element id="ID_SUBCLASS_MANIPULATOR_ABILITY_MIND_TRAP" name="Mind Trap" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: Until the end of their next turn; Use the Force to trap someone in their own mind. The creature must make an Intelligence saving throw. On a failed save, they become trapped. Stunning them for the duration or until they get hit. On a successful save, they don't get trapped.</p>
     </description>
@@ -481,10 +481,10 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: Until the end of their next turn; Use the Force to trap someone in their own mind. The creature must make an Intelligence saving throw. On a failed save, they become trapped. Stunning them for the duration or until they get hit. On a successful save, they don't get trapped.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_SUBCLASS_MANIPULATOR_ABILITY_FORCE_STASIS" name="Force Stasis" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: Concentration, Up to 1 round; Use the Force to freeze someone in place. You make an ability check using your Force ability, contested by the target's Strength check. On a success, the target is immobilized.</p>
     </description>
@@ -501,10 +501,10 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: Concentration, Up to 1 round; Use the Force to freeze someone in place. You make an ability check using your Force ability, contested by the target's Strength check. On a success, the target is immobilized.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_SUBCLASS_MANIPULATOR_ABILITY_CONFUSE" name="Confuse" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: 60 feet; Components: None; Duration: Until the end of their next turn; Use the Force to confuse a creature. The creature must make an Wisdom saving throw. On a failed save, they must attack the nearest creature on their next turn. On a successful save, the creature is unaffected.</p>
     </description>
@@ -521,10 +521,10 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: 60 feet; Components: None; Duration: Until the end of their next turn; Use the Force to confuse a creature. The creature must make an Wisdom saving throw. On a failed save, they must attack the nearest creature on their next turn. On a successful save, the creature is unaffected.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_SUBCLASS_MANIPULATOR_ABILITY_MIND_PROBE" name="Mind Probe" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: Touch; Components: None; Duration: 1 minute; Use the Force to forcibly read a creature’s mind, accessing both current thoughts and hidden memories. The target must be restrained in order to use this.</p>
     </description>
@@ -541,10 +541,10 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: Touch; Components: None; Duration: 1 minute; Use the Force to forcibly read a creature’s mind, accessing both current thoughts and hidden memories. The target must be restrained in order to use this.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_SUBCLASS_MANIPULATOR_ABILITY_FORCE_LINK" name="Force Link" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: 60 feet; Components: None; Duration: 3 rounds; Use the Force to link your life force to a hostile creature. Whenever you take damage, the linked creature must make an Intelligence saving throw. On a failed save, the creature takes half of the damage as kinetic damage you would have taken and you take half of the damage as the damage type of the original attack. On a successful save, the creature takes no damage and you take full damage as the damage type of the original attack. You can only link to one creature.</p>
     </description>
@@ -561,10 +561,10 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>Cantrip, Casting Time: 1 Action; Range: 60 feet; Components: None; Duration: 3 rounds; Use the Force to link your life force to a hostile creature. Whenever you take damage, the linked creature must make an Intelligence saving throw. On a failed save, the creature takes half of the damage as kinetic damage you would have taken and you take half of the damage as the damage type of the original attack. On a successful save, the creature takes no damage and you take full damage as the damage type of the original attack. You can only link to one creature.</description>
     </sheet>
-    <rules/>
+    <rules />
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_SPELLCASTING" name="Spellcasting" type="Class Feature" source="SW-MSV-Edition">
-    <compendium display="true"/>
+    <compendium display="true" />
     <description>
       <p>An Inquisitor's power comes from the dark side of the Force. You have learned to draw on this power to cast spells.</p>
       <p class="indent">
@@ -596,9 +596,9 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <description>Charisma is your spellcasting ability for your Inquisitor spells. Your spell save DC is 8 + your proficiency bonus + your Charisma modifier, and your spell attack modifier is your proficiency bonus + your Charisma modifier.</description>
     </sheet>
     <rules>
-      <stat name="spellcasting" value="charisma"/>
-      <select type="Spell" name="Cantrip (Inquisitor)" level="1" number="2" supports="ID_SPELLLIST_INQUISITOR"/>
-      <select type="Spell" name="1st Level Spell (Inquisitor)" level="1" number="3" supports="ID_SPELLLIST_INQUISITOR"/>
+      <stat name="spellcasting" value="charisma" />
+      <select type="Spell" name="Cantrip (Inquisitor)" level="1" number="2" supports="ID_SPELLLIST_INQUISITOR" />
+      <select type="Spell" name="1st Level Spell (Inquisitor)" level="1" number="3" supports="ID_SPELLLIST_INQUISITOR" />
     </rules>
   </element>
 </elements>

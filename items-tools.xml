@@ -1,49 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <elements>
-  <!-- Tool Proficiency Definitions -->
-  <element name="Tool: Hacking Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_HACKING_KIT" source="SW-MSV-Edition">
+  
+  <element name="Tool: Hacking Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HACKING_KIT" source="SW-MSV-Edition">
     <description>
       <p>A hacking kit contains specialized equipment for hacking unconscious droids and security systems.</p>
     </description>
-    <rules/>
+    <rules />
   </element>
 
-  <element name="Tool: Disguise Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_DISGUISE_KIT" source="SW-MSV-Edition">
+  <element name="Tool: Disguise Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_DISGUISE_KIT" source="SW-MSV-Edition">
     <description>
       <p>A disguise kit contains cosmetics, hair dyes, small props, and various pieces of clothing to change your appearance.</p>
     </description>
-    <rules/>
+    <rules />
   </element>
 
-  <element name="Tool: Poisoning Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_POISONING_KIT" source="SW-MSV-Edition">
+  <element name="Tool: Poisoning Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_POISONING_KIT" source="SW-MSV-Edition">
     <description>
       <p>A poisoning kit contains the tools needed to create and apply poisons to weapons.</p>
     </description>
-    <rules/>
+    <rules />
   </element>
 
-  <element name="Tool: Jumppack" type="Proficiency" id="ID_PROFICIENCY_TOOL_JUMPPACK" source="SW-MSV-Edition">
+  <element name="Tool: Jumppack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JUMPPACK" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with jumppack and jump boots operation.</p>
     </description>
-    <rules/>
+    <rules />
   </element>
 
-  <element name="Tool: Hoverpack" type="Proficiency" id="ID_PROFICIENCY_TOOL_HOVERPACK" source="SW-MSV-Edition">
+  <element name="Tool: Hoverpack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with hoverpack and hover boots operation.</p>
     </description>
-    <rules/>
+    <rules />
   </element>
 
-  <element name="Tool: Jetpack" type="Proficiency" id="ID_PROFICIENCY_TOOL_JETPACK" source="SW-MSV-Edition">
+  <element name="Tool: Jetpack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JETPACK" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with jetpack and jet boots operation.</p>
     </description>
-    <rules/>
+    <rules />
   </element>
 
-  <!-- Tool Items -->
+  
   <element name="Repair Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_REPAIR_KIT">
     <supports>ID_INTERNAL_TOOL</supports>
     <description>
@@ -145,7 +145,7 @@
     </setters>
   </element>
 
-  <!-- Movement Equipment -->
+  
   <element name="Jumppack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_JUMPPACK">
     <description>
       <p>A jumppack allows you to jump up to 25 feet vertically or horizontally as a bonus action. Provokes opportunity attacks when leaving or landing in enemy melee range. Requires jumppack proficiency.</p>
@@ -158,7 +158,7 @@
       <set name="slot">body</set>
     </setters>
     <rules>
-      <grant type="Action" id="ID_ACTION_JUMPPACK_JUMP"/>
+      <grant type="Action" id="ID_ACTION_JUMPPACK_JUMP" />
     </rules>
   </element>
 
@@ -187,7 +187,7 @@
       <set name="slot">body</set>
     </setters>
     <rules>
-      <grant type="Action" id="ID_ACTION_HOVERPACK_HOVER"/>
+      <grant type="Action" id="ID_ACTION_HOVERPACK_HOVER" />
     </rules>
   </element>
 
@@ -216,8 +216,8 @@
       <set name="slot">body</set>
     </setters>
     <rules>
-      <grant type="Action" id="ID_ACTION_JETPACK_JUMP"/>
-      <grant type="Action" id="ID_ACTION_JETPACK_HOVER"/>
+      <grant type="Action" id="ID_ACTION_JETPACK_JUMP" />
+      <grant type="Action" id="ID_ACTION_JETPACK_HOVER" />
     </rules>
   </element>
 
@@ -234,7 +234,7 @@
     </setters>
   </element>
 
-  <!-- Poisons -->
+  
   <element name="Poison" type="Item" source="SW-MSV-Edition" id="ID_ITEM_POISON">
     <description>
       <p>Basic poison that can be applied to weapons. Target must make a DC 13 Constitution saving throw. On a failed save, takes full damage and becomes poisoned. On a successful save, takes half damage and isn't poisoned.</p>
@@ -279,7 +279,7 @@
     </setters>
   </element>
 
-  <!-- Wrist Launcher Attachments -->
+  
   <element name="Fibercord Whip" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FIBERCORD_WHIP">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
     <description>
@@ -309,11 +309,11 @@
       <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WRISTFLAME</set>
     </setters>
     <rules>
-      <grant type="Action" id="ID_ACTION_FLAME"/>
+      <grant type="Action" id="ID_ACTION_FLAME" />
     </rules>
   </element>
 
-  <!-- Movement Actions -->
+  
   <element name="Jumppack Jump" type="Action" source="SW-MSV-Edition" id="ID_ACTION_JUMPPACK_JUMP">
     <description>
       <p>Bonus Action: Jump up to 25 feet vertically or horizontally. Provokes opportunity attacks when leaving or landing in enemy melee range.</p>
