@@ -126,7 +126,7 @@
       <description>Use the Force to push someone away. Each creature in a 15-foot line must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and are pushed 10 feet away. On a successful save, the creature takes half damage and isn't pushed. Per extra Rage spent to a max of half your Marauder level (rounded up), the ability deals an additional 1d8 kinetic damage and pushes 5 extra feet.</description>
     </sheet>
     <setters>
-      <set name="keywords" />
+      <set name="keywords">force</set>
       <set name="level">0</set>
       <set name="school">Evocation</set>
       <set name="time">1 Action</set>
@@ -150,7 +150,7 @@
       <description>Use the Force to pull someone toward you. Each creature within a 15-foot cone originating from you must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and is pulled 10 feet closer. On a successful save, the creature take half damage and isn't pulled. Per extra Rage spent to a max of half your Marauder level (rounded up), the ability deals an additional 1d8 kinetic damage, increases the cone size by 5 feet, and pulls creatures an additional 5 feet.</description>
     </sheet>
     <setters>
-      <set name="keywords" />
+      <set name="keywords">force</set>
       <set name="level">0</set>
       <set name="school">Evocation</set>
       <set name="time">1 Action</set>
@@ -174,7 +174,7 @@
       <description>Taunt an enemy you see within range. The creature must make a Wisdom saving throw. On a failed save, the creature gets taunted so that when they try to attack anyone other than you, they have disadvantage. On a successful save, the creature isn't taunted.</description>
     </sheet>
     <setters>
-      <set name="keywords" />
+      <set name="keywords">force</set>
       <set name="level">0</set>
       <set name="school">Evocation</set>
       <set name="time">1 Bonus Action</set>
@@ -208,7 +208,7 @@
       <description>You use the Force to manipulate a small or medium object, or a small creature, that you can see within range. You make an ability check using your Force ability, contested by the target’s Strength check. On a success, you may suspend and/or move up to 30 feet or throw the target. If you choose to suspend the target, it remains suspended for the duration. If you throw the target, make a ranged Force attack with a range of 30/60 feet. On a hit, the target you throw at takes kinetic damage based on what is thrown: Small object: 2d4 kinetic damage, Medium object: 2d6 kinetic damage, Small creature: 1d4 kinetic damage. If a creature is thrown, the thrown small creature takes 1d8 + your Force ability modifier kinetic damage.</description>
     </sheet>
     <setters>
-      <set name="keywords" />
+      <set name="keywords">force</set>
       <set name="level">0</set>
       <set name="school">Evocation</set>
       <set name="time">1 Action</set>
@@ -232,7 +232,7 @@
       <description>Make a ranged attack of 30/60 with your melee weapon using your Dexterity modifier for attack and damage rolls. If you are proficient with you weapon you add your proficiency bonus to the attack roll. Per extra Rage spent to a max of half your Marauder level (rounded up), your range increases by 10/15 feet.</description>
     </sheet>
     <setters>
-      <set name="keywords" />
+      <set name="keywords">force</set>
       <set name="level">0</set>
       <set name="school">Evocation</set>
       <set name="time">1 action</set>
@@ -256,7 +256,7 @@
       <description>Use the Force to push everyone around you away. Each creature within 5 feet must make a Constitution saving throw. On a failed save, the creature takes 2d8 energy damage and is pushed 10 feet away. On a successful save, the creature takes half damage and isn't pushed. Per extra Rage spent, to a max of half your Marauder level (rounded up), the ability deals an additional 1d8 energy damage and pushes 5 extra feet.</description>
     </sheet>
     <setters>
-      <set name="keywords" />
+      <set name="keywords">force</set>
       <set name="level">0</set>
       <set name="school">Evocation</set>
       <set name="time">1 Action</set>
@@ -280,7 +280,7 @@
       <description>Use the Force to choke a creature within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 kinetic damage and is Incapacitated. On a successful save, the target takes no damage and is not incapacitated. Your next turn you must use a Bonus Action to choke again or the target is released. The target must make another Constitution saving throw. On a failed save, the target takes 1d8 kinetic damage and is Incapacitated. On a successful save, the target takes no damage and is not Incapacitated. On your third turn using this ability you must use a Bonus Action one last time or the target is released. The target must make a last Constitution saving throw. On a failed save, the target takes 2d6 kinetic damage, but is no longer Incapacitated. On a successful save, the target takes no damage and is not Incapacitated. Per extra Rage spent, to a max of half your Marauder level (rounded up), the ability deals an addional 1d6 kinetic damage per choke.</description>
     </sheet>
     <setters>
-      <set name="keywords" />
+      <set name="keywords">force</set>
       <set name="level">0</set>
       <set name="school">Evocation</set>
       <set name="time">1 Action</set>
@@ -334,7 +334,7 @@
       <description>Use the Force to electrocute a target within range. On hit, deals 2d8 lightning damage. Per extra Rage spent, to a max of half your Marauder level (rounded up), the attack deals an additional 1d8 damage.</description>
     </sheet>
     <setters>
-      <set name="keywords" />
+      <set name="keywords">force</set>
       <set name="level">0</set>
       <set name="school">Evocation</set>
       <set name="time">1 Action</set>
@@ -388,7 +388,7 @@
       <description>Instill fear on a target by simply being there. The target must make a Wisdom saving throw. On a failed save, the target becomes frightened until the end of its turn. On a successful save, the target is not affected.</description>
     </sheet>
     <setters>
-      <set name="keywords" />
+      <set name="keywords">force</set>
       <set name="level">0</set>
       <set name="school">Evocation</set>
       <set name="time">1 Bonus Action</set>
