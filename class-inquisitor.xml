@@ -318,7 +318,7 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <description>
       <p>Cantrip, Casting Time: Action; Range: 60 feet; Components: Somatic; Duration: Concentration, Up to 4 rounds; Choose a point within range and create a circle with a radius of 20 feet. The area becomes pitch black and is heavily obscured to all who stand in it except yourself.</p>
     </description>
-    <setters>      <set name="keywords" />      <set name="school">Evocation</set>
+    <setters>      <set name="keywords" />      <set name="level">0</set>      <set name="school">Evocation</set>
       <set name="time">Action</set>
       <set name="range">60 feet</set>
       <set name="duration">Concentration, Up to 4 rounds</set>
