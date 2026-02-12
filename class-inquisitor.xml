@@ -97,7 +97,6 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     </rules>
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_MINOR_TELEKINESIS" name="Minor Telekinesis" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: 45 feet; Components: Somatic; Duration: Concentration, Up to 1 round; You use the Force to manipulate a small or medium object, or a small creature, that you can see within range. You make an ability check using your Force ability, contested by the target’s Strength check. On a success, you may suspend and/or move up to 30 feet or throw the target. If you choose to suspend the target, it remains suspended for the duration. If you throw the target, make a ranged Force attack with a range of 30/60 feet. On a hit, the target you throw at takes kinetic damage based on what is thrown: Small object: 2d4 kinetic damage, Medium object: 2d6 kinetic damage, Small creature: 1d4 kinetic damage. If a creature is thrown, the thrown small creature takes 1d8 + your Force ability modifier kinetic damage.</p>
     </description>
@@ -252,7 +251,6 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     </rules>
   </element>
   <element id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_BLIND" name="Force Blind" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: 10 turns; Choose a target you can see within range. That creature must make a Constitution saving throw. On a failed save, the creature is blinded. On a successful save, the creature isn't blinded.</p>
     </description>
@@ -274,7 +272,6 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <rules />
   </element>
   <element id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_CLOAK" name="Force Cloak" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Bonus Action; Range: Self; Components: None; Duration: Until the end of your next turn; When hiding successfully, you can turn invisible.</p>
     </description>
@@ -297,7 +294,6 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <rules />
   </element>
   <element id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_FADE" name="Force Fade" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Reaction; Range: Self; Components: None; Duration: Until the end of your next turn; When killing a creature, turn invisible.</p>
     </description>
@@ -319,7 +315,6 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <rules />
   </element>
   <element id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_DARKNESS" name="Force Darkness" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: Action; Range: 60 feet; Components: Somatic; Duration: Concentration, Up to 4 rounds; Choose a point within range and create a circle with a radius of 20 feet. The area becomes pitch black and is heavily obscured to all who stand in it except yourself.</p>
     </description>
@@ -340,7 +335,6 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <rules />
   </element>
   <element id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_PHANTOM" name="Force Phantom" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: Self; Components: None; Duration: Instantaneous; This ability allows you to walk through walls. You may pass through up to 5 feet of solid material and must end your movement outside the wall</p>
     </description>
@@ -375,7 +369,6 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     </rules>
   </element>
   <element id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_DISGUISE" name="Force Disguise" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: Self; Components: None; Duration: Concentration, Up to 10 minutes; Use the Force to disguise yourself by altering people's perception of you.</p>
     </description>
@@ -397,7 +390,6 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <rules />
   </element>
   <element id="ID_SUBCLASS_TRICKSTER_ABILITY_PHANTOM_STRIDE" name="Phantom Stride" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Bonus Action; Range: Up to double your movement; Components: None; Duration: Instantaneous; You can teleport to an enemy up to double your movement away. This does not break stealth unless you teleport into line of sight.</p>
     </description>
@@ -420,7 +412,6 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <rules />
   </element>
   <element id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_ILLUSION" name="Force Illusion" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Bonus Action; Range: 60 feet; Components: Somatic; Duration: 2 rounds; Use the Force to make an illusion within range. Targets who can see the illusion must make a Wisdom saving throw. On a failed save, the target becomes distracted. Creatures attacking a distracted target have advantage, and distracted targets have disadvantage on saving throws. As soon as they're hit, they are no longer distracted. On a successful save, the creature isn't distracted.</p>
     </description>
@@ -444,7 +435,6 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <rules />
   </element>
   <element id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_NIGHTMARE" name="Force Nightmare" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: None; Duration: 1 round; Use the Force to make a creature's worst nightmare seem real. All creatures within range must make a Wisdom saving throw. On a failed save, the creature becomes frightened. On a successful save, the creature doesn't become frightened.</p>
     </description>
@@ -468,7 +458,6 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <rules />
   </element>
   <element id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_SPIRIT" name="Force Spirit" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: 15 feet; Components: None; Duration: Instantaneous; Make a dark spirit clone of yourself that has 1 Hit Point within range. This dark spirit must roll initiative, has 3/4th of your AC rounded up, and has all your abilities except your subclass abilities. You are limited to 1 spirit at a time.</p>
     </description>
@@ -505,7 +494,6 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     </rules>
   </element>
   <element id="ID_SUBCLASS_MANIPULATOR_ABILITY_MIND_TRAP" name="Mind Trap" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: Until the end of their next turn; Use the Force to trap someone in their own mind. The creature must make an Intelligence saving throw. On a failed save, they become trapped. Stunning them for the duration or until they get hit. On a successful save, they don't get trapped.</p>
     </description>
@@ -529,7 +517,6 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <rules />
   </element>
   <element id="ID_SUBCLASS_MANIPULATOR_ABILITY_FORCE_STASIS" name="Force Stasis" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: Concentration, Up to 1 round; Use the Force to freeze someone in place. You make an ability check using your Force ability, contested by the target's Strength check. On a success, the target is immobilized.</p>
     </description>
@@ -551,7 +538,6 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <rules />
   </element>
   <element id="ID_SUBCLASS_MANIPULATOR_ABILITY_CONFUSE" name="Confuse" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: 60 feet; Components: None; Duration: Until the end of their next turn; Use the Force to confuse a creature. The creature must make an Wisdom saving throw. On a failed save, they must attack the nearest creature on their next turn. On a successful save, the creature is unaffected.</p>
     </description>
@@ -573,7 +559,6 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <rules />
   </element>
   <element id="ID_SUBCLASS_MANIPULATOR_ABILITY_MIND_PROBE" name="Mind Probe" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: Touch; Components: None; Duration: 1 minute; Use the Force to forcibly read a creature’s mind, accessing both current thoughts and hidden memories. The target must be restrained in order to use this.</p>
     </description>
@@ -595,7 +580,6 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <rules />
   </element>
   <element id="ID_SUBCLASS_MANIPULATOR_ABILITY_FORCE_LINK" name="Force Link" type="Spell" level="0" source="SW-MSV-Edition">
-    <compendium display="true" />
     <description>
       <p>Cantrip, Casting Time: 1 Action; Range: 60 feet; Components: None; Duration: 3 rounds; Use the Force to link your life force to a hostile creature. Whenever you take damage, the linked creature must make an Intelligence saving throw. On a failed save, the creature takes half of the damage as kinetic damage you would have taken and you take half of the damage as the damage type of the original attack. On a successful save, the creature takes no damage and you take full damage as the damage type of the original attack. You can only link to one creature.</p>
     </description>
