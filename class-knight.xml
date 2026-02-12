@@ -53,6 +53,7 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_SIMPLE_AND_MARTIAL_VIBROWEAPONS"/>
       <select type="Proficiency" name="Skill Proficiency (Knight)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE"/>
       <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_FOCUS" level="1"/>
+      <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_SPELLCASTING" level="1"/>
       <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_FORCE_PUSH" level="1"/>
       <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_FORCE_PULL" level="1"/>
       <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_VALOR" level="1"/>
@@ -682,5 +683,43 @@
       <description>Make a flurry of attacks in one swift movement. You make two attacks that count as one attack against the same target. You roll both to hit. Per 2 extra Focus spent to a max of half your Knight level (rounded up), you make an additional attack within that flurry.</description>
     </sheet>
     <rules/>
+  </element>
+  <element id="ID_CLASS_KNIGHT_FEATURE_SPELLCASTING" name="Spellcasting" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>A Knight's power comes from the light side of the Force. You have learned to draw on this power to cast spells.</p>
+      <p class="indent">
+        <strong>Cantrips.</strong>
+         You know two cantrips of your choice from the Knight spell list. You learn additional Knight cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Knight table.
+      </p>
+      <p class="indent">
+        <strong>Spell Slots.</strong>
+         The Knight table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
+      </p>
+      <p class="indent">
+        <strong>Spells Known of 1st Level and Higher.</strong>
+         You know three 1st-level Knight spells of your choice. The Spells Known column of the Knight table shows when you learn more Knight spells of your choice. Each of these spells must be of a level for which you have spell slots.
+      </p>
+      <p class="indent">
+        <strong>Spellcasting Ability.</strong>
+         Charisma is your spellcasting ability for your Knight spells, since the power of your magic relies on your ability to project your will into the world. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a Knight spell you cast and when making an attack roll with one.
+      </p>
+      <p class="indent">
+        <strong>Spell Save DC</strong>
+         = 8 + your proficiency bonus + your Charisma modifier
+      </p>
+      <p class="indent">
+        <strong>Spell Attack Modifier</strong>
+         = your proficiency bonus + your Charisma modifier
+      </p>
+    </description>
+    <sheet>
+      <description>Charisma is your spellcasting ability for your Knight spells. Your spell save DC is 8 + your proficiency bonus + your Charisma modifier, and your spell attack modifier is your proficiency bonus + your Charisma modifier.</description>
+    </sheet>
+    <rules>
+      <stat name="spellcasting" value="charisma"/>
+      <select type="Spell" name="Cantrip (Knight)" level="1" number="2" supports="ID_SPELLLIST_KNIGHT"/>
+      <select type="Spell" name="1st Level Spell (Knight)" level="1" number="3" supports="ID_SPELLLIST_KNIGHT"/>
+    </rules>
   </element>
 </elements>

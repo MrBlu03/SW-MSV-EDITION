@@ -83,7 +83,13 @@
   <element name="blaster pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BLASTER_PISTOL">
     <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
-      <p>1d6 energy, power cell, range 50/200, Reload 16, Dexterity modifier), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
+      <p><strong>Blaster Pistol</strong></p>
+      <p><em>1d6 energy damage, range 50/200, reload 16, one-handed</em></p>
+      <p>This standard sidearm fires concentrated energy bolts. It uses power cells and has a high capacity.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> Make a ranged attack with the blaster pistol. On hit: 1d6 energy damage + your Dexterity modifier.</p>
+      <p>• <strong>Quick Shot:</strong> Make a ranged attack with disadvantage. On hit: 1d6 energy damage + your Dexterity modifier + 1d6 extra damage.</p>
+      <p>• <strong>Reload:</strong> Spend an action to reload the blaster pistol with a new power cell.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -104,7 +110,13 @@
   <element name="energy bow" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ENERGY_BOW">
     <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p>1d6 energy, power cell, range 80/320, Reload 4, two-handed, choose Strength or Dexterity modifier), Shoot, Quick shot | Properties: two-handed | Actions: Shoot, Quick shot</p>
+      <p><strong>Energy Bow</strong></p>
+      <p><em>1d6 energy damage, range 80/320, reload 4, two-handed</em></p>
+      <p>This energy bow fires concentrated bolts of energy. It uses power cells and requires reloading after 4 shots.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> Make a ranged attack with the energy bow. On hit: 1d6 energy damage + your Strength or Dexterity modifier.</p>
+      <p>• <strong>Quick Shot:</strong> Make a ranged attack with disadvantage. On hit: 1d6 energy damage + your Strength or Dexterity modifier + 1d6 extra damage.</p>
+      <p>• <strong>Reload:</strong> Spend an action to reload the energy bow with a new power cell.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -125,7 +137,13 @@
   <element name="ion pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_PISTOL">
     <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
-      <p>1d4 ion, power cell, range 40/160, Reload 16, Dexterity modifier), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
+      <p><strong>Ion Pistol</strong></p>
+      <p><em>1d4 ion damage, range 40/160, reload 16, one-handed</em></p>
+      <p>This pistol fires ion blasts that can disrupt droids and electronics. It uses power cells and has a high capacity.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> Make a ranged attack with the ion pistol. On hit: 1d4 ion damage + your Dexterity modifier. Droids hit must succeed on a DC 13 Constitution saving throw or be stunned for 1 round.</p>
+      <p>• <strong>Quick Shot:</strong> Make a ranged attack with disadvantage. On hit: 1d4 ion damage + your Dexterity modifier + 1d6 extra damage.</p>
+      <p>• <strong>Reload:</strong> Spend an action to reload the ion pistol with a new power cell.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -146,7 +164,13 @@
   <element name="sonic pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SONIC_PISTOL">
     <supports>ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
-      <p>1d4 sonic, power cell, range 30/120, Reload 16, Dexterity modifier), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
+      <p><strong>Sonic Pistol</strong></p>
+      <p><em>1d4 sonic damage, range 30/120, reload 16, one-handed</em></p>
+      <p>This pistol emits powerful sonic waves that can disorient targets. It uses power cells and has a high capacity.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> Make a ranged attack with the sonic pistol. On hit: 1d4 sonic damage + your Dexterity modifier.</p>
+      <p>• <strong>Quick Shot:</strong> Make a ranged attack with disadvantage. On hit: 1d4 sonic damage + your Dexterity modifier + 1d6 extra damage.</p>
+      <p>• <strong>Reload:</strong> Spend an action to reload the sonic pistol with a new power cell.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -287,7 +311,12 @@
   <element name="blaster rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BLASTER_RIFLE">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p>1d8 energy, power cell, range 105/420, Reload 12, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
+      <p><strong>Blaster Rifle</strong></p>
+      <p><em>1d8 energy damage, range 105/420, reload 12, two-handed</em></p>
+      <p>This standard military rifle fires concentrated energy bolts. It uses power cells and has a moderate capacity.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> Make a ranged attack with the blaster rifle. On hit: 1d8 energy damage + your Dexterity modifier.</p>
+      <p>• <strong>Reload:</strong> Spend an action to reload the blaster rifle with a new power cell.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -327,7 +356,12 @@
   <element name="heavy bowcaster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_HEAVY_BOWCASTER">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p>1d12 energy, power cell, range 90/360, Reload 4, requires Strength 17 to use, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
+      <p><strong>Heavy Bowcaster</strong></p>
+      <p><em>1d12 energy damage, range 90/360, reload 4, two-handed</em></p>
+      <p>This massive bowcaster fires powerful energy bolts that can knock targets back. It uses power cells and has a very low capacity. Requires Strength 17 to use.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> Make a ranged attack with the heavy bowcaster. On hit: 1d12 energy damage + your Dexterity modifier. The target must succeed on a DC 15 Strength saving throw or be pushed back 10 feet.</p>
+      <p>• <strong>Reload:</strong> Spend an action to reload the heavy bowcaster with a new power cell.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -347,7 +381,12 @@
   <element name="ion rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_RIFLE">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p>1d6 ion, power cell, range 80/320, Reload 8, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
+      <p><strong>Ion Rifle</strong></p>
+      <p><em>1d6 ion damage, range 80/320, reload 8, two-handed</em></p>
+      <p>This rifle fires ion bolts that can disable droids and electronics. It uses power cells and has a moderate capacity.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> Make a ranged attack with the ion rifle. On hit: 1d6 ion damage + your Dexterity modifier. Droids hit must succeed on a DC 13 Constitution saving throw or be stunned for 1 round.</p>
+      <p>• <strong>Reload:</strong> Spend an action to reload the ion rifle with a new power cell.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -367,7 +406,12 @@
   <element name="sonic rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SONIC_RIFLE">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p>1d8 sonic, power cell, range 80/320, Reload 8, requires Strength 11 to use, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
+      <p><strong>Sonic Rifle</strong></p>
+      <p><em>1d8 sonic damage, range 80/320, reload 8, two-handed</em></p>
+      <p>This rifle emits powerful sonic waves that can disorient targets. It uses power cells and has a low capacity.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> Make a ranged attack with the sonic rifle. On hit: 1d8 sonic damage + your Dexterity modifier.</p>
+      <p>• <strong>Reload:</strong> Spend an action to reload the sonic rifle with a new power cell.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -387,7 +431,12 @@
   <element name="slugthrower rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLUGTHROWER_RIFLE">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p>1d8 kinetic, slug cartridge, range 105/420, Reload 12, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
+      <p><strong>Slugthrower Rifle</strong></p>
+      <p><em>1d8 kinetic damage, range 105/420, reload 12, two-handed</em></p>
+      <p>This rifle fires solid metal slugs using electromagnetic acceleration. It uses slug cartridges and has a moderate capacity.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> Make a ranged attack with the slugthrower rifle. On hit: 1d8 kinetic damage + your Dexterity modifier.</p>
+      <p>• <strong>Reload:</strong> Spend an action to reload the slugthrower rifle with a new slug cartridge.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -407,7 +456,12 @@
   <element name="cryo rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_RIFLE">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p>2d4 cold, power cell, range 50/200, Reload 4, requires Strength 11 to use, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
+      <p><strong>Cryo Rifle</strong></p>
+      <p><em>2d4 cold damage, range 50/200, reload 4, two-handed</em></p>
+      <p>This rifle fires cryogenic blasts that can freeze targets. It uses power cells and has a very low capacity. Requires Strength 11 to use.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> Make a ranged attack with the cryo rifle. On hit: 2d4 cold damage + your Dexterity modifier. The target must succeed on a DC 13 Constitution saving throw or be restrained until the end of its next turn.</p>
+      <p>• <strong>Reload:</strong> Spend an action to reload the cryo rifle with a new power cell.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -427,7 +481,12 @@
   <element name="railgun" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_RAILGUN">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p>1d10 ion, power cell, range 120/470, Reload 1, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
+      <p><strong>Railgun</strong></p>
+      <p><em>1d10 ion damage, range 120/470, reload 1, two-handed</em></p>
+      <p>This powerful railgun accelerates metal slugs to incredible speeds using electromagnetic fields. It uses power cells and has a very low capacity.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> Make a ranged attack with the railgun. On hit: 1d10 ion damage + your Dexterity modifier. Droids hit must succeed on a DC 15 Constitution saving throw or be stunned for 1 round.</p>
+      <p>• <strong>Reload:</strong> Spend an action to reload the railgun with a new power cell.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -447,7 +506,12 @@
   <element name="arc caster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ARC_CASTER">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p>2d4 lightning, power cell, can hit a secondary target in the same line: 1d4 lightning, range 60/240, Reload 9, requires Strength 11 to use, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
+      <p><strong>Arc Caster</strong></p>
+      <p><em>2d4 lightning damage, range 60/240, reload 9, two-handed</em></p>
+      <p>This weapon fires arcing bolts of electricity that can chain to nearby targets. It uses power cells and has a low capacity. Requires Strength 11 to use.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> Make a ranged attack with the arc caster. On hit: 2d4 lightning damage + your Dexterity modifier. You can choose a secondary target within 10 feet of the primary target to take 1d4 lightning damage.</p>
+      <p>• <strong>Reload:</strong> Spend an action to reload the arc caster with a new power cell.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -467,7 +531,12 @@
   <element name="sniper rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SNIPER_RIFLE">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p>1d12 energy, power cell, 150/600, Reload 2, requires Strength 13 to use, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
+      <p><strong>Sniper Rifle</strong></p>
+      <p><em>1d12 energy damage, range 150/600, reload 2, two-handed</em></p>
+      <p>This precision long-range rifle fires concentrated energy bolts with exceptional accuracy. It uses power cells and has a very low capacity. Requires Strength 13 to use.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> Make a ranged attack with the sniper rifle. On hit: 1d12 energy damage + your Dexterity modifier.</p>
+      <p>• <strong>Reload:</strong> Spend an action to reload the sniper rifle with a new power cell.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -486,7 +555,12 @@
   <element name="minigun/rotary cannon" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MINIGUN_ROTARY_CANNON">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p>1d10 energy, power cell, range 75 feet cone, Reload 4, requires Strength 13 to use, two-handed, Dexterity modifier), Blast | Properties: two-handed | Actions: Blast</p>
+      <p><strong>Minigun/Rotary Cannon</strong></p>
+      <p><em>1d10 energy damage, range 75 ft cone, reload 4, two-handed</em></p>
+      <p>This rapid-fire weapon unleashes a devastating cone of energy bolts. It uses power cells and has a very low capacity. Requires Strength 13 to use.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Blast:</strong> Choose a point within range. Each creature in a 75-foot cone from that point must make a Dexterity saving throw (DC 8 + your proficiency bonus + your Dexterity modifier). A creature takes 1d10 energy damage on a failed save, or half as much on a successful one.</p>
+      <p>• <strong>Reload:</strong> Spend an action to reload the minigun/rotary cannon with a new power cell.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -505,7 +579,12 @@
   <element name="flamethrower" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FLAMETHROWER">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p>2d6 fire, canister, range 55 feet cone, Reload 2, two-handed, Dexterity modifier), Flame | Properties: two-handed | Actions: Flame</p>
+      <p><strong>Flamethrower</strong></p>
+      <p><em>2d6 fire damage, range 55 ft cone, reload 2, two-handed</em></p>
+      <p>This weapon unleashes a devastating cone of flames. It uses fuel canisters and has a very low capacity.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Flame:</strong> Choose a point within range. Each creature in a 55-foot cone from that point must make a Dexterity saving throw (DC 8 + your proficiency bonus + your Dexterity modifier). A creature takes 2d6 fire damage on a failed save, or half as much on a successful one.</p>
+      <p>• <strong>Reload:</strong> Spend an action to reload the flamethrower with a new fuel canister.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -524,7 +603,12 @@
   <element name="cycler rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CYCLER_RIFLE">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p>1d10 kinetic, slug cartridge, range 100/400, Reload 4, requires Strength 12 to use, two-handed, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
+      <p><strong>Cycler Rifle</strong></p>
+      <p><em>1d10 kinetic damage, range 100/400, reload 4, two-handed</em></p>
+      <p>This rapid-fire slugthrower rifle can unleash devastating bursts. It uses slug cartridges and has a very low capacity. Requires Strength 12 to use.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> Make a ranged attack with the cycler rifle. On hit: 1d10 kinetic damage + your Dexterity modifier.</p>
+      <p>• <strong>Reload:</strong> Spend an action to reload the cycler rifle with a new slug cartridge.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -544,7 +628,13 @@
   <element name="lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSABER">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
-      <p>1d6 energy, finesse), Strike, Off-Hand Strike, Hilt Strike | Properties: finesse | Actions: Strike, Off-Hand Strike, Hilt Strike</p>
+      <p><strong>Lightsaber</strong></p>
+      <p><em>1d6 energy damage, finesse, one-handed</em></p>
+      <p>The iconic weapon of the Jedi and Sith, a lightsaber projects a blade of pure plasma energy. It uses the Force to ignite and can be wielded with exceptional precision.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Strike:</strong> Make a melee attack with the lightsaber. On hit: 1d6 energy damage + your Strength or Dexterity modifier (your choice).</p>
+      <p>• <strong>Off-Hand Strike:</strong> Make a melee attack with the lightsaber while wielding it in your off-hand. On hit: 1d6 energy damage + your Strength or Dexterity modifier (your choice).</p>
+      <p>• <strong>Hilt Strike:</strong> Make a melee attack with the hilt of the lightsaber (non-lethal). On hit: 1d4 bludgeoning damage + your Strength modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -563,7 +653,13 @@
   <element name="lightstaff" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSTAFF">
     <supports>ID_PROFICIENCY_WEAPON_SIMPLE_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
     <description>
-      <p>1d6 energy (2d4 when used with two hands), versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike | Properties: versatile | Actions: Strike, Off-Hand Strike, Hilt Strike</p>
+      <p><strong>Lightstaff</strong></p>
+      <p><em>1d6 energy damage (2d4 when used with two hands), versatile</em></p>
+      <p>A training lightsaber designed for Jedi initiates, this weapon projects a shorter plasma blade and is easier to handle than a full lightsaber.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Strike:</strong> Make a melee attack with the lightstaff. On hit: 1d6 energy damage + your Strength modifier (or 2d4 energy damage + your Strength modifier if used with two hands).</p>
+      <p>• <strong>Off-Hand Strike:</strong> Make a melee attack with the lightstaff while wielding it in your off-hand. On hit: 1d6 energy damage + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> Make a melee attack with the hilt of the lightstaff (non-lethal). On hit: 1d4 bludgeoning damage + your Strength modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -583,7 +679,12 @@
   <element name="crossguard saber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CROSSGUARD_SABER">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p>2d6 energy, two-handed, requires Dexterity 13 to use, Strength modifier), Strike, Hilt Strike | Properties: two-handed | Actions: Strike, Hilt Strike</p>
+      <p><strong>Crossguard Saber</strong></p>
+      <p><em>2d6 energy damage, two-handed</em></p>
+      <p>This unique lightsaber design features a crossguard of plasma blades that protect the wielder's hands. It requires exceptional dexterity to use safely. Requires Dexterity 13 to use.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Strike:</strong> Make a melee attack with the crossguard saber. On hit: 2d6 energy damage + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> Make a melee attack with the hilt of the crossguard saber (non-lethal). On hit: 1d4 bludgeoning damage + your Strength modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -601,7 +702,12 @@
   <element name="lightwhip" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTWHIP">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
     <description>
-      <p>1d6 energy, reach: 10 feet, finesse), Strike, Off-Hand Strike | Properties: finesse, reach 10ft | Actions: Strike, Off-Hand Strike</p>
+      <p><strong>Lightwhip</strong></p>
+      <p><em>1d6 energy damage, reach 10 ft, finesse</em></p>
+      <p>This exotic weapon consists of a handle that projects a flexible plasma whip. It can strike at enemies up to 10 feet away and requires great skill to wield effectively.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Strike:</strong> Make a melee attack with the lightwhip. On hit: 1d6 energy damage + your Strength or Dexterity modifier (your choice).</p>
+      <p>• <strong>Off-Hand Strike:</strong> Make a melee attack with the lightwhip while wielding it in your off-hand. On hit: 1d6 energy damage + your Strength or Dexterity modifier (your choice).</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -619,7 +725,13 @@
   <element name="martial lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MARTIAL_LIGHTSABER">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
     <description>
-      <p>1d8 energy (1d10 when used with two hands), versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike | Properties: versatile | Actions: Strike, Off-Hand Strike, Hilt Strike</p>
+      <p><strong>Martial Lightsaber</strong></p>
+      <p><em>1d8 energy damage (1d10 when used with two hands), versatile</em></p>
+      <p>A more powerful lightsaber design used by skilled Force users. It can be wielded with one or two hands for increased damage.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Strike:</strong> Make a melee attack with the martial lightsaber. On hit: 1d8 energy damage + your Strength modifier (or 1d10 energy damage + your Strength modifier if used with two hands).</p>
+      <p>• <strong>Off-Hand Strike:</strong> Make a melee attack with the martial lightsaber while wielding it in your off-hand. On hit: 1d8 energy damage + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> Make a melee attack with the hilt of the martial lightsaber (non-lethal). On hit: 1d4 bludgeoning damage + your Strength modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -639,7 +751,12 @@
   <element name="lightsaber pike" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSABER_PIKE">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
     <description>
-      <p>1d10 energy, two-handed, reach: 10 feet, requires Dexterity 11 to use, Strength modifier), Strike, Hilt Strike | Properties: two-handed, reach 10ft | Actions: Strike, Hilt Strike</p>
+      <p><strong>Lightsaber Pike</strong></p>
+      <p><em>1d10 energy damage, two-handed, reach 10 ft</em></p>
+      <p>This extended lightsaber design provides superior reach in combat. It requires good dexterity to handle the longer weapon effectively. Requires Dexterity 11 to use.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Strike:</strong> Make a melee attack with the lightsaber pike. On hit: 1d10 energy damage + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> Make a melee attack with the hilt of the lightsaber pike (non-lethal). On hit: 1d4 bludgeoning damage + your Strength modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -657,7 +774,13 @@
   <element name="double bladed lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DOUBLE_BLADED_LIGHTSABER">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
-      <p>1d8 energy, two-handed, finesse), Strike, Slash, Back Strike | Properties: two-handed, finesse | Actions: Strike, Slash, Back Strike</p>
+      <p><strong>Double Bladed Lightsaber</strong></p>
+      <p><em>1d8 energy damage, two-handed, finesse</em></p>
+      <p>This deadly weapon features plasma blades extending from both ends of the hilt. It requires exceptional skill to wield safely and effectively.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Strike:</strong> Make a melee attack with the double bladed lightsaber. On hit: 1d8 energy damage + your Strength or Dexterity modifier (your choice).</p>
+      <p>• <strong>Slash:</strong> Make a sweeping melee attack with the double bladed lightsaber against all adjacent creatures. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your Strength or Dexterity modifier). A creature takes 1d8 energy damage on a failed save, or half as much on a successful one.</p>
+      <p>• <strong>Back Strike:</strong> Make a melee attack with the back end of the double bladed lightsaber. On hit: 1d8 energy damage + your Strength or Dexterity modifier (your choice).</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -676,7 +799,13 @@
   <element name="vibrospear" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROSPEAR">
     <supports>ID_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
     <description>
-      <p>1d6 kinetic (2d4 when used with two hands), versatile, thrown range 25/75, Strength modifier), Strike, Off-Hand Strike, Hilt Strike | Properties: versatile, thrown | Actions: Strike, Off-Hand Strike, Hilt Strike</p>
+      <p><strong>Vibrospear</strong></p>
+      <p><em>1d6 kinetic damage (2d4 when used with two hands), versatile, thrown range 25/75</em></p>
+      <p>This spear features a vibrating blade that enhances its cutting power. It can be used in melee combat or thrown at enemies.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Strike:</strong> Make a melee attack with the vibrospear. On hit: 1d6 kinetic damage + your Strength modifier (or 2d4 kinetic damage + your Strength modifier if used with two hands).</p>
+      <p>• <strong>Off-Hand Strike:</strong> Make a melee attack with the vibrospear while wielding it in your off-hand. On hit: 1d6 kinetic damage + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> Make a melee attack with the hilt of the vibrospear (non-lethal). On hit: 1d4 bludgeoning damage + your Strength modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -697,7 +826,12 @@
   <element name="vibrodagger" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBRODAGGER">
     <supports>ID_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
     <description>
-      <p>1d4 kinetic, thrown range 20/60, finesse), Strike, Off-Hand Strike | Properties: finesse, thrown | Actions: Strike, Off-Hand Strike</p>
+      <p><strong>Vibrodagger</strong></p>
+      <p><em>1d4 kinetic damage, thrown range 20/60, finesse</em></p>
+      <p>This small blade features a vibrating edge that enhances its cutting power. It can be used for precise melee attacks or thrown at enemies.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Strike:</strong> Make a melee attack with the vibrodagger. On hit: 1d4 kinetic damage + your Strength or Dexterity modifier (your choice).</p>
+      <p>• <strong>Off-Hand Strike:</strong> Make a melee attack with the vibrodagger while wielding it in your off-hand. On hit: 1d4 kinetic damage + your Strength or Dexterity modifier (your choice).</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -716,7 +850,13 @@
   <element name="vibrostaff" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROSTAFF">
     <supports>ID_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
     <description>
-      <p>1d6 kinetic (2d4 when used with two hands), versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike | Properties: versatile | Actions: Strike, Off-Hand Strike, Hilt Strike</p>
+      <p><strong>Vibrostaff</strong></p>
+      <p><em>1d6 kinetic damage (2d4 when used with two hands), versatile</em></p>
+      <p>This staff features vibrating blades that enhance its striking power. It can be wielded with one or two hands for increased damage.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Strike:</strong> Make a melee attack with the vibrostaff. On hit: 1d6 kinetic damage + your Strength modifier (or 2d4 kinetic damage + your Strength modifier if used with two hands).</p>
+      <p>• <strong>Off-Hand Strike:</strong> Make a melee attack with the vibrostaff while wielding it in your off-hand. On hit: 1d6 kinetic damage + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> Make a melee attack with the hilt of the vibrostaff (non-lethal). On hit: 1d4 bludgeoning damage + your Strength modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -736,7 +876,13 @@
   <element name="vibro double-blade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBRO_DOUBLE_BLADE">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
-      <p>1d8 kinetic, two-handed, finesse), Strike, Slash, Back Strike | Properties: two-handed, finesse | Actions: Strike, Slash, Back Strike</p>
+      <p><strong>Vibro Double-Blade</strong></p>
+      <p><em>1d8 kinetic damage, two-handed, finesse</em></p>
+      <p>This deadly weapon features vibrating blades on both ends. It requires exceptional skill to wield effectively in combat.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Strike:</strong> Make a melee attack with the vibro double-blade. On hit: 1d8 kinetic damage + your Strength or Dexterity modifier (your choice).</p>
+      <p>• <strong>Slash:</strong> Make a sweeping melee attack with the vibro double-blade against all adjacent creatures. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your Strength or Dexterity modifier). A creature takes 1d8 kinetic damage on a failed save, or half as much on a successful one.</p>
+      <p>• <strong>Back Strike:</strong> Make a melee attack with the back end of the vibro double-blade. On hit: 1d8 kinetic damage + your Strength or Dexterity modifier (your choice).</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -755,7 +901,13 @@
   <element name="electrostaff" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTROSTAFF">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
-      <p>1d6 lightning, two-handed, finesse), Strike, Slash, Back Strike | Properties: two-handed, finesse | Actions: Strike, Slash, Back Strike</p>
+      <p><strong>Electrostaff</strong></p>
+      <p><em>1d6 lightning damage, two-handed, finesse</em></p>
+      <p>This staff delivers powerful electric shocks to enemies. It requires exceptional skill to wield effectively in combat.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Strike:</strong> Make a melee attack with the electrostaff. On hit: 1d6 lightning damage + your Strength or Dexterity modifier (your choice).</p>
+      <p>• <strong>Slash:</strong> Make a sweeping melee attack with the electrostaff against all adjacent creatures. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your Strength or Dexterity modifier). A creature takes 1d6 lightning damage on a failed save, or half as much on a successful one.</p>
+      <p>• <strong>Back Strike:</strong> Make a melee attack with the back end of the electrostaff. On hit: 1d6 lightning damage + your Strength or Dexterity modifier (your choice).</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -774,7 +926,13 @@
   <element name="vibrosword" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROSWORD">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
     <description>
-      <p>1d8 kinetic (1d10 when used with two hands), versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike | Properties: versatile | Actions: Strike, Off-Hand Strike, Hilt Strike</p>
+      <p><strong>Vibrosword</strong></p>
+      <p><em>1d8 kinetic damage (1d10 when used with two hands), versatile</em></p>
+      <p>This sword features a vibrating blade that enhances its cutting power. It can be wielded with one or two hands for increased damage.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Strike:</strong> Make a melee attack with the vibrosword. On hit: 1d8 kinetic damage + your Strength modifier (or 1d10 kinetic damage + your Strength modifier if used with two hands).</p>
+      <p>• <strong>Off-Hand Strike:</strong> Make a melee attack with the vibrosword while wielding it in your off-hand. On hit: 1d8 kinetic damage + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> Make a melee attack with the hilt of the vibrosword (non-lethal). On hit: 1d4 bludgeoning damage + your Strength modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -794,7 +952,12 @@
   <element name="virbo-axe" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIRBO_AXE">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p>1d12 kinetic, two-handed, requires Dexterity 11 to use, Strength modifier), Strike, Hilt Strike | Properties: two-handed | Actions: Strike, Hilt Strike</p>
+      <p><strong>Virbo-Axe</strong></p>
+      <p><em>1d12 kinetic damage, two-handed</em></p>
+      <p>This massive axe features a vibrating blade that enhances its destructive power. It requires good dexterity to handle the heavy weapon effectively. Requires Dexterity 11 to use.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Strike:</strong> Make a melee attack with the virbo-axe. On hit: 1d12 kinetic damage + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> Make a melee attack with the hilt of the virbo-axe (non-lethal). On hit: 1d4 bludgeoning damage + your Strength modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -812,7 +975,12 @@
   <element name="vibropike" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROPIKE">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
     <description>
-      <p>1d10 kinetic, two-handed, reach: 10 feet, requires Dexterity 11 to use, Strength modifier), Strike, Hilt Strike | Properties: two-handed, reach 10ft | Actions: Strike, Hilt Strike</p>
+      <p><strong>Vibropike</strong></p>
+      <p><em>1d10 kinetic damage, two-handed, reach 10 ft</em></p>
+      <p>This extended polearm features a vibrating blade that enhances its striking power. It provides superior reach in combat. Requires Dexterity 11 to use.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Strike:</strong> Make a melee attack with the vibropike. On hit: 1d10 kinetic damage + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> Make a melee attack with the hilt of the vibropike (non-lethal). On hit: 1d4 bludgeoning damage + your Strength modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -830,7 +998,12 @@
   <element name="electrowhip" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTROWHIP">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
     <description>
-      <p>1d4 lightning, reach: 10 feet, finesse), Strike, Off-Hand Strike | Properties: finesse, reach 10ft | Actions: Strike, Off-Hand Strike</p>
+      <p><strong>Electrowhip</strong></p>
+      <p><em>1d4 lightning damage, reach 10 ft, finesse</em></p>
+      <p>This flexible weapon delivers electric shocks to enemies up to 10 feet away. It requires great skill to wield effectively.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Strike:</strong> Make a melee attack with the electrowhip. On hit: 1d4 lightning damage + your Strength or Dexterity modifier (your choice).</p>
+      <p>• <strong>Off-Hand Strike:</strong> Make a melee attack with the electrowhip while wielding it in your off-hand. On hit: 1d4 lightning damage + your Strength or Dexterity modifier (your choice).</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -848,7 +1021,12 @@
   <element name="electrobaton" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTROBATON">
     <supports>ID_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
-      <p>1d4 lightning, finesse), Strike, Off-Hand Strike | Properties: finesse | Actions: Strike, Off-Hand Strike</p>
+      <p><strong>Electrobaton</strong></p>
+      <p><em>1d4 lightning damage, finesse</em></p>
+      <p>This compact weapon delivers electric shocks to enemies. It can be wielded with great precision and speed.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Strike:</strong> Make a melee attack with the electrobaton. On hit: 1d4 lightning damage + your Strength or Dexterity modifier (your choice).</p>
+      <p>• <strong>Off-Hand Strike:</strong> Make a melee attack with the electrobaton while wielding it in your off-hand. On hit: 1d4 lightning damage + your Strength or Dexterity modifier (your choice).</p>
     </description>
     <setters>
       <set name="category">Weapons</set>

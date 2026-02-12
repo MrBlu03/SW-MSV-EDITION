@@ -44,6 +44,7 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_SIMPLE_OR_MARTIAL_LIGHTWEAPONS_WITH_FINESSE_PROPERTY"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_SIMPLE_OR_MARTIAL_VIBROWEAPONS_WITH_FINESSE_PROPERTY"/>
       <select type="Proficiency" name="Skill Proficiency (Inquisitor)" number="4" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH"/>
+      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SPELLCASTING" level="1"/>
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_EXPERTISE" level="1"/>
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_ASSASSINATE" level="1"/>
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_MINOR_TELEKINESIS" level="1"/>
@@ -561,5 +562,43 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <description>Cantrip, Casting Time: 1 Action; Range: 60 feet; Components: None; Duration: 3 rounds; Use the Force to link your life force to a hostile creature. Whenever you take damage, the linked creature must make an Intelligence saving throw. On a failed save, the creature takes half of the damage as kinetic damage you would have taken and you take half of the damage as the damage type of the original attack. On a successful save, the creature takes no damage and you take full damage as the damage type of the original attack. You can only link to one creature.</description>
     </sheet>
     <rules/>
+  </element>
+  <element id="ID_CLASS_INQUISITOR_FEATURE_SPELLCASTING" name="Spellcasting" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true"/>
+    <description>
+      <p>An Inquisitor's power comes from the dark side of the Force. You have learned to draw on this power to cast spells.</p>
+      <p class="indent">
+        <strong>Cantrips.</strong>
+         You know two cantrips of your choice from the Inquisitor spell list. You learn additional Inquisitor cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Inquisitor table.
+      </p>
+      <p class="indent">
+        <strong>Spell Slots.</strong>
+         The Inquisitor table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
+      </p>
+      <p class="indent">
+        <strong>Spells Known of 1st Level and Higher.</strong>
+         You know three 1st-level Inquisitor spells of your choice. The Spells Known column of the Inquisitor table shows when you learn more Inquisitor spells of your choice. Each of these spells must be of a level for which you have spell slots.
+      </p>
+      <p class="indent">
+        <strong>Spellcasting Ability.</strong>
+         Charisma is your spellcasting ability for your Inquisitor spells, since the power of your magic relies on your ability to project your will into the world. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for an Inquisitor spell you cast and when making an attack roll with one.
+      </p>
+      <p class="indent">
+        <strong>Spell Save DC</strong>
+         = 8 + your proficiency bonus + your Charisma modifier
+      </p>
+      <p class="indent">
+        <strong>Spell Attack Modifier</strong>
+         = your proficiency bonus + your Charisma modifier
+      </p>
+    </description>
+    <sheet>
+      <description>Charisma is your spellcasting ability for your Inquisitor spells. Your spell save DC is 8 + your proficiency bonus + your Charisma modifier, and your spell attack modifier is your proficiency bonus + your Charisma modifier.</description>
+    </sheet>
+    <rules>
+      <stat name="spellcasting" value="charisma"/>
+      <select type="Spell" name="Cantrip (Inquisitor)" level="1" number="2" supports="ID_SPELLLIST_INQUISITOR"/>
+      <select type="Spell" name="1st Level Spell (Inquisitor)" level="1" number="3" supports="ID_SPELLLIST_INQUISITOR"/>
+    </rules>
   </element>
 </elements>

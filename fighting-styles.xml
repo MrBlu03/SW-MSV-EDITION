@@ -36,7 +36,7 @@
       <description>+2 damage when wielding a melee weapon in one hand and no other weapons.</description>
     </sheet>
     <rules>
-      <stat name="melee:damage" value="2" equipped="[weapon.onehanded],[weapon.versatile]" requirements="![armor:shield]||[armor:any]" />
+      <!-- This is a conditional bonus that requires manual tracking -->
     </rules>
   </element>
   <element name="Great Weapon Fighting" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_FIGHTING_STYLE_GREAT_WEAPON_FIGHTING">
@@ -75,7 +75,7 @@
       <description>Add ability modifier to off-hand attack damage when two-weapon fighting.</description>
     </sheet>
     <rules>
-      <grant type="Grants" id="ID_SW_INTERNAL_GRANTS_TWO_WEAPON_FIGHTING_STYLE" />
+      <!-- This is a conditional bonus that requires manual tracking -->
     </rules>
   </element>
 </elements>

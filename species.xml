@@ -137,8 +137,8 @@
       <p class="indent">Age. Normal lifespan.</p>
       <p class="indent">Size. Your size is Medium (tall).</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
-      <p class="indent">Darkvision</p>
-      <p class="indent">Natural weapons: Unarmed strikes deal 1d6 kinetic damage</p>
+      <p class="indent">Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+      <p class="indent">Natural Weapons: Your unarmed strikes deal 1d6 kinetic damage instead of the normal bludgeoning damage.</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Catharese.</p>
     </description>
     <rules>
@@ -146,6 +146,8 @@
       <stat name="charisma" value="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Sense" id="ID_SENSE_DARKVISION"/>
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_CATHAR_NATURAL_WEAPONS"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_CATHARESE"/>
       <select type="Sub Race" name="Cathar Subrace" supports="ID_RACE_CATHAR" optional="true"/>
@@ -199,9 +201,9 @@
       <p class="indent">Age. Normal lifespan.</p>
       <p class="indent">Size. Your size is Medium.</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
-      <p class="indent">Darkvision</p>
+      <p class="indent">Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
       <p class="indent">Resistant to poison</p>
-      <p class="indent">Amphibious (breathe air and water)</p>
+      <p class="indent">Amphibious: You can breathe air and water.</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Chagri.</p>
     </description>
     <rules>
@@ -210,6 +212,7 @@
       <stat name="innate speed" value="30" bonus="base"/>
       <stat name="resistant" value="poison"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Sense" id="ID_SENSE_DARKVISION"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_CHAGRI"/>
       <select type="Sub Race" name="Chagrian Subrace" supports="ID_RACE_CHAGRIAN" optional="true"/>
@@ -2619,6 +2622,18 @@
     </sheet>
     <rules>
       <stat name="hp" value="level" />
+    </rules>
+  </element>
+  <element name="Natural Weapons" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_CATHAR_NATURAL_WEAPONS">
+    <description>
+      <p>Your unarmed strikes deal 1d6 kinetic damage instead of the normal bludgeoning damage.</p>
+    </description>
+    <sheet>
+      <description>Your unarmed strikes deal 1d6 kinetic damage.</description>
+    </sheet>
+    <rules>
+      <stat name="unarmed damage" value="1d6" />
+      <stat name="unarmed damage type" value="kinetic" />
     </rules>
   </element>
 </elements>

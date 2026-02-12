@@ -157,6 +157,9 @@
       <set name="type">Equipment</set>
       <set name="slot">body</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_JUMPPACK_JUMP"/>
+    </rules>
   </element>
 
   <element name="Jump Boots" type="Item" source="SW-MSV-Edition" id="ID_ITEM_JUMP_BOOTS">
@@ -183,6 +186,9 @@
       <set name="type">Equipment</set>
       <set name="slot">body</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_HOVERPACK_HOVER"/>
+    </rules>
   </element>
 
   <element name="Hover Boots" type="Item" source="SW-MSV-Edition" id="ID_ITEM_HOVER_BOOTS">
@@ -209,6 +215,10 @@
       <set name="type">Equipment</set>
       <set name="slot">body</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_JETPACK_JUMP"/>
+      <grant type="Action" id="ID_ACTION_JETPACK_HOVER"/>
+    </rules>
   </element>
 
   <element name="Jet Boots" type="Item" source="SW-MSV-Edition" id="ID_ITEM_JET_BOOTS">
@@ -230,7 +240,7 @@
       <p>Basic poison that can be applied to weapons. Target must make a DC 13 Constitution saving throw. On a failed save, takes full damage and becomes poisoned. On a successful save, takes half damage and isn't poisoned.</p>
     </description>
     <setters>
-      <set name="category">Equipment</set>
+      <set name="category">Poisons</set>
       <set name="cost" currency="gp">25</set>
       <set name="weight" lb="0.5">0.5 lb.</set>
     </setters>
@@ -241,7 +251,7 @@
       <p>Poison that induces sleep. Target must make a DC 14 Constitution saving throw. On a failed save, falls asleep. On a successful save, doesn't fall asleep.</p>
     </description>
     <setters>
-      <set name="category">Equipment</set>
+      <set name="category">Poisons</set>
       <set name="cost" currency="gp">50</set>
       <set name="weight" lb="0.5">0.5 lb.</set>
     </setters>
@@ -252,7 +262,7 @@
       <p>Poison that causes paralysis. Target must make a DC 14 Constitution saving throw. On a failed save, becomes paralysed for 1 round.</p>
     </description>
     <setters>
-      <set name="category">Equipment</set>
+      <set name="category">Poisons</set>
       <set name="cost" currency="gp">75</set>
       <set name="weight" lb="0.5">0.5 lb.</set>
     </setters>
@@ -263,7 +273,7 @@
       <p>Poison that induces fear. Target must make a DC 14 Wisdom saving throw. On a failed save, becomes frightened for 1 round. On a successful save, doesn't become frightened.</p>
     </description>
     <setters>
-      <set name="category">Equipment</set>
+      <set name="category">Poisons</set>
       <set name="cost" currency="gp">50</set>
       <set name="weight" lb="0.5">0.5 lb.</set>
     </setters>
@@ -301,5 +311,42 @@
     <rules>
       <grant type="Action" id="ID_ACTION_FLAME"/>
     </rules>
+  </element>
+
+  <!-- Movement Actions -->
+  <element name="Jumppack Jump" type="Action" source="SW-MSV-Edition" id="ID_ACTION_JUMPPACK_JUMP">
+    <description>
+      <p>Bonus Action: Jump up to 25 feet vertically or horizontally. Provokes opportunity attacks when leaving or landing in enemy melee range.</p>
+    </description>
+    <sheet>
+      <description>Bonus Action: Jump up to 25 feet vertically or horizontally with your jumppack.</description>
+    </sheet>
+  </element>
+
+  <element name="Hoverpack Hover" type="Action" source="SW-MSV-Edition" id="ID_ACTION_HOVERPACK_HOVER">
+    <description>
+      <p>Bonus Action: Hover up to 15 feet in the air on the same spot for 2 turns. While hovering, you have advantage on ranged attacks and disadvantage on Dexterity saving throws. Provokes opportunity attacks when leaving or landing in enemy melee range.</p>
+    </description>
+    <sheet>
+      <description>Bonus Action: Hover up to 15 feet in the air for 2 turns with your hoverpack.</description>
+    </sheet>
+  </element>
+
+  <element name="Jetpack Jump" type="Action" source="SW-MSV-Edition" id="ID_ACTION_JETPACK_JUMP">
+    <description>
+      <p>Bonus Action: Jump up to 30 feet vertically or horizontally. Provokes opportunity attacks when leaving or landing in enemy melee range.</p>
+    </description>
+    <sheet>
+      <description>Bonus Action: Jump up to 30 feet vertically or horizontally with your jetpack.</description>
+    </sheet>
+  </element>
+
+  <element name="Jetpack Hover" type="Action" source="SW-MSV-Edition" id="ID_ACTION_JETPACK_HOVER">
+    <description>
+      <p>Bonus Action: Hover up to 15 feet in the air with movement for 2 turns. While hovering, you have advantage on ranged attacks and no disadvantage on Dexterity saving throws. Provokes opportunity attacks when leaving or landing in enemy melee range.</p>
+    </description>
+    <sheet>
+      <description>Bonus Action: Hover up to 15 feet with movement for 2 turns with your jetpack.</description>
+    </sheet>
   </element>
 </elements>
