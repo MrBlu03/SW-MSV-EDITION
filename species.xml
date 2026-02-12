@@ -2636,4 +2636,17 @@
       <stat name="unarmed damage type" value="kinetic" />
     </rules>
   </element>
+
+  <!-- Ion Damage Vulnerability Condition -->
+  <element name="Ion Damage Vulnerability" type="Condition" source="SW-MSV-Edition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION">
+    <description>
+      <p>You are vulnerable to ion damage.</p>
+    </description>
+    <sheet>
+      <description>Vulnerable to ion damage.</description>
+    </sheet>
+    <rules>
+      <stat name="vulnerable" value="ion"/>
+    </rules>
+  </element>
 </elements>

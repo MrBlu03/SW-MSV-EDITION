@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>SW-MSV-Edition</name>
-    <update version="1.0.9">
+    <update version="1.1.0">
       <file name="source.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/source.xml" />
     </update>
   </info>
@@ -16,6 +16,7 @@
         <li><strong>Star Wars Gear:</strong> Armor, shields, tools, healing items, explosives, and specialized equipment</li>
         <li><strong>Fighting Styles & Maneuvers:</strong> Unique combat options tailored to the Star Wars universe</li>
         <li><strong>Backgrounds & Languages:</strong> Galaxy-appropriate character origins and communication options</li>
+        <li><strong>Aurora Builder Compatible:</strong> Fully compatible with Aurora Builder character creation software</li>
       </ul>
       <p>This homebrew is designed to provide a complete Star Wars tabletop experience using the D&D 5E ruleset.</p>]]>
     </description>
