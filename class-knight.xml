@@ -114,7 +114,8 @@
     </rules>
   </element>
   <element id="ID_CLASS_KNIGHT_FEATURE_MEDITATION" name="Meditation" type="Spell" level="0" source="SW-MSV-Edition">
-    
+    <supports>Knight</supports>
+    <supports>Knight</supports>
     <description>
       <p>/ ends your turn; Meditate on the battlefield to gain 2 Focus when it is your turn again. While in this state,you can't take Reactions and you are considered Incapacitated.</p>
     </description>
@@ -138,6 +139,7 @@
     <rules />
   </element>
   <element id="ID_CLASS_KNIGHT_FEATURE_FORCE_PUSH" name="Force Push" type="Spell" level="0" source="SW-MSV-Edition">
+    <supports>Knight</supports>
     
     <description>
       <p>Use the Force to push someone away. Each creature in a 15-foot line must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and are pushed 10 feet away. On a successful save, the creature takes half damage and isn't pushed. Per extra Focus spent to a max of half your Knight level (rounded up), the ability deals an additional 1d8 kinetic damage and pushes 5 extra feet.</p>
@@ -162,6 +164,7 @@
     <rules />
   </element>
   <element id="ID_CLASS_KNIGHT_FEATURE_FORCE_PULL" name="Force Pull" type="Spell" level="0" source="SW-MSV-Edition">
+    <supports>Knight</supports>
     
     <description>
       <p>Use the Force to pull someone toward you. Each creature within a 15-foot cone originating from you must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and are pulled 10 feet closer. On a successful save, the creature takes half damage and isn't pulled. Per extra Focus spent to a max of half your Knight level (rounded up), the ability deals an additional 1d8 kinetic damage, increases the cone size by 5 feet, and pulls creatures an additional 5 feet.</p>
@@ -186,6 +189,7 @@
     <rules />
   </element>
   <element id="ID_CLASS_KNIGHT_FEATURE_VALOR" name="Valor" type="Spell" level="0" source="SW-MSV-Edition">
+    <supports>Knight</supports>
     
     <description>
       <p>You give courage to up to 3 creatures within range. The target can roll a d4 and add the number rolled to an attack roll or saving throw. Per extra Focus spent to a max of half your Knight level (rounded up), you can target one additional creature.</p>
@@ -210,6 +214,7 @@
     <rules />
   </element>
   <element id="ID_CLASS_KNIGHT_FEATURE_MINOR_TELEKINESIS" name="Minor Telekinesis" type="Spell" level="0" source="SW-MSV-Edition">
+    <supports>Knight</supports>
     
     <description>
       <p>You use the Force to manipulate a small or medium object, or a small creature, that you can see within range. You make an ability check using your Force ability, contested by the target’s Strength check. On a success, you may suspend and/or move up to 30 feet or throw the target. If you choose to suspend the target, it remains suspended for the duration. If you throw the target, make a ranged Force attack with a range of 30/60 feet. On a hit, the target you throw at takes kinetic damage based on what is thrown: Small object: 2d4 kinetic damage, Medium object: 2d6 kinetic damage, Small creature: 1d4 kinetic damage. If a creature is thrown, the thrown small creature takes 1d8 + your Force ability modifier kinetic damage.</p>
@@ -234,6 +239,7 @@
     <rules />
   </element>
   <element id="ID_CLASS_KNIGHT_FEATURE_SABER_THROW" name="Saber Throw" type="Spell" level="0" source="SW-MSV-Edition">
+    <supports>Knight</supports>
     
     <description>
       <p>Make a ranged attack of 30/60 with your melee weapon using your Dexterity modifier for attack and damage rolls. If you are proficient with you weapon you add your proficiency bonus to the attack roll. Per extra Focus spent to a max of half your Knight level (rounded up), your range increases by 10/15 feet.</p>
@@ -258,6 +264,7 @@
     <rules />
   </element>
   <element id="ID_CLASS_KNIGHT_FEATURE_FORCE_RESOLUTION" name="Force Resolution" type="Spell" level="0" source="SW-MSV-Edition">
+    <supports>Knight</supports>
     
     <description>
       <p>When Incapacitated, you can use this ability to end that condition.</p>
@@ -281,6 +288,7 @@
     <rules />
   </element>
   <element id="ID_CLASS_KNIGHT_FEATURE_MIND_TRICK" name="Mind Trick" type="Spell" level="0" source="SW-MSV-Edition">
+    <supports>Knight</supports>
     
     <description>
       <p>You wave your hand and speak a simple command to a creature you can see within range. The target makes a Wisdom saving throw. On a failed save, the creature must follow the command on its next turn. On a successful save, the creature isn't tricked and if the creature isn't in combat, it will make an Arcana check against your Spell save DC to determine whether it knows you tried to mind trick it. This ability has no effect if the target is a Droid, does not understand your language, or is not intelligent enough. Per extra Focus spent to a max of half your Knight level (rounded up), you can target an additional creature.</p>
@@ -315,6 +323,7 @@
     <rules />
   </element>
   <element id="ID_CLASS_KNIGHT_FEATURE_BLINDING_STRIKE" name="Blinding Strike" type="Spell" level="0" source="SW-MSV-Edition">
+    <supports>Knight</supports>
     
     <description>
       <p>When you successfully hit with a melee attack, you can use this ability to try to blind the creature you hit. The creature must make a Constitution saving throw. On a failed save, the creature is blinded for 1 round. On a successful save, the creature isn't blinded.</p>
