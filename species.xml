@@ -1098,7 +1098,7 @@
       <grant type="Size" id="ID_SIZE_SMALL"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_JAWAESE"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND"/>
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ION_PISTOL"/>
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ION_RIFLE"/>
             <grant type="Sense" id="ID_SENSE_DARKVISION"/>
@@ -2214,7 +2214,7 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_TUSKEN"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_CYCLER_RIFLE"/>
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIRBO-AXE"/>

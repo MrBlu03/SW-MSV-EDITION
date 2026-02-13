@@ -183,7 +183,7 @@
       <set name="short">Deception, Stealth, Intimidation, Sleight Of Hand, Slicing Kit</set>
     </setters>
     <rules>
-      <select type="Proficiency" name="Skill Proficiency (Criminal)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND" />
+      <select type="Proficiency" name="Skill Proficiency (Criminal)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
     </rules>
   </element>
@@ -243,7 +243,7 @@
       <set name="short">Insight, Acrobatics, Performance, Sleight Of Hand</set>
     </setters>
     <rules>
-      <select type="Proficiency" name="Skill Proficiency (Entertainer)" number="2" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND" />
+      <select type="Proficiency" name="Skill Proficiency (Entertainer)" number="2" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
       <select type="Proficiency" name="Musical Instrument (Entertainer)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1" />
     </rules>
   </element>
@@ -303,7 +303,7 @@
       <set name="short">Investigation, Athletics, Sleight Of Hand, History, Repair Kit</set>
     </setters>
     <rules>
-      <select type="Proficiency" name="Skill Proficiency (Engineer)" number="2" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND|ID_PROFICIENCY_SKILL_HISTORY" />
+      <select type="Proficiency" name="Skill Proficiency (Engineer)" number="2" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_HISTORY" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_REPAIR_KIT" />
     </rules>
   </element>
@@ -604,7 +604,7 @@
       <set name="short">Athletics, Survival, Animal Handling, Medicine, 1 Language</set>
     </setters>
     <rules>
-      <select type="Proficiency" name="Skill Proficiency (Nomad)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_MEDICINE" />
+      <select type="Proficiency" name="Skill Proficiency (Nomad)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_MEDICINE" />
       <select type="Language" name="Language (Nomad)" supports="Standard||Exotic" number="1" />
       <select type="Proficiency" name="Musical Instrument (Nomad)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1" />
     </rules>
@@ -665,7 +665,7 @@
       <set name="short">Deception, Athletics, Intimidation, Sleight Of Hand, Slicing Kit</set>
     </setters>
     <rules>
-      <select type="Proficiency" name="Skill Proficiency (Pirate)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND" />
+      <select type="Proficiency" name="Skill Proficiency (Pirate)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
     </rules>
   </element>
@@ -786,7 +786,7 @@
       <set name="short">Deception, Insight, Performance, Sleight Of Hand, Forgery Kit</set>
     </setters>
     <rules>
-      <select type="Proficiency" name="Skill Proficiency (Scoundrel)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND" />
+      <select type="Proficiency" name="Skill Proficiency (Scoundrel)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT" />
     </rules>
   </element>
@@ -906,7 +906,7 @@
       <set name="short">Deception, Stealth, Acrobatics, Sleight Of Hand</set>
     </setters>
     <rules>
-      <select type="Proficiency" name="Skill Proficiency (Smuggler)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND" />
+      <select type="Proficiency" name="Skill Proficiency (Smuggler)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
     </rules>
   </element>
   <element name="Soldier" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_SOLDIER">

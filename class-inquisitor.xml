@@ -53,7 +53,7 @@
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_OR_MARTIAL_LIGHTWEAPONS_WITH_FINESSE_PROPERTY" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_OR_MARTIAL_VIBROWEAPONS_WITH_FINESSE_PROPERTY" />
-      <select type="Proficiency" name="Skill Proficiency (Inquisitor)" number="4" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND|ID_PROFICIENCY_SKILL_STEALTH" />
+      <select type="Proficiency" name="Skill Proficiency (Inquisitor)" number="4" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SPELLCASTING" level="1" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_EXPERTISE" level="1" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_ASSASSINATE" level="1" />
@@ -61,7 +61,6 @@
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_CUNNING_ACTION" level="2" />
       <select type="Feat" name="Feat (Inquisitor)" level="4" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_UNCANNY_DODGE" level="5" />
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_EXPERTISE" level="6" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_EVASION" level="7" />
       <select type="Feat" name="Feat (Inquisitor)" level="8" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SUBCLASS_ABILITY" level="9" />
@@ -130,13 +129,15 @@ You don't need advantage on the attack roll if another enemy of the target is wi
   <element id="ID_CLASS_INQUISITOR_FEATURE_EXPERTISE" name="Expertise" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>Gain expertise in a skill you're proficient with.</p>
+      <p>At 1st level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
+      <p class="indent">At 6th level, you can choose two more of your proficiencies to gain this benefit.</p>
     </description>
     <sheet>
-      <description>Gain expertise in a skill you're proficient with.</description>
+      <description>Your proficiency bonus is doubled for your chosen expertise skills.</description>
     </sheet>
     <rules>
-      <select type="Class Feature" name="Expertise" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE" />
+      <select type="Class Feature" name="Expertise (Inquisitor)" level="1" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE" />
+      <select type="Class Feature" name="Expertise (Inquisitor)" level="6" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE" />
     </rules>
   </element>
 
