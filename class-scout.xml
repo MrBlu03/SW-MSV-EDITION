@@ -1,5 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <elements>
+  <info>
+    <name>Scout Class</name>
+    <update version="1.1.0">
+      <file name="class-scout.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-scout.xml" />
+    </update>
+  </info>
   <element id="ID_CLASS_SCOUT" name="Scout" type="Class" source="SW-MSV-Edition">
     <description>
       <p class="indent">
@@ -27,7 +33,11 @@
         </strong>
       </p>
     </description>
+    <sheet display="false">
+      <description>An agile specialist combining stealth, cunning, and precision.</description>
+    </sheet>
     <setters>
+      <set name="short">An agile specialist combining stealth, cunning, and precision.</set>
       <set name="hd">d8</set>
     </setters>
     <rules>

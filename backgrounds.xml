@@ -1,5 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <elements>
+  <info>
+    <name>Backgrounds</name>
+    <update version="1.1.0">
+      <file name="backgrounds.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/backgrounds.xml" />
+    </update>
+  </info>
   <element name="Agent" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_AGENT">
     <description>
       <p>choose 2 proficiencies: deception, investigation, persuasion, stealth</p>
@@ -51,6 +57,10 @@
         <li>Once I pick a goal, I become obsessed with it to the detriment of everything else in my life.</li>
       </ul>
     </description>
+    
+    <setters>
+      <set name="short">Deception, Investigation, Persuasion, Stealth, 2 Languages</set>
+    </setters>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Agent)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_STEALTH" />
       <select type="Language" name="Language (Agent)" supports="Standard||Exotic" number="2" />
@@ -107,6 +117,10 @@
         <li>An innocent person is in prison for a crime that I committed. I'm okay with that.</li>
       </ul>
     </description>
+    
+    <setters>
+      <set name="short">Deception, Persuasion, Insight, Perception, Slicing Kit, 1 Language</set>
+    </setters>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Bounty Hunter)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERCEPTION" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
@@ -164,6 +178,10 @@
         <li>An innocent person is in prison for a crime that I committed. I'm okay with that.</li>
       </ul>
     </description>
+    
+    <setters>
+      <set name="short">Deception, Stealth, Intimidation, Sleight Of Hand, Slicing Kit</set>
+    </setters>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Criminal)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
@@ -220,6 +238,10 @@
         <li>Despite my best efforts, I am unreliable to my friends.</li>
       </ul>
     </description>
+    
+    <setters>
+      <set name="short">Insight, Acrobatics, Performance, Sleight Of Hand</set>
+    </setters>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Entertainer)" number="2" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND" />
       <select type="Proficiency" name="Musical Instrument (Entertainer)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1" />
@@ -276,6 +298,10 @@
         <li>I work on my research to the point where I ignore my own bodily needs.</li>
       </ul>
     </description>
+    
+    <setters>
+      <set name="short">Investigation, Athletics, Sleight Of Hand, History, Repair Kit</set>
+    </setters>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Engineer)" number="2" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND|ID_PROFICIENCY_SKILL_HISTORY" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_REPAIR_KIT" />
@@ -332,6 +358,10 @@
         <li>Once I pick a goal, I become obsessed with it to the detriment of everything else in my life.</li>
       </ul>
     </description>
+    
+    <setters>
+      <set name="short">Investigation, Persuasion, Insight, History, Arcana, 1 Language</set>
+    </setters>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Jedi)" number="2" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_ARCANA" />
       <select type="Language" name="Language (Jedi)" supports="Standard||Exotic" number="1" />
@@ -388,6 +418,10 @@
         <li>I value a victory regardless of the ethics behind the victory.</li>
       </ul>
     </description>
+    
+    <setters>
+      <set name="short">Athletics, Intimidation, Survival, History, Hoverpack</set>
+    </setters>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Mandalorian)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_HISTORY" />
       <grant type="Language" id="ID_LANGUAGE_MANDOA_LANGUAGE" />
@@ -445,6 +479,10 @@
         <li>I will never let a comrade stand alone, even if it gets me killed.</li>
       </ul>
     </description>
+    
+    <setters>
+      <set name="short">Deception, Investigation, Athletics, Intimidation, 1 Language</set>
+    </setters>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Mercenary)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION" />
       <select type="Language" name="Language (Mercenary)" supports="Standard||Exotic" number="1" />
@@ -501,6 +539,10 @@
         <li>By my words and actions, I often bring shame to my family.</li>
       </ul>
     </description>
+    
+    <setters>
+      <set name="short">Deception, Persuasion, Insight, History, 1 Language</set>
+    </setters>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Noble)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_HISTORY" />
       <select type="Language" name="Language (Noble)" supports="Standard||Exotic" number="1" />
@@ -557,6 +599,10 @@
         <li>Don't expect me to save those who can't save themselves. It is nature's way that the strong thrive and the weak perish.</li>
       </ul>
     </description>
+    
+    <setters>
+      <set name="short">Athletics, Survival, Animal Handling, Medicine, 1 Language</set>
+    </setters>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Nomad)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_MEDICINE" />
       <select type="Language" name="Language (Nomad)" supports="Standard||Exotic" number="1" />
@@ -614,6 +660,10 @@
         <li>I get lost in the thrill of the raid and can't focus on the details of a plan.</li>
       </ul>
     </description>
+    
+    <setters>
+      <set name="short">Deception, Athletics, Intimidation, Sleight Of Hand, Slicing Kit</set>
+    </setters>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Pirate)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
@@ -670,6 +720,10 @@
         <li>I work on my research to the point where I ignore my own bodily needs.</li>
       </ul>
     </description>
+    
+    <setters>
+      <set name="short">Investigation, History, Medicine, Nature, Slicing Kit, 1 Language</set>
+    </setters>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Scientist)" number="2" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
@@ -727,6 +781,10 @@
         <li>I hate to admit it and will hate myself for it, but I'll run and preserve my own hide if the going gets tough.</li>
       </ul>
     </description>
+    
+    <setters>
+      <set name="short">Deception, Insight, Performance, Sleight Of Hand, Forgery Kit</set>
+    </setters>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Scoundrel)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT" />
@@ -783,6 +841,10 @@
         <li>Failure frightens me, and I get desperate if I think I might fail.</li>
       </ul>
     </description>
+    
+    <setters>
+      <set name="short">Deception, Intimidation, Insight, History, Arcana, 1 Language</set>
+    </setters>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Sith)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_ARCANA" />
       <select type="Language" name="Language (Sith)" supports="Standard||Exotic" number="1" />
@@ -839,6 +901,10 @@
         <li>Someone who knows me well might call me "two-faced" but those who don't have no idea what hit 'em.</li>
       </ul>
     </description>
+    
+    <setters>
+      <set name="short">Deception, Stealth, Acrobatics, Sleight Of Hand</set>
+    </setters>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Smuggler)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND" />
     </rules>
@@ -894,6 +960,10 @@
         <li>I'd rather eat my armor than admit when I'm wrong.</li>
       </ul>
     </description>
+    
+    <setters>
+      <set name="short">Investigation, Persuasion, Athletics, Intimidation, 1 Language</set>
+    </setters>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Soldier)" number="2" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION" />
       <select type="Language" name="Language (Soldier)" supports="Standard||Exotic" number="1" />

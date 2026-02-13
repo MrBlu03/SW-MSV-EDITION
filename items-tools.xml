@@ -1,5 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <elements>
+  <info>
+    <name>Tools</name>
+    <update version="1.1.0">
+      <file name="items-tools.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-tools.xml" />
+    </update>
+  </info>
   
   <element name="Tool: Slicing Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" source="SW-MSV-Edition">
     <description>

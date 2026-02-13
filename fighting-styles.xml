@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
+  <info>
+    <name>Fighting Styles</name>
+    <update version="1.1.0">
+      <file name="fighting-styles.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/fighting-styles.xml" />
+    </update>
+  </info>
   <element name="Marksmanship" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_FIGHTING_STYLE_MARKSMANSHIP">
     <supports>Fighting Style</supports>
     <compendium display="false"/>

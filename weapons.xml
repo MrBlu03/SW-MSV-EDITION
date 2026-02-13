@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
+  <info>
+    <name>Weapons</name>
+    <update version="1.1.0">
+      <file name="weapons.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/weapons.xml" />
+    </update>
+  </info>
   <element name="Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_STRIKE">
     <description>
       <p>Strike: Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>

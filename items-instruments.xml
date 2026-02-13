@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
+  <info>
+    <name>Musical Instruments</name>
+    <update version="1.1.0">
+      <file name="items-instruments.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-instruments.xml" />
+    </update>
+  </info>
   <element name="Bandfill" type="Item" source="SW-MSV-Edition" id="ID_ITEM_BANDFILL">
     <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>

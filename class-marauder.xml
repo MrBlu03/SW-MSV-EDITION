@@ -1,5 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <elements>
+  <info>
+    <name>Marauder Class</name>
+    <update version="1.1.0">
+      <file name="class-marauder.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-marauder.xml" />
+    </update>
+  </info>
   <element id="ID_CLASS_MARAUDER" name="Marauder" type="Class" source="SW-MSV-Edition">
     <description>
       <p class="indent">
@@ -39,7 +45,11 @@
         </strong>
       </p>
     </description>
+    <sheet display="false">
+      <description>An aggressive Force warrior channeling rage and the dark side in combat.</description>
+    </sheet>
     <setters>
+      <set name="short">An aggressive Force warrior channeling rage and the dark side in combat.</set>
       <set name="hd">d12</set>
     </setters>
     <rules>

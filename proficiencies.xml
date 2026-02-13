@@ -1,5 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <elements>
+  <info>
+    <name>Proficiencies</name>
+    <update version="1.1.0">
+      <file name="proficiencies.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/proficiencies.xml" />
+    </update>
+  </info>
   <element name="Weapon: Simple Blasters" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS" source="SW-MSV-Edition">
     <description>
       <p>Simple blaster weapon proficiency</p>

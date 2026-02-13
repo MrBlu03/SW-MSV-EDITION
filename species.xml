@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
+  <info>
+    <name>Species</name>
+    <update version="1.1.0">
+      <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
+    </update>
+  </info>
   <element name="Darkvision" type="Sense" source="SW-MSV-Edition" id="ID_SENSE_DARKVISION">
     <description>
       <p>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
@@ -29,11 +35,12 @@
       <p class="indent">Proficient with slicing kit</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Bith, One additional language of choice.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="intelligence" value="2"/>
       <stat name="dexterity" value="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
-      <stat name="vulnerable" value="sonic"/>
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_SONIC" />
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_BITH"/>
@@ -66,7 +73,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_BITH_CYBORG_DEX">
@@ -80,7 +87,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Bothan" type="Race" source="SW-MSV-Edition" id="ID_RACE_BOTHAN">
@@ -97,6 +104,7 @@
       <p class="indent">Proficient in Insight and Deception</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Bothese.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="intelligence" value="2"/>
       <stat name="dexterity" value="1"/>
@@ -131,7 +139,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_BOTHAN_CYBORG_DEX">
@@ -145,7 +153,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cathar" type="Race" source="SW-MSV-Edition" id="ID_RACE_CATHAR">
@@ -164,6 +172,7 @@
       <p class="indent">Climb speed 30 ft. Advantage on Strength saving throws and Athletics checks when climbing.</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Catharese.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="dexterity" value="2"/>
       <stat name="charisma" value="1"/>
@@ -200,7 +209,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CATHAR_CYBORG_DEX">
@@ -214,7 +223,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Chagrian" type="Race" source="SW-MSV-Edition" id="ID_RACE_CHAGRIAN">
@@ -234,11 +243,12 @@
       <p class="indent">Swim speed 30 ft.</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Chagri.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="dexterity" value="2"/>
       <stat name="wisdom" value="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
-      <stat name="resistant" value="poison"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Sense" id="ID_SENSE_DARKVISION"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
@@ -269,7 +279,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CHAGRIAN_CYBORG_DEX">
@@ -283,7 +293,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Chiss" type="Race" source="SW-MSV-Edition" id="ID_RACE_CHISS">
@@ -302,6 +312,7 @@
       <p class="indent">Insight proficiency</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Cheunh.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="intelligence" value="2"/>
       <stat name="charisma" value="1"/>
@@ -338,7 +349,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CHISS_CYBORG_DEX">
@@ -352,7 +363,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Devaronian" type="Race" source="SW-MSV-Edition" id="ID_RACE_DEVARONIAN">
@@ -373,11 +384,12 @@
       <p class="indent">Proficiency in Deception or Persuasion</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Devaronese.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="constitution" value="2"/>
       <stat name="charisma" value="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
-      <stat name="resistant" value="poison"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_DEVARONESE"/>
@@ -410,7 +422,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_DEVARONIAN_CYBORG_DEX">
@@ -424,7 +436,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Protocol Droid" type="Race" source="SW-MSV-Edition" id="ID_RACE_PROTOCOL_DROID">
@@ -447,14 +459,15 @@
       <p class="indent">Tune-Up: Bonus action to regain 1d10 + level HP (short/long rest recharge)</p>
       <p class="indent">Languages. You can speak, read, and write All languages.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="charisma" value="2"/>
       <select type="Racial Trait" name="Ability Score Increase (Protocol Droid)" supports="ID_RACE_PROTOCOL_DROID" number="1"/>
       <stat name="innate speed" value="25" bonus="base"/>
-      <stat name="resistant" value="necrotic"/>
-      <stat name="resistant" value="psychic"/>
-      <stat name="immune" value="poison"/>
-      <stat name="vulnerable" value="ion"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Action" id="ID_ACTION_DROID_TUNE_UP"/>
           <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY"/>
@@ -518,14 +531,15 @@
       <p class="indent">Tune-Up: Bonus action to regain 1d10 + level HP (short/long rest recharge)</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Binary, One additional language of choice.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="constitution" value="2"/>
       <select type="Racial Trait" name="Ability Score Increase (Combat Droid)" supports="ID_RACE_COMBAT_DROID" number="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
-      <stat name="resistant" value="necrotic"/>
-      <stat name="resistant" value="psychic"/>
-      <stat name="immune" value="poison"/>
-      <stat name="vulnerable" value="ion"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_BINARY"/>
@@ -553,6 +567,7 @@
       <p class="indent">Darkvision</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Durese.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="dexterity" value="2"/>
       <stat name="intelligence" value="1"/>
@@ -586,7 +601,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_DUROS_CYBORG_DEX">
@@ -600,7 +615,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Ewok" type="Race" source="SW-MSV-Edition" id="ID_RACE_EWOK">
@@ -621,6 +636,7 @@
       <p class="indent">Nature and Survival proficiency</p>
       <p class="indent">Languages. You can speak Ewokese and understand Galactic Basic (cannot speak it).</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="dexterity" value="2"/>
       <stat name="constitution" value="1"/>
@@ -660,7 +676,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_EWOK_CYBORG_DEX">
@@ -674,7 +690,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Gamorrean" type="Race" source="SW-MSV-Edition" id="ID_RACE_GAMORREAN">
@@ -693,6 +709,7 @@
       <p class="indent">Brutal Critical: On a critical hit, add one additional weapon damage die</p>
       <p class="indent">Languages. You can speak Gamorrese and understand Galactic Basic (cannot speak it).</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="strength" value="2"/>
       <stat name="constitution" value="1"/>
@@ -729,7 +746,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GAMORREAN_CYBORG_DEX">
@@ -743,7 +760,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Geonosian" type="Race" source="SW-MSV-Edition" id="ID_RACE_GEONOSIAN">
@@ -761,6 +778,7 @@
       <p class="indent">Sonic weapon proficiency</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Geonosian.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="dexterity" value="2"/>
       <stat name="constitution" value="1"/>
@@ -796,7 +814,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GEONOSIAN_CYBORG_DEX">
@@ -810,7 +828,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Gran" type="Race" source="SW-MSV-Edition" id="ID_RACE_GRAN">
@@ -829,6 +847,7 @@
       <p class="indent">Insight proficiency</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Gran.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="constitution" value="2"/>
       <stat name="wisdom" value="1"/>
@@ -864,7 +883,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GRAN_CYBORG_DEX">
@@ -878,7 +897,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Human (Standard)" type="Race" source="SW-MSV-Edition" id="ID_RACE_HUMAN_STANDARD">
@@ -896,6 +915,7 @@
       <p class="indent">Proficiency in one weapon and one skill of your choosing.</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, One additional language of choice.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <select type="Racial Trait" name="Ability Score Increase (1st)" supports="Human Ability" number="1"/>
       <select type="Racial Trait" name="Ability Score Increase (2nd)" supports="Human Ability" number="1"/>
@@ -926,6 +946,7 @@
       <p class="indent">Proficiency in one weapon and one skill of your choosing.</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, One additional language of choice.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <select type="Racial Trait" name="Ability Score Increase (+2)" supports="Human Variant Two" number="1"/>
       <select type="Racial Trait" name="Ability Score Increase (2nd)" supports="Human Ability" number="1"/>
@@ -971,7 +992,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CYBORG_DEX">
@@ -985,7 +1006,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Ithorian" type="Race" source="SW-MSV-Edition" id="ID_RACE_ITHORIAN">
@@ -1000,6 +1021,7 @@
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
       <p class="indent">Languages. You can speak Ithorese and understand Galactic Basic (cannot speak it).</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="charisma" value="2"/>
       <stat name="wisdom" value="1"/>
@@ -1033,7 +1055,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ITHORIAN_CYBORG_DEX">
@@ -1047,7 +1069,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Jawa" type="Race" source="SW-MSV-Edition" id="ID_RACE_JAWA">
@@ -1068,6 +1090,7 @@
       <p class="indent">Ion weapon proficiency</p>
       <p class="indent">Languages. You can speak Jawaese and understand Galactic Basic (cannot speak it).</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="dexterity" value="2"/>
       <stat name="intelligence" value="1"/>
@@ -1106,7 +1129,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_JAWA_CYBORG_DEX">
@@ -1120,7 +1143,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Kaleesh" type="Race" source="SW-MSV-Edition" id="ID_RACE_KALEESH">
@@ -1139,6 +1162,7 @@
       <p class="indent">Survival proficiency</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Kaleesh.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="strength" value="2"/>
       <stat name="dexterity" value="1"/>
@@ -1175,7 +1199,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_KALEESH_CYBORG_DEX">
@@ -1189,7 +1213,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Kel Dor" type="Race" source="SW-MSV-Edition" id="ID_RACE_KEL_DOR">
@@ -1208,11 +1232,12 @@
       <p class="indent">Telepathy</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Kel Dor.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="wisdom" value="2"/>
       <stat name="dexterity" value="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
-      <stat name="resistant" value="necrotic"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_KEL_DOR"/>
@@ -1243,7 +1268,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_KEL_DOR_CYBORG_DEX">
@@ -1257,7 +1282,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Mirialan" type="Race" source="SW-MSV-Edition" id="ID_RACE_MIRIALAN">
@@ -1275,6 +1300,7 @@
       <p class="indent">Natural weapons: Unarmed strikes deal 1d4 kinetic damage and have finesse</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Mirialan.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="dexterity" value="2"/>
       <stat name="intelligence" value="1"/>
@@ -1310,7 +1336,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MIRIALAN_CYBORG_DEX">
@@ -1324,7 +1350,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Mon Calamari" type="Race" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI">
@@ -1345,11 +1371,12 @@
       <p class="indent">Swim speed 30 ft.</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Mon Cal, One additional language of choice.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="charisma" value="2"/>
       <select type="Racial Trait" name="Ability Score Increase (Mon Calamari)" supports="Mon Calamari" number="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
-      <stat name="resistant" value="cold"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_MON_CAL"/>
@@ -1383,7 +1410,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_CYBORG_DEX">
@@ -1397,7 +1424,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Nautolan" type="Race" source="SW-MSV-Edition" id="ID_RACE_NAUTOLAN">
@@ -1417,6 +1444,7 @@
       <p class="indent">Swim speed 30 ft.</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Nautila.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="dexterity" value="2"/>
       <stat name="wisdom" value="1"/>
@@ -1454,7 +1482,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_NAUTOLAN_CYBORG_DEX">
@@ -1468,7 +1496,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Neimoidian" type="Race" source="SW-MSV-Edition" id="ID_RACE_NEIMOIDIAN">
@@ -1486,6 +1514,7 @@
       <p class="indent">Start with additional 1000 gold</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Pak Pak.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="charisma" value="2"/>
       <stat name="wisdom" value="1"/>
@@ -1521,7 +1550,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_NEIMOIDIAN_CYBORG_DEX">
@@ -1535,7 +1564,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Ortolan" type="Race" source="SW-MSV-Edition" id="ID_RACE_ORTOLAN">
@@ -1555,11 +1584,12 @@
       <p class="indent">Survival expertise (double proficiency bonus)</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Ortolan.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="intelligence" value="2"/>
       <stat name="charisma" value="1"/>
       <stat name="innate speed" value="25" bonus="base"/>
-      <stat name="resistant" value="cold"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
       <grant type="Size" id="ID_SIZE_SMALL"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_ORTOLAN"/>
@@ -1592,7 +1622,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ORTOLAN_CYBORG_DEX">
@@ -1606,7 +1636,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Rakata" type="Race" source="SW-MSV-Edition" id="ID_RACE_RAKATA">
@@ -1628,6 +1658,7 @@
       <p class="indent">Swim speed 30 ft.</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Rakata.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="strength" value="2"/>
       <stat name="intelligence" value="1"/>
@@ -1666,7 +1697,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RAKATA_CYBORG_DEX">
@@ -1680,7 +1711,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Rattataki" type="Race" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI">
@@ -1698,6 +1729,7 @@
       <p class="indent">Natural weapons: Unarmed strikes deal 1d4 kinetic damage and have finesse</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Rattataki.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="wisdom" value="2"/>
       <select type="Racial Trait" name="Ability Score Increase (Rattataki)" supports="Rattataki" number="1"/>
@@ -1733,7 +1765,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_CYBORG_DEX">
@@ -1747,7 +1779,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Rodian" type="Race" source="SW-MSV-Edition" id="ID_RACE_RODIAN">
@@ -1766,6 +1798,7 @@
       <p class="indent">Survival and Stealth proficiency</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Rodese.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="dexterity" value="2"/>
       <stat name="constitution" value="1"/>
@@ -1802,7 +1835,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RODIAN_CYBORG_DEX">
@@ -1816,7 +1849,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Sith Pureblood" type="Race" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD">
@@ -1833,6 +1866,7 @@
       <p class="indent">Perception and Intimidation proficiency</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Sith.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="charisma" value="2"/>
       <select type="Racial Trait" name="Ability Score Increase (Sith Pureblood)" supports="Sith Pureblood" number="1"/>
@@ -1867,7 +1901,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_CYBORG_DEX">
@@ -1881,7 +1915,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Sullustan" type="Race" source="SW-MSV-Edition" id="ID_RACE_SULLUSTAN">
@@ -1899,6 +1933,7 @@
       <p class="indent">Persuasion expertise</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Sullustese.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="intelligence" value="2"/>
       <stat name="dexterity" value="1"/>
@@ -1934,7 +1969,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SULLUSTAN_CYBORG_DEX">
@@ -1948,7 +1983,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Talz" type="Race" source="SW-MSV-Edition" id="ID_RACE_TALZ">
@@ -1966,6 +2001,7 @@
       <p class="indent">Melee reach is 5 feet greater than normal.</p>
       <p class="indent">Languages. You can speak Talzzi and understand Galactic Basic (cannot speak it).</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="strength" value="2"/>
       <stat name="wisdom" value="1"/>
@@ -2000,7 +2036,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TALZ_CYBORG_DEX">
@@ -2014,7 +2050,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Togruta" type="Race" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA">
@@ -2031,6 +2067,7 @@
       <p class="indent">Survival proficiency</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Togruti.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="wisdom" value="2"/>
       <select type="Racial Trait" name="Ability Score Increase (Togruta)" supports="Togruta" number="1"/>
@@ -2064,7 +2101,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_CYBORG_DEX">
@@ -2078,7 +2115,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Trandoshan" type="Race" source="SW-MSV-Edition" id="ID_RACE_TRANDOSHAN">
@@ -2097,6 +2134,7 @@
       <p class="indent">Regeneration: When you take damage, you can use your reaction and expend a Hit Die to regain hit points as long as the damage would not reduce your hit points to 0.</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Dosh.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="strength" value="2"/>
       <stat name="wisdom" value="1"/>
@@ -2132,7 +2170,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRANDOSHAN_CYBORG_DEX">
@@ -2146,7 +2184,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Tusken" type="Race" source="SW-MSV-Edition" id="ID_RACE_TUSKEN">
@@ -2168,6 +2206,7 @@
       <p class="indent">Cycler Rifle and Vibro-Axe proficiency</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Tusken.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="constitution" value="2"/>
       <select type="Racial Trait" name="Ability Score Increase (Tusken)" supports="Tusken" number="1"/>
@@ -2207,7 +2246,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_CYBORG_DEX">
@@ -2221,7 +2260,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Twi'Lek" type="Race" source="SW-MSV-Edition" id="ID_RACE_TWILEK">
@@ -2242,6 +2281,7 @@
       <p class="indent">Performance proficiency</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Twi'leki.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="charisma" value="2"/>
       <stat name="dexterity" value="1"/>
@@ -2251,7 +2291,7 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE"/>
       <select type="Proficiency" name="Proficiency (Twi'Lek)" supports="ID_PROFICIENCY_SKILL_DECEPTION||ID_PROFICIENCY_SKILL_PERSUASION" number="1"/>
             <grant type="Sense" id="ID_SENSE_DARKVISION"/>
-      <stat name="resistant" value="poison"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
       <grant type="Language" id="ID_LANGUAGE_TWILEKI"/>
       <grant type="Racial Trait" id="ID_RACE_TRAIT_TWILEK_POISON_RESILIENCE"/>
       <grant type="Racial Trait" id="ID_RACE_TRAIT_TWILEK_NATURAL_WEAPONS"/>
@@ -2279,7 +2319,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TWILEK_CYBORG_DEX">
@@ -2293,7 +2333,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Ugnaught" type="Race" source="SW-MSV-Edition" id="ID_RACE_UGNAUGHT">
@@ -2314,6 +2354,7 @@
       <p class="indent">Can only wield two-handed weapons if they have the versatile property</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Ugnaught.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="intelligence" value="2"/>
       <stat name="strength" value="1"/>
@@ -2322,7 +2363,7 @@
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_UGNAUGHT"/>
             <grant type="Sense" id="ID_SENSE_DARKVISION"/>
-      <stat name="resistant" value="acid"/>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT"/>
       <grant type="Racial Trait" id="ID_RACE_TRAIT_UGNAUGHT_NATURAL_WEAPONS"/>
       <grant type="Racial Trait" id="ID_RACE_TRAIT_UGNAUGHT_NIMBLE"/>
@@ -2351,7 +2392,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_UGNAUGHT_CYBORG_DEX">
@@ -2365,7 +2406,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Weequay" type="Race" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY">
@@ -2384,6 +2425,7 @@
       <p class="indent">Proficiency with two vibroweapons or blasters of your choice</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Sriluurian.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="constitution" value="2"/>
       <select type="Racial Trait" name="Ability Score Increase (Weequay)" supports="Weequay" number="1"/>
@@ -2420,7 +2462,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_CYBORG_DEX">
@@ -2434,7 +2476,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Wookie" type="Race" source="SW-MSV-Edition" id="ID_RACE_WOOKIE">
@@ -2454,6 +2496,7 @@
       <p class="indent">Climb 30 ft.</p>
       <p class="indent">Languages. You can speak Shyriiwook and understand Galactic Basic (cannot speak it).</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="strength" value="2"/>
       <stat name="constitution" value="1"/>
@@ -2490,7 +2533,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WOOKIE_CYBORG_DEX">
@@ -2504,7 +2547,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Zabrak" type="Race" source="SW-MSV-Edition" id="ID_RACE_ZABRAK">
@@ -2522,6 +2565,7 @@
       <p class="indent">Persuasion or Intimidation proficiency</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Zabraki.</p>
     </description>
+    <sheet display="false" />
     <rules>
       <stat name="constitution" value="2"/>
       <select type="Racial Trait" name="Ability Score Increase (Zabrak)" supports="Zabrak" number="1"/>
@@ -2556,7 +2600,7 @@
     </sheet>
     <rules>
       <stat name="strength" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_CYBORG_DEX">
@@ -2570,7 +2614,7 @@
     </sheet>
     <rules>
       <stat name="dexterity" value="1"/>
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
 
@@ -3007,16 +3051,23 @@
   </element>
 
   <!-- Ion Damage Vulnerability Condition -->
-  <element name="Ion Damage Vulnerability" type="Condition" source="SW-MSV-Edition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION">
+  <element name="Ion Damage Vulnerability" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION">
     <description>
       <p>You are vulnerable to ion damage.</p>
     </description>
     <sheet>
       <description>Vulnerable to ion damage.</description>
     </sheet>
-    <rules>
-      <stat name="vulnerable" value="ion"/>
-    </rules>
+  </element>
+
+  <!-- Sonic Damage Vulnerability Condition -->
+  <element name="Sonic Damage Vulnerability" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_SONIC">
+    <description>
+      <p>You are vulnerable to sonic damage.</p>
+    </description>
+    <sheet>
+      <description>Vulnerable to sonic damage.</description>
+    </sheet>
   </element>
   <element name="Ithorian Breath" type="Action" source="SW-MSV-Edition" id="ID_ACTION_ITHORIAN_BREATH">
     <description>

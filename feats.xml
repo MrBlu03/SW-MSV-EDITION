@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
+  <info>
+    <name>Feats</name>
+    <update version="1.1.0">
+      <file name="feats.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/feats.xml" />
+    </update>
+  </info>
   <element name="Ability Improvement" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_ABILITY_IMPROVEMENT">
     <compendium display="true"/>
     <description>
       <p>You increase one Ability by 2, or two Abilities by 1 to a max of 20</p>
     </description>
+        <sheet>
+      <description>You increase one Ability by 2, or two Abilities by 1 to a max of 20</description>
+    </sheet>
     <rules>
       <select type="Ability Score Improvement" name="Ability Score Increase 1" supports="Ability Score Improvement" />
       <select type="Ability Score Improvement" name="Ability Score Increase 2" supports="Ability Score Improvement" />
@@ -15,6 +24,9 @@
     <description>
       <p>Your Charisma increases by 1 to a max of 20, profiency bonus is doubled for deception and performance checks and grants those proficiencies.</p>
     </description>
+        <sheet>
+      <description>Your Charisma increases by 1 to a max of 20, profiency bonus is doubled for deception and performance checks and grants those proficiencies.</description>
+    </sheet>
     <rules>
       <stat name="charisma" value="1" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
@@ -26,6 +38,9 @@
     <description>
       <p>+5 to initiative and can't be surprised</p>
     </description>
+        <sheet>
+      <description>+5 to initiative and can't be surprised</description>
+    </sheet>
     <rules>
       <stat name="initiative" value="5" />
     </rules>
@@ -35,6 +50,9 @@
     <description>
       <p>Your Strength or Dexterity increases by 1 to a max of 20, When you are prone, standing up uses only 5 feet of your movement</p>
     </description>
+        <sheet>
+      <description>Your Strength or Dexterity increases by 1 to a max of 20, When you are prone, standing up uses only 5 feet of your movement</description>
+    </sheet>
     <rules>
       <select type="Ability Score Improvement" name="Ability Score Increase (Athlete)" supports="Ability Score Improvement" />
     </rules>
@@ -44,6 +62,9 @@
     <description>
       <p>When you use your action to Dash, you can use a bonus action to make one melee weapon attack or to shove a creature. If you move at least 10 feet in a straight line immediately before taking this bonus action, you either gain a +5 bonus to the attack’s damage roll (if you chose to make a melee attack and hit) or push the target up to 10 feet away from you (if you chose to shove and you succeed)</p>
     </description>
+        <sheet>
+      <description>When you use your action to Dash, you can use a bonus action to make one melee weapon attack or to shove a creature. If you move at least 10 feet in a straight line immediately before taking this bonus action, you either gain a +5 bonus to the attack’s damage roll (if you chose to make a melee attac</description>
+    </sheet>
     <rules/>
   </element>
   <element name="Blaster Pistol Expert" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_BLASTER_PISTOL_EXPERT">
@@ -51,6 +72,9 @@
     <description>
       <p>when you make a blaster pistol attacks within melee range, the attack rolls do not have disadvantage</p>
     </description>
+        <sheet>
+      <description>when you make a blaster pistol attacks within melee range, the attack rolls do not have disadvantage</description>
+    </sheet>
     <rules/>
   </element>
   <element name="Defensive Duelist" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_DEFENSIVE_DUELIST">
@@ -58,6 +82,9 @@
     <description>
       <p>When attacked while wielding a Finesse Weapon you're Proficient with, you can use a reaction to add your Proficiency Bonus to your Armour Class, possibly causing the attack to miss</p>
     </description>
+        <sheet>
+      <description>When attacked while wielding a Finesse Weapon you're Proficient with, you can use a reaction to add your Proficiency Bonus to your Armour Class, possibly causing the attack to miss</description>
+    </sheet>
     <rules/>
   </element>
   <element name="Dual Wielder" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_DUAL_WIELDER">
@@ -65,6 +92,9 @@
     <description>
       <p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack and you gain a +1 bonus to Armour Class while wielding a melee weapon in each hand. You cannot dual-wield two-handed weapons.</p>
     </description>
+        <sheet>
+      <description>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack and you gain a +1 bonus to Armour Class while wielding a melee weapon in each hand. You cannot dual-wield two-handed weapons.</description>
+    </sheet>
     <rules>
       <stat name="ac:misc" value="1" />
     </rules>
@@ -74,6 +104,9 @@
     <description>
       <p>Your Constitution increases by 1, to a maximum of 20, you regain full hit points each time you take a Short Rest.</p>
     </description>
+        <sheet>
+      <description>Your Constitution increases by 1, to a maximum of 20, you regain full hit points each time you take a Short Rest.</description>
+    </sheet>
     <rules>
       <stat name="constitution" value="1" />
     </rules>
@@ -83,6 +116,9 @@
     <description>
       <p>You gain Armour Proficiency with Heavy Armour and your Strength increases by 1, to a maximum of 20</p>
     </description>
+    <sheet>
+      <description>You gain Heavy Armour proficiency. +1 Strength (max 20).</description>
+    </sheet>
     <prerequisite>medium armour proifiency</prerequisite>
     <rules>
       <stat name="strength" value="1" />
@@ -94,6 +130,9 @@
     <description>
       <p>Your Strength increases by 1, to a maximum of 20, Incoming damage from kinetic attacks also decreases by 3 while you're wearing heavy armour.</p>
     </description>
+    <sheet>
+      <description>+1 Strength (max 20). Kinetic damage reduced by 3 while wearing heavy armour.</description>
+    </sheet>
     <prerequisite>heavy armour profiency</prerequisite>
     <rules>
       <stat name="strength" value="1" />
@@ -104,6 +143,9 @@
     <description>
       <p>You gain Armour Proficiency with Light Armour and your Strength or Dexterity increases by 1, to a maximum of 20.</p>
     </description>
+    <sheet>
+      <description>You gain Light Armour proficiency. +1 Strength or Dexterity (max 20).</description>
+    </sheet>
     <rules>
       <select type="Ability Score Improvement" name="Ability Score Increase (Lightly Armoured)" supports="Ability Score Improvement" />
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
@@ -114,6 +156,9 @@
     <description>
       <p>You gain 3 Luck Points, which you can use to gain Advantage on Attack Rolls, Ability Checks, or Saving Throws, or to make an enemy reroll their Attack Rolls.</p>
     </description>
+        <sheet>
+      <description>You gain 3 Luck Points, which you can use to gain Advantage on Attack Rolls, Ability Checks, or Saving Throws, or to make an enemy reroll their Attack Rolls.</description>
+    </sheet>
     <rules/>
   </element>
   <element name="Medium Armor Master" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_MEDIUM_ARMOR_MASTER">
@@ -121,6 +166,9 @@
     <description>
       <p>When you wear Medium Armour, it doesn‘t impose Disadvantage on Stealth Checks. The bonus to Armour Class you can gain from your Dexterity Modifier also becomes +3 instead of +2.</p>
     </description>
+        <sheet>
+      <description>When you wear Medium Armour, it doesn‘t impose Disadvantage on Stealth Checks. The bonus to Armour Class you can gain from your Dexterity Modifier also becomes +3 instead of +2.</description>
+    </sheet>
     <rules>
       <stat name="ac:dexterity:cap" value="3" bonus="base" />
     </rules>
@@ -130,6 +178,9 @@
     <description>
       <p>Your movement speed increases by 10 feet, and difficult terrain doesn't slow you down when you Dash, If you move after making a melee attack, you don't provoke Opportunity Attacks from your target.</p>
     </description>
+        <sheet>
+      <description>Your movement speed increases by 10 feet, and difficult terrain doesn't slow you down when you Dash, If you move after making a melee attack, you don't provoke Opportunity Attacks from your target.</description>
+    </sheet>
     <rules>
       <stat name="speed" value="10" />
     </rules>
@@ -139,6 +190,9 @@
     <description>
       <p>You gain Armour Proficiency with Medium Armour and shields, and your Strength or Dexterity increases by 1, to a maximum of 20</p>
     </description>
+    <sheet>
+      <description>You gain Medium Armour and Shield proficiency. +1 Strength or Dexterity (max 20).</description>
+    </sheet>
     <prerequisite>light armour proficiency</prerequisite>
     <rules>
       <select type="Ability Score Improvement" name="Ability Score Increase (Moderately Armoured)" supports="Ability Score Improvement" />
@@ -151,6 +205,21 @@
     <description>
       <p>When attacking with a lightstaff, lightsaber pike, vibrostaff, vibrospear, electrostaff, vibropike you can make an Opportunity Attack when a target comes within range.</p>
     </description>
+        <sheet>
+      <description>You gain Armour Proficiency with Medium Armour and shields, and your Strength or Dexterity increases by 1, to a maximum of 20
+    
+    light armour proficiency
+    
+      
+      
+      
+    
+  
+  
+    
+    
+      When attacking with a lightstaff, lightsaber pike, vibrostaff, vibrospear, electrostaff</description>
+    </sheet>
     <rules/>
   </element>
   <element name="Resilient" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_RESILIENT">
@@ -158,6 +227,9 @@
     <description>
       <p>You increase an Ability by 1, to a maximum of 20, and gain Proficiency in that Ability's Saving Throws.</p>
     </description>
+        <sheet>
+      <description>You increase an Ability by 1, to a maximum of 20, and gain Proficiency in that Ability's Saving Throws.</description>
+    </sheet>
     <rules>
       <select type="Ability Score Improvement" name="Ability Score Increase (Resilient)" supports="Ability Score Improvement" />
       <select type="Proficiency" name="Saving Throw Proficiency (Resilient)" supports="Saving Throw" number="1" />
@@ -168,6 +240,9 @@
     <description>
       <p>When making weapon attacks, you roll your damage dice twice and use the highest result.</p>
     </description>
+        <sheet>
+      <description>When making weapon attacks, you roll your damage dice twice and use the highest result.</description>
+    </sheet>
     <rules/>
   </element>
   <element name="Sentinel" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_SENTINEL">
@@ -175,6 +250,9 @@
     <description>
       <p>When an enemy within melee range attacks an ally, you can use a reaction to make a weapon attack against that enemy. Target ally must not have the Sentinel Feat, You gain Advantage on Opportunity Attacks, and when you hit a creature with an Opportunity Attack, it can no longer move for the rest of its turn.</p>
     </description>
+        <sheet>
+      <description>When an enemy within melee range attacks an ally, you can use a reaction to make a weapon attack against that enemy. Target ally must not have the Sentinel Feat, You gain Advantage on Opportunity Attacks, and when you hit a creature with an Opportunity Attack, it can no longer move for the rest of i</description>
+    </sheet>
     <rules/>
   </element>
   <element name="Sharpshooter" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_SHARPSHOOTER">
@@ -182,6 +260,9 @@
     <description>
       <p>Your ranged weapon attacks do not receive penalties from High Ground Rules, Ranged weapon attacks with weapons you are Proficient with have a -5 penalty to their Attack Roll, but deal an additional 10 damage.</p>
     </description>
+        <sheet>
+      <description>Your ranged weapon attacks do not receive penalties from High Ground Rules, Ranged weapon attacks with weapons you are Proficient with have a -5 penalty to their Attack Roll, but deal an additional 10 damage.</description>
+    </sheet>
     <rules/>
   </element>
   <element name="Shield Master" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_SHIELD_MASTER">
@@ -189,6 +270,9 @@
     <description>
       <p>You gain a +2 bonus to Dexterity Saving Throws while wielding a shield. If a force ability forces you to make a Dexterity Saving Throw, you can use a reaction to shield yourself and diminish the effect's damage. On a failed Saving Throw, you only take half damage. On a successful Saving Throw, you don't take any damage.</p>
     </description>
+        <sheet>
+      <description>You gain a +2 bonus to Dexterity Saving Throws while wielding a shield. If a force ability forces you to make a Dexterity Saving Throw, you can use a reaction to shield yourself and diminish the effect's damage. On a failed Saving Throw, you only take half damage. On a successful Saving Throw, you d</description>
+    </sheet>
     <rules>
       <stat name="dexterity:save:misc" value="2" />
     </rules>
@@ -198,6 +282,9 @@
     <description>
       <p>You gain Proficiency in 3 Skills or 1 skill and 1 tool of your choice.</p>
     </description>
+        <sheet>
+      <description>You gain Proficiency in 3 Skills or 1 skill and 1 tool of your choice.</description>
+    </sheet>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Skilled 1)" supports="Skill" />
       <select type="Proficiency" name="Skill Proficiency (Skilled 2)" supports="Skill" />
@@ -209,6 +296,9 @@
     <description>
       <p>Your hit point maximum increases by 2 for every level you have gained</p>
     </description>
+        <sheet>
+      <description>Your hit point maximum increases by 2 for every level you have gained</description>
+    </sheet>
     <rules>
       <stat name="hp" value="level*2" />
     </rules>

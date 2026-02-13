@@ -1,5 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <elements>
+  <info>
+    <name>Inquisitor Class</name>
+    <update version="1.1.0">
+      <file name="class-inquisitor.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-inquisitor.xml" />
+    </update>
+  </info>
   <element id="ID_CLASS_INQUISITOR" name="Inquisitor" type="Class" source="SW-MSV-Edition">
     <description>
       <p class="indent">
@@ -33,7 +39,11 @@
         </strong>
       </p>
     </description>
+    <sheet display="false">
+      <description>A stealthy operative blending Force powers with espionage.</description>
+    </sheet>
     <setters>
+      <set name="short">A stealthy operative blending Force powers with espionage.</set>
       <set name="hd">d8</set>
     </setters>
     <rules>

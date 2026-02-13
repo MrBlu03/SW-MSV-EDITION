@@ -1,225 +1,416 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
+  <info>
+    <name>Languages</name>
+    <update version="1.1.0">
+      <file name="languages.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/languages.xml" />
+    </update>
+  </info>
   <element name="Binary" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_BINARY">
     <supports>Standard</supports>
     <description>
       <p>The Binary language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Droids</set>
+      <set name="script">Binary</set>
+    </setters>
   </element>
   <element name="Bith" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_BITH">
     <supports>Standard</supports>
     <description>
       <p>The Bith language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Bith</set>
+      <set name="script">Bith</set>
+    </setters>
   </element>
   <element name="Bothese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_BOTHESE">
     <supports>Standard</supports>
     <description>
       <p>The Bothese language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Bothans</set>
+      <set name="script">Bothese</set>
+    </setters>
   </element>
   <element name="Catharese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_CATHARESE">
     <supports>Standard</supports>
     <description>
       <p>The Catharese language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Cathar</set>
+      <set name="script">Catharese</set>
+    </setters>
   </element>
   <element name="Chagri" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_CHAGRI">
     <supports>Standard</supports>
     <description>
       <p>The Chagri language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Chagrians</set>
+      <set name="script">Chagri</set>
+    </setters>
   </element>
   <element name="Chuenh" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_CHUENH">
     <supports>Standard</supports>
     <description>
       <p>The Chuenh language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Chiss</set>
+      <set name="script">Chuenh</set>
+    </setters>
   </element>
   <element name="Devaronese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_DEVARONESE">
     <supports>Standard</supports>
     <description>
       <p>The Devaronese language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Devaronians</set>
+      <set name="script">Devaronese</set>
+    </setters>
   </element>
   <element name="Dosh" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_DOSH">
     <supports>Standard</supports>
     <description>
       <p>The Dosh language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Trandoshans</set>
+      <set name="script">Dosh</set>
+    </setters>
   </element>
   <element name="Durese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_DURESE">
     <supports>Standard</supports>
     <description>
       <p>The Durese language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Duros</set>
+      <set name="script">Durese</set>
+    </setters>
   </element>
   <element name="Ewokese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_EWOKESE">
     <supports>Standard</supports>
     <description>
       <p>The Ewokese language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Ewoks</set>
+      <set name="script">Ewokese</set>
+    </setters>
   </element>
   <element name="Galactic Basic" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_GALACTIC_BASIC">
     <supports>Standard</supports>
     <description>
       <p>The Galactic Basic language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Most species</set>
+      <set name="script">Aurebesh</set>
+    </setters>
   </element>
   <element name="Gamorrese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_GAMORRESE">
     <supports>Standard</supports>
     <description>
       <p>The Gamorrese language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Gamorreans</set>
+      <set name="script">Gamorrese</set>
+    </setters>
   </element>
   <element name="Geonosian" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_GEONOSIAN">
     <supports>Standard</supports>
     <description>
       <p>The Geonosian language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Geonosians</set>
+      <set name="script">Geonosian</set>
+    </setters>
   </element>
   <element name="Gran" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_GRAN">
     <supports>Standard</supports>
     <description>
       <p>The Gran language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Gran</set>
+      <set name="script">Gran</set>
+    </setters>
   </element>
   <element name="Ithorese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_ITHORESE">
     <supports>Standard</supports>
     <description>
       <p>The Ithorese language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Ithorians</set>
+      <set name="script">Ithorese</set>
+    </setters>
   </element>
   <element name="Jawaese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_JAWAESE">
     <supports>Standard</supports>
     <description>
       <p>The Jawaese language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Jawas</set>
+      <set name="script">Jawaese</set>
+    </setters>
   </element>
   <element name="Kaleesh" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_KALEESH">
     <supports>Standard</supports>
     <description>
       <p>The Kaleesh language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Kaleesh</set>
+      <set name="script">Kaleesh</set>
+    </setters>
   </element>
   <element name="Kel Dor" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_KEL_DOR">
     <supports>Standard</supports>
     <description>
       <p>The Kel Dor language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Kel Dor</set>
+      <set name="script">Kel Dor</set>
+    </setters>
   </element>
   <element name="Mando'a" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_MANDOA_LANGUAGE">
     <supports>Standard</supports>
     <description>
       <p>The Mando'a language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Mandalorians</set>
+      <set name="script">Mando'a</set>
+    </setters>
   </element>
   <element name="Mirialan" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_MIRIALAN">
     <supports>Standard</supports>
     <description>
       <p>The Mirialan language.</p>
     </description>
+    <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Mirialans</set>
+      <set name="script">Mirialan</set>
+    </setters>
   </element>
   <element name="Mon Cal" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_MON_CAL">
     <supports>Standard</supports>
     <description>
       <p>The Mon Cal language.</p>
     </description>
+    <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Mon Calamari</set>
+      <set name="script">Mon Cal</set>
+    </setters>
   </element>
   <element name="Nautila" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_NAUTILA">
     <supports>Standard</supports>
     <description>
       <p>The Nautila language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Nautolans</set>
+      <set name="script">Nautila</set>
+    </setters>
   </element>
   <element name="Ortolan" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_ORTOLAN">
     <supports>Standard</supports>
     <description>
       <p>The Ortolan language.</p>
     </description>
+    <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Ortolans</set>
+      <set name="script">Ortolan</set>
+    </setters>
   </element>
   <element name="Pak Pak" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_PAK_PAK">
     <supports>Standard</supports>
     <description>
       <p>The Pak Pak language.</p>
     </description>
+    <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Ewoks</set>
+      <set name="script">Pak Pak</set>
+    </setters>
   </element>
   <element name="Rakata" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_RAKATA">
     <supports>Standard</supports>
     <description>
       <p>The Rakata language.</p>
     </description>
+    <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Rakata</set>
+      <set name="script">Rakata</set>
+    </setters>
   </element>
   <element name="Rattataki" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_RATTATAKI">
     <supports>Standard</supports>
     <description>
       <p>The Rattataki language.</p>
     </description>
+    <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Rattataki</set>
+      <set name="script">Rattataki</set>
+    </setters>
   </element>
   <element name="Rodese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_RODESE">
     <supports>Standard</supports>
     <description>
       <p>The Rodese language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Rodians</set>
+      <set name="script">Rodese</set>
+    </setters>
   </element>
   <element name="Shyriiwook" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_SHYRIIWOOK">
     <supports>Standard</supports>
     <description>
       <p>The Shyriiwook language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Wookiees</set>
+      <set name="script">Shyriiwook</set>
+    </setters>
   </element>
   <element name="Sith" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_SITH">
     <supports>Standard</supports>
     <description>
       <p>The Sith language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Sith</set>
+      <set name="script">Ur-Kittât</set>
+    </setters>
   </element>
   <element name="Sriluurian" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_SRILUURIAN">
     <supports>Standard</supports>
     <description>
       <p>The Sriluurian language.</p>
     </description>
+    <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Weequay</set>
+      <set name="script">Sriluurian</set>
+    </setters>
   </element>
   <element name="Sullustese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_SULLUSTESE">
     <supports>Standard</supports>
     <description>
       <p>The Sullustese language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Sullustans</set>
+      <set name="script">Sullustese</set>
+    </setters>
   </element>
   <element name="Talzzi" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_TALZZI">
     <supports>Standard</supports>
     <description>
       <p>The Talzzi language.</p>
     </description>
+    <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Talz</set>
+      <set name="script">Talzzi</set>
+    </setters>
   </element>
   <element name="Togruti" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_TOGRUTI">
     <supports>Standard</supports>
     <description>
       <p>The Togruti language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Togruta</set>
+      <set name="script">Togruti</set>
+    </setters>
   </element>
   <element name="Tusken" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_TUSKEN">
     <supports>Standard</supports>
     <description>
       <p>The Tusken language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Tusken Raiders</set>
+      <set name="script">Tusken</set>
+    </setters>
   </element>
   <element name="Twi'leki" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_TWILEKI">
     <supports>Standard</supports>
     <description>
       <p>The Twi'leki language.</p>
     </description>
+    <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Twi'leks</set>
+      <set name="script">Twi'leki</set>
+    </setters>
   </element>
   <element name="Ugnaught" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_UGNAUGHT">
     <supports>Standard</supports>
     <description>
       <p>The Ugnaught language.</p>
     </description>
+    <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Ugnaughts</set>
+      <set name="script">Ugnaught</set>
+    </setters>
   </element>
   <element name="Zabraki" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_ZABRAKI">
     <supports>Standard</supports>
     <description>
       <p>The Zabraki language.</p>
     </description>
+      <setters>
+      <set name="standard">true</set>
+      <set name="speakers">Zabraks</set>
+      <set name="script">Zabraki</set>
+    </setters>
   </element>
 </elements>
