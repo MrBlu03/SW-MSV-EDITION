@@ -216,7 +216,7 @@
       <set name="category">Armor</set>
       <set name="cost" currency="gp">20</set>
       <set name="weight" lb="6">6 lb.</set>
-      <set name="slot">offhand</set>
+      <set name="slot">secondary</set>
       <set name="armor">Shield</set>
       <set name="armorClass">+2</set>
       <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_PHYSICAL_SHIELD</set>

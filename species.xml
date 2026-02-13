@@ -276,6 +276,10 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_CHEUNH"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SNIPER_RIFLE"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT"/>
       <select type="Sub Race" name="Chiss Subrace" supports="ID_RACE_CHISS" optional="true"/>
     </rules>
   </element>
@@ -339,6 +343,7 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_DEVARONESE"/>
+      <select type="Proficiency" name="Proficiency (Devaronian)" supports="ID_PROFICIENCY_SKILL_SURVIVAL||ID_PROFICIENCY_SKILL_INVESTIGATION" number="1"/>
       <select type="Sub Race" name="Devaronian Subrace" supports="ID_RACE_DEVARONIAN" optional="true"/>
     </rules>
   </element>
@@ -391,6 +396,7 @@
       <p class="indent">Size. Your size is Medium.</p>
       <p class="indent">Speed. Your base walking speed is 25 ft.</p>
       <p class="indent">Resistant to necrotic</p>
+      <p class="indent">Resistant to psychic</p>
       <p class="indent">Immune to poison</p>
       <p class="indent">Vulnerable to ion</p>
       <p class="indent">Force Insensitive: Cannot use Force powers</p>
@@ -404,6 +410,7 @@
       <select type="Racial Trait" name="Ability Score Increase (Protocol Droid)" supports="Protocol Droid" number="1"/>
       <stat name="innate speed" value="25" bonus="base"/>
       <stat name="resistant" value="necrotic"/>
+      <stat name="resistant" value="psychic"/>
       <stat name="immune" value="poison"/>
       <stat name="vulnerable" value="ion"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
@@ -420,6 +427,7 @@
       <p class="indent">Size. Your size is Medium (tall).</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
       <p class="indent">Resistant to necrotic</p>
+      <p class="indent">Resistant to psychic</p>
       <p class="indent">Immune to poison</p>
       <p class="indent">Vulnerable to ion</p>
       <p class="indent">Force Insensitive: Cannot use Force powers</p>
@@ -432,6 +440,7 @@
       <select type="Racial Trait" name="Ability Score Increase (Combat Droid)" supports="Combat Droid" number="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
       <stat name="resistant" value="necrotic"/>
+      <stat name="resistant" value="psychic"/>
       <stat name="immune" value="poison"/>
       <stat name="vulnerable" value="ion"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
@@ -460,6 +469,7 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_DURESE"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY"/>
       <select type="Sub Race" name="Duros Subrace" supports="ID_RACE_DUROS" optional="true"/>
     </rules>
   </element>
@@ -524,6 +534,8 @@
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_EWOKESE"/>
       <select type="Proficiency" name="Musical Instrument (Ewok)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
       <select type="Sub Race" name="Ewok Subrace" supports="ID_RACE_EWOK" optional="true"/>
     </rules>
   </element>
@@ -586,6 +598,8 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_GAMORREAN"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBRO_AXE"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSWORD"/>
       <select type="Sub Race" name="Gamorrean Subrace" supports="ID_RACE_GAMORREAN" optional="true"/>
     </rules>
   </element>
@@ -647,6 +661,7 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_GEONOSIAN"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SONIC_WEAPONS"/>
       <select type="Sub Race" name="Geonosian Subrace" supports="ID_RACE_GEONOSIAN" optional="true"/>
     </rules>
   </element>
@@ -710,6 +725,7 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_GRAN"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT"/>
       <select type="Sub Race" name="Gran Subrace" supports="ID_RACE_GRAN" optional="true"/>
     </rules>
   </element>
@@ -773,6 +789,8 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <select type="Language" name="Language (Human)" supports="Standard||Exotic" number="1"/>
+      <select type="Proficiency" name="Weapon Proficiency (Human)" supports="ID_INTERNAL_PROFICIENCY_WEAPON" number="1"/>
+      <select type="Proficiency" name="Skill Proficiency (Human)" supports="ID_INTERNAL_PROFICIENCY_SKILL" number="1"/>
       <select type="Sub Race" name="Human Subrace" supports="ID_RACE_HUMAN_STANDARD" optional="true"/>
     </rules>
   </element>
@@ -797,6 +815,8 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <select type="Language" name="Language (Human)" supports="Standard||Exotic" number="1"/>
+      <select type="Proficiency" name="Weapon Proficiency (Human)" supports="ID_INTERNAL_PROFICIENCY_WEAPON" number="1"/>
+      <select type="Proficiency" name="Skill Proficiency (Human)" supports="ID_INTERNAL_PROFICIENCY_SKILL" number="1"/>
       <select type="Sub Race" name="Human Subrace" supports="ID_RACE_HUMAN_VARIANT" optional="true"/>
     </rules>
   </element>
@@ -867,6 +887,7 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_ITHORESE"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE"/>
       <select type="Sub Race" name="Ithorian Subrace" supports="ID_RACE_ITHORIAN" optional="true"/>
     </rules>
   </element>
@@ -930,6 +951,8 @@
       <grant type="Size" id="ID_SIZE_SMALL"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_JAWAESE"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_ION_WEAPONS"/>
       <select type="Sub Race" name="Jawa Subrace" supports="ID_RACE_JAWA" optional="true"/>
     </rules>
   </element>
@@ -992,6 +1015,9 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_KALEESH"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBROPIKE"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSPEAR"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
       <select type="Sub Race" name="Kaleesh Subrace" supports="ID_RACE_KALEESH" optional="true"/>
     </rules>
   </element>
@@ -1053,6 +1079,7 @@
       <stat name="wisdom" value="2"/>
       <stat name="dexterity" value="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
+      <stat name="resistant" value="necrotic"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_KEL_DOR"/>
@@ -1117,6 +1144,7 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_MIRIALAN"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY"/>
       <select type="Sub Race" name="Mirialan Subrace" supports="ID_RACE_MIRIALAN" optional="true"/>
     </rules>
   </element>
@@ -1178,6 +1206,7 @@
       <stat name="charisma" value="2"/>
       <select type="Racial Trait" name="Ability Score Increase (Mon Calamari)" supports="Mon Calamari" number="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
+      <stat name="resistant" value="cold"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_MON_CAL"/>
@@ -1307,6 +1336,8 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_PAK_PAK"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION"/>
       <select type="Sub Race" name="Neimoidian Subrace" supports="ID_RACE_NEIMOIDIAN" optional="true"/>
     </rules>
   </element>
@@ -1368,9 +1399,11 @@
       <stat name="intelligence" value="2"/>
       <stat name="charisma" value="1"/>
       <stat name="innate speed" value="25" bonus="base"/>
+      <stat name="resistant" value="cold"/>
       <grant type="Size" id="ID_SIZE_SMALL"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_ORTOLAN"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
       <select type="Proficiency" name="Musical Instrument (Ortolan)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1"/>
       <select type="Sub Race" name="Ortolan Subrace" supports="ID_RACE_ORTOLAN" optional="true"/>
     </rules>

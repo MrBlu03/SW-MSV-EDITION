@@ -42,7 +42,7 @@
   </element>
   <element name="Flame" type="Action" source="SW-MSV-Edition" id="ID_ACTION_FLAME">
     <description>
-      <p>Flame: Action; Flame multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes full damage and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn. (Damage: Weapon Damage and add modifier)</p>
+      <p>Flame: Action; Flame multiple targets in a weapon range cone in front of you. Each target must make a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes weapon damage + weapon modifier(s) and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</p>
     </description>
     <sheet>
       <description>Action: Flame targets in a cone. DC 8 + prof + Dex save for half damage and reduced burning.</description>
@@ -72,6 +72,30 @@
       <description>Bonus Action: Attack with the other side of your double-bladed weapon.</description>
     </sheet>
   </element>
+  <element name="Dart" type="Action" source="SW-MSV-Edition" id="ID_ACTION_DART">
+    <description>
+      <p>Dart: Action; Shoot a Dart with the weapon at a target. (Damage and conditions depend on the dart)</p>
+    </description>
+    <sheet>
+      <description>Action: Shoot a dart with the weapon. Damage and conditions depend on the dart.</description>
+    </sheet>
+  </element>
+  <element name="Rocket" type="Action" source="SW-MSV-Edition" id="ID_ACTION_ROCKET">
+    <description>
+      <p>Rocket: Action; Shoot a Rocket with the weapon at a target. (Damage and conditions depend on the rocket)</p>
+    </description>
+    <sheet>
+      <description>Action: Shoot a rocket with the weapon. Damage and conditions depend on the rocket.</description>
+    </sheet>
+  </element>
+  <element name="Whip" type="Action" source="SW-MSV-Edition" id="ID_ACTION_WHIP">
+    <description>
+      <p>Whip: Action; Use the fiber cord whip attachment. The target must make a Dexterity saving throw (DC 8 + proficiency bonus + your Dexterity modifier). On a failed save, the target is restrained. While restrained, the target can use an action on their turn to make a Strength saving throw (DC 8 + proficiency bonus + your Strength modifier). On a failed save, they remain restrained. On a successful save, they are freed. You can't use bonus actions or hold something in that hand while restraining someone.</p>
+    </description>
+    <sheet>
+      <description>Action: Use the whip attachment to restrain a target.</description>
+    </sheet>
+  </element>
   <element name="Reload" type="Action" source="SW-MSV-Edition" id="ID_ACTION_RELOAD">
     <description>
       <p>Reload: Action; After x amount of shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
@@ -84,12 +108,12 @@
     <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
       <p><strong>Blaster Pistol</strong></p>
+      <p><em>Simple Blaster</em></p>
       <p><em>1d6 energy damage, range 50/200, reload 16, one-handed</em></p>
       <p>This standard sidearm fires concentrated energy bolts. It uses power cells and has a high capacity.</p>
       <p><strong>Actions:</strong></p>
-      <p>• <strong>Shoot:</strong> Make a ranged attack with the blaster pistol. On hit: 1d6 energy damage + your Dexterity modifier.</p>
-      <p>• <strong>Quick Shot:</strong> Make a ranged attack with disadvantage. On hit: 1d6 energy damage + your Dexterity modifier + 1d6 extra damage.</p>
-      <p>• <strong>Reload:</strong> Spend an action to reload the blaster pistol with a new power cell.</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the blaster pistol. On hit: 1d6 energy damage + your Dexterity modifier.</p>
+      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the blaster pistol while wielding it in your off-hand. On hit: 1d6 energy damage without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -102,21 +126,22 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
+      <stat name="ability" value="dexterity" />
+      <stat name="type" value="Simple Ranged" />
       <grant type="Action" id="ID_ACTION_SHOOT"/>
       <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
     </rules>
   </element>
   <element name="energy bow" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ENERGY_BOW">
     <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p><strong>Energy Bow</strong></p>
+      <p><em>Simple Blaster</em></p>
       <p><em>1d6 energy damage, range 80/320, reload 4, two-handed</em></p>
       <p>This energy bow fires concentrated bolts of energy. It uses power cells and requires reloading after 4 shots.</p>
       <p><strong>Actions:</strong></p>
-      <p>• <strong>Shoot:</strong> Make a ranged attack with the energy bow. On hit: 1d6 energy damage + your Strength or Dexterity modifier.</p>
-      <p>• <strong>Quick Shot:</strong> Make a ranged attack with disadvantage. On hit: 1d6 energy damage + your Strength or Dexterity modifier + 1d6 extra damage.</p>
-      <p>• <strong>Reload:</strong> Spend an action to reload the energy bow with a new power cell.</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the energy bow. On hit: 1d6 energy damage + your Strength or Dexterity modifier.</p>
+      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the energy bow while wielding it in your off-hand. On hit: 1d6 energy damage without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -129,21 +154,22 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
+      <stat name="ability" value="dexterity" />
+      <stat name="type" value="Simple Ranged" />
       <grant type="Action" id="ID_ACTION_SHOOT"/>
       <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
     </rules>
   </element>
   <element name="ion pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_PISTOL">
     <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
       <p><strong>Ion Pistol</strong></p>
+      <p><em>Simple Blaster</em></p>
       <p><em>1d4 ion damage, range 40/160, reload 16, one-handed</em></p>
       <p>This pistol fires ion blasts that can disrupt droids and electronics. It uses power cells and has a high capacity.</p>
       <p><strong>Actions:</strong></p>
-      <p>• <strong>Shoot:</strong> Make a ranged attack with the ion pistol. On hit: 1d4 ion damage + your Dexterity modifier. Droids hit must succeed on a DC 13 Constitution saving throw or be stunned for 1 round.</p>
-      <p>• <strong>Quick Shot:</strong> Make a ranged attack with disadvantage. On hit: 1d4 ion damage + your Dexterity modifier + 1d6 extra damage.</p>
-      <p>• <strong>Reload:</strong> Spend an action to reload the ion pistol with a new power cell.</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the ion pistol. On hit: 1d4 ion damage + your Dexterity modifier. Droids hit must succeed on a DC 13 Constitution saving throw or be stunned for 1 round.</p>
+      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the ion pistol while wielding it in your off-hand. On hit: 1d4 ion damage without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -156,21 +182,22 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
+      <stat name="ability" value="dexterity" />
+      <stat name="type" value="Simple Ranged" />
       <grant type="Action" id="ID_ACTION_SHOOT"/>
       <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
     </rules>
   </element>
   <element name="sonic pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SONIC_PISTOL">
     <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
       <p><strong>Sonic Pistol</strong></p>
+      <p><em>Simple Blaster</em></p>
       <p><em>1d4 sonic damage, range 30/120, reload 16, one-handed</em></p>
       <p>This pistol emits powerful sonic waves that can disorient targets. It uses power cells and has a high capacity.</p>
       <p><strong>Actions:</strong></p>
-      <p>• <strong>Shoot:</strong> Make a ranged attack with the sonic pistol. On hit: 1d4 sonic damage + your Dexterity modifier.</p>
-      <p>• <strong>Quick Shot:</strong> Make a ranged attack with disadvantage. On hit: 1d4 sonic damage + your Dexterity modifier + 1d6 extra damage.</p>
-      <p>• <strong>Reload:</strong> Spend an action to reload the sonic pistol with a new power cell.</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the sonic pistol. On hit: 1d4 sonic damage + your Dexterity modifier.</p>
+      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the sonic pistol while wielding it in your off-hand. On hit: 1d4 sonic damage without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -183,15 +210,22 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
+      <stat name="ability" value="dexterity" />
+      <stat name="type" value="Simple Ranged" />
       <grant type="Action" id="ID_ACTION_SHOOT"/>
       <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
     </rules>
   </element>
   <element name="cryo pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_PISTOL">
     <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
     <description>
-      <p>1d4 cold, power cell, range 30/120, Reload 8, Dexterity modifier), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
+      <p><strong>Cryo Pistol</strong></p>
+      <p><em>Simple Blaster</em></p>
+      <p><em>1d4 cold damage, range 30/120, reload 8, one-handed</em></p>
+      <p>This pistol fires freezing blasts that can chill targets. It uses power cells.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the cryo pistol. On hit: 1d4 cold damage + your Dexterity modifier.</p>
+      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the cryo pistol while wielding it in your off-hand. On hit: 1d4 cold damage without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -204,15 +238,22 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
+      <stat name="ability" value="dexterity" />
+      <stat name="type" value="Simple Ranged" />
       <grant type="Action" id="ID_ACTION_SHOOT"/>
       <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
     </rules>
   </element>
   <element name="slugthrower pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLUGTHROWER_PISTOL">
     <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_KINETIC</supports>
     <description>
-      <p>1d6 kinetic, slug cartridge, range 40/160, Reload 16, requires Strength 11 to use, Dexterity modifier), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
+      <p><strong>Slugthrower Pistol</strong></p>
+      <p><em>Simple Blaster</em></p>
+      <p><em>1d6 kinetic damage, range 40/160, reload 16, one-handed</em></p>
+      <p>This pistol fires kinetic slugs. It uses slug cartridges and requires Strength 11 to use.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the slugthrower pistol. On hit: 1d6 kinetic damage + your Dexterity modifier.</p>
+      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the slugthrower pistol while wielding it in your off-hand. On hit: 1d6 kinetic damage without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -225,15 +266,23 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
+      <stat name="ability" value="dexterity" />
+      <stat name="type" value="Simple Ranged" />
+      <stat name="prerequisite" value="Strength 11" />
       <grant type="Action" id="ID_ACTION_SHOOT"/>
       <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
     </rules>
   </element>
   <element name="disruptor pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DISRUPTOR_PISTOL">
     <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
     <description>
-      <p>1d6 acid, power cell, range 45/180, Reload 12, requires Strength 11 to use, Dexterity modifier), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
+      <p><strong>Disruptor Pistol</strong></p>
+      <p><em>Simple Blaster</em></p>
+      <p><em>1d6 acid damage, range 45/180, reload 12, one-handed</em></p>
+      <p>This pistol fires corrosive blasts. It uses power cells and requires Strength 11 to use.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the disruptor pistol. On hit: 1d6 acid damage + your Dexterity modifier.</p>
+      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the disruptor pistol while wielding it in your off-hand. On hit: 1d6 acid damage without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -246,15 +295,23 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
+      <stat name="ability" value="dexterity" />
+      <stat name="type" value="Simple Ranged" />
+      <stat name="prerequisite" value="Strength 11" />
       <grant type="Action" id="ID_ACTION_SHOOT"/>
       <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
     </rules>
   </element>
   <element name="stealth pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_STEALTH_PISTOL">
     <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p>1d6 energy, power cell, silent, two-handed, Reload 6, Dexterity modifier), Shoot | Properties: two-handed | Actions: Shoot</p>
+      <p><strong>Stealth Pistol</strong></p>
+      <p><em>Simple Blaster</em></p>
+      <p><em>1d6 energy damage, range 30/120, reload 6, two-handed</em></p>
+      <p>This silent pistol fires energy bolts without noise. It uses power cells.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the stealth pistol. On hit: 1d6 energy damage + your Dexterity modifier.</p>
+      <p>• <strong>Dart:</strong> As an Action, Shoot a Dart with the stealth pistol at a target. On hit: Damage and conditions depend on the dart.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -266,14 +323,23 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
+      <stat name="ability" value="dexterity" />
+      <stat name="type" value="Simple Ranged" />
+      <grant type="Tag" name="Silent" />
       <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
+      <grant type="Action" id="ID_ACTION_DART"/>
     </rules>
   </element>
   <element name="wrist blaster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_BLASTER">
     <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
-      <p>1d6 energy, disguised, can't be disarmed, can still use hand but when holding something can't use weapon, power cell, range 30/120, Reload 8, Dexterity modifier), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
+      <p><strong>Wrist Blaster</strong></p>
+      <p><em>Simple Blaster</em></p>
+      <p><em>1d6 energy damage, range 30/120, reload 8, one-handed</em></p>
+      <p>This disguised wrist-mounted blaster fires energy bolts. It can't be disarmed, you can still use your hand but can't use the weapon when holding something.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the wrist blaster. On hit: 1d6 energy damage + your Dexterity modifier.</p>
+      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the wrist blaster while wielding it in your off-hand. On hit: 1d6 energy damage without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -286,37 +352,154 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
+      <stat name="ability" value="dexterity" />
+      <stat name="type" value="Simple Ranged" />
+      <grant type="Tag" name="Disguised" />
+      <grant type="Tag" name="Can't be Disarmed" />
       <grant type="Action" id="ID_ACTION_SHOOT"/>
       <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
     </rules>
   </element>
-  <element name="wrist launcher" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
+  <element name="Wrist Launcher with Wrist Blaster Attachment" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER_BLASTER">
+    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
-      <p>can't be disarmed, can still use hand but when holding something can't use weapon), Shoot, Quick Shot | Actions: Shoot, Quick Shot</p>
+      <p><strong>Wrist Launcher with Wrist Blaster Attachment</strong></p>
+      <p><em>Simple Blaster</em></p>
+      <p><em>1d6 energy damage, range 30/120, reload 8, one-handed</em></p>
+      <p>This wrist-mounted launcher with blaster attachment fires energy bolts. It can't be disarmed, you can still use your hand but can't use the weapon when holding something.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the wrist launcher with wrist blaster attachment. On hit: 1d6 energy damage + your Dexterity modifier.</p>
+      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the wrist launcher with wrist blaster attachment while wielding it in your off-hand. On hit: 1d6 energy damage without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
+      <set name="range">30/120</set>
+      <set name="damage" type="energy">1d6</set>
+      <set name="reload">8</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
     <rules>
+      <stat name="ability" value="dexterity" />
+      <stat name="type" value="Simple Ranged" />
+      <grant type="Tag" name="Can't be Disarmed" />
       <grant type="Action" id="ID_ACTION_SHOOT"/>
       <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
+    </rules>
+  </element>
+  <element name="Wrist Launcher with Dart Attachment" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER_DART">
+    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
+    <description>
+      <p><strong>Wrist Launcher with Dart Attachment</strong></p>
+      <p><em>Simple Blaster</em></p>
+      <p><em>Range 30/120, one-handed</em></p>
+      <p>This wrist-mounted launcher with dart attachment. It can't be disarmed, you can still use your hand but can't use the weapon when holding something.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Dart:</strong> As an Action, Shoot a Dart with the wrist launcher with dart attachment at a target. On hit: Damage and conditions depend on the dart.</p>
+    </description>
+    <setters>
+      <set name="category">Weapons</set>
+      <set name="cost" currency="gp">0</set>
+      <set name="weight" lb="1">1 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="range">30/120</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+    </setters>
+    <rules>
+      <stat name="ability" value="dexterity" />
+      <stat name="type" value="Simple Ranged" />
+      <grant type="Tag" name="Can't be Disarmed" />
+      <grant type="Action" id="ID_ACTION_DART"/>
+    </rules>
+  </element>
+  <element name="Wrist Launcher with Rocket Attachment" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER_ROCKET">
+    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
+    <description>
+      <p><strong>Wrist Launcher with Rocket Attachment</strong></p>
+      <p><em>Simple Blaster</em></p>
+      <p><em>Range 30/120, one-handed</em></p>
+      <p>This wrist-mounted launcher with rocket attachment. It can't be disarmed, you can still use your hand but can't use the weapon when holding something.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Rocket:</strong> As an Action, Shoot a Rocket with the wrist launcher with rocket attachment at a target. On hit: Damage and conditions depend on the rocket.</p>
+    </description>
+    <setters>
+      <set name="category">Weapons</set>
+      <set name="cost" currency="gp">0</set>
+      <set name="weight" lb="1">1 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="range">30/120</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+    </setters>
+    <rules>
+      <stat name="ability" value="dexterity" />
+      <stat name="type" value="Simple Ranged" />
+      <grant type="Tag" name="Can't be Disarmed" />
+      <grant type="Action" id="ID_ACTION_ROCKET"/>
+    </rules>
+  </element>
+  <element name="Wrist Launcher with FiberCord Whip Attachment" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER_WHIP">
+    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
+    <description>
+      <p><strong>Wrist Launcher with FiberCord Whip Attachment</strong></p>
+      <p><em>Simple Blaster</em></p>
+      <p><em>Range 15 feet, one-handed</em></p>
+      <p>This wrist-mounted launcher with fiber cord whip attachment. It can't be disarmed, you can still use your hand but can't use the weapon when holding something.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Whip:</strong> As an Action, Use the fiber cord whip attachment on the wrist launcher. The target must make a Dexterity saving throw (DC 8 + proficiency bonus + your Dexterity modifier). On a failed save, the target is restrained. While restrained, the target can use an action on their turn to make a Strength saving throw (DC 8 + proficiency bonus + your Strength modifier). On a failed save, they remain restrained. On a successful save, they are freed. You can't use bonus actions or hold something in that hand while restraining someone.</p>
+    </description>
+    <setters>
+      <set name="category">Weapons</set>
+      <set name="cost" currency="gp">0</set>
+      <set name="weight" lb="1">1 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="range">15 feet</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+    </setters>
+    <rules>
+      <stat name="ability" value="dexterity" />
+      <stat name="type" value="Simple Ranged" />
+      <grant type="Tag" name="Can't be Disarmed" />
+      <grant type="Action" id="ID_ACTION_WHIP"/>
+    </rules>
+  </element>
+  <element name="Wrist Launcher with WristFlame Attachment" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER_FLAME">
+    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_FIRE</supports>
+    <description>
+      <p><strong>Wrist Launcher with WristFlame Attachment</strong></p>
+      <p><em>Simple Blaster</em></p>
+      <p><em>1d10 fire damage, range 15 feet cone, reload 2, one-handed</em></p>
+      <p>This wrist-mounted launcher with flame attachment. It can't be disarmed, you can still use your hand but can't use the weapon when holding something.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Flame:</strong> As an Action, Flame multiple targets in a 15 feet cone in front of you. Each target must make a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes 1d10 fire damage + your Dexterity modifier and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</p>
+    </description>
+    <setters>
+      <set name="category">Weapons</set>
+      <set name="cost" currency="gp">0</set>
+      <set name="weight" lb="1">1 lb.</set>
+      <set name="slot">onehand</set>
+      <set name="range">15 feet</set>
+      <set name="damage" type="fire">1d10</set>
+      <set name="reload">2</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+    </setters>
+    <rules>
+      <stat name="ability" value="dexterity" />
+      <stat name="type" value="Simple Ranged" />
+      <grant type="Tag" name="Can't be Disarmed" />
+      <grant type="Action" id="ID_ACTION_FLAME"/>
     </rules>
   </element>
   <element name="blaster rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BLASTER_RIFLE">
     <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p><strong>Blaster Rifle</strong></p>
+      <p><em>Martial Blaster</em></p>
       <p><em>1d8 energy damage, range 105/420, reload 12, two-handed</em></p>
       <p>This standard military rifle fires concentrated energy bolts. It uses power cells and has a moderate capacity.</p>
       <p><strong>Actions:</strong></p>
-      <p>• <strong>Shoot:</strong> Make a ranged attack with the blaster rifle. On hit: 1d8 energy damage + your Dexterity modifier.</p>
-      <p>• <strong>Reload:</strong> Spend an action to reload the blaster rifle with a new power cell.</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the blaster rifle. On hit: 1d8 energy damage + your Dexterity modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -329,8 +512,9 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
+      <stat name="ability" value="dexterity" />
+      <stat name="type" value="Martial Ranged" />
       <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
     </rules>
   </element>
   <element name="disruptor rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DISRUPTOR_RIFLE">
@@ -532,24 +716,29 @@
     <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
       <p><strong>Sniper Rifle</strong></p>
+      <p><em>Martial Blaster</em></p>
       <p><em>1d12 energy damage, range 150/600, reload 2, two-handed</em></p>
       <p>This precision long-range rifle fires concentrated energy bolts with exceptional accuracy. It uses power cells and has a very low capacity. Requires Strength 13 to use.</p>
       <p><strong>Actions:</strong></p>
-      <p>• <strong>Shoot:</strong> Make a ranged attack with the sniper rifle. On hit: 1d12 energy damage + your Dexterity modifier.</p>
-      <p>• <strong>Reload:</strong> Spend an action to reload the sniper rifle with a new power cell.</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the sniper rifle. On hit: 1d12 energy damage + your Dexterity modifier.</p>
+      <p>• <strong>Dart:</strong> As an Action, Shoot a Dart with the sniper rifle at a target. On hit: Damage and conditions depend on the dart.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
+      <set name="range">150/600</set>
       <set name="damage" type="energy">1d12</set>
       <set name="reload">2</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
     </setters>
     <rules>
+      <stat name="ability" value="dexterity" />
+      <stat name="type" value="Martial Ranged" />
+      <stat name="prerequisite" value="Strength 13" />
       <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
+      <grant type="Action" id="ID_ACTION_DART"/>
     </rules>
   </element>
   <element name="minigun/rotary cannon" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MINIGUN_ROTARY_CANNON">
@@ -623,6 +812,32 @@
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT"/>
       <grant type="Action" id="ID_ACTION_RELOAD"/>
+    </rules>
+  </element>
+  <element name="Rocket Launcher" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ROCKET_LAUNCHER">
+    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <description>
+      <p><strong>Rocket Launcher</strong></p>
+      <p><em>Martial Blaster</em></p>
+      <p><em>Range 100/350, reload 1, two-handed</em></p>
+      <p>This launcher fires explosive rockets. Requires Strength 13 to use.</p>
+      <p><strong>Actions:</strong></p>
+      <p>• <strong>Rocket:</strong> As an Action, Shoot a Rocket with the rocket launcher at a target. On hit: Damage and conditions depend on the rocket.</p>
+    </description>
+    <setters>
+      <set name="category">Weapons</set>
+      <set name="cost" currency="gp">0</set>
+      <set name="weight" lb="1">1 lb.</set>
+      <set name="slot">twohand</set>
+      <set name="range">100/350</set>
+      <set name="reload">1</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+    </setters>
+    <rules>
+      <stat name="ability" value="dexterity" />
+      <stat name="type" value="Martial Ranged" />
+      <stat name="prerequisite" value="Strength 13" />
+      <grant type="Action" id="ID_ACTION_ROCKET"/>
     </rules>
   </element>
   <element name="lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSABER">
