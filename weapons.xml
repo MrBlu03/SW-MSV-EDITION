@@ -2,96 +2,96 @@
 <elements>
   <info>
     <name>Weapons</name>
-    <update version="1.1.0">
+    <update version="1.1.1">
       <file name="weapons.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/weapons.xml" />
     </update>
   </info>
   <element name="Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_STRIKE">
     <description>
-      <p>Strike: Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+      <p>Strike: As an Action, Make a melee attack with the weapon. On hit: weapon damage + your weapon modifier(s).</p>
     </description>
     <sheet>
-      <description>Make a melee attack with your main hand weapon.</description>
+      <description>As an Action, Make a melee attack. On hit: weapon damage + your modifier(s).</description>
     </sheet>
   </element>
   <element name="Shoot" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SHOOT">
     <description>
-      <p>Shoot: Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+      <p>Shoot: As an Action, Make a ranged attack with the weapon. On hit: weapon damage + your weapon modifier(s).</p>
     </description>
     <sheet>
-      <description>Make a ranged attack with your main hand weapon.</description>
+      <description>As an Action, Make a ranged attack. On hit: weapon damage + your modifier(s).</description>
     </sheet>
   </element>
   <element name="Hilt Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_HILT_STRIKE">
     <description>
-      <p>Hilt Strike: Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. The target must make a Constitution saving throw: DC:8 + proficiency bonus + Strength or Dexterity modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed. (Damage: 1d4 kinetic)</p>
+      <p>Hilt Strike: As a Bonus Action, Make a melee attack with the hilt of the weapon, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your weapon modifier(s). On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <sheet>
-      <description>Bonus Action: Make a melee attack with your weapon's hilt. Target makes CON save (DC 8 + prof + STR or DEX mod) or becomes dazed. Damage: 1d4 kinetic.</description>
+      <description>As a Bonus Action, Make a melee attack with the weapon's hilt. On hit: 1d4 kinetic damage, target makes CON save (DC 8 + prof + modifier) or becomes dazed.</description>
     </sheet>
   </element>
   <element name="Slash" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SLASH">
     <description>
-      <p>Slash: Action; When wielding double bladed weapon, make a melee attack that hits in a 15 feet horizontal line in front of you. (Damage: weapon damage without adding modifiers)</p>
+      <p>Slash: As an Action, Make a sweeping melee attack with the weapon against all creatures standing in a 15 foot hoziontal line originating from you. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your weapon modifier(s)). A creature takes weapon damage without modifiers on a failed save, or half as much on a successful one.</p>
     </description>
     <sheet>
-      <description>Action: Attack all targets in a 15-foot horizontal line with your double-bladed weapon. Damage: weapon damage (no modifier).</description>
+      <description>As an Action, sweeping melee attack against all creatures in a 15 foot line. DEX save (DC 8 + prof + modifier) for half damage.</description>
     </sheet>
   </element>
   <element name="Blast" type="Action" source="SW-MSV-Edition" id="ID_ACTION_BLAST">
     <description>
-      <p>Blast: Action; Blast multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes full damage. On a successful save, the target takes half damage. (Damage: Weapon Damage and add modifier)</p>
+      <p>Blast: As an Action, Blast multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes weapon damage + weapon modifier(s). On a successful save, the target takes half damage.</p>
     </description>
     <sheet>
-      <description>Action: Blast targets in a cone. DC 8 + prof + DEX save for half damage. Damage: weapon damage + DEX modifier.</description>
+      <description>As an Action, Blast targets in a cone. DEX save (DC 8 + prof + DEX mod). Full damage on fail, half on success.</description>
     </sheet>
   </element>
   <element name="Flame" type="Action" source="SW-MSV-Edition" id="ID_ACTION_FLAME">
     <description>
-      <p>Flame: Action; Flame multiple targets in a 15 feet line in front of you. Each target must make a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes weapon damage + weapon modifier(s) and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</p>
+      <p>Flame: As an Action, Flame multiple targets in a cone in front of you. Each target must make a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes weapon damage + weapon modifier(s) and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</p>
     </description>
     <sheet>
-      <description>Action: Flame targets in a cone. DC 8 + prof + Dex save for half damage and reduced burning.</description>
+      <description>As an Action, Flame targets in a cone. DEX save (DC 8 + prof + DEX mod). Burning 2 turns on fail, 1 turn on success.</description>
     </sheet>
   </element>
   <element name="Off-Hand Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_OFF_HAND_STRIKE">
     <description>
-      <p>Off-Hand Strike: Bonus Action; When dual-wielding, make a melee attack with the melee weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>Off-Hand Strike: As a Bonus Action, Make a melee attack with the weapon while wielding it in your off-hand. On hit: weapon damage without modifiers.</p>
     </description>
     <sheet>
-      <description>Bonus Action: Attack with your off-hand melee weapon when dual-wielding. Damage: weapon damage (no modifier).</description>
+      <description>As a Bonus Action, Make a melee attack with the weapon in your off-hand. On hit: weapon damage without modifiers.</description>
     </sheet>
   </element>
   <element name="Quick Shot" type="Action" source="SW-MSV-Edition" id="ID_ACTION_QUICK_SHOT">
     <description>
-      <p>Quick Shot: Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>Quick Shot: As a Bonus Action, Make a quick hipfire shot with the weapon while wielding it in your off-hand. On hit: weapon damage without modifiers.</p>
     </description>
     <sheet>
-      <description>Bonus Action: Shoot with your off-hand ranged weapon when dual-wielding. Damage: weapon damage (no modifier).</description>
+      <description>As a Bonus Action, Make a quick hipfire shot with the weapon in your off-hand. On hit: weapon damage without modifiers.</description>
     </sheet>
   </element>
   <element name="Back Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_BACK_STRIKE">
     <description>
-      <p>Back Strike: Bonus Action; When wielding a double bladed weapon, make a melee attack with the other side of your weapon. (Damage: weapon damage without adding modifiers)</p>
+      <p>Back Strike: As a Bonus Action, Make a melee attack with the back end of the weapon. On hit: weapon damage without modifiers.</p>
     </description>
     <sheet>
-      <description>Bonus Action: Attack with the other side of your double-bladed weapon.</description>
+      <description>As a Bonus Action, Make a melee attack with the back end of the weapon. On hit: weapon damage without modifiers.</description>
     </sheet>
   </element>
   <element name="Dart" type="Action" source="SW-MSV-Edition" id="ID_ACTION_DART">
     <description>
-      <p>Dart: Action; Shoot a Dart with the weapon at a target. (Damage and conditions depend on the dart)</p>
+      <p>Dart: As an Action, Shoot a Dart with the weapon at a target. On hit: Damage and conditions depend on the dart.</p>
     </description>
     <sheet>
-      <description>Action: Shoot a dart with the weapon. Damage and conditions depend on the dart.</description>
+      <description>As an Action, Shoot a Dart with the weapon. On hit: Damage and conditions depend on the dart.</description>
     </sheet>
   </element>
   <element name="Rocket" type="Action" source="SW-MSV-Edition" id="ID_ACTION_ROCKET">
     <description>
-      <p>Rocket: Action; Shoot a Rocket with the weapon at a target. (Damage and conditions depend on the rocket)</p>
+      <p>Rocket: As an Action, Shoot a Rocket with the weapon at a target. On hit: Damage and conditions depend on the rocket.</p>
     </description>
     <sheet>
-      <description>Action: Shoot a rocket with the weapon. Damage and conditions depend on the rocket.</description>
+      <description>As an Action, Shoot a Rocket with the weapon. On hit: Damage and conditions depend on the rocket.</description>
     </sheet>
   </element>
   <element name="Whip" type="Action" source="SW-MSV-Edition" id="ID_ACTION_WHIP">
@@ -447,7 +447,7 @@
       <p><em>1d10 fire damage, range 15 feet line, reload 2, one-handed</em></p>
       <p>This wrist-mounted launcher with flame attachment. It can't be disarmed, you can still use your hand but can't use the weapon when holding something.</p>
       <p><strong>Actions:</strong></p>
-      <p>• <strong>Flame:</strong> As an Action, Flame multiple targets in a 15 feet line in front of you. Each target must make a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes 1d10 fire damage + your Dexterity modifier and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</p>
+      <p>• <strong>Flame:</strong> As an Action, Flame multiple targets in a 15 feet cone in front of you. Each target must make a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes 1d10 fire damage + your Dexterity modifier and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -501,6 +501,7 @@
       <p>This rifle fires corrosive blasts that can dissolve armor and flesh. It uses power cells.</p>
       <p><strong>Actions:</strong></p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the disruptor rifle. On hit: 1d8 acid damage + your Dexterity modifier.</p>
+      <p>• <strong>Reload:</strong> Action; After 9 shots the disruptor rifle needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -528,7 +529,7 @@
       <p>This massive bowcaster fires powerful energy bolts that can knock targets back. It uses power cells and has a very low capacity. Requires Strength 17 to use.</p>
       <p><strong>Actions:</strong></p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the heavy bowcaster. On hit: 1d12 energy damage + your Dexterity modifier.</p>
-      <p>• <strong>Reload:</strong> As an Action, Spend a full action to reload the heavy bowcaster with a new power cell.</p>
+      <p>• <strong>Reload:</strong> Action; After 4 shots the heavy bowcaster needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -557,7 +558,7 @@
       <p>This rifle fires ion bolts that can disable droids and electronics. It uses power cells and has a moderate capacity.</p>
       <p><strong>Actions:</strong></p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the ion rifle. On hit: 1d6 ion damage + your Dexterity modifier.</p>
-      <p>• <strong>Reload:</strong> As an Action, Spend a full action to reload the ion rifle with a new power cell.</p>
+      <p>• <strong>Reload:</strong> Action; After 8 shots the ion rifle needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -585,7 +586,7 @@
       <p>This rifle emits powerful sonic waves that can disorient targets. It uses power cells and has a low capacity.</p>
       <p><strong>Actions:</strong></p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the sonic rifle. On hit: 1d8 sonic damage + your Dexterity modifier.</p>
-      <p>• <strong>Reload:</strong> As an Action, Spend a full action to reload the sonic rifle with a new power cell.</p>
+      <p>• <strong>Reload:</strong> Action; After 8 shots the sonic rifle needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -614,7 +615,7 @@
       <p>This rifle fires solid metal slugs using electromagnetic acceleration. It uses slug cartridges and has a moderate capacity.</p>
       <p><strong>Actions:</strong></p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the slugthrower rifle. On hit: 1d8 kinetic damage + your Dexterity modifier.</p>
-      <p>• <strong>Reload:</strong> As an Action, Spend a full action to reload the slugthrower rifle with a new slug cartridge.</p>
+      <p>• <strong>Reload:</strong> Action; After 12 shots the slugthrower rifle needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -642,7 +643,7 @@
       <p>This rifle fires cryogenic blasts that can freeze targets. It uses power cells and has a very low capacity. Requires Strength 11 to use.</p>
       <p><strong>Actions:</strong></p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the cryo rifle. On hit: 2d4 cold damage + your Dexterity modifier.</p>
-      <p>• <strong>Reload:</strong> As an Action, Spend a full action to reload the cryo rifle with a new power cell.</p>
+      <p>• <strong>Reload:</strong> Action; After 4 shots the cryo rifle needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -671,7 +672,7 @@
       <p>This powerful railgun accelerates metal slugs to incredible speeds using electromagnetic fields. It uses power cells and has a very low capacity.</p>
       <p><strong>Actions:</strong></p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the railgun. On hit: 1d10 ion damage + your Dexterity modifier.</p>
-      <p>• <strong>Reload:</strong> As an Action, Spend a full action to reload the railgun with a new power cell.</p>
+      <p>• <strong>Reload:</strong> Action; After 1 shot the railgun needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -699,7 +700,7 @@
       <p>This weapon fires arcing bolts of electricity that can chain to nearby targets. It uses power cells and has a low capacity. Requires Strength 11 to use.</p>
       <p><strong>Actions:</strong></p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the arc caster. On hit: 2d4 lightning damage + your Dexterity modifier. Can hit a secondary target in the same line for 1d4 lightning damage.</p>
-      <p>• <strong>Reload:</strong> As an Action, Spend a full action to reload the arc caster with a new power cell.</p>
+      <p>• <strong>Reload:</strong> Action; After 9 shots the arc caster needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -756,8 +757,8 @@
       <p><em>1d10 energy damage, range 75 ft cone, reload 4, two-handed</em></p>
       <p>This rapid-fire weapon unleashes a devastating cone of energy bolts. It uses power cells and has a very low capacity. Requires Strength 13 to use.</p>
       <p><strong>Actions:</strong></p>
-      <p>• <strong>Blast:</strong> As an Action, Choose a point within range. Each creature in a 75-foot cone from that point must make a Dexterity saving throw (DC 8 + your proficiency bonus + your Dexterity modifier). A creature takes 1d10 energy damage without modifiers on a failed save, or half as much on a successful one.</p>
-      <p>• <strong>Reload:</strong> As an Action, Spend a full action to reload the minigun/rotary cannon with a new power cell.</p>
+      <p>• <strong>Blast:</strong> As an Action, Blast multiple targets in a 75 ft cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes 1d10 energy damage + your Dexterity modifier. On a successful save, the target takes half damage.</p>
+      <p>• <strong>Reload:</strong> Action; After 4 shots the minigun/rotary cannon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -784,8 +785,8 @@
       <p><em>2d6 fire damage, range 55 ft cone, reload 2, two-handed</em></p>
       <p>This weapon unleashes a devastating cone of flames. It uses fuel canisters and has a very low capacity.</p>
       <p><strong>Actions:</strong></p>
-      <p>• <strong>Flame:</strong> As an Action, Choose a point within range. Each creature in a 55-foot cone from that point must make a Dexterity saving throw (DC 8 + your proficiency bonus + your Dexterity modifier). A creature takes 2d6 fire damage without modifiers on a failed save, or half as much on a successful one.</p>
-      <p>• <strong>Reload:</strong> As an Action, Spend a full action to reload the flamethrower with a new fuel canister.</p>
+      <p>• <strong>Flame:</strong> As an Action, Flame multiple targets in a 55 ft cone in front of you. Each target must make a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes 2d6 fire damage + your Dexterity modifier and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</p>
+      <p>• <strong>Reload:</strong> Action; After 2 shots the flamethrower needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -812,7 +813,7 @@
       <p>This rapid-fire slugthrower rifle can unleash devastating bursts. It uses slug cartridges and has a very low capacity. Requires Strength 12 to use.</p>
       <p><strong>Actions:</strong></p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the cycler rifle. On hit: 1d10 kinetic damage + your Dexterity modifier.</p>
-      <p>• <strong>Reload:</strong> As an Action, Spend a full action to reload the cycler rifle with a new slug cartridge.</p>
+      <p>• <strong>Reload:</strong> Action; After 4 shots the cycler rifle needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -840,9 +841,9 @@
       <p><em>1d6 energy damage, finesse, one-handed</em></p>
       <p>The iconic weapon of the Jedi and Sith, a lightsaber projects a blade of pure plasma energy. It uses the Force to ignite and can be wielded with exceptional precision.</p>
       <p><strong>Actions:</strong></p>
-      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the lightsaber. On hit: 1d6 energy damage + your Strength or Dexterity modifier (your choice).</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the lightsaber. On hit: 1d6 energy damage + your Strength or Dexterity modifier.</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the lightsaber while wielding it in your off-hand. On hit: 1d6 energy damage without modifiers.</p>
-      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the lightsaber (non-lethal). On hit: 1d4 kinetic damage + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the lightsaber, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength or Dexterity modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -870,7 +871,7 @@
       <p><strong>Actions:</strong></p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the lightstaff. On hit: 1d6 energy damage + your Strength modifier (or 2d4 energy damage + your Strength modifier if used with two hands).</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the lightstaff while wielding it in your off-hand. On hit: 1d6 energy damage without modifiers.</p>
-      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the lightstaff (non-lethal). On hit: 1d4 kinetic damage + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the lightstaff, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -898,7 +899,7 @@
       <p>This unique lightsaber design features a crossguard of plasma blades that protect the wielder's hands. It requires exceptional dexterity to use safely. Requires Dexterity 13 to use.</p>
       <p><strong>Actions:</strong></p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the crossguard saber. On hit: 2d6 energy damage + your Strength modifier.</p>
-      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the crossguard saber (non-lethal). On hit: 1d4 kinetic damage + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the crossguard saber, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -924,7 +925,7 @@
       <p><em>1d6 energy damage, reach 10 ft, finesse</em></p>
       <p>This exotic weapon consists of a handle that projects a flexible plasma whip. It can strike at enemies up to 10 feet away and requires great skill to wield effectively.</p>
       <p><strong>Actions:</strong></p>
-      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the lightwhip. On hit: 1d6 energy damage + your Strength or Dexterity modifier (your choice).</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the lightwhip. On hit: 1d6 energy damage + your Strength or Dexterity modifier.</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the lightwhip while wielding it in your off-hand. On hit: 1d6 energy damage without modifiers.</p>
     </description>
     <setters>
@@ -952,7 +953,7 @@
       <p><strong>Actions:</strong></p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the martial lightsaber. On hit: 1d8 energy damage + your Strength modifier (or 1d10 energy damage + your Strength modifier if used with two hands).</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the martial lightsaber while wielding it in your off-hand. On hit: 1d8 energy damage without modifiers.</p>
-      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the martial lightsaber (non-lethal). On hit: 1d4 kinetic damage + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the martial lightsaber, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -980,7 +981,7 @@
       <p>This extended lightsaber design provides superior reach in combat. It requires good dexterity to handle the longer weapon effectively. Requires Dexterity 11 to use.</p>
       <p><strong>Actions:</strong></p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the lightsaber pike. On hit: 1d10 energy damage + your Strength modifier.</p>
-      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the lightsaber pike (non-lethal). On hit: 1d4 kinetic damage + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the lightsaber pike, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1006,7 +1007,7 @@
       <p><em>1d8 energy damage, two-handed, finesse</em></p>
       <p>This deadly weapon features plasma blades extending from both ends of the hilt. It requires exceptional skill to wield safely and effectively.</p>
       <p><strong>Actions:</strong></p>
-      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the double bladed lightsaber. On hit: 1d8 energy damage + your Strength or Dexterity modifier (your choice).</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the double bladed lightsaber. On hit: 1d8 energy damage + your Strength or Dexterity modifier.</p>
       <p>• <strong>Slash:</strong> As an Action, Make a sweeping melee attack with the double bladed lightsaber against all creatures standing in a 15 foot horizontal line originating from you. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your Strength or Dexterity modifier). A creature takes 1d8 energy damage without modifiers on a failed save, or half as much on a successful one.</p>
       <p>• <strong>Back Strike:</strong> As a Bonus Action, Make a melee attack with the back end of the double bladed lightsaber. On hit: 1d8 energy damage without modifiers.</p>
     </description>
@@ -1036,7 +1037,7 @@
       <p><strong>Actions:</strong></p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibrospear. On hit: 1d6 kinetic damage + your Strength modifier (or 2d4 kinetic damage + your Strength modifier if used with two hands).</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the vibrospear while wielding it in your off-hand. On hit: 1d6 kinetic damage without modifiers.</p>
-      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibrospear (non-lethal). On hit: 1d4 kinetic damage + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibrospear, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1064,7 +1065,7 @@
       <p><em>1d4 kinetic damage, thrown range 20/60, finesse</em></p>
       <p>This small blade features a vibrating edge that enhances its cutting power. It can be used for precise melee attacks or thrown at enemies.</p>
       <p><strong>Actions:</strong></p>
-      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibrodagger. On hit: 1d4 kinetic damage + your Strength or Dexterity modifier (your choice).</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibrodagger. On hit: 1d4 kinetic damage + your Strength or Dexterity modifier.</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the vibrodagger while wielding it in your off-hand. On hit: 1d4 kinetic damage without modifiers.</p>
     </description>
     <setters>
@@ -1093,7 +1094,7 @@
       <p><strong>Actions:</strong></p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibrostaff. On hit: 1d6 kinetic damage + your Strength modifier (or 2d4 kinetic damage + your Strength modifier if used with two hands).</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the vibrostaff while wielding it in your off-hand. On hit: 1d6 kinetic damage without modifiers.</p>
-      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibrostaff (non-lethal). On hit: 1d4 kinetic damage + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibrostaff, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1120,7 +1121,7 @@
       <p><em>1d8 kinetic damage, two-handed, finesse</em></p>
       <p>This deadly weapon features vibrating blades on both ends. It requires exceptional skill to wield effectively in combat.</p>
       <p><strong>Actions:</strong></p>
-      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibro double-blade. On hit: 1d8 kinetic damage + your Strength or Dexterity modifier (your choice).</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibro double-blade. On hit: 1d8 kinetic damage + your Strength or Dexterity modifier.</p>
       <p>• <strong>Slash:</strong> As an Action, Make a sweeping melee attack with the vibro double-blade against all creatures standing in a 15 foot horizontal line originating from you. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your Strength or Dexterity modifier). A creature takes 1d8 kinetic damage without modifiers on a failed save, or half as much on a successful one.</p>
       <p>• <strong>Back Strike:</strong> As a Bonus Action, Make a melee attack with the back end of the vibro double-blade. On hit: 1d8 kinetic damage without modifiers.</p>
     </description>
@@ -1148,7 +1149,7 @@
       <p><em>1d6 lightning damage, two-handed, finesse</em></p>
       <p>This staff delivers powerful electric shocks to enemies. It requires exceptional skill to wield effectively in combat.</p>
       <p><strong>Actions:</strong></p>
-      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the electrostaff. On hit: 1d6 lightning damage + your Strength or Dexterity modifier (your choice).</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the electrostaff. On hit: 1d6 lightning damage + your Strength or Dexterity modifier.</p>
       <p>• <strong>Slash:</strong> As an Action, Make a sweeping melee attack with the electrostaff against all creatures standing in a 15 foot horizontal line originating from you. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your Strength or Dexterity modifier). A creature takes 1d6 lightning damage without modifiers on a failed save, or half as much on a successful one.</p>
       <p>• <strong>Back Strike:</strong> As a Bonus Action, Make a melee attack with the back end of the electrostaff. On hit: 1d6 lightning damage without modifiers.</p>
     </description>
@@ -1178,7 +1179,7 @@
       <p><strong>Actions:</strong></p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibrosword. On hit: 1d8 kinetic damage + your Strength modifier (or 1d10 kinetic damage + your Strength modifier if used with two hands).</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the vibrosword while wielding it in your off-hand. On hit: 1d8 kinetic damage without modifiers.</p>
-      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibrosword (non-lethal). On hit: 1d4 kinetic damage + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibrosword, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1206,7 +1207,7 @@
       <p>This massive axe features a vibrating blade that enhances its destructive power. It requires good dexterity to handle the heavy weapon effectively. Requires Dexterity 11 to use.</p>
       <p><strong>Actions:</strong></p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibro-axe. On hit: 1d12 kinetic damage + your Strength modifier.</p>
-      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibro-axe (non-lethal). On hit: 1d4 kinetic damage + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibro-axe, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1233,7 +1234,7 @@
       <p>This extended polearm features a vibrating blade that enhances its striking power. It provides superior reach in combat. Requires Dexterity 11 to use.</p>
       <p><strong>Actions:</strong></p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibropike. On hit: 1d10 kinetic damage + your Strength modifier.</p>
-      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibropike (non-lethal). On hit: 1d4 kinetic damage + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibropike, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1259,7 +1260,7 @@
       <p><em>1d4 lightning damage, reach 10 ft, finesse</em></p>
       <p>This flexible weapon delivers electric shocks to enemies up to 10 feet away. It requires great skill to wield effectively.</p>
       <p><strong>Actions:</strong></p>
-      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the electrowhip. On hit: 1d4 lightning damage + your Strength or Dexterity modifier (your choice).</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the electrowhip. On hit: 1d4 lightning damage + your Strength or Dexterity modifier.</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the electrowhip while wielding it in your off-hand. On hit: 1d4 lightning damage without modifiers.</p>
     </description>
     <setters>
@@ -1285,7 +1286,7 @@
       <p><em>1d4 lightning damage, finesse</em></p>
       <p>This compact weapon delivers electric shocks to enemies. It can be wielded with great precision and speed.</p>
       <p><strong>Actions:</strong></p>
-      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the electrobaton. On hit: 1d4 lightning damage + your Strength or Dexterity modifier (your choice).</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the electrobaton. On hit: 1d4 lightning damage + your Strength or Dexterity modifier.</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the electrobaton while wielding it in your off-hand. On hit: 1d4 lightning damage without modifiers.</p>
     </description>
     <setters>

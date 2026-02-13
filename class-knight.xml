@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Knight Class</name>
-    <update version="1.1.0">
+    <update version="1.1.1">
       <file name="class-knight.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-knight.xml" />
     </update>
   </info>

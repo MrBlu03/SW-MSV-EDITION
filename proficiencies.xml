@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Proficiencies</name>
-    <update version="1.1.0">
+    <update version="1.1.1">
       <file name="proficiencies.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/proficiencies.xml" />
     </update>
   </info>
@@ -654,5 +654,35 @@
     <description><p>Xantha proficiency</p></description>
 
       <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+  </element>
+  <element name="Acrobatics" type="Expertise" id="ID_EXPERTISE_ACROBATICS" source="SW-MSV-Edition">
+    <supports>ID_PROFICIENCY_SKILL_ACROBATICS</supports>
+  </element>
+  <element name="Athletics" type="Expertise" id="ID_EXPERTISE_ATHLETICS" source="SW-MSV-Edition">
+    <supports>ID_PROFICIENCY_SKILL_ATHLETICS</supports>
+  </element>
+  <element name="Deception" type="Expertise" id="ID_EXPERTISE_DECEPTION" source="SW-MSV-Edition">
+    <supports>ID_PROFICIENCY_SKILL_DECEPTION</supports>
+  </element>
+  <element name="Insight" type="Expertise" id="ID_EXPERTISE_INSIGHT" source="SW-MSV-Edition">
+    <supports>ID_PROFICIENCY_SKILL_INSIGHT</supports>
+  </element>
+  <element name="Intimidation" type="Expertise" id="ID_EXPERTISE_INTIMIDATION" source="SW-MSV-Edition">
+    <supports>ID_PROFICIENCY_SKILL_INTIMIDATION</supports>
+  </element>
+  <element name="Investigation" type="Expertise" id="ID_EXPERTISE_INVESTIGATION" source="SW-MSV-Edition">
+    <supports>ID_PROFICIENCY_SKILL_INVESTIGATION</supports>
+  </element>
+  <element name="Perception" type="Expertise" id="ID_EXPERTISE_PERCEPTION" source="SW-MSV-Edition">
+    <supports>ID_PROFICIENCY_SKILL_PERCEPTION</supports>
+  </element>
+  <element name="Persuasion" type="Expertise" id="ID_EXPERTISE_PERSUASION" source="SW-MSV-Edition">
+    <supports>ID_PROFICIENCY_SKILL_PERSUASION</supports>
+  </element>
+  <element name="Sleight of Hand" type="Expertise" id="ID_EXPERTISE_SLEIGHTOFHAND" source="SW-MSV-Edition">
+    <supports>ID_PROFICIENCY_SKILL_SLEIGHTOFHAND</supports>
+  </element>
+  <element name="Stealth" type="Expertise" id="ID_EXPERTISE_STEALTH" source="SW-MSV-Edition">
+    <supports>ID_PROFICIENCY_SKILL_STEALTH</supports>
   </element>
 </elements>

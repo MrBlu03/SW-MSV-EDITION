@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Inquisitor Class</name>
-    <update version="1.1.0">
+    <update version="1.1.1">
       <file name="class-inquisitor.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-inquisitor.xml" />
     </update>
   </info>
@@ -136,8 +136,8 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <description>Your proficiency bonus is doubled for your chosen expertise skills.</description>
     </sheet>
     <rules>
-      <select type="Class Feature" name="Expertise (Inquisitor)" level="1" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE" />
-      <select type="Class Feature" name="Expertise (Inquisitor)" level="6" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE" />
+      <select type="Expertise" name="Expertise (Inquisitor)" level="1" number="2" supports="ID_EXPERTISE_ACROBATICS|ID_EXPERTISE_ATHLETICS|ID_EXPERTISE_DECEPTION|ID_EXPERTISE_INSIGHT|ID_EXPERTISE_INTIMIDATION|ID_EXPERTISE_INVESTIGATION|ID_EXPERTISE_PERCEPTION|ID_EXPERTISE_PERSUASION|ID_EXPERTISE_SLEIGHTOFHAND|ID_EXPERTISE_STEALTH" />
+      <select type="Expertise" name="Expertise (Inquisitor)" level="6" number="2" supports="ID_EXPERTISE_ACROBATICS|ID_EXPERTISE_ATHLETICS|ID_EXPERTISE_DECEPTION|ID_EXPERTISE_INSIGHT|ID_EXPERTISE_INTIMIDATION|ID_EXPERTISE_INVESTIGATION|ID_EXPERTISE_PERCEPTION|ID_EXPERTISE_PERSUASION|ID_EXPERTISE_SLEIGHTOFHAND|ID_EXPERTISE_STEALTH" />
     </rules>
   </element>
 
