@@ -5,28 +5,39 @@
     <description>
       <p>You increase one Ability by 2, or two Abilities by 1 to a max of 20</p>
     </description>
-    <rules/>
+    <rules>
+      <select type="Ability Score Improvement" name="Ability Score Increase 1" supports="Ability Score Improvement" />
+      <select type="Ability Score Improvement" name="Ability Score Increase 2" supports="Ability Score Improvement" />
+    </rules>
   </element>
   <element name="Actor" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_ACTOR">
     <compendium display="true"/>
     <description>
       <p>Your Charisma increases by 1 to a max of 20, profiency bonus is doubled for deception and performance checks and grants those proficiencies.</p>
     </description>
-    <rules/>
+    <rules>
+      <stat name="charisma" value="1" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+    </rules>
   </element>
   <element name="Alert" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_ALERT">
     <compendium display="true"/>
     <description>
       <p>+5 to initiative and can't be surprised</p>
     </description>
-    <rules/>
+    <rules>
+      <stat name="initiative" value="5" />
+    </rules>
   </element>
   <element name="Athlete" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_ATHLETE">
     <compendium display="true"/>
     <description>
       <p>Your Strength or Dexterity increases by 1 to a max of 20, When you are prone, standing up uses only 5 feet of your movement</p>
     </description>
-    <rules/>
+    <rules>
+      <select type="Ability Score Improvement" name="Ability Score Increase (Athlete)" supports="Ability Score Improvement" />
+    </rules>
   </element>
   <element name="Charger" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_CHARGER">
     <compendium display="true"/>
@@ -54,14 +65,18 @@
     <description>
       <p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack and you gain a +1 bonus to Armour Class while wielding a melee weapon in each hand. You cannot dual-wield two-handed weapons.</p>
     </description>
-    <rules/>
+    <rules>
+      <stat name="ac:misc" value="1" />
+    </rules>
   </element>
   <element name="Durable" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_DURABLE">
     <compendium display="true"/>
     <description>
       <p>Your Constitution increases by 1, to a maximum of 20, you regain full hit points each time you take a Short Rest.</p>
     </description>
-    <rules/>
+    <rules>
+      <stat name="constitution" value="1" />
+    </rules>
   </element>
   <element name="Heavily Armoured" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_HEAVILY_ARMOURED">
     <compendium display="true"/>
@@ -69,7 +84,10 @@
       <p>You gain Armour Proficiency with Heavy Armour and your Strength increases by 1, to a maximum of 20</p>
     </description>
     <prerequisite>medium armour proifiency</prerequisite>
-    <rules/>
+    <rules>
+      <stat name="strength" value="1" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+    </rules>
   </element>
   <element name="Heavy Armour Master" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_HEAVY_ARMOUR_MASTER">
     <compendium display="true"/>
@@ -77,14 +95,19 @@
       <p>Your Strength increases by 1, to a maximum of 20, Incoming damage from kinetic attacks also decreases by 3 while you're wearing heavy armour.</p>
     </description>
     <prerequisite>heavy armour profiency</prerequisite>
-    <rules/>
+    <rules>
+      <stat name="strength" value="1" />
+    </rules>
   </element>
   <element name="Lightely Armoured" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_LIGHTELY_ARMOURED">
     <compendium display="true"/>
     <description>
       <p>You gain Armour Proficiency with Light Armour and your Strength or Dexterity increases by 1, to a maximum of 20.</p>
     </description>
-    <rules/>
+    <rules>
+      <select type="Ability Score Improvement" name="Ability Score Increase (Lightly Armoured)" supports="Ability Score Improvement" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+    </rules>
   </element>
   <element name="Lucky" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_LUCKY">
     <compendium display="true"/>
@@ -98,14 +121,18 @@
     <description>
       <p>When you wear Medium Armour, it doesn‘t impose Disadvantage on Stealth Checks. The bonus to Armour Class you can gain from your Dexterity Modifier also becomes +3 instead of +2.</p>
     </description>
-    <rules/>
+    <rules>
+      <stat name="ac:dexterity:cap" value="3" bonus="base" />
+    </rules>
   </element>
   <element name="Mobile" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_MOBILE">
     <compendium display="true"/>
     <description>
       <p>Your movement speed increases by 10 feet, and difficult terrain doesn't slow you down when you Dash, If you move after making a melee attack, you don't provoke Opportunity Attacks from your target.</p>
     </description>
-    <rules/>
+    <rules>
+      <stat name="speed" value="10" />
+    </rules>
   </element>
   <element name="Moderately Armoured" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_MODERATELY_ARMOURED">
     <compendium display="true"/>
@@ -113,7 +140,11 @@
       <p>You gain Armour Proficiency with Medium Armour and shields, and your Strength or Dexterity increases by 1, to a maximum of 20</p>
     </description>
     <prerequisite>light armour proficiency</prerequisite>
-    <rules/>
+    <rules>
+      <select type="Ability Score Improvement" name="Ability Score Increase (Moderately Armoured)" supports="Ability Score Improvement" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+    </rules>
   </element>
   <element name="Polearm Master" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_POLEARM_MASTER">
     <compendium display="true"/>
@@ -127,7 +158,9 @@
     <description>
       <p>You increase an Ability by 1, to a maximum of 20, and gain Proficiency in that Ability's Saving Throws.</p>
     </description>
-    <rules/>
+    <rules>
+      <select type="Ability Score Improvement" name="Ability Score Increase (Resilient)" supports="Ability Score Improvement" />
+    </rules>
   </element>
   <element name="Savage Attacker" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_SAVAGE_ATTACKER">
     <compendium display="true"/>
@@ -155,20 +188,28 @@
     <description>
       <p>You gain a +2 bonus to Dexterity Saving Throws while wielding a shield. If a force ability forces you to make a Dexterity Saving Throw, you can use a reaction to shield yourself and diminish the effect's damage. On a failed Saving Throw, you only take half damage. On a successful Saving Throw, you don't take any damage.</p>
     </description>
-    <rules/>
+    <rules>
+      <stat name="dexterity:save:misc" value="2" />
+    </rules>
   </element>
   <element name="Skilled" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_SKILLED">
     <compendium display="true"/>
     <description>
       <p>You gain Proficiency in 3 Skills or 1 skill and 1 tool of your choice.</p>
     </description>
-    <rules/>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Skilled 1)" supports="Skill" />
+      <select type="Proficiency" name="Skill Proficiency (Skilled 2)" supports="Skill" />
+      <select type="Proficiency" name="Skill Proficiency (Skilled 3)" supports="Skill" />
+    </rules>
   </element>
   <element name="Tough" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_TOUGH">
     <compendium display="true"/>
     <description>
       <p>Your hit point maximum increases by 2 for every level you have gained</p>
     </description>
-    <rules/>
+    <rules>
+      <stat name="hp" value="level*2" />
+    </rules>
   </element>
 </elements>

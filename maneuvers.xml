@@ -7,7 +7,7 @@
     </description>
     <rules/>
   </element>
-  <element name="Bait And Switch" type="Class Feature" source="SW-MSV-Edition" id="ID_MANEUVER_BAIT_AND_SWITCH">
+  <element name="Bait and Switch" type="Class Feature" source="SW-MSV-Edition" id="ID_MANEUVER_BAIT_AND_SWITCH">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When you're within 5 feet of a creature on your turn, you can expend one superiority die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn't incapacitated. This movement doesn't provoke opportunity attacks. Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled.</p>
@@ -21,7 +21,7 @@
     </description>
     <rules/>
   </element>
-  <element name="Commander'S Strike" type="Class Feature" source="SW-MSV-Edition" id="ID_MANEUVER_COMMANDERS_STRIKE">
+  <element name="Commander's Strike" type="Class Feature" source="SW-MSV-Edition" id="ID_MANEUVER_COMMANDERS_STRIKE">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When you take the Attack action on your turn, you can forgo one of your attacks and use a bonus action to direct one of your companions to strike. When you do so, choose a friendly creature who can see or hear you and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack's damage roll.</p>

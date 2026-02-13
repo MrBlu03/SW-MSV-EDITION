@@ -49,8 +49,6 @@
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_ASSASSINATE" level="1" />
       <grant type="Spell" id="ID_CLASS_INQUISITOR_FEATURE_MINOR_TELEKINESIS" level="1" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_CUNNING_ACTION" level="2" />
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_TRICKSTER" level="3" />
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_MANIPULATOR" level="3" />
       <select type="Feat" name="Feat (Inquisitor)" level="4" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_UNCANNY_DODGE" level="5" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_EXPERTISE" level="6" />
@@ -73,9 +71,9 @@
   <element id="ID_CLASS_INQUISITOR_FEATURE_ASSASSINATE" name="Assassinate" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.</p>
+      <p>Once per turn, you can deal an extra 1d6 damage (the type of damage is determined by the weapon you use) to one creature you hit with an attack if you have advantage on the attack roll. You must use a finesse or a ranged weapon.</p>
       <p class="indent">You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</p>
-      <p class="indent">The amount of the extra damage increases as you gain levels in this class, as shown in the Assassinate column below.</p>
+      <p class="indent">The amount of the extra damage increases as you gain levels in this class.</p>
     </description>
     <sheet>
       <description>Once per turn, you can deal an extra {{assassinate:count}}d{{assassinate:die}} damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
@@ -131,15 +129,7 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <select type="Class Feature" name="Expertise" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE" />
     </rules>
   </element>
-  <element id="ID_CLASS_INQUISITOR_FEATURE_FEAT" name="Feat" type="Class Feature" source="SW-MSV-Edition">
-    <compendium display="true" />
-    <description>
-      <p>Choose a feat to further customize your character.</p>
-    </description>
-    <rules>
-      <select type="Feat" name="Feat" />
-    </rules>
-  </element>
+
   <element id="ID_CLASS_INQUISITOR_FEATURE_CUNNING_ACTION" name="Cunning Action" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
@@ -153,10 +143,10 @@ You don't need advantage on the attack roll if another enemy of the target is wi
   <element id="ID_CLASS_INQUISITOR_FEATURE_UNCANNY_DODGE" name="Uncanny Dodge" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</p>
+      <p>Reaction; When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</p>
     </description>
     <sheet>
-      <description>When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</description>
+      <description>Reaction; When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</description>
     </sheet>
 
   </element>
@@ -188,7 +178,9 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>You gain proficiency in Wisdom saving throws.</description>
     </sheet>
-
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+    </rules>
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_ELUSIVE" name="Elusive" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -210,18 +202,8 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     </sheet>
 
   </element>
-  <element id="ID_CLASS_INQUISITOR_FEATURE_TRICKSTER" name="Trickster" type="Class Feature" source="SW-MSV-Edition">
-    <description>
-      <p>Trickster - See Inquisitor class description for details.</p>
-    </description>
 
-  </element>
-  <element id="ID_CLASS_INQUISITOR_FEATURE_MANIPULATOR" name="Manipulator" type="Class Feature" source="SW-MSV-Edition">
-    <description>
-      <p>Manipulator - See Inquisitor class description for details.</p>
-    </description>
 
-  </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_SUBCLASS_ABILITY" name="Subclass Feature" type="Class Feature" source="SW-MSV-Edition">
     <description>
       <p>You gain a feature from your Inquisitor subclass.</p>
@@ -278,6 +260,7 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <p>Cantrip, Casting Time: 1 Bonus Action; Range: Self; Components: None; Duration: Until the end of your next turn; When hiding successfully, you can turn invisible.</p>
     </description>
     <setters>
+      <set name="keywords">force</set>
       <set name="level">0</set>
       <set name="school">Evocation</set>
       <set name="time">1 Bonus Action</set>
@@ -401,6 +384,7 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <p>Cantrip, Casting Time: 1 Bonus Action; Range: Up to double your movement; Components: None; Duration: Instantaneous; You can teleport to an enemy up to double your movement away. This does not break stealth unless you teleport into line of sight.</p>
     </description>
     <setters>
+      <set name="keywords">force</set>
       <set name="level">0</set>
       <set name="school">Evocation</set>
       <set name="time">1 Bonus Action</set>

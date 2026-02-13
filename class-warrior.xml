@@ -69,12 +69,7 @@
   <element id="ID_CLASS_WARRIOR_FEATURE_FIGHTING_STYLE" name="Fighting Style" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
-      <p class="indent"><strong><em>Marksmanship.</em></strong> You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
-      <p class="indent"><strong><em>Defense.</em></strong> While you are wearing armor, you gain a +1 bonus to AC.</p>
-      <p class="indent"><strong><em>Dueling.</em></strong> When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
-      <p class="indent"><strong><em>Great Weapon Fighting.</em></strong> When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
-      <p class="indent"><strong><em>Protection.</em></strong> When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
+      <p>You can choose one Fighting Style.</p>
     </description>
     <sheet>
       <description>You adopt a particular style of fighting as your specialty.</description>
@@ -308,7 +303,9 @@
     <sheet>
       <description>You gain proficiency with one type of tool of your choice.</description>
     </sheet>
-
+    <rules>
+      <select type="Proficiency" name="Tool Proficiency (Student of War)" supports="Tool" />
+    </rules>
   </element>
   <element id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_KNOW_YOUR_ENEMY" name="Know Your Enemy" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -427,7 +424,9 @@
     <sheet>
       <description>Gain Jump Pack proficiency.</description>
     </sheet>
-
+    <rules>
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JUMPPACK" />
+    </rules>
   </element>
   <element id="ID_SUBCLASS_JETTROOPER_ABILITY_HOVER_MASTER" name="Hover Master" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -437,7 +436,9 @@
     <sheet>
       <description>Gain Hover Pack proficiency.</description>
     </sheet>
-
+    <rules>
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" />
+    </rules>
   </element>
   <element id="ID_SUBCLASS_JETTROOPER_ABILITY_JETPACK_MASTER" name="Jetpack Master" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -447,7 +448,9 @@
     <sheet>
       <description>Gain Jetpack Proficiency.</description>
     </sheet>
-
+    <rules>
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JETPACK" />
+    </rules>
   </element>
   <element id="ID_SUBCLASS_JETTROOPER_ABILITY_WEAPONS_MODIFICATION" name="Weapons Modification" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -457,7 +460,10 @@
     <sheet>
       <description>You are able to customize your ranged weapons according to your liking. You can choose one weapon modification that will apply to all ranged weapons you are using or will use. You can choose an additional weapon modification at 15th level.</description>
     </sheet>
-
+    <rules>
+      <select type="Class Feature" name="Weapon Modification" supports="Weapon Modification" />
+      <select type="Class Feature" name="Weapon Modification (15th level)" supports="Weapon Modification" level="15" />
+    </rules>
   </element>
   <element id="ID_SUBCLASS_JETTROOPER_ABILITY_HEAVY_BURNERS" name="Heavy Burners" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />

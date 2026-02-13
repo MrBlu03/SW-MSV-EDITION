@@ -45,9 +45,6 @@
       <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_SNEAK_ATTACK" level="1" />
       <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_CUNNING_ACTION" level="2" />
       <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_BAD_FEELING" level="3" />
-      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_THIEF" level="3" />
-      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_ASSASSIN" level="3" />
-      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_OPERATIVE" level="3" />
       <select type="Feat" name="Feat (Scout)" level="4" />
       <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_UNCANNY_DODGE" level="5" />
       <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_EXPERTISE" level="6" />
@@ -89,15 +86,7 @@
       <select type="Class Feature" name="Expertise" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE" />
     </rules>
   </element>
-  <element id="ID_CLASS_SCOUT_FEATURE_FEAT" name="Feat" type="Class Feature" source="SW-MSV-Edition">
-    <compendium display="true" />
-    <description>
-      <p>Choose a feat to further customize your character.</p>
-    </description>
-    <rules>
-      <select type="Feat" name="Feat" />
-    </rules>
-  </element>
+
   <element id="ID_CLASS_SCOUT_FEATURE_CUNNING_ACTION" name="Cunning Action" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
@@ -121,10 +110,10 @@
   <element id="ID_CLASS_SCOUT_FEATURE_UNCANNY_DODGE" name="Uncanny Dodge" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</p>
+      <p>Reaction; When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</p>
     </description>
     <sheet>
-      <description>When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</description>
+      <description>Reaction; When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</description>
     </sheet>
 
   </element>
@@ -156,7 +145,9 @@
     <sheet>
       <description>You gain proficiency in Wisdom saving throws.</description>
     </sheet>
-
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+    </rules>
   </element>
   <element id="ID_CLASS_SCOUT_FEATURE_ELUSIVE" name="Elusive" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -176,20 +167,13 @@
     <sheet>
       <description>You have an uncanny knack for succeeding when you need it. Your Dexterity and Intelligence scores increase by 2. Your maximum for those scores increases by 2. Additionally, if your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20. Once per long rest.</description>
     </sheet>
-
+    <rules>
+      <stat name="dexterity" value="2" />
+      <stat name="intelligence" value="2" />
+    </rules>
   </element>
-  <element id="ID_CLASS_SCOUT_FEATURE_ASSASSIN" name="Assassin" type="Class Feature" source="SW-MSV-Edition">
-    <description>
-      <p>Assassin - See Scout class description for details.</p>
-    </description>
 
-  </element>
-  <element id="ID_CLASS_SCOUT_FEATURE_OPERATIVE" name="Operative" type="Class Feature" source="SW-MSV-Edition">
-    <description>
-      <p>Operative - See Scout class description for details.</p>
-    </description>
 
-  </element>
   <element id="ID_CLASS_SCOUT_FEATURE_SUBCLASS_ABILITY" name="Subclass Feature" type="Class Feature" source="SW-MSV-Edition">
     <description>
       <p>You gain a feature from your Scout subclass.</p>
@@ -256,7 +240,9 @@
     <sheet>
       <description>Choose between gaining Forgery Kit proficiency or Hacker Kit proficiency.</description>
     </sheet>
-
+    <rules>
+      <select type="Proficiency" name="Forger or Hacker" supports="ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT|ID_MSV_PROFICIENCY_TOOL_HACKER_KIT" />
+    </rules>
   </element>
   <element id="ID_SUBCLASS_THIEF_ABILITY_THIEF’S_REFLEXES" name="Thief’s Reflexes" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -289,7 +275,9 @@
     <sheet>
       <description>Gain Poisoning Kit proficiency.</description>
     </sheet>
-
+    <rules>
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_POISONING_KIT" />
+    </rules>
   </element>
   <element id="ID_SUBCLASS_ASSASSIN_ABILITY_TERMINATE" name="Terminate" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -309,7 +297,10 @@
     <sheet>
       <description>Gain proficiency with Forgery Kit and Disguise Kit</description>
     </sheet>
-
+    <rules>
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_DISGUISE_KIT" />
+    </rules>
   </element>
   <element id="ID_SUBCLASS_ASSASSIN_ABILITY_AMBUSH_MASTER" name="Ambush Master" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -372,7 +363,9 @@
     <sheet>
       <description>Your walking speed increases by 10 feet. If you have a climbing or swimming speed, this increase applies to that speed as well.</description>
     </sheet>
-
+    <rules>
+      <stat name="speed" value="10" />
+    </rules>
   </element>
   <element id="ID_SUBCLASS_OPERATIVE_ABILITY_MASTER_OF_TACTICS" name="Master of Tactics" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -383,7 +376,7 @@
       <description>You can use the Help action as a Bonus Action, and you can adopt a Fighting Style.</description>
     </sheet>
     <rules>
-      <select type="Class Feature" name="Fighting Style" supports="Fighting Style" level="3" />
+      <select type="Class Feature" name="Fighting Style" supports="Fighting Style" />
     </rules>
   </element>
   <element id="ID_SUBCLASS_OPERATIVE_ABILITY_SUDDEN_STRIKE" name="Sudden Strike" type="Archetype Feature" source="SW-MSV-Edition">

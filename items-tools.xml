@@ -43,6 +43,24 @@
 
   </element>
 
+  <element name="Tool: Repair Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_REPAIR_KIT" source="SW-MSV-Edition">
+    <description>
+      <p>Proficiency with repair kit tools for repairing equipment, weapons, armor, and droids.</p>
+    </description>
+  </element>
+
+  <element name="Tool: Forgery Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_FORGERY_KIT" source="SW-MSV-Edition">
+    <description>
+      <p>Proficiency with forgery kit tools for creating false documents and identification.</p>
+    </description>
+  </element>
+
+  <element name="Tool: Slicing Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SLICING_KIT" source="SW-MSV-Edition">
+    <description>
+      <p>Proficiency with slicing kit tools for hacking computer systems and security.</p>
+    </description>
+  </element>
+
   
   <element name="Repair Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_REPAIR_KIT">
     <supports>ID_INTERNAL_TOOL</supports>
@@ -177,7 +195,7 @@
 
   <element name="Hoverpack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_HOVERPACK">
     <description>
-      <p>A hoverpack allows you to hover up to 15 feet in the air on the same spot for 2 turns as a bonus action. While hovering, you have advantage on ranged attacks and disadvantage on Dexterity saving throws. Provokes opportunity attacks when leaving or landing in enemy melee range. Requires hoverpack proficiency.</p>
+      <p>A hoverpack allows you to hover up to 15 feet in the air on the same spot for 2 turns as a bonus action. Cannot move. While hovering, you have advantage on ranged attacks and disadvantage on Dexterity saving throws. Provokes opportunity attacks when leaving or landing in enemy melee range. Requires hoverpack proficiency.</p>
     </description>
     <setters>
       <set name="category">Equipment</set>
@@ -206,7 +224,7 @@
 
   <element name="Jetpack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_JETPACK">
     <description>
-      <p>An advanced jetpack that combines jump and hover capabilities. Allows jumping up to 30 feet or hovering up to 15 feet with movement. While hovering, you have advantage on ranged attacks and no disadvantage on Dexterity saving throws. Provokes opportunity attacks when leaving or landing in enemy melee range. Requires jumppack, hoverpack, and jetpack proficiency.</p>
+      <p>An advanced jetpack that combines jump and hover capabilities. Allows jumping up to 30 feet or hovering up to 15 feet in the air. Can move up to 10 feet while hovering. While hovering, you have advantage on ranged attacks and no disadvantage on Dexterity saving throws. Provokes opportunity attacks when leaving or landing in enemy melee range. Requires jumppack, hoverpack, and jetpack proficiency.</p>
     </description>
     <setters>
       <set name="category">Equipment</set>
@@ -343,10 +361,22 @@
 
   <element name="Jetpack Hover" type="Action" source="SW-MSV-Edition" id="ID_ACTION_JETPACK_HOVER">
     <description>
-      <p>Bonus Action: Hover up to 15 feet in the air with movement for 2 turns. While hovering, you have advantage on ranged attacks and no disadvantage on Dexterity saving throws. Provokes opportunity attacks when leaving or landing in enemy melee range.</p>
+      <p>Bonus Action: Hover up to 15 feet in the air for 2 turns. Can move up to 10 feet. While hovering, you have advantage on ranged attacks and no disadvantage on Dexterity saving throws. Provokes opportunity attacks when leaving or landing in enemy melee range.</p>
     </description>
     <sheet>
-      <description>Bonus Action: Hover up to 15 feet with movement for 2 turns with your jetpack.</description>
+      <description>Bonus Action: Hover up to 15 feet in the air for 2 turns. Can move up to 10 feet.</description>
     </sheet>
   </element>
+  <element name="Rocketpack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_ROCKETPACK">
+    <description>
+      <p>Attach rockets to the back of your jump/hover/jetpack. Action: reload rocketpack, bonus action: shoot rocket. Can use: rockets.</p>
+    </description>
+    <setters>
+      <set name="category">Equipment</set>
+      <set name="cost" currency="gp">500</set>
+      <set name="weight" lb="10">10 lb.</set>
+      <set name="type">Equipment</set>
+    </setters>
+  </element>
+
 </elements>
