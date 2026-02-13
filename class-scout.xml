@@ -45,6 +45,7 @@
       <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_SNEAK_ATTACK" level="1" />
       <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_CUNNING_ACTION" level="2" />
       <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_BAD_FEELING" level="3" />
+      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_THIEF" level="3" />
       <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_ASSASSIN" level="3" />
       <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_OPERATIVE" level="3" />
       <select type="Feat" name="Feat (Scout)" level="4" />
@@ -57,7 +58,6 @@
       <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_RELIABLE_TALENT" level="11" />
       <select type="Feat" name="Feat (Scout)" level="12" />
       <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_SUBCLASS_ABILITY" level="13" />
-      <select type="Feat" name="Feat (Scout)" level="14" />
       <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_SLIPPERY_MIND" level="15" />
       <select type="Feat" name="Feat (Scout)" level="16" />
       <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_SUBCLASS_ABILITY" level="17" />

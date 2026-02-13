@@ -407,7 +407,7 @@
     </description>
     <rules>
       <stat name="charisma" value="2"/>
-      <select type="Racial Trait" name="Ability Score Increase (Protocol Droid)" supports="Protocol Droid" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (Protocol Droid)" supports="ID_RACE_PROTOCOL_DROID" number="1"/>
       <stat name="innate speed" value="25" bonus="base"/>
       <stat name="resistant" value="necrotic"/>
       <stat name="resistant" value="psychic"/>
@@ -437,7 +437,7 @@
     </description>
     <rules>
       <stat name="constitution" value="2"/>
-      <select type="Racial Trait" name="Ability Score Increase (Combat Droid)" supports="Combat Droid" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (Combat Droid)" supports="ID_RACE_COMBAT_DROID" number="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
       <stat name="resistant" value="necrotic"/>
       <stat name="resistant" value="psychic"/>
@@ -781,10 +781,10 @@
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, One additional language of choice.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Ability Score Increase (1st)" supports="Human Standard" number="1"/>
-      <select type="Racial Trait" name="Ability Score Increase (2nd)" supports="Human Standard" number="1"/>
-      <select type="Racial Trait" name="Ability Score Increase (3rd)" supports="Human Standard" number="1"/>
-      <select type="Racial Trait" name="Ability Score Increase (4th)" supports="Human Standard" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (1st)" supports="ID_RACE_HUMAN_STANDARD" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (2nd)" supports="ID_RACE_HUMAN_STANDARD" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (3rd)" supports="ID_RACE_HUMAN_STANDARD" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (4th)" supports="ID_RACE_HUMAN_STANDARD" number="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
@@ -808,9 +808,9 @@
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, One additional language of choice.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Ability Score Increase (1st)" supports="Human Variant Two" number="1"/>
-      <select type="Racial Trait" name="Ability Score Increase (2nd)" supports="Human Variant One" number="1"/>
-      <select type="Racial Trait" name="Ability Score Increase (3rd)" supports="Human Variant One" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (1st)" supports="ID_RACE_HUMAN_VARIANT" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (2nd)" supports="ID_RACE_HUMAN_VARIANT" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (3rd)" supports="ID_RACE_HUMAN_VARIANT" number="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
@@ -827,7 +827,7 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Human Cyborg" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_HUMAN_STANDARD_CYBORG" number="1"/>
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_HUMAN_VARIANT_CYBORG">
@@ -837,12 +837,12 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Human Cyborg" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_HUMAN_VARIANT_CYBORG" number="1"/>
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CYBORG_STR">
     <compendium display="false"/>
-    <supports>Human Cyborg</supports>
+    <supports>ID_RACE_HUMAN_STANDARD_CYBORG||ID_RACE_HUMAN_VARIANT_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
@@ -856,7 +856,7 @@
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CYBORG_DEX">
     <compendium display="false"/>
-    <supports>Human Cyborg</supports>
+    <supports>ID_RACE_HUMAN_STANDARD_CYBORG||ID_RACE_HUMAN_VARIANT_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
@@ -1513,13 +1513,15 @@
     <description>
       <p class="indent">
         <strong>
-          <em>Your WIS score increases by 2, INT score increases by 1</em>
+          <em>Your WIS score increases by 2, DEX score increases by 1</em>
         </strong>
       </p>
       <p class="indent">Age. Normal lifespan.</p>
       <p class="indent">Size. Your size is Small.</p>
       <p class="indent">Speed. Your base walking speed is 35 ft.</p>
-      <p class="indent">Natural weapons: Unarmed strikes deal 1d4 kinetic damage</p>
+      <p class="indent">Acrobatics and Intimidation proficiency</p>
+      <p class="indent">If an enemy is surprised, your first attack against it deals an extra 2d6 damage</p>
+      <p class="indent">Natural weapons: Unarmed strikes deal 1d4 kinetic damage and have finesse</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Rattataki.</p>
     </description>
     <rules>
@@ -1527,6 +1529,8 @@
       <select type="Racial Trait" name="Ability Score Increase (Rattataki)" supports="Rattataki" number="1"/>
       <stat name="innate speed" value="35" bonus="base"/>
       <grant type="Size" id="ID_SIZE_SMALL"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_RATTATAKI"/>
       <select type="Sub Race" name="Rattataki Subrace" supports="ID_RACE_RATTATAKI" optional="true"/>
@@ -1581,7 +1585,8 @@
       <p class="indent">Size. Your size is Medium.</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
       <p class="indent">Darkvision</p>
-      <p class="indent">Advantage on Perception checks</p>
+      <p class="indent">Advantage on Perception checks that involve hearing or smell</p>
+      <p class="indent">Survival and Stealth proficiency</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Rodese.</p>
     </description>
     <rules>
@@ -1591,6 +1596,8 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_RODESE"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH"/>
       <select type="Sub Race" name="Rodian Subrace" supports="ID_RACE_RODIAN" optional="true"/>
     </rules>
   </element>
@@ -1704,7 +1711,8 @@
       <p class="indent">Size. Your size is Small.</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
       <p class="indent">Darkvision</p>
-      <p class="indent">Advantage on Perception checks</p>
+      <p class="indent">Advantage on Perception checks that rely on hearing</p>
+      <p class="indent">Persuasion expertise</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Sullustese.</p>
     </description>
     <rules>
@@ -1821,12 +1829,14 @@
     <description>
       <p class="indent">
         <strong>
-          <em>Your WIS score increases by 2, DEX score increases by 1</em>
+          <em>Your WIS score increases by 2, STR score increases by 1</em>
         </strong>
       </p>
       <p class="indent">Age. Normal lifespan.</p>
       <p class="indent">Size. Your size is Medium.</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Advantage on Stealth checks</p>
+      <p class="indent">Survival proficiency</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Togruti.</p>
     </description>
     <rules>
@@ -1836,6 +1846,7 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_TOGRUTI"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
       <select type="Sub Race" name="Togruta Subrace" supports="ID_RACE_TOGRUTA" optional="true"/>
     </rules>
   </element>
@@ -1944,13 +1955,19 @@
     <description>
       <p class="indent">
         <strong>
-          <em>Your CON score increases by 2, CHAR score increases by 1</em>
+          <em>Your CON score increases by 2, STR score increases by 1</em>
         </strong>
       </p>
       <p class="indent">Age. 50 years lifespan.</p>
       <p class="indent">Size. Your size is Medium.</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
-      <p class="indent">Advantage on Constitution saving throws</p>
+      <p class="indent">Animal Handling proficiency</p>
+      <p class="indent">Advantage on saving throws against being blinded</p>
+      <p class="indent">Survival proficiency</p>
+      <p class="indent">Desert is not difficult terrain for you</p>
+      <p class="indent">Advantage on Constitution saving throws to avoid exhaustion from heat</p>
+      <p class="indent">Cannot operate wrist blasters, launchers, slicing kits, or other high-tech devices</p>
+      <p class="indent">Cycler Rifle and Vibro-Axe proficiency</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Tusken.</p>
     </description>
     <rules>
@@ -1960,6 +1977,10 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_TUSKEN"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CYCLER_RIFLE"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_VIBRO_AXE"/>
       <select type="Sub Race" name="Tusken Subrace" supports="ID_RACE_TUSKEN" optional="true"/>
     </rules>
   </element>
@@ -2013,7 +2034,10 @@
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
       <p class="indent">Darkvision</p>
       <p class="indent">Resistant to poison</p>
-      <p class="indent">Natural weapons: Unarmed strikes deal 1d4 kinetic damage</p>
+      <p class="indent">Advantage on saving throws against poison</p>
+      <p class="indent">Natural weapons: Unarmed strikes deal 1d4 kinetic damage and have finesse</p>
+      <p class="indent">Deception or Persuasion proficiency</p>
+      <p class="indent">Performance proficiency</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic.</p>
     </description>
     <rules>
@@ -2022,6 +2046,8 @@
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE"/>
+      <select type="Proficiency" name="Proficiency (Twi'Lek)" supports="ID_PROFICIENCY_SKILL_DECEPTION||ID_PROFICIENCY_SKILL_PERSUASION" number="1"/>
       <select type="Sub Race" name="Twi'Lek Subrace" supports="ID_RACE_TWILEK" optional="true"/>
     </rules>
   </element>
@@ -2073,9 +2099,12 @@
       <p class="indent">Age. 200 years lifespan.</p>
       <p class="indent">Size. Your size is Small.</p>
       <p class="indent">Speed. Your base walking speed is 25 ft.</p>
+      <p class="indent">Unarmed strike (tusk) deals 1d6 kinetic damage</p>
+      <p class="indent">Slicing Kit proficiency</p>
       <p class="indent">Darkvision</p>
       <p class="indent">Resistant to acid</p>
       <p class="indent">Nimble: Can hide behind creatures larger than you</p>
+      <p class="indent">Can only wield two-handed weapons if they have the versatile property</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Ugnaught.</p>
     </description>
     <rules>
@@ -2130,14 +2159,16 @@
     <description>
       <p class="indent">
         <strong>
-          <em>Your CON score increases by 2, CHAR score increases by 1</em>
+          <em>Your CON score increases by 2, WIS score increases by 1</em>
         </strong>
       </p>
       <p class="indent">Age. Normal lifespan.</p>
       <p class="indent">Size. Your size is Medium.</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Advantage on Perception checks that rely on smell</p>
+      <p class="indent">On a critical hit, add one additional weapon damage die</p>
       <p class="indent">Natural armor: AC 13 + DEX (unarmored or light armor)</p>
-      <p class="indent">Advantage on Perception checks</p>
+      <p class="indent">Proficiency with two vibroweapons or blasters of your choice</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Sriluurian.</p>
     </description>
     <rules>
@@ -2201,6 +2232,8 @@
       <p class="indent">Darkvision</p>
       <p class="indent">Natural weapons: Unarmed strikes deal 1d4 kinetic damage</p>
       <p class="indent">Natural armor: AC 13 + DEX (unarmored or light armor)</p>
+      <p class="indent">Intimidation proficiency</p>
+      <p class="indent">Climb 30 ft.</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Shyriiwook, Understands Galactic Basic (cannot speak).</p>
     </description>
     <rules>
@@ -2210,6 +2243,7 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <grant type="Language" id="ID_LANGUAGE_SHYRIIWOOK"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
       <select type="Sub Race" name="Wookie Subrace" supports="ID_RACE_WOOKIE" optional="true"/>
     </rules>
   </element>
@@ -2255,14 +2289,15 @@
     <description>
       <p class="indent">
         <strong>
-          <em>Your CON score increases by 2, DEX score increases by 1</em>
+          <em>Your CON score increases by 2, STR score increases by 1</em>
         </strong>
       </p>
       <p class="indent">Age. Normal lifespan.</p>
       <p class="indent">Size. Your size is Medium (tall).</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
-      <p class="indent">Natural Weapons. Your unarmed strikes deal 1d4 kinetic damage instead of the normal bludgeoning damage.</p>
-      <p class="indent">Durable. Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
+      <p class="indent">Natural Weapons. Your unarmed strikes deal 1d4 kinetic damage and have finesse.</p>
+      <p class="indent">Durable. Your hit point maximum increases by 1, and it increases by 1 every time you gain a level. When you are reduced to 0 hit points, you can drop to 1 hit point instead once per long rest.</p>
+      <p class="indent">Persuasion or Intimidation proficiency</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Zabraki.</p>
     </description>
     <rules>
@@ -2274,6 +2309,7 @@
       <grant type="Language" id="ID_LANGUAGE_ZABRAKI"/>
       <grant type="Racial Trait" id="ID_RACE_TRAIT_ZABRAK_NATURAL_WEAPONS"/>
       <grant type="Racial Trait" id="ID_RACE_TRAIT_ZABRAK_DURABLE"/>
+      <select type="Proficiency" name="Proficiency (Zabrak)" supports="ID_PROFICIENCY_SKILL_PERSUASION||ID_PROFICIENCY_SKILL_INTIMIDATION" number="1"/>
       <select type="Sub Race" name="Zabrak Subrace" supports="ID_RACE_ZABRAK" optional="true"/>
     </rules>
   </element>
@@ -2319,7 +2355,7 @@
   <!-- Human Standard/Variant One Ability Score Options -->
   <element name="Ability Score Increase (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_STR">
     <compendium display="false"/>
-    <supports>Human Standard, Human Variant One</supports>
+    <supports>ID_RACE_HUMAN_STANDARD||ID_RACE_HUMAN_VARIANT</supports>
     <description>
       <p>Your Strength score increases by 1.</p>
     </description>
@@ -2330,7 +2366,7 @@
   </element>
   <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_DEX">
     <compendium display="false"/>
-    <supports>Human Standard, Human Variant One</supports>
+    <supports>ID_RACE_HUMAN_STANDARD||ID_RACE_HUMAN_VARIANT</supports>
     <description>
       <p>Your Dexterity score increases by 1.</p>
     </description>
@@ -2341,7 +2377,7 @@
   </element>
   <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CON">
     <compendium display="false"/>
-    <supports>Human Standard, Human Variant One</supports>
+    <supports>ID_RACE_HUMAN_STANDARD||ID_RACE_HUMAN_VARIANT</supports>
     <description>
       <p>Your Constitution score increases by 1.</p>
     </description>
@@ -2352,7 +2388,7 @@
   </element>
   <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_INT">
     <compendium display="false"/>
-    <supports>Human Standard, Human Variant One</supports>
+    <supports>ID_RACE_HUMAN_STANDARD||ID_RACE_HUMAN_VARIANT</supports>
     <description>
       <p>Your Intelligence score increases by 1.</p>
     </description>
@@ -2363,7 +2399,7 @@
   </element>
   <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_WIS">
     <compendium display="false"/>
-    <supports>Human Standard, Human Variant One</supports>
+    <supports>ID_RACE_HUMAN_STANDARD||ID_RACE_HUMAN_VARIANT</supports>
     <description>
       <p>Your Wisdom score increases by 1.</p>
     </description>
@@ -2374,7 +2410,7 @@
   </element>
   <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CHA">
     <compendium display="false"/>
-    <supports>Human Standard, Human Variant One</supports>
+    <supports>ID_RACE_HUMAN_STANDARD||ID_RACE_HUMAN_VARIANT</supports>
     <description>
       <p>Your Charisma score increases by 1.</p>
     </description>
@@ -2386,7 +2422,7 @@
   <!-- Human Variant Two Ability Score Options (+2 bonus) -->
   <element name="Ability Score Increase Two (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_STR2">
     <compendium display="false"/>
-    <supports>Human Variant Two</supports>
+    <supports>ID_RACE_HUMAN_VARIANT</supports>
     <description>
       <p>Your Strength score increases by 2.</p>
     </description>
@@ -2397,7 +2433,7 @@
   </element>
   <element name="Ability Score Increase Two (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_DEX2">
     <compendium display="false"/>
-    <supports>Human Variant Two</supports>
+    <supports>ID_RACE_HUMAN_VARIANT</supports>
     <description>
       <p>Your Dexterity score increases by 2.</p>
     </description>
@@ -2408,7 +2444,7 @@
   </element>
   <element name="Ability Score Increase Two (Constitution)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CON2">
     <compendium display="false"/>
-    <supports>Human Variant Two</supports>
+    <supports>ID_RACE_HUMAN_VARIANT</supports>
     <description>
       <p>Your Constitution score increases by 2.</p>
     </description>
@@ -2419,7 +2455,7 @@
   </element>
   <element name="Ability Score Increase Two (Intelligence)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_INT2">
     <compendium display="false"/>
-    <supports>Human Variant Two</supports>
+    <supports>ID_RACE_HUMAN_VARIANT</supports>
     <description>
       <p>Your Intelligence score increases by 2.</p>
     </description>
@@ -2430,7 +2466,7 @@
   </element>
   <element name="Ability Score Increase Two (Wisdom)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_WIS2">
     <compendium display="false"/>
-    <supports>Human Variant Two</supports>
+    <supports>ID_RACE_HUMAN_VARIANT</supports>
     <description>
       <p>Your Wisdom score increases by 2.</p>
     </description>
@@ -2441,7 +2477,7 @@
   </element>
   <element name="Ability Score Increase Two (Charisma)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CHA2">
     <compendium display="false"/>
-    <supports>Human Variant Two</supports>
+    <supports>ID_RACE_HUMAN_VARIANT</supports>
     <description>
       <p>Your Charisma score increases by 2.</p>
     </description>
@@ -2452,7 +2488,7 @@
   </element>
   <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_PROTOCOL_DROID_INT">
     <compendium display="false"/>
-    <supports>Protocol Droid</supports>
+    <supports>ID_RACE_PROTOCOL_DROID</supports>
     <description>
       <p>Your Intelligence score increases by 1.</p>
     </description>
@@ -2462,7 +2498,7 @@
   </element>
   <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_PROTOCOL_DROID_WIS">
     <compendium display="false"/>
-    <supports>Protocol Droid</supports>
+    <supports>ID_RACE_PROTOCOL_DROID</supports>
     <description>
       <p>Your Wisdom score increases by 1.</p>
     </description>
@@ -2472,7 +2508,7 @@
   </element>
   <element name="Ability Score Increase (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_COMBAT_DROID_STR">
     <compendium display="false"/>
-    <supports>Combat Droid</supports>
+    <supports>ID_RACE_COMBAT_DROID</supports>
     <description>
       <p>Your Strength score increases by 1.</p>
     </description>
@@ -2482,7 +2518,7 @@
   </element>
   <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_COMBAT_DROID_DEX">
     <compendium display="false"/>
-    <supports>Combat Droid</supports>
+    <supports>ID_RACE_COMBAT_DROID</supports>
     <description>
       <p>Your Dexterity score increases by 1.</p>
     </description>
@@ -2634,10 +2670,10 @@
   <!-- Zabrak Racial Traits -->
   <element name="Natural Weapons" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_ZABRAK_NATURAL_WEAPONS">
     <description>
-      <p>Your unarmed strikes deal 1d4 kinetic damage instead of the normal bludgeoning damage.</p>
+      <p>Your unarmed strikes deal 1d4 kinetic damage instead of the normal bludgeoning damage and have the finesse property.</p>
     </description>
     <sheet>
-      <description>Your unarmed strikes deal 1d4 kinetic damage.</description>
+      <description>Your unarmed strikes deal 1d4 kinetic damage and have finesse.</description>
     </sheet>
     <rules>
       <stat name="unarmed damage" value="1d4" />
@@ -2659,10 +2695,10 @@
   </element>
   <element name="Natural Weapons" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_CATHAR_NATURAL_WEAPONS">
     <description>
-      <p>Your unarmed strikes deal 1d6 kinetic damage instead of the normal bludgeoning damage.</p>
+      <p>Your unarmed strikes deal 1d6 kinetic damage instead of the normal bludgeoning damage and have the finesse property.</p>
     </description>
     <sheet>
-      <description>Your unarmed strikes deal 1d6 kinetic damage.</description>
+      <description>Your unarmed strikes deal 1d6 kinetic damage and have finesse.</description>
     </sheet>
     <rules>
       <stat name="unarmed damage" value="1d6" />

@@ -982,6 +982,7 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS_PIKE</set>
     </setters>
     <rules>
+      <stat name="prerequisite" value="Dexterity 11" />
       <grant type="Action" id="ID_ACTION_STRIKE"/>
       <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
     </rules>
@@ -1030,7 +1031,7 @@
       <set name="range">25/75</set>
       <set name="damage" type="kinetic">1d6</set>
       <set name="versatile">2d4</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -1055,7 +1056,7 @@
       <set name="slot">onehand</set>
       <set name="range">20/60</set>
       <set name="damage" type="kinetic">1d4</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -1080,7 +1081,7 @@
       <set name="slot">onehand</set>
       <set name="damage" type="kinetic">1d6</set>
       <set name="versatile">2d4</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -1105,7 +1106,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="kinetic">1d8</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -1130,7 +1131,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="lightning">1d6</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -1156,7 +1157,7 @@
       <set name="slot">onehand</set>
       <set name="damage" type="kinetic">1d8</set>
       <set name="versatile">1d10</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -1180,9 +1181,10 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="kinetic">1d12</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS</set>
     </setters>
     <rules>
+      <stat name="prerequisite" value="Dexterity 11" />
       <grant type="Action" id="ID_ACTION_STRIKE"/>
       <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
     </rules>
@@ -1203,9 +1205,10 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="kinetic">1d10</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS</set>
     </setters>
     <rules>
+      <stat name="prerequisite" value="Dexterity 11" />
       <grant type="Action" id="ID_ACTION_STRIKE"/>
       <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
     </rules>
@@ -1226,7 +1229,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="lightning">1d4</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>
@@ -1249,7 +1252,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="lightning">1d4</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_STRIKE"/>

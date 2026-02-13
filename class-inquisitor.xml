@@ -61,7 +61,6 @@
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_RELIABLE_TALENT" level="11" />
       <select type="Feat" name="Feat (Inquisitor)" level="12" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SUBCLASS_ABILITY" level="13" />
-      <select type="Feat" name="Feat (Inquisitor)" level="14" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SLIPPERY_MIND" level="15" />
       <select type="Feat" name="Feat (Inquisitor)" level="16" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SUBCLASS_ABILITY" level="17" />

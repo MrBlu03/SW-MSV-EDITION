@@ -52,19 +52,11 @@
     <description>
       <p>Lightweapons with finesse property</p>
     </description>
-
-  </element>
-  <element name="Weapon: Simple or Martial Light Weapons with Finesse Property" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_OR_MARTIAL_LIGHT_WEAPONS_WITH_FINESSE_PROPERTY" source="SW-MSV-Edition">
-    <description>
-      <p>Light weapons with finesse property</p>
-    </description>
-
   </element>
   <element name="Weapon: Simple or Martial Vibroweapons with Finesse Property" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_OR_MARTIAL_VIBROWEAPONS_WITH_FINESSE_PROPERTY" source="SW-MSV-Edition">
     <description>
       <p>Vibroweapons with finesse property</p>
     </description>
-
   </element>
   <element name="Weapon: Sniper Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SNIPER_RIFLE" source="SW-MSV-Edition">
     <description>
@@ -222,20 +214,12 @@
     <description><p>Arc Caster proficiency</p></description>
 
   </element>
-  <element name="Weapon: Sniper Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SNIPER_RIFLE" source="SW-MSV-Edition">
-    <description><p>Sniper Rifle proficiency</p></description>
-
-  </element>
   <element name="Weapon: Minigun/Rotary Cannon" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_MINIGUN/ROTARY_CANNON" source="SW-MSV-Edition">
     <description><p>Minigun/Rotary Cannon proficiency</p></description>
 
   </element>
   <element name="Weapon: Flamethrower" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_FLAMETHROWER" source="SW-MSV-Edition">
     <description><p>Flamethrower proficiency</p></description>
-
-  </element>
-  <element name="Weapon: Cycler Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CYCLER_RIFLE" source="SW-MSV-Edition">
-    <description><p>Cycler Rifle proficiency</p></description>
 
   </element>
   <element name="Weapon: Lightsaber" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER" source="SW-MSV-Edition">

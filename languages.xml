@@ -30,10 +30,10 @@
       <p>The Chagri language.</p>
     </description>
   </element>
-  <element name="Cheunh" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_CHEUNH">
+  <element name="Chuenh" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_CHUENH">
     <supports>Standard</supports>
     <description>
-      <p>The Cheunh language.</p>
+      <p>The Chuenh language.</p>
     </description>
   </element>
   <element name="Devaronese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_DEVARONESE">
@@ -66,10 +66,10 @@
       <p>The Galactic Basic language.</p>
     </description>
   </element>
-  <element name="Gamorrean" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_GAMORREAN">
+  <element name="Gamorrese" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_GAMORRESE">
     <supports>Standard</supports>
     <description>
-      <p>The Gamorrean language.</p>
+      <p>The Gamorrese language.</p>
     </description>
   </element>
   <element name="Geonosian" type="Language" source="SW-MSV-Edition" id="ID_LANGUAGE_GEONOSIAN">
