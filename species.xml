@@ -884,10 +884,10 @@
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, One additional language of choice.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Ability Score Increase (1st)" supports="ID_RACE_HUMAN_STANDARD" number="1"/>
-      <select type="Racial Trait" name="Ability Score Increase (2nd)" supports="ID_RACE_HUMAN_STANDARD" number="1"/>
-      <select type="Racial Trait" name="Ability Score Increase (3rd)" supports="ID_RACE_HUMAN_STANDARD" number="1"/>
-      <select type="Racial Trait" name="Ability Score Increase (4th)" supports="ID_RACE_HUMAN_STANDARD" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (1st)" supports="Human Ability" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (2nd)" supports="Human Ability" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (3rd)" supports="Human Ability" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (4th)" supports="Human Ability" number="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
@@ -914,9 +914,9 @@
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, One additional language of choice.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Ability Score Increase (1st)" supports="ID_RACE_HUMAN_VARIANT" number="1"/>
-      <select type="Racial Trait" name="Ability Score Increase (2nd)" supports="ID_RACE_HUMAN_VARIANT" number="1"/>
-      <select type="Racial Trait" name="Ability Score Increase (3rd)" supports="ID_RACE_HUMAN_VARIANT" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (+2)" supports="Human Variant Two" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (2nd)" supports="Human Ability" number="1"/>
+      <select type="Racial Trait" name="Ability Score Increase (3rd)" supports="Human Ability" number="1"/>
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
@@ -934,7 +934,7 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_HUMAN_STANDARD_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1"/>
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_HUMAN_VARIANT_CYBORG">
@@ -944,12 +944,12 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_HUMAN_VARIANT_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1"/>
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CYBORG_STR">
     <compendium display="false"/>
-    <supports>ID_RACE_HUMAN_STANDARD_CYBORG||ID_RACE_HUMAN_VARIANT_CYBORG</supports>
+    <supports>Cyborg Enhancement</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
@@ -963,7 +963,7 @@
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CYBORG_DEX">
     <compendium display="false"/>
-    <supports>ID_RACE_HUMAN_STANDARD_CYBORG||ID_RACE_HUMAN_VARIANT_CYBORG</supports>
+    <supports>Cyborg Enhancement</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
     </description>
@@ -2563,7 +2563,7 @@
   <!-- Human Standard/Variant One Ability Score Options -->
   <element name="Ability Score Increase (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_STR">
     <compendium display="false"/>
-    <supports>ID_RACE_HUMAN_STANDARD||ID_RACE_HUMAN_VARIANT</supports>
+    <supports>Human Ability</supports>
     <description>
       <p>Your Strength score increases by 1.</p>
     </description>
@@ -2576,7 +2576,7 @@
   </element>
   <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_DEX">
     <compendium display="false"/>
-    <supports>ID_RACE_HUMAN_STANDARD||ID_RACE_HUMAN_VARIANT</supports>
+    <supports>Human Ability</supports>
     <description>
       <p>Your Dexterity score increases by 1.</p>
     </description>
@@ -2589,7 +2589,7 @@
   </element>
   <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CON">
     <compendium display="false"/>
-    <supports>ID_RACE_HUMAN_STANDARD||ID_RACE_HUMAN_VARIANT</supports>
+    <supports>Human Ability</supports>
     <description>
       <p>Your Constitution score increases by 1.</p>
     </description>
@@ -2602,7 +2602,7 @@
   </element>
   <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_INT">
     <compendium display="false"/>
-    <supports>ID_RACE_HUMAN_STANDARD||ID_RACE_HUMAN_VARIANT</supports>
+    <supports>Human Ability</supports>
     <description>
       <p>Your Intelligence score increases by 1.</p>
     </description>
@@ -2615,7 +2615,7 @@
   </element>
   <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_WIS">
     <compendium display="false"/>
-    <supports>ID_RACE_HUMAN_STANDARD||ID_RACE_HUMAN_VARIANT</supports>
+    <supports>Human Ability</supports>
     <description>
       <p>Your Wisdom score increases by 1.</p>
     </description>
@@ -2628,7 +2628,7 @@
   </element>
   <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CHA">
     <compendium display="false"/>
-    <supports>ID_RACE_HUMAN_STANDARD||ID_RACE_HUMAN_VARIANT</supports>
+    <supports>Human Ability</supports>
     <description>
       <p>Your Charisma score increases by 1.</p>
     </description>
@@ -2642,7 +2642,7 @@
   <!-- Human Variant Two Ability Score Options (+2 bonus) -->
   <element name="Ability Score Increase Two (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_STR2">
     <compendium display="false"/>
-    <supports>ID_RACE_HUMAN_VARIANT</supports>
+    <supports>Human Variant Two</supports>
     <description>
       <p>Your Strength score increases by 2.</p>
     </description>
@@ -2655,7 +2655,7 @@
   </element>
   <element name="Ability Score Increase Two (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_DEX2">
     <compendium display="false"/>
-    <supports>ID_RACE_HUMAN_VARIANT</supports>
+    <supports>Human Variant Two</supports>
     <description>
       <p>Your Dexterity score increases by 2.</p>
     </description>
@@ -2668,7 +2668,7 @@
   </element>
   <element name="Ability Score Increase Two (Constitution)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CON2">
     <compendium display="false"/>
-    <supports>ID_RACE_HUMAN_VARIANT</supports>
+    <supports>Human Variant Two</supports>
     <description>
       <p>Your Constitution score increases by 2.</p>
     </description>
@@ -2681,7 +2681,7 @@
   </element>
   <element name="Ability Score Increase Two (Intelligence)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_INT2">
     <compendium display="false"/>
-    <supports>ID_RACE_HUMAN_VARIANT</supports>
+    <supports>Human Variant Two</supports>
     <description>
       <p>Your Intelligence score increases by 2.</p>
     </description>
@@ -2694,7 +2694,7 @@
   </element>
   <element name="Ability Score Increase Two (Wisdom)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_WIS2">
     <compendium display="false"/>
-    <supports>ID_RACE_HUMAN_VARIANT</supports>
+    <supports>Human Variant Two</supports>
     <description>
       <p>Your Wisdom score increases by 2.</p>
     </description>
@@ -2707,7 +2707,7 @@
   </element>
   <element name="Ability Score Increase Two (Charisma)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CHA2">
     <compendium display="false"/>
-    <supports>ID_RACE_HUMAN_VARIANT</supports>
+    <supports>Human Variant Two</supports>
     <description>
       <p>Your Charisma score increases by 2.</p>
     </description>
