@@ -45,9 +45,9 @@
     <rules>
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_LIGHT_ARMOUR" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_MEDIUM_ARMOUR" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_SHIELDS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_LIGHTWEAPONS" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS" />

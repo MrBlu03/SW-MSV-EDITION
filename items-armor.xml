@@ -13,7 +13,7 @@
       <set name="slot">body</set>
       <set name="armor">Light</set>
       <set name="armorClass">11 + Dex modifier</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_COMBAT_SUIT</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR</set>
     </setters>
     <rules>
       <stat name="ac:armored:armor" value="11" />
@@ -32,7 +32,7 @@
       <set name="slot">body</set>
       <set name="armor">Light</set>
       <set name="armorClass">12 + Dex modifier</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_FIBER_ARMOR</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR</set>
     </setters>
     <rules>
       <stat name="ac:armored:armor" value="12" />
@@ -52,7 +52,7 @@
       <set name="armor">Light</set>
       <set name="armorClass">13 + Dex modifier</set>
       <set name="stealth">Disadvantage</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_DURANIUM_COMBAT_SUIT</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR</set>
     </setters>
     <rules>
       <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
@@ -73,7 +73,7 @@
       <set name="slot">body</set>
       <set name="armor">Medium</set>
       <set name="armorClass">13 + Dex modifier (max 2)</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_MESH_ARMOR</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</set>
     </setters>
     <rules>
       <stat name="ac:armored:armor" value="13" />
@@ -92,7 +92,7 @@
       <set name="slot">body</set>
       <set name="armor">Medium</set>
       <set name="armorClass">14 + Dex modifier (max 2)</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_WEAVE_ARMOR</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</set>
     </setters>
     <rules>
       <stat name="ac:armored:armor" value="14" />
@@ -111,7 +111,7 @@
       <set name="slot">body</set>
       <set name="armor">Medium</set>
       <set name="armorClass">14 + Dex modifier (max 2)</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_BESKAR_WEAVE_ARMOR</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</set>
     </setters>
     <rules>
       <stat name="ac:armored:armor" value="14" />
@@ -131,7 +131,7 @@
       <set name="armor">Medium</set>
       <set name="armorClass">15 + Dex modifier (max 2)</set>
       <set name="stealth">Disadvantage</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_COMPOSITE_ARMOR</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</set>
     </setters>
     <rules>
       <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
@@ -153,7 +153,7 @@
       <set name="armor">Heavy</set>
       <set name="armorClass">16</set>
       <set name="stealth">Disadvantage</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_BATTLE_ARMOR</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR</set>
     </setters>
     <rules>
       <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
@@ -175,7 +175,7 @@
       <set name="armor">Heavy</set>
       <set name="armorClass">17</set>
       <set name="stealth">Disadvantage</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_ASSAULT_ARMOR</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR</set>
     </setters>
     <rules>
       <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
@@ -197,7 +197,7 @@
       <set name="armor">Heavy</set>
       <set name="armorClass">18</set>
       <set name="stealth">Disadvantage</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_DURASTEEL_ARMOR</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR</set>
     </setters>
     <rules>
       <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
@@ -219,7 +219,7 @@
       <set name="slot">secondary</set>
       <set name="armor">Shield</set>
       <set name="armorClass">+2</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_PHYSICAL_SHIELD</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS</set>
     </setters>
     <rules>
       <stat name="ac:shield" value="2" />
@@ -237,7 +237,7 @@
       <set name="weight" lb="3">3 lb.</set>
       <set name="slot">offhand</set>
       <set name="armor">Shield</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_SHIELDS</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHIELD_GENERATOR_SMALL"/>
@@ -255,7 +255,7 @@
       <set name="weight" lb="5">5 lb.</set>
       <set name="slot">offhand</set>
       <set name="armor">Shield</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_SHIELDS</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHIELD_GENERATOR_MEDIUM"/>
@@ -273,7 +273,7 @@
       <set name="weight" lb="8">8 lb.</set>
       <set name="slot">offhand</set>
       <set name="armor">Shield</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_SHIELDS</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS</set>
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHIELD_GENERATOR_LARGE"/>
@@ -320,7 +320,7 @@
       <set name="slot">offhand</set>
       <set name="armor">Shield</set>
       <set name="armorClass">+3</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_ENERGY_SHIELD</set>
+      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS</set>
     </setters>
     <rules>
       <stat name="ac:shield" value="3" />

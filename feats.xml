@@ -160,6 +160,7 @@
     </description>
     <rules>
       <select type="Ability Score Improvement" name="Ability Score Increase (Resilient)" supports="Ability Score Improvement" />
+      <select type="Proficiency" name="Saving Throw Proficiency (Resilient)" supports="Saving Throw" number="1" />
     </rules>
   </element>
   <element name="Savage Attacker" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_SAVAGE_ATTACKER">

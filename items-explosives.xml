@@ -11,7 +11,7 @@
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="flashbang" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FLASHBANG">
@@ -23,7 +23,7 @@
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="cryo grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_GRENADE">
@@ -36,7 +36,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="cold">1d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="ion grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_GRENADE">
@@ -50,7 +50,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="ion">1d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="incendiary grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_INCENDIARY_GRENADE">
@@ -63,7 +63,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="fire">1d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="corrosive grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CORROSIVE_GRENADE">
@@ -76,7 +76,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="acid">2d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="gas grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_GAS_GRENADE">
@@ -88,7 +88,7 @@
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="fragmentation grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FRAGMENTATION_GRENADE">
@@ -102,7 +102,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="kinetic">2d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="plasma grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_PLASMA_GRENADE">
@@ -116,7 +116,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="energy">2d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="shock grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SHOCK_GRENADE">
@@ -129,7 +129,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="lightning">1d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="stun grenade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_STUN_GRENADE">
@@ -141,7 +141,7 @@
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="remote flashbang" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_FLASHBANG">
@@ -153,7 +153,7 @@
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="remote cryo detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_CRYO_DETONATOR">
@@ -166,7 +166,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="cold">1d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="remote ion detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_ION_DETONATOR">
@@ -180,7 +180,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="ion">1d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="remote incendiary detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_INCENDIARY_DETONATOR">
@@ -193,7 +193,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="fire">1d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="remote corrosive detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_CORROSIVE_DETONATOR">
@@ -206,7 +206,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="acid">2d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="remote gas detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_GAS_DETONATOR">
@@ -218,7 +218,7 @@
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="remote fragmentation detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_FRAGMENTATION_DETONATOR">
@@ -232,7 +232,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="kinetic">2d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="remote plasma detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_PLASMA_DETONATOR">
@@ -246,7 +246,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="energy">2d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="remote shock detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_SHOCK_DETONATOR">
@@ -259,7 +259,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="lightning">1d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="remote stun detonator" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_REMOTE_STUN_DETONATOR">
@@ -271,7 +271,7 @@
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="flashbang mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FLASHBANG_MINE">
@@ -283,7 +283,7 @@
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="cryo mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_MINE">
@@ -296,7 +296,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="cold">1d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="ion mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_MINE">
@@ -310,7 +310,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="ion">1d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="incendiary mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_INCENDIARY_MINE">
@@ -323,7 +323,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="fire">1d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="corrosive mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CORROSIVE_MINE">
@@ -336,7 +336,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="acid">2d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="gas mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_GAS_MINE">
@@ -348,7 +348,7 @@
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="fragmentation mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FRAGMENTATION_MINE">
@@ -362,7 +362,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="kinetic">2d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="plasma mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_PLASMA_MINE">
@@ -376,7 +376,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="energy">2d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="shock mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SHOCK_MINE">
@@ -389,7 +389,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="lightning">1d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="stun mine" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_STUN_MINE">
@@ -401,7 +401,7 @@
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="poison dart" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_POISON_DART">
@@ -416,7 +416,7 @@
       <set name="slot">onehand</set>
       <set name="damage" type="kinetic">1d6</set>
       <set name="reload">1</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="sleep dart" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLEEP_DART">
@@ -429,7 +429,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="reload">1</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="electrifying dart" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTRIFYING_DART">
@@ -444,7 +444,7 @@
       <set name="slot">onehand</set>
       <set name="damage" type="kinetic">1d6</set>
       <set name="reload">1</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="panic dart" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_PANIC_DART">
@@ -458,7 +458,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="kinetic">1d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="paralysis dart" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_PARALYSIS_DART">
@@ -472,7 +472,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="kinetic">1d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="plasma rocket" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_PLASMA_ROCKET">
@@ -487,7 +487,7 @@
       <set name="slot">onehand</set>
       <set name="damage" type="energy">2d8</set>
       <set name="reload">1</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="cryo rocket" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_ROCKET">
@@ -500,7 +500,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="cold">1d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="ion rocket" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_ROCKET">
@@ -514,7 +514,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="ion">1d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="incendiary rocket" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_INCENDIARY_ROCKET">
@@ -527,7 +527,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="fire">1d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="corrosive rocket" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CORROSIVE_ROCKET">
@@ -540,7 +540,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="acid">2d6</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 <element name="fragmentation rocket" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FRAGMENTATION_ROCKET">
@@ -554,7 +554,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="kinetic">2d8</set>
-      <set name="proficiency">ID_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
     </setters>
   </element>
 </elements>

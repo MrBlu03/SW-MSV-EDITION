@@ -11,7 +11,7 @@
       <set name="weight" lb="3">3 lb.</set>
       <set name="slot">onehand</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_BANDFILL</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_BANDFILL</set>
     </setters>
   </element>
   
@@ -26,7 +26,7 @@
       <set name="weight" lb="2">2 lb.</set>
       <set name="slot">onehand</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_CHINDINKALU_HORN</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_CHINDINKALU_HORN</set>
     </setters>
   </element>
   
@@ -41,7 +41,7 @@
       <set name="weight" lb="3">3 lb.</set>
       <set name="slot">onehand</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_DRUM</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_DRUM</set>
     </setters>
   </element>
   
@@ -56,7 +56,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_FANFAR</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FANFAR</set>
     </setters>
   </element>
   
@@ -71,7 +71,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_FIZZZ</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FIZZZ</set>
     </setters>
   </element>
   
@@ -86,7 +86,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_FLUTE</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FLUTE</set>
     </setters>
   </element>
   
@@ -101,7 +101,7 @@
       <set name="weight" lb="4">4 lb.</set>
       <set name="slot">onehand</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_KLOO_HORN</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_KLOO_HORN</set>
     </setters>
   </element>
   
@@ -116,7 +116,7 @@
       <set name="weight" lb="3">3 lb.</set>
       <set name="slot">onehand</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_LUTE</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_LUTE</set>
     </setters>
   </element>
   
@@ -131,7 +131,7 @@
       <set name="weight" lb="3">3 lb.</set>
       <set name="slot">onehand</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_MANDOVIOL</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_MANDOVIOL</set>
     </setters>
   </element>
   
@@ -146,7 +146,7 @@
       <set name="weight" lb="8">8 lb.</set>
       <set name="slot">onehand</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_OMMNI_BOX</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_OMMNI_BOX</set>
     </setters>
   </element>
   
@@ -161,7 +161,7 @@
       <set name="weight" lb="3">3 lb.</set>
       <set name="slot">onehand</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_SLITHERHORN</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_SLITHERHORN</set>
     </setters>
   </element>
   
@@ -176,7 +176,7 @@
       <set name="weight" lb="2">2 lb.</set>
       <set name="slot">onehand</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_TRAZ</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_TRAZ</set>
     </setters>
   </element>
   
@@ -191,7 +191,7 @@
       <set name="weight" lb="4">4 lb.</set>
       <set name="slot">onehand</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_VALAHORN</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_VALAHORN</set>
     </setters>
   </element>
   
@@ -206,7 +206,7 @@
       <set name="weight" lb="5">5 lb.</set>
       <set name="slot">onehand</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_XANTHA</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_XANTHA</set>
     </setters>
   </element>
 </elements>
