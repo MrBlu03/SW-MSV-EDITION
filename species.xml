@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <elements>
   <info>
     <name>Species</name>
-    <update version="1.1.1">
+    <update version="1.1.2">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
@@ -37,19 +37,19 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="intelligence" value="2"/>
-      <stat name="dexterity" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
+      <stat name="intelligence" value="2" />
+      <stat name="dexterity" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_SONIC" />
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_BITH"/>
-      <select type="Language" name="Language (Bith)" supports="Standard||Exotic" number="1"/>
-      <select type="Proficiency" name="Musical Instrument (Bith)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1"/>
-            <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_BITH_INVESTIGATION"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_BITH_PERCEPTION"/>
-<select type="Sub Race" name="Bith Subrace" supports="ID_RACE_BITH" optional="true"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_BITH" />
+      <select type="Language" name="Language (Bith)" supports="Standard||Exotic" number="1" />
+      <select type="Proficiency" name="Musical Instrument (Bith)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1" />
+            <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_BITH_INVESTIGATION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_BITH_PERCEPTION" />
+<select type="Sub Race" name="Bith Subrace" supports="ID_RACE_BITH" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_BITH_CYBORG">
@@ -59,11 +59,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_BITH_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_BITH_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_BITH_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_BITH_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -72,12 +72,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_BITH_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_BITH_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -86,7 +86,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -106,16 +106,16 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="intelligence" value="2"/>
-      <stat name="dexterity" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_SMALL"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_BOTHESE"/>
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_BOTHAN_CUNNING_ACTION"/>
-<select type="Sub Race" name="Bothan Subrace" supports="ID_RACE_BOTHAN" optional="true"/>
+      <stat name="intelligence" value="2" />
+      <stat name="dexterity" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_SMALL" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_BOTHESE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_BOTHAN_CUNNING_ACTION" />
+<select type="Sub Race" name="Bothan Subrace" supports="ID_RACE_BOTHAN" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_BOTHAN_CYBORG">
@@ -125,11 +125,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_BOTHAN_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_BOTHAN_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_BOTHAN_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_BOTHAN_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -138,12 +138,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_BOTHAN_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_BOTHAN_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -152,7 +152,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -174,18 +174,18 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="dexterity" value="2"/>
-      <stat name="charisma" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Sense" id="ID_SENSE_DARKVISION"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_CATHAR_NATURAL_WEAPONS"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_CATHARESE"/>
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH"/>
-      <stat name="innate speed:climb" value="30" bonus="base"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_CATHAR_CLIMBER"/>
-<select type="Sub Race" name="Cathar Subrace" supports="ID_RACE_CATHAR" optional="true"/>
+      <stat name="dexterity" value="2" />
+      <stat name="charisma" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_CATHAR_NATURAL_WEAPONS" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_CATHARESE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+      <stat name="innate speed:climb" value="30" bonus="base" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_CATHAR_CLIMBER" />
+<select type="Sub Race" name="Cathar Subrace" supports="ID_RACE_CATHAR" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_CATHAR_CYBORG">
@@ -195,11 +195,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_CATHAR_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_CATHAR_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CATHAR_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_CATHAR_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -208,12 +208,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CATHAR_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_CATHAR_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -222,7 +222,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -245,18 +245,18 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="dexterity" value="2"/>
-      <stat name="wisdom" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
+      <stat name="dexterity" value="2" />
+      <stat name="wisdom" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Sense" id="ID_SENSE_DARKVISION"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_CHAGRI"/>
-            <stat name="innate speed:swim" value="30" bonus="base"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_CHAGRIAN_POISON_RESILIENCE"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_CHAGRIAN_AMPHIBIOUS"/>
-<select type="Sub Race" name="Chagrian Subrace" supports="ID_RACE_CHAGRIAN" optional="true"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_CHAGRI" />
+            <stat name="innate speed:swim" value="30" bonus="base" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_CHAGRIAN_POISON_RESILIENCE" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_CHAGRIAN_AMPHIBIOUS" />
+<select type="Sub Race" name="Chagrian Subrace" supports="ID_RACE_CHAGRIAN" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_CHAGRIAN_CYBORG">
@@ -266,11 +266,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_CHAGRIAN_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_CHAGRIAN_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CHAGRIAN_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_CHAGRIAN_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -279,12 +279,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CHAGRIAN_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_CHAGRIAN_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -293,7 +293,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -315,18 +315,18 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="intelligence" value="2"/>
-      <stat name="charisma" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_CHUENH"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SNIPER_RIFLE"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT"/>
-            <grant type="Sense" id="ID_SENSE_DARKVISION"/>
-<select type="Sub Race" name="Chiss Subrace" supports="ID_RACE_CHISS" optional="true"/>
+      <stat name="intelligence" value="2" />
+      <stat name="charisma" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_CHUENH" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SNIPER_RIFLE" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+            <grant type="Sense" id="ID_SENSE_DARKVISION" />
+<select type="Sub Race" name="Chiss Subrace" supports="ID_RACE_CHISS" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_CHISS_CYBORG">
@@ -336,11 +336,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_CHISS_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_CHISS_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CHISS_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_CHISS_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -349,12 +349,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CHISS_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_CHISS_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -363,7 +363,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -387,19 +387,19 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="constitution" value="2"/>
-      <stat name="charisma" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
+      <stat name="constitution" value="2" />
+      <stat name="charisma" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_DEVARONESE"/>
-      <select type="Proficiency" name="Proficiency (Devaronian)" supports="ID_PROFICIENCY_SKILL_SURVIVAL||ID_PROFICIENCY_SKILL_INVESTIGATION" number="1"/>
-            <select type="Proficiency" name="Proficiency (Devaronian 2)" supports="ID_PROFICIENCY_SKILL_DECEPTION||ID_PROFICIENCY_SKILL_PERSUASION" number="1"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_DEVARONIAN_HEAT_ADAPTED"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_DEVARONIAN_JUNGLE_DWELLER"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_DEVARONIAN_POISON_RESILIENCE"/>
-<select type="Sub Race" name="Devaronian Subrace" supports="ID_RACE_DEVARONIAN" optional="true"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_DEVARONESE" />
+      <select type="Proficiency" name="Proficiency (Devaronian)" supports="ID_PROFICIENCY_SKILL_SURVIVAL||ID_PROFICIENCY_SKILL_INVESTIGATION" number="1" />
+            <select type="Proficiency" name="Proficiency (Devaronian 2)" supports="ID_PROFICIENCY_SKILL_DECEPTION||ID_PROFICIENCY_SKILL_PERSUASION" number="1" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DEVARONIAN_HEAT_ADAPTED" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DEVARONIAN_JUNGLE_DWELLER" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DEVARONIAN_POISON_RESILIENCE" />
+<select type="Sub Race" name="Devaronian Subrace" supports="ID_RACE_DEVARONIAN" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_DEVARONIAN_CYBORG">
@@ -409,11 +409,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_DEVARONIAN_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_DEVARONIAN_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_DEVARONIAN_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_DEVARONIAN_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -422,12 +422,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_DEVARONIAN_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_DEVARONIAN_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -436,7 +436,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -462,55 +462,55 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="charisma" value="2"/>
-      <select type="Racial Trait" name="Ability Score Increase (Protocol Droid)" supports="ID_RACE_PROTOCOL_DROID" number="1"/>
-      <stat name="innate speed" value="25" bonus="base"/>
+      <stat name="charisma" value="2" />
+      <select type="Racial Trait" name="Ability Score Increase (Protocol Droid)" supports="ID_RACE_PROTOCOL_DROID" number="1" />
+      <stat name="innate speed" value="25" bonus="base" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Action" id="ID_ACTION_DROID_TUNE_UP"/>
-          <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_ION_LIGHTNING_VULNERABILITY"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_FORCE_INSENSITIVE"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_MACHINE"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_BINARY"/>
-      <grant type="Language" id="ID_LANGUAGE_BITH"/>
-      <grant type="Language" id="ID_LANGUAGE_BOTHESE"/>
-      <grant type="Language" id="ID_LANGUAGE_CATHARESE"/>
-      <grant type="Language" id="ID_LANGUAGE_CHAGRI"/>
-      <grant type="Language" id="ID_LANGUAGE_CHUENH"/>
-      <grant type="Language" id="ID_LANGUAGE_DEVARONESE"/>
-      <grant type="Language" id="ID_LANGUAGE_DURESE"/>
-      <grant type="Language" id="ID_LANGUAGE_EWOKESE"/>
-      <grant type="Language" id="ID_LANGUAGE_GAMORRESE"/>
-      <grant type="Language" id="ID_LANGUAGE_GEONOSIAN"/>
-      <grant type="Language" id="ID_LANGUAGE_GRAN"/>
-      <grant type="Language" id="ID_LANGUAGE_ITHORESE"/>
-      <grant type="Language" id="ID_LANGUAGE_JAWAESE"/>
-      <grant type="Language" id="ID_LANGUAGE_KALEESH"/>
-      <grant type="Language" id="ID_LANGUAGE_KEL_DOR"/>
-      <grant type="Language" id="ID_LANGUAGE_MIRIALAN"/>
-      <grant type="Language" id="ID_LANGUAGE_MON_CAL"/>
-      <grant type="Language" id="ID_LANGUAGE_NAUTILA"/>
-      <grant type="Language" id="ID_LANGUAGE_PAK_PAK"/>
-      <grant type="Language" id="ID_LANGUAGE_ORTOLAN"/>
-      <grant type="Language" id="ID_LANGUAGE_RAKATA"/>
-      <grant type="Language" id="ID_LANGUAGE_RATTATAKI"/>
-      <grant type="Language" id="ID_LANGUAGE_RODESE"/>
-      <grant type="Language" id="ID_LANGUAGE_SITH"/>
-      <grant type="Language" id="ID_LANGUAGE_SULLUSTESE"/>
-      <grant type="Language" id="ID_LANGUAGE_TALZZI"/>
-      <grant type="Language" id="ID_LANGUAGE_TOGRUTI"/>
-      <grant type="Language" id="ID_LANGUAGE_DOSH"/>
-      <grant type="Language" id="ID_LANGUAGE_TUSKEN"/>
-      <grant type="Language" id="ID_LANGUAGE_TWILEKI"/>
-      <grant type="Language" id="ID_LANGUAGE_UGNAUGHT"/>
-      <grant type="Language" id="ID_LANGUAGE_SRILUURIAN"/>
-      <grant type="Language" id="ID_LANGUAGE_SHYRIIWOOK"/>
-      <grant type="Language" id="ID_LANGUAGE_ZABRAKI"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Action" id="ID_ACTION_DROID_TUNE_UP" />
+          <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_ION_LIGHTNING_VULNERABILITY" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_FORCE_INSENSITIVE" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_MACHINE" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_BINARY" />
+      <grant type="Language" id="ID_LANGUAGE_BITH" />
+      <grant type="Language" id="ID_LANGUAGE_BOTHESE" />
+      <grant type="Language" id="ID_LANGUAGE_CATHARESE" />
+      <grant type="Language" id="ID_LANGUAGE_CHAGRI" />
+      <grant type="Language" id="ID_LANGUAGE_CHUENH" />
+      <grant type="Language" id="ID_LANGUAGE_DEVARONESE" />
+      <grant type="Language" id="ID_LANGUAGE_DURESE" />
+      <grant type="Language" id="ID_LANGUAGE_EWOKESE" />
+      <grant type="Language" id="ID_LANGUAGE_GAMORRESE" />
+      <grant type="Language" id="ID_LANGUAGE_GEONOSIAN" />
+      <grant type="Language" id="ID_LANGUAGE_GRAN" />
+      <grant type="Language" id="ID_LANGUAGE_ITHORESE" />
+      <grant type="Language" id="ID_LANGUAGE_JAWAESE" />
+      <grant type="Language" id="ID_LANGUAGE_KALEESH" />
+      <grant type="Language" id="ID_LANGUAGE_KEL_DOR" />
+      <grant type="Language" id="ID_LANGUAGE_MIRIALAN" />
+      <grant type="Language" id="ID_LANGUAGE_MON_CAL" />
+      <grant type="Language" id="ID_LANGUAGE_NAUTILA" />
+      <grant type="Language" id="ID_LANGUAGE_PAK_PAK" />
+      <grant type="Language" id="ID_LANGUAGE_ORTOLAN" />
+      <grant type="Language" id="ID_LANGUAGE_RAKATA" />
+      <grant type="Language" id="ID_LANGUAGE_RATTATAKI" />
+      <grant type="Language" id="ID_LANGUAGE_RODESE" />
+      <grant type="Language" id="ID_LANGUAGE_SITH" />
+      <grant type="Language" id="ID_LANGUAGE_SULLUSTESE" />
+      <grant type="Language" id="ID_LANGUAGE_TALZZI" />
+      <grant type="Language" id="ID_LANGUAGE_TOGRUTI" />
+      <grant type="Language" id="ID_LANGUAGE_DOSH" />
+      <grant type="Language" id="ID_LANGUAGE_TUSKEN" />
+      <grant type="Language" id="ID_LANGUAGE_TWILEKI" />
+      <grant type="Language" id="ID_LANGUAGE_UGNAUGHT" />
+      <grant type="Language" id="ID_LANGUAGE_SRILUURIAN" />
+      <grant type="Language" id="ID_LANGUAGE_SHYRIIWOOK" />
+      <grant type="Language" id="ID_LANGUAGE_ZABRAKI" />
     </rules>
   </element>
   <element name="Combat Droid" type="Race" source="SW-MSV-Edition" id="ID_RACE_COMBAT_DROID">
@@ -534,25 +534,25 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="constitution" value="2"/>
-      <select type="Racial Trait" name="Ability Score Increase (Combat Droid)" supports="ID_RACE_COMBAT_DROID" number="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
+      <stat name="constitution" value="2" />
+      <select type="Racial Trait" name="Ability Score Increase (Combat Droid)" supports="ID_RACE_COMBAT_DROID" number="1" />
+      <stat name="innate speed" value="30" bonus="base" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_BINARY"/>
-      <select type="Language" name="Language (Combat Droid)" supports="Standard||Exotic" number="1"/>
-      <grant type="Action" id="ID_ACTION_DROID_TUNE_UP"/>
-          <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
-      <select type="Proficiency" name="Vibroweapon Proficiency (1st)" supports="Vibroweapon" number="1"/>
-      <select type="Proficiency" name="Vibroweapon Proficiency (2nd)" supports="Vibroweapon" number="1"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_ION_LIGHTNING_VULNERABILITY"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_FORCE_INSENSITIVE"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_MACHINE"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_BINARY" />
+      <select type="Language" name="Language (Combat Droid)" supports="Standard||Exotic" number="1" />
+      <grant type="Action" id="ID_ACTION_DROID_TUNE_UP" />
+          <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+      <select type="Proficiency" name="Vibroweapon Proficiency (1st)" supports="Vibroweapon" number="1" />
+      <select type="Proficiency" name="Vibroweapon Proficiency (2nd)" supports="Vibroweapon" number="1" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_ION_LIGHTNING_VULNERABILITY" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_FORCE_INSENSITIVE" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_MACHINE" />
     </rules>
   </element>
   <element name="Duros" type="Race" source="SW-MSV-Edition" id="ID_RACE_DUROS">
@@ -570,15 +570,15 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="dexterity" value="2"/>
-      <stat name="intelligence" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_DURESE"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY"/>
-            <grant type="Sense" id="ID_SENSE_DARKVISION"/>
-<select type="Sub Race" name="Duros Subrace" supports="ID_RACE_DUROS" optional="true"/>
+      <stat name="dexterity" value="2" />
+      <stat name="intelligence" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_DURESE" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+            <grant type="Sense" id="ID_SENSE_DARKVISION" />
+<select type="Sub Race" name="Duros Subrace" supports="ID_RACE_DUROS" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_DUROS_CYBORG">
@@ -588,11 +588,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_DUROS_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_DUROS_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_DUROS_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_DUROS_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -601,12 +601,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_DUROS_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_DUROS_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -615,7 +615,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -639,21 +639,21 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="dexterity" value="2"/>
-      <stat name="constitution" value="1"/>
-      <stat name="innate speed" value="25" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_SMALL"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_EWOKESE"/>
-      <select type="Proficiency" name="Musical Instrument (Ewok)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
-            <stat name="innate speed:climb" value="25" bonus="base"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_EWOK_KEEN_SMELL"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_EWOK_NIMBLE"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_EWOK_CLIMBER"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_SMALL_BUILD"/>
-<select type="Sub Race" name="Ewok Subrace" supports="ID_RACE_EWOK" optional="true"/>
+      <stat name="dexterity" value="2" />
+      <stat name="constitution" value="1" />
+      <stat name="innate speed" value="25" bonus="base" />
+      <grant type="Size" id="ID_SIZE_SMALL" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_EWOKESE" />
+      <select type="Proficiency" name="Musical Instrument (Ewok)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <stat name="innate speed:climb" value="25" bonus="base" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_EWOK_KEEN_SMELL" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_EWOK_NIMBLE" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_EWOK_CLIMBER" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_SMALL_BUILD" />
+<select type="Sub Race" name="Ewok Subrace" supports="ID_RACE_EWOK" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_EWOK_CYBORG">
@@ -663,11 +663,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_EWOK_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_EWOK_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_EWOK_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_EWOK_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -676,12 +676,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_EWOK_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_EWOK_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -690,7 +690,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -712,18 +712,18 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="strength" value="2"/>
-      <stat name="constitution" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_GAMORRESE"/>
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIRBO-AXE"/>
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSWORD"/>
-            <stat name="hp" value="level"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_GAMORREAN_CON_SAVE"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_GAMORREAN_BRUTAL_CRITICAL"/>
-<select type="Sub Race" name="Gamorrean Subrace" supports="ID_RACE_GAMORREAN" optional="true"/>
+      <stat name="strength" value="2" />
+      <stat name="constitution" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_GAMORRESE" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIRBO-AXE" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSWORD" />
+            <stat name="hp" value="level" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_GAMORREAN_CON_SAVE" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_GAMORREAN_BRUTAL_CRITICAL" />
+<select type="Sub Race" name="Gamorrean Subrace" supports="ID_RACE_GAMORREAN" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_GAMORREAN_CYBORG">
@@ -733,11 +733,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_GAMORREAN_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_GAMORREAN_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GAMORREAN_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_GAMORREAN_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -746,12 +746,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GAMORREAN_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_GAMORREAN_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -760,7 +760,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -781,17 +781,17 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="dexterity" value="2"/>
-      <stat name="constitution" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_GEONOSIAN"/>
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SONIC_PISTOL"/>
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SONIC_RIFLE"/>
-            <grant type="Racial Trait" id="ID_RACE_TRAIT_GEONOSIAN_FLIGHT"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_GEONOSIAN_NATURAL_ARMOR"/>
-<select type="Sub Race" name="Geonosian Subrace" supports="ID_RACE_GEONOSIAN" optional="true"/>
+      <stat name="dexterity" value="2" />
+      <stat name="constitution" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_GEONOSIAN" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SONIC_PISTOL" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SONIC_RIFLE" />
+            <grant type="Racial Trait" id="ID_RACE_TRAIT_GEONOSIAN_FLIGHT" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_GEONOSIAN_NATURAL_ARMOR" />
+<select type="Sub Race" name="Geonosian Subrace" supports="ID_RACE_GEONOSIAN" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_GEONOSIAN_CYBORG">
@@ -801,11 +801,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_GEONOSIAN_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_GEONOSIAN_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GEONOSIAN_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_GEONOSIAN_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -814,12 +814,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GEONOSIAN_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_GEONOSIAN_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -828,7 +828,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -850,17 +850,17 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="constitution" value="2"/>
-      <stat name="wisdom" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_GRAN"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT"/>
-            <stat name="hp" value="level"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_GRAN_SLOW_METABOLISM"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_GRAN_KEEN_SIGHT"/>
-<select type="Sub Race" name="Gran Subrace" supports="ID_RACE_GRAN" optional="true"/>
+      <stat name="constitution" value="2" />
+      <stat name="wisdom" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_GRAN" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+            <stat name="hp" value="level" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_GRAN_SLOW_METABOLISM" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_GRAN_KEEN_SIGHT" />
+<select type="Sub Race" name="Gran Subrace" supports="ID_RACE_GRAN" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_GRAN_CYBORG">
@@ -870,11 +870,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_GRAN_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_GRAN_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GRAN_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_GRAN_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -883,12 +883,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GRAN_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_GRAN_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -897,7 +897,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -918,18 +918,18 @@
     </description>
     <sheet display="false" />
     <rules>
-      <select type="Racial Trait" name="Ability Score Increase (1st)" supports="Human Ability" number="1"/>
-      <select type="Racial Trait" name="Ability Score Increase (2nd)" supports="Human Ability" number="1"/>
-      <select type="Racial Trait" name="Ability Score Increase (3rd)" supports="Human Ability" number="1"/>
-      <select type="Racial Trait" name="Ability Score Increase (4th)" supports="Human Ability" number="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <select type="Language" name="Language (Human)" supports="Standard||Exotic" number="1"/>
-      <select type="Proficiency" name="Weapon Proficiency (Human)" supports="ID_INTERNAL_PROFICIENCY_WEAPON" number="1"/>
-      <select type="Proficiency" name="Skill Proficiency (Human)" supports="Skill" number="1"/>
-            <grant type="Racial Trait" id="ID_RACE_TRAIT_HUMAN_DETERMINATION"/>
-<select type="Sub Race" name="Human Subrace" supports="ID_RACE_HUMAN_STANDARD" optional="true"/>
+      <select type="Racial Trait" name="Ability Score Increase (1st)" supports="Human Ability" number="1" />
+      <select type="Racial Trait" name="Ability Score Increase (2nd)" supports="Human Ability" number="1" />
+      <select type="Racial Trait" name="Ability Score Increase (3rd)" supports="Human Ability" number="1" />
+      <select type="Racial Trait" name="Ability Score Increase (4th)" supports="Human Ability" number="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <select type="Language" name="Language (Human)" supports="Standard||Exotic" number="1" />
+      <select type="Proficiency" name="Weapon Proficiency (Human)" supports="ID_INTERNAL_PROFICIENCY_WEAPON" number="1" />
+      <select type="Proficiency" name="Skill Proficiency (Human)" supports="Skill" number="1" />
+            <grant type="Racial Trait" id="ID_RACE_TRAIT_HUMAN_DETERMINATION" />
+<select type="Sub Race" name="Human Subrace" supports="ID_RACE_HUMAN_STANDARD" optional="true" />
     </rules>
   </element>
   <element name="Human (Variant)" type="Race" source="SW-MSV-Edition" id="ID_RACE_HUMAN_VARIANT">
@@ -949,17 +949,17 @@
     </description>
     <sheet display="false" />
     <rules>
-      <select type="Racial Trait" name="Ability Score Increase (+2)" supports="Human Variant Two" number="1"/>
-      <select type="Racial Trait" name="Ability Score Increase (2nd)" supports="Human Ability" number="1"/>
-      <select type="Racial Trait" name="Ability Score Increase (3rd)" supports="Human Ability" number="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <select type="Language" name="Language (Human)" supports="Standard||Exotic" number="1"/>
-      <select type="Proficiency" name="Weapon Proficiency (Human)" supports="ID_INTERNAL_PROFICIENCY_WEAPON" number="1"/>
-      <select type="Proficiency" name="Skill Proficiency (Human)" supports="Skill" number="1"/>
-            <grant type="Racial Trait" id="ID_RACE_TRAIT_HUMAN_DETERMINATION"/>
-<select type="Sub Race" name="Human Subrace" supports="ID_RACE_HUMAN_VARIANT" optional="true"/>
+      <select type="Racial Trait" name="Ability Score Increase (+2)" supports="Human Variant Two" number="1" />
+      <select type="Racial Trait" name="Ability Score Increase (2nd)" supports="Human Ability" number="1" />
+      <select type="Racial Trait" name="Ability Score Increase (3rd)" supports="Human Ability" number="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <select type="Language" name="Language (Human)" supports="Standard||Exotic" number="1" />
+      <select type="Proficiency" name="Weapon Proficiency (Human)" supports="ID_INTERNAL_PROFICIENCY_WEAPON" number="1" />
+      <select type="Proficiency" name="Skill Proficiency (Human)" supports="Skill" number="1" />
+            <grant type="Racial Trait" id="ID_RACE_TRAIT_HUMAN_DETERMINATION" />
+<select type="Sub Race" name="Human Subrace" supports="ID_RACE_HUMAN_VARIANT" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_HUMAN_STANDARD_CYBORG">
@@ -969,7 +969,7 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_HUMAN_VARIANT_CYBORG">
@@ -979,11 +979,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Cyborg Enhancement</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -992,12 +992,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Cyborg Enhancement</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1006,7 +1006,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -1024,15 +1024,15 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="charisma" value="2"/>
-      <stat name="wisdom" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_ITHORESE"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE"/>
-      <select type="Sub Race" name="Ithorian Subrace" supports="ID_RACE_ITHORIAN" optional="true"/>
-      <grant type="Action" id="ID_ACTION_ITHORIAN_BREATH"/>
+      <stat name="charisma" value="2" />
+      <stat name="wisdom" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_ITHORESE" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+      <select type="Sub Race" name="Ithorian Subrace" supports="ID_RACE_ITHORIAN" optional="true" />
+      <grant type="Action" id="ID_ACTION_ITHORIAN_BREATH" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_ITHORIAN_CYBORG">
@@ -1042,11 +1042,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_ITHORIAN_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_ITHORIAN_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ITHORIAN_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_ITHORIAN_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1055,12 +1055,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ITHORIAN_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_ITHORIAN_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1069,7 +1069,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -1093,20 +1093,20 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="dexterity" value="2"/>
-      <stat name="intelligence" value="1"/>
-      <stat name="innate speed" value="25" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_SMALL"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_JAWAESE"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND"/>
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ION_PISTOL"/>
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ION_RIFLE"/>
-            <grant type="Sense" id="ID_SENSE_DARKVISION"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_JAWA_HEAT_ADAPTED"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_JAWA_NIMBLE"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_SMALL_BUILD"/>
-<select type="Sub Race" name="Jawa Subrace" supports="ID_RACE_JAWA" optional="true"/>
+      <stat name="dexterity" value="2" />
+      <stat name="intelligence" value="1" />
+      <stat name="innate speed" value="25" bonus="base" />
+      <grant type="Size" id="ID_SIZE_SMALL" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_JAWAESE" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ION_PISTOL" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ION_RIFLE" />
+            <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_JAWA_HEAT_ADAPTED" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_JAWA_NIMBLE" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_SMALL_BUILD" />
+<select type="Sub Race" name="Jawa Subrace" supports="ID_RACE_JAWA" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_JAWA_CYBORG">
@@ -1116,11 +1116,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_JAWA_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_JAWA_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_JAWA_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_JAWA_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1129,12 +1129,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_JAWA_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_JAWA_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1143,7 +1143,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -1165,18 +1165,18 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="strength" value="2"/>
-      <stat name="dexterity" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_KALEESH"/>
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROPIKE"/>
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSPEAR"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
-            <grant type="Sense" id="ID_SENSE_DARKVISION"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_KALEESH_KEEN_SMELL"/>
-<select type="Sub Race" name="Kaleesh Subrace" supports="ID_RACE_KALEESH" optional="true"/>
+      <stat name="strength" value="2" />
+      <stat name="dexterity" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_KALEESH" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROPIKE" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSPEAR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_KALEESH_KEEN_SMELL" />
+<select type="Sub Race" name="Kaleesh Subrace" supports="ID_RACE_KALEESH" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_KALEESH_CYBORG">
@@ -1186,11 +1186,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_KALEESH_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_KALEESH_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_KALEESH_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_KALEESH_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1199,12 +1199,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_KALEESH_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_KALEESH_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1213,7 +1213,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -1235,17 +1235,17 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="wisdom" value="2"/>
-      <stat name="dexterity" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
+      <stat name="wisdom" value="2" />
+      <stat name="dexterity" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_KEL_DOR"/>
-            <grant type="Sense" id="ID_SENSE_DARKVISION"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_KEL_DOR_BREATHLESS"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_KEL_DOR_TELEPATHY"/>
-<select type="Sub Race" name="Kel Dor Subrace" supports="ID_RACE_KEL_DOR" optional="true"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_KEL_DOR" />
+            <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_KEL_DOR_BREATHLESS" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_KEL_DOR_TELEPATHY" />
+<select type="Sub Race" name="Kel Dor Subrace" supports="ID_RACE_KEL_DOR" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_KEL_DOR_CYBORG">
@@ -1255,11 +1255,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_KEL_DOR_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_KEL_DOR_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_KEL_DOR_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_KEL_DOR_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1268,12 +1268,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_KEL_DOR_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_KEL_DOR_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1282,7 +1282,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -1303,17 +1303,17 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="dexterity" value="2"/>
-      <stat name="intelligence" value="1"/>
-      <stat name="innate speed" value="35" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_MIRIALAN"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY"/>
-            <grant type="Racial Trait" id="ID_RACE_TRAIT_MIRIALAN_HISTORY_EXPERTISE"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_MIRIALAN_SURPRISE_ATTACK"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_MIRIALAN_NATURAL_WEAPONS"/>
-<select type="Sub Race" name="Mirialan Subrace" supports="ID_RACE_MIRIALAN" optional="true"/>
+      <stat name="dexterity" value="2" />
+      <stat name="intelligence" value="1" />
+      <stat name="innate speed" value="35" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_MIRIALAN" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+            <grant type="Racial Trait" id="ID_RACE_TRAIT_MIRIALAN_HISTORY_EXPERTISE" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_MIRIALAN_SURPRISE_ATTACK" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_MIRIALAN_NATURAL_WEAPONS" />
+<select type="Sub Race" name="Mirialan Subrace" supports="ID_RACE_MIRIALAN" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_MIRIALAN_CYBORG">
@@ -1323,11 +1323,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_MIRIALAN_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_MIRIALAN_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MIRIALAN_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_MIRIALAN_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1336,12 +1336,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MIRIALAN_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_MIRIALAN_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1350,7 +1350,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -1374,20 +1374,20 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="charisma" value="2"/>
-      <select type="Racial Trait" name="Ability Score Increase (Mon Calamari)" supports="Mon Calamari" number="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
+      <stat name="charisma" value="2" />
+      <select type="Racial Trait" name="Ability Score Increase (Mon Calamari)" supports="Mon Calamari" number="1" />
+      <stat name="innate speed" value="30" bonus="base" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_MON_CAL"/>
-      <select type="Language" name="Language (Mon Calamari)" supports="Standard||Exotic" number="1"/>
-      <select type="Proficiency" name="Musical Instrument (Mon Calamari)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1"/>
-            <grant type="Sense" id="ID_SENSE_DARKVISION"/>
-      <stat name="innate speed:swim" value="30" bonus="base"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_MON_CALAMARI_AMPHIBIOUS"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_MON_CALAMARI_SLOW_RESISTANCE"/>
-<select type="Sub Race" name="Mon Calamari Subrace" supports="ID_RACE_MON_CALAMARI" optional="true"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_MON_CAL" />
+      <select type="Language" name="Language (Mon Calamari)" supports="Standard||Exotic" number="1" />
+      <select type="Proficiency" name="Musical Instrument (Mon Calamari)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1" />
+            <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <stat name="innate speed:swim" value="30" bonus="base" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_MON_CALAMARI_AMPHIBIOUS" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_MON_CALAMARI_SLOW_RESISTANCE" />
+<select type="Sub Race" name="Mon Calamari Subrace" supports="ID_RACE_MON_CALAMARI" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_CYBORG">
@@ -1397,11 +1397,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_MON_CALAMARI_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_MON_CALAMARI_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_MON_CALAMARI_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1410,12 +1410,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_MON_CALAMARI_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1424,7 +1424,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -1447,19 +1447,19 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="dexterity" value="2"/>
-      <stat name="wisdom" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_NAUTILA"/>
-            <grant type="Sense" id="ID_SENSE_DARKVISION"/>
-      <stat name="innate speed:swim" value="30" bonus="base"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_NAUTOLAN_PERCEPTION_EXPERTISE"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_NAUTOLAN_AMPHIBIOUS"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_NAUTOLAN_NATURAL_ARMOR"/>
-<select type="Sub Race" name="Nautolan Subrace" supports="ID_RACE_NAUTOLAN" optional="true"/>
+      <stat name="dexterity" value="2" />
+      <stat name="wisdom" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_NAUTILA" />
+            <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <stat name="innate speed:swim" value="30" bonus="base" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_NAUTOLAN_PERCEPTION_EXPERTISE" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_NAUTOLAN_AMPHIBIOUS" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_NAUTOLAN_NATURAL_ARMOR" />
+<select type="Sub Race" name="Nautolan Subrace" supports="ID_RACE_NAUTOLAN" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_NAUTOLAN_CYBORG">
@@ -1469,11 +1469,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_NAUTOLAN_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_NAUTOLAN_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_NAUTOLAN_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_NAUTOLAN_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1482,12 +1482,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_NAUTOLAN_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_NAUTOLAN_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1496,7 +1496,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -1517,17 +1517,17 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="charisma" value="2"/>
-      <stat name="wisdom" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_PAK_PAK"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION"/>
-            <grant type="Sense" id="ID_SENSE_DARKVISION"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_NEIMOIDIAN_WEALTHY"/>
-<select type="Sub Race" name="Neimoidian Subrace" supports="ID_RACE_NEIMOIDIAN" optional="true"/>
+      <stat name="charisma" value="2" />
+      <stat name="wisdom" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_PAK_PAK" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+            <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_NEIMOIDIAN_WEALTHY" />
+<select type="Sub Race" name="Neimoidian Subrace" supports="ID_RACE_NEIMOIDIAN" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_NEIMOIDIAN_CYBORG">
@@ -1537,11 +1537,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_NEIMOIDIAN_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_NEIMOIDIAN_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_NEIMOIDIAN_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_NEIMOIDIAN_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1550,12 +1550,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_NEIMOIDIAN_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_NEIMOIDIAN_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1564,7 +1564,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -1587,19 +1587,19 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="intelligence" value="2"/>
-      <stat name="charisma" value="1"/>
-      <stat name="innate speed" value="25" bonus="base"/>
+      <stat name="intelligence" value="2" />
+      <stat name="charisma" value="1" />
+      <stat name="innate speed" value="25" bonus="base" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
-      <grant type="Size" id="ID_SIZE_SMALL"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_ORTOLAN"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
-      <select type="Proficiency" name="Musical Instrument (Ortolan)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1"/>
-            <grant type="Racial Trait" id="ID_RACE_TRAIT_ORTOLAN_SURVIVAL_EXPERTISE"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_ORTOLAN_KEEN_SENSES"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_ORTOLAN_NIMBLE"/>
-<select type="Sub Race" name="Ortolan Subrace" supports="ID_RACE_ORTOLAN" optional="true"/>
+      <grant type="Size" id="ID_SIZE_SMALL" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_ORTOLAN" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+      <select type="Proficiency" name="Musical Instrument (Ortolan)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1" />
+            <grant type="Racial Trait" id="ID_RACE_TRAIT_ORTOLAN_SURVIVAL_EXPERTISE" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_ORTOLAN_KEEN_SENSES" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_ORTOLAN_NIMBLE" />
+<select type="Sub Race" name="Ortolan Subrace" supports="ID_RACE_ORTOLAN" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_ORTOLAN_CYBORG">
@@ -1609,11 +1609,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_ORTOLAN_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_ORTOLAN_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ORTOLAN_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_ORTOLAN_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1622,12 +1622,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ORTOLAN_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_ORTOLAN_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1636,7 +1636,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -1661,20 +1661,20 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="strength" value="2"/>
-      <stat name="intelligence" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_RAKATA"/>
-            <grant type="Sense" id="ID_SENSE_DARKVISION"/>
-      <stat name="innate speed:swim" value="30" bonus="base"/>
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_RAKATA_FORCE_INSENSITIVE"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_RAKATA_AMPHIBIOUS"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_RAKATA_NATURAL_WEAPONS"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_RAKATA_CONSUME_CORPSE"/>
-<select type="Sub Race" name="Rakata Subrace" supports="ID_RACE_RAKATA" optional="true"/>
+      <stat name="strength" value="2" />
+      <stat name="intelligence" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_RAKATA" />
+            <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <stat name="innate speed:swim" value="30" bonus="base" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_RAKATA_FORCE_INSENSITIVE" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_RAKATA_AMPHIBIOUS" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_RAKATA_NATURAL_WEAPONS" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_RAKATA_CONSUME_CORPSE" />
+<select type="Sub Race" name="Rakata Subrace" supports="ID_RACE_RAKATA" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_RAKATA_CYBORG">
@@ -1684,11 +1684,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_RAKATA_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_RAKATA_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RAKATA_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_RAKATA_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1697,12 +1697,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RAKATA_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_RAKATA_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1711,7 +1711,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -1732,17 +1732,17 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="wisdom" value="2"/>
-      <select type="Racial Trait" name="Ability Score Increase (Rattataki)" supports="Rattataki" number="1"/>
-      <stat name="innate speed" value="35" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_SMALL"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_RATTATAKI"/>
-            <grant type="Racial Trait" id="ID_RACE_TRAIT_RATTATAKI_SURPRISE_ATTACK"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_RATTATAKI_NATURAL_WEAPONS"/>
-<select type="Sub Race" name="Rattataki Subrace" supports="ID_RACE_RATTATAKI" optional="true"/>
+      <stat name="wisdom" value="2" />
+      <select type="Racial Trait" name="Ability Score Increase (Rattataki)" supports="Rattataki" number="1" />
+      <stat name="innate speed" value="35" bonus="base" />
+      <grant type="Size" id="ID_SIZE_SMALL" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_RATTATAKI" />
+            <grant type="Racial Trait" id="ID_RACE_TRAIT_RATTATAKI_SURPRISE_ATTACK" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_RATTATAKI_NATURAL_WEAPONS" />
+<select type="Sub Race" name="Rattataki Subrace" supports="ID_RACE_RATTATAKI" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_CYBORG">
@@ -1752,11 +1752,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_RATTATAKI_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_RATTATAKI_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_RATTATAKI_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1765,12 +1765,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_RATTATAKI_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1779,7 +1779,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -1801,18 +1801,18 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="dexterity" value="2"/>
-      <stat name="constitution" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_RODESE"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH"/>
-            <grant type="Sense" id="ID_SENSE_DARKVISION"/>
-      <stat name="innate speed:climb" value="30" bonus="base"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_RODIAN_KEEN_SENSES"/>
-<select type="Sub Race" name="Rodian Subrace" supports="ID_RACE_RODIAN" optional="true"/>
+      <stat name="dexterity" value="2" />
+      <stat name="constitution" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_RODESE" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+            <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <stat name="innate speed:climb" value="30" bonus="base" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_RODIAN_KEEN_SENSES" />
+<select type="Sub Race" name="Rodian Subrace" supports="ID_RACE_RODIAN" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_RODIAN_CYBORG">
@@ -1822,11 +1822,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_RODIAN_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_RODIAN_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RODIAN_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_RODIAN_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1835,12 +1835,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RODIAN_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_RODIAN_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1849,7 +1849,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -1869,16 +1869,16 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="charisma" value="2"/>
-      <select type="Racial Trait" name="Ability Score Increase (Sith Pureblood)" supports="Sith Pureblood" number="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_SITH"/>
-            <grant type="Sense" id="ID_SENSE_DARKVISION"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
-<select type="Sub Race" name="Sith Pureblood Subrace" supports="ID_RACE_SITH_PUREBLOOD" optional="true"/>
+      <stat name="charisma" value="2" />
+      <select type="Racial Trait" name="Ability Score Increase (Sith Pureblood)" supports="Sith Pureblood" number="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_SITH" />
+            <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+<select type="Sub Race" name="Sith Pureblood Subrace" supports="ID_RACE_SITH_PUREBLOOD" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_CYBORG">
@@ -1888,11 +1888,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_SITH_PUREBLOOD_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_SITH_PUREBLOOD_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_SITH_PUREBLOOD_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1901,12 +1901,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_SITH_PUREBLOOD_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1915,7 +1915,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -1936,17 +1936,17 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="intelligence" value="2"/>
-      <stat name="dexterity" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_SMALL"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_SULLUSTESE"/>
-            <grant type="Sense" id="ID_SENSE_DARKVISION"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_SULLUSTAN_PERSUASION_EXPERTISE"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_SULLUSTAN_KEEN_HEARING"/>
-<select type="Sub Race" name="Sullustan Subrace" supports="ID_RACE_SULLUSTAN" optional="true"/>
+      <stat name="intelligence" value="2" />
+      <stat name="dexterity" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_SMALL" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_SULLUSTESE" />
+            <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_SULLUSTAN_PERSUASION_EXPERTISE" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_SULLUSTAN_KEEN_HEARING" />
+<select type="Sub Race" name="Sullustan Subrace" supports="ID_RACE_SULLUSTAN" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_SULLUSTAN_CYBORG">
@@ -1956,11 +1956,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_SULLUSTAN_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_SULLUSTAN_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SULLUSTAN_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_SULLUSTAN_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1969,12 +1969,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SULLUSTAN_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_SULLUSTAN_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -1983,7 +1983,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -2004,16 +2004,16 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="strength" value="2"/>
-      <stat name="wisdom" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_TALZZI"/>
-            <grant type="Sense" id="ID_SENSE_DARKVISION"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_TALZ_REACH"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_TALZ_NATURAL_ARMOR"/>
-<select type="Sub Race" name="Talz Subrace" supports="ID_RACE_TALZ" optional="true"/>
+      <stat name="strength" value="2" />
+      <stat name="wisdom" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_TALZZI" />
+            <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_TALZ_REACH" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_TALZ_NATURAL_ARMOR" />
+<select type="Sub Race" name="Talz Subrace" supports="ID_RACE_TALZ" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TALZ_CYBORG">
@@ -2023,11 +2023,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TALZ_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TALZ_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TALZ_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_TALZ_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -2036,12 +2036,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TALZ_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_TALZ_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -2050,7 +2050,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -2070,15 +2070,15 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="wisdom" value="2"/>
-      <select type="Racial Trait" name="Ability Score Increase (Togruta)" supports="Togruta" number="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_TOGRUTI"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
-            <grant type="Racial Trait" id="ID_RACE_TRAIT_TOGRUTA_STEALTH"/>
-<select type="Sub Race" name="Togruta Subrace" supports="ID_RACE_TOGRUTA" optional="true"/>
+      <stat name="wisdom" value="2" />
+      <select type="Racial Trait" name="Ability Score Increase (Togruta)" supports="Togruta" number="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_TOGRUTI" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <grant type="Racial Trait" id="ID_RACE_TRAIT_TOGRUTA_STEALTH" />
+<select type="Sub Race" name="Togruta Subrace" supports="ID_RACE_TOGRUTA" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_CYBORG">
@@ -2088,11 +2088,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TOGRUTA_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TOGRUTA_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_TOGRUTA_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -2101,12 +2101,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_TOGRUTA_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -2115,7 +2115,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -2137,17 +2137,17 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="strength" value="2"/>
-      <stat name="wisdom" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_DOSH"/>
-            <grant type="Sense" id="ID_SENSE_DARKVISION"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_TRANDOSHAN_NATURAL_WEAPONS"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_TRANDOSHAN_NATURAL_ARMOR"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_TRANDOSHAN_REGENERATION"/>
-<select type="Sub Race" name="Trandoshan Subrace" supports="ID_RACE_TRANDOSHAN" optional="true"/>
+      <stat name="strength" value="2" />
+      <stat name="wisdom" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_DOSH" />
+            <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_TRANDOSHAN_NATURAL_WEAPONS" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_TRANDOSHAN_NATURAL_ARMOR" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_TRANDOSHAN_REGENERATION" />
+<select type="Sub Race" name="Trandoshan Subrace" supports="ID_RACE_TRANDOSHAN" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TRANDOSHAN_CYBORG">
@@ -2157,11 +2157,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TRANDOSHAN_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TRANDOSHAN_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRANDOSHAN_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_TRANDOSHAN_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -2170,12 +2170,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRANDOSHAN_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_TRANDOSHAN_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -2184,7 +2184,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -2209,21 +2209,21 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="constitution" value="2"/>
-      <select type="Racial Trait" name="Ability Score Increase (Tusken)" supports="Tusken" number="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_TUSKEN"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CYCLER_RIFLE"/>
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIRBO-AXE"/>
-            <grant type="Racial Trait" id="ID_RACE_TRAIT_TUSKEN_BLIND_RESILIENCE"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_TUSKEN_DESERT_DWELLER"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_TUSKEN_HEAT_ADAPTED"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_TUSKEN_PRIMITIVE"/>
-<select type="Sub Race" name="Tusken Subrace" supports="ID_RACE_TUSKEN" optional="true"/>
+      <stat name="constitution" value="2" />
+      <select type="Racial Trait" name="Ability Score Increase (Tusken)" supports="Tusken" number="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_TUSKEN" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CYCLER_RIFLE" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIRBO-AXE" />
+            <grant type="Racial Trait" id="ID_RACE_TRAIT_TUSKEN_BLIND_RESILIENCE" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_TUSKEN_DESERT_DWELLER" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_TUSKEN_HEAT_ADAPTED" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_TUSKEN_PRIMITIVE" />
+<select type="Sub Race" name="Tusken Subrace" supports="ID_RACE_TUSKEN" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_CYBORG">
@@ -2233,11 +2233,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TUSKEN_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TUSKEN_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_TUSKEN_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -2246,12 +2246,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_TUSKEN_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -2260,7 +2260,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -2284,19 +2284,19 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="charisma" value="2"/>
-      <stat name="dexterity" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE"/>
-      <select type="Proficiency" name="Proficiency (Twi'Lek)" supports="ID_PROFICIENCY_SKILL_DECEPTION||ID_PROFICIENCY_SKILL_PERSUASION" number="1"/>
-            <grant type="Sense" id="ID_SENSE_DARKVISION"/>
+      <stat name="charisma" value="2" />
+      <stat name="dexterity" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+      <select type="Proficiency" name="Proficiency (Twi'Lek)" supports="ID_PROFICIENCY_SKILL_DECEPTION||ID_PROFICIENCY_SKILL_PERSUASION" number="1" />
+            <grant type="Sense" id="ID_SENSE_DARKVISION" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
-      <grant type="Language" id="ID_LANGUAGE_TWILEKI"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_TWILEK_POISON_RESILIENCE"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_TWILEK_NATURAL_WEAPONS"/>
-<select type="Sub Race" name="Twi'Lek Subrace" supports="ID_RACE_TWILEK" optional="true"/>
+      <grant type="Language" id="ID_LANGUAGE_TWILEKI" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_TWILEK_POISON_RESILIENCE" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_TWILEK_NATURAL_WEAPONS" />
+<select type="Sub Race" name="Twi'Lek Subrace" supports="ID_RACE_TWILEK" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TWILEK_CYBORG">
@@ -2306,11 +2306,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TWILEK_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TWILEK_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TWILEK_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_TWILEK_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -2319,12 +2319,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TWILEK_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_TWILEK_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -2333,7 +2333,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -2357,19 +2357,19 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="intelligence" value="2"/>
-      <stat name="strength" value="1"/>
-      <stat name="innate speed" value="25" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_SMALL"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_UGNAUGHT"/>
-            <grant type="Sense" id="ID_SENSE_DARKVISION"/>
+      <stat name="intelligence" value="2" />
+      <stat name="strength" value="1" />
+      <stat name="innate speed" value="25" bonus="base" />
+      <grant type="Size" id="ID_SIZE_SMALL" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_UGNAUGHT" />
+            <grant type="Sense" id="ID_SENSE_DARKVISION" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_UGNAUGHT_NATURAL_WEAPONS"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_UGNAUGHT_NIMBLE"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_SMALL_BUILD"/>
-<select type="Sub Race" name="Ugnaught Subrace" supports="ID_RACE_UGNAUGHT" optional="true"/>
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_UGNAUGHT_NATURAL_WEAPONS" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_UGNAUGHT_NIMBLE" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_SMALL_BUILD" />
+<select type="Sub Race" name="Ugnaught Subrace" supports="ID_RACE_UGNAUGHT" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_UGNAUGHT_CYBORG">
@@ -2379,11 +2379,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_UGNAUGHT_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_UGNAUGHT_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_UGNAUGHT_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_UGNAUGHT_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -2392,12 +2392,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_UGNAUGHT_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_UGNAUGHT_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -2406,7 +2406,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -2428,18 +2428,18 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="constitution" value="2"/>
-      <select type="Racial Trait" name="Ability Score Increase (Weequay)" supports="Weequay" number="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_SRILUURIAN"/>
-            <select type="Proficiency" name="Weapon Proficiency (Weequay 1st)" supports="ID_INTERNAL_PROFICIENCY_WEAPON" number="1"/>
-      <select type="Proficiency" name="Weapon Proficiency (Weequay 2nd)" supports="ID_INTERNAL_PROFICIENCY_WEAPON" number="1"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_WEEQUAY_KEEN_SMELL"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_WEEQUAY_BRUTAL_CRITICAL"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_WEEQUAY_NATURAL_ARMOR"/>
-<select type="Sub Race" name="Weequay Subrace" supports="ID_RACE_WEEQUAY" optional="true"/>
+      <stat name="constitution" value="2" />
+      <select type="Racial Trait" name="Ability Score Increase (Weequay)" supports="Weequay" number="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_SRILUURIAN" />
+            <select type="Proficiency" name="Weapon Proficiency (Weequay 1st)" supports="ID_INTERNAL_PROFICIENCY_WEAPON" number="1" />
+      <select type="Proficiency" name="Weapon Proficiency (Weequay 2nd)" supports="ID_INTERNAL_PROFICIENCY_WEAPON" number="1" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_WEEQUAY_KEEN_SMELL" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_WEEQUAY_BRUTAL_CRITICAL" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_WEEQUAY_NATURAL_ARMOR" />
+<select type="Sub Race" name="Weequay Subrace" supports="ID_RACE_WEEQUAY" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_CYBORG">
@@ -2449,11 +2449,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_WEEQUAY_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_WEEQUAY_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_WEEQUAY_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -2462,12 +2462,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_WEEQUAY_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -2476,7 +2476,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -2499,18 +2499,18 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="strength" value="2"/>
-      <stat name="constitution" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_SHYRIIWOOK"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
-            <grant type="Sense" id="ID_SENSE_DARKVISION"/>
-      <stat name="innate speed:climb" value="30" bonus="base"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_WOOKIE_NATURAL_WEAPONS"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_WOOKIE_NATURAL_ARMOR"/>
-<select type="Sub Race" name="Wookie Subrace" supports="ID_RACE_WOOKIE" optional="true"/>
+      <stat name="strength" value="2" />
+      <stat name="constitution" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_SHYRIIWOOK" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+            <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <stat name="innate speed:climb" value="30" bonus="base" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_WOOKIE_NATURAL_WEAPONS" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_WOOKIE_NATURAL_ARMOR" />
+<select type="Sub Race" name="Wookie Subrace" supports="ID_RACE_WOOKIE" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_WOOKIE_CYBORG">
@@ -2520,11 +2520,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_WOOKIE_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_WOOKIE_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WOOKIE_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_WOOKIE_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -2533,12 +2533,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WOOKIE_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_WOOKIE_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -2547,7 +2547,7 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
@@ -2568,16 +2568,16 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="constitution" value="2"/>
-      <select type="Racial Trait" name="Ability Score Increase (Zabrak)" supports="Zabrak" number="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_MEDIUM"/>
-      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
-      <grant type="Language" id="ID_LANGUAGE_ZABRAKI"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_ZABRAK_NATURAL_WEAPONS"/>
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_ZABRAK_DURABLE"/>
-      <select type="Proficiency" name="Proficiency (Zabrak)" supports="ID_PROFICIENCY_SKILL_PERSUASION||ID_PROFICIENCY_SKILL_INTIMIDATION" number="1"/>
-      <select type="Sub Race" name="Zabrak Subrace" supports="ID_RACE_ZABRAK" optional="true"/>
+      <stat name="constitution" value="2" />
+      <select type="Racial Trait" name="Ability Score Increase (Zabrak)" supports="Zabrak" number="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
+      <grant type="Language" id="ID_LANGUAGE_ZABRAKI" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_ZABRAK_NATURAL_WEAPONS" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_ZABRAK_DURABLE" />
+      <select type="Proficiency" name="Proficiency (Zabrak)" supports="ID_PROFICIENCY_SKILL_PERSUASION||ID_PROFICIENCY_SKILL_INTIMIDATION" number="1" />
+      <select type="Sub Race" name="Zabrak Subrace" supports="ID_RACE_ZABRAK" optional="true" />
     </rules>
   </element>
   <element name="Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_CYBORG">
@@ -2587,11 +2587,11 @@
       <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (STR +1) or Cybernetic Leg (DEX +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
     </description>
     <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_ZABRAK_CYBORG" number="1"/>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_ZABRAK_CYBORG" number="1" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_CYBORG_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_ZABRAK_CYBORG</supports>
     <description>
       <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
@@ -2600,12 +2600,12 @@
       <description>+1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_CYBORG_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_ZABRAK_CYBORG</supports>
     <description>
       <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
@@ -2614,14 +2614,14 @@
       <description>+1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
 
-  <!-- Human Standard/Variant One Ability Score Options -->
+  
   <element name="Ability Score Increase (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Human Ability</supports>
     <description>
       <p>Your Strength score increases by 1.</p>
@@ -2630,11 +2630,11 @@
       <description>+1 Strength.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Human Ability</supports>
     <description>
       <p>Your Dexterity score increases by 1.</p>
@@ -2643,11 +2643,11 @@
       <description>+1 Dexterity.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CON">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Human Ability</supports>
     <description>
       <p>Your Constitution score increases by 1.</p>
@@ -2656,11 +2656,11 @@
       <description>+1 Constitution.</description>
     </sheet>
     <rules>
-      <stat name="constitution" value="1"/>
+      <stat name="constitution" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_INT">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Human Ability</supports>
     <description>
       <p>Your Intelligence score increases by 1.</p>
@@ -2669,11 +2669,11 @@
       <description>+1 Intelligence.</description>
     </sheet>
     <rules>
-      <stat name="intelligence" value="1"/>
+      <stat name="intelligence" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_WIS">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Human Ability</supports>
     <description>
       <p>Your Wisdom score increases by 1.</p>
@@ -2682,11 +2682,11 @@
       <description>+1 Wisdom.</description>
     </sheet>
     <rules>
-      <stat name="wisdom" value="1"/>
+      <stat name="wisdom" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CHA">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Human Ability</supports>
     <description>
       <p>Your Charisma score increases by 1.</p>
@@ -2695,12 +2695,12 @@
       <description>+1 Charisma.</description>
     </sheet>
     <rules>
-      <stat name="charisma" value="1"/>
+      <stat name="charisma" value="1" />
     </rules>
   </element>
-  <!-- Human Variant Two Ability Score Options (+2 bonus) -->
+  
   <element name="Ability Score Increase Two (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_STR2">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Human Variant Two</supports>
     <description>
       <p>Your Strength score increases by 2.</p>
@@ -2709,11 +2709,11 @@
       <description>+2 Strength.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="2"/>
+      <stat name="strength" value="2" />
     </rules>
   </element>
   <element name="Ability Score Increase Two (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_DEX2">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Human Variant Two</supports>
     <description>
       <p>Your Dexterity score increases by 2.</p>
@@ -2722,11 +2722,11 @@
       <description>+2 Dexterity.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="2"/>
+      <stat name="dexterity" value="2" />
     </rules>
   </element>
   <element name="Ability Score Increase Two (Constitution)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CON2">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Human Variant Two</supports>
     <description>
       <p>Your Constitution score increases by 2.</p>
@@ -2735,11 +2735,11 @@
       <description>+2 Constitution.</description>
     </sheet>
     <rules>
-      <stat name="constitution" value="2"/>
+      <stat name="constitution" value="2" />
     </rules>
   </element>
   <element name="Ability Score Increase Two (Intelligence)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_INT2">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Human Variant Two</supports>
     <description>
       <p>Your Intelligence score increases by 2.</p>
@@ -2748,11 +2748,11 @@
       <description>+2 Intelligence.</description>
     </sheet>
     <rules>
-      <stat name="intelligence" value="2"/>
+      <stat name="intelligence" value="2" />
     </rules>
   </element>
   <element name="Ability Score Increase Two (Wisdom)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_WIS2">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Human Variant Two</supports>
     <description>
       <p>Your Wisdom score increases by 2.</p>
@@ -2761,11 +2761,11 @@
       <description>+2 Wisdom.</description>
     </sheet>
     <rules>
-      <stat name="wisdom" value="2"/>
+      <stat name="wisdom" value="2" />
     </rules>
   </element>
   <element name="Ability Score Increase Two (Charisma)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CHA2">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Human Variant Two</supports>
     <description>
       <p>Your Charisma score increases by 2.</p>
@@ -2774,11 +2774,11 @@
       <description>+2 Charisma.</description>
     </sheet>
     <rules>
-      <stat name="charisma" value="2"/>
+      <stat name="charisma" value="2" />
     </rules>
   </element>
   <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_PROTOCOL_DROID_INT">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_PROTOCOL_DROID</supports>
     <description>
       <p>Your Intelligence score increases by 1.</p>
@@ -2787,11 +2787,11 @@
       <description>+1 Intelligence.</description>
     </sheet>
     <rules>
-      <stat name="intelligence" value="1"/>
+      <stat name="intelligence" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_PROTOCOL_DROID_WIS">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_PROTOCOL_DROID</supports>
     <description>
       <p>Your Wisdom score increases by 1.</p>
@@ -2800,11 +2800,11 @@
       <description>+1 Wisdom.</description>
     </sheet>
     <rules>
-      <stat name="wisdom" value="1"/>
+      <stat name="wisdom" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_COMBAT_DROID_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_COMBAT_DROID</supports>
     <description>
       <p>Your Strength score increases by 1.</p>
@@ -2813,11 +2813,11 @@
       <description>+1 Strength.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_COMBAT_DROID_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>ID_RACE_COMBAT_DROID</supports>
     <description>
       <p>Your Dexterity score increases by 1.</p>
@@ -2826,11 +2826,11 @@
       <description>+1 Dexterity.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_INT">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Mon Calamari</supports>
     <description>
       <p>Your Intelligence score increases by 1.</p>
@@ -2839,11 +2839,11 @@
       <description>+1 Intelligence.</description>
     </sheet>
     <rules>
-      <stat name="intelligence" value="1"/>
+      <stat name="intelligence" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_WIS">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Mon Calamari</supports>
     <description>
       <p>Your Wisdom score increases by 1.</p>
@@ -2852,11 +2852,11 @@
       <description>+1 Wisdom.</description>
     </sheet>
     <rules>
-      <stat name="wisdom" value="1"/>
+      <stat name="wisdom" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Rattataki</supports>
     <description>
       <p>Your Dexterity score increases by 1.</p>
@@ -2865,11 +2865,11 @@
       <description>+1 Dexterity.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_INT">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Rattataki</supports>
     <description>
       <p>Your Intelligence score increases by 1.</p>
@@ -2878,11 +2878,11 @@
       <description>+1 Intelligence.</description>
     </sheet>
     <rules>
-      <stat name="intelligence" value="1"/>
+      <stat name="intelligence" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Sith Pureblood</supports>
     <description>
       <p>Your Strength score increases by 1.</p>
@@ -2891,11 +2891,11 @@
       <description>+1 Strength.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Sith Pureblood</supports>
     <description>
       <p>Your Dexterity score increases by 1.</p>
@@ -2904,11 +2904,11 @@
       <description>+1 Dexterity.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Togruta</supports>
     <description>
       <p>Your Strength score increases by 1.</p>
@@ -2917,11 +2917,11 @@
       <description>+1 Strength.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Togruta</supports>
     <description>
       <p>Your Dexterity score increases by 1.</p>
@@ -2930,11 +2930,11 @@
       <description>+1 Dexterity.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Tusken</supports>
     <description>
       <p>Your Strength score increases by 1.</p>
@@ -2943,11 +2943,11 @@
       <description>+1 Strength.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_CHA">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Tusken</supports>
     <description>
       <p>Your Charisma score increases by 1.</p>
@@ -2956,11 +2956,11 @@
       <description>+1 Charisma.</description>
     </sheet>
     <rules>
-      <stat name="charisma" value="1"/>
+      <stat name="charisma" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_WIS">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Weequay</supports>
     <description>
       <p>Your Wisdom score increases by 1.</p>
@@ -2969,11 +2969,11 @@
       <description>+1 Wisdom.</description>
     </sheet>
     <rules>
-      <stat name="wisdom" value="1"/>
+      <stat name="wisdom" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_CHA">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Weequay</supports>
     <description>
       <p>Your Charisma score increases by 1.</p>
@@ -2982,11 +2982,11 @@
       <description>+1 Charisma.</description>
     </sheet>
     <rules>
-      <stat name="charisma" value="1"/>
+      <stat name="charisma" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_STR">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Zabrak</supports>
     <description>
       <p>Your Strength score increases by 1.</p>
@@ -2995,11 +2995,11 @@
       <description>+1 Strength.</description>
     </sheet>
     <rules>
-      <stat name="strength" value="1"/>
+      <stat name="strength" value="1" />
     </rules>
   </element>
   <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_DEX">
-    <compendium display="false"/>
+    <compendium display="false" />
     <supports>Zabrak</supports>
     <description>
       <p>Your Dexterity score increases by 1.</p>
@@ -3008,11 +3008,11 @@
       <description>+1 Dexterity.</description>
     </sheet>
     <rules>
-      <stat name="dexterity" value="1"/>
+      <stat name="dexterity" value="1" />
     </rules>
   </element>
 
-  <!-- Zabrak Racial Traits -->
+  
   <element name="Natural Weapons" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_ZABRAK_NATURAL_WEAPONS">
     <description>
       <p>Your unarmed strikes deal 1d4 kinetic damage instead of the normal bludgeoning damage and have the finesse property.</p>
@@ -3051,7 +3051,7 @@
     </rules>
   </element>
 
-  <!-- Ion Damage Vulnerability Condition -->
+  
   <element name="Ion Damage Vulnerability" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION">
     <description>
       <p>You are vulnerable to ion damage.</p>
@@ -3061,7 +3061,7 @@
     </sheet>
   </element>
 
-  <!-- Sonic Damage Vulnerability Condition -->
+  
   <element name="Sonic Damage Vulnerability" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_SONIC">
     <description>
       <p>You are vulnerable to sonic damage.</p>
@@ -3087,7 +3087,7 @@
     </sheet>
   </element>
 
-  <!-- Bith Racial Traits -->
+  
   <element name="Keen Investigation" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_BITH_INVESTIGATION">
     <description>
       <p>You have advantage on Investigation checks.</p>
@@ -3105,7 +3105,7 @@
     </sheet>
   </element>
 
-  <!-- Bothan Racial Traits -->
+  
   <element name="Cunning Action" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_BOTHAN_CUNNING_ACTION">
     <description>
       <p>You can take the Hide or Disengage action as a bonus action on each of your turns.</p>
@@ -3115,7 +3115,7 @@
     </sheet>
   </element>
 
-  <!-- Cathar Racial Traits -->
+  
   <element name="Expert Climber" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_CATHAR_CLIMBER">
     <description>
       <p>You have advantage on Strength saving throws and Athletics checks when climbing.</p>
@@ -3125,7 +3125,7 @@
     </sheet>
   </element>
 
-  <!-- Chagrian Racial Traits -->
+  
   <element name="Poison Resilience" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_CHAGRIAN_POISON_RESILIENCE">
     <description>
       <p>You have advantage on saving throws against poison.</p>
@@ -3143,7 +3143,7 @@
     </sheet>
   </element>
 
-  <!-- Devaronian Racial Traits -->
+  
   <element name="Heat Adapted" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_DEVARONIAN_HEAT_ADAPTED">
     <description>
       <p>You have advantage on Constitution saving throws to avoid heat exhaustion.</p>
@@ -3169,7 +3169,7 @@
     </sheet>
   </element>
 
-  <!-- Droid Shared Racial Traits -->
+  
   <element name="Ion/Lightning Vulnerability" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_DROID_ION_LIGHTNING_VULNERABILITY">
     <description>
       <p>You have disadvantage on saving throws against effects that deal ion or lightning damage.</p>
@@ -3195,7 +3195,7 @@
     </sheet>
   </element>
 
-  <!-- Ewok Racial Traits -->
+  
   <element name="Keen Smell" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_EWOK_KEEN_SMELL">
     <description>
       <p>You have advantage on Perception checks that rely on smell.</p>
@@ -3229,7 +3229,7 @@
     </sheet>
   </element>
 
-  <!-- Gamorrean Racial Traits -->
+  
   <element name="Constitution Resilience" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_GAMORREAN_CON_SAVE">
     <description>
       <p>You have advantage on Constitution saving throws.</p>
@@ -3247,7 +3247,7 @@
     </sheet>
   </element>
 
-  <!-- Geonosian Racial Traits -->
+  
   <element name="Flight" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_GEONOSIAN_FLIGHT">
     <description>
       <p>You have a flying speed equal to your walking speed. Your flying speed is halved when wearing medium or heavy armor.</p>
@@ -3256,7 +3256,7 @@
       <description>Flying speed equal to walking speed. Halved in medium or heavy armor.</description>
     </sheet>
     <rules>
-      <stat name="innate speed:fly" value="30" bonus="base"/>
+      <stat name="innate speed:fly" value="30" bonus="base" />
     </rules>
   </element>
   <element name="Natural Armor" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_GEONOSIAN_NATURAL_ARMOR">
@@ -3268,7 +3268,7 @@
     </sheet>
   </element>
 
-  <!-- Gran Racial Traits -->
+  
   <element name="Slow Metabolism" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_GRAN_SLOW_METABOLISM">
     <description>
       <p>Your metabolism is slower than most species, requiring less sustenance.</p>
@@ -3286,7 +3286,7 @@
     </sheet>
   </element>
 
-  <!-- Human Racial Traits -->
+  
   <element name="Determination" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_HUMAN_DETERMINATION">
     <description>
       <p>You can add 1d4 to one ability check, saving throw, or attack roll. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
@@ -3296,7 +3296,7 @@
     </sheet>
   </element>
 
-  <!-- Jawa Racial Traits -->
+  
   <element name="Heat Adapted" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_JAWA_HEAT_ADAPTED">
     <description>
       <p>You have advantage on Constitution saving throws to avoid heat exhaustion.</p>
@@ -3314,7 +3314,7 @@
     </sheet>
   </element>
 
-  <!-- Kaleesh Racial Traits -->
+  
   <element name="Keen Smell" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_KALEESH_KEEN_SMELL">
     <description>
       <p>You have advantage on Perception checks that rely on smell.</p>
@@ -3324,7 +3324,7 @@
     </sheet>
   </element>
 
-  <!-- Kel Dor Racial Traits -->
+  
   <element name="Breathless" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_KEL_DOR_BREATHLESS">
     <description>
       <p>You cannot breathe oxygen and require a breathing apparatus in oxygen-rich atmospheres.</p>
@@ -3342,7 +3342,7 @@
     </sheet>
   </element>
 
-  <!-- Mirialan Racial Traits -->
+  
   <element name="History Expertise" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_MIRIALAN_HISTORY_EXPERTISE">
     <description>
       <p>Your proficiency bonus is doubled for History checks.</p>
@@ -3371,7 +3371,7 @@
     </sheet>
   </element>
 
-  <!-- Mon Calamari Racial Traits -->
+  
   <element name="Amphibious" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_MON_CALAMARI_AMPHIBIOUS">
     <description>
       <p>You can breathe air and water.</p>
@@ -3389,7 +3389,7 @@
     </sheet>
   </element>
 
-  <!-- Nautolan Racial Traits -->
+  
   <element name="Perception Expertise" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_NAUTOLAN_PERCEPTION_EXPERTISE">
     <description>
       <p>Your proficiency bonus is doubled for Perception checks.</p>
@@ -3418,7 +3418,7 @@
     </sheet>
   </element>
 
-  <!-- Neimoidian Racial Traits -->
+  
   <element name="Wealthy" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_NEIMOIDIAN_WEALTHY">
     <description>
       <p>You start with an additional 1000 gold.</p>
@@ -3427,11 +3427,11 @@
       <description>Start with additional 1000 gold.</description>
     </sheet>
     <rules>
-      <stat name="gold" value="1000"/>
+      <stat name="gold" value="1000" />
     </rules>
   </element>
 
-  <!-- Ortolan Racial Traits -->
+  
   <element name="Survival Expertise" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_ORTOLAN_SURVIVAL_EXPERTISE">
     <description>
       <p>Your proficiency bonus is doubled for Survival checks.</p>
@@ -3460,7 +3460,7 @@
     </sheet>
   </element>
 
-  <!-- Rakata Racial Traits -->
+  
   <element name="Force Insensitive" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_RAKATA_FORCE_INSENSITIVE">
     <description>
       <p>You cannot use Force powers.</p>
@@ -3494,7 +3494,7 @@
     </sheet>
   </element>
 
-  <!-- Rattataki Racial Traits -->
+  
   <element name="Surprise Attack" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_RATTATAKI_SURPRISE_ATTACK">
     <description>
       <p>If an enemy is surprised, your first attack against it deals an extra 2d6 damage.</p>
@@ -3512,7 +3512,7 @@
     </sheet>
   </element>
 
-  <!-- Rodian Racial Traits -->
+  
   <element name="Keen Senses" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_RODIAN_KEEN_SENSES">
     <description>
       <p>You have advantage on Perception checks that involve hearing or smell.</p>
@@ -3522,7 +3522,7 @@
     </sheet>
   </element>
 
-  <!-- Sullustan Racial Traits -->
+  
   <element name="Persuasion Expertise" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_SULLUSTAN_PERSUASION_EXPERTISE">
     <description>
       <p>Your proficiency bonus is doubled for Persuasion checks.</p>
@@ -3543,7 +3543,7 @@
     </sheet>
   </element>
 
-  <!-- Talz Racial Traits -->
+  
   <element name="Long Reach" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_TALZ_REACH">
     <description>
       <p>Your melee reach is 5 feet greater than normal.</p>
@@ -3561,7 +3561,7 @@
     </sheet>
   </element>
 
-  <!-- Trandoshan Racial Traits -->
+  
   <element name="Natural Weapons" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_TRANDOSHAN_NATURAL_WEAPONS">
     <description>
       <p>Your unarmed strikes deal 1d4 kinetic damage.</p>
@@ -3587,7 +3587,7 @@
     </sheet>
   </element>
 
-  <!-- Togruta Racial Traits -->
+  
   <element name="Stealth Advantage" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_TOGRUTA_STEALTH">
     <description>
       <p>You have advantage on Stealth checks.</p>
@@ -3597,7 +3597,7 @@
     </sheet>
   </element>
 
-  <!-- Tusken Racial Traits -->
+  
   <element name="Blind Resilience" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_TUSKEN_BLIND_RESILIENCE">
     <description>
       <p>You have advantage on saving throws against being blinded.</p>
@@ -3631,7 +3631,7 @@
     </sheet>
   </element>
 
-  <!-- Twi'lek Racial Traits -->
+  
   <element name="Poison Resilience" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_TWILEK_POISON_RESILIENCE">
     <description>
       <p>You have advantage on saving throws against poison.</p>
@@ -3649,7 +3649,7 @@
     </sheet>
   </element>
 
-  <!-- Ugnaught Racial Traits -->
+  
   <element name="Natural Weapons (Tusk)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_UGNAUGHT_NATURAL_WEAPONS">
     <description>
       <p>Your unarmed strike (tusk) deals 1d6 kinetic damage.</p>
@@ -3667,7 +3667,7 @@
     </sheet>
   </element>
 
-  <!-- Weequay Racial Traits -->
+  
   <element name="Keen Smell" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_WEEQUAY_KEEN_SMELL">
     <description>
       <p>You have advantage on Perception checks that rely on smell.</p>
@@ -3693,7 +3693,7 @@
     </sheet>
   </element>
 
-  <!-- Wookie Racial Traits -->
+  
   <element name="Natural Weapons" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_WOOKIE_NATURAL_WEAPONS">
     <description>
       <p>Your unarmed strikes deal 1d4 kinetic damage.</p>

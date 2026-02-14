@@ -1,24 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <elements>
   <info>
     <name>SW-MSV-Edition</name>
-    <update version="1.1.1">
+    <update version="1.1.2">
       <file name="source.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/source.xml" />
     </update>
   </info>
   <element name="SW-MSV-Edition" type="Source" source="Core" id="ID_MSV_SW_MSV_EDITION">
     <description>
-      <![CDATA[<p>Star Wars 5E - MSV Edition is a comprehensive homebrew adaptation bringing Star Wars to D&D 5th Edition. This collection includes:</p>
-      <ul>
-        <li><strong>40+ Playable Species:</strong> From iconic species like Humans, Twileks, and Wookiees to unique options like Protocol Droids and Combat Droids</li>
-        <li><strong>5 Custom Classes:</strong> Knight (Force-sensitive guardian), Marauder (aggressive Force warrior), Scout (agile specialist), Warrior (martial expert), and Inquisitor (stealthy operative)</li>
-        <li><strong>Expanded Equipment:</strong> 100+ weapons including blasters, lightsabers, vibroweapons, and more</li>
-        <li><strong>Star Wars Gear:</strong> Armor, shields, tools, healing items, explosives, and specialized equipment</li>
-        <li><strong>Fighting Styles & Maneuvers:</strong> Unique combat options tailored to the Star Wars universe</li>
-        <li><strong>Backgrounds & Languages:</strong> Galaxy-appropriate character origins and communication options</li>
-        <li><strong>Aurora Builder Compatible:</strong> Fully compatible with Aurora Builder character creation software</li>
-      </ul>
-      <p>This homebrew is designed to provide a complete Star Wars tabletop experience using the D&D 5E ruleset.</p>]]>
+      &lt;p&gt;Star Wars 5E - MSV Edition is a comprehensive homebrew adaptation bringing Star Wars to D&amp;D 5th Edition. This collection includes:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;strong&gt;40+ Playable Species:&lt;/strong&gt; From iconic species like Humans, Twileks, and Wookiees to unique options like Protocol Droids and Combat Droids&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;5 Custom Classes:&lt;/strong&gt; Knight (Force-sensitive guardian), Marauder (aggressive Force warrior), Scout (agile specialist), Warrior (martial expert), and Inquisitor (stealthy operative)&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Expanded Equipment:&lt;/strong&gt; 100+ weapons including blasters, lightsabers, vibroweapons, and more&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Star Wars Gear:&lt;/strong&gt; Armor, shields, tools, healing items, explosives, and specialized equipment&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Fighting Styles &amp; Maneuvers:&lt;/strong&gt; Unique combat options tailored to the Star Wars universe&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Backgrounds &amp; Languages:&lt;/strong&gt; Galaxy-appropriate character origins and communication options&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Aurora Builder Compatible:&lt;/strong&gt; Fully compatible with Aurora Builder character creation software&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;p&gt;This homebrew is designed to provide a complete Star Wars tabletop experience using the D&amp;D 5E ruleset.&lt;/p&gt;
     </description>
     <setters>
       <set name="abbreviation">SWMSV</set>

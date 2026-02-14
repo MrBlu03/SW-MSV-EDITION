@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <elements>
   <info>
     <name>Armor</name>
-    <update version="1.1.1">
+    <update version="1.1.2">
       <file name="items-armor.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-armor.xml" />
     </update>
   </info>
-  <!-- Light Armor -->
+  
   <element name="Combat Suit" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_COMBAT_SUIT">
     <supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
     <description>
@@ -66,7 +66,7 @@
     </rules>
   </element>
   
-  <!-- Medium Armor -->
+  
   <element name="Mesh Armor" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_MESH_ARMOR">
     <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
     <description>
@@ -145,7 +145,7 @@
     </rules>
   </element>
   
-  <!-- Heavy Armor -->
+  
   <element name="Battle Armor" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_BATTLE_ARMOR">
     <supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
     <description>
@@ -212,7 +212,7 @@
     </rules>
   </element>
   
-  <!-- Shields -->
+  
   <element name="Physical Shield" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_PHYSICAL_SHIELD">
     <supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
     <description>
@@ -246,7 +246,7 @@
       <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS</set>
     </setters>
     <rules>
-      <grant type="Action" id="ID_ACTION_SHIELD_GENERATOR_SMALL"/>
+      <grant type="Action" id="ID_ACTION_SHIELD_GENERATOR_SMALL" />
     </rules>
   </element>
   
@@ -264,7 +264,7 @@
       <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS</set>
     </setters>
     <rules>
-      <grant type="Action" id="ID_ACTION_SHIELD_GENERATOR_MEDIUM"/>
+      <grant type="Action" id="ID_ACTION_SHIELD_GENERATOR_MEDIUM" />
     </rules>
   </element>
   
@@ -282,11 +282,11 @@
       <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS</set>
     </setters>
     <rules>
-      <grant type="Action" id="ID_ACTION_SHIELD_GENERATOR_LARGE"/>
+      <grant type="Action" id="ID_ACTION_SHIELD_GENERATOR_LARGE" />
     </rules>
   </element>
 
-  <!-- Shield Generator Actions -->
+  
   <element name="Activate Small Shield Generator" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SHIELD_GENERATOR_SMALL">
     <description>
       <p>Bonus Action: Once per long rest, activate your shield generator to gain 10 temporary hit points.</p>
