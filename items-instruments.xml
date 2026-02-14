@@ -15,7 +15,6 @@
       <set name="category">Musical Instruments</set>
       <set name="cost" currency="gp">15</set>
       <set name="weight" lb="3">3 lb.</set>
-      <set name="slot">onehand</set>
       <set name="type">Tool</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_BANDFILL</set>
     </setters>
@@ -30,7 +29,6 @@
       <set name="category">Musical Instruments</set>
       <set name="cost" currency="gp">25</set>
       <set name="weight" lb="2">2 lb.</set>
-      <set name="slot">onehand</set>
       <set name="type">Tool</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_CHINDINKALU_HORN</set>
     </setters>
@@ -45,7 +43,6 @@
       <set name="category">Musical Instruments</set>
       <set name="cost" currency="gp">15</set>
       <set name="weight" lb="3">3 lb.</set>
-      <set name="slot">onehand</set>
       <set name="type">Tool</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_DRUM</set>
     </setters>
@@ -60,7 +57,6 @@
       <set name="category">Musical Instruments</set>
       <set name="cost" currency="gp">20</set>
       <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
       <set name="type">Tool</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FANFAR</set>
     </setters>
@@ -75,7 +71,6 @@
       <set name="category">Musical Instruments</set>
       <set name="cost" currency="gp">18</set>
       <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
       <set name="type">Tool</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FIZZZ</set>
     </setters>
@@ -90,7 +85,6 @@
       <set name="category">Musical Instruments</set>
       <set name="cost" currency="gp">15</set>
       <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
       <set name="type">Tool</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FLUTE</set>
     </setters>
@@ -105,7 +99,6 @@
       <set name="category">Musical Instruments</set>
       <set name="cost" currency="gp">30</set>
       <set name="weight" lb="4">4 lb.</set>
-      <set name="slot">onehand</set>
       <set name="type">Tool</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_KLOO_HORN</set>
     </setters>
@@ -120,7 +113,6 @@
       <set name="category">Musical Instruments</set>
       <set name="cost" currency="gp">35</set>
       <set name="weight" lb="3">3 lb.</set>
-      <set name="slot">onehand</set>
       <set name="type">Tool</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_LUTE</set>
     </setters>
@@ -135,7 +127,6 @@
       <set name="category">Musical Instruments</set>
       <set name="cost" currency="gp">40</set>
       <set name="weight" lb="3">3 lb.</set>
-      <set name="slot">onehand</set>
       <set name="type">Tool</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_MANDOVIOL</set>
     </setters>
@@ -150,7 +141,6 @@
       <set name="category">Musical Instruments</set>
       <set name="cost" currency="gp">50</set>
       <set name="weight" lb="8">8 lb.</set>
-      <set name="slot">onehand</set>
       <set name="type">Tool</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_OMMNI_BOX</set>
     </setters>
@@ -165,7 +155,6 @@
       <set name="category">Musical Instruments</set>
       <set name="cost" currency="gp">28</set>
       <set name="weight" lb="3">3 lb.</set>
-      <set name="slot">onehand</set>
       <set name="type">Tool</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_SLITHERHORN</set>
     </setters>
@@ -180,7 +169,6 @@
       <set name="category">Musical Instruments</set>
       <set name="cost" currency="gp">22</set>
       <set name="weight" lb="2">2 lb.</set>
-      <set name="slot">onehand</set>
       <set name="type">Tool</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_TRAZ</set>
     </setters>
@@ -195,7 +183,6 @@
       <set name="category">Musical Instruments</set>
       <set name="cost" currency="gp">32</set>
       <set name="weight" lb="4">4 lb.</set>
-      <set name="slot">onehand</set>
       <set name="type">Tool</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_VALAHORN</set>
     </setters>
@@ -210,7 +197,6 @@
       <set name="category">Musical Instruments</set>
       <set name="cost" currency="gp">45</set>
       <set name="weight" lb="5">5 lb.</set>
-      <set name="slot">onehand</set>
       <set name="type">Tool</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_XANTHA</set>
     </setters>
