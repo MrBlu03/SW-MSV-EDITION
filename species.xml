@@ -255,6 +255,7 @@
       <grant type="Language" id="ID_LANGUAGE_CHAGRI"/>
             <stat name="innate speed:swim" value="30" bonus="base"/>
       <grant type="Racial Trait" id="ID_RACE_TRAIT_CHAGRIAN_POISON_RESILIENCE"/>
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_CHAGRIAN_AMPHIBIOUS"/>
 <select type="Sub Race" name="Chagrian Subrace" supports="ID_RACE_CHAGRIAN" optional="true"/>
     </rules>
   </element>
@@ -322,7 +323,7 @@
       <grant type="Language" id="ID_LANGUAGE_CHUENH"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SNIPER_RIFLE"/>
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SNIPER_RIFLE"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT"/>
             <grant type="Sense" id="ID_SENSE_DARKVISION"/>
 <select type="Sub Race" name="Chiss Subrace" supports="ID_RACE_CHISS" optional="true"/>
@@ -926,7 +927,7 @@
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <select type="Language" name="Language (Human)" supports="Standard||Exotic" number="1"/>
       <select type="Proficiency" name="Weapon Proficiency (Human)" supports="ID_INTERNAL_PROFICIENCY_WEAPON" number="1"/>
-      <select type="Proficiency" name="Skill Proficiency (Human)" supports="ID_INTERNAL_PROFICIENCY_SKILL" number="1"/>
+      <select type="Proficiency" name="Skill Proficiency (Human)" supports="Skill" number="1"/>
             <grant type="Racial Trait" id="ID_RACE_TRAIT_HUMAN_DETERMINATION"/>
 <select type="Sub Race" name="Human Subrace" supports="ID_RACE_HUMAN_STANDARD" optional="true"/>
     </rules>
@@ -956,7 +957,7 @@
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC"/>
       <select type="Language" name="Language (Human)" supports="Standard||Exotic" number="1"/>
       <select type="Proficiency" name="Weapon Proficiency (Human)" supports="ID_INTERNAL_PROFICIENCY_WEAPON" number="1"/>
-      <select type="Proficiency" name="Skill Proficiency (Human)" supports="ID_INTERNAL_PROFICIENCY_SKILL" number="1"/>
+      <select type="Proficiency" name="Skill Proficiency (Human)" supports="Skill" number="1"/>
             <grant type="Racial Trait" id="ID_RACE_TRAIT_HUMAN_DETERMINATION"/>
 <select type="Sub Race" name="Human Subrace" supports="ID_RACE_HUMAN_VARIANT" optional="true"/>
     </rules>
@@ -2216,7 +2217,7 @@
       <grant type="Language" id="ID_LANGUAGE_TUSKEN"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_CYCLER_RIFLE"/>
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CYCLER_RIFLE"/>
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIRBO-AXE"/>
             <grant type="Racial Trait" id="ID_RACE_TRAIT_TUSKEN_BLIND_RESILIENCE"/>
       <grant type="Racial Trait" id="ID_RACE_TRAIT_TUSKEN_DESERT_DWELLER"/>
@@ -3133,6 +3134,14 @@
       <description>Advantage on saving throws against poison.</description>
     </sheet>
   </element>
+  <element name="Amphibious" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_CHAGRIAN_AMPHIBIOUS">
+    <description>
+      <p>You can breathe air and water.</p>
+    </description>
+    <sheet>
+      <description>You can breathe air and water.</description>
+    </sheet>
+  </element>
 
   <!-- Devaronian Racial Traits -->
   <element name="Heat Adapted" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_DEVARONIAN_HEAT_ADAPTED">
@@ -3341,6 +3350,9 @@
     <sheet>
       <description>Double proficiency bonus on History checks (expertise).</description>
     </sheet>
+    <rules>
+      <stat name="history:proficiency" value="proficiency" bonus="double" />
+    </rules>
   </element>
   <element name="Surprise Attack" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_MIRIALAN_SURPRISE_ATTACK">
     <description>
@@ -3385,6 +3397,9 @@
     <sheet>
       <description>Double proficiency bonus on Perception checks (expertise).</description>
     </sheet>
+    <rules>
+      <stat name="perception:proficiency" value="proficiency" bonus="double" />
+    </rules>
   </element>
   <element name="Amphibious" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_NAUTOLAN_AMPHIBIOUS">
     <description>
@@ -3424,6 +3439,9 @@
     <sheet>
       <description>Double proficiency bonus on Survival checks (expertise).</description>
     </sheet>
+    <rules>
+      <stat name="survival:proficiency" value="proficiency" bonus="double" />
+    </rules>
   </element>
   <element name="Keen Senses" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_ORTOLAN_KEEN_SENSES">
     <description>
@@ -3512,6 +3530,9 @@
     <sheet>
       <description>Double proficiency bonus on Persuasion checks (expertise).</description>
     </sheet>
+    <rules>
+      <stat name="persuasion:proficiency" value="proficiency" bonus="double" />
+    </rules>
   </element>
   <element name="Keen Hearing" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_SULLUSTAN_KEEN_HEARING">
     <description>

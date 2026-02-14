@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <elements>
   <info>
     <name>Weapons</name>
@@ -111,13 +111,21 @@
     </sheet>
   </element>
   <element name="blaster pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BLASTER_PISTOL">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
-      <p><strong>Blaster Pistol</strong></p>
-      <p><em>Simple Blaster</em></p>
-      <p><em>1d6 energy damage, range 50/200, reload 16, one-handed</em></p>
+      <p>
+        <strong>Blaster Pistol</strong>
+      </p>
+      <p>
+        <em>Simple Blaster</em>
+      </p>
+      <p>
+        <em>1d6 energy damage, range 50/200, reload 16, one-handed</em>
+      </p>
       <p>This standard sidearm fires concentrated energy bolts. It uses power cells and has a high capacity.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the blaster pistol. On hit: 1d6 energy damage + your Dexterity modifier.</p>
       <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the blaster pistol while wielding it in your off-hand. On hit: 1d6 energy damage without modifiers.</p>
     </description>
@@ -129,23 +137,29 @@
       <set name="range">50/200</set>
       <set name="damage" type="energy">1d6</set>
       <set name="reload">16</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_PISTOL</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Simple Ranged" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
     </rules>
   </element>
   <element name="energy bow" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ENERGY_BOW">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p><strong>Energy Bow</strong></p>
-      <p><em>Simple Blaster</em></p>
-      <p><em>1d6 energy damage, range 80/320, reload 4, two-handed</em></p>
+      <p>
+        <strong>Energy Bow</strong>
+      </p>
+      <p>
+        <em>Simple Blaster</em>
+      </p>
+      <p>
+        <em>1d6 energy damage, range 80/320, reload 4, two-handed</em>
+      </p>
       <p>This energy bow fires concentrated bolts of energy. It uses power cells and requires reloading after 4 shots.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the energy bow. On hit: 1d6 energy damage + your Strength or Dexterity modifier.</p>
       <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the energy bow while wielding it in your off-hand. On hit: 1d6 energy damage without modifiers.</p>
     </description>
@@ -157,23 +171,29 @@
       <set name="range">80/320</set>
       <set name="damage" type="energy">1d6</set>
       <set name="reload">4</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ENERGY_BOW</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Simple Ranged" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
     </rules>
   </element>
   <element name="ion pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_PISTOL">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
-      <p><strong>Ion Pistol</strong></p>
-      <p><em>Simple Blaster</em></p>
-      <p><em>1d4 ion damage, range 40/160, reload 16, one-handed</em></p>
+      <p>
+        <strong>Ion Pistol</strong>
+      </p>
+      <p>
+        <em>Simple Blaster</em>
+      </p>
+      <p>
+        <em>1d4 ion damage, range 40/160, reload 16, one-handed</em>
+      </p>
       <p>This pistol fires ion blasts that can disrupt droids and electronics. It uses power cells and has a high capacity.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the ion pistol. On hit: 1d4 ion damage + your Dexterity modifier.</p>
       <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the ion pistol while wielding it in your off-hand. On hit: 1d4 ion damage without modifiers.</p>
     </description>
@@ -185,23 +205,29 @@
       <set name="range">40/160</set>
       <set name="damage" type="ion">1d4</set>
       <set name="reload">16</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ION_PISTOL</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Simple Ranged" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
     </rules>
   </element>
   <element name="sonic pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SONIC_PISTOL">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
-      <p><strong>Sonic Pistol</strong></p>
-      <p><em>Simple Blaster</em></p>
-      <p><em>1d4 sonic damage, range 30/120, reload 16, one-handed</em></p>
+      <p>
+        <strong>Sonic Pistol</strong>
+      </p>
+      <p>
+        <em>Simple Blaster</em>
+      </p>
+      <p>
+        <em>1d4 sonic damage, range 30/120, reload 16, one-handed</em>
+      </p>
       <p>This pistol emits powerful sonic waves that can disorient targets. It uses power cells and has a high capacity.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the sonic pistol. On hit: 1d4 sonic damage + your Dexterity modifier.</p>
       <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the sonic pistol while wielding it in your off-hand. On hit: 1d4 sonic damage without modifiers.</p>
     </description>
@@ -213,23 +239,29 @@
       <set name="range">30/120</set>
       <set name="damage" type="sonic">1d4</set>
       <set name="reload">16</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SONIC_PISTOL</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Simple Ranged" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
     </rules>
   </element>
   <element name="cryo pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_PISTOL">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
     <description>
-      <p><strong>Cryo Pistol</strong></p>
-      <p><em>Simple Blaster</em></p>
-      <p><em>1d4 cold damage, range 30/120, reload 8, one-handed</em></p>
+      <p>
+        <strong>Cryo Pistol</strong>
+      </p>
+      <p>
+        <em>Simple Blaster</em>
+      </p>
+      <p>
+        <em>1d4 cold damage, range 30/120, reload 8, one-handed</em>
+      </p>
       <p>This pistol fires freezing blasts that can chill targets. It uses power cells.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the cryo pistol. On hit: 1d4 cold damage + your Dexterity modifier.</p>
       <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the cryo pistol while wielding it in your off-hand. On hit: 1d4 cold damage without modifiers.</p>
     </description>
@@ -241,23 +273,29 @@
       <set name="range">30/120</set>
       <set name="damage" type="cold">1d4</set>
       <set name="reload">8</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CRYO_PISTOL</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Simple Ranged" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
     </rules>
   </element>
   <element name="slugthrower pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLUGTHROWER_PISTOL">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_KINETIC</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_KINETIC</supports>
     <description>
-      <p><strong>Slugthrower Pistol</strong></p>
-      <p><em>Simple Blaster</em></p>
-      <p><em>1d6 kinetic damage, range 40/160, reload 16, one-handed</em></p>
+      <p>
+        <strong>Slugthrower Pistol</strong>
+      </p>
+      <p>
+        <em>Simple Blaster</em>
+      </p>
+      <p>
+        <em>1d6 kinetic damage, range 40/160, reload 16, one-handed</em>
+      </p>
       <p>This pistol fires kinetic slugs. It uses slug cartridges and requires Strength 11 to use.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the slugthrower pistol. On hit: 1d6 kinetic damage + your Dexterity modifier.</p>
       <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the slugthrower pistol while wielding it in your off-hand. On hit: 1d6 kinetic damage without modifiers.</p>
     </description>
@@ -269,24 +307,29 @@
       <set name="range">40/160</set>
       <set name="damage" type="kinetic">1d6</set>
       <set name="reload">16</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SLUGTHROWER_PISTOL</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Simple Ranged" />
-      <stat name="prerequisite" value="Strength 11" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
     </rules>
   </element>
   <element name="disruptor pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DISRUPTOR_PISTOL">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
     <description>
-      <p><strong>Disruptor Pistol</strong></p>
-      <p><em>Simple Blaster</em></p>
-      <p><em>1d6 acid damage, range 45/180, reload 12, one-handed</em></p>
+      <p>
+        <strong>Disruptor Pistol</strong>
+      </p>
+      <p>
+        <em>Simple Blaster</em>
+      </p>
+      <p>
+        <em>1d6 acid damage, range 45/180, reload 12, one-handed</em>
+      </p>
       <p>This pistol fires corrosive blasts. It uses power cells and requires Strength 11 to use.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the disruptor pistol. On hit: 1d6 acid damage + your Dexterity modifier.</p>
       <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the disruptor pistol while wielding it in your off-hand. On hit: 1d6 acid damage without modifiers.</p>
     </description>
@@ -298,24 +341,29 @@
       <set name="range">45/180</set>
       <set name="damage" type="acid">1d6</set>
       <set name="reload">12</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_DISRUPTOR_PISTOL</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Simple Ranged" />
-      <stat name="prerequisite" value="Strength 11" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
     </rules>
   </element>
   <element name="stealth pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_STEALTH_PISTOL">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p><strong>Stealth Pistol</strong></p>
-      <p><em>Simple Blaster</em></p>
-      <p><em>1d6 energy damage, silent, two-handed, reload 6</em></p>
+      <p>
+        <strong>Stealth Pistol</strong>
+      </p>
+      <p>
+        <em>Simple Blaster</em>
+      </p>
+      <p>
+        <em>1d6 energy damage, silent, two-handed, reload 6</em>
+      </p>
       <p>This silent blaster pistol fires concentrated energy bolts without sound. It uses power cells and requires two hands to operate.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the stealth pistol. On hit: 1d6 energy damage + your Dexterity modifier.</p>
     </description>
     <setters>
@@ -325,23 +373,29 @@
       <set name="slot">twohand</set>
       <set name="damage" type="energy">1d6</set>
       <set name="reload">6</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_STEALTH_PISTOL</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Simple Ranged" />
       <grant type="Tag" name="Silent" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
     </rules>
   </element>
   <element name="wrist blaster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_BLASTER">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
-      <p><strong>Wrist Blaster</strong></p>
-      <p><em>Simple Blaster</em></p>
-      <p><em>1d6 energy damage, range 30/120, reload 8, one-handed</em></p>
+      <p>
+        <strong>Wrist Blaster</strong>
+      </p>
+      <p>
+        <em>Simple Blaster</em>
+      </p>
+      <p>
+        <em>1d6 energy damage, range 30/120, reload 8, one-handed</em>
+      </p>
       <p>This disguised wrist-mounted blaster fires energy bolts. It can't be disarmed, you can still use your hand but can't use the weapon when holding something.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the wrist blaster. On hit: 1d6 energy damage + your Dexterity modifier.</p>
       <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the wrist blaster while wielding it in your off-hand. On hit: 1d6 energy damage without modifiers.</p>
     </description>
@@ -353,25 +407,31 @@
       <set name="range">30/120</set>
       <set name="damage" type="energy">1d6</set>
       <set name="reload">8</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_BLASTER</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Simple Ranged" />
       <grant type="Tag" name="Disguised" />
       <grant type="Tag" name="Can't be Disarmed" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_QUICK_SHOT"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
     </rules>
   </element>
   <element name="Wrist Launcher with Dart Attachment" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER_DART">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
     <description>
-      <p><strong>Wrist Launcher with Dart Attachment</strong></p>
-      <p><em>Simple Blaster</em></p>
-      <p><em>Range 30/120, one-handed</em></p>
+      <p>
+        <strong>Wrist Launcher with Dart Attachment</strong>
+      </p>
+      <p>
+        <em>Simple Blaster</em>
+      </p>
+      <p>
+        <em>Range 30/120, one-handed</em>
+      </p>
       <p>This wrist-mounted launcher with dart attachment. It can't be disarmed, you can still use your hand but can't use the weapon when holding something.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Dart:</strong> As an Action, Shoot a Dart with the wrist launcher with dart attachment at a target. On hit: Damage and conditions depend on the dart.</p>
     </description>
     <setters>
@@ -380,23 +440,29 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="range">30/120</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Simple Ranged" />
       <grant type="Tag" name="Can't be Disarmed" />
-      <grant type="Action" id="ID_ACTION_DART"/>
+      <grant type="Action" id="ID_ACTION_DART" />
     </rules>
   </element>
   <element name="Wrist Launcher with Rocket Attachment" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER_ROCKET">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
     <description>
-      <p><strong>Wrist Launcher with Rocket Attachment</strong></p>
-      <p><em>Simple Blaster</em></p>
-      <p><em>Range 30/120, one-handed</em></p>
+      <p>
+        <strong>Wrist Launcher with Rocket Attachment</strong>
+      </p>
+      <p>
+        <em>Simple Blaster</em>
+      </p>
+      <p>
+        <em>Range 30/120, one-handed</em>
+      </p>
       <p>This wrist-mounted launcher with rocket attachment. It can't be disarmed, you can still use your hand but can't use the weapon when holding something.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Rocket:</strong> As an Action, Shoot a Rocket with the wrist launcher with rocket attachment at a target. On hit: Damage and conditions depend on the rocket.</p>
     </description>
     <setters>
@@ -405,23 +471,29 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="range">30/120</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Simple Ranged" />
       <grant type="Tag" name="Can't be Disarmed" />
-      <grant type="Action" id="ID_ACTION_ROCKET"/>
+      <grant type="Action" id="ID_ACTION_ROCKET" />
     </rules>
   </element>
   <element name="Wrist Launcher with FiberCord Whip Attachment" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER_WHIP">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
     <description>
-      <p><strong>Wrist Launcher with FiberCord Whip Attachment</strong></p>
-      <p><em>Simple Blaster</em></p>
-      <p><em>Range 15 feet, one-handed</em></p>
+      <p>
+        <strong>Wrist Launcher with FiberCord Whip Attachment</strong>
+      </p>
+      <p>
+        <em>Simple Blaster</em>
+      </p>
+      <p>
+        <em>Range 15 feet, one-handed</em>
+      </p>
       <p>This wrist-mounted launcher with fiber cord whip attachment. It can't be disarmed, you can still use your hand but can't use the weapon when holding something.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Whip:</strong> As an Action, Use the fiber cord whip attachment on the wrist launcher. The target must make a Dexterity saving throw (DC 8 + proficiency bonus + your Dexterity modifier). On a failed save, the target is restrained. While restrained, the target can use an action on their turn to make a Strength saving throw (DC 8 + proficiency bonus + your Strength modifier). On a failed save, they remain restrained. On a successful save, they are freed. You can't use bonus actions or hold something in that hand while restraining someone.</p>
     </description>
     <setters>
@@ -430,23 +502,29 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="range">15 feet</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Simple Ranged" />
       <grant type="Tag" name="Can't be Disarmed" />
-      <grant type="Action" id="ID_ACTION_WHIP"/>
+      <grant type="Action" id="ID_ACTION_WHIP" />
     </rules>
   </element>
   <element name="Wrist Launcher with WristFlame Attachment" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER_FLAME">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_FIRE</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_FIRE</supports>
     <description>
-      <p><strong>Wrist Launcher with WristFlame Attachment</strong></p>
-      <p><em>Simple Blaster</em></p>
-      <p><em>1d10 fire damage, range 15 feet line, reload 2, one-handed</em></p>
+      <p>
+        <strong>Wrist Launcher with WristFlame Attachment</strong>
+      </p>
+      <p>
+        <em>Simple Blaster</em>
+      </p>
+      <p>
+        <em>1d10 fire damage, range 15 feet line, reload 2, one-handed</em>
+      </p>
       <p>This wrist-mounted launcher with flame attachment. It can't be disarmed, you can still use your hand but can't use the weapon when holding something.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Flame:</strong> As an Action, Flame multiple targets in a 15 feet cone in front of you. Each target must make a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes 1d10 fire damage + your Dexterity modifier and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</p>
     </description>
     <setters>
@@ -457,23 +535,29 @@
       <set name="range">15 feet</set>
       <set name="damage" type="fire">1d10</set>
       <set name="reload">2</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Simple Ranged" />
       <grant type="Tag" name="Can't be Disarmed" />
-      <grant type="Action" id="ID_ACTION_FLAME"/>
+      <grant type="Action" id="ID_ACTION_FLAME" />
     </rules>
   </element>
   <element name="blaster rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BLASTER_RIFLE">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p><strong>Blaster Rifle</strong></p>
-      <p><em>Martial Blaster</em></p>
-      <p><em>1d8 energy damage, range 105/420, reload 12, two-handed</em></p>
+      <p>
+        <strong>Blaster Rifle</strong>
+      </p>
+      <p>
+        <em>Martial Blaster</em>
+      </p>
+      <p>
+        <em>1d8 energy damage, range 105/420, reload 12, two-handed</em>
+      </p>
       <p>This standard military rifle fires concentrated energy bolts. It uses power cells and has a moderate capacity.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the blaster rifle. On hit: 1d8 energy damage + your Dexterity modifier.</p>
     </description>
     <setters>
@@ -484,22 +568,28 @@
       <set name="range">105/420</set>
       <set name="damage" type="energy">1d8</set>
       <set name="reload">12</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_RIFLE</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Martial Ranged" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
     </rules>
   </element>
   <element name="disruptor rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DISRUPTOR_RIFLE">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p><strong>Disruptor Rifle</strong></p>
-      <p><em>Martial Blaster</em></p>
-      <p><em>1d8 acid damage, range 120/470, reload 9, two-handed</em></p>
+      <p>
+        <strong>Disruptor Rifle</strong>
+      </p>
+      <p>
+        <em>Martial Blaster</em>
+      </p>
+      <p>
+        <em>1d8 acid damage, range 120/470, reload 9, two-handed</em>
+      </p>
       <p>This rifle fires corrosive blasts that can dissolve armor and flesh. It uses power cells.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the disruptor rifle. On hit: 1d8 acid damage + your Dexterity modifier.</p>
       <p>• <strong>Reload:</strong> Action; After 9 shots the disruptor rifle needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
@@ -511,23 +601,29 @@
       <set name="range">120/470</set>
       <set name="damage" type="acid">1d8</set>
       <set name="reload">9</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_DISRUPTOR_RIFLE</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Martial Ranged" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="heavy bowcaster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_HEAVY_BOWCASTER">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p><strong>Heavy Bowcaster</strong></p>
-      <p><em>Martial Blaster</em></p>
-      <p><em>1d12 energy damage, range 90/360, reload 4, two-handed</em></p>
+      <p>
+        <strong>Heavy Bowcaster</strong>
+      </p>
+      <p>
+        <em>Martial Blaster</em>
+      </p>
+      <p>
+        <em>1d12 energy damage, range 90/360, reload 4, two-handed</em>
+      </p>
       <p>This massive bowcaster fires powerful energy bolts that can knock targets back. It uses power cells and has a very low capacity. Requires Strength 17 to use.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the heavy bowcaster. On hit: 1d12 energy damage + your Dexterity modifier.</p>
       <p>• <strong>Reload:</strong> Action; After 4 shots the heavy bowcaster needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
@@ -539,24 +635,29 @@
       <set name="range">90/360</set>
       <set name="damage" type="energy">1d12</set>
       <set name="reload">4</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_BOWCASTER</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Martial Ranged" />
-      <stat name="prerequisite" value="Strength 17" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="ion rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_RIFLE">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p><strong>Ion Rifle</strong></p>
-      <p><em>Martial Blaster</em></p>
-      <p><em>1d6 ion damage, range 80/320, reload 8, two-handed</em></p>
+      <p>
+        <strong>Ion Rifle</strong>
+      </p>
+      <p>
+        <em>Martial Blaster</em>
+      </p>
+      <p>
+        <em>1d6 ion damage, range 80/320, reload 8, two-handed</em>
+      </p>
       <p>This rifle fires ion bolts that can disable droids and electronics. It uses power cells and has a moderate capacity.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the ion rifle. On hit: 1d6 ion damage + your Dexterity modifier.</p>
       <p>• <strong>Reload:</strong> Action; After 8 shots the ion rifle needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
@@ -568,23 +669,29 @@
       <set name="range">80/320</set>
       <set name="damage" type="ion">1d6</set>
       <set name="reload">8</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ION_RIFLE</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Martial Ranged" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="sonic rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SONIC_RIFLE">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p><strong>Sonic Rifle</strong></p>
-      <p><em>Martial Blaster</em></p>
-      <p><em>1d8 sonic damage, range 80/320, reload 8, two-handed</em></p>
+      <p>
+        <strong>Sonic Rifle</strong>
+      </p>
+      <p>
+        <em>Martial Blaster</em>
+      </p>
+      <p>
+        <em>1d8 sonic damage, range 80/320, reload 8, two-handed</em>
+      </p>
       <p>This rifle emits powerful sonic waves that can disorient targets. It uses power cells and has a low capacity.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the sonic rifle. On hit: 1d8 sonic damage + your Dexterity modifier.</p>
       <p>• <strong>Reload:</strong> Action; After 8 shots the sonic rifle needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
@@ -596,24 +703,29 @@
       <set name="range">80/320</set>
       <set name="damage" type="sonic">1d8</set>
       <set name="reload">8</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SONIC_RIFLE</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Martial Ranged" />
-      <stat name="prerequisite" value="Strength 11" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="slugthrower rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLUGTHROWER_RIFLE">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p><strong>Slugthrower Rifle</strong></p>
-      <p><em>Martial Blaster</em></p>
-      <p><em>1d8 kinetic damage, range 105/420, reload 12, two-handed</em></p>
+      <p>
+        <strong>Slugthrower Rifle</strong>
+      </p>
+      <p>
+        <em>Martial Blaster</em>
+      </p>
+      <p>
+        <em>1d8 kinetic damage, range 105/420, reload 12, two-handed</em>
+      </p>
       <p>This rifle fires solid metal slugs using electromagnetic acceleration. It uses slug cartridges and has a moderate capacity.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the slugthrower rifle. On hit: 1d8 kinetic damage + your Dexterity modifier.</p>
       <p>• <strong>Reload:</strong> Action; After 12 shots the slugthrower rifle needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
@@ -625,23 +737,29 @@
       <set name="range">105/420</set>
       <set name="damage" type="kinetic">1d8</set>
       <set name="reload">12</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SLUGTHROWER_RIFLE</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Martial Ranged" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="cryo rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_RIFLE">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p><strong>Cryo Rifle</strong></p>
-      <p><em>Martial Blaster</em></p>
-      <p><em>2d4 cold damage, range 50/200, reload 4, two-handed</em></p>
+      <p>
+        <strong>Cryo Rifle</strong>
+      </p>
+      <p>
+        <em>Martial Blaster</em>
+      </p>
+      <p>
+        <em>2d4 cold damage, range 50/200, reload 4, two-handed</em>
+      </p>
       <p>This rifle fires cryogenic blasts that can freeze targets. It uses power cells and has a very low capacity. Requires Strength 11 to use.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the cryo rifle. On hit: 2d4 cold damage + your Dexterity modifier.</p>
       <p>• <strong>Reload:</strong> Action; After 4 shots the cryo rifle needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
@@ -653,24 +771,29 @@
       <set name="range">50/200</set>
       <set name="damage" type="cold">2d4</set>
       <set name="reload">4</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CRYO_RIFLE</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Martial Ranged" />
-      <stat name="prerequisite" value="Strength 11" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="railgun" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_RAILGUN">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p><strong>Railgun</strong></p>
-      <p><em>Martial Blaster</em></p>
-      <p><em>1d10 ion damage, range 120/470, reload 1, two-handed</em></p>
+      <p>
+        <strong>Railgun</strong>
+      </p>
+      <p>
+        <em>Martial Blaster</em>
+      </p>
+      <p>
+        <em>1d10 ion damage, range 120/470, reload 1, two-handed</em>
+      </p>
       <p>This powerful railgun accelerates metal slugs to incredible speeds using electromagnetic fields. It uses power cells and has a very low capacity.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the railgun. On hit: 1d10 ion damage + your Dexterity modifier.</p>
       <p>• <strong>Reload:</strong> Action; After 1 shot the railgun needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
@@ -682,23 +805,29 @@
       <set name="range">120/470</set>
       <set name="damage" type="ion">1d10</set>
       <set name="reload">1</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_RAILGUN</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Martial Ranged" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="arc caster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ARC_CASTER">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p><strong>Arc Caster</strong></p>
-      <p><em>Martial Blaster</em></p>
-      <p><em>2d4 lightning damage, range 60/240, reload 9, two-handed</em></p>
+      <p>
+        <strong>Arc Caster</strong>
+      </p>
+      <p>
+        <em>Martial Blaster</em>
+      </p>
+      <p>
+        <em>2d4 lightning damage, range 60/240, reload 9, two-handed</em>
+      </p>
       <p>This weapon fires arcing bolts of electricity that can chain to nearby targets. It uses power cells and has a low capacity. Requires Strength 11 to use.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the arc caster. On hit: 2d4 lightning damage + your Dexterity modifier. Can hit a secondary target in the same line for 1d4 lightning damage.</p>
       <p>• <strong>Reload:</strong> Action; After 9 shots the arc caster needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
@@ -710,24 +839,29 @@
       <set name="range">60/240</set>
       <set name="damage" type="lightning">2d4</set>
       <set name="reload">9</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ARC_CASTER</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Martial Ranged" />
-      <stat name="prerequisite" value="Strength 11" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="sniper rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SNIPER_RIFLE">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p><strong>Sniper Rifle</strong></p>
-      <p><em>Martial Blaster</em></p>
-      <p><em>1d12 energy damage, range 150/600, reload 2, two-handed</em></p>
+      <p>
+        <strong>Sniper Rifle</strong>
+      </p>
+      <p>
+        <em>Martial Blaster</em>
+      </p>
+      <p>
+        <em>1d12 energy damage, range 150/600, reload 2, two-handed</em>
+      </p>
       <p>This precision long-range rifle fires concentrated energy bolts with exceptional accuracy. It uses power cells and has a very low capacity. Requires Strength 13 to use.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the sniper rifle. On hit: 1d12 energy damage + your Dexterity modifier.</p>
       <p>• <strong>Dart:</strong> As an Action, Shoot a Dart with the sniper rifle at a target. On hit: Damage and conditions depend on the dart.</p>
     </description>
@@ -739,24 +873,29 @@
       <set name="range">150/600</set>
       <set name="damage" type="energy">1d12</set>
       <set name="reload">2</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SNIPER_RIFLE</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Martial Ranged" />
-      <stat name="prerequisite" value="Strength 13" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_DART"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_DART" />
     </rules>
   </element>
   <element name="minigun/rotary cannon" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MINIGUN_ROTARY_CANNON">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p><strong>Minigun/Rotary Cannon</strong></p>
-      <p><em>Martial Blaster</em></p>
-      <p><em>1d10 energy damage, range 75 ft cone, reload 4, two-handed</em></p>
+      <p>
+        <strong>Minigun/Rotary Cannon</strong>
+      </p>
+      <p>
+        <em>Martial Blaster</em>
+      </p>
+      <p>
+        <em>1d10 energy damage, range 75 ft cone, reload 4, two-handed</em>
+      </p>
       <p>This rapid-fire weapon unleashes a devastating cone of energy bolts. It uses power cells and has a very low capacity. Requires Strength 13 to use.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Blast:</strong> As an Action, Blast multiple targets in a 75 ft cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes 1d10 energy damage + your Dexterity modifier. On a successful save, the target takes half damage.</p>
       <p>• <strong>Reload:</strong> Action; After 4 shots the minigun/rotary cannon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
@@ -767,24 +906,29 @@
       <set name="slot">twohand</set>
       <set name="damage" type="energy">1d10</set>
       <set name="reload">4</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_MINIGUN_ROTARY_CANNON</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Martial Ranged" />
-      <stat name="prerequisite" value="Strength 13" />
-      <grant type="Action" id="ID_ACTION_BLAST"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
+      <grant type="Action" id="ID_ACTION_BLAST" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="flamethrower" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FLAMETHROWER">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p><strong>Flamethrower</strong></p>
-      <p><em>Martial Blaster</em></p>
-      <p><em>2d6 fire damage, range 55 ft cone, reload 2, two-handed</em></p>
+      <p>
+        <strong>Flamethrower</strong>
+      </p>
+      <p>
+        <em>Martial Blaster</em>
+      </p>
+      <p>
+        <em>2d6 fire damage, range 55 ft cone, reload 2, two-handed</em>
+      </p>
       <p>This weapon unleashes a devastating cone of flames. It uses fuel canisters and has a very low capacity.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Flame:</strong> As an Action, Flame multiple targets in a 55 ft cone in front of you. Each target must make a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes 2d6 fire damage + your Dexterity modifier and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</p>
       <p>• <strong>Reload:</strong> Action; After 2 shots the flamethrower needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
@@ -795,23 +939,29 @@
       <set name="slot">twohand</set>
       <set name="damage" type="fire">2d6</set>
       <set name="reload">2</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_FLAMETHROWER</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Martial Ranged" />
-      <grant type="Action" id="ID_ACTION_FLAME"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
+      <grant type="Action" id="ID_ACTION_FLAME" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="cycler rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CYCLER_RIFLE">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p><strong>Cycler Rifle</strong></p>
-      <p><em>Martial Blaster</em></p>
-      <p><em>1d10 kinetic damage, range 100/400, reload 4, two-handed</em></p>
+      <p>
+        <strong>Cycler Rifle</strong>
+      </p>
+      <p>
+        <em>Martial Blaster</em>
+      </p>
+      <p>
+        <em>1d10 kinetic damage, range 100/400, reload 4, two-handed</em>
+      </p>
       <p>This rapid-fire slugthrower rifle can unleash devastating bursts. It uses slug cartridges and has a very low capacity. Requires Strength 12 to use.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the cycler rifle. On hit: 1d10 kinetic damage + your Dexterity modifier.</p>
       <p>• <strong>Reload:</strong> Action; After 4 shots the cycler rifle needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
@@ -823,24 +973,29 @@
       <set name="range">100/400</set>
       <set name="damage" type="kinetic">1d10</set>
       <set name="reload">4</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CYCLER_RIFLE</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Martial Ranged" />
-      <stat name="prerequisite" value="Strength 12" />
-      <grant type="Action" id="ID_ACTION_SHOOT"/>
-      <grant type="Action" id="ID_ACTION_RELOAD"/>
+      <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSABER">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
-      <p><strong>Lightsaber</strong></p>
-      <p><em>Simple Lightweapon</em></p>
-      <p><em>1d6 energy damage, finesse, one-handed</em></p>
+      <p>
+        <strong>Lightsaber</strong>
+      </p>
+      <p>
+        <em>Simple Lightweapon</em>
+      </p>
+      <p>
+        <em>1d6 energy damage, finesse, one-handed</em>
+      </p>
       <p>The iconic weapon of the Jedi and Sith, a lightsaber projects a blade of pure plasma energy. It uses the Force to ignite and can be wielded with exceptional precision.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the lightsaber. On hit: 1d6 energy damage + your Strength or Dexterity modifier.</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the lightsaber while wielding it in your off-hand. On hit: 1d6 energy damage without modifiers.</p>
       <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the lightsaber, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength or Dexterity modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
@@ -851,24 +1006,30 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="energy">1d6</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Simple Melee" />
-      <grant type="Action" id="ID_ACTION_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_STRIKE" />
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE" />
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE" />
     </rules>
   </element>
   <element name="lightstaff" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSTAFF">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
     <description>
-      <p><strong>Lightstaff</strong></p>
-      <p><em>Simple Lightweapon</em></p>
-      <p><em>1d6 energy damage (2d4 when used with two hands), versatile</em></p>
+      <p>
+        <strong>Lightstaff</strong>
+      </p>
+      <p>
+        <em>Simple Lightweapon</em>
+      </p>
+      <p>
+        <em>1d6 energy damage (2d4 when used with two hands), versatile</em>
+      </p>
       <p>A training lightsaber designed for Jedi initiates, this weapon projects a shorter plasma blade and is easier to handle than a full lightsaber.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the lightstaff. On hit: 1d6 energy damage + your Strength modifier (or 2d4 energy damage + your Strength modifier if used with two hands).</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the lightstaff while wielding it in your off-hand. On hit: 1d6 energy damage without modifiers.</p>
       <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the lightstaff, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
@@ -880,24 +1041,30 @@
       <set name="slot">onehand</set>
       <set name="damage" type="energy">1d6</set>
       <set name="versatile">2d4</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSTAFF</set>
     </setters>
     <rules>
-      <stat name="ability" value="strength" />
-      <stat name="type" value="Simple Melee" />
-      <grant type="Action" id="ID_ACTION_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_STRIKE" />
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE" />
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE" />
     </rules>
   </element>
   <element name="crossguard saber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CROSSGUARD_SABER">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p><strong>Crossguard Saber</strong></p>
-      <p><em>Martial Lightweapon</em></p>
-      <p><em>2d6 energy damage, two-handed</em></p>
+      <p>
+        <strong>Crossguard Saber</strong>
+      </p>
+      <p>
+        <em>Martial Lightweapon</em>
+      </p>
+      <p>
+        <em>2d6 energy damage, two-handed</em>
+      </p>
       <p>This unique lightsaber design features a crossguard of plasma blades that protect the wielder's hands. It requires exceptional dexterity to use safely. Requires Dexterity 13 to use.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the crossguard saber. On hit: 2d6 energy damage + your Strength modifier.</p>
       <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the crossguard saber, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
@@ -907,24 +1074,29 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="energy">2d6</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CROSSGUARD_SABER</set>
     </setters>
     <rules>
-      <stat name="ability" value="strength" />
-      <stat name="type" value="Martial Melee" />
-      <stat name="prerequisite" value="Dexterity 13" />
-      <grant type="Action" id="ID_ACTION_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_STRIKE" />
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE" />
     </rules>
   </element>
   <element name="lightwhip" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTWHIP">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
     <description>
-      <p><strong>Lightwhip</strong></p>
-      <p><em>Martial Lightweapon</em></p>
-      <p><em>1d6 energy damage, reach 10 ft, finesse</em></p>
+      <p>
+        <strong>Lightwhip</strong>
+      </p>
+      <p>
+        <em>Martial Lightweapon</em>
+      </p>
+      <p>
+        <em>1d6 energy damage, reach 10 ft, finesse</em>
+      </p>
       <p>This exotic weapon consists of a handle that projects a flexible plasma whip. It can strike at enemies up to 10 feet away and requires great skill to wield effectively.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the lightwhip. On hit: 1d6 energy damage + your Strength or Dexterity modifier.</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the lightwhip while wielding it in your off-hand. On hit: 1d6 energy damage without modifiers.</p>
     </description>
@@ -934,23 +1106,29 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="energy">1d6</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTWHIP</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Martial Melee" />
-      <grant type="Action" id="ID_ACTION_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_STRIKE" />
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE" />
     </rules>
   </element>
   <element name="martial lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MARTIAL_LIGHTSABER">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
     <description>
-      <p><strong>Martial Lightsaber</strong></p>
-      <p><em>Martial Lightweapon</em></p>
-      <p><em>1d8 energy damage (1d10 when used with two hands), versatile</em></p>
+      <p>
+        <strong>Martial Lightsaber</strong>
+      </p>
+      <p>
+        <em>Martial Lightweapon</em>
+      </p>
+      <p>
+        <em>1d8 energy damage (1d10 when used with two hands), versatile</em>
+      </p>
       <p>A more powerful lightsaber design used by skilled Force users. It can be wielded with one or two hands for increased damage.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the martial lightsaber. On hit: 1d8 energy damage + your Strength modifier (or 1d10 energy damage + your Strength modifier if used with two hands).</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the martial lightsaber while wielding it in your off-hand. On hit: 1d8 energy damage without modifiers.</p>
       <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the martial lightsaber, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
@@ -962,24 +1140,30 @@
       <set name="slot">onehand</set>
       <set name="damage" type="energy">1d8</set>
       <set name="versatile">1d10</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_LIGHTSABER</set>
     </setters>
     <rules>
-      <stat name="ability" value="strength" />
-      <stat name="type" value="Martial Melee" />
-      <grant type="Action" id="ID_ACTION_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_STRIKE" />
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE" />
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE" />
     </rules>
   </element>
   <element name="lightsaber pike" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSABER_PIKE">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
     <description>
-      <p><strong>Lightsaber Pike</strong></p>
-      <p><em>Martial Lightweapon</em></p>
-      <p><em>1d10 energy damage, two-handed, reach 10 ft</em></p>
+      <p>
+        <strong>Lightsaber Pike</strong>
+      </p>
+      <p>
+        <em>Martial Lightweapon</em>
+      </p>
+      <p>
+        <em>1d10 energy damage, two-handed, reach 10 ft</em>
+      </p>
       <p>This extended lightsaber design provides superior reach in combat. It requires good dexterity to handle the longer weapon effectively. Requires Dexterity 11 to use.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the lightsaber pike. On hit: 1d10 energy damage + your Strength modifier.</p>
       <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the lightsaber pike, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
@@ -989,24 +1173,29 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="energy">1d10</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER_PIKE</set>
     </setters>
     <rules>
-      <stat name="ability" value="strength" />
-      <stat name="type" value="Martial Melee" />
-      <stat name="prerequisite" value="Dexterity 11" />
-      <grant type="Action" id="ID_ACTION_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_STRIKE" />
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE" />
     </rules>
   </element>
   <element name="double bladed lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DOUBLE_BLADED_LIGHTSABER">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_ENERGY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
-      <p><strong>Double Bladed Lightsaber</strong></p>
-      <p><em>Martial Lightweapon</em></p>
-      <p><em>1d8 energy damage, two-handed, finesse</em></p>
+      <p>
+        <strong>Double Bladed Lightsaber</strong>
+      </p>
+      <p>
+        <em>Martial Lightweapon</em>
+      </p>
+      <p>
+        <em>1d8 energy damage, two-handed, finesse</em>
+      </p>
       <p>This deadly weapon features plasma blades extending from both ends of the hilt. It requires exceptional skill to wield safely and effectively.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the double bladed lightsaber. On hit: 1d8 energy damage + your Strength or Dexterity modifier.</p>
       <p>• <strong>Slash:</strong> As an Action, Make a sweeping melee attack with the double bladed lightsaber against all creatures standing in a 15 foot horizontal line originating from you. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your Strength or Dexterity modifier). A creature takes 1d8 energy damage without modifiers on a failed save, or half as much on a successful one.</p>
       <p>• <strong>Back Strike:</strong> As a Bonus Action, Make a melee attack with the back end of the double bladed lightsaber. On hit: 1d8 energy damage without modifiers.</p>
@@ -1017,24 +1206,30 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="energy">1d8</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_LIGHTWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_BLADED_LIGHTSABER</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Martial Melee" />
-      <grant type="Action" id="ID_ACTION_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_SLASH"/>
-      <grant type="Action" id="ID_ACTION_BACK_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_STRIKE" />
+      <grant type="Action" id="ID_ACTION_SLASH" />
+      <grant type="Action" id="ID_ACTION_BACK_STRIKE" />
     </rules>
   </element>
   <element name="vibrospear" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROSPEAR">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
     <description>
-      <p><strong>Vibrospear</strong></p>
-      <p><em>Simple Vibroweapon</em></p>
-      <p><em>1d6 kinetic damage (2d4 when used with two hands), versatile, thrown range 25/75</em></p>
+      <p>
+        <strong>Vibrospear</strong>
+      </p>
+      <p>
+        <em>Simple Vibroweapon</em>
+      </p>
+      <p>
+        <em>1d6 kinetic damage (2d4 when used with two hands), versatile, thrown range 25/75</em>
+      </p>
       <p>This spear features a vibrating blade that enhances its cutting power. It can be used in melee combat or thrown at enemies.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibrospear. On hit: 1d6 kinetic damage + your Strength modifier (or 2d4 kinetic damage + your Strength modifier if used with two hands).</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the vibrospear while wielding it in your off-hand. On hit: 1d6 kinetic damage without modifiers.</p>
       <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibrospear, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
@@ -1047,24 +1242,30 @@
       <set name="range">25/75</set>
       <set name="damage" type="kinetic">1d6</set>
       <set name="versatile">2d4</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSPEAR</set>
     </setters>
     <rules>
-      <stat name="ability" value="strength" />
-      <stat name="type" value="Simple Melee" />
-      <grant type="Action" id="ID_ACTION_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_STRIKE" />
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE" />
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE" />
     </rules>
   </element>
   <element name="vibrodagger" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBRODAGGER">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
     <description>
-      <p><strong>Vibrodagger</strong></p>
-      <p><em>Simple Vibroweapon</em></p>
-      <p><em>1d4 kinetic damage, thrown range 20/60, finesse</em></p>
+      <p>
+        <strong>Vibrodagger</strong>
+      </p>
+      <p>
+        <em>Simple Vibroweapon</em>
+      </p>
+      <p>
+        <em>1d4 kinetic damage, thrown range 20/60, finesse</em>
+      </p>
       <p>This small blade features a vibrating edge that enhances its cutting power. It can be used for precise melee attacks or thrown at enemies.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibrodagger. On hit: 1d4 kinetic damage + your Strength or Dexterity modifier.</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the vibrodagger while wielding it in your off-hand. On hit: 1d4 kinetic damage without modifiers.</p>
     </description>
@@ -1075,23 +1276,29 @@
       <set name="slot">onehand</set>
       <set name="range">20/60</set>
       <set name="damage" type="kinetic">1d4</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBRODAGGER</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Simple Melee" />
-      <grant type="Action" id="ID_ACTION_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_STRIKE" />
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE" />
     </rules>
   </element>
   <element name="vibrostaff" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROSTAFF">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
     <description>
-      <p><strong>Vibrostaff</strong></p>
-      <p><em>Simple Vibroweapon</em></p>
-      <p><em>1d6 kinetic damage (2d4 when used with two hands), versatile</em></p>
+      <p>
+        <strong>Vibrostaff</strong>
+      </p>
+      <p>
+        <em>Simple Vibroweapon</em>
+      </p>
+      <p>
+        <em>1d6 kinetic damage (2d4 when used with two hands), versatile</em>
+      </p>
       <p>This staff features vibrating blades that enhance its striking power. It can be wielded with one or two hands for increased damage.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibrostaff. On hit: 1d6 kinetic damage + your Strength modifier (or 2d4 kinetic damage + your Strength modifier if used with two hands).</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the vibrostaff while wielding it in your off-hand. On hit: 1d6 kinetic damage without modifiers.</p>
       <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibrostaff, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
@@ -1103,24 +1310,30 @@
       <set name="slot">onehand</set>
       <set name="damage" type="kinetic">1d6</set>
       <set name="versatile">2d4</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_SIMPLE_VIBROWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSTAFF</set>
     </setters>
     <rules>
-      <stat name="ability" value="strength" />
-      <stat name="type" value="Simple Melee" />
-      <grant type="Action" id="ID_ACTION_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_STRIKE" />
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE" />
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE" />
     </rules>
   </element>
   <element name="vibro double-blade" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBRO_DOUBLE_BLADE">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
-      <p><strong>Vibro Double-Blade</strong></p>
-      <p><em>Martial Vibroweapon</em></p>
-      <p><em>1d8 kinetic damage, two-handed, finesse</em></p>
+      <p>
+        <strong>Vibro Double-Blade</strong>
+      </p>
+      <p>
+        <em>Martial Vibroweapon</em>
+      </p>
+      <p>
+        <em>1d8 kinetic damage, two-handed, finesse</em>
+      </p>
       <p>This deadly weapon features vibrating blades on both ends. It requires exceptional skill to wield effectively in combat.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibro double-blade. On hit: 1d8 kinetic damage + your Strength or Dexterity modifier.</p>
       <p>• <strong>Slash:</strong> As an Action, Make a sweeping melee attack with the vibro double-blade against all creatures standing in a 15 foot horizontal line originating from you. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your Strength or Dexterity modifier). A creature takes 1d8 kinetic damage without modifiers on a failed save, or half as much on a successful one.</p>
       <p>• <strong>Back Strike:</strong> As a Bonus Action, Make a melee attack with the back end of the vibro double-blade. On hit: 1d8 kinetic damage without modifiers.</p>
@@ -1131,24 +1344,30 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="kinetic">1d8</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBRO_DOUBLE_BLADE</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Martial Melee" />
-      <grant type="Action" id="ID_ACTION_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_SLASH"/>
-      <grant type="Action" id="ID_ACTION_BACK_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_STRIKE" />
+      <grant type="Action" id="ID_ACTION_SLASH" />
+      <grant type="Action" id="ID_ACTION_BACK_STRIKE" />
     </rules>
   </element>
   <element name="electrostaff" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTROSTAFF">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
-      <p><strong>Electrostaff</strong></p>
-      <p><em>Martial Vibroweapon</em></p>
-      <p><em>1d6 lightning damage, two-handed, finesse</em></p>
+      <p>
+        <strong>Electrostaff</strong>
+      </p>
+      <p>
+        <em>Martial Vibroweapon</em>
+      </p>
+      <p>
+        <em>1d6 lightning damage, two-handed, finesse</em>
+      </p>
       <p>This staff delivers powerful electric shocks to enemies. It requires exceptional skill to wield effectively in combat.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the electrostaff. On hit: 1d6 lightning damage + your Strength or Dexterity modifier.</p>
       <p>• <strong>Slash:</strong> As an Action, Make a sweeping melee attack with the electrostaff against all creatures standing in a 15 foot horizontal line originating from you. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your Strength or Dexterity modifier). A creature takes 1d6 lightning damage without modifiers on a failed save, or half as much on a successful one.</p>
       <p>• <strong>Back Strike:</strong> As a Bonus Action, Make a melee attack with the back end of the electrostaff. On hit: 1d6 lightning damage without modifiers.</p>
@@ -1159,24 +1378,30 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="lightning">1d6</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ELECTROSTAFF</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Martial Melee" />
-      <grant type="Action" id="ID_ACTION_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_SLASH"/>
-      <grant type="Action" id="ID_ACTION_BACK_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_STRIKE" />
+      <grant type="Action" id="ID_ACTION_SLASH" />
+      <grant type="Action" id="ID_ACTION_BACK_STRIKE" />
     </rules>
   </element>
   <element name="vibrosword" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROSWORD">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
     <description>
-      <p><strong>Vibrosword</strong></p>
-      <p><em>Martial Vibroweapon</em></p>
-      <p><em>1d8 kinetic damage (1d10 when used with two hands), versatile</em></p>
+      <p>
+        <strong>Vibrosword</strong>
+      </p>
+      <p>
+        <em>Martial Vibroweapon</em>
+      </p>
+      <p>
+        <em>1d8 kinetic damage (1d10 when used with two hands), versatile</em>
+      </p>
       <p>This sword features a vibrating blade that enhances its cutting power. It can be wielded with one or two hands for increased damage.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibrosword. On hit: 1d8 kinetic damage + your Strength modifier (or 1d10 kinetic damage + your Strength modifier if used with two hands).</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the vibrosword while wielding it in your off-hand. On hit: 1d8 kinetic damage without modifiers.</p>
       <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibrosword, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
@@ -1188,24 +1413,30 @@
       <set name="slot">onehand</set>
       <set name="damage" type="kinetic">1d8</set>
       <set name="versatile">1d10</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSWORD</set>
     </setters>
     <rules>
-      <stat name="ability" value="strength" />
-      <stat name="type" value="Martial Melee" />
-      <grant type="Action" id="ID_ACTION_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_STRIKE" />
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE" />
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE" />
     </rules>
   </element>
   <element name="vibro-axe" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIRBO_AXE">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     <description>
-      <p><strong>Vibro-Axe</strong></p>
-      <p><em>Martial Vibroweapon</em></p>
-      <p><em>1d12 kinetic damage, two-handed</em></p>
+      <p>
+        <strong>Vibro-Axe</strong>
+      </p>
+      <p>
+        <em>Martial Vibroweapon</em>
+      </p>
+      <p>
+        <em>1d12 kinetic damage, two-handed</em>
+      </p>
       <p>This massive axe features a vibrating blade that enhances its destructive power. It requires good dexterity to handle the heavy weapon effectively. Requires Dexterity 11 to use.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibro-axe. On hit: 1d12 kinetic damage + your Strength modifier.</p>
       <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibro-axe, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
@@ -1215,24 +1446,29 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="kinetic">1d12</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBRO_AXE</set>
     </setters>
     <rules>
-      <stat name="ability" value="strength" />
-      <stat name="type" value="Martial Melee" />
-      <stat name="prerequisite" value="Dexterity 11" />
-      <grant type="Action" id="ID_ACTION_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_STRIKE" />
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE" />
     </rules>
   </element>
   <element name="vibropike" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_VIBROPIKE">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_KINETIC, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
     <description>
-      <p><strong>Vibropike</strong></p>
-      <p><em>Martial Vibroweapon</em></p>
-      <p><em>1d10 kinetic damage, two-handed, reach 10 ft</em></p>
+      <p>
+        <strong>Vibropike</strong>
+      </p>
+      <p>
+        <em>Martial Vibroweapon</em>
+      </p>
+      <p>
+        <em>1d10 kinetic damage, two-handed, reach 10 ft</em>
+      </p>
       <p>This extended polearm features a vibrating blade that enhances its striking power. It provides superior reach in combat. Requires Dexterity 11 to use.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibropike. On hit: 1d10 kinetic damage + your Strength modifier.</p>
       <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibropike, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
@@ -1242,24 +1478,29 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
       <set name="damage" type="kinetic">1d10</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROPIKE</set>
     </setters>
     <rules>
-      <stat name="ability" value="strength" />
-      <stat name="type" value="Martial Melee" />
-      <stat name="prerequisite" value="Dexterity 11" />
-      <grant type="Action" id="ID_ACTION_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_HILT_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_STRIKE" />
+      <grant type="Action" id="ID_ACTION_HILT_STRIKE" />
     </rules>
   </element>
   <element name="electrowhip" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTROWHIP">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
     <description>
-      <p><strong>Electrowhip</strong></p>
-      <p><em>Martial Vibroweapon</em></p>
-      <p><em>1d4 lightning damage, reach 10 ft, finesse</em></p>
+      <p>
+        <strong>Electrowhip</strong>
+      </p>
+      <p>
+        <em>Martial Vibroweapon</em>
+      </p>
+      <p>
+        <em>1d4 lightning damage, reach 10 ft, finesse</em>
+      </p>
       <p>This flexible weapon delivers electric shocks to enemies up to 10 feet away. It requires great skill to wield effectively.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the electrowhip. On hit: 1d4 lightning damage + your Strength or Dexterity modifier.</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the electrowhip while wielding it in your off-hand. On hit: 1d4 lightning damage without modifiers.</p>
     </description>
@@ -1269,23 +1510,29 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="lightning">1d4</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ELECTROWHIP</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Martial Melee" />
-      <grant type="Action" id="ID_ACTION_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_STRIKE" />
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE" />
     </rules>
   </element>
   <element name="electrobaton" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ELECTROBATON">
-    <supports>ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     <description>
-      <p><strong>Electrobaton</strong></p>
-      <p><em>Martial Vibroweapon</em></p>
-      <p><em>1d4 lightning damage, finesse</em></p>
+      <p>
+        <strong>Electrobaton</strong>
+      </p>
+      <p>
+        <em>Martial Vibroweapon</em>
+      </p>
+      <p>
+        <em>1d4 lightning damage, finesse</em>
+      </p>
       <p>This compact weapon delivers electric shocks to enemies. It can be wielded with great precision and speed.</p>
-      <p><strong>Actions:</strong></p>
+      <p>
+        <strong>Actions:</strong>
+      </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the electrobaton. On hit: 1d4 lightning damage + your Strength or Dexterity modifier.</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the electrobaton while wielding it in your off-hand. On hit: 1d4 lightning damage without modifiers.</p>
     </description>
@@ -1295,13 +1542,34 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="damage" type="lightning">1d4</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_MARTIAL_VIBROWEAPONS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ELECTROBATON</set>
     </setters>
     <rules>
-      <stat name="ability" value="dexterity" />
-      <stat name="type" value="Martial Melee" />
-      <grant type="Action" id="ID_ACTION_STRIKE"/>
-      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE"/>
+      <grant type="Action" id="ID_ACTION_STRIKE" />
+      <grant type="Action" id="ID_ACTION_OFF_HAND_STRIKE" />
+    </rules>
+  </element>
+  <element name="rocket launcher" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ROCKET_LAUNCHER">
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</supports>
+    <description>
+      <p class="">Rocket Launcher</p>
+      <p>Martial Blaster</p>
+      <p>Range 100/350, Reload 1, requires Strength 13 to use, two-handed</p>
+      <p>A heavy rocket launcher that fires explosive rockets at targets. Requires Strength 13 to use.</p>
+      <p>Actions:</p>
+      <p>• Rocket: As an Action, Shoot a Rocket with the rocket launcher at a target. On hit: Damage and conditions depend on the rocket.</p>
+    </description>
+    <setters>
+      <set name="category">Weapons</set>
+      <set name="cost" currency="gp">0</set>
+      <set name="weight" lb="1">1 lb.</set>
+      <set name="slot">twohand</set>
+      <set name="range">100/350</set>
+      <set name="reload">1</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ROCKET_LAUNCHER</set>
+    </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_ROCKET" />
     </rules>
   </element>
 </elements>

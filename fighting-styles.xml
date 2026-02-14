@@ -36,10 +36,10 @@
     <supports>Fighting Style</supports>
     <compendium display="false"/>
     <description>
-      <p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+      <p>When you are wielding a melee weapon in one hand and nothing or a shield in the other hand, you gain a +2 bonus to damage rolls with that weapon.</p>
     </description>
     <sheet>
-      <description>+2 damage when wielding a melee weapon in one hand and no other weapons.</description>
+      <description>+2 damage when wielding a melee weapon in one hand and nothing or a shield in the other hand.</description>
     </sheet>
     <rules>
       <stat name="melee:damage" value="2" />

@@ -101,26 +101,26 @@
       <description>You have {{focus:max}} Focus points.</description>
     </sheet>
     <rules>
-      <stat name="focus:max" value="3" level="1" />
-      <stat name="focus:max" value="5" level="2" />
-      <stat name="focus:max" value="5" level="3" />
-      <stat name="focus:max" value="5" level="4" />
-      <stat name="focus:max" value="5" level="5" />
-      <stat name="focus:max" value="5" level="6" />
-      <stat name="focus:max" value="6" level="7" />
-      <stat name="focus:max" value="6" level="8" />
-      <stat name="focus:max" value="6" level="9" />
-      <stat name="focus:max" value="6" level="10" />
-      <stat name="focus:max" value="7" level="11" />
-      <stat name="focus:max" value="7" level="12" />
-      <stat name="focus:max" value="7" level="13" />
-      <stat name="focus:max" value="7" level="14" />
-      <stat name="focus:max" value="7" level="15" />
-      <stat name="focus:max" value="8" level="16" />
-      <stat name="focus:max" value="8" level="17" />
-      <stat name="focus:max" value="8" level="18" />
-      <stat name="focus:max" value="8" level="19" />
-      <stat name="focus:max" value="9" level="20" />
+      <stat name="focus:max" value="3" bonus="base" level="1" />
+      <stat name="focus:max" value="5" bonus="base" level="2" />
+      <stat name="focus:max" value="5" bonus="base" level="3" />
+      <stat name="focus:max" value="5" bonus="base" level="4" />
+      <stat name="focus:max" value="5" bonus="base" level="5" />
+      <stat name="focus:max" value="5" bonus="base" level="6" />
+      <stat name="focus:max" value="6" bonus="base" level="7" />
+      <stat name="focus:max" value="6" bonus="base" level="8" />
+      <stat name="focus:max" value="6" bonus="base" level="9" />
+      <stat name="focus:max" value="6" bonus="base" level="10" />
+      <stat name="focus:max" value="7" bonus="base" level="11" />
+      <stat name="focus:max" value="7" bonus="base" level="12" />
+      <stat name="focus:max" value="7" bonus="base" level="13" />
+      <stat name="focus:max" value="7" bonus="base" level="14" />
+      <stat name="focus:max" value="7" bonus="base" level="15" />
+      <stat name="focus:max" value="8" bonus="base" level="16" />
+      <stat name="focus:max" value="8" bonus="base" level="17" />
+      <stat name="focus:max" value="8" bonus="base" level="18" />
+      <stat name="focus:max" value="8" bonus="base" level="19" />
+      <stat name="focus:max" value="9" bonus="base" level="20" />
     </rules>
   </element>
   <element id="ID_CLASS_KNIGHT_FEATURE_MEDITATION" name="Meditation" type="Spell" level="0" source="SW-MSV-Edition">
