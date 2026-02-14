@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Species</name>
-    <update version="1.1.7">
+    <update version="1.1.8">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
@@ -98,7 +98,7 @@
         </strong>
       </p>
       <p class="indent">Age. Normal lifespan.</p>
-      <p class="indent">Size. Your size is Small.</p>
+      <p class="indent">Size. Your size is Medium (small).</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
       <p class="indent">Cunning Action: You can take the Hide or Disengage action as a bonus action.</p>
       <p class="indent">Proficient in Insight and Deception</p>
@@ -380,7 +380,7 @@
       <p class="indent">Resistant to poison</p>
       <p class="indent">Advantage on saving throws against poison</p>
       <p class="indent">Proficiency in Survival or Investigation</p>
-      <p class="indent">Advantage on CON saving throws to avoid heat exhaustion</p>
+      <p class="indent">Advantage on Constitution saving throws to avoid heat exhaustion</p>
       <p class="indent">Jungle is not difficult terrain for you</p>
       <p class="indent">Proficiency in Deception or Persuasion</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Devaronese.</p>
@@ -653,6 +653,7 @@
       <grant type="Racial Trait" id="ID_RACE_TRAIT_EWOK_NIMBLE" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_EWOK_CLIMBER" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_SMALL_BUILD" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_UNDERSTAND_ONLY_BASIC" />
 <select type="Sub Race" name="Ewok Subrace" supports="ID_RACE_EWOK" optional="true" />
     </rules>
   </element>
@@ -722,6 +723,7 @@
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSWORD" />
             <grant type="Racial Trait" id="ID_RACE_TRAIT_GAMORREAN_CON_SAVE" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_GAMORREAN_BRUTAL_CRITICAL" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_UNDERSTAND_ONLY_BASIC" />
 <select type="Sub Race" name="Gamorrean Subrace" supports="ID_RACE_GAMORREAN" optional="true" />
     <grant type="Racial Trait" id="ID_RACE_TRAIT_GAMORREAN_DURABLE" /></rules>
   </element>
@@ -1029,6 +1031,7 @@
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_ITHORESE" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_UNDERSTAND_ONLY_BASIC" />
       <select type="Sub Race" name="Ithorian Subrace" supports="ID_RACE_ITHORIAN" optional="true" />
       <grant type="Action" id="ID_ACTION_ITHORIAN_BREATH" />
     </rules>
@@ -1083,7 +1086,7 @@
       <p class="indent">Speed. Your base walking speed is 25 ft.</p>
       <p class="indent">Darkvision</p>
       <p class="indent">Nimble: Can hide behind creatures larger than you</p>
-      <p class="indent">Advantage on CON saving throws to avoid heat exhaustion</p>
+      <p class="indent">Advantage on Constitution saving throws to avoid heat exhaustion</p>
       <p class="indent">Sleight of Hand proficiency</p>
       <p class="indent">Can only wield two-handed weapons if they have the versatile property</p>
       <p class="indent">Ion weapon proficiency</p>
@@ -1104,6 +1107,7 @@
       <grant type="Racial Trait" id="ID_RACE_TRAIT_JAWA_HEAT_ADAPTED" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_JAWA_NIMBLE" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_SMALL_BUILD" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_UNDERSTAND_ONLY_BASIC" />
 <select type="Sub Race" name="Jawa Subrace" supports="ID_RACE_JAWA" optional="true" />
     </rules>
   </element>
@@ -1721,7 +1725,7 @@
         </strong>
       </p>
       <p class="indent">Age. Normal lifespan.</p>
-      <p class="indent">Size. Your size is Small.</p>
+      <p class="indent">Size. Your size is Medium (small).</p>
       <p class="indent">Speed. Your base walking speed is 35 ft.</p>
       <p class="indent">Acrobatics and Intimidation proficiency</p>
       <p class="indent">If an enemy is surprised, your first attack against it deals an extra 2d6 damage</p>
@@ -1925,7 +1929,7 @@
         </strong>
       </p>
       <p class="indent">Age. Normal lifespan.</p>
-      <p class="indent">Size. Your size is Small.</p>
+      <p class="indent">Size. Your size is Medium (small).</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
       <p class="indent">Darkvision</p>
       <p class="indent">Advantage on Perception checks that rely on hearing</p>
@@ -2011,6 +2015,7 @@
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_TALZ_REACH" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_TALZ_NATURAL_ARMOR" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_UNDERSTAND_ONLY_BASIC" />
 <select type="Sub Race" name="Talz Subrace" supports="ID_RACE_TALZ" optional="true" />
     </rules>
   </element>
@@ -2508,6 +2513,7 @@
       <stat name="innate speed:climb" value="30" bonus="base" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_WOOKIE_NATURAL_WEAPONS" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_WOOKIE_NATURAL_ARMOR" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_UNDERSTAND_ONLY_BASIC" />
 <select type="Sub Race" name="Wookie Subrace" supports="ID_RACE_WOOKIE" optional="true" />
     </rules>
   </element>
@@ -3073,7 +3079,7 @@
       <p>As an action, you can violently expel air in a 15-foot cone. When you do so, each creature in the area of the exhalation must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). A creature takes 2d6 sonic damage on a failed save, and half as much damage on a successful one. The damage increases to 4d6 at 5th level, 6d6 at 11th level, and 8d6 at 17th level. This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you complete a long rest.</p>
     </description>
     <sheet>
-      <description>Action: Expel air in a 15-ft cone. Wisdom save DC 8 + prof + CON for 2d6 sonic damage (half on success). Scales with level. Uses = prof bonus, long rest.</description>
+      <description>Action: Expel air in a 15-ft cone. Wisdom save DC 8 + proficiency bonus + Constitution modifier for 2d6 sonic damage (half on save). 4d6 at 5th, 6d6 at 11th, 8d6 at 17th level. No effect on constructs. Uses = proficiency bonus per long rest.</description>
     </sheet>
   </element>
   <element name="Tune-Up" type="Action" source="SW-MSV-Edition" id="ID_ACTION_DROID_TUNE_UP">
@@ -3147,7 +3153,7 @@
       <p>You have advantage on Constitution saving throws to avoid heat exhaustion.</p>
     </description>
     <sheet>
-      <description>Advantage on CON saving throws to avoid heat exhaustion.</description>
+      <description>Advantage on Constitution saving throws to avoid heat exhaustion.</description>
     </sheet>
   </element>
   <element name="Jungle Dweller" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_DEVARONIAN_JUNGLE_DWELLER">
@@ -3298,7 +3304,7 @@
       <p>You have advantage on Constitution saving throws to avoid heat exhaustion.</p>
     </description>
     <sheet>
-      <description>Advantage on CON saving throws to avoid heat exhaustion.</description>
+      <description>Advantage on Constitution saving throws to avoid heat exhaustion.</description>
     </sheet>
   </element>
   <element name="Nimble" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_JAWA_NIMBLE">
@@ -3613,7 +3619,7 @@
       <p>You have advantage on Constitution saving throws to avoid heat exhaustion.</p>
     </description>
     <sheet>
-      <description>Advantage on CON saving throws to avoid heat exhaustion.</description>
+      <description>Advantage on Constitution saving throws to avoid heat exhaustion.</description>
     </sheet>
   </element>
   <element name="Primitive" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_TUSKEN_PRIMITIVE">
@@ -3704,4 +3710,13 @@
       <description>Unarmored/light armor AC = 13 + Dexterity modifier.</description>
     </sheet>
   <rules><stat name="ac:unarmored:base" value="13" bonus="base" /></rules></element>
-<element name="Durable" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_GAMORREAN_DURABLE"><description><p>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p></description><sheet><description>+1 HP per level.</description></sheet><rules><stat name="hp" value="level" /></rules></element><element name="Durable" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_GRAN_DURABLE"><description><p>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p></description><sheet><description>+1 HP per level.</description></sheet><rules><stat name="hp" value="level" /></rules></element></elements>
+<element name="Durable" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_GAMORREAN_DURABLE"><description><p>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p></description><sheet><description>+1 HP per level.</description></sheet><rules><stat name="hp" value="level" /></rules></element><element name="Durable" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_GRAN_DURABLE"><description><p>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p></description><sheet><description>+1 HP per level.</description></sheet><rules><stat name="hp" value="level" /></rules></element>
+  <element name="Cannot Speak Galactic Basic" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_UNDERSTAND_ONLY_BASIC">
+    <description>
+      <p>You can understand Galactic Basic but cannot speak it.</p>
+    </description>
+    <sheet>
+      <description>Understands Galactic Basic but cannot speak it.</description>
+    </sheet>
+  </element>
+</elements>
