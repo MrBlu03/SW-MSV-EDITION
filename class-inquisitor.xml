@@ -132,9 +132,7 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <p>At 1st level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
       <p class="indent">At 6th level, you can choose two more of your proficiencies to gain this benefit.</p>
     </description>
-    <sheet>
-      <description>Your proficiency bonus is doubled for your chosen expertise skills.</description>
-    </sheet>
+    <sheet display="false" />
     <rules>
       <select type="Expertise" name="Expertise (Inquisitor)" level="1" number="2" supports="ID_EXPERTISE_ACROBATICS|ID_EXPERTISE_ATHLETICS|ID_EXPERTISE_DECEPTION|ID_EXPERTISE_INSIGHT|ID_EXPERTISE_INTIMIDATION|ID_EXPERTISE_INVESTIGATION|ID_EXPERTISE_PERCEPTION|ID_EXPERTISE_PERSUASION|ID_EXPERTISE_SLEIGHTOFHAND|ID_EXPERTISE_STEALTH" />
       <select type="Expertise" name="Expertise (Inquisitor)" level="6" number="2" supports="ID_EXPERTISE_ACROBATICS|ID_EXPERTISE_ATHLETICS|ID_EXPERTISE_DECEPTION|ID_EXPERTISE_INSIGHT|ID_EXPERTISE_INTIMIDATION|ID_EXPERTISE_INVESTIGATION|ID_EXPERTISE_PERCEPTION|ID_EXPERTISE_PERSUASION|ID_EXPERTISE_SLEIGHTOFHAND|ID_EXPERTISE_STEALTH" />
@@ -612,6 +610,7 @@ You don't need advantage on the attack roll if another enemy of the target is wi
   </element>
   <element id="ID_CLASS_INQUISITOR_FEATURE_SPELLCASTING" name="Spellcasting" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
+    <spellcasting name="Inquisitor" ability="Charisma" prepare="false" />
     <description>
       <p>An Inquisitor's power comes from the dark side of the Force. You have learned to draw on this power to cast spells.</p>
       <p class="indent">
@@ -631,11 +630,9 @@ You don't need advantage on the attack roll if another enemy of the target is wi
          = your proficiency bonus + your Charisma modifier
       </p>
     </description>
-    <sheet>
-      <description>Charisma is your spellcasting ability for your Inquisitor spells. Your spell save DC is 8 + your proficiency bonus + your Charisma modifier, and your spell attack modifier is your proficiency bonus + your Charisma modifier.</description>
-    </sheet>
+    <sheet display="false" />
     <rules>
-      <stat name="spellcasting" value="charisma" />
+      <stat name="spellcasting:ability" value="charisma" />
     </rules>
   </element>
 </elements>

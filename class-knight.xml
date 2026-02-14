@@ -710,6 +710,7 @@
   </element>
   <element id="ID_CLASS_KNIGHT_FEATURE_SPELLCASTING" name="Spellcasting" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
+    <spellcasting name="Knight" ability="Charisma" prepare="false" />
     <description>
       <p>A Knight's power comes from the light side of the Force. You have learned to draw on this power to cast spells.</p>
       <p class="indent">
@@ -725,11 +726,9 @@
          = your proficiency bonus + your Charisma modifier
       </p>
     </description>
-    <sheet>
-      <description>Charisma is your spellcasting ability for your Knight spells. Your spell save DC is 8 + your proficiency bonus + your Charisma modifier, and your spell attack modifier is your proficiency bonus + your Charisma modifier.</description>
-    </sheet>
+    <sheet display="false" />
     <rules>
-      <stat name="spellcasting" value="charisma" />
+      <stat name="spellcasting:ability" value="charisma" />
     </rules>
   </element>
 </elements>
