@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Knight Class</name>
-    <update version="1.1.3">
+    <update version="1.1.4">
       <file name="class-knight.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-knight.xml" />
     </update>
   </info>
@@ -64,18 +64,18 @@
       <select type="Proficiency" name="Skill Proficiency (Knight)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE" />
       <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_FOCUS" level="1" />
       <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_SPELLCASTING" level="1" />
-      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_FORCE_PUSH" level="1" />
-      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_FORCE_PULL" level="1" />
-      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_VALOR" level="1" />
-      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_MINOR_TELEKINESIS" level="1" />
-      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_MEDITATION" level="1" />
+      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_FORCE_PUSH" level="1" spellcasting="Knight" />
+      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_FORCE_PULL" level="1" spellcasting="Knight" />
+      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_VALOR" level="1" spellcasting="Knight" />
+      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_MINOR_TELEKINESIS" level="1" spellcasting="Knight" />
+      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_MEDITATION" level="1" spellcasting="Knight" />
       <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_LIGHTSABER_FORM" level="2" />
-      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_SABER_THROW" level="2" />
-      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_FORCE_RESOLUTION" level="3" />
-      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_MIND_TRICK" level="4" />
+      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_SABER_THROW" level="2" spellcasting="Knight" />
+      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_FORCE_RESOLUTION" level="3" spellcasting="Knight" />
+      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_MIND_TRICK" level="4" spellcasting="Knight" />
       <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_EXTRA_ATTACK" level="5" />
       <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_AURA_OF_PRESENCE" level="6" />
-      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_BLINDING_STRIKE" level="7" />
+      <grant type="Spell" id="ID_CLASS_KNIGHT_FEATURE_BLINDING_STRIKE" level="7" spellcasting="Knight" />
       <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_DEEP_MEDITATION" level="9" />
       <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_AURA_OF_COURAGE" level="10" />
       <grant type="Class Feature" id="ID_CLASS_KNIGHT_FEATURE_FORCE_EMPOWERED_STRIKES" level="11" />

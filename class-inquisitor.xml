@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Inquisitor Class</name>
-    <update version="1.1.3">
+    <update version="1.1.4">
       <file name="class-inquisitor.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-inquisitor.xml" />
     </update>
   </info>
@@ -57,7 +57,7 @@
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SPELLCASTING" level="1" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_EXPERTISE" level="1" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_ASSASSINATE" level="1" />
-      <grant type="Spell" id="ID_CLASS_INQUISITOR_FEATURE_MINOR_TELEKINESIS" level="1" />
+      <grant type="Spell" id="ID_CLASS_INQUISITOR_FEATURE_MINOR_TELEKINESIS" level="1" spellcasting="Inquisitor" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_CUNNING_ACTION" level="2" />
       <select type="Feat" name="Feat (Inquisitor)" level="4" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_UNCANNY_DODGE" level="5" />
@@ -234,11 +234,11 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <p>Shadow form</p>
     </description>
     <rules>
-      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_BLIND" level="3" />
-      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_CLOAK" level="3" />
-      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_FADE" level="9" />
-      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_DARKNESS" level="13" />
-      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_PHANTOM" level="17" />
+      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_BLIND" level="3" spellcasting="Inquisitor" />
+      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_CLOAK" level="3" spellcasting="Inquisitor" />
+      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_FADE" level="9" spellcasting="Inquisitor" />
+      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_DARKNESS" level="13" spellcasting="Inquisitor" />
+      <grant type="Spell" id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_PHANTOM" level="17" spellcasting="Inquisitor" />
     </rules>
   </element>
   <element id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_BLIND" name="Force Blind" type="Spell" level="0" source="SW-MSV-Edition">
@@ -358,11 +358,11 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <p>Trickster form</p>
     </description>
     <rules>
-      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_DISGUISE" level="3" />
-      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_PHANTOM_STRIDE" level="3" />
-      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_ILLUSION" level="9" />
-      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_NIGHTMARE" level="13" />
-      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_SPIRIT" level="17" />
+      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_DISGUISE" level="3" spellcasting="Inquisitor" />
+      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_PHANTOM_STRIDE" level="3" spellcasting="Inquisitor" />
+      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_ILLUSION" level="9" spellcasting="Inquisitor" />
+      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_NIGHTMARE" level="13" spellcasting="Inquisitor" />
+      <grant type="Spell" id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_SPIRIT" level="17" spellcasting="Inquisitor" />
     </rules>
   </element>
   <element id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_DISGUISE" name="Force Disguise" type="Spell" level="0" source="SW-MSV-Edition">
@@ -489,11 +489,11 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <p>Manipulator form</p>
     </description>
     <rules>
-      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_MIND_TRAP" level="3" />
-      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_FORCE_STASIS" level="3" />
-      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_CONFUSE" level="9" />
-      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_MIND_PROBE" level="13" />
-      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_FORCE_LINK" level="17" />
+      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_MIND_TRAP" level="3" spellcasting="Inquisitor" />
+      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_FORCE_STASIS" level="3" spellcasting="Inquisitor" />
+      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_CONFUSE" level="9" spellcasting="Inquisitor" />
+      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_MIND_PROBE" level="13" spellcasting="Inquisitor" />
+      <grant type="Spell" id="ID_SUBCLASS_MANIPULATOR_ABILITY_FORCE_LINK" level="17" spellcasting="Inquisitor" />
     </rules>
   </element>
   <element id="ID_SUBCLASS_MANIPULATOR_ABILITY_MIND_TRAP" name="Mind Trap" type="Spell" level="0" source="SW-MSV-Edition">

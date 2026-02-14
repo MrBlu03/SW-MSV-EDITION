@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Tools</name>
-    <update version="1.1.3">
+    <update version="1.1.4">
       <file name="items-tools.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-tools.xml" />
     </update>
   </info>
