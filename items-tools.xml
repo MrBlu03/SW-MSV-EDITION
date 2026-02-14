@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Tools</name>
-    <update version="1.1.4">
+    <update version="1.1.7">
       <file name="items-tools.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-tools.xml" />
     </update>
   </info>
@@ -173,8 +173,7 @@
   
   <element name="Jumppack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_JUMPPACK">
     <description>
-      <p>A jumppack allows you to jump up to 25 feet vertically or horizontally as a bonus action. Provokes opportunity attacks when leaving or landing in enemy melee range. Requires jumppack proficiency.</p>
-    </description>
+      <p>As a Bonus Action, jump up to 25 feet vertically or horizontally. Provokes opportunity attacks when leaving or landing in enemy melee range. Requires jumppack proficiency.</p></description>
     <setters>
       <set name="category">Equipment</set>
       <set name="cost" currency="gp">350</set>
@@ -202,8 +201,7 @@
 
   <element name="Hoverpack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_HOVERPACK">
     <description>
-      <p>A hoverpack allows you to hover up to 15 feet in the air on the same spot for 2 turns as a bonus action. Cannot move. While hovering, you have advantage on ranged attacks and disadvantage on Dexterity saving throws. Provokes opportunity attacks when leaving or landing in enemy melee range. Requires hoverpack proficiency.</p>
-    </description>
+      <p>As a Bonus Action, hover up to 15 feet in the air on the same spot for 2 turns. Cannot move. While hovering, you have advantage on ranged attacks and disadvantage on Dexterity saving throws. Provokes opportunity attacks when leaving or landing in enemy melee range. Requires hoverpack proficiency.</p></description>
     <setters>
       <set name="category">Equipment</set>
       <set name="cost" currency="gp">500</set>
@@ -231,8 +229,7 @@
 
   <element name="Jetpack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_JETPACK">
     <description>
-      <p>An advanced jetpack that combines jump and hover capabilities. Allows jumping up to 30 feet or hovering up to 15 feet in the air. Can move up to 10 feet while hovering. While hovering, you have advantage on ranged attacks and no disadvantage on Dexterity saving throws. Provokes opportunity attacks when leaving or landing in enemy melee range. Requires jumppack, hoverpack, and jetpack proficiency.</p>
-    </description>
+      <p>As a Bonus Action, jump up to 30 feet or hover up to 15 feet in the air. Can move up to 10 feet while hovering. While hovering, you have advantage on ranged attacks and no disadvantage on Dexterity saving throws. Provokes opportunity attacks when leaving or landing in enemy melee range. Requires jumppack, hoverpack, and jetpack proficiency.</p></description>
     <setters>
       <set name="category">Equipment</set>
       <set name="cost" currency="gp">1000</set>
@@ -348,7 +345,7 @@
       <set name="cost" currency="gp">500</set>
       <set name="weight" lb="10">10 lb.</set>
       <set name="type">Equipment</set>
-    </setters>
+    <set name="slot">body</set></setters>
     <rules>
       <grant type="Action" id="ID_ACTION_ROCKETPACK_RELOAD" />
       <grant type="Action" id="ID_ACTION_ROCKETPACK_FIRE" />

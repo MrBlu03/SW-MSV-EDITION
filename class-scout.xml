@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Scout Class</name>
-    <update version="1.1.4">
+    <update version="1.1.7">
       <file name="class-scout.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-scout.xml" />
     </update>
   </info>

@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Weapons</name>
-    <update version="1.1.4">
+    <update version="1.1.7">
       <file name="weapons.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/weapons.xml" />
     </update>
   </info>
@@ -27,7 +27,7 @@
       <p>Hilt Strike: As a Bonus Action, Make a melee attack with the hilt of the weapon, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your weapon modifier(s). On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <sheet>
-      <description>As a Bonus Action, Make a melee attack with the weapon's hilt. On hit: 1d4 kinetic damage, target makes CON save (DC 8 + prof + modifier) or becomes dazed.</description>
+      <description>As a Bonus Action, Make a melee attack with the weapon's hilt. On hit: 1d4 kinetic damage, target makes Constitution save (DC 8 + prof + modifier) or becomes dazed.</description>
     </sheet>
   </element>
   <element name="Slash" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SLASH">
@@ -35,7 +35,7 @@
       <p>Slash: As an Action, Make a sweeping melee attack with the weapon against all creatures standing in a 15 foot hoziontal line originating from you. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your weapon modifier(s)). A creature takes weapon damage without modifiers on a failed save, or half as much on a successful one.</p>
     </description>
     <sheet>
-      <description>As an Action, sweeping melee attack against all creatures in a 15 foot line. DEX save (DC 8 + prof + modifier) for half damage.</description>
+      <description>As an Action, sweeping melee attack against all creatures in a 15 foot line. Dexterity save (DC 8 + prof + modifier) for half damage.</description>
     </sheet>
   </element>
   <element name="Blast" type="Action" source="SW-MSV-Edition" id="ID_ACTION_BLAST">
@@ -43,7 +43,7 @@
       <p>Blast: As an Action, Blast multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes weapon damage + weapon modifier(s). On a successful save, the target takes half damage.</p>
     </description>
     <sheet>
-      <description>As an Action, Blast targets in a cone. DEX save (DC 8 + prof + DEX mod). Full damage on fail, half on success.</description>
+      <description>As an Action, Blast targets in a cone. Dexterity save (DC 8 + prof + Dexterity modifier). Full damage on fail, half on success.</description>
     </sheet>
   </element>
   <element name="Flame" type="Action" source="SW-MSV-Edition" id="ID_ACTION_FLAME">
@@ -51,7 +51,7 @@
       <p>Flame: As an Action, Flame multiple targets in a cone in front of you. Each target must make a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes weapon damage + weapon modifier(s) and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</p>
     </description>
     <sheet>
-      <description>As an Action, Flame targets in a cone. DEX save (DC 8 + prof + DEX mod). Burning 2 turns on fail, 1 turn on success.</description>
+      <description>As an Action, Flame targets in a cone. Dexterity save (DC 8 + prof + Dexterity modifier). Burning 2 turns on fail, 1 turn on success.</description>
     </sheet>
   </element>
   <element name="Off-Hand Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_OFF_HAND_STRIKE">
@@ -378,27 +378,12 @@
     <rules>
       <grant type="Tag" name="Silent" />
       <grant type="Action" id="ID_ACTION_SHOOT" />
-    </rules>
+    <grant type="Action" id="ID_ACTION_DART" /></rules>
   </element>
-  <element name="wrist blaster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_BLASTER">
+  <element name="Wrist Launcher with Wrist Blaster Attachment" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_BLASTER">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
     <description>
-      <p>
-        <strong>Wrist Blaster</strong>
-      </p>
-      <p>
-        <em>Simple Blaster</em>
-      </p>
-      <p>
-        <em>1d6 energy damage, range 30/120, reload 8, one-handed</em>
-      </p>
-      <p>This disguised wrist-mounted blaster fires energy bolts. It can't be disarmed, you can still use your hand but can't use the weapon when holding something.</p>
-      <p>
-        <strong>Actions:</strong>
-      </p>
-      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the wrist blaster. On hit: 1d6 energy damage + your Dexterity modifier.</p>
-      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the wrist blaster while wielding it in your off-hand. On hit: 1d6 energy damage without modifiers.</p>
-    </description>
+      <p><strong>Wrist Launcher with Wrist Blaster Attachment</strong></p><p><em>Simple Blaster</em></p><p><em>1d6 energy damage, power cell, range 30/120, Reload 8, Dexterity modifier</em></p><p>This wrist-mounted launcher with blaster attachment fires energy bolts. It can't be disarmed, you can still use your hand but can't use the weapon when holding something.</p><p><strong>Actions:</strong></p><p>• Shoot: As an Action, Make a ranged attack. On hit: 1d6 energy damage + your Dexterity modifier.</p><p>• Quick Shot: As a Bonus Action, Make a quick hipfire shot. On hit: 1d6 energy damage without modifiers.</p></description>
     <setters>
       <set name="category">Weapons</set>
       <set name="cost" currency="gp">0</set>
@@ -890,13 +875,13 @@
         <em>Martial Blaster</em>
       </p>
       <p>
-        <em>1d10 energy damage, range 75 ft cone, reload 4, two-handed</em>
+        <em>2d10 energy damage, range 75 ft cone, reload 4, two-handed</em>
       </p>
       <p>This rapid-fire weapon unleashes a devastating cone of energy bolts. It uses power cells and has a very low capacity. Requires Strength 13 to use.</p>
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Blast:</strong> As an Action, Blast multiple targets in a 75 ft cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes 1d10 energy damage + your Dexterity modifier. On a successful save, the target takes half damage.</p>
+      <p>• <strong>Blast:</strong> As an Action, Blast multiple targets in a 75 ft cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes 2d10 energy damage + your Dexterity modifier. On a successful save, the target takes half damage.</p>
       <p>• <strong>Reload:</strong> Action; After 4 shots the minigun/rotary cannon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
@@ -904,7 +889,7 @@
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
-      <set name="damage" type="energy">1d10</set>
+      <set name="damage" type="energy">2d10</set>
       <set name="reload">4</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_MINIGUN_ROTARY_CANNON</set>
     </setters>

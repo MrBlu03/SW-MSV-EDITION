@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Marauder Class</name>
-    <update version="1.1.4">
+    <update version="1.1.7">
       <file name="class-marauder.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-marauder.xml" />
     </update>
   </info>
@@ -321,7 +321,7 @@
       <description>Gain 10 movement speed when not wearing heavy armour.</description>
     </sheet>
 
-  </element>
+  <rules><stat name="speed" value="10" /></rules></element>
   <element id="ID_CLASS_MARAUDER_FEATURE_FEARLESS" name="Fearless" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
