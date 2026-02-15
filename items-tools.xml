@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Tools</name>
-    <update version="1.1.8">
+    <update version="1.1.9">
       <file name="items-tools.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-tools.xml" />
     </update>
   </info>
@@ -11,19 +11,21 @@
     <description>
       <p>A slicing kit contains specialized equipment for bypassing electronic locks and security systems.</p>
     </description>
+    <supports>Tool</supports>
   </element>
 
   <element name="Tool: Hacking Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HACKING_KIT" source="SW-MSV-Edition">
     <description>
       <p>A hacking kit contains specialized equipment for hacking unconscious droids and security systems.</p>
     </description>
-    <supports>ID_MSV_PROFICIENCY_TOOL_HACKING_KIT</supports>
+    <supports>ID_MSV_PROFICIENCY_TOOL_HACKING_KIT,Tool</supports>
   </element>
 
   <element name="Tool: Disguise Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_DISGUISE_KIT" source="SW-MSV-Edition">
     <description>
       <p>A disguise kit contains cosmetics, hair dyes, small props, and various pieces of clothing to change your appearance.</p>
     </description>
+    <supports>Tool</supports>
 
   </element>
 
@@ -31,6 +33,7 @@
     <description>
       <p>A poisoning kit contains the tools needed to create and apply poisons to weapons.</p>
     </description>
+    <supports>Tool</supports>
 
   </element>
 
@@ -38,6 +41,7 @@
     <description>
       <p>Proficiency with jumppack and jump boots operation.</p>
     </description>
+    <supports>Tool</supports>
 
   </element>
 
@@ -45,6 +49,7 @@
     <description>
       <p>Proficiency with hoverpack and hover boots operation.</p>
     </description>
+    <supports>Tool</supports>
 
   </element>
 
@@ -52,6 +57,7 @@
     <description>
       <p>Proficiency with jetpack and jet boots operation.</p>
     </description>
+    <supports>Tool</supports>
 
   </element>
 
@@ -59,13 +65,14 @@
     <description>
       <p>Proficiency with repair kit tools for repairing equipment, weapons, armor, and droids.</p>
     </description>
+    <supports>Tool</supports>
   </element>
 
   <element name="Tool: Forgery Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with forgery kit tools for creating false documents and identification.</p>
     </description>
-    <supports>ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT</supports>
+    <supports>ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT,Tool</supports>
   </element>
 
   

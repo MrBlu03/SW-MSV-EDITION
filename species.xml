@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Species</name>
-    <update version="1.1.8">
+    <update version="1.1.9">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
@@ -17,6 +17,16 @@
       <stat name="darkvision" value="60" bonus="base" />
     </rules>
   </element>
+  <element name="Darkvision" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_DARKVISION">
+    <compendium display="false" />
+    <description>
+      <p>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+    </description>
+    <sheet>
+      <description>You can see in dim light within 60 feet as bright light, and darkness as dim light.</description>
+    </sheet>
+  </element>
+
 
   <element name="Bith" type="Race" source="SW-MSV-Edition" id="ID_RACE_BITH">
     <description>
@@ -179,6 +189,7 @@
       <stat name="innate speed" value="30" bonus="base" />
       <grant type="Size" id="ID_SIZE_MEDIUM" />
       <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_CATHAR_NATURAL_WEAPONS" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_CATHARESE" />
@@ -251,6 +262,7 @@
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
       <grant type="Size" id="ID_SIZE_MEDIUM" />
       <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_CHAGRI" />
             <stat name="innate speed:swim" value="30" bonus="base" />
@@ -326,6 +338,7 @@
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SNIPER_RIFLE" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
 <select type="Sub Race" name="Chiss Subrace" supports="ID_RACE_CHISS" optional="true" />
     </rules>
   </element>
@@ -578,6 +591,7 @@
       <grant type="Language" id="ID_LANGUAGE_DURESE" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
 <select type="Sub Race" name="Duros Subrace" supports="ID_RACE_DUROS" optional="true" />
     </rules>
   </element>
@@ -1104,6 +1118,7 @@
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ION_PISTOL" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ION_RIFLE" />
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_JAWA_HEAT_ADAPTED" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_JAWA_NIMBLE" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_SMALL_BUILD" />
@@ -1177,6 +1192,7 @@
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSPEAR" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_KALEESH_KEEN_SMELL" />
 <select type="Sub Race" name="Kaleesh Subrace" supports="ID_RACE_KALEESH" optional="true" />
     </rules>
@@ -1245,6 +1261,7 @@
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_KEL_DOR" />
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_KEL_DOR_BREATHLESS" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_KEL_DOR_TELEPATHY" />
 <select type="Sub Race" name="Kel Dor Subrace" supports="ID_RACE_KEL_DOR" optional="true" />
@@ -1386,6 +1403,7 @@
       <select type="Language" name="Language (Mon Calamari)" supports="Standard||Exotic" number="1" />
       <select type="Proficiency" name="Musical Instrument (Mon Calamari)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1" />
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <stat name="innate speed:swim" value="30" bonus="base" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_MON_CALAMARI_AMPHIBIOUS" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_MON_CALAMARI_SLOW_RESISTANCE" />
@@ -1456,6 +1474,7 @@
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_NAUTILA" />
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <stat name="innate speed:swim" value="30" bonus="base" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_NAUTOLAN_PERCEPTION_EXPERTISE" />
@@ -1528,6 +1547,7 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_NEIMOIDIAN_WEALTHY" />
 <select type="Sub Race" name="Neimoidian Subrace" supports="ID_RACE_NEIMOIDIAN" optional="true" />
     </rules>
@@ -1670,6 +1690,7 @@
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_RAKATA" />
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <stat name="innate speed:swim" value="30" bonus="base" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_RAKATA_FORCE_INSENSITIVE" />
@@ -1812,6 +1833,7 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <stat name="innate speed:climb" value="30" bonus="base" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_RODIAN_KEEN_SENSES" />
 <select type="Sub Race" name="Rodian Subrace" supports="ID_RACE_RODIAN" optional="true" />
@@ -1878,6 +1900,7 @@
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_SITH" />
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
 <select type="Sub Race" name="Sith Pureblood Subrace" supports="ID_RACE_SITH_PUREBLOOD" optional="true" />
@@ -1945,6 +1968,7 @@
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_SULLUSTESE" />
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_SULLUSTAN_PERSUASION_EXPERTISE" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_SULLUSTAN_KEEN_HEARING" />
@@ -2013,6 +2037,7 @@
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_TALZZI" />
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_TALZ_REACH" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_TALZ_NATURAL_ARMOR" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_UNDERSTAND_ONLY_BASIC" />
@@ -2147,6 +2172,7 @@
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_DOSH" />
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_TRANDOSHAN_NATURAL_WEAPONS" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_TRANDOSHAN_NATURAL_ARMOR" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_TRANDOSHAN_REGENERATION" />
@@ -2295,6 +2321,7 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
       <select type="Proficiency" name="Proficiency (Twi'Lek)" supports="ID_PROFICIENCY_SKILL_DECEPTION||ID_PROFICIENCY_SKILL_PERSUASION" number="1" />
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
       <grant type="Language" id="ID_LANGUAGE_TWILEKI" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_TWILEK_POISON_RESILIENCE" />
@@ -2367,6 +2394,7 @@
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_UGNAUGHT" />
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_UGNAUGHT_NATURAL_WEAPONS" />
@@ -2510,6 +2538,7 @@
       <grant type="Language" id="ID_LANGUAGE_SHYRIIWOOK" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <stat name="innate speed:climb" value="30" bonus="base" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_WOOKIE_NATURAL_WEAPONS" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_WOOKIE_NATURAL_ARMOR" />

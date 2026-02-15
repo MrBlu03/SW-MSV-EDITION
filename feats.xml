@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Feats</name>
-    <update version="1.1.8">
+    <update version="1.1.9">
       <file name="feats.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/feats.xml" />
     </update>
   </info>
@@ -255,15 +255,15 @@
   <element name="Skilled" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_SKILLED">
     <compendium display="true" />
     <description>
-      <p>You gain Proficiency in 3 Skills or 1 skill and 1 tool of your choice.</p>
+      <p>You gain proficiency in 3 skills or tools of your choice.</p>
     </description>
         <sheet>
-      <description>You gain Proficiency in 3 Skills or 1 skill and 1 tool of your choice.</description>
+      <description>You gain proficiency in 3 skills or tools of your choice.</description>
     </sheet>
     <rules>
-      <select type="Proficiency" name="Skill Proficiency (Skilled 1)" supports="Skill" />
-      <select type="Proficiency" name="Skill Proficiency (Skilled 2)" supports="Skill" />
-      <select type="Proficiency" name="Skill Proficiency (Skilled 3)" supports="Skill" />
+      <select type="Proficiency" name="Proficiency (Skilled 1)" supports="Skill||Tool" />
+      <select type="Proficiency" name="Proficiency (Skilled 2)" supports="Skill||Tool" />
+      <select type="Proficiency" name="Proficiency (Skilled 3)" supports="Skill||Tool" />
     </rules>
   </element>
   <element name="Tough" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_TOUGH">
