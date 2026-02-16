@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Knight Class</name>
-    <update version="1.3.0">
+    <update version="1.3.1">
       <file name="class-knight.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-knight.xml" />
     </update>
   </info>
@@ -495,7 +495,20 @@
     <sheet>
       <description>When a creature misses you with a melee attack, you can make a melee weapon attack against that creature.</description>
     </sheet>
-
+    <setters>
+      <set name="keywords">force</set>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 reaction</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
   </element>
   <element id="ID_KNIGHT_FORM_SORESU" name="Form III: Soresu" type="Archetype" source="SW-MSV-Edition">
     <supports>ID_CLASS_KNIGHT</supports>
@@ -523,7 +536,20 @@
     <sheet>
       <description>Block to negate a melee attack that would have hit you.</description>
     </sheet>
-
+    <setters>
+      <set name="keywords">force</set>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 reaction</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
   </element>
   <element id="ID_KNIGHT_FORM_SORESU_ABILITY_DEFLECT" name="Deflect" type="Spell" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -541,7 +567,20 @@
     <sheet>
       <description>Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</description>
     </sheet>
-
+    <setters>
+      <set name="keywords">force</set>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 reaction</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
   </element>
   <element id="ID_KNIGHT_FORM_ATARU" name="Form IV: Ataru" type="Archetype" source="SW-MSV-Edition">
     <supports>ID_CLASS_KNIGHT</supports>
@@ -569,7 +608,20 @@
     <sheet>
       <description>Jump up to twice your movement and make a melee weapon attack. This does not provoke Opportunity Attacks. Per extra Focus spent to a max of half your Knight level (rounded up), you can jump an additional 5 feet.</description>
     </sheet>
-
+    <setters>
+      <set name="keywords">force</set>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
   </element>
   <element id="ID_KNIGHT_FORM_ATARU_ABILITY_SLOW_FALL" name="Slow Fall" type="Spell" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -587,7 +639,20 @@
     <sheet>
       <description>Use the Force to slow yourself when falling, taking only half fall damage.</description>
     </sheet>
-
+    <setters>
+      <set name="keywords">force</set>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 reaction</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
   </element>
   <element id="ID_KNIGHT_FORM_SHIEN" name="Form V: Shien" type="Archetype" source="SW-MSV-Edition">
     <supports>ID_CLASS_KNIGHT</supports>
@@ -614,7 +679,20 @@
     <sheet>
       <description>Must wield a lightweapon. Use the Force to send a ranged attack that would have hit you to a creature. This counts as a ranged Force attack with the range of the incoming attack. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</description>
     </sheet>
-
+    <setters>
+      <set name="keywords">force</set>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 reaction</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
   </element>
   <element id="ID_KNIGHT_FORM_DJEM_SO" name="Form V: Djem So" type="Archetype" source="SW-MSV-Edition">
     <supports>ID_CLASS_KNIGHT</supports>
@@ -642,7 +720,20 @@
     <sheet>
       <description>Make a melee attack and gain advantage on that attack.</description>
     </sheet>
-
+    <setters>
+      <set name="keywords">force</set>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
   </element>
   <element id="ID_KNIGHT_FORM_DJEM_SO_ABILITY_DEFLECT" name="Deflect" type="Spell" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -660,7 +751,20 @@
     <sheet>
       <description>Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</description>
     </sheet>
-
+    <setters>
+      <set name="keywords">force</set>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 reaction</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
   </element>
   <element id="ID_KNIGHT_FORM_NIMAN" name="Form VI: Niman" type="Archetype" source="SW-MSV-Edition">
     <supports>ID_CLASS_KNIGHT</supports>
@@ -706,7 +810,20 @@
     <sheet>
       <description>Make a flurry of attacks in one swift movement. You make two attacks that count as one attack against the same target. You roll both to hit. Per 2 extra Focus spent to a max of half your Knight level (rounded up), you make an additional attack within that flurry.</description>
     </sheet>
-
+    <setters>
+      <set name="keywords">force</set>
+      <set name="level">0</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
   </element>
   <element id="ID_CLASS_KNIGHT_FEATURE_SPELLCASTING" name="Spellcasting" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />

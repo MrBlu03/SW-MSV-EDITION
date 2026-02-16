@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Weapons</name>
-    <update version="1.3.0">
+    <update version="1.3.1">
       <file name="weapons.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/weapons.xml" />
     </update>
   </info>
@@ -373,6 +373,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the stealth pistol. On hit: 1d6 energy damage + your Dexterity modifier.</p>
+      <p>• <strong>Dart:</strong> As an Action, Shoot a Dart with the stealth pistol at a target. On hit: Damage and conditions depend on the dart.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>

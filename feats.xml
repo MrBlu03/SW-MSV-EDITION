@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Feats</name>
-    <update version="1.3.0">
+    <update version="1.3.1">
       <file name="feats.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/feats.xml" />
     </update>
   </info>
@@ -211,8 +211,7 @@
       <description>You increase an Ability by 1, to a maximum of 20, and gain Proficiency in that Ability's Saving Throws.</description>
     </sheet>
     <rules>
-      <select type="Ability Score Improvement" name="Ability Score Increase (Resilient)" supports="Ability Score Improvement" />
-      <select type="Proficiency" name="Saving Throw Proficiency (Resilient)" supports="Saving Throw" number="1" />
+      <select type="Racial Trait" name="Resilient" supports="Resilient" number="1" />
     </rules>
   </element>
   <element name="Savage Attacker" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_SAVAGE_ATTACKER">
@@ -280,4 +279,97 @@
       <stat name="hp" value="level*2" />
     </rules>
   </element>
-<element name="Strength +1" type="Racial Trait" source="SW-MSV-Edition" id="ID_SW_FEAT_ATHLETE_STRENGTH"><supports>Athlete ASI</supports><compendium display="false" /><description><p>Your Strength score increases by 1.</p></description><sheet><description>+1 Strength</description></sheet><rules><stat name="strength" value="1" /></rules></element><element name="Dexterity +1" type="Racial Trait" source="SW-MSV-Edition" id="ID_SW_FEAT_ATHLETE_DEXTERITY"><supports>Athlete ASI</supports><compendium display="false" /><description><p>Your Dexterity score increases by 1.</p></description><sheet><description>+1 Dexterity</description></sheet><rules><stat name="dexterity" value="1" /></rules></element><element name="Strength +1" type="Racial Trait" source="SW-MSV-Edition" id="ID_SW_FEAT_LIGHTLY_ARMOURED_STRENGTH"><supports>Lightly Armoured ASI</supports><compendium display="false" /><description><p>Your Strength score increases by 1.</p></description><sheet><description>+1 Strength</description></sheet><rules><stat name="strength" value="1" /></rules></element><element name="Dexterity +1" type="Racial Trait" source="SW-MSV-Edition" id="ID_SW_FEAT_LIGHTLY_ARMOURED_DEXTERITY"><supports>Lightly Armoured ASI</supports><compendium display="false" /><description><p>Your Dexterity score increases by 1.</p></description><sheet><description>+1 Dexterity</description></sheet><rules><stat name="dexterity" value="1" /></rules></element><element name="Strength +1" type="Racial Trait" source="SW-MSV-Edition" id="ID_SW_FEAT_MODERATELY_ARMOURED_STRENGTH"><supports>Moderately Armoured ASI</supports><compendium display="false" /><description><p>Your Strength score increases by 1.</p></description><sheet><description>+1 Strength</description></sheet><rules><stat name="strength" value="1" /></rules></element><element name="Dexterity +1" type="Racial Trait" source="SW-MSV-Edition" id="ID_SW_FEAT_MODERATELY_ARMOURED_DEXTERITY"><supports>Moderately Armoured ASI</supports><compendium display="false" /><description><p>Your Dexterity score increases by 1.</p></description><sheet><description>+1 Dexterity</description></sheet><rules><stat name="dexterity" value="1" /></rules></element></elements>
+<element name="Strength +1" type="Racial Trait" source="SW-MSV-Edition" id="ID_SW_FEAT_ATHLETE_STRENGTH"><supports>Athlete ASI</supports><compendium display="false" /><description><p>Your Strength score increases by 1.</p></description><sheet><description>+1 Strength</description></sheet><rules><stat name="strength" value="1" /></rules></element><element name="Dexterity +1" type="Racial Trait" source="SW-MSV-Edition" id="ID_SW_FEAT_ATHLETE_DEXTERITY"><supports>Athlete ASI</supports><compendium display="false" /><description><p>Your Dexterity score increases by 1.</p></description><sheet><description>+1 Dexterity</description></sheet><rules><stat name="dexterity" value="1" /></rules></element><element name="Strength +1" type="Racial Trait" source="SW-MSV-Edition" id="ID_SW_FEAT_LIGHTLY_ARMOURED_STRENGTH"><supports>Lightly Armoured ASI</supports><compendium display="false" /><description><p>Your Strength score increases by 1.</p></description><sheet><description>+1 Strength</description></sheet><rules><stat name="strength" value="1" /></rules></element><element name="Dexterity +1" type="Racial Trait" source="SW-MSV-Edition" id="ID_SW_FEAT_LIGHTLY_ARMOURED_DEXTERITY"><supports>Lightly Armoured ASI</supports><compendium display="false" /><description><p>Your Dexterity score increases by 1.</p></description><sheet><description>+1 Dexterity</description></sheet><rules><stat name="dexterity" value="1" /></rules></element><element name="Strength +1" type="Racial Trait" source="SW-MSV-Edition" id="ID_SW_FEAT_MODERATELY_ARMOURED_STRENGTH"><supports>Moderately Armoured ASI</supports><compendium display="false" /><description><p>Your Strength score increases by 1.</p></description><sheet><description>+1 Strength</description></sheet><rules><stat name="strength" value="1" /></rules></element><element name="Dexterity +1" type="Racial Trait" source="SW-MSV-Edition" id="ID_SW_FEAT_MODERATELY_ARMOURED_DEXTERITY"><supports>Moderately Armoured ASI</supports><compendium display="false" /><description><p>Your Dexterity score increases by 1.</p></description><sheet><description>+1 Dexterity</description></sheet><rules><stat name="dexterity" value="1" /></rules></element>
+
+  <!-- Resilient Linked Options (each grants +1 ASI and saving throw proficiency) -->
+  <element name="Resilient: Strength" type="Racial Trait" source="SW-MSV-Edition" id="ID_SW_FEAT_RESILIENT_STRENGTH">
+    <supports>Resilient</supports>
+    <compendium display="false" />
+    <description>
+      <p>Your Strength score increases by 1, and you gain proficiency in Strength saving throws.</p>
+    </description>
+    <sheet>
+      <description>+1 Strength, proficiency in Strength saving throws</description>
+    </sheet>
+    <rules>
+      <stat name="strength" value="1" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+    </rules>
+  </element>
+
+  <element name="Resilient: Dexterity" type="Racial Trait" source="SW-MSV-Edition" id="ID_SW_FEAT_RESILIENT_DEXTERITY">
+    <supports>Resilient</supports>
+    <compendium display="false" />
+    <description>
+      <p>Your Dexterity score increases by 1, and you gain proficiency in Dexterity saving throws.</p>
+    </description>
+    <sheet>
+      <description>+1 Dexterity, proficiency in Dexterity saving throws</description>
+    </sheet>
+    <rules>
+      <stat name="dexterity" value="1" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+    </rules>
+  </element>
+
+  <element name="Resilient: Constitution" type="Racial Trait" source="SW-MSV-Edition" id="ID_SW_FEAT_RESILIENT_CONSTITUTION">
+    <supports>Resilient</supports>
+    <compendium display="false" />
+    <description>
+      <p>Your Constitution score increases by 1, and you gain proficiency in Constitution saving throws.</p>
+    </description>
+    <sheet>
+      <description>+1 Constitution, proficiency in Constitution saving throws</description>
+    </sheet>
+    <rules>
+      <stat name="constitution" value="1" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+    </rules>
+  </element>
+
+  <element name="Resilient: Intelligence" type="Racial Trait" source="SW-MSV-Edition" id="ID_SW_FEAT_RESILIENT_INTELLIGENCE">
+    <supports>Resilient</supports>
+    <compendium display="false" />
+    <description>
+      <p>Your Intelligence score increases by 1, and you gain proficiency in Intelligence saving throws.</p>
+    </description>
+    <sheet>
+      <description>+1 Intelligence, proficiency in Intelligence saving throws</description>
+    </sheet>
+    <rules>
+      <stat name="intelligence" value="1" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+    </rules>
+  </element>
+
+  <element name="Resilient: Wisdom" type="Racial Trait" source="SW-MSV-Edition" id="ID_SW_FEAT_RESILIENT_WISDOM">
+    <supports>Resilient</supports>
+    <compendium display="false" />
+    <description>
+      <p>Your Wisdom score increases by 1, and you gain proficiency in Wisdom saving throws.</p>
+    </description>
+    <sheet>
+      <description>+1 Wisdom, proficiency in Wisdom saving throws</description>
+    </sheet>
+    <rules>
+      <stat name="wisdom" value="1" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+    </rules>
+  </element>
+
+  <element name="Resilient: Charisma" type="Racial Trait" source="SW-MSV-Edition" id="ID_SW_FEAT_RESILIENT_CHARISMA">
+    <supports>Resilient</supports>
+    <compendium display="false" />
+    <description>
+      <p>Your Charisma score increases by 1, and you gain proficiency in Charisma saving throws.</p>
+    </description>
+    <sheet>
+      <description>+1 Charisma, proficiency in Charisma saving throws</description>
+    </sheet>
+    <rules>
+      <stat name="charisma" value="1" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+    </rules>
+  </element>
+
+</elements>

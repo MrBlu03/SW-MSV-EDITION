@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Scout Class</name>
-    <update version="1.3.0">
+    <update version="1.3.1">
       <file name="class-scout.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-scout.xml" />
     </update>
   </info>
@@ -17,7 +17,7 @@
       <p class="indent">
         <strong>
           <em>Proficiencies. Armor:</em>
-           Light Armour. Weapons: Simple Blasters, Simple or Martial Light Weapons with Finesse property, Sniper Rifle, Cycler Rifle, Simple or Martial Vibroweapons with Finesse property. Saving Throws: Dexterity and Intelligence.
+           Light Armour. Weapons: Simple Blasters, Sniper Rifle, Cycler Rifle, Vibrodagger, Vibro Double-Blade, Electrostaff, Electrowhip, Electrobaton. Saving Throws: Dexterity and Intelligence.
         </strong>
       </p>
       <p class="indent">
@@ -45,9 +45,6 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS" />
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER" />
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTWHIP" />
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_BLADED_LIGHTSABER" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SNIPER_RIFLE" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CYCLER_RIFLE" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBRODAGGER" />
