@@ -29,6 +29,8 @@
       <stat name="charisma" value="1" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+      <grant type="Expertise" id="ID_EXPERTISE_DECEPTION" />
+      <grant type="Expertise" id="ID_EXPERTISE_PERFORMANCE" />
     </rules>
   </element>
   <element name="Alert" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_ALERT">

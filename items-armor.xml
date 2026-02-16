@@ -294,6 +294,9 @@
     <sheet>
       <description>Bonus Action (1/LR): Gain 10 temporary hit points.</description>
     </sheet>
+    <rules>
+      <stat name="hp:temp" value="10" />
+    </rules>
   </element>
 
   <element name="Activate Medium Shield Generator" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SHIELD_GENERATOR_MEDIUM">
@@ -303,6 +306,9 @@
     <sheet>
       <description>Bonus Action (1/LR): Gain 20 temporary hit points.</description>
     </sheet>
+    <rules>
+      <stat name="hp:temp" value="20" />
+    </rules>
   </element>
 
   <element name="Activate Large Shield Generator" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SHIELD_GENERATOR_LARGE">
@@ -312,6 +318,9 @@
     <sheet>
       <description>Bonus Action (1/LR): Gain 40 temporary hit points.</description>
     </sheet>
+    <rules>
+      <stat name="hp:temp" value="40" />
+    </rules>
   </element>
   
   <element name="Energy Shield" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_ENERGY_SHIELD">

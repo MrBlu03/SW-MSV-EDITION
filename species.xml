@@ -963,9 +963,8 @@
     </description>
     <sheet display="false" />
     <rules>
-      <select type="Racial Trait" name="Ability Score Increase (+2)" supports="Human Variant Two" number="1" />
+      <select type="Racial Trait" name="Ability Score Increase (1st)" supports="Human Ability" number="1" />
       <select type="Racial Trait" name="Ability Score Increase (2nd)" supports="Human Ability" number="1" />
-      <select type="Racial Trait" name="Ability Score Increase (3rd)" supports="Human Ability" number="1" />
       <stat name="innate speed" value="30" bonus="base" />
       <grant type="Size" id="ID_SIZE_MEDIUM" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
@@ -3103,6 +3102,38 @@
       <description>Vulnerable to sonic damage.</description>
     </sheet>
   </element>
+  <element name="Kinetic Damage Vulnerability" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_KINETIC">
+    <description>
+      <p>You are vulnerable to kinetic damage.</p>
+    </description>
+    <sheet>
+      <description>Vulnerable to kinetic damage.</description>
+    </sheet>
+  </element>
+  <element name="Energy Damage Vulnerability" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ENERGY">
+    <description>
+      <p>You are vulnerable to energy damage.</p>
+    </description>
+    <sheet>
+      <description>Vulnerable to energy damage.</description>
+    </sheet>
+  </element>
+  <element name="Kinetic Damage Resistance" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_KINETIC">
+    <description>
+      <p>You are resistant to kinetic damage.</p>
+    </description>
+    <sheet>
+      <description>Resistant to kinetic damage.</description>
+    </sheet>
+  </element>
+  <element name="Energy Damage Resistance" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_ENERGY">
+    <description>
+      <p>You are resistant to energy damage.</p>
+    </description>
+    <sheet>
+      <description>Resistant to energy damage.</description>
+    </sheet>
+  </element>
   <element name="Sonic Scream" type="Action" source="SW-MSV-Edition" id="ID_ACTION_ITHORIAN_BREATH">
     <description>
       <p>As an action, you can violently expel air in a 15-foot cone. When you do so, each creature in the area of the exhalation must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). A creature takes 2d6 sonic damage on a failed save, and half as much damage on a successful one. The damage increases to 4d6 at 5th level, 6d6 at 11th level, and 8d6 at 17th level. This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you complete a long rest.</p>
@@ -3518,7 +3549,7 @@
   </element>
   <element name="Consume Corpse" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_RAKATA_CONSUME_CORPSE">
     <description>
-      <p>As an Action, eat a corpse to gain temporary Hit Points equal to your hit die + Constitution modifier.</p></description>
+      <p>As an Action, Eat a corpse to gain temporary Hit Points equal to your hit die + Constitution modifier.</p></description>
     <sheet>
       <description>Action: Eat a corpse to gain temp HP = hit die + Constitution modifier.</description></sheet>
   </element>

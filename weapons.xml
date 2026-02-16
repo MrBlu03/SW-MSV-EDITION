@@ -86,6 +86,14 @@
       <description>As an Action, Shoot a Dart with the weapon. On hit: Damage and conditions depend on the dart.</description>
     </sheet>
   </element>
+  <element name="Stealth Pistol Dart" type="Action" source="SW-MSV-Edition" id="ID_ACTION_STEALTH_PISTOL_DART">
+    <description>
+      <p>As an Action, Shoot a Dart with the stealth pistol at a target. On hit: Damage and conditions depend on the dart.</p>
+    </description>
+    <sheet>
+      <description>As an Action, Shoot a Dart with the stealth pistol. On hit: Damage and conditions depend on the dart.</description>
+    </sheet>
+  </element>
   <element name="Rocket" type="Action" source="SW-MSV-Edition" id="ID_ACTION_ROCKET">
     <description>
       <p>Rocket: As an Action, Shoot a Rocket with the weapon at a target. On hit: Damage and conditions depend on the rocket.</p>
@@ -378,7 +386,7 @@
     <rules>
       <grant type="Tag" name="Silent" />
       <grant type="Action" id="ID_ACTION_SHOOT" />
-    <grant type="Action" id="ID_ACTION_DART" /></rules>
+    <grant type="Action" id="ID_ACTION_STEALTH_PISTOL_DART" /></rules>
   </element>
   <element name="Wrist Launcher with Wrist Blaster Attachment" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_BLASTER">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_ENERGY</supports>
