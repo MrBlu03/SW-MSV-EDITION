@@ -453,6 +453,26 @@
     <sheet display="true" />
       <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT,Tool</supports>
   </element>
+  
+  <!-- Skill Group Support Elements for Species Selections -->
+  <element name="Skill: Survival or Investigation" type="Proficiency" id="ID_INTERNAL_SKILL_SURVIVAL_INVESTIGATION" source="SW-MSV-Edition">
+    <description><p>Support element for Survival or Investigation skill selection</p></description>
+    <sheet display="false" />
+    <supports>ID_PROFICIENCY_SKILL_SURVIVAL||ID_PROFICIENCY_SKILL_INVESTIGATION</supports>
+  </element>
+  
+  <element name="Skill: Deception or Persuasion" type="Proficiency" id="ID_INTERNAL_SKILL_DECEPTION_PERSUASION" source="SW-MSV-Edition">
+    <description><p>Support element for Deception or Persuasion skill selection</p></description>
+    <sheet display="false" />
+    <supports>ID_PROFICIENCY_SKILL_DECEPTION||ID_PROFICIENCY_SKILL_PERSUASION</supports>
+  </element>
+  
+  <element name="Skill: Persuasion or Intimidation" type="Proficiency" id="ID_INTERNAL_SKILL_PERSUASION_INTIMIDATION" source="SW-MSV-Edition">
+    <description><p>Support element for Persuasion or Intimidation skill selection</p></description>
+    <sheet display="false" />
+    <supports>ID_PROFICIENCY_SKILL_PERSUASION||ID_PROFICIENCY_SKILL_INTIMIDATION</supports>
+  </element>
+  
   <element name="Acrobatics" type="Expertise" id="ID_EXPERTISE_ACROBATICS" source="SW-MSV-Edition">
     <supports>ID_PROFICIENCY_SKILL_ACROBATICS</supports>
     <requirements>ID_PROFICIENCY_SKILL_ACROBATICS</requirements>

@@ -407,8 +407,8 @@
       <grant type="Size" id="ID_SIZE_MEDIUM" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_DEVARONESE" />
-      <select type="Proficiency" name="Proficiency (Devaronian)" supports="ID_PROFICIENCY_SKILL_SURVIVAL||ID_PROFICIENCY_SKILL_INVESTIGATION" number="1" />
-            <select type="Proficiency" name="Proficiency (Devaronian 2)" supports="ID_PROFICIENCY_SKILL_DECEPTION||ID_PROFICIENCY_SKILL_PERSUASION" number="1" />
+      <select type="Proficiency" name="Proficiency (Devaronian)" supports="ID_INTERNAL_SKILL_SURVIVAL_INVESTIGATION" number="1" />
+            <select type="Proficiency" name="Proficiency (Devaronian 2)" supports="ID_INTERNAL_SKILL_DECEPTION_PERSUASION" number="1" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DEVARONIAN_HEAT_ADAPTED" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DEVARONIAN_JUNGLE_DWELLER" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DEVARONIAN_POISON_RESILIENCE" />
@@ -2319,7 +2319,7 @@
       <grant type="Size" id="ID_SIZE_MEDIUM" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
-      <select type="Proficiency" name="Proficiency (Twi'Lek)" supports="ID_PROFICIENCY_SKILL_DECEPTION||ID_PROFICIENCY_SKILL_PERSUASION" number="1" />
+      <select type="Proficiency" name="Proficiency (Twi'Lek)" supports="ID_INTERNAL_SKILL_DECEPTION_PERSUASION" number="1" />
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
@@ -2609,7 +2609,7 @@
       <grant type="Language" id="ID_LANGUAGE_ZABRAKI" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_ZABRAK_NATURAL_WEAPONS" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_ZABRAK_DURABLE" />
-      <select type="Proficiency" name="Proficiency (Zabrak)" supports="ID_PROFICIENCY_SKILL_PERSUASION||ID_PROFICIENCY_SKILL_INTIMIDATION" number="1" />
+      <select type="Proficiency" name="Proficiency (Zabrak)" supports="ID_INTERNAL_SKILL_PERSUASION_INTIMIDATION" number="1" />
       <select type="Sub Race" name="Zabrak Subrace" supports="ID_RACE_ZABRAK" optional="true" />
     </rules>
   </element>
