@@ -96,7 +96,7 @@
     <sheet>
       <description>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a Bonus Action to regain hit points equal to 1d10 + your Warrior level. Once you use this feature, you must finish a short or long rest before you can use it again.</description>
     </sheet>
-
+    <rules />
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_ACTION_SURGE" name="Action Surge" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -106,7 +106,7 @@
     <sheet>
       <description>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional Action. Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</description>
     </sheet>
-
+    <rules />
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_EXTRA_ATTACK" name="Extra Attack" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -116,7 +116,7 @@
     <sheet>
       <description>Beginning at 5th level, you can attack twice, instead of once, whenever you take the attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</description>
     </sheet>
-
+    <rules />
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_INDOMITABLE" name="Indomitable" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -126,7 +126,7 @@
     <sheet>
       <description>Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest. You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.</description>
     </sheet>
-
+    <rules />
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_EXTRA_ATTACK_X3" name="Extra Attack (x3)" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -136,7 +136,7 @@
     <sheet>
       <description>You can attack four times, instead of three, whenever you take the Attack action on your turn.</description>
     </sheet>
-
+    <rules />
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_INDOMITABLE_X1" name="Indomitable (x1)" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -146,7 +146,7 @@
     <sheet>
       <description>You can reroll a saving throw that you fail. If you do so, you must use the new roll. Once you use this feature, you can't use it again until you finish a long rest.</description>
     </sheet>
-
+    <rules />
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_INDOMITABLE_X2" name="Indomitable (x2)" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -156,7 +156,7 @@
     <sheet>
       <description>You can reroll a saving throw that you fail. If you do so, you must use the new roll. Once you use this feature, you can't use it again until you finish a long rest.</description>
     </sheet>
-
+    <rules />
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_ACTION_SURGE_X2" name="Action Surge (x2)" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -166,7 +166,7 @@
     <sheet>
       <description>On your turn, you can take one additional action. Once you use this feature, you must finish a short or long rest before you can use it again.</description>
     </sheet>
-
+    <rules />
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_INDOMITABLE_X3" name="Indomitable (x3)" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -176,7 +176,7 @@
     <sheet>
       <description>You can reroll a saving throw that you fail. If you do so, you must use the new roll. Once you use this feature, you can't use it again until you finish a long rest.</description>
     </sheet>
-
+    <rules />
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_ACTION_SURGE_X1" name="Action Surge (x1)" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -186,7 +186,7 @@
     <sheet>
       <description>On your turn, you can take one additional action. Once you use this feature, you must finish a short or long rest before you can use it again.</description>
     </sheet>
-
+    <rules />
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_EXTRA_ATTACK_X1" name="Extra Attack (x1)" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -196,7 +196,7 @@
     <sheet>
       <description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
     </sheet>
-
+    <rules />
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_EXTRA_ATTACK_X2" name="Extra Attack (x2)" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -206,19 +206,25 @@
     <sheet>
       <description>You can attack three times, instead of twice, whenever you take the Attack action on your turn.</description>
     </sheet>
-
+    <rules />
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_JETTROOPER" name="Jettrooper" type="Class Feature" source="SW-MSV-Edition">
     <description>
       <p>Jettrooper - See Warrior class description for details.</p>
     </description>
-
+    <sheet>
+      <description>Jettrooper - See Warrior class description for details.</description>
+    </sheet>
+    <rules />
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_BRUTE" name="Brute" type="Class Feature" source="SW-MSV-Edition">
     <description>
       <p>Brute - See Warrior class description for details.</p>
     </description>
-
+    <sheet>
+      <description>Brute - See Warrior class description for details.</description>
+    </sheet>
+    <rules />
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_FEAT" name="Feat" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -233,7 +239,10 @@
     <description>
       <p>You gain a feature from your Warrior subclass.</p>
     </description>
-
+    <sheet>
+      <description>You gain a feature from your Warrior subclass.</description>
+    </sheet>
+    <rules />
   </element>
   <element id="ID_CLASS_WARRIOR_FEATURE_SUBCLASS" name="Warrior Subclass" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -293,7 +302,7 @@
     <sheet>
       <description>You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest. You gain another superiority die at 7th level and one more at 15th level.</description>
     </sheet>
-
+    <rules />
   </element>
   <element id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_MANEUVER_SAVE_DC" name="Maneuver Save DC" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
@@ -303,7 +312,7 @@
     <sheet>
       <description>8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).</description>
     </sheet>
-
+    <rules />
   </element>
   <element id="ID_SUBCLASS_BATTLE_MASTER_ABILITY_STUDENT_OF_WAR" name="Student of War" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />

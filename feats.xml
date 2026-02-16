@@ -91,7 +91,7 @@
         <sheet>
       <description>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack and you gain a +1 bonus to Armour Class while wielding a melee weapon in each hand. You cannot dual-wield two-handed weapons.</description></sheet>
     <rules>
-      <stat name="ac:misc" value="1" />
+      <!-- AC bonus is conditional on dual-wielding; not implemented mechanically -->
     </rules>
   </element>
   <element name="Durable" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_DURABLE">
@@ -114,7 +114,7 @@
     <sheet>
       <description>You gain Heavy Armour proficiency. +1 Strength (max 20).</description>
     </sheet>
-    <prerequisite>medium armour proifiency</prerequisite>
+    <prerequisite>medium armour proficiency</prerequisite>
     <rules>
       <stat name="strength" value="1" />
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
@@ -128,7 +128,7 @@
     <sheet>
       <description>+1 Strength (max 20). Kinetic damage reduced by 3 while wearing heavy armour.</description>
     </sheet>
-    <prerequisite>heavy armour profiency</prerequisite>
+    <prerequisite>heavy armour proficiency</prerequisite>
     <rules>
       <stat name="strength" value="1" />
     </rules>
