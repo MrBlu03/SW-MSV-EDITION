@@ -2,10 +2,11 @@
 <elements>
   <info>
     <name>Species</name>
-    <update version="1.4.0">
+    <update version="1.5.0">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
+
   <element name="Darkvision" type="Sense" source="SW-MSV-Edition" id="ID_SENSE_DARKVISION">
     <description>
       <p>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
@@ -56,48 +57,10 @@
       <grant type="Language" id="ID_LANGUAGE_BITH" />
       <select type="Language" name="Language (Bith)" supports="Standard||Exotic" number="1" />
       <select type="Proficiency" name="Musical Instrument (Bith)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1" />
-            <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_BITH_INVESTIGATION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_BITH_PERCEPTION" />
 <select type="Sub Race" name="Bith Subrace" supports="ID_RACE_BITH" optional="true" />
-    </rules>
-  </element>
-  <element name="Bith Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_BITH_CYBORG">
-    <supports>ID_RACE_BITH</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_BITH_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_BITH_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_BITH_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_BITH_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_BITH_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
   <element name="Bothan" type="Race" source="SW-MSV-Edition" id="ID_RACE_BOTHAN">
@@ -108,7 +71,7 @@
         </strong>
       </p>
       <p class="indent">Age. Normal lifespan.</p>
-      <p class="indent">Size. Your size is Medium (small).</p>
+      <p class="indent">Size. Your size is Medium (slightly smaller).</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
       <p class="indent">Cunning Action: You can take the Hide or Disengage action as a bonus action.</p>
       <p class="indent">Proficient in Insight and Deception</p>
@@ -128,44 +91,7 @@
 <select type="Sub Race" name="Bothan Subrace" supports="ID_RACE_BOTHAN" optional="true" />
     </rules>
   </element>
-  <element name="Bothan Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_BOTHAN_CYBORG">
-    <supports>ID_RACE_BOTHAN</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_BOTHAN_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_BOTHAN_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_BOTHAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_BOTHAN_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_BOTHAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Cathar" type="Race" source="SW-MSV-Edition" id="ID_RACE_CATHAR">
     <description>
       <p class="indent">
@@ -174,7 +100,7 @@
         </strong>
       </p>
       <p class="indent">Age. Normal lifespan.</p>
-      <p class="indent">Size. Your size is Medium (tall).</p>
+      <p class="indent">Size. Your size is Medium (normal-slightly bigger).</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
       <p class="indent">Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
       <p class="indent">Natural Weapons: Your unarmed strikes deal 1d6 kinetic damage instead of the normal bludgeoning damage and have finesse.</p>
@@ -199,44 +125,7 @@
 <select type="Sub Race" name="Cathar Subrace" supports="ID_RACE_CATHAR" optional="true" />
     </rules>
   </element>
-  <element name="Cathar Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_CATHAR_CYBORG">
-    <supports>ID_RACE_CATHAR</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_CATHAR_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CATHAR_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_CATHAR_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CATHAR_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_CATHAR_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Chagrian" type="Race" source="SW-MSV-Edition" id="ID_RACE_CHAGRIAN">
     <description>
       <p class="indent">
@@ -271,44 +160,7 @@
 <select type="Sub Race" name="Chagrian Subrace" supports="ID_RACE_CHAGRIAN" optional="true" />
     </rules>
   </element>
-  <element name="Chagrian Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_CHAGRIAN_CYBORG">
-    <supports>ID_RACE_CHAGRIAN</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_CHAGRIAN_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CHAGRIAN_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_CHAGRIAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CHAGRIAN_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_CHAGRIAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Chiss" type="Race" source="SW-MSV-Edition" id="ID_RACE_CHISS">
     <description>
       <p class="indent">
@@ -342,44 +194,7 @@
 <select type="Sub Race" name="Chiss Subrace" supports="ID_RACE_CHISS" optional="true" />
     </rules>
   </element>
-  <element name="Chiss Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_CHISS_CYBORG">
-    <supports>ID_RACE_CHISS</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_CHISS_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CHISS_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_CHISS_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_CHISS_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_CHISS_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Devaronian" type="Race" source="SW-MSV-Edition" id="ID_RACE_DEVARONIAN">
     <description>
       <p class="indent">
@@ -407,52 +222,15 @@
       <grant type="Size" id="ID_SIZE_MEDIUM" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_DEVARONESE" />
-      <select type="Proficiency" name="Proficiency (Devaronian)" supports="ID_INTERNAL_SKILL_SURVIVAL_INVESTIGATION" number="1" />
-            <select type="Proficiency" name="Proficiency (Devaronian 2)" supports="ID_INTERNAL_SKILL_DECEPTION_PERSUASION" number="1" />
+      <select type="Proficiency" name="Proficiency (Devaronian)" supports="ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_INVESTIGATION" number="1" />
+      <select type="Proficiency" name="Proficiency (Devaronian 2)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERSUASION" number="1" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DEVARONIAN_HEAT_ADAPTED" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DEVARONIAN_JUNGLE_DWELLER" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DEVARONIAN_POISON_RESILIENCE" />
 <select type="Sub Race" name="Devaronian Subrace" supports="ID_RACE_DEVARONIAN" optional="true" />
     </rules>
   </element>
-  <element name="Devaronian Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_DEVARONIAN_CYBORG">
-    <supports>ID_RACE_DEVARONIAN</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_DEVARONIAN_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_DEVARONIAN_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_DEVARONIAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_DEVARONIAN_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_DEVARONIAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Protocol Droid" type="Race" source="SW-MSV-Edition" id="ID_RACE_PROTOCOL_DROID">
     <description>
       <p class="indent">
@@ -534,7 +312,7 @@
         </strong>
       </p>
       <p class="indent">Age. Requires maintenance lifespan.</p>
-      <p class="indent">Size. Your size is Medium (tall).</p>
+      <p class="indent">Size. Your size is Medium (normal-slightly bigger).</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
       <p class="indent">Resistant to necrotic</p>
       <p class="indent">Resistant to psychic</p>
@@ -595,44 +373,7 @@
 <select type="Sub Race" name="Duros Subrace" supports="ID_RACE_DUROS" optional="true" />
     </rules>
   </element>
-  <element name="Duros Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_DUROS_CYBORG">
-    <supports>ID_RACE_DUROS</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_DUROS_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_DUROS_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_DUROS_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_DUROS_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_DUROS_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Ewok" type="Race" source="SW-MSV-Edition" id="ID_RACE_EWOK">
     <description>
       <p class="indent">
@@ -647,7 +388,7 @@
       <p class="indent">Nimble: Can hide behind creatures larger than you</p>
       <p class="indent">Advantage on Perception checks that rely on smell</p>
       <p class="indent">Climb speed 25 ft. Advantage on Strength saving throws and Athletics checks when climbing.</p>
-      <p class="indent">Can only wield two-handed weapons if they have the versatile property. Cannot use physical shields.</p>
+      <p class="indent">Can only wield 2 handed weapons if they have the versatile property. Cannot use physical shields.</p>
       <p class="indent">Nature and Survival proficiency</p>
       <p class="indent">Languages. You can speak Ewokese and understand Galactic Basic (cannot speak it).</p>
     </description>
@@ -671,44 +412,7 @@
 <select type="Sub Race" name="Ewok Subrace" supports="ID_RACE_EWOK" optional="true" />
     </rules>
   </element>
-  <element name="Ewok Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_EWOK_CYBORG">
-    <supports>ID_RACE_EWOK</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_EWOK_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_EWOK_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_EWOK_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_EWOK_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_EWOK_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Gamorrean" type="Race" source="SW-MSV-Edition" id="ID_RACE_GAMORREAN">
     <description>
       <p class="indent">
@@ -741,44 +445,7 @@
 <select type="Sub Race" name="Gamorrean Subrace" supports="ID_RACE_GAMORREAN" optional="true" />
     <grant type="Racial Trait" id="ID_RACE_TRAIT_GAMORREAN_DURABLE" /></rules>
   </element>
-  <element name="Gamorrean Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_GAMORREAN_CYBORG">
-    <supports>ID_RACE_GAMORREAN</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_GAMORREAN_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GAMORREAN_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_GAMORREAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GAMORREAN_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_GAMORREAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Geonosian" type="Race" source="SW-MSV-Edition" id="ID_RACE_GEONOSIAN">
     <description>
       <p class="indent">
@@ -809,44 +476,7 @@
 <select type="Sub Race" name="Geonosian Subrace" supports="ID_RACE_GEONOSIAN" optional="true" />
     </rules>
   </element>
-  <element name="Geonosian Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_GEONOSIAN_CYBORG">
-    <supports>ID_RACE_GEONOSIAN</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_GEONOSIAN_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GEONOSIAN_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_GEONOSIAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GEONOSIAN_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_GEONOSIAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Gran" type="Race" source="SW-MSV-Edition" id="ID_RACE_GRAN">
     <description>
       <p class="indent">
@@ -877,44 +507,7 @@
 <select type="Sub Race" name="Gran Subrace" supports="ID_RACE_GRAN" optional="true" />
     <grant type="Racial Trait" id="ID_RACE_TRAIT_GRAN_DURABLE" /></rules>
   </element>
-  <element name="Gran Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_GRAN_CYBORG">
-    <supports>ID_RACE_GRAN</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_GRAN_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GRAN_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_GRAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_GRAN_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_GRAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Human (Standard)" type="Race" source="SW-MSV-Edition" id="ID_RACE_HUMAN_STANDARD">
     <description>
       <p class="indent">
@@ -976,54 +569,7 @@
 <select type="Sub Race" name="Human Subrace" supports="ID_RACE_HUMAN_VARIANT" optional="true" />
     </rules>
   </element>
-  <element name="Human (Standard) Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_HUMAN_STANDARD_CYBORG">
-    <supports>ID_RACE_HUMAN_STANDARD</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
-    </rules>
-  </element>
-  <element name="Human (Variant) Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_HUMAN_VARIANT_CYBORG">
-    <supports>ID_RACE_HUMAN_VARIANT</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CYBORG_STR">
-    <compendium display="false" />
-    <supports>Cyborg Enhancement</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>Cyborg Enhancement</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Ithorian" type="Race" source="SW-MSV-Edition" id="ID_RACE_ITHORIAN">
     <description>
       <p class="indent">
@@ -1035,6 +581,7 @@
       <p class="indent">Size. Your size is Medium (tall).</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
       <p class="indent">Languages. You can speak Ithorese and understand Galactic Basic (cannot speak it).</p>
+      <p class="indent">Sonic Scream: As an Action, you can violently expel air in a 15-foot cone. Each creature in the area must make a Wisdom saving throw (DC 8 + proficiency + CON). A creature takes 2d6 sonic damage on a failed save, and half as much on a success. Damage increases at 5th, 11th, and 17th levels. No effect on constructs. Uses = proficiency bonus per long rest.</p>
     </description>
     <sheet display="false" />
     <rules>
@@ -1047,47 +594,10 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_UNDERSTAND_ONLY_BASIC" />
       <select type="Sub Race" name="Ithorian Subrace" supports="ID_RACE_ITHORIAN" optional="true" />
-      <grant type="Action" id="ID_ACTION_ITHORIAN_BREATH" />
+      <grant type="Action" id="ID_ACTION_ITHORIAN_SONIC_SCREAM" />
     </rules>
   </element>
-  <element name="Ithorian Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_ITHORIAN_CYBORG">
-    <supports>ID_RACE_ITHORIAN</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_ITHORIAN_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ITHORIAN_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_ITHORIAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ITHORIAN_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_ITHORIAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Jawa" type="Race" source="SW-MSV-Edition" id="ID_RACE_JAWA">
     <description>
       <p class="indent">
@@ -1126,44 +636,7 @@
 <select type="Sub Race" name="Jawa Subrace" supports="ID_RACE_JAWA" optional="true" />
     </rules>
   </element>
-  <element name="Jawa Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_JAWA_CYBORG">
-    <supports>ID_RACE_JAWA</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_JAWA_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_JAWA_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_JAWA_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_JAWA_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_JAWA_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Kaleesh" type="Race" source="SW-MSV-Edition" id="ID_RACE_KALEESH">
     <description>
       <p class="indent">
@@ -1197,44 +670,7 @@
 <select type="Sub Race" name="Kaleesh Subrace" supports="ID_RACE_KALEESH" optional="true" />
     </rules>
   </element>
-  <element name="Kaleesh Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_KALEESH_CYBORG">
-    <supports>ID_RACE_KALEESH</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_KALEESH_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_KALEESH_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_KALEESH_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_KALEESH_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_KALEESH_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Kel Dor" type="Race" source="SW-MSV-Edition" id="ID_RACE_KEL_DOR">
     <description>
       <p class="indent">
@@ -1267,44 +703,7 @@
 <select type="Sub Race" name="Kel Dor Subrace" supports="ID_RACE_KEL_DOR" optional="true" />
     </rules>
   </element>
-  <element name="Kel Dor Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_KEL_DOR_CYBORG">
-    <supports>ID_RACE_KEL_DOR</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_KEL_DOR_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_KEL_DOR_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_KEL_DOR_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_KEL_DOR_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_KEL_DOR_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Mirialan" type="Race" source="SW-MSV-Edition" id="ID_RACE_MIRIALAN">
     <description>
       <p class="indent">
@@ -1335,44 +734,7 @@
 <select type="Sub Race" name="Mirialan Subrace" supports="ID_RACE_MIRIALAN" optional="true" />
     </rules>
   </element>
-  <element name="Mirialan Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_MIRIALAN_CYBORG">
-    <supports>ID_RACE_MIRIALAN</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_MIRIALAN_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MIRIALAN_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_MIRIALAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MIRIALAN_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_MIRIALAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Mon Calamari" type="Race" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI">
     <description>
       <p class="indent">
@@ -1410,44 +772,6 @@
 <select type="Sub Race" name="Mon Calamari Subrace" supports="ID_RACE_MON_CALAMARI" optional="true" />
     </rules>
   </element>
-  <element name="Mon Calamari Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_CYBORG">
-    <supports>ID_RACE_MON_CALAMARI</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_MON_CALAMARI_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_MON_CALAMARI_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_MON_CALAMARI_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
   <element name="Nautolan" type="Race" source="SW-MSV-Edition" id="ID_RACE_NAUTOLAN">
     <description>
       <p class="indent">
@@ -1483,44 +807,7 @@
 <select type="Sub Race" name="Nautolan Subrace" supports="ID_RACE_NAUTOLAN" optional="true" />
     </rules>
   </element>
-  <element name="Nautolan Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_NAUTOLAN_CYBORG">
-    <supports>ID_RACE_NAUTOLAN</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_NAUTOLAN_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_NAUTOLAN_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_NAUTOLAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_NAUTOLAN_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_NAUTOLAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Neimoidian" type="Race" source="SW-MSV-Edition" id="ID_RACE_NEIMOIDIAN">
     <description>
       <p class="indent">
@@ -1552,44 +839,7 @@
 <select type="Sub Race" name="Neimoidian Subrace" supports="ID_RACE_NEIMOIDIAN" optional="true" />
     </rules>
   </element>
-  <element name="Neimoidian Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_NEIMOIDIAN_CYBORG">
-    <supports>ID_RACE_NEIMOIDIAN</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_NEIMOIDIAN_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_NEIMOIDIAN_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_NEIMOIDIAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_NEIMOIDIAN_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_NEIMOIDIAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Ortolan" type="Race" source="SW-MSV-Edition" id="ID_RACE_ORTOLAN">
     <description>
       <p class="indent">
@@ -1612,7 +862,7 @@
       <stat name="intelligence" value="2" />
       <stat name="charisma" value="1" />
       <stat name="innate speed" value="25" bonus="base" />
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_COLD" />
       <grant type="Size" id="ID_SIZE_SMALL" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_ORTOLAN" />
@@ -1624,44 +874,7 @@
 <select type="Sub Race" name="Ortolan Subrace" supports="ID_RACE_ORTOLAN" optional="true" />
     </rules>
   </element>
-  <element name="Ortolan Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_ORTOLAN_CYBORG">
-    <supports>ID_RACE_ORTOLAN</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_ORTOLAN_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ORTOLAN_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_ORTOLAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ORTOLAN_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_ORTOLAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Rakata" type="Race" source="SW-MSV-Edition" id="ID_RACE_RAKATA">
     <description>
       <p class="indent">
@@ -1677,7 +890,7 @@
       <p class="indent">Force Insensitive: Cannot use Force powers</p>
       <p class="indent">Natural weapons: Unarmed strikes deal 1d6 kinetic damage</p>
       <p class="indent">Slicing device proficiency</p>
-      <p class="indent">Consume Corpse: Eat a corpse to gain temporary hit points equal to your Constitution modifier</p>
+      <p class="indent">Consume Corpse: As an Action, Eat a corpse to gain temporary Hit Points equal to your hit die + Constitution modifier.</p>
       <p class="indent">Swim speed 30 ft.</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Rakata.</p>
     </description>
@@ -1700,44 +913,7 @@
 <select type="Sub Race" name="Rakata Subrace" supports="ID_RACE_RAKATA" optional="true" />
     </rules>
   </element>
-  <element name="Rakata Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_RAKATA_CYBORG">
-    <supports>ID_RACE_RAKATA</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_RAKATA_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RAKATA_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_RAKATA_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RAKATA_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_RAKATA_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Rattataki" type="Race" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI">
     <description>
       <p class="indent">
@@ -1768,44 +944,7 @@
 <select type="Sub Race" name="Rattataki Subrace" supports="ID_RACE_RATTATAKI" optional="true" />
     </rules>
   </element>
-  <element name="Rattataki Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_CYBORG">
-    <supports>ID_RACE_RATTATAKI</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_RATTATAKI_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_RATTATAKI_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_RATTATAKI_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Rodian" type="Race" source="SW-MSV-Edition" id="ID_RACE_RODIAN">
     <description>
       <p class="indent">
@@ -1839,44 +978,7 @@
 <select type="Sub Race" name="Rodian Subrace" supports="ID_RACE_RODIAN" optional="true" />
     </rules>
   </element>
-  <element name="Rodian Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_RODIAN_CYBORG">
-    <supports>ID_RACE_RODIAN</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_RODIAN_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RODIAN_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_RODIAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_RODIAN_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_RODIAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Sith Pureblood" type="Race" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD">
     <description>
       <p class="indent">
@@ -1906,44 +1008,7 @@
 <select type="Sub Race" name="Sith Pureblood Subrace" supports="ID_RACE_SITH_PUREBLOOD" optional="true" />
     </rules>
   </element>
-  <element name="Sith Pureblood Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_CYBORG">
-    <supports>ID_RACE_SITH_PUREBLOOD</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_SITH_PUREBLOOD_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_SITH_PUREBLOOD_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_SITH_PUREBLOOD_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Sullustan" type="Race" source="SW-MSV-Edition" id="ID_RACE_SULLUSTAN">
     <description>
       <p class="indent">
@@ -1952,7 +1017,7 @@
         </strong>
       </p>
       <p class="indent">Age. Normal lifespan.</p>
-      <p class="indent">Size. Your size is Medium (small).</p>
+      <p class="indent">Size. Your size is Medium (relatively small).</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
       <p class="indent">Darkvision</p>
       <p class="indent">Advantage on Perception checks that rely on hearing</p>
@@ -1975,44 +1040,7 @@
 <select type="Sub Race" name="Sullustan Subrace" supports="ID_RACE_SULLUSTAN" optional="true" />
     </rules>
   </element>
-  <element name="Sullustan Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_SULLUSTAN_CYBORG">
-    <supports>ID_RACE_SULLUSTAN</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_SULLUSTAN_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SULLUSTAN_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_SULLUSTAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_SULLUSTAN_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_SULLUSTAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Talz" type="Race" source="SW-MSV-Edition" id="ID_RACE_TALZ">
     <description>
       <p class="indent">
@@ -2021,7 +1049,7 @@
         </strong>
       </p>
       <p class="indent">Age. 50 years lifespan.</p>
-      <p class="indent">Size. Your size is Medium (tall).</p>
+      <p class="indent">Size. Your size is Medium (relatively tall).</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
       <p class="indent">Darkvision</p>
       <p class="indent">Natural armor: AC 12 + Dexterity (unarmored or light armor)</p>
@@ -2044,44 +1072,7 @@
 <select type="Sub Race" name="Talz Subrace" supports="ID_RACE_TALZ" optional="true" />
     </rules>
   </element>
-  <element name="Talz Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TALZ_CYBORG">
-    <supports>ID_RACE_TALZ</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TALZ_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TALZ_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_TALZ_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TALZ_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_TALZ_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Togruta" type="Race" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA">
     <description>
       <p class="indent">
@@ -2109,44 +1100,7 @@
 <select type="Sub Race" name="Togruta Subrace" supports="ID_RACE_TOGRUTA" optional="true" />
     </rules>
   </element>
-  <element name="Togruta Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_CYBORG">
-    <supports>ID_RACE_TOGRUTA</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TOGRUTA_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_TOGRUTA_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_TOGRUTA_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Trandoshan" type="Race" source="SW-MSV-Edition" id="ID_RACE_TRANDOSHAN">
     <description>
       <p class="indent">
@@ -2155,10 +1109,10 @@
         </strong>
       </p>
       <p class="indent">Age. Normal lifespan.</p>
-      <p class="indent">Size. Your size is Medium (tall).</p>
+      <p class="indent">Size. Your size is Medium (relatively tall).</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Unarmed strikes deal 1d4 kinetic damage</p>
       <p class="indent">Darkvision</p>
-      <p class="indent">Natural weapons: Unarmed strikes deal 1d4 kinetic damage</p>
       <p class="indent">Natural armor: AC 12 + Dexterity (unarmored or light armor)</p>
       <p class="indent">Regeneration: When you take damage, you can use your reaction and expend a Hit Die to regain hit points as long as the damage would not reduce your hit points to 0.</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Dosh.</p>
@@ -2179,44 +1133,7 @@
 <select type="Sub Race" name="Trandoshan Subrace" supports="ID_RACE_TRANDOSHAN" optional="true" />
     </rules>
   </element>
-  <element name="Trandoshan Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TRANDOSHAN_CYBORG">
-    <supports>ID_RACE_TRANDOSHAN</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TRANDOSHAN_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRANDOSHAN_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_TRANDOSHAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRANDOSHAN_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_TRANDOSHAN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Tusken" type="Race" source="SW-MSV-Edition" id="ID_RACE_TUSKEN">
     <description>
       <p class="indent">
@@ -2232,7 +1149,7 @@
       <p class="indent">Survival proficiency</p>
       <p class="indent">Desert is not difficult terrain for you</p>
       <p class="indent">Advantage on Constitution saving throws to avoid exhaustion from heat</p>
-      <p class="indent">Cannot operate wrist blasters, launchers, slicing kits, or other high-tech devices</p>
+      <p class="indent">Primitive: Cannot operate wrist launchers, slicing kits, or other high tech devices.</p>
       <p class="indent">Cycler Rifle and Vibro-Axe proficiency</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Tusken.</p>
     </description>
@@ -2255,44 +1172,7 @@
 <select type="Sub Race" name="Tusken Subrace" supports="ID_RACE_TUSKEN" optional="true" />
     </rules>
   </element>
-  <element name="Tusken Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_CYBORG">
-    <supports>ID_RACE_TUSKEN</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TUSKEN_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_TUSKEN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_TUSKEN_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Twi'Lek" type="Race" source="SW-MSV-Edition" id="ID_RACE_TWILEK">
     <description>
       <p class="indent">
@@ -2301,14 +1181,14 @@
         </strong>
       </p>
       <p class="indent">Age. Normal lifespan.</p>
-      <p class="indent">Size. Your size is Medium (tall).</p>
+      <p class="indent">Size. Your size is Medium (normal-slightly bigger).</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
-      <p class="indent">Darkvision</p>
-      <p class="indent">Resistant to poison</p>
-      <p class="indent">Advantage on saving throws against poison</p>
-      <p class="indent">Natural weapons: Unarmed strikes deal 1d4 kinetic damage and have finesse</p>
       <p class="indent">Deception or Persuasion proficiency</p>
+      <p class="indent">Darkvision</p>
       <p class="indent">Performance proficiency</p>
+      <p class="indent">Advantage on saving throws against poison</p>
+      <p class="indent">Resistant to poison</p>
+      <p class="indent">Natural weapons: Unarmed strikes deal 1d4 kinetic damage and have finesse</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Twi'leki.</p>
     </description>
     <sheet display="false" />
@@ -2319,7 +1199,7 @@
       <grant type="Size" id="ID_SIZE_MEDIUM" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
-      <select type="Proficiency" name="Proficiency (Twi'Lek)" supports="ID_INTERNAL_SKILL_DECEPTION_PERSUASION" number="1" />
+      <select type="Proficiency" name="Proficiency (Twi'Lek)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERSUASION" number="1" />
             <grant type="Sense" id="ID_SENSE_DARKVISION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
@@ -2329,44 +1209,7 @@
 <select type="Sub Race" name="Twi'Lek Subrace" supports="ID_RACE_TWILEK" optional="true" />
     </rules>
   </element>
-  <element name="Twilek Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TWILEK_CYBORG">
-    <supports>ID_RACE_TWILEK</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_TWILEK_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TWILEK_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_TWILEK_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TWILEK_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_TWILEK_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Ugnaught" type="Race" source="SW-MSV-Edition" id="ID_RACE_UGNAUGHT">
     <description>
       <p class="indent">
@@ -2403,44 +1246,7 @@
 <select type="Sub Race" name="Ugnaught Subrace" supports="ID_RACE_UGNAUGHT" optional="true" />
     </rules>
   </element>
-  <element name="Ugnaught Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_UGNAUGHT_CYBORG">
-    <supports>ID_RACE_UGNAUGHT</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_UGNAUGHT_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_UGNAUGHT_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_UGNAUGHT_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_UGNAUGHT_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_UGNAUGHT_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Weequay" type="Race" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY">
     <description>
       <p class="indent">
@@ -2473,44 +1279,7 @@
 <select type="Sub Race" name="Weequay Subrace" supports="ID_RACE_WEEQUAY" optional="true" />
     </rules>
   </element>
-  <element name="Weequay Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_CYBORG">
-    <supports>ID_RACE_WEEQUAY</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_WEEQUAY_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_WEEQUAY_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_WEEQUAY_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Wookie" type="Race" source="SW-MSV-Edition" id="ID_RACE_WOOKIE">
     <description>
       <p class="indent">
@@ -2519,13 +1288,13 @@
         </strong>
       </p>
       <p class="indent">Age. 400 years lifespan.</p>
-      <p class="indent">Size. Your size is Medium (tall).</p>
+      <p class="indent">Size. Your size is Medium (relatively tall).</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
+      <p class="indent">Unarmed strikes deal 1d4 kinetic damage</p>
       <p class="indent">Darkvision</p>
-      <p class="indent">Natural weapons: Unarmed strikes deal 1d4 kinetic damage</p>
       <p class="indent">Natural armor: AC 13 + Dexterity (unarmored or light armor)</p>
       <p class="indent">Intimidation proficiency</p>
-      <p class="indent">Climb 30 ft.</p>
+      <p class="indent">Climb speed 30 ft.</p>
       <p class="indent">Languages. You can speak Shyriiwook and understand Galactic Basic (cannot speak it).</p>
     </description>
     <sheet display="false" />
@@ -2546,44 +1315,7 @@
 <select type="Sub Race" name="Wookie Subrace" supports="ID_RACE_WOOKIE" optional="true" />
     </rules>
   </element>
-  <element name="Wookie Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_WOOKIE_CYBORG">
-    <supports>ID_RACE_WOOKIE</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_WOOKIE_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WOOKIE_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_WOOKIE_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_WOOKIE_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_WOOKIE_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
+  
   <element name="Zabrak" type="Race" source="SW-MSV-Edition" id="ID_RACE_ZABRAK">
     <description>
       <p class="indent">
@@ -2592,11 +1324,12 @@
         </strong>
       </p>
       <p class="indent">Age. Normal lifespan.</p>
-      <p class="indent">Size. Your size is Medium (tall).</p>
+      <p class="indent">Size. Your size is Medium (normal-slightly bigger).</p>
       <p class="indent">Speed. Your base walking speed is 30 ft.</p>
-      <p class="indent">Natural Weapons. Your unarmed strikes deal 1d4 kinetic damage and have finesse.</p>
-      <p class="indent">Durable. Your hit point maximum increases by 1, and it increases by 1 every time you gain a level. When you are reduced to 0 hit points, you can drop to 1 hit point instead once per long rest.</p>
       <p class="indent">Persuasion or Intimidation proficiency</p>
+      <p class="indent">When you are reduced to 0 hit points, you can drop to 1 hit point instead once per long rest.</p>
+      <p class="indent">Hit points increase by 1 per level</p>
+      <p class="indent">Natural Weapons. Your unarmed strikes deal 1d4 kinetic damage and have finesse.</p>
       <p class="indent">Languages. You can speak, read, and write Galactic Basic, Zabraki.</p>
     </description>
     <sheet display="false" />
@@ -2609,53 +1342,15 @@
       <grant type="Language" id="ID_LANGUAGE_ZABRAKI" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_ZABRAK_NATURAL_WEAPONS" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_ZABRAK_DURABLE" />
-      <select type="Proficiency" name="Proficiency (Zabrak)" supports="ID_INTERNAL_SKILL_PERSUASION_INTIMIDATION" number="1" />
+      <select type="Proficiency" name="Proficiency (Zabrak)" supports="ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_INTIMIDATION" number="1" />
       <select type="Sub Race" name="Zabrak Subrace" supports="ID_RACE_ZABRAK" optional="true" />
     </rules>
   </element>
-  <element name="Zabrak Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_CYBORG">
-    <supports>ID_RACE_ZABRAK</supports>
-    <description>
-      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility.</p>
-      <p class="indent">Cybernetic Enhancement: Choose one - Cybernetic Arm (Strength +1) or Cybernetic Leg (Dexterity +1). If you take both enhancements, you gain vulnerability to ion damage.</p>
-    </description>
-    <rules>
-      <select type="Racial Trait" name="Cybernetic Enhancement" supports="ID_RACE_ZABRAK_CYBORG" number="1" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_CYBORG_STR">
-    <compendium display="false" />
-    <supports>ID_RACE_ZABRAK_CYBORG</supports>
-    <description>
-      <p class="indent">Your Strength score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Strength. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="strength" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-  <element name="Cybernetic Enhancement (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_CYBORG_DEX">
-    <compendium display="false" />
-    <supports>ID_RACE_ZABRAK_CYBORG</supports>
-    <description>
-      <p class="indent">Your Dexterity score increases by 1. You gain vulnerability to ion damage.</p>
-    </description>
-    <sheet>
-      <description>+1 Dexterity. Vulnerable to ion damage.</description>
-    </sheet>
-    <rules>
-      <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
-    </rules>
-  </element>
-
   
   <element name="Ability Score Increase (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_STR">
     <compendium display="false" />
     <supports>Human Ability</supports>
+    <requirements>!ID_RACE_HUMAN_VARIANT_STR2</requirements>
     <description>
       <p>Your Strength score increases by 1.</p>
     </description>
@@ -2669,6 +1364,7 @@
   <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_DEX">
     <compendium display="false" />
     <supports>Human Ability</supports>
+    <requirements>!ID_RACE_HUMAN_VARIANT_DEX2</requirements>
     <description>
       <p>Your Dexterity score increases by 1.</p>
     </description>
@@ -2682,6 +1378,7 @@
   <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CON">
     <compendium display="false" />
     <supports>Human Ability</supports>
+    <requirements>!ID_RACE_HUMAN_VARIANT_CON2</requirements>
     <description>
       <p>Your Constitution score increases by 1.</p>
     </description>
@@ -2695,6 +1392,7 @@
   <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_INT">
     <compendium display="false" />
     <supports>Human Ability</supports>
+    <requirements>!ID_RACE_HUMAN_VARIANT_INT2</requirements>
     <description>
       <p>Your Intelligence score increases by 1.</p>
     </description>
@@ -2708,6 +1406,7 @@
   <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_WIS">
     <compendium display="false" />
     <supports>Human Ability</supports>
+    <requirements>!ID_RACE_HUMAN_VARIANT_WIS2</requirements>
     <description>
       <p>Your Wisdom score increases by 1.</p>
     </description>
@@ -2721,6 +1420,7 @@
   <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_CHA">
     <compendium display="false" />
     <supports>Human Ability</supports>
+    <requirements>!ID_RACE_HUMAN_VARIANT_CHA2</requirements>
     <description>
       <p>Your Charisma score increases by 1.</p>
     </description>
@@ -2735,6 +1435,7 @@
   <element name="Ability Score Increase +2 (Strength)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_VARIANT_STR2">
     <compendium display="false" />
     <supports>Human Variant Major</supports>
+    <requirements>!ID_RACE_HUMAN_STR</requirements>
     <description>
       <p>Your Strength score increases by 2.</p>
     </description>
@@ -2748,6 +1449,7 @@
   <element name="Ability Score Increase +2 (Dexterity)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_VARIANT_DEX2">
     <compendium display="false" />
     <supports>Human Variant Major</supports>
+    <requirements>!ID_RACE_HUMAN_DEX</requirements>
     <description>
       <p>Your Dexterity score increases by 2.</p>
     </description>
@@ -2761,6 +1463,7 @@
   <element name="Ability Score Increase +2 (Constitution)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_VARIANT_CON2">
     <compendium display="false" />
     <supports>Human Variant Major</supports>
+    <requirements>!ID_RACE_HUMAN_CON</requirements>
     <description>
       <p>Your Constitution score increases by 2.</p>
     </description>
@@ -2774,6 +1477,7 @@
   <element name="Ability Score Increase +2 (Intelligence)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_VARIANT_INT2">
     <compendium display="false" />
     <supports>Human Variant Major</supports>
+    <requirements>!ID_RACE_HUMAN_INT</requirements>
     <description>
       <p>Your Intelligence score increases by 2.</p>
     </description>
@@ -2787,6 +1491,7 @@
   <element name="Ability Score Increase +2 (Wisdom)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_VARIANT_WIS2">
     <compendium display="false" />
     <supports>Human Variant Major</supports>
+    <requirements>!ID_RACE_HUMAN_WIS</requirements>
     <description>
       <p>Your Wisdom score increases by 2.</p>
     </description>
@@ -2800,6 +1505,7 @@
   <element name="Ability Score Increase +2 (Charisma)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_HUMAN_VARIANT_CHA2">
     <compendium display="false" />
     <supports>Human Variant Major</supports>
+    <requirements>!ID_RACE_HUMAN_CHA</requirements>
     <description>
       <p>Your Charisma score increases by 2.</p>
     </description>
@@ -3262,20 +1968,29 @@
       <description>Immune to energy damage.</description>
     </sheet>
   </element>
-  <element name="Sonic Scream" type="Action" source="SW-MSV-Edition" id="ID_ACTION_ITHORIAN_BREATH">
+  <element name="Sonic Scream" type="Action" source="SW-MSV-Edition" id="ID_ACTION_ITHORIAN_SONIC_SCREAM">
     <description>
       <p>As an action, you can violently expel air in a 15-foot cone. When you do so, each creature in the area of the exhalation must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). A creature takes 2d6 sonic damage on a failed save, and half as much damage on a successful one. The damage increases to 4d6 at 5th level, 6d6 at 11th level, and 8d6 at 17th level. This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you complete a long rest.</p>
     </description>
-    <sheet>
-      <description>Action: Expel air in a 15-ft cone. Wisdom save DC 8 + proficiency bonus + Constitution modifier for 2d6 sonic damage (half on save). 4d6 at 5th, 6d6 at 11th, 8d6 at 17th level. No effect on constructs. Uses = proficiency bonus per long rest.</description>
+    <sheet action="Action" usage="{{proficiency}}/Long Rest">
+      <description>Expel air in a 15-ft cone. Wisdom save (DC {{ithorian-scream:dc}}) for {{ithorian-scream:damage}} sonic damage (half on success). No effect on constructs.</description>
     </sheet>
+    <rules>
+      <stat name="ithorian-scream:dc" value="8" />
+      <stat name="ithorian-scream:dc" value="proficiency" />
+      <stat name="ithorian-scream:dc" value="constitution:modifier" />
+      <stat name="ithorian-scream:damage" value="2d6" level="1" />
+      <stat name="ithorian-scream:damage" value="4d6" level="5" />
+      <stat name="ithorian-scream:damage" value="6d6" level="11" />
+      <stat name="ithorian-scream:damage" value="8d6" level="17" />
+    </rules>
   </element>
-  <element name="Tune-Up" type="Racial Trait" source="SW-MSV-Edition" id="ID_ACTION_DROID_TUNE_UP">
+  <element name="Tune-Up" type="Action" source="SW-MSV-Edition" id="ID_ACTION_DROID_TUNE_UP">
     <description>
-      <p>As a bonus action, you can quickly repair some damage on your body. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+      <p>Quickly repair some damage on your body. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
     </description>
-    <sheet>
-      <description>Tune-Up: As a Bonus Action, regain 1d10 + {{level}} HP. Recharges on short or long rest.</description>
+    <sheet action="Bonus Action" usage="1/Short Rest">
+      <description>Regain 1d10 + {{level}} HP.</description>
     </sheet>
   </element>
 
@@ -3346,10 +2061,10 @@
   </element>
   <element name="Jungle Dweller" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_DEVARONIAN_JUNGLE_DWELLER">
     <description>
-      <p>Jungle terrain is not difficult terrain for you.</p>
+      <p>Jungle terrain is not difficult terrain for you (entangle can still work but doesn't slow).</p>
     </description>
     <sheet>
-      <description>Jungle is not difficult terrain for you.</description>
+      <description>Jungle is not difficult terrain for you (entangle can still work but doesn't slow).</description>
     </sheet>
   </element>
   <element name="Poison Resilience" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_DEVARONIAN_POISON_RESILIENCE">
@@ -3456,7 +2171,11 @@
     <sheet>
       <description>Unarmored/light armor AC = 12 + Dexterity modifier.</description>
     </sheet>
-  <rules><stat name="ac:unarmored:base" value="12" bonus="base" /></rules></element>
+    <rules>
+      <stat name="ac:calculation" value="12" bonus="base" requirements="[armor:none]||[armor:light]" />
+      <stat name="ac:calculation" value="dexterity" bonus="modifier" requirements="[armor:none]||[armor:light]" />
+    </rules>
+  </element>
 
   
   <element name="Slow Metabolism" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_GRAN_SLOW_METABOLISM">
@@ -3606,7 +2325,11 @@
     <sheet>
       <description>Unarmored/light armor AC = 12 + Dexterity modifier.</description>
     </sheet>
-  <rules><stat name="ac:unarmored:base" value="12" bonus="base" /></rules></element>
+    <rules>
+      <stat name="ac:calculation" value="12" bonus="base" requirements="[armor:none]||[armor:light]" />
+      <stat name="ac:calculation" value="dexterity" bonus="modifier" requirements="[armor:none]||[armor:light]" />
+    </rules>
+  </element>
 
   
   <element name="Wealthy" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_NEIMOIDIAN_WEALTHY">
@@ -3677,9 +2400,11 @@
   </element>
   <element name="Consume Corpse" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_RAKATA_CONSUME_CORPSE">
     <description>
-      <p>As an Action, Eat a corpse to gain temporary Hit Points equal to your hit die + Constitution modifier.</p></description>
+      <p>As an Action, Eat a corpse to gain temporary Hit Points equal to your hit die + Constitution modifier.</p>
+    </description>
     <sheet>
-      <description>Action: Eat a corpse to gain temp HP = hit die + Constitution modifier.</description></sheet>
+      <description>As an Action, Eat a corpse to gain temporary Hit Points equal to your hit die + Constitution modifier.</description>
+    </sheet>
   </element>
 
   
@@ -3747,7 +2472,11 @@
     <sheet>
       <description>Unarmored/light armor AC = 12 + Dexterity modifier.</description>
     </sheet>
-  <rules><stat name="ac:unarmored:base" value="12" bonus="base" /></rules></element>
+    <rules>
+      <stat name="ac:calculation" value="12" bonus="base" requirements="[armor:none]||[armor:light]" />
+      <stat name="ac:calculation" value="dexterity" bonus="modifier" requirements="[armor:none]||[armor:light]" />
+    </rules>
+  </element>
 
   
   <element name="Natural Weapons" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_TRANDOSHAN_NATURAL_WEAPONS">
@@ -3765,7 +2494,11 @@
     <sheet>
       <description>Unarmored/light armor AC = 12 + Dexterity modifier.</description>
     </sheet>
-  <rules><stat name="ac:unarmored:base" value="12" bonus="base" /></rules></element>
+    <rules>
+      <stat name="ac:calculation" value="12" bonus="base" requirements="[armor:none]||[armor:light]" />
+      <stat name="ac:calculation" value="dexterity" bonus="modifier" requirements="[armor:none]||[armor:light]" />
+    </rules>
+  </element>
   <element name="Regeneration" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_TRANDOSHAN_REGENERATION">
     <description>
       <p>When you take damage, you can use your reaction and expend a Hit Die to regain hit points as long as the damage would not reduce your hit points to 0.</p>
@@ -3879,7 +2612,11 @@
     <sheet>
       <description>Unarmored/light armor AC = 13 + Dexterity modifier.</description>
     </sheet>
-  <rules><stat name="ac:unarmored:base" value="13" bonus="base" /></rules></element>
+    <rules>
+      <stat name="ac:calculation" value="13" bonus="base" requirements="[armor:none]||[armor:light]" />
+      <stat name="ac:calculation" value="dexterity" bonus="modifier" requirements="[armor:none]||[armor:light]" />
+    </rules>
+  </element>
 
   
   <element name="Natural Weapons" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_WOOKIE_NATURAL_WEAPONS">
@@ -3897,7 +2634,11 @@
     <sheet>
       <description>Unarmored/light armor AC = 13 + Dexterity modifier.</description>
     </sheet>
-  <rules><stat name="ac:unarmored:base" value="13" bonus="base" /></rules></element>
+    <rules>
+      <stat name="ac:calculation" value="13" bonus="base" requirements="[armor:none]||[armor:light]" />
+      <stat name="ac:calculation" value="dexterity" bonus="modifier" requirements="[armor:none]||[armor:light]" />
+    </rules>
+  </element>
 <element name="Durable" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_GAMORREAN_DURABLE"><description><p>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p></description><sheet><description>+1 HP per level.</description></sheet><rules><stat name="hp" value="level" /></rules></element><element name="Durable" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_GRAN_DURABLE"><description><p>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p></description><sheet><description>+1 HP per level.</description></sheet><rules><stat name="hp" value="level" /></rules></element>
   <element name="Cannot Speak Galactic Basic" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_UNDERSTAND_ONLY_BASIC">
     <description>

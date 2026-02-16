@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Explosives</name>
-    <update version="1.4.0">
+    <update version="1.5.0">
       <file name="items-explosives.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-explosives.xml" />
     </update>
   </info>
@@ -11,6 +11,7 @@
 <element name="thermal detonator" type="Item" source="SW-MSV-Edition" id="ID_ITEM_THERMAL_DETONATOR">
     <description>
       <p>10d8 + 20 energy, 35 feet radius. Each target must make a DC 18 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
+      <p><strong>Throw:</strong> Action; Range 30/60. When thrown explode on impact.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -21,6 +22,7 @@
 <element name="flashbang" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FLASHBANG">
     <description>
       <p>15 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target is blinded for 1 round. On a successful save, the target isn't blinded</p>
+      <p><strong>Throw:</strong> Action; Range 30/60. When thrown explode on impact.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -31,6 +33,7 @@
 <element name="cryo grenade" type="Item" source="SW-MSV-Edition" id="ID_ITEM_CRYO_GRENADE">
     <description>
       <p>1d8 cold, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. The explosion creates an icy surface of 10 feet that counts as difficult terrain. Each creature walking over it must make a DC 12 Dexterity saving throw. On a failed save, the creature falls prone. On a successful save, the creature doesn't fall</p>
+      <p><strong>Throw:</strong> Action; Range 30/60. When thrown explode on impact.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -42,6 +45,7 @@
 <element name="ion grenade" type="Item" source="SW-MSV-Edition" id="ID_ITEM_ION_GRENADE">
     <description>
       <p>1d8 ion, 10 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage, On a successful save, the target takes half damage. Each droid must make a DC 13 Constitution saving throw. On a failed save, the droid is stunned for 1 round. On a successful save, the droid isn't stunned</p>
+      <p><strong>Throw:</strong> Action; Range 30/60. When thrown explode on impact.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -53,6 +57,7 @@
 <element name="incendiary grenade" type="Item" source="SW-MSV-Edition" id="ID_ITEM_INCENDIARY_GRENADE">
     <description>
       <p>1d6 fire, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage and is inflicted burning for 1 turn. On a successful save, the target takes half damage. Sets ground on fire in a 10 feet radius for 3 turns. Each target standing or walking in this will be inflicted burning for 1 turn</p>
+      <p><strong>Throw:</strong> Action; Range 30/60. When thrown explode on impact.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -64,6 +69,7 @@
 <element name="corrosive grenade" type="Item" source="SW-MSV-Edition" id="ID_ITEM_CORROSIVE_GRENADE">
     <description>
       <p>2d6 acid, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes no damage. The explosion creates an acid surface of 10 feet that reduces AC by 2</p>
+      <p><strong>Throw:</strong> Action; Range 30/60. When thrown explode on impact.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -75,6 +81,7 @@
 <element name="gas grenade" type="Item" source="SW-MSV-Edition" id="ID_ITEM_GAS_GRENADE">
     <description>
       <p>creates gas cloud, 10 feet radius. Each creature in the gas must make a DC 13 Constitution saving throw. On a failed save, the creature becomes poisoned</p>
+      <p><strong>Throw:</strong> Action; Range 30/60. When thrown explode on impact.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -85,6 +92,7 @@
 <element name="fragmentation grenade" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FRAGMENTATION_GRENADE">
     <description>
       <p>2d8 kinetic, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
+      <p><strong>Throw:</strong> Action; Range 30/60. When thrown explode on impact.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -96,6 +104,7 @@
 <element name="plasma grenade" type="Item" source="SW-MSV-Edition" id="ID_ITEM_PLASMA_GRENADE">
     <description>
       <p>2d8 energy, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
+      <p><strong>Throw:</strong> Action; Range 30/60. When thrown explode on impact.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -107,6 +116,7 @@
 <element name="shock grenade" type="Item" source="SW-MSV-Edition" id="ID_ITEM_SHOCK_GRENADE">
     <description>
       <p>1d6 lightning but cannot reduce a creature's health to 0. 10 feet radius. The explosion creates an electrifying field that counts as difficult terrain for 3 turns in a 10 feet radius</p>
+      <p><strong>Throw:</strong> Action; Range 30/60. When thrown explode on impact.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -118,6 +128,7 @@
 <element name="stun grenade" type="Item" source="SW-MSV-Edition" id="ID_ITEM_STUN_GRENADE">
     <description>
       <p>10 feet radius. Each target must make a DC 15 Constitution saving throw. On a failed save, the target is pushed 5 feet away from the centerpoint and is stunned for 1 round. On a successful save, the target takes isn't pushed and isn't stunned</p>
+      <p><strong>Throw:</strong> Action; Range 30/60. When thrown explode on impact.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -128,6 +139,8 @@
 <element name="remote flashbang" type="Item" source="SW-MSV-Edition" id="ID_ITEM_REMOTE_FLASHBANG">
     <description>
       <p>15 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target is blinded for 1 round. On a successful save, the target isn't blinded</p>
+      <p><strong>Place:</strong> Action; Place the explosive on any solid surface.</p>
+      <p><strong>Detonate:</strong> Bonus Action; Detonate the explosive.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -138,6 +151,8 @@
 <element name="remote cryo detonator" type="Item" source="SW-MSV-Edition" id="ID_ITEM_REMOTE_CRYO_DETONATOR">
     <description>
       <p>1d8 cold, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. The explosion creates an icy surface of 10 feet that counts as difficult terrain. Each creature walking over it must make a DC 12 Dexterity saving throw. On a failed save, the creature falls prone. On a successful save, the creature doesn't fall</p>
+      <p><strong>Place:</strong> Action; Place the explosive on any solid surface.</p>
+      <p><strong>Detonate:</strong> Bonus Action; Detonate the explosive.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -149,6 +164,8 @@
 <element name="remote ion detonator" type="Item" source="SW-MSV-Edition" id="ID_ITEM_REMOTE_ION_DETONATOR">
     <description>
       <p>1d8 ion, 10 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage, On a successful save, the target takes half damage. Each droid must make a DC 13 Constitution saving throw. On a failed save, the droid is stunned for 1 round. On a successful save, the droid isn't stunned</p>
+      <p><strong>Place:</strong> Action; Place the explosive on any solid surface.</p>
+      <p><strong>Detonate:</strong> Bonus Action; Detonate the explosive.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -160,6 +177,8 @@
 <element name="remote incendiary detonator" type="Item" source="SW-MSV-Edition" id="ID_ITEM_REMOTE_INCENDIARY_DETONATOR">
     <description>
       <p>1d6 fire, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage and is inflicted burning for 1 turn. On a successful save, the target takes half damage. Sets ground on fire in a 10 feet radius for 3 turns. Each target standing or walking in this will be inflicted burning for 1 turn</p>
+      <p><strong>Place:</strong> Action; Place the explosive on any solid surface.</p>
+      <p><strong>Detonate:</strong> Bonus Action; Detonate the explosive.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -171,6 +190,8 @@
 <element name="remote corrosive detonator" type="Item" source="SW-MSV-Edition" id="ID_ITEM_REMOTE_CORROSIVE_DETONATOR">
     <description>
       <p>2d6 acid, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes no damage. The explosion creates an acid surface of 10 feet that reduces AC by 2</p>
+      <p><strong>Place:</strong> Action; Place the explosive on any solid surface.</p>
+      <p><strong>Detonate:</strong> Bonus Action; Detonate the explosive.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -182,6 +203,8 @@
 <element name="remote gas detonator" type="Item" source="SW-MSV-Edition" id="ID_ITEM_REMOTE_GAS_DETONATOR">
     <description>
       <p>creates gas cloud, 10 feet radius. Each creature in the gas must make a DC 13 Constitution saving throw. On a failed save, the creature becomes poisoned</p>
+      <p><strong>Place:</strong> Action; Place the explosive on any solid surface.</p>
+      <p><strong>Detonate:</strong> Bonus Action; Detonate the explosive.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -192,6 +215,8 @@
 <element name="remote fragmentation detonator" type="Item" source="SW-MSV-Edition" id="ID_ITEM_REMOTE_FRAGMENTATION_DETONATOR">
     <description>
       <p>2d8 kinetic, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
+      <p><strong>Place:</strong> Action; Place the explosive on any solid surface.</p>
+      <p><strong>Detonate:</strong> Bonus Action; Detonate the explosive.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -203,6 +228,8 @@
 <element name="remote plasma detonator" type="Item" source="SW-MSV-Edition" id="ID_ITEM_REMOTE_PLASMA_DETONATOR">
     <description>
       <p>2d8 energy, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
+      <p><strong>Place:</strong> Action; Place the explosive on any solid surface.</p>
+      <p><strong>Detonate:</strong> Bonus Action; Detonate the explosive.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -214,6 +241,8 @@
 <element name="remote shock detonator" type="Item" source="SW-MSV-Edition" id="ID_ITEM_REMOTE_SHOCK_DETONATOR">
     <description>
       <p>1d6 lightning but cannot reduce a creature's health to 0. 10 feet radius. The explosion creates an electrifying field that counts as difficult terrain for 3 turns in a 10 feet radius</p>
+      <p><strong>Place:</strong> Action; Place the explosive on any solid surface.</p>
+      <p><strong>Detonate:</strong> Bonus Action; Detonate the explosive.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -225,6 +254,8 @@
 <element name="remote stun detonator" type="Item" source="SW-MSV-Edition" id="ID_ITEM_REMOTE_STUN_DETONATOR">
     <description>
       <p>10 feet radius. Each target must make a DC 15 Constitution saving throw. On a failed save, the target is pushed 5 feet away from the centerpoint and is stunned for 1 round. On a successful save, the target takes isn't pushed and isn't stunned</p>
+      <p><strong>Place:</strong> Action; Place the explosive on any solid surface.</p>
+      <p><strong>Detonate:</strong> Bonus Action; Detonate the explosive.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -235,6 +266,7 @@
 <element name="flashbang mine" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FLASHBANG_MINE">
     <description>
       <p>15 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target is blinded for 1 round. On a successful save, the target isn't blinded</p>
+      <p><strong>Place:</strong> Action; Explode when stepped on or shot.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -245,6 +277,7 @@
 <element name="cryo mine" type="Item" source="SW-MSV-Edition" id="ID_ITEM_CRYO_MINE">
     <description>
       <p>1d8 cold, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. The explosion creates an icy surface of 10 feet that counts as difficult terrain. Each creature walking over it must make a DC 12 Dexterity saving throw. On a failed save, the creature falls prone. On a successful save, the creature doesn't fall</p>
+      <p><strong>Place:</strong> Action; Explode when stepped on or shot.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -256,6 +289,7 @@
 <element name="ion mine" type="Item" source="SW-MSV-Edition" id="ID_ITEM_ION_MINE">
     <description>
       <p>1d8 ion, 10 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage, On a successful save, the target takes half damage. Each droid must make a DC 13 Constitution saving throw. On a failed save, the droid is stunned for 1 round. On a successful save, the droid isn't stunned</p>
+      <p><strong>Place:</strong> Action; Explode when stepped on or shot.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -267,6 +301,7 @@
 <element name="incendiary mine" type="Item" source="SW-MSV-Edition" id="ID_ITEM_INCENDIARY_MINE">
     <description>
       <p>1d6 fire, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage and is inflicted burning for 1 turn. On a successful save, the target takes half damage. Sets ground on fire in a 10 feet radius for 3 turns. Each target standing or walking in this will be inflicted burning for 1 turn</p>
+      <p><strong>Place:</strong> Action; Explode when stepped on or shot.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -278,6 +313,7 @@
 <element name="corrosive mine" type="Item" source="SW-MSV-Edition" id="ID_ITEM_CORROSIVE_MINE">
     <description>
       <p>2d6 acid, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes no damage. The explosion creates an acid surface of 10 feet that reduces AC by 2</p>
+      <p><strong>Place:</strong> Action; Explode when stepped on or shot.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -289,6 +325,7 @@
 <element name="gas mine" type="Item" source="SW-MSV-Edition" id="ID_ITEM_GAS_MINE">
     <description>
       <p>creates gas cloud, 10 feet radius. Each creature in the gas must make a DC 13 Constitution saving throw. On a failed save, the creature becomes poisoned</p>
+      <p><strong>Place:</strong> Action; Explode when stepped on or shot.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -299,6 +336,7 @@
 <element name="fragmentation mine" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FRAGMENTATION_MINE">
     <description>
       <p>2d8 kinetic, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
+      <p><strong>Place:</strong> Action; Explode when stepped on or shot.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -310,6 +348,7 @@
 <element name="plasma mine" type="Item" source="SW-MSV-Edition" id="ID_ITEM_PLASMA_MINE">
     <description>
       <p>2d8 energy, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
+      <p><strong>Place:</strong> Action; Explode when stepped on or shot.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -321,6 +360,7 @@
 <element name="shock mine" type="Item" source="SW-MSV-Edition" id="ID_ITEM_SHOCK_MINE">
     <description>
       <p>1d6 lightning but cannot reduce a creature's health to 0. 10 feet radius. The explosion creates an electrifying field that counts as difficult terrain for 3 turns in a 10 feet radius</p>
+      <p><strong>Place:</strong> Action; Explode when stepped on or shot.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -332,6 +372,7 @@
 <element name="stun mine" type="Item" source="SW-MSV-Edition" id="ID_ITEM_STUN_MINE">
     <description>
       <p>10 feet radius. Each target must make a DC 15 Constitution saving throw. On a failed save, the target is pushed 5 feet away from the centerpoint and is stunned for 1 round. On a successful save, the target takes isn't pushed and isn't stunned</p>
+      <p><strong>Place:</strong> Action; Explode when stepped on or shot.</p>
     </description>
     <setters>
       <set name="category">Explosives</set>
@@ -341,6 +382,7 @@
   </element>
 <element name="poison dart" type="Item" source="SW-MSV-Edition" id="ID_ITEM_POISON_DART">
     <description>
+      <p>Darts: Can be blown out of a tube or shot out of certain weapons.</p>
       <p>1d6 kinetic. The target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage and becomes poisoned. On a successful save, the target takes half damage and doesn't become poisoned, Reload 1, Dexterity modifier</p>
     </description>
     <setters>
@@ -353,6 +395,7 @@
   </element>
 <element name="sleep dart" type="Item" source="SW-MSV-Edition" id="ID_ITEM_SLEEP_DART">
     <description>
+      <p>Darts: Can be blown out of a tube or shot out of certain weapons.</p>
       <p>The target must make a DC 14 Constitution saving throw. On a failed save, the target falls asleep. On a successful save, the target doesn't fall asleep, Reload 1, Dexterity modifier</p>
     </description>
     <setters>
@@ -364,6 +407,7 @@
   </element>
 <element name="electrifying dart" type="Item" source="SW-MSV-Edition" id="ID_ITEM_ELECTRIFYING_DART">
     <description>
+      <p>Darts: Can be blown out of a tube or shot out of certain weapons.</p>
       <p>1d6 kinetic. 1d6 lightning, The target must make a DC 14 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. Reload 1, Dexterity modifier</p>
     </description>
     <setters>
@@ -376,6 +420,7 @@
   </element>
 <element name="panic dart" type="Item" source="SW-MSV-Edition" id="ID_ITEM_PANIC_DART">
     <description>
+      <p>Darts: Can be blown out of a tube or shot out of certain weapons.</p>
       <p>1d6 kinetic. The target must make a DC 14 Wisdom saving throw. On a failed save, the target becomes frightened for 1 round. On a successful save, the target doesn't become frightened. Dexterity modifier</p>
     </description>
     <setters>
@@ -387,6 +432,7 @@
   </element>
 <element name="paralysis dart" type="Item" source="SW-MSV-Edition" id="ID_ITEM_PARALYSIS_DART">
     <description>
+      <p>Darts: Can be blown out of a tube or shot out of certain weapons.</p>
       <p>1d6 kinetic. The target must make a DC 14 Constitution saving throw. On a failed save, the target becomes paralysed for 1 round, Dexterity modifier</p>
     </description>
     <setters>
@@ -398,6 +444,7 @@
   </element>
 <element name="plasma rocket" type="Item" source="SW-MSV-Edition" id="ID_ITEM_PLASMA_ROCKET">
     <description>
+      <p>Rockets: When shot out explode on impact.</p>
       <p>2d8 energy, 5 feet radius. Each target must make a DC 14 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage, Reload 1, Dexterity modifier</p>
     </description>
     <setters>
@@ -410,6 +457,7 @@
   </element>
 <element name="cryo rocket" type="Item" source="SW-MSV-Edition" id="ID_ITEM_CRYO_ROCKET">
     <description>
+      <p>Rockets: When shot out explode on impact.</p>
       <p>1d8 cold, 10 feet radius. Each target must make DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. The explosion creates an icy surface of 10 feet that counts as difficult terrain. Each creature walking over it must make a DC 12 Dexterity saving throw. On a failed save, the creature falls prone. On a successful save, the creature doesn't fall</p>
     </description>
     <setters>
@@ -421,6 +469,7 @@
   </element>
 <element name="ion rocket" type="Item" source="SW-MSV-Edition" id="ID_ITEM_ION_ROCKET">
     <description>
+      <p>Rockets: When shot out explode on impact.</p>
       <p>1d8 ion, 10 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage, On a successful save, the target takes half damage. Each droid must make a DC 13 Constitution saving throw. On a failed save, the droid is stunned for 1 round. On a successful save, the droid isn't stunned</p>
     </description>
     <setters>
@@ -432,6 +481,7 @@
   </element>
 <element name="incendiary rocket" type="Item" source="SW-MSV-Edition" id="ID_ITEM_INCENDIARY_ROCKET">
     <description>
+      <p>Rockets: When shot out explode on impact.</p>
       <p>1d6 fire, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage and is inflicted burning for 1 turn. On a successful save, the target takes half damage. Sets ground on fire in a 10 feet radius for 3 turns. Each target standing or walking in this will be inflicted burning for 1 turn</p>
     </description>
     <setters>
@@ -443,6 +493,7 @@
   </element>
 <element name="corrosive rocket" type="Item" source="SW-MSV-Edition" id="ID_ITEM_CORROSIVE_ROCKET">
     <description>
+      <p>Rockets: When shot out explode on impact.</p>
       <p>2d6 acid, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes no damage. The explosion creates an acid surface of 10 feet that reduces AC by 2</p>
     </description>
     <setters>
@@ -454,6 +505,7 @@
   </element>
 <element name="fragmentation rocket" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FRAGMENTATION_ROCKET">
     <description>
+      <p>Rockets: When shot out explode on impact.</p>
       <p>2d8 kinetic, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage</p>
     </description>
     <setters>

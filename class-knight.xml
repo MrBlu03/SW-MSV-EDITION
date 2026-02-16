@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Knight Class</name>
-    <update version="1.4.0">
+    <update version="1.5.0">
       <file name="class-knight.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-knight.xml" />
     </update>
   </info>
@@ -464,7 +464,7 @@
     </description>
     <rules>
       <grant type="Archetype Feature" id="ID_KNIGHT_FORM_MAKASHI_ABILITY_DUELING" level="2" />
-      <grant type="Spell" id="ID_KNIGHT_FORM_MAKASHI_ABILITY_RIPOSTE" level="2" />
+      <grant type="Spell" id="ID_KNIGHT_FORM_MAKASHI_ABILITY_RIPOSTE" level="2" spellcasting="Knight" />
     </rules>
   </element>
   <element id="ID_KNIGHT_FORM_MAKASHI_ABILITY_DUELING" name="Dueling" type="Archetype Feature" source="SW-MSV-Edition">
@@ -481,6 +481,7 @@
   </element>
   <element id="ID_KNIGHT_FORM_MAKASHI_ABILITY_RIPOSTE" name="Riposte" type="Spell" source="SW-MSV-Edition">
     <compendium display="true" />
+    <supports>Knight</supports>
     <description>
       <p>
         <strong>Cost: </strong>
@@ -492,7 +493,7 @@
       </p>
       <p>When a creature misses you with a melee attack, you can make a melee weapon attack against that creature.</p>
     </description>
-    <sheet>
+    <sheet action="Reaction">
       <description>When a creature misses you with a melee attack, you can make a melee weapon attack against that creature.</description>
     </sheet>
     <setters>
@@ -516,12 +517,13 @@
       <p>Learn Block and Learn Deflect</p>
     </description>
     <rules>
-      <grant type="Spell" id="ID_KNIGHT_FORM_SORESU_ABILITY_BLOCK" level="2" />
-      <grant type="Spell" id="ID_KNIGHT_FORM_SORESU_ABILITY_DEFLECT" level="2" />
+      <grant type="Spell" id="ID_KNIGHT_FORM_SORESU_ABILITY_BLOCK" level="2" spellcasting="Knight" />
+      <grant type="Spell" id="ID_KNIGHT_FORM_SORESU_ABILITY_DEFLECT" level="2" spellcasting="Knight" />
     </rules>
   </element>
   <element id="ID_KNIGHT_FORM_SORESU_ABILITY_BLOCK" name="Block" type="Spell" source="SW-MSV-Edition">
     <compendium display="true" />
+    <supports>Knight</supports>
     <description>
       <p>
         <strong>Cost: </strong>
@@ -533,7 +535,7 @@
       </p>
       <p>Block to negate a melee attack that would have hit you.</p>
     </description>
-    <sheet>
+    <sheet action="Reaction">
       <description>Block to negate a melee attack that would have hit you.</description>
     </sheet>
     <setters>
@@ -553,6 +555,7 @@
   </element>
   <element id="ID_KNIGHT_FORM_SORESU_ABILITY_DEFLECT" name="Deflect" type="Spell" source="SW-MSV-Edition">
     <compendium display="true" />
+    <supports>Knight</supports>
     <description>
       <p>
         <strong>Cost: </strong>
@@ -564,7 +567,7 @@
       </p>
       <p>Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</p>
     </description>
-    <sheet>
+    <sheet action="Reaction">
       <description>Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</description>
     </sheet>
     <setters>
@@ -588,12 +591,13 @@
       <p>Learn Force Leap and Learn Slow Fall</p>
     </description>
     <rules>
-      <grant type="Spell" id="ID_KNIGHT_FORM_ATARU_ABILITY_FORCE_LEAP" level="2" />
-      <grant type="Spell" id="ID_KNIGHT_FORM_ATARU_ABILITY_SLOW_FALL" level="2" />
+      <grant type="Spell" id="ID_KNIGHT_FORM_ATARU_ABILITY_FORCE_LEAP" level="2" spellcasting="Knight" />
+      <grant type="Spell" id="ID_KNIGHT_FORM_ATARU_ABILITY_SLOW_FALL" level="2" spellcasting="Knight" />
     </rules>
   </element>
   <element id="ID_KNIGHT_FORM_ATARU_ABILITY_FORCE_LEAP" name="Force Leap" type="Spell" source="SW-MSV-Edition">
     <compendium display="true" />
+    <supports>Knight</supports>
     <description>
       <p>
         <strong>Cost: </strong>
@@ -605,7 +609,7 @@
       </p>
       <p>Jump up to twice your movement and make a melee weapon attack. This does not provoke Opportunity Attacks. Per extra Focus spent to a max of half your Knight level (rounded up), you can jump an additional 5 feet.</p>
     </description>
-    <sheet>
+    <sheet action="Action">
       <description>Jump up to twice your movement and make a melee weapon attack. This does not provoke Opportunity Attacks. Per extra Focus spent to a max of half your Knight level (rounded up), you can jump an additional 5 feet.</description>
     </sheet>
     <setters>
@@ -625,6 +629,7 @@
   </element>
   <element id="ID_KNIGHT_FORM_ATARU_ABILITY_SLOW_FALL" name="Slow Fall" type="Spell" source="SW-MSV-Edition">
     <compendium display="true" />
+    <supports>Knight</supports>
     <description>
       <p>
         <strong>Cost: </strong>
@@ -636,7 +641,7 @@
       </p>
       <p>Use the Force to slow yourself when falling, taking only half fall damage.</p>
     </description>
-    <sheet>
+    <sheet action="Reaction">
       <description>Use the Force to slow yourself when falling, taking only half fall damage.</description>
     </sheet>
     <setters>
@@ -660,11 +665,12 @@
       <p>Learn Redirect</p>
     </description>
     <rules>
-      <grant type="Spell" id="ID_KNIGHT_FORM_SHIEN_ABILITY_REDIRECT" level="2" />
+      <grant type="Spell" id="ID_KNIGHT_FORM_SHIEN_ABILITY_REDIRECT" level="2" spellcasting="Knight" />
     </rules>
   </element>
   <element id="ID_KNIGHT_FORM_SHIEN_ABILITY_REDIRECT" name="Redirect" type="Spell" source="SW-MSV-Edition">
     <compendium display="true" />
+    <supports>Knight</supports>
     <description>
       <p>
         <strong>Cost: </strong>
@@ -676,7 +682,7 @@
       </p>
       <p>Must wield a lightweapon. Use the Force to send a ranged attack that would have hit you to a creature. This counts as a ranged Force attack with the range of the incoming attack. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</p>
     </description>
-    <sheet>
+    <sheet action="Reaction">
       <description>Must wield a lightweapon. Use the Force to send a ranged attack that would have hit you to a creature. This counts as a ranged Force attack with the range of the incoming attack. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</description>
     </sheet>
     <setters>
@@ -700,12 +706,13 @@
       <p>Learn Passionate Strike and Learn Deflect</p>
     </description>
     <rules>
-      <grant type="Spell" id="ID_KNIGHT_FORM_DJEM_SO_ABILITY_PASSIONATE_STRIKE" level="2" />
-      <grant type="Spell" id="ID_KNIGHT_FORM_DJEM_SO_ABILITY_DEFLECT" level="2" />
+      <grant type="Spell" id="ID_KNIGHT_FORM_DJEM_SO_ABILITY_PASSIONATE_STRIKE" level="2" spellcasting="Knight" />
+      <grant type="Spell" id="ID_KNIGHT_FORM_DJEM_SO_ABILITY_DEFLECT" level="2" spellcasting="Knight" />
     </rules>
   </element>
   <element id="ID_KNIGHT_FORM_DJEM_SO_ABILITY_PASSIONATE_STRIKE" name="Passionate Strike" type="Spell" source="SW-MSV-Edition">
     <compendium display="true" />
+    <supports>Knight</supports>
     <description>
       <p>
         <strong>Cost: </strong>
@@ -717,7 +724,7 @@
       </p>
       <p>Make a melee attack and gain advantage on that attack.</p>
     </description>
-    <sheet>
+    <sheet action="Action">
       <description>Make a melee attack and gain advantage on that attack.</description>
     </sheet>
     <setters>
@@ -737,6 +744,7 @@
   </element>
   <element id="ID_KNIGHT_FORM_DJEM_SO_ABILITY_DEFLECT" name="Deflect" type="Spell" source="SW-MSV-Edition">
     <compendium display="true" />
+    <supports>Knight</supports>
     <description>
       <p>
         <strong>Cost: </strong>
@@ -748,7 +756,7 @@
       </p>
       <p>Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</p>
     </description>
-    <sheet>
+    <sheet action="Reaction">
       <description>Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</description>
     </sheet>
     <setters>
@@ -791,11 +799,12 @@
       <p>Learn Cyclone</p>
     </description>
     <rules>
-      <grant type="Spell" id="ID_KNIGHT_FORM_JUYO_ABILITY_CYCLONE" level="2" />
+      <grant type="Spell" id="ID_KNIGHT_FORM_JUYO_ABILITY_CYCLONE" level="2" spellcasting="Knight" />
     </rules>
   </element>
   <element id="ID_KNIGHT_FORM_JUYO_ABILITY_CYCLONE" name="Cyclone" type="Spell" source="SW-MSV-Edition">
     <compendium display="true" />
+    <supports>Knight</supports>
     <description>
       <p>
         <strong>Cost: </strong>
@@ -807,7 +816,7 @@
       </p>
       <p>Make a flurry of attacks in one swift movement. You make two attacks that count as one attack against the same target. You roll both to hit. Per 2 extra Focus spent to a max of half your Knight level (rounded up), you make an additional attack within that flurry.</p>
     </description>
-    <sheet>
+    <sheet action="Action">
       <description>Make a flurry of attacks in one swift movement. You make two attacks that count as one attack against the same target. You roll both to hit. Per 2 extra Focus spent to a max of half your Knight level (rounded up), you make an additional attack within that flurry.</description>
     </sheet>
     <setters>

@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Inquisitor Class</name>
-    <update version="1.4.0">
+    <update version="1.5.0">
       <file name="class-inquisitor.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-inquisitor.xml" />
     </update>
   </info>
@@ -17,7 +17,7 @@
       <p class="indent">
         <strong>
           <em>Proficiencies. Armor:</em>
-           Light Armour. Weapons: Simple Blasters, Simple or Martial Lightweapons with Finesse Property, Simple or Martial Vibroweapons with finesse property. Saving Throws: Dexterity and Intelligence.
+           Light Armour. Weapons: Simple Blasters, Lightsaber, Lightwhip, Double Bladed Lightsaber, Vibrodagger, Vibro Double-Blade, Electrostaff, Electrowhip, Electrobaton. Saving Throws: Dexterity and Intelligence.
         </strong>
       </p>
       <p class="indent">

@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>Cyborg Elements</name>
+    <update version="1.5.0">
+      <file name="cyborg-elements.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/cyborg-elements.xml" />
+    </update>
+  </info>
+
+  <!-- CYBORG SUBRACES -->
+  <element name="Bith Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_BITH_CYBORG">
+    <supports>ID_RACE_BITH</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Bothan Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_BOTHAN_CYBORG">
+    <supports>ID_RACE_BOTHAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Cathar Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_CATHAR_CYBORG">
+    <supports>ID_RACE_CATHAR</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Chagrian Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_CHAGRIAN_CYBORG">
+    <supports>ID_RACE_CHAGRIAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Chiss Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_CHISS_CYBORG">
+    <supports>ID_RACE_CHISS</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Devaronian Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_DEVARONIAN_CYBORG">
+    <supports>ID_RACE_DEVARONIAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Duros Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_DUROS_CYBORG">
+    <supports>ID_RACE_DUROS</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Ewok Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_EWOK_CYBORG">
+    <supports>ID_RACE_EWOK</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Gamorrean Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_GAMORREAN_CYBORG">
+    <supports>ID_RACE_GAMORREAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Geonosian Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_GEONOSIAN_CYBORG">
+    <supports>ID_RACE_GEONOSIAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Gran Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_GRAN_CYBORG">
+    <supports>ID_RACE_GRAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Human (Standard) Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_HUMAN_STANDARD_CYBORG">
+    <supports>ID_RACE_HUMAN_STANDARD</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Human (Variant) Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_HUMAN_VARIANT_CYBORG">
+    <supports>ID_RACE_HUMAN_VARIANT</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Ithorian Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_ITHORIAN_CYBORG">
+    <supports>ID_RACE_ITHORIAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Jawa Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_JAWA_CYBORG">
+    <supports>ID_RACE_JAWA</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Kaleesh Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_KALEESH_CYBORG">
+    <supports>ID_RACE_KALEESH</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Kel Dor Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_KEL_DOR_CYBORG">
+    <supports>ID_RACE_KEL_DOR</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Mirialan Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_MIRIALAN_CYBORG">
+    <supports>ID_RACE_MIRIALAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Mon Calamari Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_MON_CALAMARI_CYBORG">
+    <supports>ID_RACE_MON_CALAMARI</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Nautolan Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_NAUTOLAN_CYBORG">
+    <supports>ID_RACE_NAUTOLAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Neimoidian Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_NEIMOIDIAN_CYBORG">
+    <supports>ID_RACE_NEIMOIDIAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Ortolan Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_ORTOLAN_CYBORG">
+    <supports>ID_RACE_ORTOLAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Rakata Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_RAKATA_CYBORG">
+    <supports>ID_RACE_RAKATA</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Rattataki Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_RATTATAKI_CYBORG">
+    <supports>ID_RACE_RATTATAKI</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Rodian Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_RODIAN_CYBORG">
+    <supports>ID_RACE_RODIAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Sith Pureblood Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_SITH_PUREBLOOD_CYBORG">
+    <supports>ID_RACE_SITH_PUREBLOOD</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Sullustan Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_SULLUSTAN_CYBORG">
+    <supports>ID_RACE_SULLUSTAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Talz Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TALZ_CYBORG">
+    <supports>ID_RACE_TALZ</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Togruta Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TOGRUTA_CYBORG">
+    <supports>ID_RACE_TOGRUTA</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Trandoshan Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TRANDOSHAN_CYBORG">
+    <supports>ID_RACE_TRANDOSHAN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Tusken Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TUSKEN_CYBORG">
+    <supports>ID_RACE_TUSKEN</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Twi'Lek Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_TWILEK_CYBORG">
+    <supports>ID_RACE_TWILEK</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Ugnaught Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_UGNAUGHT_CYBORG">
+    <supports>ID_RACE_UGNAUGHT</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Weequay Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_WEEQUAY_CYBORG">
+    <supports>ID_RACE_WEEQUAY</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Wookie Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_WOOKIE_CYBORG">
+    <supports>ID_RACE_WOOKIE</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+  <element name="Zabrak Cyborg" type="Sub Race" source="SW-MSV-Edition" id="ID_RACE_ZABRAK_CYBORG">
+    <supports>ID_RACE_ZABRAK</supports>
+    <description>
+      <p class="indent">Cybernetic enhancements can be applied to any organic species. Choose between a cybernetic arm for increased strength or a cybernetic leg for improved agility. If you take both enhancements, you gain vulnerability to ion damage.</p>
+    </description>
+    <rules>
+      <select type="Racial Trait" name="Cybernetic Enhancement" supports="Cyborg Enhancement" number="1" />
+    </rules>
+  </element>
+
+  <!-- CYBORG TRAITS -->
+  <element name="Cybernetic Arm" type="Racial Trait" source="SW-MSV-Edition" id="ID_MSV_RACE_TRAIT_CYBORG_ARM">
+    <supports>Cyborg Enhancement</supports>
+    <compendium display="false" />
+    <description>
+      <p>Your Strength score increases by 1.</p>
+    </description>
+    <sheet>
+      <description>+1 Strength.</description>
+    </sheet>
+    <rules>
+      <stat name="strength" value="1" />
+    </rules>
+  </element>
+
+  <element name="Cybernetic Leg" type="Racial Trait" source="SW-MSV-Edition" id="ID_MSV_RACE_TRAIT_CYBORG_LEG">
+    <supports>Cyborg Enhancement</supports>
+    <compendium display="false" />
+    <description>
+      <p>Your Dexterity score increases by 1.</p>
+    </description>
+    <sheet>
+      <description>+1 Dexterity.</description>
+    </sheet>
+    <rules>
+      <stat name="dexterity" value="1" />
+    </rules>
+  </element>
+
+  <element name="Both Arm and Leg" type="Racial Trait" source="SW-MSV-Edition" id="ID_MSV_RACE_TRAIT_CYBORG_BOTH">
+    <supports>Cyborg Enhancement</supports>
+    <compendium display="false" />
+    <description>
+      <p>Choose between +1 Strength or +1 Dexterity. However, you gain vulnerability to ion damage.</p>
+    </description>
+    <sheet>
+      <description>+1 to Str or Dex. Vulnerable to ion damage.</description>
+    </sheet>
+    <rules>
+      <select type="Racial Trait" name="Ability Score Increase (Cyborg)" supports="Cyborg Choice" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
+    </rules>
+  </element>
+
+  <element name="Strength (+1)" type="Racial Trait" source="SW-MSV-Edition" id="ID_MSV_RACE_TRAIT_CYBORG_CHOICE_STR">
+    <supports>Cyborg Choice</supports>
+    <compendium display="false" />
+    <description>
+      <p>Your Strength score increases by 1.</p>
+    </description>
+    <sheet>
+      <description>+1 Strength.</description>
+    </sheet>
+    <rules>
+      <stat name="strength" value="1" />
+    </rules>
+  </element>
+
+  <element name="Dexterity (+1)" type="Racial Trait" source="SW-MSV-Edition" id="ID_MSV_RACE_TRAIT_CYBORG_CHOICE_DEX">
+    <supports>Cyborg Choice</supports>
+    <compendium display="false" />
+    <description>
+      <p>Your Dexterity score increases by 1.</p>
+    </description>
+    <sheet>
+      <description>+1 Dexterity.</description>
+    </sheet>
+    <rules>
+      <stat name="dexterity" value="1" />
+    </rules>
+  </element>
+</elements>

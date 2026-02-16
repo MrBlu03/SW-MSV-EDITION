@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <name>Conditions</name>
+    <update version="1.5.0">
+      <file name="conditions.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/conditions.xml" />
+    </update>
+  </info>
+  
+  <!-- DAMAGE TYPE RULES -->
+  <element name="Energy Damage" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_TYPE_ENERGY">
+    <description>
+      <p>Standard damage type for energy-based weapons.</p>
+    </description>
+    <sheet>
+      <description>Standard damage type.</description>
+    </sheet>
+  </element>
+
+  <element name="Kinetic Damage" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_TYPE_KINETIC">
+    <description>
+      <p>Damage from physical impact. Kinetic damage goes through shield generator shields (Temporary Hit Points granted by generators).</p>
+    </description>
+    <sheet>
+      <description>Goes through shield generator shields.</description>
+    </sheet>
+  </element>
+
+  <element name="Ion Damage" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_TYPE_ION">
+    <description>
+      <p>Disruptive electrical energy. If shot at a target holding an energy shield, the shield deactivates for one round. Ion damage deals double damage against droids, cyborgs, and vehicles.</p>
+    </description>
+    <sheet>
+      <description>Deactivates energy shields for 1 round. Double damage vs droids, cyborgs, and vehicles.</description>
+    </sheet>
+  </element>
+
+  <element name="Sonic Damage" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_TYPE_SONIC">
+    <description>
+      <p>Damage from high-frequency sound waves. If a creature that is concentrating is hit by sonic damage, it has disadvantage on the Constitution saving throw to maintain concentration.</p>
+    </description>
+    <sheet>
+      <description>Concentrating creatures have disadvantage on saves to maintain it when hit by this damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Cold Damage" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_TYPE_COLD">
+    <description>
+      <p>When a target is hit by cold damage, its movement is reduced by 10 feet until the end of its turn, unless stated otherwise.</p>
+    </description>
+    <sheet>
+      <description>Targets hit have movement reduced by 10 feet until the end of their turn.</description>
+    </sheet>
+  </element>
+
+  <element name="Lightning Damage" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_TYPE_LIGHTNING">
+    <description>
+      <p>Electrical damage. Attacks have advantage against droids and cyborgs. When a target is hit by lightning damage, it can't take reactions until the end of its next turn.</p>
+    </description>
+    <sheet>
+      <description>Advantage vs droids/cyborgs. Targets hit can't take reactions until their next turn.</description>
+    </sheet>
+  </element>
+
+  <element name="Acid Damage" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_TYPE_ACID">
+    <description>
+      <p>Corrosive damage. When a target is hit by acid damage, its AC is reduced by 1 for one round, unless stated otherwise.</p>
+    </description>
+    <sheet>
+      <description>Targets hit have AC reduced by 1 for one round.</description>
+    </sheet>
+  </element>
+
+  <element name="Fire Damage" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_TYPE_FIRE">
+    <description>
+      <p>Burning heat. Fire damage inflicts the Burning condition for at least 1 turn.</p>
+    </description>
+    <sheet>
+      <description>Inflicts Burning for at least 1 turn.</description>
+    </sheet>
+  </element>
+
+  <!-- CUSTOM CONDITIONS -->
+  <element name="Burning" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_BURNING">
+    <description>
+      <p>A burning creature takes 1d10 damage at the start of each of its turns. A creature can use an action to douse the flames.</p>
+    </description>
+    <sheet>
+      <description>Take 1d10 damage per turn. Action to douse.</description>
+    </sheet>
+  </element>
+
+  <element name="Poisoned (SW)" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_POISONED">
+    <description>
+      <p>A poisoned creature takes 1d4 poison damage per turn and has disadvantage on attack rolls and ability checks. Being healed by any amount cleanses the poisoned effect.</p>
+    </description>
+    <sheet>
+      <description>Take 1d4 poison damage/turn. Disadvantage on attacks and ability checks. Healed = Cleansed.</description>
+    </sheet>
+  </element>
+
+  <!-- ION DAMAGE MODIFIERS -->
+  <element name="Vulnerability to Ion" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION">
+    <description>
+      <p>Vulnerability to ion damage.</p>
+    </description>
+    <sheet>
+      <description>Vulnerable to ion damage.</description>
+    </sheet>
+  </element>
+  <element name="Resistance to Ion" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_ION">
+    <description>
+      <p>Resistance to ion damage.</p>
+    </description>
+    <sheet>
+      <description>Resistant to ion damage.</description>
+    </sheet>
+  </element>
+  <element name="Immunity to Ion" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_ION">
+    <description>
+      <p>Immunity to ion damage.</p>
+    </description>
+    <sheet>
+      <description>Immune to ion damage.</description>
+    </sheet>
+  </element>
+
+  <!-- KINETIC DAMAGE -->
+  <element name="Vulnerability to Kinetic" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_KINETIC">
+    <description>
+      <p>Vulnerability to kinetic damage.</p>
+    </description>
+    <sheet>
+      <description>Vulnerable to kinetic damage.</description>
+    </sheet>
+  </element>
+  <element name="Resistance to Kinetic" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_KINETIC">
+    <description>
+      <p>Resistance to kinetic damage.</p>
+    </description>
+    <sheet>
+      <description>Resistant to kinetic damage.</description>
+    </sheet>
+  </element>
+  <element name="Immunity to Kinetic" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_KINETIC">
+    <description>
+      <p>Immunity to kinetic damage.</p>
+    </description>
+    <sheet>
+      <description>Immune to kinetic damage.</description>
+    </sheet>
+  </element>
+
+  <!-- SONIC DAMAGE -->
+  <element name="Vulnerability to Sonic" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_SONIC">
+    <description>
+      <p>Vulnerability to sonic damage.</p>
+    </description>
+    <sheet>
+      <description>Vulnerable to sonic damage.</description>
+    </sheet>
+  </element>
+  <element name="Resistance to Sonic" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_SONIC">
+    <description>
+      <p>Resistance to sonic damage.</p>
+    </description>
+    <sheet>
+      <description>Resistant to sonic damage.</description>
+    </sheet>
+  </element>
+  <element name="Immunity to Sonic" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_SONIC">
+    <description>
+      <p>Immunity to sonic damage.</p>
+    </description>
+    <sheet>
+      <description>Immune to sonic damage.</description>
+    </sheet>
+  </element>
+
+  <!-- ENERGY DAMAGE -->
+  <element name="Vulnerability to Energy" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ENERGY">
+    <description>
+      <p>Vulnerability to energy damage.</p>
+    </description>
+    <sheet>
+      <description>Vulnerable to energy damage.</description>
+    </sheet>
+  </element>
+  <element name="Resistance to Energy" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_ENERGY">
+    <description>
+      <p>Resistance to energy damage.</p>
+    </description>
+    <sheet>
+      <description>Resistant to energy damage.</description>
+    </sheet>
+  </element>
+  <element name="Immunity to Energy" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_ENERGY">
+    <description>
+      <p>Immunity to energy damage.</p>
+    </description>
+    <sheet>
+      <description>Immune to energy damage.</description>
+    </sheet>
+  </element>
+</elements>

@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Fighting Styles</name>
-    <update version="1.4.0">
+    <update version="1.5.0">
       <file name="fighting-styles.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/fighting-styles.xml" />
     </update>
   </info>
@@ -36,10 +36,10 @@
     <supports>Fighting Style</supports>
     <compendium display="false" />
     <description>
-      <p>When you are wielding a melee weapon in one hand and nothing or a shield in the other hand, you gain a +2 bonus to damage rolls with that weapon.</p>
+      <p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
     </description>
     <sheet>
-      <description>+2 damage when wielding a melee weapon in one hand and nothing or a shield in the other hand.</description>
+      <description>+2 damage when wielding a melee weapon in one hand and no other weapons.</description>
     </sheet>
     <rules>
       <stat name="melee:damage" value="2" />

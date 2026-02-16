@@ -1,14 +1,16 @@
 weapons and items
 
-Strike: Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)
-Shoot: Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)
-Hilt Strike: Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. The target must make a Constitution saving throw: DC:8 + proficiency bonus + Strength or Dexterity modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed. (Damage: 1d4 kinetic)
-Slash: Action; When wielding double bladed weapon, make a melee attack that hits in a 15 feet horizontal line in front of you. (Damage: weapon damage without adding modifiers)
-Blast: Action; Blast multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes full damage. On a successful save, the target takes half damage. (Damage: Weapon Damage and add modifier)
-Flame: Action; Flame multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes full damage and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn. (Damage: Weapon Damage and add modifier)
-Off-Hand Strike: Bonus Action; When dual-wielding, make a melee attack with the melee weapon in your off-hand. (Damage: weapon damage without adding modifiers)
-Quick Shot: Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)
-Back Strike: Bonus Action; When wielding a double bladed weapon, make a melee attack with the other side of your weapon. (Damage: weapon damage without adding modifiers)
+Shoot: As an Action, Make a ranged attack with the [weapon name]. On hit: [weapon damage] + your [weapon modifier(s)].
+Strike: As an Action, Make a melee attack with the [weapon name]. On hit: [weapon damage] + your [weapon modifier(s)].
+Hilt Strike: As a Bonus Action, Make a melee attack with the hilt of [weapon name], possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your [weapon modifier(s)]. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed. 
+Slash: As an Action, Make a sweeping melee attack with the [weapon name] against all creatures standing in a 15 foot hoziontal line originating from you. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your [weapon modifier(s)]). A creature takes [weapon damage] without modifiers on a failed save, or half as much on a successful one.
+Back Strike: As a Bonus Action, Make a melee attack with the back end of the [weapon name]. On hit: [weapon damage] without modifiers.
+Off-Hand Strike: As a Bonus Action, Make a melee attack with the [weapon name] while wielding it in your off-hand. On hit: [weapon damage] without modifiers.
+Quick Shot: As a Bonus Action, Make a quick hipfire shot with the [weapon name] while wielding it in your off-hand. On hit: [weapon damage] without modifiers.
+Flame: As an Action, Flame multiple targets in a [weapon range] cone in front of you. Each target must make a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes [weapon damage] + [weapon modifier(s)] and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.
+Blast: As an Action, Blast multiple targets in a [weapon range] cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes [weapon damage] + [weapon modifier(s)]. On a successful save, the target takes half damage.
+Dart: As an Action, Shoot a Dart with the [weapon name] at a target. On hit: Damage and conditions depend on the dart.
+Rocket: As an Action, Shoot a Rocket with the [weapon name] at a target. On hit: Damage and conditions depend on the rocket.
 Reload: Action; After x amount of shots your weapon needs a reload, take a full Action to fully reload your weapon.
 
 Simple Blaster:
@@ -19,10 +21,13 @@ Simple Blaster:
 	cryo pistol (1d4 cold, power cell, range 30/120, Reload 8, Dexterity modifier), Shoot, Quick Shot
 	slugthrower pistol (1d6 kinetic, slug cartridge, range 40/160, Reload 16, requires Strength 11 to use, Dexterity modifier), Shoot, Quick Shot
 	disruptor pistol (1d6 acid, power cell, range 45/180, Reload 12, requires Strength 11 to use, Dexterity modifier), Shoot, Quick Shot
-	stealth pistol (1d6 energy, power cell, silent, two-handed, Reload 6, Dexterity modifier), Shoot
-	wrist blaster (1d6 energy, disguised, can't be disarmed, can still use hand but when holding something can't use weapon, power cell, range 30/120, Reload 8, Dexterity modifier), Shoot, Quick Shot
-	wrist launcher (can't be disarmed, can still use hand but when holding something can't use weapon), Shoot, Quick Shot
-		can use: darts, rockets, wrist launcher attachments
+	stealth pistol (1d6 energy, power cell, silent, two-handed, Reload 6, Dexterity modifier), Shoot, Dart
+	wrist launcher (can't be disarmed, can still use hand but when holding something can't use weapon)
+		- Wrist Blaster Attachment (1d6 energy, power cell, range 30/120, Reload 8, Dexterity modifier), Shoot, Quick Shot
+		- Dart Attachment (dart, range 25/100, Reload 1, Dexterity modifier), Dart
+		- Rocket Attachment (rocket, range 35/140, Reload 1, Dexterity modifier), Rocket
+		- Fibercord Whip (15 feet line, The target must make a DC 8 + proficiency + Dexterity modifier, Dexterity saving throw. On a failed save, the target is restrained. On a successful save, the target isn't restrained. If the target is restrained he target can on their turn use an Action to do a Strength saving throw against 8 + proficiency + Strength modifier of the restrainer. On a failed save, the targets stays restrained. On a successful save, the target is freed. The Restrainer can't use Bonus Actions or hold something in that hand when restraining someone), Whip
+		- Wristflame (1d10 fire, Reload 2, canister, 15 feet line, Dexterity modifier), Flame
 Martial Blaster
 	blaster rifle (1d8 energy, power cell, range 105/420, Reload 12, two-handed, Dexterity modifier), Shoot
 	disruptor rifle (1d8 acid, power cell, range 120/470, Reload 9, two-handed, Dexterity modifier), Shoot
@@ -32,11 +37,12 @@ Martial Blaster
 	slugthrower rifle (1d8 kinetic, slug cartridge, range 105/420, Reload 12, two-handed, Dexterity modifier), Shoot
 	cryo rifle (2d4 cold, power cell, range 50/200, Reload 4, requires Strength 11 to use, two-handed, Dexterity modifier), Shoot
 	railgun (1d10 ion, power cell, range 120/470, Reload 1, two-handed, Dexterity modifier), Shoot
-	arc caster (2d4 lightning, power cell, can hit a secondary target in the same line: 1d4 lightning, range 60/240, Reload 9, requires Strength 11 to use, two-handed, Dexterity modifier), Shoot
-	sniper rifle (1d12 energy, power cell, 150/600, Reload 2, requires Strength 13 to use, two-handed, Dexterity modifier), Shoot
-	minigun/rotary cannon (1d10 energy, power cell, range 75 feet cone, Reload 4, requires Strength 13 to use, two-handed, Dexterity modifier), Blast
+	arc caster (2d4 lightning, power cell, can hit a secondary target within 10 feet of the primary target: 1d4 lightning, range 60/240, Reload 9, requires Strength 11 to use, two-handed, Dexterity modifier), Shoot
+	sniper rifle (1d12 energy, power cell, 150/600, Reload 2, requires Strength 13 to use, two-handed, Dexterity modifier), Shoot, Dart
+	minigun/rotary cannon 2d10 energy, power cell, range 75 feet cone, Reload 4, requires Strength 13 to use, two-handed, Dexterity modifier), Blast
 	flamethrower (2d6 fire, canister, range 55 feet cone, Reload 2, two-handed, Dexterity modifier), Flame
 	cycler rifle (1d10 kinetic, slug cartridge, range 100/400, Reload 4, requires Strength 12 to use, two-handed, Dexterity modifier), Shoot
+	Rocket Launcher (range 100/350, Reload 1, requires Strength 13 to use, two-handed)
 Simple Lightweapon
 	lightsaber (1d6 energy, finesse), Strike, Off-Hand Strike, Hilt Strike
 	lightstaff (1d6/2d4 energy, versatile, Strength modifier), Strike, Off-Hand Strike, Hilt Strike
@@ -115,12 +121,11 @@ tool proficiencies: repair kit proficiency, forgery kit proficiency, slicing kit
 	
 
 rocketpack:
-		attach rockets to the back of your jump/hover/jetpack. Action: reload rocketpack, bonus action: shoot rocket.
-		Can use: rockets
+		Attach rockets to the back of your jump/hover/jetpack. Actions: Reload, Rocket as a Bonus Action
 
 items:
 	Grenades: When thrown explode on impact. Throw: Action; Range 30/60.
-		thermal detenator (10d8 + 20 energy, 35 feet radius. Each target must make a DC 18 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage)
+		thermal detonator (10d8 + 20 energy, 35 feet radius. Each target must make a DC 18 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage)
 		flashbang (15 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target is blinded for 1 round. On a successful save, the target isn't blinded)
 		cryo grenade (1d8 cold, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage. The explosion creates an icy surface of 10 feet that counts as difficult terrain. Each creature walking over it must make a DC 12 Dexterity saving throw. On a failed save, the creature falls prone. On a successful save, the creature doesn't fall)
 		ion grenade (1d8 ion, 10 feet radius. Each target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage, On a successful save, the target takes half damage. Each droid must make a DC 13 Constitution saving throw. On a failed save, the droid is stunned for 1 round. On a successful save, the droid isn't stunned)
@@ -171,9 +176,7 @@ items:
 		corrosive rocket (2d6 acid, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes no damage. The explosion creates an acid surface of 10 feet that reduces AC by 2)
 		fragmentation rocket (2d8 kinetic, 10 feet radius. Each target must make a DC 13 Dexterity saving throw. On a failed save, the target takes full damage. On a successful save, the target takes half damage)
 
-	wrist launcher attachments:
-		fibercord whip (15 feet line, The target must make a DC 8 + proficiency + Dexterity modifier, Dexterity saving throw. On a failed save, the target is restrained. On a successful save, the target isn't restrained. If the target is restrained he target can on their turn use an Action to do a Strength saving throw against 8 + proficiency + Strength modifier of the restrainer. On a failed save, the targets stays restrained. On a successful save, the target is freed. The Restrainer can't use Bonus Actions or hold something in that hand when restraining someone, Dexterity modifier)
-		Wristflame (1d10 fire, Reload 2, canister, 15 feet line, Dexterity modifier), Flame
+		
 
 	poisons
 		poison (The target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage and becomes poisoned. On a successful save, the target takes half damage and doesn't become poisoned)

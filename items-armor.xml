@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Armor</name>
-    <update version="1.4.0">
+    <update version="1.5.0">
       <file name="items-armor.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-armor.xml" />
     </update>
   </info>
@@ -10,16 +10,16 @@
   <element name="Combat Suit" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_COMBAT_SUIT">
     <supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
     <description>
-      <p>A basic combat suit providing minimal protection while maintaining mobility.</p>
+      <p>combat suit AC: 11 + Dexterity modifier</p>
     </description>
     <setters>
       <set name="category">Armor</set>
-      <set name="cost" currency="gp">50</set>
+      <set name="cost" currency="gp">0</set>
       <set name="weight" lb="8">8 lb.</set>
       <set name="slot">body</set>
       <set name="armor">Light</set>
       <set name="armorClass">11 + Dex modifier</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_COMBAT_SUIT</set>
     </setters>
     <rules>
       <stat name="ac:armored:armor" value="11" />
@@ -29,16 +29,16 @@
   <element name="Fiber Armor" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_FIBER_ARMOR">
     <supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
     <description>
-      <p>Armor made from reinforced fiber materials offering better protection than standard combat suits.</p>
+      <p>fiber amor AC: 12 + Dexterity modifier</p>
     </description>
     <setters>
       <set name="category">Armor</set>
-      <set name="cost" currency="gp">100</set>
+      <set name="cost" currency="gp">0</set>
       <set name="weight" lb="10">10 lb.</set>
       <set name="slot">body</set>
       <set name="armor">Light</set>
       <set name="armorClass">12 + Dex modifier</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_FIBER_ARMOR</set>
     </setters>
     <rules>
       <stat name="ac:armored:armor" value="12" />
@@ -48,17 +48,17 @@
   <element name="Duranium Combat Suit" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_DURANIUM_COMBAT_SUIT">
     <supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
     <description>
-      <p>A combat suit reinforced with duranium plates, providing excellent protection but making stealth difficult.</p>
+      <p>duranium combat suit AC: 13 + Dexterity modifier (disadvantage on stealth)</p>
     </description>
     <setters>
       <set name="category">Armor</set>
-      <set name="cost" currency="gp">200</set>
+      <set name="cost" currency="gp">0</set>
       <set name="weight" lb="15">15 lb.</set>
       <set name="slot">body</set>
       <set name="armor">Light</set>
       <set name="armorClass">13 + Dex modifier</set>
       <set name="stealth">Disadvantage</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_DURANIUM_COMBAT_SUIT</set>
     </setters>
     <rules>
       <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
@@ -66,20 +66,19 @@
     </rules>
   </element>
   
-  
   <element name="Mesh Armor" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_MESH_ARMOR">
     <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
     <description>
-      <p>Armor constructed from interlocking mesh plates, providing solid protection while allowing reasonable mobility.</p>
+      <p>mesh armor AC: 13 + Dexterity modifier (max +2)</p>
     </description>
     <setters>
       <set name="category">Armor</set>
-      <set name="cost" currency="gp">150</set>
+      <set name="cost" currency="gp">0</set>
       <set name="weight" lb="20">20 lb.</set>
       <set name="slot">body</set>
       <set name="armor">Medium</set>
       <set name="armorClass">13 + Dex modifier (max 2)</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_MESH_ARMOR</set>
     </setters>
     <rules>
       <stat name="ac:armored:armor" value="13" />
@@ -89,16 +88,16 @@
   <element name="Weave Armor" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_WEAVE_ARMOR">
     <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
     <description>
-      <p>Advanced armor using woven composite materials for superior protection.</p>
+      <p>weave armor AC: 14 + Dexterity modifier (max +2)</p>
     </description>
     <setters>
       <set name="category">Armor</set>
-      <set name="cost" currency="gp">300</set>
+      <set name="cost" currency="gp">0</set>
       <set name="weight" lb="25">25 lb.</set>
       <set name="slot">body</set>
       <set name="armor">Medium</set>
       <set name="armorClass">14 + Dex modifier (max 2)</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_WEAVE_ARMOR</set>
     </setters>
     <rules>
       <stat name="ac:armored:armor" value="14" />
@@ -108,16 +107,16 @@
   <element name="Beskar Weave Armor" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_BESKAR_WEAVE_ARMOR">
     <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
     <description>
-      <p>Armor woven with beskar fibers, providing exceptional protection. When an enemy rolls maximum damage on an attack, they must reroll and use the new result.</p>
+      <p>beskar weave armor AC 14 + Dexterity modifier (max +2) (ability: if an enemy rolls max damage on the dice, they have to reroll and use that reroll)</p>
     </description>
     <setters>
       <set name="category">Armor</set>
-      <set name="cost" currency="gp">800</set>
+      <set name="cost" currency="gp">0</set>
       <set name="weight" lb="30">30 lb.</set>
       <set name="slot">body</set>
       <set name="armor">Medium</set>
       <set name="armorClass">14 + Dex modifier (max 2)</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_BESKAR_WEAVE_ARMOR</set>
     </setters>
     <rules>
       <stat name="ac:armored:armor" value="14" />
@@ -127,17 +126,17 @@
   <element name="Composite Armor" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_COMPOSITE_ARMOR">
     <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
     <description>
-      <p>Heavy medium armor made from layered composite materials. Provides excellent protection but makes stealth difficult.</p>
+      <p>composite armor: 15 + Dexterity modifier (max +2) (disadvantage on stealth)</p>
     </description>
     <setters>
       <set name="category">Armor</set>
-      <set name="cost" currency="gp">500</set>
+      <set name="cost" currency="gp">0</set>
       <set name="weight" lb="35">35 lb.</set>
       <set name="slot">body</set>
       <set name="armor">Medium</set>
       <set name="armorClass">15 + Dex modifier (max 2)</set>
       <set name="stealth">Disadvantage</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_COMPOSITE_ARMOR</set>
     </setters>
     <rules>
       <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
@@ -145,87 +144,85 @@
     </rules>
   </element>
   
-  
   <element name="Battle Armor" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_BATTLE_ARMOR">
     <supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
     <description>
-      <p>Heavy military-grade armor designed for frontline combat. Provides resistance to kinetic damage.</p>
+      <p>battle armor AC: 16 (disadvantage on stealth, resistant to kinetic damage)</p>
     </description>
     <setters>
       <set name="category">Armor</set>
-      <set name="cost" currency="gp">600</set>
+      <set name="cost" currency="gp">0</set>
       <set name="weight" lb="50">50 lb.</set>
       <set name="slot">body</set>
       <set name="armor">Heavy</set>
       <set name="armorClass">16</set>
       <set name="stealth">Disadvantage</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_BATTLE_ARMOR</set>
     </setters>
     <rules>
       <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
       <stat name="ac:armored:armor" value="16" />
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_KINETIC" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_KINETIC" />
     </rules>
   </element>
   
   <element name="Assault Armor" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_ASSAULT_ARMOR">
     <supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
     <description>
-      <p>Elite heavy armor worn by specialized assault troops. Provides resistance to kinetic damage.</p>
+      <p>assault armor AC: 17 ((disadvantage on stealth, resistant to kinetic damage)</p>
     </description>
     <setters>
       <set name="category">Armor</set>
-      <set name="cost" currency="gp">1000</set>
+      <set name="cost" currency="gp">0</set>
       <set name="weight" lb="60">60 lb.</set>
       <set name="slot">body</set>
       <set name="armor">Heavy</set>
       <set name="armorClass">17</set>
       <set name="stealth">Disadvantage</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_ASSAULT_ARMOR</set>
     </setters>
     <rules>
       <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
       <stat name="ac:armored:armor" value="17" />
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_KINETIC" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_KINETIC" />
     </rules>
   </element>
   
   <element name="Durasteel Armor" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_DURASTEEL_ARMOR">
     <supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
     <description>
-      <p>The heaviest and most protective armor available, made from durasteel plates. Provides resistance to kinetic damage.</p>
+      <p>durasteel armor AC: 18 (disadvantage on stealth, resistant to kinetic damage)</p>
     </description>
     <setters>
       <set name="category">Armor</set>
-      <set name="cost" currency="gp">1500</set>
+      <set name="cost" currency="gp">0</set>
       <set name="weight" lb="75">75 lb.</set>
       <set name="slot">body</set>
       <set name="armor">Heavy</set>
       <set name="armorClass">18</set>
       <set name="stealth">Disadvantage</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_DURASTEEL_ARMOR</set>
     </setters>
     <rules>
       <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
       <stat name="ac:armored:armor" value="18" />
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_KINETIC" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_KINETIC" />
     </rules>
   </element>
-  
   
   <element name="Physical Shield" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_PHYSICAL_SHIELD">
     <supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
     <description>
-      <p>A physical shield that provides +2 AC when wielded.</p>
+      <p>physical shield + 2 AC</p>
     </description>
     <setters>
       <set name="category">Armor</set>
-      <set name="cost" currency="gp">20</set>
+      <set name="cost" currency="gp">0</set>
       <set name="weight" lb="6">6 lb.</set>
       <set name="slot">secondary</set>
       <set name="armor">Shield</set>
       <set name="armorClass">+2</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_PHYSICAL_SHIELD</set>
     </setters>
     <rules>
       <stat name="ac:shield" value="2" />
@@ -235,17 +232,18 @@
   <element name="Small Shield Generator" type="Armor" source="SW-MSV-Edition" id="ID_ITEM_SMALL_SHIELD_GENERATOR">
     <supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
     <description>
-      <p>A portable shield generator that creates a protective energy barrier. Once per long rest, you can activate it as a bonus action to gain 10 temporary hit points.</p>
+      <p>small shield generator + 10 temp HP, once per long rest</p>
     </description>
     <setters>
       <set name="category">Armor</set>
-      <set name="cost" currency="gp">500</set>
+      <set name="cost" currency="gp">0</set>
       <set name="weight" lb="3">3 lb.</set>
       <set name="slot">secondary</set>
       <set name="armor">Shield</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS</set>
+      <set name="proficiency">ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
     </setters>
     <rules>
+      <stat name="hp:temp" value="10" />
       <grant type="Action" id="ID_ACTION_SHIELD_GENERATOR_SMALL" />
     </rules>
   </element>
@@ -253,17 +251,18 @@
   <element name="Medium Shield Generator" type="Armor" source="SW-MSV-Edition" id="ID_ITEM_MEDIUM_SHIELD_GENERATOR">
     <supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
     <description>
-      <p>A more powerful shield generator that creates a stronger protective barrier. Once per long rest, you can activate it as a bonus action to gain 20 temporary hit points.</p>
+      <p>medium shield generator + 20 temp HP, once per long rest</p>
     </description>
     <setters>
       <set name="category">Armor</set>
-      <set name="cost" currency="gp">1000</set>
+      <set name="cost" currency="gp">0</set>
       <set name="weight" lb="5">5 lb.</set>
       <set name="slot">secondary</set>
       <set name="armor">Shield</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS</set>
+      <set name="proficiency">ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
     </setters>
     <rules>
+      <stat name="hp:temp" value="20" />
       <grant type="Action" id="ID_ACTION_SHIELD_GENERATOR_MEDIUM" />
     </rules>
   </element>
@@ -271,22 +270,22 @@
   <element name="Large Shield Generator" type="Armor" source="SW-MSV-Edition" id="ID_ITEM_LARGE_SHIELD_GENERATOR">
     <supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
     <description>
-      <p>A heavy-duty shield generator that provides substantial protection. Once per long rest, you can activate it as a bonus action to gain 40 temporary hit points.</p>
+      <p>large shield generator + 40 temp HP, once per long rest</p>
     </description>
     <setters>
       <set name="category">Armor</set>
-      <set name="cost" currency="gp">2000</set>
+      <set name="cost" currency="gp">0</set>
       <set name="weight" lb="8">8 lb.</set>
       <set name="slot">secondary</set>
       <set name="armor">Shield</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS</set>
+      <set name="proficiency">ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
     </setters>
     <rules>
+      <stat name="hp:temp" value="40" />
       <grant type="Action" id="ID_ACTION_SHIELD_GENERATOR_LARGE" />
     </rules>
   </element>
 
-  
   <element name="Activate Small Shield Generator" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SHIELD_GENERATOR_SMALL">
     <description>
       <p>Bonus Action: Once per long rest, activate your shield generator to gain 10 temporary hit points.</p>
@@ -294,9 +293,6 @@
     <sheet>
       <description>Bonus Action (1/LR): Gain 10 temporary hit points.</description>
     </sheet>
-    <rules>
-      <stat name="hp:temp" value="10" />
-    </rules>
   </element>
 
   <element name="Activate Medium Shield Generator" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SHIELD_GENERATOR_MEDIUM">
@@ -306,9 +302,6 @@
     <sheet>
       <description>Bonus Action (1/LR): Gain 20 temporary hit points.</description>
     </sheet>
-    <rules>
-      <stat name="hp:temp" value="20" />
-    </rules>
   </element>
 
   <element name="Activate Large Shield Generator" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SHIELD_GENERATOR_LARGE">
@@ -318,24 +311,21 @@
     <sheet>
       <description>Bonus Action (1/LR): Gain 40 temporary hit points.</description>
     </sheet>
-    <rules>
-      <stat name="hp:temp" value="40" />
-    </rules>
   </element>
   
   <element name="Energy Shield" type="Armor" source="SW-MSV-Edition" id="ID_ARMOR_ENERGY_SHIELD">
     <supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
     <description>
-      <p>An energy-based shield that provides +3 AC and halves lightning damage taken.</p>
+      <p>energy shield + 3 AC, halves the damage done by lightning damage</p>
     </description>
     <setters>
       <set name="category">Armor</set>
-      <set name="cost" currency="gp">1500</set>
+      <set name="cost" currency="gp">0</set>
       <set name="weight" lb="4">4 lb.</set>
       <set name="slot">secondary</set>
       <set name="armor">Shield</set>
       <set name="armorClass">+3</set>
-      <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_ARMOR_PROFICIENCY_ENERGY_SHIELD</set>
     </setters>
     <rules>
       <stat name="ac:shield" value="3" />

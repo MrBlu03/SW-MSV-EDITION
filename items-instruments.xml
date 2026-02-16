@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Musical Instruments</name>
-    <update version="1.4.0">
+    <update version="1.5.0">
       <file name="items-instruments.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-instruments.xml" />
     </update>
   </info>
@@ -93,7 +93,7 @@
   <element name="Kloo horn" type="Item" source="SW-MSV-Edition" id="ID_ITEM_KLOO_HORN">
     <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
-      <p>The kloo horn is a double-reeded wind instrument, larger than a Slitherhorn and a Fizzz (roughly 1.5 meters tall), and one of the most commonly used instruments in the galaxy</p>
+      <p>The kloo horn is a double-reeded wind instrument, larger than a Slitherhorn and a Fizzz[1] (roughly 1.5 meters tall), and one of the most commonly used instruments in the galaxy</p>
     </description>
     <setters>
       <set name="category">Musical Instruments</set>

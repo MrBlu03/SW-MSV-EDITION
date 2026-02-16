@@ -3,7 +3,7 @@ feats:
 	ability improvement: You increase one Ability by 2, or two Abilities by 1 to a max of 20
 	actor: Your Charisma increases by 1 to a max of 20, profiency bonus is doubled for deception and performance checks and grants those proficiencies.
 	alert: +5 to initiative and can't be surprised
-	athlete: Your Strength or Dexterity increases by 1 to a max of 20, When you are prone, standing up uses only 5 feet of your movement
+	athlete: Your Strength or Dexterity increases by 1 to a max of 20. Climbing speed is now the same is your normal speed. When you are prone, standing up uses only 5 feet of your movement
 	charger: When you use your action to Dash, you can use a bonus action to make one melee weapon attack or to shove a creature. If you move at least 10 feet in a straight line immediately before taking this bonus action, you either gain a +5 bonus to the attack’s damage roll (if you chose to make a melee attack and hit) or push the target up to 10 feet away from you (if you chose to shove and you succeed)
 	blaster pistol expert: when you make a blaster pistol attacks within melee range, the attack rolls do not have disadvantage
 	defensive duelist: When attacked while wielding a Finesse Weapon you're Proficient with, you can use a reaction to add your Proficiency Bonus to your Armour Class, possibly causing the attack to miss

@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Scout Class</name>
-    <update version="1.4.0">
+    <update version="1.5.0">
       <file name="class-scout.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-scout.xml" />
     </update>
   </info>
@@ -79,12 +79,37 @@
   <element id="ID_CLASS_SCOUT_FEATURE_SNEAK_ATTACK" name="Sneak Attack" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>Once per turn, you can deal an extra 1d6 damage (the type of damage is determined by the weapon you use) to one creature you hit with an attack if you have advantage on the attack roll. You must use a Finesse or ranged weapon. You don’t need advantage on the attack roll if another enemy of the target is within 5 feet, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll. The amount of damage depends on your level in this class: lv 1: 1d6, lv 2: 1d6, lv 3: 2d6, lv 4: 2d6, lv 5: 3d6, lv 6: 3d6, lv 7: 4d6, lv 8: 4d6, lv 9: 5d6, lv 10: 5d6, lv 11: 6d6, lv 12: 6d6, lv 13: 7d6, lv 14: 7d6, lv 15: 8d6, lv 16: 8d6, lv 17: 9d6, lv 18: 9d6, lv 19: 10d6, lv 20: 10d6</p>
+      <p>Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.</p>
+      <p class="indent">You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</p>
+      <p class="indent">The amount of the extra damage increases as you gain levels in this class.</p>
     </description>
     <sheet>
-      <description>Once per turn, you can deal an extra 1d6 damage (the type of damage is determined by the weapon you use) to one creature you hit with an attack if you have advantage on the attack roll. You must use a Finesse or ranged weapon. You don’t need advantage on the attack roll if another enemy of the target is within 5 feet, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll. The amount of damage depends on your level in this class: lv 1: 1d6, lv 2: 1d6, lv 3: 2d6, lv 4: 2d6, lv 5: 3d6, lv 6: 3d6, lv 7: 4d6, lv 8: 4d6, lv 9: 5d6, lv 10: 5d6, lv 11: 6d6, lv 12: 6d6, lv 13: 7d6, lv 14: 7d6, lv 15: 8d6, lv 16: 8d6, lv 17: 9d6, lv 18: 9d6, lv 19: 10d6, lv 20: 10d6</description>
+      <description>Once per turn, you can deal an extra {{sneak-attack:count}}d{{sneak-attack:die}} damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
+You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</description>
     </sheet>
-
+    <rules>
+      <stat name="sneak-attack:count" value="1" level="1" />
+      <stat name="sneak-attack:count" value="1" level="2" />
+      <stat name="sneak-attack:count" value="2" level="3" />
+      <stat name="sneak-attack:count" value="2" level="4" />
+      <stat name="sneak-attack:count" value="3" level="5" />
+      <stat name="sneak-attack:count" value="3" level="6" />
+      <stat name="sneak-attack:count" value="4" level="7" />
+      <stat name="sneak-attack:count" value="4" level="8" />
+      <stat name="sneak-attack:count" value="5" level="9" />
+      <stat name="sneak-attack:count" value="5" level="10" />
+      <stat name="sneak-attack:count" value="6" level="11" />
+      <stat name="sneak-attack:count" value="6" level="12" />
+      <stat name="sneak-attack:count" value="7" level="13" />
+      <stat name="sneak-attack:count" value="7" level="14" />
+      <stat name="sneak-attack:count" value="8" level="15" />
+      <stat name="sneak-attack:count" value="8" level="16" />
+      <stat name="sneak-attack:count" value="9" level="17" />
+      <stat name="sneak-attack:count" value="9" level="18" />
+      <stat name="sneak-attack:count" value="10" level="19" />
+      <stat name="sneak-attack:count" value="10" level="20" />
+      <stat name="sneak-attack:die" value="6" bonus="die" />
+    </rules>
   </element>
   <element id="ID_CLASS_SCOUT_FEATURE_EXPERTISE" name="Expertise" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
