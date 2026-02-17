@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Weapons</name>
-    <update version="2.0.0">
+    <update version="2.0.1">
       <file name="weapons.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/weapons.xml" />
     </update>
   </info>
@@ -373,6 +373,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+      <p>• <strong>Dart:</strong> Action; Shoot a Dart with the weapon at a target. On hit: Damage and conditions depend on the dart.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -386,6 +387,7 @@
     <rules>
       <grant type="Tag" name="Silent" />
       <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_DART" />
     </rules>
   </element>
   <element name="Wrist Launcher with Wrist Blaster Attachment" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_BLASTER">
@@ -416,6 +418,7 @@
     </rules>
   </element>
   <element name="wrist launcher" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER">
+    <compendium display="false" />
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
     <description>
       <p>

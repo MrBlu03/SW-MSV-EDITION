@@ -3,7 +3,7 @@
   <info>
     <name>Backgrounds</name>
     <description>Backgrounds for SW-MSV-Edition.</description>
-    <update version="2.0.0">
+    <update version="2.0.1">
       <file name="backgrounds.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/backgrounds.xml" />
     </update>
   </info>
@@ -28,7 +28,7 @@
       <select type="Language" name="Language (Agent)" number="2" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_FACTION_CONTACT" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="2">
+      <select type="List" name="Personality Trait" number="1">
         <item id="1">I idolize a particular hero of my faction, and constantly refer to that person's deeds and example.</item>
         <item id="2">I can find common ground between the fiercest enemies, empathizing with them and always working towards peace.</item>
         <item id="3">I see omens in every event and action.</item>
@@ -95,7 +95,7 @@
       <select type="Language" name="Language (Bounty Hunter)" number="1" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_WANTED_POSTER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="2">
+      <select type="List" name="Personality Trait" number="1">
         <item id="1">I always have a plan for what to do when things go wrong.</item>
         <item id="2">I am always calm, no matter what the situation. I never raise my voice or let my emotions control me.</item>
         <item id="3">The first thing I do in a new place is note the locations of everything valuable or where such things could be hidden.</item>
@@ -160,7 +160,7 @@
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CRIMINAL_CONTACT" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="2">
+      <select type="List" name="Personality Trait" number="1">
         <item id="1">I always have a plan for what to do when things go wrong.</item>
         <item id="2">I am always calm, no matter what the situation. I never raise my voice or let my emotions control me.</item>
         <item id="3">The first thing I do in a new place is note the locations of everything valuable or where such things could be hidden.</item>
@@ -225,7 +225,7 @@
       <select type="Proficiency" name="Musical Instrument (Entertainer)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_BY_POPULAR_DEMAND" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="2">
+      <select type="List" name="Personality Trait" number="1">
         <item id="1">I know a story relevant to almost every situation.</item>
         <item id="2">Whenever I come to a new place, I collect local rumors and spread gossip.</item>
         <item id="3">I'm a hopeless romantic, always searching for that special someone.</item>
@@ -290,7 +290,7 @@
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_REPAIR_KIT" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_TINKERER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="2">
+      <select type="List" name="Personality Trait" number="1">
         <item id="1">I look up to a renowned engineer in my field, and often talk about their work.</item>
         <item id="2">I constantly compare my current situation to my past experiments, many of which went terrifyingly wrong.</item>
         <item id="3">I believe scientific results always comes first.</item>
@@ -355,7 +355,7 @@
       <select type="Language" name="Language (Jedi)" number="1" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_JEDI_CODE_KNOWLEDGE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="2">
+      <select type="List" name="Personality Trait" number="1">
         <item id="1">I idolize a particular Jedi, and constantly refer to that person's deeds and example.</item>
         <item id="2">I can find common ground between the fiercest enemies, empathizing with them and always working towards peace.</item>
         <item id="3">I see omens in every event and action. The Force tries to speak to us, we just need to listen</item>
@@ -422,7 +422,7 @@
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="2">
+      <select type="List" name="Personality Trait" number="1">
         <item id="1">I try and bring my culture to outsiders.</item>
         <item id="2">I always put my clan first.</item>
         <item id="3">I follow the Resol'nare to the letter.</item>
@@ -487,7 +487,7 @@
       <select type="Language" name="Language (Mercenary)" number="1" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_MERCENARY_CONTRACT" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="2">
+      <select type="List" name="Personality Trait" number="1">
         <item id="1">I do not fear death, but accept it as part of life.</item>
         <item id="2">I have a crude sense of humor.</item>
         <item id="3">I face problems head-on. A simple, direct solution is the best path to success.</item>
@@ -552,7 +552,7 @@
       <select type="Language" name="Language (Noble)" number="1" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_POSITION_OF_PRIVILEGE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="2">
+      <select type="List" name="Personality Trait" number="1">
         <item id="1">My eloquent flattery makes everyone I talk to feel like the most wonderful and important person in the world.</item>
         <item id="2">The common folk love me for my kindness and generosity.</item>
         <item id="3">No one could doubt by looking at my regal bearing that I am a cut above the unwashed masses.</item>
@@ -619,7 +619,7 @@
       <select type="Language" name="Language (Nomad)" number="1" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_WANDERER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="2">
+      <select type="List" name="Personality Trait" number="1">
         <item id="1">I'm driven by a wanderlust that led me away from home.</item>
         <item id="2">I watch over my friends as if they were a litter of newborn pups.</item>
         <item id="3">I once ran twenty-five miles without stopping to warn my clan of an approaching horde. I'd do it again if I had to.</item>
@@ -684,7 +684,7 @@
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_SHIP_PASSAGE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="2">
+      <select type="List" name="Personality Trait" number="1">
         <item id="1">I respect my captain and trust my crew. It may be all that saves my life one day.</item>
         <item id="2">Whether the credits comes from the split of the spoils or from a side wager, I'll get my hands on it.</item>
         <item id="3">When my blood gets up, my swearing could boil the icy tundra of Hoth.</item>
@@ -751,7 +751,7 @@
       <select type="Language" name="Language (Scientist)" number="1" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_RESEARCHER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="2">
+      <select type="List" name="Personality Trait" number="1">
         <item id="1">I look up to a renowned scientist in my field, and often talk about their work.</item>
         <item id="2">I constantly compare my current situation to my past experiments, many of which went terrifyingly wrong.</item>
         <item id="3">I believe scientific results always comes first.</item>
@@ -816,7 +816,7 @@
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_FALSE_IDENTITY" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="2">
+      <select type="List" name="Personality Trait" number="1">
         <item id="1">I fall in and out of love easily, and am always pursuing someone.</item>
         <item id="2">I have a joke for every occasion, especially occasions where humor is inappropriate.</item>
         <item id="3">Flattery is my preferred trick for getting what I want.</item>
@@ -881,7 +881,7 @@
       <select type="Language" name="Language (Sith)" number="1" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_SITH_CODE_KNOWLEDGE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="2">
+      <select type="List" name="Personality Trait" number="1">
         <item id="1">I idolize a particular Sith, and constantly refer to that person's deeds and example.</item>
         <item id="2">I seek power above all else.</item>
         <item id="3">I prefer using a lightsaber to solve my problems.</item>
@@ -944,7 +944,7 @@
       <select type="Proficiency" name="Skill Proficiency (Smuggler)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_ACROBATICS" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_SMUGGLER_NETWORK" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="2">
+      <select type="List" name="Personality Trait" number="1">
         <item id="1">I am extremely sociable, especially over a mug of ale.</item>
         <item id="2">I always keep my wares close to me, you never know who might stumble across them otherwise.</item>
         <item id="3">The best way to hide is out in the open.</item>
@@ -1009,7 +1009,7 @@
       <select type="Language" name="Language (Soldier)" number="1" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_MILITARY_RANK" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="2">
+      <select type="List" name="Personality Trait" number="1">
         <item id="1">I'm always polite and respectful.</item>
         <item id="2">I'm haunted by memories of war. I can't get the images of violence out of my mind.</item>
         <item id="3">I've lost too many friends, and I'm slow to make new ones.</item>

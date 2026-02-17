@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Species</name>
-    <update version="2.0.0">
+    <update version="2.0.1">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
@@ -293,6 +293,7 @@
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_ION_LIGHTNING_VULNERABILITY" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_FORCE_INSENSITIVE" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_MACHINE" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_TUNE_UP" />
       <grant type="Action" id="ID_ACTION_DROID_TUNE_UP" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
@@ -368,6 +369,7 @@
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_ION_LIGHTNING_VULNERABILITY" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_FORCE_INSENSITIVE" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_MACHINE" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_TUNE_UP" />
       <grant type="Action" id="ID_ACTION_DROID_TUNE_UP" />
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
@@ -665,6 +667,7 @@
       <stat name="innate speed" value="30" bonus="base" />
       <grant type="Size" id="ID_SIZE_MEDIUM" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_ITHORIAN_SONIC_SCREAM" />
       <grant type="Action" id="ID_ACTION_ITHORIAN_SONIC_SCREAM" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_ITHORESE" />
@@ -1303,7 +1306,7 @@
       <p class="indent"><strong><em>Survival Training.</em></strong> You are proficient in the Survival skill.</p>
       <p class="indent"><strong><em>Desert Dweller.</em></strong> Desert terrain is not difficult terrain for you.</p>
       <p class="indent"><strong><em>Heat Adapted.</em></strong> You have advantage on Constitution saving throws to avoid heat exhaustion.</p>
-      <p class="indent"><strong><em>Primitive.</em></strong> You cannot operate wrist blasters, launchers, slicing kits, or other high-tech devices.</p>
+      <p class="indent"><strong><em>Primitive.</em></strong> Cannot operate wrist launchers, slicing kits, or other high tech devices.</p>
       <p class="indent"><strong><em>Weapon Training.</em></strong> You are proficient with cycler rifles and vibro-axes.</p>
       <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Galactic Basic and Tusken.</p>
       <p class="indent"><strong><em>Cyborg Option.</em></strong> You may choose to become a Cyborg, gaining cybernetic enhancements.</p>
@@ -1886,7 +1889,7 @@
     <sheet><description>Unarmored/light armor AC = 12 + Dexterity modifier.</description></sheet>
     <rules>
       <stat name="ac:calculation" value="12" bonus="base" requirements="[armor:none]||[armor:light]" />
-      <stat name="ac:calculation" value="dexterity" bonus="modifier" requirements="[armor:none]||[armor:light]" />
+      <stat name="ac:calculation" value="dexterity:modifier" bonus="modifier" requirements="[armor:none]||[armor:light]" />
     </rules>
   </element>
 
@@ -1977,7 +1980,7 @@
     <sheet><description>Unarmored/light armor AC = 12 + Dexterity modifier.</description></sheet>
     <rules>
       <stat name="ac:calculation" value="12" bonus="base" requirements="[armor:none]||[armor:light]" />
-      <stat name="ac:calculation" value="dexterity" bonus="modifier" requirements="[armor:none]||[armor:light]" />
+      <stat name="ac:calculation" value="dexterity:modifier" bonus="modifier" requirements="[armor:none]||[armor:light]" />
     </rules>
   </element>
 
@@ -2058,7 +2061,7 @@
     <sheet><description>Unarmored/light armor AC = 12 + Dexterity modifier.</description></sheet>
     <rules>
       <stat name="ac:calculation" value="12" bonus="base" requirements="[armor:none]||[armor:light]" />
-      <stat name="ac:calculation" value="dexterity" bonus="modifier" requirements="[armor:none]||[armor:light]" />
+      <stat name="ac:calculation" value="dexterity:modifier" bonus="modifier" requirements="[armor:none]||[armor:light]" />
     </rules>
   </element>
 
@@ -2078,7 +2081,7 @@
     <sheet><description>Unarmored/light armor AC = 12 + Dexterity modifier.</description></sheet>
     <rules>
       <stat name="ac:calculation" value="12" bonus="base" requirements="[armor:none]||[armor:light]" />
-      <stat name="ac:calculation" value="dexterity" bonus="modifier" requirements="[armor:none]||[armor:light]" />
+      <stat name="ac:calculation" value="dexterity:modifier" bonus="modifier" requirements="[armor:none]||[armor:light]" />
     </rules>
   </element>
   <element name="Regeneration" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_TRANDOSHAN_REGENERATION">
@@ -2100,8 +2103,8 @@
     <sheet><description>Advantage on Constitution saving throws to avoid heat exhaustion.</description></sheet>
   </element>
   <element name="Primitive" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_TUSKEN_PRIMITIVE">
-    <description><p>Cannot operate wrist blasters, slicing kits, or other high-tech devices.</p></description>
-    <sheet><description>Cannot operate wrist blasters, slicing kits, or other high-tech devices.</description></sheet>
+    <description><p>Cannot operate wrist launchers, slicing kits, or other high tech devices.</p></description>
+    <sheet><description>Cannot operate wrist launchers, slicing kits, or other high tech devices.</description></sheet>
   </element>
 
   <!-- TWI'LEK TRAITS -->
@@ -2138,7 +2141,7 @@
     <sheet><description>Unarmored/light armor AC = 13 + Dexterity modifier.</description></sheet>
     <rules>
       <stat name="ac:calculation" value="13" bonus="base" requirements="[armor:none]||[armor:light]" />
-      <stat name="ac:calculation" value="dexterity" bonus="modifier" requirements="[armor:none]||[armor:light]" />
+      <stat name="ac:calculation" value="dexterity:modifier" bonus="modifier" requirements="[armor:none]||[armor:light]" />
     </rules>
   </element>
 
@@ -2152,7 +2155,7 @@
     <sheet><description>Unarmored/light armor AC = 13 + Dexterity modifier.</description></sheet>
     <rules>
       <stat name="ac:calculation" value="13" bonus="base" requirements="[armor:none]||[armor:light]" />
-      <stat name="ac:calculation" value="dexterity" bonus="modifier" requirements="[armor:none]||[armor:light]" />
+      <stat name="ac:calculation" value="dexterity:modifier" bonus="modifier" requirements="[armor:none]||[armor:light]" />
     </rules>
   </element>
 
@@ -2182,6 +2185,16 @@
     <sheet><description>Understands Galactic Basic but cannot speak it.</description></sheet>
   </element>
 
+  <!-- ITHORIAN TRAITS -->
+  <element name="Sonic Scream" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_ITHORIAN_SONIC_SCREAM">
+    <description>
+      <p>As an action, you can violently expel air in a 15-foot cone. When you do so, each creature in the area of the exhalation must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). A creature takes 2d6 sonic damage on a failed save, and half as much damage on a successful one. The damage increases to 4d6 at 5th level, 6d6 at 11th level, and 8d6 at 17th level. This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you complete a long rest.</p>
+    </description>
+    <sheet>
+      <description>Expel air in a 15-ft cone (Action). Wisdom save (DC 8 + proficiency + Con mod) for 2d6/4d6/6d6/8d6 sonic damage by level (half on success). No effect on constructs. Uses = proficiency bonus per long rest.</description>
+    </sheet>
+  </element>
+
   <!-- ACTIONS -->
   <element name="Sonic Scream" type="Action" source="SW-MSV-Edition" id="ID_ACTION_ITHORIAN_SONIC_SCREAM">
     <description>
@@ -2200,6 +2213,16 @@
       <stat name="ithorian-scream:damage" value="8d6" level="17" />
     </rules>
   </element>
+  <!-- DROID TRAITS -->
+  <element name="Tune-Up" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_DROID_TUNE_UP">
+    <description>
+      <p>Quickly repair some damage on your body. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+    </description>
+    <sheet>
+      <description>Use a bonus action to regain 1d10 + level HP. 1/Short Rest.</description>
+    </sheet>
+  </element>
+
   <element name="Tune-Up" type="Action" source="SW-MSV-Edition" id="ID_ACTION_DROID_TUNE_UP">
     <description>
       <p>Quickly repair some damage on your body. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
