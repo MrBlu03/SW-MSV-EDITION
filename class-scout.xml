@@ -1,11 +1,14 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <elements>
   <info>
     <name>Scout Class</name>
-    <update version="1.5.0">
+    <description>Scout Class for SW-MSV-Edition.</description>
+    <update version="2.0.0">
       <file name="class-scout.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-scout.xml" />
     </update>
   </info>
+
+  <!-- SCOUT CLASS -->
   <element id="ID_CLASS_SCOUT" name="Scout" type="Class" source="SW-MSV-Edition">
     <description>
       <p class="indent">
@@ -32,6 +35,44 @@
            You start with 7d4 × 100 Gold.
         </strong>
       </p>
+      <h5 class="caption">THE SCOUT</h5>
+      <table class="class-features">
+        <thead>
+          <tr><td class="col-5">Level</td><td class="col-10">Sneak Attack</td><td class="left">Features</td></tr>
+        </thead>
+        <tr><td> 1st</td><td>1d6</td><td class="left">Sneak Attack, Expertise</td></tr>
+        <tr><td> 2nd</td><td>1d6</td><td class="left">Cunning Action</td></tr>
+        <tr><td> 3rd</td><td>2d6</td><td class="left">Bad Feeling, Scout Subclass</td></tr>
+        <tr><td> 4th</td><td>2d6</td><td class="left">Ability Score Improvement</td></tr>
+        <tr><td> 5th</td><td>3d6</td><td class="left">Uncanny Dodge</td></tr>
+        <tr><td> 6th</td><td>3d6</td><td class="left">Expertise</td></tr>
+        <tr><td> 7th</td><td>4d6</td><td class="left">Evasion</td></tr>
+        <tr><td> 8th</td><td>4d6</td><td class="left">Ability Score Improvement</td></tr>
+        <tr><td> 9th</td><td>5d6</td><td class="left">Subclass Feature</td></tr>
+        <tr><td>10th</td><td>5d6</td><td class="left">Ability Score Improvement</td></tr>
+        <tr><td>11th</td><td>6d6</td><td class="left">Reliable Talent</td></tr>
+        <tr><td>12th</td><td>6d6</td><td class="left">Ability Score Improvement</td></tr>
+        <tr><td>13th</td><td>7d6</td><td class="left">Subclass Feature</td></tr>
+        <tr><td>14th</td><td>7d6</td><td class="left">—</td></tr>
+        <tr><td>15th</td><td>8d6</td><td class="left">Slippery Mind</td></tr>
+        <tr><td>16th</td><td>8d6</td><td class="left">Ability Score Improvement</td></tr>
+        <tr><td>17th</td><td>9d6</td><td class="left">Subclass Feature</td></tr>
+        <tr><td>18th</td><td>9d6</td><td class="left">Elusive</td></tr>
+        <tr><td>19th</td><td>10d6</td><td class="left">Ability Score Improvement</td></tr>
+        <tr><td>20th</td><td>10d6</td><td class="left">Stroke of Luck</td></tr>
+      </table>
+      <div element="ID_CLASS_SCOUT_FEATURE_SNEAK_ATTACK" />
+      <div element="ID_CLASS_SCOUT_FEATURE_EXPERTISE" />
+      <div element="ID_CLASS_SCOUT_FEATURE_CUNNING_ACTION" />
+      <div element="ID_CLASS_SCOUT_FEATURE_BAD_FEELING" />
+      <div element="ID_CLASS_SCOUT_FEATURE_SUBCLASS" />
+      <div element="ID_CLASS_SCOUT_FEATURE_ABILITY_SCORE_IMPROVEMENT" />
+      <div element="ID_CLASS_SCOUT_FEATURE_UNCANNY_DODGE" />
+      <div element="ID_CLASS_SCOUT_FEATURE_EVASION" />
+      <div element="ID_CLASS_SCOUT_FEATURE_RELIABLE_TALENT" />
+      <div element="ID_CLASS_SCOUT_FEATURE_SLIPPERY_MIND" />
+      <div element="ID_CLASS_SCOUT_FEATURE_ELUSIVE" />
+      <div element="ID_CLASS_SCOUT_FEATURE_STROKE_OF_LUCK" />
     </description>
     <sheet display="false">
       <description>An agile specialist combining stealth, cunning, and precision.</description>
@@ -52,65 +93,71 @@
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ELECTROSTAFF" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ELECTROWHIP" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ELECTROBATON" />
-      <select type="Proficiency" name="Skill Proficiency (Scout)" number="4" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
-      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_EXPERTISE" level="1" />
+      <select type="Proficiency" name="Skill Proficiency (Scout)" number="4" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" />
       <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_SNEAK_ATTACK" level="1" />
+      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_EXPERTISE" level="1" />
       <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_CUNNING_ACTION" level="2" />
       <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_BAD_FEELING" level="3" />
-      <select type="Feat" name="Feat (Scout)" level="4" />
-      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_UNCANNY_DODGE" level="5" />
-      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_EVASION" level="7" />
-      <select type="Feat" name="Feat (Scout)" level="8" />
-      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_SUBCLASS_ABILITY" level="9" />
-      <select type="Feat" name="Feat (Scout)" level="10" />
-      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_RELIABLE_TALENT" level="11" />
-      <select type="Feat" name="Feat (Scout)" level="12" />
-      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_SUBCLASS_ABILITY" level="13" />
-      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_SLIPPERY_MIND" level="15" />
-      <select type="Feat" name="Feat (Scout)" level="16" />
-      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_SUBCLASS_ABILITY" level="17" />
-      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_ELUSIVE" level="18" />
-      <select type="Feat" name="Feat (Scout)" level="19" />
-      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_STROKE_OF_LUCK" level="20" />
       <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_SUBCLASS" level="3" />
+      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_ABILITY_SCORE_IMPROVEMENT" level="4" />
+      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_UNCANNY_DODGE" level="5" />
+      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_EXPERTISE" level="6" />
+      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_EVASION" level="7" />
+      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_ABILITY_SCORE_IMPROVEMENT" level="8" />
+      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_SUBCLASS_9" level="9" />
+      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_ABILITY_SCORE_IMPROVEMENT" level="10" />
+      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_RELIABLE_TALENT" level="11" />
+      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_ABILITY_SCORE_IMPROVEMENT" level="12" />
+      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_SUBCLASS_13" level="13" />
+      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_SLIPPERY_MIND" level="15" />
+      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_ABILITY_SCORE_IMPROVEMENT" level="16" />
+      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_SUBCLASS_17" level="17" />
+      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_ELUSIVE" level="18" />
+      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_ABILITY_SCORE_IMPROVEMENT" level="19" />
+      <grant type="Class Feature" id="ID_CLASS_SCOUT_FEATURE_STROKE_OF_LUCK" level="20" />
     </rules>
+    <multiclass id="ID_MSV_MULTICLASS_SCOUT">
+      <prerequisite>Dexterity 13</prerequisite>
+      <requirements>[dex:13]</requirements>
+      <setters>
+        <set name="multiclass proficiencies">Light armor, Slicing Kit, one skill from the class's skill list</set>
+      </setters>
+      <rules>
+        <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+        <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
+        <select type="Proficiency" name="Skill Proficiency (Scout)" number="1" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" />
+      </rules>
+    </multiclass>
   </element>
+
+  <!-- SNEAK ATTACK -->
   <element id="ID_CLASS_SCOUT_FEATURE_SNEAK_ATTACK" name="Sneak Attack" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
       <p>Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.</p>
       <p class="indent">You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</p>
-      <p class="indent">The amount of the extra damage increases as you gain levels in this class.</p>
+      <p class="indent">The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Scout table.</p>
     </description>
     <sheet>
-      <description>Once per turn, you can deal an extra {{sneak-attack:count}}d{{sneak-attack:die}} damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
-You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</description>
+      <description>Once per turn, deal extra {{sneak-attack:dice}} damage when you hit with advantage using a finesse or ranged weapon. No advantage needed if enemy of target is within 5 feet and not incapacitated.</description>
     </sheet>
     <rules>
-      <stat name="sneak-attack:count" value="1" level="1" />
-      <stat name="sneak-attack:count" value="1" level="2" />
-      <stat name="sneak-attack:count" value="2" level="3" />
-      <stat name="sneak-attack:count" value="2" level="4" />
-      <stat name="sneak-attack:count" value="3" level="5" />
-      <stat name="sneak-attack:count" value="3" level="6" />
-      <stat name="sneak-attack:count" value="4" level="7" />
-      <stat name="sneak-attack:count" value="4" level="8" />
-      <stat name="sneak-attack:count" value="5" level="9" />
-      <stat name="sneak-attack:count" value="5" level="10" />
-      <stat name="sneak-attack:count" value="6" level="11" />
-      <stat name="sneak-attack:count" value="6" level="12" />
-      <stat name="sneak-attack:count" value="7" level="13" />
-      <stat name="sneak-attack:count" value="7" level="14" />
-      <stat name="sneak-attack:count" value="8" level="15" />
-      <stat name="sneak-attack:count" value="8" level="16" />
-      <stat name="sneak-attack:count" value="9" level="17" />
-      <stat name="sneak-attack:count" value="9" level="18" />
-      <stat name="sneak-attack:count" value="10" level="19" />
-      <stat name="sneak-attack:count" value="10" level="20" />
-      <stat name="sneak-attack:die" value="6" bonus="die" />
+      <stat name="sneak-attack:dice" value="1d6" level="1" />
+      <stat name="sneak-attack:dice" value="2d6" level="3" />
+      <stat name="sneak-attack:dice" value="3d6" level="5" />
+      <stat name="sneak-attack:dice" value="4d6" level="7" />
+      <stat name="sneak-attack:dice" value="5d6" level="9" />
+      <stat name="sneak-attack:dice" value="6d6" level="11" />
+      <stat name="sneak-attack:dice" value="7d6" level="13" />
+      <stat name="sneak-attack:dice" value="8d6" level="15" />
+      <stat name="sneak-attack:dice" value="9d6" level="17" />
+      <stat name="sneak-attack:dice" value="10d6" level="19" />
     </rules>
   </element>
+
+  <!-- EXPERTISE -->
   <element id="ID_CLASS_SCOUT_FEATURE_EXPERTISE" name="Expertise" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
@@ -124,60 +171,119 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     </rules>
   </element>
 
+  <!-- CUNNING ACTION -->
   <element id="ID_CLASS_SCOUT_FEATURE_CUNNING_ACTION" name="Cunning Action" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
       <p>Your quick thinking and agility allow you to move and act quickly. You can take the Dash, Disengage, or Hide actions as a Bonus Action.</p>
     </description>
     <sheet>
-      <description>Your quick thinking and agility allow you to move and act quickly. You can take the Dash, Disengage, or Hide actions as a Bonus Action.</description>
+      <description>You can take the Dash, Disengage, or Hide actions as a Bonus Action.</description>
     </sheet>
-
   </element>
+
+  <!-- BAD FEELING -->
   <element id="ID_CLASS_SCOUT_FEATURE_BAD_FEELING" name="Bad Feeling" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
       <p>When you roll for initiative, you can move up to your speed before initiative order is determined. This can be used once per long rest.</p>
     </description>
-    <sheet>
-      <description>When you roll for initiative, you can move up to your speed before initiative order is determined. This can be used once per long rest.</description>
+    <sheet usage="1/Long Rest">
+      <description>When you roll for initiative, you can move up to your speed before initiative order is determined.</description>
     </sheet>
-
   </element>
+
+  <!-- SCOUT SUBCLASS -->
+  <element id="ID_CLASS_SCOUT_FEATURE_SUBCLASS" name="Scout Subclass" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true" />
+    <description>
+      <p>At 3rd level, you choose a subclass that defines your specialized path: Thief, Assassin, or Operative. Your choice grants you features at 3rd level and again at 9th, 13th, and 17th level.</p>
+    </description>
+    <rules>
+      <select type="Archetype" name="Scout Subclass" supports="ID_CLASS_SCOUT" />
+    </rules>
+  </element>
+
+  <!-- ABILITY SCORE IMPROVEMENT -->
+  <element id="ID_CLASS_SCOUT_FEATURE_ABILITY_SCORE_IMPROVEMENT" name="Ability Score Improvement" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true" />
+    <description>
+      <p>When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score by 2, or two ability scores by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Feat" name="Ability Score Improvement" supports="Ability Score Improvement" level="4" />
+      <select type="Feat" name="Ability Score Improvement" supports="Ability Score Improvement" level="8" />
+      <select type="Feat" name="Ability Score Improvement" supports="Ability Score Improvement" level="10" />
+      <select type="Feat" name="Ability Score Improvement" supports="Ability Score Improvement" level="12" />
+      <select type="Feat" name="Ability Score Improvement" supports="Ability Score Improvement" level="16" />
+      <select type="Feat" name="Ability Score Improvement" supports="Ability Score Improvement" level="19" />
+    </rules>
+  </element>
+
+  <!-- UNCANNY DODGE -->
   <element id="ID_CLASS_SCOUT_FEATURE_UNCANNY_DODGE" name="Uncanny Dodge" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>Reaction; When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</p>
+      <p>When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</p>
     </description>
-    <sheet>
-      <description>Reaction; When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</description>
+    <sheet action="Reaction">
+      <description>When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</description>
     </sheet>
-
   </element>
+
+  <!-- EVASION -->
   <element id="ID_CLASS_SCOUT_FEATURE_EVASION" name="Evasion" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>When making a Dexterity saving throw: On a failed save, take half damage. On a successful save, take no damage (can’t use when incapacitated).</p>
+      <p>You can nimbly dodge out of the way of certain area effects. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
     </description>
     <sheet>
-      <description>When making a Dexterity saving throw: On a failed save, take half damage. On a successful save, take no damage (can’t use when incapacitated).</description>
+      <description>When you make a Dexterity saving throw against an effect that deals half damage on a success, you take no damage on a success and half damage on a failure.</description>
     </sheet>
-
   </element>
+
+  <!-- SUBCLASS FEATURE PLACEHOLDERS -->
+  <element id="ID_CLASS_SCOUT_FEATURE_SUBCLASS_9" name="Subclass Feature" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true" />
+    <description>
+      <p>You gain a feature from your Scout subclass.</p>
+    </description>
+    <sheet display="false" />
+  </element>
+
+  <element id="ID_CLASS_SCOUT_FEATURE_SUBCLASS_13" name="Subclass Feature" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true" />
+    <description>
+      <p>You gain a feature from your Scout subclass.</p>
+    </description>
+    <sheet display="false" />
+  </element>
+
+  <element id="ID_CLASS_SCOUT_FEATURE_SUBCLASS_17" name="Subclass Feature" type="Class Feature" source="SW-MSV-Edition">
+    <compendium display="true" />
+    <description>
+      <p>You gain a feature from your Scout subclass.</p>
+    </description>
+    <sheet display="false" />
+  </element>
+
+  <!-- RELIABLE TALENT -->
   <element id="ID_CLASS_SCOUT_FEATURE_RELIABLE_TALENT" name="Reliable Talent" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>When you make an ability check with a skill you’re proficient with, the lowest you can roll is 10.</p>
+      <p>By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.</p>
     </description>
     <sheet>
-      <description>When you make an ability check with a skill you’re proficient with, the lowest you can roll is 10.</description>
+      <description>Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.</description>
     </sheet>
-
   </element>
+
+  <!-- SLIPPERY MIND -->
   <element id="ID_CLASS_SCOUT_FEATURE_SLIPPERY_MIND" name="Slippery Mind" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>You gain proficiency in Wisdom saving throws.</p>
+      <p>By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws.</p>
     </description>
     <sheet>
       <description>You gain proficiency in Wisdom saving throws.</description>
@@ -186,23 +292,26 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
     </rules>
   </element>
+
+  <!-- ELUSIVE -->
   <element id="ID_CLASS_SCOUT_FEATURE_ELUSIVE" name="Elusive" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>No attack roll can have advantage on you unless you’re incapacitated</p>
+      <p>Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't incapacitated.</p>
     </description>
     <sheet>
-      <description>No attack roll can have advantage on you unless you’re incapacitated</description>
+      <description>No attack roll has advantage against you while you aren't incapacitated.</description>
     </sheet>
-
   </element>
+
+  <!-- STROKE OF LUCK -->
   <element id="ID_CLASS_SCOUT_FEATURE_STROKE_OF_LUCK" name="Stroke of Luck" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>You have an uncanny knack for succeeding when you need it. Your Dexterity and Intelligence scores increase by 2. Your maximum for those scores increases by 2. Additionally, if your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20. Once per long rest.</p>
+      <p>At 20th level, you have an uncanny knack for succeeding when you need it. Your Dexterity and Intelligence scores increase by 2. Your maximum for those scores increases by 2. Additionally, if your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20. Once you use this feature, you can't use it again until you finish a long rest.</p>
     </description>
-    <sheet>
-      <description>You have an uncanny knack for succeeding when you need it. Your Dexterity and Intelligence scores increase by 2. Your maximum for those scores increases by 2. Additionally, if your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20. Once per long rest.</description>
+    <sheet usage="1/Long Rest">
+      <description>Your Dexterity and Intelligence scores increase by 2 (max 22). If your attack misses, you can turn it into a hit. Alternatively, if you fail an ability check, you can treat the roll as a 20.</description>
     </sheet>
     <rules>
       <stat name="dexterity" value="2" />
@@ -210,35 +319,21 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     </rules>
   </element>
 
-
-  <element id="ID_CLASS_SCOUT_FEATURE_SUBCLASS_ABILITY" name="Subclass Feature" type="Class Feature" source="SW-MSV-Edition">
-    <description>
-      <p>You gain a feature from your Scout subclass.</p>
-    </description>
-
-  </element>
-  <element id="ID_CLASS_SCOUT_FEATURE_SUBCLASS" name="Scout Subclass" type="Class Feature" source="SW-MSV-Edition">
-    <compendium display="true" />
-    <description>
-      <p>Choose a Scout subclass that defines your specialized path.</p>
-    </description>
-    <rules>
-      <select type="Archetype" name="Scout Subclass" supports="ID_CLASS_SCOUT" />
-    </rules>
-  </element>
+  <!-- THIEF SUBCLASS -->
   <element id="ID_SUBCLASS_THIEF" name="Thief" type="Archetype" source="SW-MSV-Edition">
     <supports>ID_CLASS_SCOUT</supports>
     <description>
-      <p>Thief form</p>
+      <p>Thieves are masters of stealth, acrobatics, and getting into places others can't reach.</p>
     </description>
     <rules>
       <grant type="Archetype Feature" id="ID_SUBCLASS_THIEF_ABILITY_FAST_HANDS" level="3" />
       <grant type="Archetype Feature" id="ID_SUBCLASS_THIEF_ABILITY_SECOND_STORY_WORK" level="3" />
       <grant type="Archetype Feature" id="ID_SUBCLASS_THIEF_ABILITY_SUPREME_SNEAK" level="9" />
       <grant type="Archetype Feature" id="ID_SUBCLASS_THIEF_ABILITY_FORGER_OR_HACKER" level="13" />
-      <grant type="Archetype Feature" id="ID_SUBCLASS_THIEF_ABILITY_THIEF’S_REFLEXES" level="17" />
+      <grant type="Archetype Feature" id="ID_SUBCLASS_THIEF_ABILITY_THIEFS_REFLEXES" level="17" />
     </rules>
   </element>
+
   <element id="ID_SUBCLASS_THIEF_ABILITY_FAST_HANDS" name="Fast Hands" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
@@ -247,18 +342,18 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>You can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your Slicing Kit to disarm a trap, or open a lock.</description>
     </sheet>
-
   </element>
+
   <element id="ID_SUBCLASS_THIEF_ABILITY_SECOND_STORY_WORK" name="Second-Story Work" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
       <p>You gain the ability to climb faster than normal; climbing no longer costs extra movement.</p>
     </description>
     <sheet>
-      <description>You gain the ability to climb faster than normal; climbing no longer costs extra movement.</description>
+      <description>Climbing no longer costs extra movement.</description>
     </sheet>
-
   </element>
+
   <element id="ID_SUBCLASS_THIEF_ABILITY_SUPREME_SNEAK" name="Supreme Sneak" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
@@ -267,8 +362,8 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>You have advantage on Dexterity (Stealth) checks if you move no more than half your speed on the same turn.</description>
     </sheet>
-
   </element>
+
   <element id="ID_SUBCLASS_THIEF_ABILITY_FORGER_OR_HACKER" name="Forger or Hacker" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
@@ -281,20 +376,22 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <select type="Proficiency" name="Forger or Hacker" supports="ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT|ID_MSV_PROFICIENCY_TOOL_HACKING_KIT" />
     </rules>
   </element>
-  <element id="ID_SUBCLASS_THIEF_ABILITY_THIEF’S_REFLEXES" name="Thief’s Reflexes" type="Archetype Feature" source="SW-MSV-Edition">
+
+  <element id="ID_SUBCLASS_THIEF_ABILITY_THIEFS_REFLEXES" name="Thief's Reflexes" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>You can take two turns during the first round of any combat encounter. You take your first turn at your normal initiative and your second turn at initiative minus 10. You can’t use this feature if you are surprised.</p>
+      <p>You can take two turns during the first round of any combat encounter. You take your first turn at your normal initiative and your second turn at initiative minus 10. You can't use this feature if you are surprised.</p>
     </description>
     <sheet>
-      <description>You can take two turns during the first round of any combat encounter. You take your first turn at your normal initiative and your second turn at initiative minus 10. You can’t use this feature if you are surprised.</description>
+      <description>You can take two turns during the first round of any combat encounter. You take your first turn at your normal initiative and your second turn at initiative minus 10. You can't use this feature if you are surprised.</description>
     </sheet>
-
   </element>
+
+  <!-- ASSASSIN SUBCLASS -->
   <element id="ID_SUBCLASS_ASSASSIN" name="Assassin" type="Archetype" source="SW-MSV-Edition">
     <supports>ID_CLASS_SCOUT</supports>
     <description>
-      <p>Assassin form</p>
+      <p>Assassins are trained killers who specialize in eliminating targets quickly and quietly.</p>
     </description>
     <rules>
       <grant type="Archetype Feature" id="ID_SUBCLASS_ASSASSIN_ABILITY_POISONER" level="3" />
@@ -304,6 +401,7 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <grant type="Archetype Feature" id="ID_SUBCLASS_ASSASSIN_ABILITY_DEATH_STRIKE" level="17" />
     </rules>
   </element>
+
   <element id="ID_SUBCLASS_ASSASSIN_ABILITY_POISONER" name="Poisoner" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
@@ -316,29 +414,31 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_POISONING_KIT" />
     </rules>
   </element>
+
   <element id="ID_SUBCLASS_ASSASSIN_ABILITY_TERMINATE" name="Terminate" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>You have advantage on attack rolls against any creature that hasn’t taken a turn in combat yet. Any hit against a surprised creature is a critical hit.</p>
+      <p>You have advantage on attack rolls against any creature that hasn't taken a turn in combat yet. Any hit against a surprised creature is a critical hit.</p>
     </description>
     <sheet>
-      <description>You have advantage on attack rolls against any creature that hasn’t taken a turn in combat yet. Any hit against a surprised creature is a critical hit.</description>
+      <description>You have advantage on attack rolls against any creature that hasn't taken a turn in combat yet. Any hit against a surprised creature is a critical hit.</description>
     </sheet>
-
   </element>
+
   <element id="ID_SUBCLASS_ASSASSIN_ABILITY_INFILTRATION_EXPERTISE" name="Infiltration Expertise" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>Gain proficiency with Forgery Kit and Disguise Kit</p>
+      <p>Gain proficiency with Forgery Kit and Disguise Kit.</p>
     </description>
     <sheet>
-      <description>Gain proficiency with Forgery Kit and Disguise Kit</description>
+      <description>Gain proficiency with Forgery Kit and Disguise Kit.</description>
     </sheet>
     <rules>
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_DISGUISE_KIT" />
     </rules>
   </element>
+
   <element id="ID_SUBCLASS_ASSASSIN_ABILITY_AMBUSH_MASTER" name="Ambush Master" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
@@ -347,22 +447,23 @@ You don't need advantage on the attack roll if another enemy of the target is wi
     <sheet>
       <description>You have advantage on initiative rolls. The first creature you hit during the first round of combat is easier for you and others to strike; attack rolls against that target have advantage until the end of your next turn.</description>
     </sheet>
-
   </element>
+
   <element id="ID_SUBCLASS_ASSASSIN_ABILITY_DEATH_STRIKE" name="Death Strike" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>When you attack and hit a surprised creature, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack. On a successful save, your attack will do normal damage.</p>
+      <p>When you attack and hit a surprised creature, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack. On a successful save, your attack does normal damage.</p>
     </description>
     <sheet>
-      <description>When you attack and hit a surprised creature, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack. On a successful save, your attack will do normal damage.</description>
+      <description>When you attack and hit a surprised creature, it must make a Con save. On a failed save, double the damage of your attack.</description>
     </sheet>
-
   </element>
+
+  <!-- OPERATIVE SUBCLASS -->
   <element id="ID_SUBCLASS_OPERATIVE" name="Operative" type="Archetype" source="SW-MSV-Edition">
     <supports>ID_CLASS_SCOUT</supports>
     <description>
-      <p>Operative form</p>
+      <p>Operatives are agile combatants who use mobility and tactics to outmaneuver their foes.</p>
     </description>
     <rules>
       <grant type="Archetype Feature" id="ID_SUBCLASS_OPERATIVE_ABILITY_SKIRMISHER" level="3" />
@@ -372,38 +473,42 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <grant type="Archetype Feature" id="ID_SUBCLASS_OPERATIVE_ABILITY_SUDDEN_STRIKE" level="17" />
     </rules>
   </element>
+
   <element id="ID_SUBCLASS_OPERATIVE_ABILITY_SKIRMISHER" name="Skirmisher" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>You can move up to half your speed rounded up as a Reaction when an enemy ends its turn within 5 feet of you. This movement doesn’t provoke opportunity attacks.</p>
+      <p>You can move up to half your speed rounded up as a Reaction when an enemy ends its turn within 5 feet of you. This movement doesn't provoke opportunity attacks.</p>
     </description>
-    <sheet>
-      <description>You can move up to half your speed rounded up as a Reaction when an enemy ends its turn within 5 feet of you. This movement doesn’t provoke opportunity attacks.</description>
+    <sheet action="Reaction">
+      <description>When an enemy ends its turn within 5 feet of you, you can move up to half your speed. This movement doesn't provoke opportunity attacks.</description>
     </sheet>
-
   </element>
+
   <element id="ID_SUBCLASS_OPERATIVE_ABILITY_MISDIRECTION" name="Misdirection" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
       <p>When you are targeted by an attack while a creature within 5 feet of you is granting you cover, you can use your Reaction to have the attack target that creature instead of you.</p>
     </description>
-    <sheet>
-      <description>When you are targeted by an attack while a creature within 5 feet of you is granting you cover, you can use your Reaction to have the attack target that creature instead of you.</description>
+    <sheet action="Reaction">
+      <description>When targeted by an attack while a creature within 5 feet grants you cover, you can have the attack target that creature instead.</description>
     </sheet>
-
   </element>
+
   <element id="ID_SUBCLASS_OPERATIVE_ABILITY_SUPERIOR_MOBILITY" name="Superior Mobility" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
       <p>Your walking speed increases by 10 feet. If you have a climbing or swimming speed, this increase applies to that speed as well.</p>
     </description>
     <sheet>
-      <description>Your walking speed increases by 10 feet. If you have a climbing or swimming speed, this increase applies to that speed as well.</description>
+      <description>Your walking speed increases by 10 feet (also applies to climb/swim speeds).</description>
     </sheet>
     <rules>
-      <stat name="speed" value="10" />
+      <stat name="innate speed:misc" value="10" />
+      <stat name="innate speed:climb:misc" value="10" requirements="[innate speed:climb:1]" />
+      <stat name="innate speed:swim:misc" value="10" requirements="[innate speed:swim:1]" />
     </rules>
   </element>
+
   <element id="ID_SUBCLASS_OPERATIVE_ABILITY_MASTER_OF_TACTICS" name="Master of Tactics" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
@@ -416,14 +521,15 @@ You don't need advantage on the attack roll if another enemy of the target is wi
       <select type="Class Feature" name="Fighting Style" supports="Fighting Style" />
     </rules>
   </element>
+
   <element id="ID_SUBCLASS_OPERATIVE_ABILITY_SUDDEN_STRIKE" name="Sudden Strike" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>If you take the attack action on your turn, you can make one additional attack as a Bonus Action. This attack can benefit from your Sneak Attack even if you have already used it this turn, but you can’t use Sneak Attack against the same target more than once per turn.</p>
+      <p>If you take the Attack action on your turn, you can make one additional attack as a Bonus Action. This attack can benefit from your Sneak Attack even if you have already used it this turn, but you can't use Sneak Attack against the same target more than once per turn.</p>
     </description>
-    <sheet>
-      <description>If you take the attack action on your turn, you can make one additional attack as a Bonus Action. This attack can benefit from your Sneak Attack even if you have already used it this turn, but you can’t use Sneak Attack against the same target more than once per turn.</description>
+    <sheet action="Bonus Action">
+      <description>If you take the Attack action, you can make one additional attack as a Bonus Action. This attack can benefit from Sneak Attack even if already used this turn (but not against the same target).</description>
     </sheet>
-
   </element>
+
 </elements>

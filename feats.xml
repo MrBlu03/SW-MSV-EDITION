@@ -1,48 +1,162 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <elements>
   <info>
     <name>Feats</name>
-    <update version="1.5.0">
+    <description>Feats for SW-MSV-Edition.</description>
+    <update version="2.0.0">
       <file name="feats.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/feats.xml" />
     </update>
   </info>
+
+  <!-- Ability Score Improvement Support Elements -->
+  <element name="Strength" type="Feat Feature" source="SW-MSV-Edition" id="ID_SW_FEAT_ASI_STRENGTH">
+    <compendium display="false" />
+    <description>
+      <p>Your Strength score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="1" />
+    </rules>
+  </element>
+  <element name="Dexterity" type="Feat Feature" source="SW-MSV-Edition" id="ID_SW_FEAT_ASI_DEXTERITY">
+    <compendium display="false" />
+    <description>
+      <p>Your Dexterity score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="1" />
+    </rules>
+  </element>
+  <element name="Constitution" type="Feat Feature" source="SW-MSV-Edition" id="ID_SW_FEAT_ASI_CONSTITUTION">
+    <compendium display="false" />
+    <description>
+      <p>Your Constitution score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="constitution" value="1" />
+    </rules>
+  </element>
+  <element name="Intelligence" type="Feat Feature" source="SW-MSV-Edition" id="ID_SW_FEAT_ASI_INTELLIGENCE">
+    <compendium display="false" />
+    <description>
+      <p>Your Intelligence score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="intelligence" value="1" />
+    </rules>
+  </element>
+  <element name="Wisdom" type="Feat Feature" source="SW-MSV-Edition" id="ID_SW_FEAT_ASI_WISDOM">
+    <compendium display="false" />
+    <description>
+      <p>Your Wisdom score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="wisdom" value="1" />
+    </rules>
+  </element>
+  <element name="Charisma" type="Feat Feature" source="SW-MSV-Edition" id="ID_SW_FEAT_ASI_CHARISMA">
+    <compendium display="false" />
+    <description>
+      <p>Your Charisma score increases by 1.</p>
+    </description>
+    <rules>
+      <stat name="charisma" value="1" />
+    </rules>
+  </element>
+
+  <!-- ASI +2 Options -->
+  <element name="Strength +2" type="Feat Feature" source="SW-MSV-Edition" id="ID_SW_FEAT_ASI_STRENGTH_2">
+    <compendium display="false" />
+    <description>
+      <p>Your Strength score increases by 2.</p>
+    </description>
+    <rules>
+      <stat name="strength" value="2" />
+    </rules>
+  </element>
+  <element name="Dexterity +2" type="Feat Feature" source="SW-MSV-Edition" id="ID_SW_FEAT_ASI_DEXTERITY_2">
+    <compendium display="false" />
+    <description>
+      <p>Your Dexterity score increases by 2.</p>
+    </description>
+    <rules>
+      <stat name="dexterity" value="2" />
+    </rules>
+  </element>
+  <element name="Constitution +2" type="Feat Feature" source="SW-MSV-Edition" id="ID_SW_FEAT_ASI_CONSTITUTION_2">
+    <compendium display="false" />
+    <description>
+      <p>Your Constitution score increases by 2.</p>
+    </description>
+    <rules>
+      <stat name="constitution" value="2" />
+    </rules>
+  </element>
+  <element name="Intelligence +2" type="Feat Feature" source="SW-MSV-Edition" id="ID_SW_FEAT_ASI_INTELLIGENCE_2">
+    <compendium display="false" />
+    <description>
+      <p>Your Intelligence score increases by 2.</p>
+    </description>
+    <rules>
+      <stat name="intelligence" value="2" />
+    </rules>
+  </element>
+  <element name="Wisdom +2" type="Feat Feature" source="SW-MSV-Edition" id="ID_SW_FEAT_ASI_WISDOM_2">
+    <compendium display="false" />
+    <description>
+      <p>Your Wisdom score increases by 2.</p>
+    </description>
+    <rules>
+      <stat name="wisdom" value="2" />
+    </rules>
+  </element>
+  <element name="Charisma +2" type="Feat Feature" source="SW-MSV-Edition" id="ID_SW_FEAT_ASI_CHARISMA_2">
+    <compendium display="false" />
+    <description>
+      <p>Your Charisma score increases by 2.</p>
+    </description>
+    <rules>
+      <stat name="charisma" value="2" />
+    </rules>
+  </element>
+
   <element name="Ability Improvement" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_ABILITY_IMPROVEMENT">
     <compendium display="true" />
     <description>
-      <p>You increase one Ability by 2, or two Abilities by 1 to a max of 20</p>
+      <p>You increase one Ability by 2, or two Abilities by 1 to a max of 20.</p>
     </description>
-        <sheet>
-      <description>You increase one Ability by 2, or two Abilities by 1 to a max of 20</description>
+    <sheet>
+      <description>You increase one Ability by 2, or two Abilities by 1 to a max of 20.</description>
     </sheet>
     <rules>
-      <select type="Ability Score Improvement" name="Ability Score Increase 1" supports="Ability Score Improvement" />
-      <select type="Ability Score Improvement" name="Ability Score Increase 2" supports="Ability Score Improvement" />
+      <select type="Feat Feature" name="Ability Score Improvement (First)" supports="ID_SW_FEAT_ASI_STRENGTH_2|ID_SW_FEAT_ASI_DEXTERITY_2|ID_SW_FEAT_ASI_CONSTITUTION_2|ID_SW_FEAT_ASI_INTELLIGENCE_2|ID_SW_FEAT_ASI_WISDOM_2|ID_SW_FEAT_ASI_CHARISMA_2|ID_SW_FEAT_ASI_STRENGTH|ID_SW_FEAT_ASI_DEXTERITY|ID_SW_FEAT_ASI_CONSTITUTION|ID_SW_FEAT_ASI_INTELLIGENCE|ID_SW_FEAT_ASI_WISDOM|ID_SW_FEAT_ASI_CHARISMA" />
+      <select type="Feat Feature" name="Ability Score Improvement (Second)" supports="ID_SW_FEAT_ASI_STRENGTH|ID_SW_FEAT_ASI_DEXTERITY|ID_SW_FEAT_ASI_CONSTITUTION|ID_SW_FEAT_ASI_INTELLIGENCE|ID_SW_FEAT_ASI_WISDOM|ID_SW_FEAT_ASI_CHARISMA" requirements="ID_SW_FEAT_ASI_STRENGTH|ID_SW_FEAT_ASI_DEXTERITY|ID_SW_FEAT_ASI_CONSTITUTION|ID_SW_FEAT_ASI_INTELLIGENCE|ID_SW_FEAT_ASI_WISDOM|ID_SW_FEAT_ASI_CHARISMA" />
     </rules>
   </element>
+
   <element name="Actor" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_ACTOR">
     <compendium display="true" />
     <description>
-      <p>Your Charisma increases by 1 to a max of 20. You gain proficiency in Performance and Deception. If you already have proficiency, gain expertise instead.</p></description>
-        <sheet>
-      <description>Your Charisma increases by 1 to a max of 20. You gain proficiency in Performance and Deception. If you already have proficiency, gain expertise instead.</description></sheet>
+      <p>Your Charisma increases by 1 to a max of 20, profiency bonus is doubled for deception and performance checks and grants those proficiencies.</p>
+    </description>
+    <sheet>
+      <description>Your Charisma increases by 1 to a max of 20, profiency bonus is doubled for deception and performance checks and grants those proficiencies.</description>
+    </sheet>
     <rules>
       <stat name="charisma" value="1" />
-      
-      <!-- Deception Logic -->
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" requirements="!ID_PROFICIENCY_SKILL_DECEPTION" />
-      <stat name="deception:proficiency" value="proficiency" bonus="double" requirements="ID_PROFICIENCY_SKILL_DECEPTION" />
-
-      <!-- Performance Logic -->
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" requirements="!ID_PROFICIENCY_SKILL_PERFORMANCE" />
-      <stat name="performance:proficiency" value="proficiency" bonus="double" requirements="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+      <stat name="deception:proficiency" value="proficiency" bonus="double" />
+      <stat name="performance:proficiency" value="proficiency" bonus="double" />
     </rules>
   </element>
+
   <element name="Alert" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_ALERT">
     <compendium display="true" />
     <description>
       <p>+5 to initiative and can't be surprised</p>
     </description>
-        <sheet>
+    <sheet>
       <description>+5 to initiative and can't be surprised</description>
     </sheet>
     <rules>
@@ -50,33 +164,68 @@
     </rules>
   </element>
 
+  <element name="Athlete" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_ATHLETE">
+    <compendium display="true" />
+    <description>
+      <p>Your Strength or Dexterity increases by 1 to a max of 20. Climbing speed is now the same is your normal speed. When you are prone, standing up uses only 5 feet of your movement</p>
+    </description>
+    <sheet>
+      <description>Your Strength or Dexterity increases by 1 to a max of 20. Climbing speed is now the same is your normal speed. When you are prone, standing up uses only 5 feet of your movement</description>
+    </sheet>
+    <rules>
+      <select type="Feat Feature" name="Athlete" supports="ID_SW_FEAT_ASI_STRENGTH|ID_SW_FEAT_ASI_DEXTERITY" />
+      <stat name="innate speed:climb:misc" value="0" />
+    </rules>
+  </element>
+
   <element name="Charger" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_CHARGER">
     <compendium display="true" />
     <description>
-      <p>When you use your action to Dash, you can use a bonus action to make one melee weapon attack or to shove a creature. If you move at least 10 feet in a straight line immediately before taking this bonus action, you either gain a +5 bonus to the attack’s damage roll (if you chose to make a melee attack and hit) or push the target up to 10 feet away from you (if you chose to shove and you succeed)</p>
+      <p>When you use your action to Dash, you can use a bonus action to make one melee weapon attack or to shove a creature. If you move at least 10 feet in a straight line immediately before taking this bonus action, you either gain a +5 bonus to the attack's damage roll (if you chose to make a melee attack and hit) or push the target up to 10 feet away from you (if you chose to shove and you succeed)</p>
     </description>
-        <sheet>
+    <sheet>
       <description>When you use your action to Dash, you can use a bonus action to make one melee weapon attack or to shove a creature. If you move at least 10 feet in a straight line immediately before taking this bonus action, you either gain a +5 bonus to the attack's damage roll (if you chose to make a melee attack and hit) or push the target up to 10 feet away from you (if you chose to shove and you succeed).</description>
     </sheet>
     <rules />
   </element>
-  <element name="Blaster Expert" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_BLASTER_PISTOL_EXPERT">
+
+  <element name="Blaster Pistol Expert" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_BLASTER_PISTOL_EXPERT">
     <compendium display="true" />
     <description>
-      <p>When you make a ranged attack within melee range, the attack roll does not have disadvantage.</p></description>
-        <sheet>
-      <description>When you make a ranged attack within melee range, the attack roll does not have disadvantage.</description></sheet>
+      <p>When you make a blaster pistol attacks within melee range, the attack rolls do not have disadvantage</p>
+    </description>
+    <sheet>
+      <description>When you make a blaster pistol attacks within melee range, the attack rolls do not have disadvantage</description>
+    </sheet>
     <rules />
   </element>
+
   <element name="Defensive Duelist" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_DEFENSIVE_DUELIST">
     <compendium display="true" />
+    <prerequisite>Dexterity 13 or higher</prerequisite>
+    <requirements>[dex:13]</requirements>
     <description>
       <p>When attacked while wielding a Finesse Weapon you're Proficient with, you can use a reaction to add your Proficiency Bonus to your Armour Class, possibly causing the attack to miss</p>
     </description>
-        <sheet>
-      <description>When attacked while wielding a Finesse Weapon you're Proficient with, you can use a reaction to add your Proficiency Bonus to your Armour Class, possibly causing the attack to miss</description>
+    <sheet>
+      <description>When attacked while wielding a Finesse Weapon you're Proficient with, you can use a reaction to add {{defensive duelist:ac}} to your Armour Class, possibly causing the attack to miss</description>
     </sheet>
-    <rules />
+    <rules>
+      <stat name="defensive duelist:ac" value="proficiency" />
+    </rules>
+  </element>
+
+  <element name="Dual Wielder" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_DUAL_WIELDER">
+    <compendium display="true" />
+    <description>
+      <p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack and you gain a +1 bonus to Armour Class while wielding a melee weapon in each hand. You cannot dual-wield two-handed weapons.</p>
+    </description>
+    <sheet>
+      <description>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack and you gain a +1 bonus to Armour Class while wielding a melee weapon in each hand. You cannot dual-wield two-handed weapons.</description>
+    </sheet>
+    <rules>
+      <stat name="ac:misc" value="1" equipped="[primary:any],[secondary:any],![primary:versatile]" />
+    </rules>
   </element>
 
   <element name="Durable" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_DURABLE">
@@ -84,38 +233,56 @@
     <description>
       <p>Your Constitution increases by 1, to a maximum of 20, you regain full hit points each time you take a Short Rest.</p>
     </description>
-        <sheet>
+    <sheet>
       <description>Your Constitution increases by 1, to a maximum of 20, you regain full hit points each time you take a Short Rest.</description>
     </sheet>
     <rules>
       <stat name="constitution" value="1" />
     </rules>
   </element>
+
   <element name="Heavily Armoured" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_HEAVILY_ARMOURED">
     <compendium display="true" />
+    <prerequisite>medium armour proficiency</prerequisite>
+    <requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</requirements>
     <description>
       <p>You gain Armour Proficiency with Heavy Armour and your Strength increases by 1, to a maximum of 20</p>
     </description>
     <sheet>
-      <description>You gain Heavy Armour proficiency. +1 Strength (max 20).</description>
+      <description>You gain Armour Proficiency with Heavy Armour and your Strength increases by 1, to a maximum of 20</description>
     </sheet>
-    <prerequisite>medium armour proficiency</prerequisite>
     <rules>
       <stat name="strength" value="1" />
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
     </rules>
   </element>
+
   <element name="Heavy Armour Master" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_HEAVY_ARMOUR_MASTER">
     <compendium display="true" />
+    <prerequisite>heavy armour proficiency</prerequisite>
+    <requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR</requirements>
     <description>
       <p>Your Strength increases by 1, to a maximum of 20, Incoming damage from kinetic attacks also decreases by 3 while you're wearing heavy armour.</p>
     </description>
     <sheet>
-      <description>+1 Strength (max 20). Kinetic damage reduced by 3 while wearing heavy armour.</description>
+      <description>Your Strength increases by 1, to a maximum of 20, Incoming damage from kinetic attacks also decreases by 3 while you're wearing heavy armour.</description>
     </sheet>
-    <prerequisite>heavy armour proficiency</prerequisite>
     <rules>
       <stat name="strength" value="1" />
+    </rules>
+  </element>
+
+  <element name="Lightly Armoured" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_LIGHTLY_ARMOURED">
+    <compendium display="true" />
+    <description>
+      <p>You gain Armour Proficiency with Light Armour and your Strength or Dexterity increases by 1, to a maximum of 20.</p>
+    </description>
+    <sheet>
+      <description>You gain Armour Proficiency with Light Armour and your Strength or Dexterity increases by 1, to a maximum of 20.</description>
+    </sheet>
+    <rules>
+      <select type="Feat Feature" name="Ability Score Increase (Lightly Armored)" supports="ID_SW_FEAT_ASI_STRENGTH|ID_SW_FEAT_ASI_DEXTERITY" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
     </rules>
   </element>
 
@@ -124,10 +291,25 @@
     <description>
       <p>You gain 3 Luck Points, which you can use to gain Advantage on Attack Rolls, Ability Checks, or Saving Throws, or to make an enemy reroll their Attack Rolls.</p>
     </description>
-        <sheet>
+    <sheet usage="3/Long Rest">
       <description>You gain 3 Luck Points, which you can use to gain Advantage on Attack Rolls, Ability Checks, or Saving Throws, or to make an enemy reroll their Attack Rolls.</description>
     </sheet>
     <rules />
+  </element>
+
+  <element name="Medium Armor Master" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_MEDIUM_ARMOR_MASTER">
+    <compendium display="true" />
+    <prerequisite>medium armour proficiency</prerequisite>
+    <requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</requirements>
+    <description>
+      <p>When you wear Medium Armour, it doesn't impose Disadvantage on Stealth Checks. The bonus to Armour Class you can gain from your Dexterity Modifier also becomes +3 instead of +2.</p>
+    </description>
+    <sheet>
+      <description>When you wear Medium Armour, it doesn't impose Disadvantage on Stealth Checks. The bonus to Armour Class you can gain from your Dexterity Modifier also becomes +3 instead of +2.</description>
+    </sheet>
+    <rules>
+      <stat name="ac:armored:dexterity:cap" value="3" bonus="base" />
+    </rules>
   </element>
 
   <element name="Mobile" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_MOBILE">
@@ -135,11 +317,30 @@
     <description>
       <p>Your movement speed increases by 10 feet, and difficult terrain doesn't slow you down when you Dash, If you move after making a melee attack, you don't provoke Opportunity Attacks from your target.</p>
     </description>
-        <sheet>
+    <sheet>
       <description>Your movement speed increases by 10 feet, and difficult terrain doesn't slow you down when you Dash, If you move after making a melee attack, you don't provoke Opportunity Attacks from your target.</description>
     </sheet>
     <rules>
-      <stat name="speed" value="10" />
+      <stat name="innate speed:misc" value="10" />
+      <stat name="innate speed:climb:misc" value="10" requirements="[innate speed:climb:1]" />
+      <stat name="innate speed:swim:misc" value="10" requirements="[innate speed:swim:1]" />
+    </rules>
+  </element>
+
+  <element name="Moderately Armoured" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_MODERATELY_ARMOURED">
+    <compendium display="true" />
+    <prerequisite>light armour proficiency</prerequisite>
+    <requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR</requirements>
+    <description>
+      <p>You gain Armour Proficiency with Medium Armour and shields, and your Strength or Dexterity increases by 1, to a maximum of 20</p>
+    </description>
+    <sheet>
+      <description>You gain Armour Proficiency with Medium Armour and shields, and your Strength or Dexterity increases by 1, to a maximum of 20</description>
+    </sheet>
+    <rules>
+      <select type="Feat Feature" name="Ability Score Increase (Moderately Armored)" supports="ID_SW_FEAT_ASI_STRENGTH|ID_SW_FEAT_ASI_DEXTERITY" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
     </rules>
   </element>
 
@@ -148,9 +349,99 @@
     <description>
       <p>When attacking with a lightstaff, lightsaber pike, vibrostaff, vibrospear, electrostaff, vibropike you can make an Opportunity Attack when a target comes within range.</p>
     </description>
-        <sheet>
-      <description>When attacking with a lightstaff, lightsaber pike, vibrostaff, vibrospear, electrostaff, vibropike you can make an Opportunity Attack when a target comes within range.</description></sheet>
+    <sheet>
+      <description>When attacking with a lightstaff, lightsaber pike, vibrostaff, vibrospear, electrostaff, vibropike you can make an Opportunity Attack when a target comes within range.</description>
+    </sheet>
     <rules />
+  </element>
+
+  <element name="Resilient" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_RESILIENT">
+    <compendium display="true" />
+    <description>
+      <p>You increase an Ability by 1, to a maximum of 20, and gain Proficiency in that Ability's Saving Throws.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Feat Feature" name="Resilient (Feat)" supports="Resilient" />
+    </rules>
+  </element>
+
+  <element name="Resilient (Strength)" type="Feat Feature" source="SW-MSV-Edition" id="ID_SW_FEAT_RESILIENT_STRENGTH">
+    <compendium display="false" />
+    <supports>Resilient</supports>
+    <description>
+      <p>Your Strength increases by 1, and you gain Proficiency in Strength Saving Throws.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="strength" value="1" alt="Resilient" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+    </rules>
+  </element>
+
+  <element name="Resilient (Dexterity)" type="Feat Feature" source="SW-MSV-Edition" id="ID_SW_FEAT_RESILIENT_DEXTERITY">
+    <compendium display="false" />
+    <supports>Resilient</supports>
+    <description>
+      <p>Your Dexterity increases by 1, and you gain Proficiency in Dexterity Saving Throws.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="dexterity" value="1" alt="Resilient" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+    </rules>
+  </element>
+
+  <element name="Resilient (Constitution)" type="Feat Feature" source="SW-MSV-Edition" id="ID_SW_FEAT_RESILIENT_CONSTITUTION">
+    <compendium display="false" />
+    <supports>Resilient</supports>
+    <description>
+      <p>Your Constitution increases by 1, and you gain Proficiency in Constitution Saving Throws.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="constitution" value="1" alt="Resilient" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+    </rules>
+  </element>
+
+  <element name="Resilient (Intelligence)" type="Feat Feature" source="SW-MSV-Edition" id="ID_SW_FEAT_RESILIENT_INTELLIGENCE">
+    <compendium display="false" />
+    <supports>Resilient</supports>
+    <description>
+      <p>Your Intelligence increases by 1, and you gain Proficiency in Intelligence Saving Throws.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="intelligence" value="1" alt="Resilient" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+    </rules>
+  </element>
+
+  <element name="Resilient (Wisdom)" type="Feat Feature" source="SW-MSV-Edition" id="ID_SW_FEAT_RESILIENT_WISDOM">
+    <compendium display="false" />
+    <supports>Resilient</supports>
+    <description>
+      <p>Your Wisdom increases by 1, and you gain Proficiency in Wisdom Saving Throws.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="wisdom" value="1" alt="Resilient" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+    </rules>
+  </element>
+
+  <element name="Resilient (Charisma)" type="Feat Feature" source="SW-MSV-Edition" id="ID_SW_FEAT_RESILIENT_CHARISMA">
+    <compendium display="false" />
+    <supports>Resilient</supports>
+    <description>
+      <p>Your Charisma increases by 1, and you gain Proficiency in Charisma Saving Throws.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="charisma" value="1" alt="Resilient" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+    </rules>
   </element>
 
   <element name="Savage Attacker" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_SAVAGE_ATTACKER">
@@ -158,47 +449,54 @@
     <description>
       <p>When making weapon attacks, you roll your damage dice twice and use the highest result.</p>
     </description>
-        <sheet>
+    <sheet>
       <description>When making weapon attacks, you roll your damage dice twice and use the highest result.</description>
     </sheet>
     <rules />
   </element>
+
   <element name="Sentinel" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_SENTINEL">
     <compendium display="true" />
     <description>
       <p>When an enemy within melee range attacks an ally, you can use a reaction to make a weapon attack against that enemy. Target ally must not have the Sentinel Feat, You gain Advantage on Opportunity Attacks, and when you hit a creature with an Opportunity Attack, it can no longer move for the rest of its turn.</p>
     </description>
-        <sheet>
-      <description>When an enemy within melee range attacks an ally, you can use a reaction to make a weapon attack against that enemy. Target ally must not have the Sentinel Feat. You gain Advantage on Opportunity Attacks, and when you hit a creature with an Opportunity Attack, it can no longer move for the rest of its turn.</description></sheet>
+    <sheet>
+      <description>When an enemy within melee range attacks an ally, you can use a reaction to make a weapon attack against that enemy. Target ally must not have the Sentinel Feat. You gain Advantage on Opportunity Attacks, and when you hit a creature with an Opportunity Attack, it can no longer move for the rest of its turn.</description>
+    </sheet>
     <rules />
   </element>
+
   <element name="Sharpshooter" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_SHARPSHOOTER">
     <compendium display="true" />
     <description>
       <p>Your ranged weapon attacks do not receive penalties from High Ground Rules, Ranged weapon attacks with weapons you are Proficient with have a -5 penalty to their Attack Roll, but deal an additional 10 damage.</p>
     </description>
-        <sheet>
+    <sheet>
       <description>Your ranged weapon attacks do not receive penalties from High Ground Rules, Ranged weapon attacks with weapons you are Proficient with have a -5 penalty to their Attack Roll, but deal an additional 10 damage.</description>
     </sheet>
     <rules />
   </element>
+
   <element name="Shield Master" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_SHIELD_MASTER">
     <compendium display="true" />
     <description>
-      <p>You gain a +2 bonus to Dexterity Saving Throws while wielding a physical or energy shield. If a force ability forces you to make a Dexterity Saving Throw, you can use a reaction to shield yourself and diminish the effect's damage. On a failed Saving Throw, you only take half damage. On a successful Saving Throw, you don't take any damage.</p></description>
-        <sheet>
-      <description>You gain a +2 bonus to Dexterity Saving Throws while wielding a physical or energy shield. If a force ability forces you to make a Dexterity Saving Throw, you can use a reaction to shield yourself and diminish the effect's damage. On a failed Saving Throw, you only take half damage. On a successful Saving Throw, you don't take any damage.</description></sheet>
+      <p>You gain a +2 bonus to Dexterity Saving Throws while wielding a shield. If a force ability forces you to make a Dexterity Saving Throw, you can use a reaction to shield yourself and diminish the effect's damage. On a failed Saving Throw, you only take half damage. On a successful Saving Throw, you don't take any damage.</p>
+    </description>
+    <sheet>
+      <description>You gain a +2 bonus to Dexterity Saving Throws while wielding a shield. If a force ability forces you to make a Dexterity Saving Throw, you can use a reaction to shield yourself and diminish the effect's damage. On a failed Saving Throw, you only take half damage. On a successful Saving Throw, you don't take any damage.</description>
+    </sheet>
     <rules>
-      <stat name="dexterity:save:misc" value="2" />
+      <stat name="dexterity:save:misc" value="2" equipped="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
     </rules>
   </element>
+
   <element name="Skilled" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_SKILLED">
     <compendium display="true" />
     <description>
-      <p>You gain proficiency in 3 skills or tools of your choice.</p>
+      <p>You gain Proficiency in 3 Skills or 1 skill and 1 tool of your choice.</p>
     </description>
-        <sheet>
-      <description>You gain proficiency in 3 skills or tools of your choice.</description>
+    <sheet>
+      <description>You gain Proficiency in 3 Skills or 1 skill and 1 tool of your choice.</description>
     </sheet>
     <rules>
       <select type="Proficiency" name="Proficiency (Skilled 1)" supports="Skill||Tool" />
@@ -207,9 +505,17 @@
     </rules>
   </element>
 
-
-
-  <!-- Resilient Linked Options (each grants +1 ASI and saving throw proficiency) -->
-
+  <element name="Tough" type="Feat" source="SW-MSV-Edition" id="ID_SW_FEAT_TOUGH">
+    <compendium display="true" />
+    <description>
+      <p>Your hit point maximum increases by 2 for every level you have gained</p>
+    </description>
+    <sheet>
+      <description>Your hit point maximum increases by 2 for every level you have gained</description>
+    </sheet>
+    <rules>
+      <stat name="hitpoints" value="2" perlevel="true" />
+    </rules>
+  </element>
 
 </elements>

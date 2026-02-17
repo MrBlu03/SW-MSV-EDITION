@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Languages</name>
-    <update version="1.5.0">
+    <update version="2.0.0">
       <file name="languages.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/languages.xml" />
     </update>
   </info>
@@ -266,7 +266,7 @@
     </description>
     <setters>
       <set name="standard">true</set>
-      <set name="speakers">Ewoks</set>
+      <set name="speakers">Neimoidians</set>
       <set name="script">Pak Pak</set>
     </setters>
   </element>

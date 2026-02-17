@@ -2,11 +2,11 @@
 <elements>
   <info>
     <name>Maneuvers</name>
-    <update version="1.5.0">
+    <update version="2.0.0">
       <file name="maneuvers.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/maneuvers.xml" />
     </update>
   </info>
-  <element name="Ambush" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_AMBUSH">
+  <element name="Ambush" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_AMBUSH">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When you make a Dexterity (Stealth) check or an initiative roll, you can expend one superiority die and add the die to the roll, provided you aren't incapacitated.</p>
@@ -15,7 +15,7 @@
       <description>When you make a Dexterity (Stealth) check or an initiative roll, you can expend one superiority die and add the die to the roll, provided you aren't incapacitated.</description>
     </sheet>
   </element>
-  <element name="Bait and Switch" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_BAIT_AND_SWITCH">
+  <element name="Bait and Switch" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_BAIT_AND_SWITCH">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When you're within 5 feet of a creature on your turn, you can expend one superiority die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn't incapacitated. This movement doesn't provoke opportunity attacks. Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled.</p>
@@ -24,7 +24,7 @@
       <description>When you're within 5 feet of a creature on your turn, you can expend one superiority die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn't incapacitated. This movement doesn't provoke opportunity attacks. Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled.</description>
     </sheet>
   </element>
-  <element name="Brace" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_BRACE">
+  <element name="Brace" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_BRACE">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When a creature you can see moves into the reach you have with the melee weapon you're wielding, you can use your reaction to expend one superiority die and make one attack against the creature, using that weapon. If the attack hits, add the superiority die to the weapon's damage roll.</p>
@@ -33,7 +33,7 @@
       <description>When a creature you can see moves into the reach you have with the melee weapon you're wielding, you can use your reaction to expend one superiority die and make one attack against the creature, using that weapon. If the attack hits, add the superiority die to the weapon's damage roll.</description>
     </sheet>
   </element>
-  <element name="Commander's Strike" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_COMMANDERS_STRIKE">
+  <element name="Commander's Strike" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_COMMANDERS_STRIKE">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When you take the Attack action on your turn, you can forgo one of your attacks and use a bonus action to direct one of your companions to strike. When you do so, choose a friendly creature who can see or hear you and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack's damage roll.</p>
@@ -42,7 +42,7 @@
       <description>When you take the Attack action on your turn, you can forgo one of your attacks and use a bonus action to direct one of your companions to strike. When you do so, choose a friendly creature who can see or hear you and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack's damage roll.</description>
     </sheet>
   </element>
-  <element name="Commanding Presence" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_COMMANDING_PRESENCE">
+  <element name="Commanding Presence" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_COMMANDING_PRESENCE">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When you make a Charisma (Intimidation), a Charisma (Performance), or a Charisma (Persuasion) check, you can expend one superiority die and add the superiority die to the ability check.</p>
@@ -51,7 +51,7 @@
       <description>When you make a Charisma (Intimidation), a Charisma (Performance), or a Charisma (Persuasion) check, you can expend one superiority die and add the superiority die to the ability check.</description>
     </sheet>
   </element>
-  <element name="Disarming Attack" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_DISARMING_ATTACK">
+  <element name="Disarming Attack" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_DISARMING_ATTACK">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to disarm the target, forcing it to drop one item of your choice that it's holding. You add the superiority die to the attack's damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet.</p>
@@ -60,7 +60,7 @@
       <description>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to disarm the target, forcing it to drop one item of your choice that it's holding. You add the superiority die to the attack's damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet.</description>
     </sheet>
   </element>
-  <element name="Distracting Strike" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_DISTRACTING_STRIKE">
+  <element name="Distracting Strike" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_DISTRACTING_STRIKE">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When you hit a creature with a weapon attack, you can expend one superiority die to distract the creature, giving your allies an opening. You add the superiority die to the attack's damage roll. The next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn.</p>
@@ -69,7 +69,7 @@
       <description>When you hit a creature with a weapon attack, you can expend one superiority die to distract the creature, giving your allies an opening. You add the superiority die to the attack's damage roll. The next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn.</description>
     </sheet>
   </element>
-  <element name="Evasive Footwork" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_EVASIVE_FOOTWORK">
+  <element name="Evasive Footwork" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_EVASIVE_FOOTWORK">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until you stop moving.</p>
@@ -78,7 +78,7 @@
       <description>When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until you stop moving.</description>
     </sheet>
   </element>
-  <element name="Feinting Attack" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_FEINTING_ATTACK">
+  <element name="Feinting Attack" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_FEINTING_ATTACK">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>You can expend one superiority die and use a bonus action on your turn to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll against that creature this turn. If that attack hits, add the superiority die to the attack's damage roll.</p>
@@ -87,7 +87,7 @@
       <description>You can expend one superiority die and use a bonus action on your turn to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll against that creature this turn. If that attack hits, add the superiority die to the attack's damage roll.</description>
     </sheet>
   </element>
-  <element name="Goading Attack" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_GOADING_ATTACK">
+  <element name="Goading Attack" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_GOADING_ATTACK">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to goad the target into attacking you. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn.</p>
@@ -96,7 +96,7 @@
       <description>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to goad the target into attacking you. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn.</description>
     </sheet>
   </element>
-  <element name="Lunging Attack" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_LUNGING_ATTACK">
+  <element name="Lunging Attack" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_LUNGING_ATTACK">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When you make a melee weapon attack on your turn, you can expend one superiority die to increase your reach for that attack by 5 feet. If you hit, you add the superiority die to the attack's damage roll.</p>
@@ -105,7 +105,7 @@
       <description>When you make a melee weapon attack on your turn, you can expend one superiority die to increase your reach for that attack by 5 feet. If you hit, you add the superiority die to the attack's damage roll.</description>
     </sheet>
   </element>
-  <element name="Maneuvering Attack" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_MANEUVERING_ATTACK">
+  <element name="Maneuvering Attack" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_MANEUVERING_ATTACK">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack.</p>
@@ -114,7 +114,7 @@
       <description>When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack.</description>
     </sheet>
   </element>
-  <element name="Menacing Attack" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_MENACING_ATTACK">
+  <element name="Menacing Attack" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_MENACING_ATTACK">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to frighten the target. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, it is frightened of you until the end of your next turn.</p>
@@ -123,7 +123,7 @@
       <description>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to frighten the target. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, it is frightened of you until the end of your next turn.</description>
     </sheet>
   </element>
-  <element name="Parry" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_PARRY">
+  <element name="Parry" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_PARRY">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When another creature damages you with a melee attack, you can use your reaction and expend one superiority die to reduce the damage by the number you roll on your superiority die + your Dexterity modifier.</p>
@@ -132,7 +132,7 @@
       <description>When another creature damages you with a melee attack, you can use your reaction and expend one superiority die to reduce the damage by the number you roll on your superiority die + your Dexterity modifier.</description>
     </sheet>
   </element>
-  <element name="Precision Attack" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_PRECISION_ATTACK">
+  <element name="Precision Attack" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_PRECISION_ATTACK">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When you make a weapon attack roll against a creature, you can expend one superiority die to add it to the roll. You can use this maneuver before or after making the attack roll, but before any effects of the attack are applied.</p>
@@ -141,7 +141,7 @@
       <description>When you make a weapon attack roll against a creature, you can expend one superiority die to add it to the roll. You can use this maneuver before or after making the attack roll, but before any effects of the attack are applied.</description>
     </sheet>
   </element>
-  <element name="Pushing Attack" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_PUSHING_ATTACK">
+  <element name="Pushing Attack" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_PUSHING_ATTACK">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to drive the target back. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you.</p>
@@ -150,7 +150,7 @@
       <description>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to drive the target back. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you.</description>
     </sheet>
   </element>
-  <element name="Rally" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_RALLY">
+  <element name="Rally" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_RALLY">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>On your turn, you can use a bonus action and expend one superiority die to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you. That creature gains temporary hit points equal to the superiority die roll + your Charisma modifier.</p>
@@ -159,7 +159,7 @@
       <description>On your turn, you can use a bonus action and expend one superiority die to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you. That creature gains temporary hit points equal to the superiority die roll + your Charisma modifier.</description>
     </sheet>
   </element>
-  <element name="Riposte" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_RIPOSTE">
+  <element name="Riposte" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_RIPOSTE">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When a creature misses you with a melee attack, you can use your reaction and expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die to the attack's damage roll.</p>
@@ -168,7 +168,7 @@
       <description>When a creature misses you with a melee attack, you can use your reaction and expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die to the attack's damage roll.</description>
     </sheet>
   </element>
-  <element name="Sweeping Attack" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_SWEEPING_ATTACK">
+  <element name="Sweeping Attack" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_SWEEPING_ATTACK">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When you hit a creature with a melee weapon attack, you can expend one superiority die to attempt to damage another creature with the same attack. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your superiority die. The damage is of the same type dealt by the original attack.</p>
@@ -177,7 +177,7 @@
       <description>When you hit a creature with a melee weapon attack, you can expend one superiority die to attempt to damage another creature with the same attack. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your superiority die. The damage is of the same type dealt by the original attack.</description>
     </sheet>
   </element>
-  <element name="Tactical Assessment" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_TACTICAL_ASSESSMENT">
+  <element name="Tactical Assessment" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_TACTICAL_ASSESSMENT">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When you make an Intelligence (Investigation), an Intelligence (History), or a Wisdom (Insight) check, you can expend one superiority die and add the superiority die to the ability check.</p>
@@ -186,7 +186,7 @@
       <description>When you make an Intelligence (Investigation), an Intelligence (History), or a Wisdom (Insight) check, you can expend one superiority die and add the superiority die to the ability check.</description>
     </sheet>
   </element>
-  <element name="Trip Attack" type="Class Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_TRIP_ATTACK">
+  <element name="Trip Attack" type="Archetype Feature" source="SW-MSV-Edition" id="ID_SW_MANEUVER_TRIP_ATTACK">
     <supports>Maneuver, Battle Master</supports>
     <description>
       <p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target prone.</p>
