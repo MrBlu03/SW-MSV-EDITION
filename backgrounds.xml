@@ -3,7 +3,7 @@
   <info>
     <name>Backgrounds</name>
     <description>Backgrounds for SW-MSV-Edition.</description>
-    <update version="2.0.8">
+    <update version="2.0.9">
       <file name="backgrounds.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/backgrounds.xml" />
     </update>
   </info>
@@ -406,26 +406,387 @@
     <sheet alt="Jedi Code Knowledge" />
   </element>
 
-  <!-- MANDALORIAN BACKGROUND -->
-  <element name="Mandalorian" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_MANDALORIAN">
+  <!-- MANDALORIAN CLAN BACKGROUNDS -->
+
+  <element name="Mandalorian - Clan Vizsla" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_MANDALORIAN_VIZSLA">
     <description>
-      <p>You were raised in the warrior culture of Mandalore, bound by the Resol'nare - the six actions that define what it means to be Mandalorian.</p>
+      <p>You were raised in the warrior culture of Mandalore as a member of Clan Vizsla, one of the most ancient and respected clans, known for producing many great leaders and warriors.</p>
       <ul class="unstyled">
         <li><strong>Skill Proficiencies:</strong> Choose two from Athletics, Intimidation, Survival, History</li>
         <li><strong>Tool Proficiencies:</strong> Hover pack</li>
         <li><strong>Languages:</strong> Mando'a</li>
-        <li><strong>Equipment:</strong> A suit of Mandalorian armor, a clan sigil, a hover pack, and a belt pouch containing 200 credits</li>
+        <li><strong>Equipment:</strong> A suit of Mandalorian armor, a Clan Vizsla sigil, a hover pack, and a belt pouch containing 200 credits</li>
       </ul>
       <div element="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" />
-      <h5>SUGGESTED CHARACTERISTICS</h5>
     </description>
     <setters>
-      <set name="short">Athletics, Intimidation, Survival, History, Hover Pack, Mando'a</set>
+      <set name="short">Clan Vizsla - Athletics, Intimidation, Survival, History, Hover Pack, Mando'a</set>
     </setters>
-    <sheet display="false" />
+    <sheet alt="Mandalorian - Clan Vizsla">
+      <description>One of the most ancient and respected Mandalorian clans, known for producing many great leaders and warriors.</description>
+    </sheet>
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Mandalorian)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_HISTORY" />
-      <select type="Background Feature" name="Mandalorian Clan" supports="Mandalorian Clan" number="1" />
+      <grant type="Language" id="ID_LANGUAGE_MANDOA_LANGUAGE" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" />
+      <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+      <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+      <select type="List" name="Personality Trait" number="2">
+        <item id="1">I try and bring my culture to outsiders.</item>
+        <item id="2">I always put my clan first.</item>
+        <item id="3">I follow the Resol'nare to the letter.</item>
+        <item id="4">I love a good spar.</item>
+        <item id="5">I enjoy traveling the galaxy.</item>
+        <item id="6">I keep a small trophy on me to remind me of a past victory.</item>
+        <item id="7">I view the force as dishonorable in combat.</item>
+        <item id="8">I've seen the horrors of battle and try to prevent it.</item>
+      </select>
+      <select type="List" name="Ideal">
+        <item id="1">Tradition. I live by my clan's ways, and will continue to do so. (Lawful)</item>
+        <item id="2">Power. I strive to be the best warrior, no matter who stands in my way. (Good)</item>
+        <item id="3">Respect. I have earned the respect of many, and I intend to keep it. (Chaotic)</item>
+        <item id="4">Freedom. I enjoy having the ability to do whatever I want. (Evil)</item>
+        <item id="5">Comradery. I'll put everything on the line for those dear to me. (Neutral)</item>
+        <item id="6">Aspiration. I'll succeed in my goals, it just takes time and effort. (Any)</item>
+      </select>
+      <select type="List" name="Bond">
+        <item id="1">I lost someone dear to me in battle, I will always honor them.</item>
+        <item id="2">Honor is everything to me.</item>
+        <item id="3">I will lay down my life for those beside me.</item>
+        <item id="4">I must keep the traditions of my ancestors alive.</item>
+        <item id="5">No matter where I go, Mandalore is my home.</item>
+        <item id="6">In death, I will find glory.</item>
+      </select>
+      <select type="List" name="Flaw">
+        <item id="1">I look down on outsiders.</item>
+        <item id="2">I have no respect for anyone who flees. Cowardice is unacceptable.</item>
+        <item id="3">I don't see much use in talking, a blaster is all I need to make my point.</item>
+        <item id="4">I stick to my traditions no matter what, even at the cost of others.</item>
+        <item id="5">I retreated once, and I've regretted it ever since.</item>
+        <item id="6">I value a victory regardless of the ethics behind the victory.</item>
+      </select>
+    </rules>
+  </element>
+
+  <element name="Mandalorian - Clan Fett" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_MANDALORIAN_FETT">
+    <description>
+      <p>You were raised in the warrior culture of Mandalore as a member of Clan Fett, known for its legendary bounty hunters and mercenaries who have left their mark on galactic history.</p>
+      <ul class="unstyled">
+        <li><strong>Skill Proficiencies:</strong> Choose two from Athletics, Intimidation, Survival, History</li>
+        <li><strong>Tool Proficiencies:</strong> Hover pack</li>
+        <li><strong>Languages:</strong> Mando'a</li>
+        <li><strong>Equipment:</strong> A suit of Mandalorian armor, a Clan Fett sigil, a hover pack, and a belt pouch containing 200 credits</li>
+      </ul>
+      <div element="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" />
+    </description>
+    <setters>
+      <set name="short">Clan Fett - Athletics, Intimidation, Survival, History, Hover Pack, Mando'a</set>
+    </setters>
+    <sheet alt="Mandalorian - Clan Fett">
+      <description>A clan known for its legendary bounty hunters and mercenaries who have left their mark on galactic history.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Mandalorian)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_HISTORY" />
+      <grant type="Language" id="ID_LANGUAGE_MANDOA_LANGUAGE" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" />
+      <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+      <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+      <select type="List" name="Personality Trait" number="2">
+        <item id="1">I try and bring my culture to outsiders.</item>
+        <item id="2">I always put my clan first.</item>
+        <item id="3">I follow the Resol'nare to the letter.</item>
+        <item id="4">I love a good spar.</item>
+        <item id="5">I enjoy traveling the galaxy.</item>
+        <item id="6">I keep a small trophy on me to remind me of a past victory.</item>
+        <item id="7">I view the force as dishonorable in combat.</item>
+        <item id="8">I've seen the horrors of battle and try to prevent it.</item>
+      </select>
+      <select type="List" name="Ideal">
+        <item id="1">Tradition. I live by my clan's ways, and will continue to do so. (Lawful)</item>
+        <item id="2">Power. I strive to be the best warrior, no matter who stands in my way. (Good)</item>
+        <item id="3">Respect. I have earned the respect of many, and I intend to keep it. (Chaotic)</item>
+        <item id="4">Freedom. I enjoy having the ability to do whatever I want. (Evil)</item>
+        <item id="5">Comradery. I'll put everything on the line for those dear to me. (Neutral)</item>
+        <item id="6">Aspiration. I'll succeed in my goals, it just takes time and effort. (Any)</item>
+      </select>
+      <select type="List" name="Bond">
+        <item id="1">I lost someone dear to me in battle, I will always honor them.</item>
+        <item id="2">Honor is everything to me.</item>
+        <item id="3">I will lay down my life for those beside me.</item>
+        <item id="4">I must keep the traditions of my ancestors alive.</item>
+        <item id="5">No matter where I go, Mandalore is my home.</item>
+        <item id="6">In death, I will find glory.</item>
+      </select>
+      <select type="List" name="Flaw">
+        <item id="1">I look down on outsiders.</item>
+        <item id="2">I have no respect for anyone who flees. Cowardice is unacceptable.</item>
+        <item id="3">I don't see much use in talking, a blaster is all I need to make my point.</item>
+        <item id="4">I stick to my traditions no matter what, even at the cost of others.</item>
+        <item id="5">I retreated once, and I've regretted it ever since.</item>
+        <item id="6">I value a victory regardless of the ethics behind the victory.</item>
+      </select>
+    </rules>
+  </element>
+
+  <element name="Mandalorian - Clan Varad" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_MANDALORIAN_VARAD">
+    <description>
+      <p>You were raised in the warrior culture of Mandalore as a member of Clan Varad, known for fierce warriors and tactical brilliance in battle.</p>
+      <ul class="unstyled">
+        <li><strong>Skill Proficiencies:</strong> Choose two from Athletics, Intimidation, Survival, History</li>
+        <li><strong>Tool Proficiencies:</strong> Hover pack</li>
+        <li><strong>Languages:</strong> Mando'a</li>
+        <li><strong>Equipment:</strong> A suit of Mandalorian armor, a Clan Varad sigil, a hover pack, and a belt pouch containing 200 credits</li>
+      </ul>
+      <div element="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" />
+    </description>
+    <setters>
+      <set name="short">Clan Varad - Athletics, Intimidation, Survival, History, Hover Pack, Mando'a</set>
+    </setters>
+    <sheet alt="Mandalorian - Clan Varad">
+      <description>A clan known for fierce warriors and tactical brilliance in battle.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Mandalorian)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_HISTORY" />
+      <grant type="Language" id="ID_LANGUAGE_MANDOA_LANGUAGE" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" />
+      <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+      <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+      <select type="List" name="Personality Trait" number="2">
+        <item id="1">I try and bring my culture to outsiders.</item>
+        <item id="2">I always put my clan first.</item>
+        <item id="3">I follow the Resol'nare to the letter.</item>
+        <item id="4">I love a good spar.</item>
+        <item id="5">I enjoy traveling the galaxy.</item>
+        <item id="6">I keep a small trophy on me to remind me of a past victory.</item>
+        <item id="7">I view the force as dishonorable in combat.</item>
+        <item id="8">I've seen the horrors of battle and try to prevent it.</item>
+      </select>
+      <select type="List" name="Ideal">
+        <item id="1">Tradition. I live by my clan's ways, and will continue to do so. (Lawful)</item>
+        <item id="2">Power. I strive to be the best warrior, no matter who stands in my way. (Good)</item>
+        <item id="3">Respect. I have earned the respect of many, and I intend to keep it. (Chaotic)</item>
+        <item id="4">Freedom. I enjoy having the ability to do whatever I want. (Evil)</item>
+        <item id="5">Comradery. I'll put everything on the line for those dear to me. (Neutral)</item>
+        <item id="6">Aspiration. I'll succeed in my goals, it just takes time and effort. (Any)</item>
+      </select>
+      <select type="List" name="Bond">
+        <item id="1">I lost someone dear to me in battle, I will always honor them.</item>
+        <item id="2">Honor is everything to me.</item>
+        <item id="3">I will lay down my life for those beside me.</item>
+        <item id="4">I must keep the traditions of my ancestors alive.</item>
+        <item id="5">No matter where I go, Mandalore is my home.</item>
+        <item id="6">In death, I will find glory.</item>
+      </select>
+      <select type="List" name="Flaw">
+        <item id="1">I look down on outsiders.</item>
+        <item id="2">I have no respect for anyone who flees. Cowardice is unacceptable.</item>
+        <item id="3">I don't see much use in talking, a blaster is all I need to make my point.</item>
+        <item id="4">I stick to my traditions no matter what, even at the cost of others.</item>
+        <item id="5">I retreated once, and I've regretted it ever since.</item>
+        <item id="6">I value a victory regardless of the ethics behind the victory.</item>
+      </select>
+    </rules>
+  </element>
+
+  <element name="Mandalorian - Clan Ordo" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_MANDALORIAN_ORDO">
+    <description>
+      <p>You were raised in the warrior culture of Mandalore as a member of Clan Ordo, a clan with a proud military tradition and honor-bound warriors.</p>
+      <ul class="unstyled">
+        <li><strong>Skill Proficiencies:</strong> Choose two from Athletics, Intimidation, Survival, History</li>
+        <li><strong>Tool Proficiencies:</strong> Hover pack</li>
+        <li><strong>Languages:</strong> Mando'a</li>
+        <li><strong>Equipment:</strong> A suit of Mandalorian armor, a Clan Ordo sigil, a hover pack, and a belt pouch containing 200 credits</li>
+      </ul>
+      <div element="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" />
+    </description>
+    <setters>
+      <set name="short">Clan Ordo - Athletics, Intimidation, Survival, History, Hover Pack, Mando'a</set>
+    </setters>
+    <sheet alt="Mandalorian - Clan Ordo">
+      <description>A clan with a proud military tradition and honor-bound warriors.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Mandalorian)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_HISTORY" />
+      <grant type="Language" id="ID_LANGUAGE_MANDOA_LANGUAGE" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" />
+      <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+      <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+      <select type="List" name="Personality Trait" number="2">
+        <item id="1">I try and bring my culture to outsiders.</item>
+        <item id="2">I always put my clan first.</item>
+        <item id="3">I follow the Resol'nare to the letter.</item>
+        <item id="4">I love a good spar.</item>
+        <item id="5">I enjoy traveling the galaxy.</item>
+        <item id="6">I keep a small trophy on me to remind me of a past victory.</item>
+        <item id="7">I view the force as dishonorable in combat.</item>
+        <item id="8">I've seen the horrors of battle and try to prevent it.</item>
+      </select>
+      <select type="List" name="Ideal">
+        <item id="1">Tradition. I live by my clan's ways, and will continue to do so. (Lawful)</item>
+        <item id="2">Power. I strive to be the best warrior, no matter who stands in my way. (Good)</item>
+        <item id="3">Respect. I have earned the respect of many, and I intend to keep it. (Chaotic)</item>
+        <item id="4">Freedom. I enjoy having the ability to do whatever I want. (Evil)</item>
+        <item id="5">Comradery. I'll put everything on the line for those dear to me. (Neutral)</item>
+        <item id="6">Aspiration. I'll succeed in my goals, it just takes time and effort. (Any)</item>
+      </select>
+      <select type="List" name="Bond">
+        <item id="1">I lost someone dear to me in battle, I will always honor them.</item>
+        <item id="2">Honor is everything to me.</item>
+        <item id="3">I will lay down my life for those beside me.</item>
+        <item id="4">I must keep the traditions of my ancestors alive.</item>
+        <item id="5">No matter where I go, Mandalore is my home.</item>
+        <item id="6">In death, I will find glory.</item>
+      </select>
+      <select type="List" name="Flaw">
+        <item id="1">I look down on outsiders.</item>
+        <item id="2">I have no respect for anyone who flees. Cowardice is unacceptable.</item>
+        <item id="3">I don't see much use in talking, a blaster is all I need to make my point.</item>
+        <item id="4">I stick to my traditions no matter what, even at the cost of others.</item>
+        <item id="5">I retreated once, and I've regretted it ever since.</item>
+        <item id="6">I value a victory regardless of the ethics behind the victory.</item>
+      </select>
+    </rules>
+  </element>
+
+  <element name="Mandalorian - Clan Lok" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_MANDALORIAN_LOK">
+    <description>
+      <p>You were raised in the warrior culture of Mandalore as a member of Clan Lok, known for stealth and precision in combat.</p>
+      <ul class="unstyled">
+        <li><strong>Skill Proficiencies:</strong> Choose two from Athletics, Intimidation, Survival, History</li>
+        <li><strong>Tool Proficiencies:</strong> Hover pack</li>
+        <li><strong>Languages:</strong> Mando'a</li>
+        <li><strong>Equipment:</strong> A suit of Mandalorian armor, a Clan Lok sigil, a hover pack, and a belt pouch containing 200 credits</li>
+      </ul>
+      <div element="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" />
+    </description>
+    <setters>
+      <set name="short">Clan Lok - Athletics, Intimidation, Survival, History, Hover Pack, Mando'a</set>
+    </setters>
+    <sheet alt="Mandalorian - Clan Lok">
+      <description>A clan known for stealth and precision in combat.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Mandalorian)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_HISTORY" />
+      <grant type="Language" id="ID_LANGUAGE_MANDOA_LANGUAGE" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" />
+      <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+      <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+      <select type="List" name="Personality Trait" number="2">
+        <item id="1">I try and bring my culture to outsiders.</item>
+        <item id="2">I always put my clan first.</item>
+        <item id="3">I follow the Resol'nare to the letter.</item>
+        <item id="4">I love a good spar.</item>
+        <item id="5">I enjoy traveling the galaxy.</item>
+        <item id="6">I keep a small trophy on me to remind me of a past victory.</item>
+        <item id="7">I view the force as dishonorable in combat.</item>
+        <item id="8">I've seen the horrors of battle and try to prevent it.</item>
+      </select>
+      <select type="List" name="Ideal">
+        <item id="1">Tradition. I live by my clan's ways, and will continue to do so. (Lawful)</item>
+        <item id="2">Power. I strive to be the best warrior, no matter who stands in my way. (Good)</item>
+        <item id="3">Respect. I have earned the respect of many, and I intend to keep it. (Chaotic)</item>
+        <item id="4">Freedom. I enjoy having the ability to do whatever I want. (Evil)</item>
+        <item id="5">Comradery. I'll put everything on the line for those dear to me. (Neutral)</item>
+        <item id="6">Aspiration. I'll succeed in my goals, it just takes time and effort. (Any)</item>
+      </select>
+      <select type="List" name="Bond">
+        <item id="1">I lost someone dear to me in battle, I will always honor them.</item>
+        <item id="2">Honor is everything to me.</item>
+        <item id="3">I will lay down my life for those beside me.</item>
+        <item id="4">I must keep the traditions of my ancestors alive.</item>
+        <item id="5">No matter where I go, Mandalore is my home.</item>
+        <item id="6">In death, I will find glory.</item>
+      </select>
+      <select type="List" name="Flaw">
+        <item id="1">I look down on outsiders.</item>
+        <item id="2">I have no respect for anyone who flees. Cowardice is unacceptable.</item>
+        <item id="3">I don't see much use in talking, a blaster is all I need to make my point.</item>
+        <item id="4">I stick to my traditions no matter what, even at the cost of others.</item>
+        <item id="5">I retreated once, and I've regretted it ever since.</item>
+        <item id="6">I value a victory regardless of the ethics behind the victory.</item>
+      </select>
+    </rules>
+  </element>
+
+  <element name="Mandalorian - Clan Cadera" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_MANDALORIAN_CADERA">
+    <description>
+      <p>You were raised in the warrior culture of Mandalore as a member of Clan Cadera, a clan that values honor and tradition above all else.</p>
+      <ul class="unstyled">
+        <li><strong>Skill Proficiencies:</strong> Choose two from Athletics, Intimidation, Survival, History</li>
+        <li><strong>Tool Proficiencies:</strong> Hover pack</li>
+        <li><strong>Languages:</strong> Mando'a</li>
+        <li><strong>Equipment:</strong> A suit of Mandalorian armor, a Clan Cadera sigil, a hover pack, and a belt pouch containing 200 credits</li>
+      </ul>
+      <div element="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" />
+    </description>
+    <setters>
+      <set name="short">Clan Cadera - Athletics, Intimidation, Survival, History, Hover Pack, Mando'a</set>
+    </setters>
+    <sheet alt="Mandalorian - Clan Cadera">
+      <description>A clan that values honor and tradition above all else.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Mandalorian)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_HISTORY" />
+      <grant type="Language" id="ID_LANGUAGE_MANDOA_LANGUAGE" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" />
+      <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+      <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+      <select type="List" name="Personality Trait" number="2">
+        <item id="1">I try and bring my culture to outsiders.</item>
+        <item id="2">I always put my clan first.</item>
+        <item id="3">I follow the Resol'nare to the letter.</item>
+        <item id="4">I love a good spar.</item>
+        <item id="5">I enjoy traveling the galaxy.</item>
+        <item id="6">I keep a small trophy on me to remind me of a past victory.</item>
+        <item id="7">I view the force as dishonorable in combat.</item>
+        <item id="8">I've seen the horrors of battle and try to prevent it.</item>
+      </select>
+      <select type="List" name="Ideal">
+        <item id="1">Tradition. I live by my clan's ways, and will continue to do so. (Lawful)</item>
+        <item id="2">Power. I strive to be the best warrior, no matter who stands in my way. (Good)</item>
+        <item id="3">Respect. I have earned the respect of many, and I intend to keep it. (Chaotic)</item>
+        <item id="4">Freedom. I enjoy having the ability to do whatever I want. (Evil)</item>
+        <item id="5">Comradery. I'll put everything on the line for those dear to me. (Neutral)</item>
+        <item id="6">Aspiration. I'll succeed in my goals, it just takes time and effort. (Any)</item>
+      </select>
+      <select type="List" name="Bond">
+        <item id="1">I lost someone dear to me in battle, I will always honor them.</item>
+        <item id="2">Honor is everything to me.</item>
+        <item id="3">I will lay down my life for those beside me.</item>
+        <item id="4">I must keep the traditions of my ancestors alive.</item>
+        <item id="5">No matter where I go, Mandalore is my home.</item>
+        <item id="6">In death, I will find glory.</item>
+      </select>
+      <select type="List" name="Flaw">
+        <item id="1">I look down on outsiders.</item>
+        <item id="2">I have no respect for anyone who flees. Cowardice is unacceptable.</item>
+        <item id="3">I don't see much use in talking, a blaster is all I need to make my point.</item>
+        <item id="4">I stick to my traditions no matter what, even at the cost of others.</item>
+        <item id="5">I retreated once, and I've regretted it ever since.</item>
+        <item id="6">I value a victory regardless of the ethics behind the victory.</item>
+      </select>
+    </rules>
+  </element>
+
+  <element name="Mandalorian - Clanless" type="Background" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_MANDALORIAN_CLANLESS">
+    <description>
+      <p>You were raised in the warrior culture of Mandalore, but have no clan affiliation, either by choice or circumstance. You walk your own path among the Mandalorians.</p>
+      <ul class="unstyled">
+        <li><strong>Skill Proficiencies:</strong> Choose two from Athletics, Intimidation, Survival, History</li>
+        <li><strong>Tool Proficiencies:</strong> Hover pack</li>
+        <li><strong>Languages:</strong> Mando'a</li>
+        <li><strong>Equipment:</strong> A suit of Mandalorian armor, a hover pack, and a belt pouch containing 200 credits</li>
+      </ul>
+      <div element="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" />
+    </description>
+    <setters>
+      <set name="short">Clanless - Athletics, Intimidation, Survival, History, Hover Pack, Mando'a</set>
+    </setters>
+    <sheet alt="Mandalorian - Clanless">
+      <description>You have no clan affiliation. You walk your own path among the Mandalorians.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Skill Proficiency (Mandalorian)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_HISTORY" />
       <grant type="Language" id="ID_LANGUAGE_MANDOA_LANGUAGE" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
@@ -1069,77 +1430,6 @@
       <p>You have a military rank from your career as a soldier. Soldiers loyal to your former military organization still recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment for temporary use.</p>
     </description>
     <sheet alt="Military Rank" />
-  </element>
-
-  <!-- MANDALORIAN CLANS -->
-  <element name="Clan Vizsla" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_VIZSLA">
-    <supports>Mandalorian Clan</supports>
-    <description>
-      <p>You are a member of Clan Vizsla, one of the most ancient and respected Mandalorian clans, known for producing many great leaders and warriors.</p>
-    </description>
-    <sheet alt="Mandalorian - Clan Vizsla">
-      <description>One of the most ancient and respected Mandalorian clans, known for producing many great leaders and warriors.</description>
-    </sheet>
-  </element>
-
-  <element name="Clan Fett" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_FETT">
-    <supports>Mandalorian Clan</supports>
-    <description>
-      <p>You are a member of Clan Fett, a clan known for its bounty hunters and mercenaries who have left their mark on galactic history.</p>
-    </description>
-    <sheet alt="Mandalorian - Clan Fett">
-      <description>A clan known for its legendary bounty hunters and mercenaries who have left their mark on galactic history.</description>
-    </sheet>
-  </element>
-
-  <element name="Clan Varad" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_VARAD">
-    <supports>Mandalorian Clan</supports>
-    <description>
-      <p>You are a member of Clan Varad, known for their fierce warriors and tactical brilliance in battle.</p>
-    </description>
-    <sheet alt="Mandalorian - Clan Varad">
-      <description>A clan known for fierce warriors and tactical brilliance in battle.</description>
-    </sheet>
-  </element>
-
-  <element name="Clan Ordo" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_ORDO">
-    <supports>Mandalorian Clan</supports>
-    <description>
-      <p>You are a member of Clan Ordo, a clan with a proud military tradition and honor-bound warriors.</p>
-    </description>
-    <sheet alt="Mandalorian - Clan Ordo">
-      <description>A clan with a proud military tradition and honor-bound warriors.</description>
-    </sheet>
-  </element>
-
-  <element name="Clan Lok" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_LOK">
-    <supports>Mandalorian Clan</supports>
-    <description>
-      <p>You are a member of Clan Lok, known for their stealth and precision in combat.</p>
-    </description>
-    <sheet alt="Mandalorian - Clan Lok">
-      <description>A clan known for stealth and precision in combat.</description>
-    </sheet>
-  </element>
-
-  <element name="Clan Cadera" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_CADERA">
-    <supports>Mandalorian Clan</supports>
-    <description>
-      <p>You are a member of Clan Cadera, a clan that values honor and tradition above all else.</p>
-    </description>
-    <sheet alt="Mandalorian - Clan Cadera">
-      <description>A clan that values honor and tradition above all else.</description>
-    </sheet>
-  </element>
-
-  <element name="Clanless" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_CLANLESS">
-    <supports>Mandalorian Clan</supports>
-    <description>
-      <p>You have no clan affiliation, either by choice or circumstance. You walk your own path among the Mandalorians.</p>
-    </description>
-    <sheet alt="Mandalorian - Clanless">
-      <description>You have no clan affiliation. You walk your own path among the Mandalorians.</description>
-    </sheet>
   </element>
 
 </elements>
