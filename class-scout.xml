@@ -3,7 +3,7 @@
   <info>
     <name>Scout Class</name>
     <description>Scout Class for SW-MSV-Edition.</description>
-    <update version="2.0.7">
+    <update version="2.0.8">
       <file name="class-scout.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-scout.xml" />
     </update>
   </info>
@@ -135,25 +135,25 @@
   <element id="ID_CLASS_SCOUT_FEATURE_SNEAK_ATTACK" name="Sneak Attack" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>Once per turn, you can deal extra damage ({{sneak-attack:count}}d{{sneak-attack:die}}) to one creature you hit with an attack if you have advantage on the attack roll. You must use a Finesse or ranged weapon.</p>
+      <p>Once per turn, you can deal extra damage ({{scout:sneak-attack:count}}d{{scout:sneak-attack:die}}) to one creature you hit with an attack if you have advantage on the attack roll. You must use a Finesse or ranged weapon.</p>
       <p class="indent">You don't need advantage on the attack roll if another enemy of the target is within 5 feet, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</p>
     </description>
     <sheet>
-      <description>Once per turn, you can deal an extra {{sneak-attack:count}}d{{sneak-attack:die}} damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
+      <description>Once per turn, you can deal an extra {{scout:sneak-attack:count}}d{{scout:sneak-attack:die}} damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
       You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</description>
     </sheet>
     <rules>
-      <stat name="sneak-attack:count" value="1" level="1" />
-      <stat name="sneak-attack:count" value="1" level="3" />
-      <stat name="sneak-attack:count" value="1" level="5" />
-      <stat name="sneak-attack:count" value="1" level="7" />
-      <stat name="sneak-attack:count" value="1" level="9" />
-      <stat name="sneak-attack:count" value="1" level="11" />
-      <stat name="sneak-attack:count" value="1" level="13" />
-      <stat name="sneak-attack:count" value="1" level="15" />
-      <stat name="sneak-attack:count" value="1" level="17" />
-      <stat name="sneak-attack:count" value="1" level="19" />
-      <stat name="sneak-attack:die" value="6" bonus="die" />
+      <stat name="scout:sneak-attack:count" value="1" level="1" />
+      <stat name="scout:sneak-attack:count" value="1" level="3" />
+      <stat name="scout:sneak-attack:count" value="1" level="5" />
+      <stat name="scout:sneak-attack:count" value="1" level="7" />
+      <stat name="scout:sneak-attack:count" value="1" level="9" />
+      <stat name="scout:sneak-attack:count" value="1" level="11" />
+      <stat name="scout:sneak-attack:count" value="1" level="13" />
+      <stat name="scout:sneak-attack:count" value="1" level="15" />
+      <stat name="scout:sneak-attack:count" value="1" level="17" />
+      <stat name="scout:sneak-attack:count" value="1" level="19" />
+      <stat name="scout:sneak-attack:die" value="6" bonus="die" />
     </rules>
   </element>
 

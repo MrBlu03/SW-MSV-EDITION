@@ -3,7 +3,7 @@
   <info>
     <name>Backgrounds</name>
     <description>Backgrounds for SW-MSV-Edition.</description>
-    <update version="2.0.7">
+    <update version="2.0.8">
       <file name="backgrounds.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/backgrounds.xml" />
     </update>
   </info>
@@ -1077,7 +1077,9 @@
     <description>
       <p>You are a member of Clan Vizsla, one of the most ancient and respected Mandalorian clans, known for producing many great leaders and warriors.</p>
     </description>
-    <sheet alt="Clan Vizsla" />
+    <sheet alt="Mandalorian - Clan Vizsla">
+      <description>One of the most ancient and respected Mandalorian clans, known for producing many great leaders and warriors.</description>
+    </sheet>
   </element>
 
   <element name="Clan Fett" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_FETT">
@@ -1085,7 +1087,9 @@
     <description>
       <p>You are a member of Clan Fett, a clan known for its bounty hunters and mercenaries who have left their mark on galactic history.</p>
     </description>
-    <sheet alt="Clan Fett" />
+    <sheet alt="Mandalorian - Clan Fett">
+      <description>A clan known for its legendary bounty hunters and mercenaries who have left their mark on galactic history.</description>
+    </sheet>
   </element>
 
   <element name="Clan Varad" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_VARAD">
@@ -1093,7 +1097,9 @@
     <description>
       <p>You are a member of Clan Varad, known for their fierce warriors and tactical brilliance in battle.</p>
     </description>
-    <sheet alt="Clan Varad" />
+    <sheet alt="Mandalorian - Clan Varad">
+      <description>A clan known for fierce warriors and tactical brilliance in battle.</description>
+    </sheet>
   </element>
 
   <element name="Clan Ordo" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_ORDO">
@@ -1101,7 +1107,9 @@
     <description>
       <p>You are a member of Clan Ordo, a clan with a proud military tradition and honor-bound warriors.</p>
     </description>
-    <sheet alt="Clan Ordo" />
+    <sheet alt="Mandalorian - Clan Ordo">
+      <description>A clan with a proud military tradition and honor-bound warriors.</description>
+    </sheet>
   </element>
 
   <element name="Clan Lok" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_LOK">
@@ -1109,7 +1117,9 @@
     <description>
       <p>You are a member of Clan Lok, known for their stealth and precision in combat.</p>
     </description>
-    <sheet alt="Clan Lok" />
+    <sheet alt="Mandalorian - Clan Lok">
+      <description>A clan known for stealth and precision in combat.</description>
+    </sheet>
   </element>
 
   <element name="Clan Cadera" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_CADERA">
@@ -1117,7 +1127,9 @@
     <description>
       <p>You are a member of Clan Cadera, a clan that values honor and tradition above all else.</p>
     </description>
-    <sheet alt="Clan Cadera" />
+    <sheet alt="Mandalorian - Clan Cadera">
+      <description>A clan that values honor and tradition above all else.</description>
+    </sheet>
   </element>
 
   <element name="Clanless" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_CLANLESS">
@@ -1125,7 +1137,9 @@
     <description>
       <p>You have no clan affiliation, either by choice or circumstance. You walk your own path among the Mandalorians.</p>
     </description>
-    <sheet alt="Clanless" />
+    <sheet alt="Mandalorian - Clanless">
+      <description>You have no clan affiliation. You walk your own path among the Mandalorians.</description>
+    </sheet>
   </element>
 
 </elements>

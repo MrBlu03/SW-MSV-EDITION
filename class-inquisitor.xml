@@ -3,7 +3,7 @@
   <info>
     <name>Inquisitor Class</name>
     <description>Inquisitor Class for SW-MSV-Edition.</description>
-    <update version="2.0.7">
+    <update version="2.0.8">
       <file name="class-inquisitor.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-inquisitor.xml" />
     </update>
   </info>
@@ -178,23 +178,24 @@
   <element id="ID_CLASS_INQUISITOR_FEATURE_ASSASSINATE" name="Assassinate" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>Once per turn, you can deal extra damage ({{assassinate:die}}) to one creature you hit with an attack if you have advantage on the attack roll. You must use a finesse or a ranged weapon.</p>
+      <p>Once per turn, you can deal extra damage ({{inquisitor:assassinate:count}}d{{inquisitor:assassinate:die}}) to one creature you hit with an attack if you have advantage on the attack roll. You must use a finesse or a ranged weapon.</p>
       <p class="indent">You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</p>
     </description>
     <sheet>
-      <description>Once per turn, deal extra {{assassinate:die}} damage if you have advantage on attack roll. Finesse or ranged weapon required. You don't need advantage if another enemy is within 5 feet and not incapacitated, and you don't have disadvantage.</description>
+      <description>Once per turn, deal extra {{inquisitor:assassinate:count}}d{{inquisitor:assassinate:die}} damage if you have advantage on attack roll. Finesse or ranged weapon required. You don't need advantage if another enemy is within 5 feet and not incapacitated, and you don't have disadvantage.</description>
     </sheet>
     <rules>
-      <stat name="assassinate:die" value="1d6" level="1" />
-      <stat name="assassinate:die" value="2d6" level="3" />
-      <stat name="assassinate:die" value="3d6" level="5" />
-      <stat name="assassinate:die" value="4d6" level="7" />
-      <stat name="assassinate:die" value="5d6" level="9" />
-      <stat name="assassinate:die" value="6d6" level="11" />
-      <stat name="assassinate:die" value="7d6" level="13" />
-      <stat name="assassinate:die" value="8d6" level="15" />
-      <stat name="assassinate:die" value="9d6" level="17" />
-      <stat name="assassinate:die" value="10d6" level="19" />
+      <stat name="inquisitor:assassinate:count" value="1" level="1" />
+      <stat name="inquisitor:assassinate:count" value="1" level="3" />
+      <stat name="inquisitor:assassinate:count" value="1" level="5" />
+      <stat name="inquisitor:assassinate:count" value="1" level="7" />
+      <stat name="inquisitor:assassinate:count" value="1" level="9" />
+      <stat name="inquisitor:assassinate:count" value="1" level="11" />
+      <stat name="inquisitor:assassinate:count" value="1" level="13" />
+      <stat name="inquisitor:assassinate:count" value="1" level="15" />
+      <stat name="inquisitor:assassinate:count" value="1" level="17" />
+      <stat name="inquisitor:assassinate:count" value="1" level="19" />
+      <stat name="inquisitor:assassinate:die" value="6" bonus="die" />
     </rules>
   </element>
 
