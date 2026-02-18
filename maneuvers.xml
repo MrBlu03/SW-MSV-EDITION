@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Maneuvers</name>
-    <update version="2.0.4">
+    <update version="2.0.5">
       <file name="maneuvers.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/maneuvers.xml" />
     </update>
   </info>

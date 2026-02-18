@@ -3,7 +3,7 @@
   <info>
     <name>Scout Class</name>
     <description>Scout Class for SW-MSV-Edition.</description>
-    <update version="2.0.4">
+    <update version="2.0.5">
       <file name="class-scout.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-scout.xml" />
     </update>
   </info>
@@ -166,100 +166,8 @@
     </description>
     <sheet display="false" />
     <rules>
-      <select type="Class Feature" name="Expertise (Scout)" level="1" number="2" supports="ID_MSV_SUPPORT_EXPERTISE_SCOUT" />
-      <select type="Class Feature" name="Expertise (Scout)" level="6" number="2" supports="ID_MSV_SUPPORT_EXPERTISE_SCOUT" />
-    </rules>
-  </element>
-
-  <!-- EXPERTISE OPTIONS FOR SCOUT -->
-  <element name="Skill Expertise (Acrobatics)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SCOUT_ACROBATICS">
-    <supports>Expertise, ID_MSV_SUPPORT_EXPERTISE_SCOUT</supports>
-    <requirements>ID_PROFICIENCY_SKILL_ACROBATICS</requirements>
-    <description><p>Your proficiency bonus is doubled for Acrobatics checks.</p></description>
-    <sheet display="false" />
-    <rules>
-      <stat name="acrobatics:proficiency" value="proficiency" bonus="double" />
-    </rules>
-  </element>
-  <element name="Skill Expertise (Athletics)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SCOUT_ATHLETICS">
-    <supports>Expertise, ID_MSV_SUPPORT_EXPERTISE_SCOUT</supports>
-    <requirements>ID_PROFICIENCY_SKILL_ATHLETICS</requirements>
-    <description><p>Your proficiency bonus is doubled for Athletics checks.</p></description>
-    <sheet display="false" />
-    <rules>
-      <stat name="athletics:proficiency" value="proficiency" bonus="double" />
-    </rules>
-  </element>
-  <element name="Skill Expertise (Deception)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SCOUT_DECEPTION">
-    <supports>Expertise, ID_MSV_SUPPORT_EXPERTISE_SCOUT</supports>
-    <requirements>ID_PROFICIENCY_SKILL_DECEPTION</requirements>
-    <description><p>Your proficiency bonus is doubled for Deception checks.</p></description>
-    <sheet display="false" />
-    <rules>
-      <stat name="deception:proficiency" value="proficiency" bonus="double" />
-    </rules>
-  </element>
-  <element name="Skill Expertise (Insight)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SCOUT_INSIGHT">
-    <supports>Expertise, ID_MSV_SUPPORT_EXPERTISE_SCOUT</supports>
-    <requirements>ID_PROFICIENCY_SKILL_INSIGHT</requirements>
-    <description><p>Your proficiency bonus is doubled for Insight checks.</p></description>
-    <sheet display="false" />
-    <rules>
-      <stat name="insight:proficiency" value="proficiency" bonus="double" />
-    </rules>
-  </element>
-  <element name="Skill Expertise (Intimidation)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SCOUT_INTIMIDATION">
-    <supports>Expertise, ID_MSV_SUPPORT_EXPERTISE_SCOUT</supports>
-    <requirements>ID_PROFICIENCY_SKILL_INTIMIDATION</requirements>
-    <description><p>Your proficiency bonus is doubled for Intimidation checks.</p></description>
-    <sheet display="false" />
-    <rules>
-      <stat name="intimidation:proficiency" value="proficiency" bonus="double" />
-    </rules>
-  </element>
-  <element name="Skill Expertise (Investigation)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SCOUT_INVESTIGATION">
-    <supports>Expertise, ID_MSV_SUPPORT_EXPERTISE_SCOUT</supports>
-    <requirements>ID_PROFICIENCY_SKILL_INVESTIGATION</requirements>
-    <description><p>Your proficiency bonus is doubled for Investigation checks.</p></description>
-    <sheet display="false" />
-    <rules>
-      <stat name="investigation:proficiency" value="proficiency" bonus="double" />
-    </rules>
-  </element>
-  <element name="Skill Expertise (Perception)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SCOUT_PERCEPTION">
-    <supports>Expertise, ID_MSV_SUPPORT_EXPERTISE_SCOUT</supports>
-    <requirements>ID_PROFICIENCY_SKILL_PERCEPTION</requirements>
-    <description><p>Your proficiency bonus is doubled for Perception checks.</p></description>
-    <sheet display="false" />
-    <rules>
-      <stat name="perception:proficiency" value="proficiency" bonus="double" />
-    </rules>
-  </element>
-  <element name="Skill Expertise (Persuasion)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SCOUT_PERSUASION">
-    <supports>Expertise, ID_MSV_SUPPORT_EXPERTISE_SCOUT</supports>
-    <requirements>ID_PROFICIENCY_SKILL_PERSUASION</requirements>
-    <description><p>Your proficiency bonus is doubled for Persuasion checks.</p></description>
-    <sheet display="false" />
-    <rules>
-      <stat name="persuasion:proficiency" value="proficiency" bonus="double" />
-    </rules>
-  </element>
-  <element name="Skill Expertise (Sleight of Hand)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SCOUT_SLEIGHTOFHAND">
-    <supports>Expertise, ID_MSV_SUPPORT_EXPERTISE_SCOUT</supports>
-    <requirements>ID_PROFICIENCY_SKILL_SLEIGHTOFHAND</requirements>
-    <description><p>Your proficiency bonus is doubled for Sleight of Hand checks.</p></description>
-    <sheet display="false" />
-    <rules>
-      <stat name="sleight of hand:proficiency" value="proficiency" bonus="double" />
-    </rules>
-  </element>
-  <element name="Skill Expertise (Stealth)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SCOUT_STEALTH">
-    <supports>Expertise, ID_MSV_SUPPORT_EXPERTISE_SCOUT</supports>
-    <requirements>ID_PROFICIENCY_SKILL_STEALTH</requirements>
-    <description><p>Your proficiency bonus is doubled for Stealth checks.</p></description>
-    <sheet display="false" />
-    <rules>
-      <stat name="stealth:proficiency" value="proficiency" bonus="double" />
+      <select type="Class Feature" name="Expertise (Scout)" level="1" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE" />
+      <select type="Class Feature" name="Expertise (Scout)" level="6" number="2" supports="ID_INTERNAL_SUPPORT_EXPERTISE" />
     </rules>
   </element>
 
