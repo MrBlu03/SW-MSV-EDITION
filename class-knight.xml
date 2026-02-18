@@ -3,7 +3,7 @@
   <info>
     <name>Knight Class</name>
     <description>Knight Class for SW-MSV-Edition.</description>
-    <update version="2.0.9">
+    <update version="2.1.0">
       <file name="class-knight.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-knight.xml" />
     </update>
   </info>
@@ -223,10 +223,10 @@
   <element id="ID_CLASS_KNIGHT_FEATURE_MEDITATION" name="Meditation" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Knight</supports>
     <description>
-      <p>Casting Time: 1 Action (ends your turn); Range: Self; Components: None; Duration: Instantaneous; Meditate on the battlefield to gain 2 Focus when it is your turn again. While in this state, you can't take Reactions and you are considered Incapacitated.</p>
+      <p>Meditate on the battlefield to gain 2 Focus when it is your turn again. While in this state, you can't take Reactions and you are considered Incapacitated.</p>
     </description>
     <sheet action="Action">
-      <description>1 Action (ends turn). Range: Self. Gain 2 Focus on your next turn. Can't take Reactions and are Incapacitated while meditating.</description>
+      <description>Meditate on the battlefield to gain 2 Focus when it is your turn again. While in this state, you can't take Reactions and you are considered Incapacitated.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -247,8 +247,8 @@
   <!-- FORCE PUSH -->
   <element id="ID_CLASS_KNIGHT_FEATURE_FORCE_PUSH" name="Force Push" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Knight</supports>
-    <description>
-      <p>1 Focus, Casting Time: 1 Action; Range: Self; Components: Somatic; Duration: Instantaneous; Use the Force to push someone away. Each creature in a 15-foot line must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and are pushed 10 feet away. On a successful save, the creature takes half damage and isn't pushed. Per extra Focus spent to a max of half your Knight level (rounded up), the ability deals an additional 1d8 kinetic damage and pushes 5 extra feet.</p>
+<description>
+      <p>1 Focus, Action. Use the Force to push someone away. Each creature in a 15-foot line must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and are pushed 10 feet away. On a successful save, the creature takes half damage and isn't pushed. Per extra Focus spent to a max of half your Knight level (rounded up), the ability deals an additional 1d8 kinetic damage and pushes 5 extra feet.</p>
     </description>
     <sheet>
       <description>1 Focus, 1 Action. Range: Self. 15-foot line, Con save. Fail: 2d8 kinetic + pushed 10 feet. Success: half damage, not pushed. Extra Focus: +1d8 damage and +5 feet push per Focus (max half Knight level).</description>
@@ -272,8 +272,8 @@
   <!-- FORCE PULL -->
   <element id="ID_CLASS_KNIGHT_FEATURE_FORCE_PULL" name="Force Pull" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Knight</supports>
-    <description>
-      <p>1 Focus, Casting Time: 1 Action; Range: Self; Components: Somatic; Duration: Instantaneous; Use the Force to pull someone toward you. Each creature within a 15-foot cone originating from you must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and are pulled 10 feet closer. On a successful save, the creature takes half damage and isn't pulled. Per extra Focus spent to a max of half your Knight level (rounded up), the ability deals an additional 1d8 kinetic damage, increases the cone size by 5 feet, and pulls creatures an additional 5 feet.</p>
+<description>
+      <p>1 Focus, Action. Use the Force to pull someone toward you. Each creature within a 15-foot cone originating from you must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and are pulled 10 feet closer. On a successful save, the creature takes half damage and isn't pulled. Per extra Focus spent to a max of half your Knight level (rounded up), the ability deals an additional 1d8 kinetic damage, increases the cone size by 5 feet, and pulls creatures an additional 5 feet.</p>
     </description>
     <sheet>
       <description>1 Focus, 1 Action. Range: Self. 15-foot cone, Con save. Fail: 2d8 kinetic + pulled 10 feet. Success: half damage, not pulled. Extra Focus: +1d8 damage, +5 feet cone, +5 feet pull per Focus (max half Knight level).</description>
@@ -297,8 +297,8 @@
   <!-- VALOR -->
   <element id="ID_CLASS_KNIGHT_FEATURE_VALOR" name="Valor" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Knight</supports>
-    <description>
-      <p>1 Focus, Casting Time: 1 Action; Range: 30 feet; Components: None; Duration: Concentration, Up to 10 turns; You give courage to up to 3 creatures within range. The target can roll a d4 and add the number rolled to an attack roll or saving throw. Per extra Focus spent to a max of half your Knight level (rounded up), you can target one additional creature.</p>
+<description>
+      <p>1 Focus, Action. You give courage to up to 3 creatures within 30 feet. The target can roll a d4 and add the number rolled to an attack roll or saving throw. Per extra Focus spent to a max of half your Knight level (rounded up), you can target one additional creature.</p>
     </description>
     <sheet>
       <description>1 Focus, 1 Action. Range: 30 feet. Duration: Concentration, up to 10 turns. Target up to 3 creatures. They can add d4 to an attack roll or saving throw. Extra Focus: +1 target per Focus (max half Knight level).</description>
@@ -322,8 +322,8 @@
   <!-- MINOR TELEKINESIS -->
   <element id="ID_CLASS_KNIGHT_FEATURE_MINOR_TELEKINESIS" name="Minor Telekinesis" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Knight</supports>
-    <description>
-      <p>1 Focus, Casting Time: 1 Action; Range: 45 feet; Components: Somatic; Duration: Concentration, Up to 1 round; You use the Force to manipulate a small or medium object, or a small creature, that you can see within range. You make an ability check using your Force ability, contested by the target's Strength check. On a success, you may suspend and/or move up to 30 feet or throw the target. If you choose to suspend the target, it remains suspended for the duration. If you throw the target, make a ranged Force attack with a range of 30/60 feet. On a hit, the target you throw at takes kinetic damage based on what is thrown: Small object: 2d4 kinetic damage, Medium object: 2d6 kinetic damage, Small creature: 1d4 kinetic damage. If a creature is thrown, the thrown small creature takes 1d8 + your Force ability modifier kinetic damage.</p>
+<description>
+      <p>1 Focus, Action. You use the Force to manipulate a small or medium object, or a small creature, that you can see within 45 feet. You make an ability check using your Force ability, contested by the target's Strength check. On a success, you may suspend and/or move up to 30 feet or throw the target. If you choose to suspend the target, it remains suspended for the duration. If you throw the target, make a ranged Force attack with a range of 30/60 feet. On a hit, the target you throw at takes kinetic damage based on what is thrown: Small object: 2d4 kinetic damage, Medium object: 2d6 kinetic damage, Small creature: 1d4 kinetic damage. If a creature is thrown, the thrown small creature takes 1d8 + your Force ability modifier kinetic damage.</p>
     </description>
     <sheet>
       <description>1 Focus, 1 Action. Range: 45 feet. Duration: Concentration, up to 1 round. Force check vs target's Str. Success: suspend/move 30 feet or throw (30/60 range). Thrown object damage: Small 2d4, Medium 2d6, Small creature 1d4 to target + 1d8+mod to thrown creature.</description>
@@ -358,8 +358,8 @@
   <!-- SABER THROW -->
   <element id="ID_CLASS_KNIGHT_FEATURE_SABER_THROW" name="Saber Throw" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Knight</supports>
-    <description>
-      <p>1 Focus, Casting Time: 1 Action; Range: Self; Components: Somatic; Duration: Instantaneous; Make a ranged attack of 30/60 with your melee weapon using your Dexterity modifier for attack and damage rolls. If you are proficient with you weapon you add your proficiency bonus to the attack roll. Per extra Focus spent to a max of half your Knight level (rounded up), your range increases by 10/15 feet.</p>
+<description>
+      <p>1 Focus, Action. Make a ranged attack of 30/60 with your melee weapon using your Dexterity modifier for attack and damage rolls. If you are proficient with you weapon you add your proficiency bonus to the attack roll. Per extra Focus spent to a max of half your Knight level (rounded up), your range increases by 10/15 feet.</p>
     </description>
     <sheet>
       <description>1 Focus, 1 Action. Range: Self. Ranged attack 30/60 with melee weapon using Dex. Proficiency bonus added if proficient. Extra Focus: +10/15 range per Focus (max half Knight level).</description>
@@ -383,8 +383,8 @@
   <!-- FORCE RESOLUTION -->
   <element id="ID_CLASS_KNIGHT_FEATURE_FORCE_RESOLUTION" name="Force Resolution" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Knight</supports>
-    <description>
-      <p>2 Focus, Casting Time: 1 Bonus Action; Range: Self; Components: None; Duration: Instantaneous; When Incapacitated, you can use this ability to end that condition.</p>
+<description>
+      <p>2 Focus, Bonus Action. When Incapacitated, you can use this ability to end that condition.</p>
     </description>
     <sheet action="Bonus Action">
       <description>2 Focus, 1 Bonus Action. Range: Self. End Incapacitated condition on yourself.</description>
@@ -424,8 +424,8 @@
   <!-- MIND TRICK -->
   <element id="ID_CLASS_KNIGHT_FEATURE_MIND_TRICK" name="Mind Trick" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Knight</supports>
-    <description>
-      <p>2 Focus, Casting Time: 1 Action; Range: 60 feet; Components: Somatic, Verbal; Duration: Instantaneous; You wave your hand and speak a simple command to a creature you can see within range. The target makes a Wisdom saving throw. On a failed save, the creature must follow the command on its next turn. On a successful save, the creature isn't tricked and if the creature isn't in combat, it will make an Arcana check against your Spell save DC to determine whether it knows you tried to mind trick it. This ability has no effect if the target is a Droid, does not understand your language, or is not intelligent enough. Per extra Focus spent to a max of half your Knight level (rounded up), you can target an additional creature.</p>
+<description>
+      <p>2 Focus, Action. You wave your hand and speak a simple command to a creature you can see within 60 feet. The target makes a Wisdom saving throw. On a failed save, the creature must follow the command on its next turn. On a successful save, the creature isn't tricked and if the creature isn't in combat, it will make an Arcana check against your Spell save DC to determine whether it knows you tried to mind trick it. This ability has no effect if the target is a Droid, does not understand your language, or is not intelligent enough. Per extra Focus spent to a max of half your Knight level (rounded up), you can target an additional creature.</p>
     </description>
     <sheet>
       <description>2 Focus, 1 Action. Range: 60 feet. Target Wis save or follows command on next turn. No effect on Droids or unintelligent creatures. Extra Focus: +1 target per Focus (max half Knight level).</description>
@@ -471,8 +471,8 @@
   <!-- BLINDING STRIKE -->
   <element id="ID_CLASS_KNIGHT_FEATURE_BLINDING_STRIKE" name="Blinding Strike" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Knight</supports>
-    <description>
-      <p>2 Focus, Casting Time: 1 Action; Range: Self; Components: Somatic; Duration: Instantaneous; When you successfully hit with a melee attack, you can use this ability to try to blind the creature you hit. The creature must make a Constitution saving throw. On a failed save, the creature is blinded for 1 round. On a successful save, the creature isn't blinded.</p>
+<description>
+      <p>2 Focus, Action. When you successfully hit with a melee attack, you can use this ability to try to blind the creature you hit. The creature must make a Constitution saving throw. On a failed save, the creature is blinded for 1 round. On a successful save, the creature isn't blinded.</p>
     </description>
     <sheet>
       <description>2 Focus, 1 Action. Range: Self. When you hit with melee attack, target Con save or blinded for 1 round.</description>
@@ -609,8 +609,8 @@
 
   <element id="ID_KNIGHT_FORM_MAKASHI_ABILITY_RIPOSTE" name="Riposte" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Knight</supports>
-    <description>
-      <p>1 Focus, Casting Time: 1 Reaction; Range: Self; Components: Somatic; Duration: Instantaneous; When a creature misses you with a melee attack, you can use your reaction to make a melee weapon attack against that creature.</p>
+<description>
+      <p>1 Focus, Reaction. When a creature misses you with a melee attack, you can make a melee weapon attack against that creature.</p>
     </description>
     <sheet action="Reaction">
       <description>1 Focus, 1 Reaction. Range: Self. When a creature misses you with a melee attack, make a melee weapon attack against them.</description>
@@ -645,8 +645,8 @@
 
   <element id="ID_KNIGHT_FORM_SORESU_ABILITY_BLOCK" name="Block" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Knight</supports>
-    <description>
-      <p>1 Focus, Casting Time: 1 Reaction; Range: Self; Components: Somatic; Duration: Instantaneous; When a melee attack would hit you, you can use your reaction to Block it, negating the attack.</p>
+<description>
+      <p>1 Focus, Reaction. Block to negate a melee attack that would have hit you.</p>
     </description>
     <sheet action="Reaction">
       <description>1 Focus, 1 Reaction. Range: Self. Negate a melee attack that would have hit you.</description>
@@ -667,10 +667,10 @@
     </setters>
   </element>
 
-  <element id="ID_KNIGHT_FORM_SORESU_ABILITY_DEFLECT" name="Deflect" type="Spell" level="0" source="SW-MSV-Edition">
+<element id="ID_KNIGHT_FORM_SORESU_ABILITY_DEFLECT" name="Deflect" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Knight</supports>
     <description>
-      <p>1 Focus, Casting Time: 1 Reaction; Range: Self; Components: Somatic; Duration: Instantaneous; When wielding a lightweapon and a ranged attack would hit you, you can use your reaction to Deflect it. This also works on Force Lightning abilities but not against weapons that deal sonic or kinetic damage.</p>
+      <p>1 Focus, Reaction. Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</p>
     </description>
     <sheet action="Reaction">
       <description>1 Focus, 1 Reaction. Range: Self. Deflect a ranged attack (not sonic/kinetic) or Force Lightning while wielding a lightweapon.</description>
@@ -705,8 +705,8 @@
 
   <element id="ID_KNIGHT_FORM_ATARU_ABILITY_FORCE_LEAP" name="Force Leap" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Knight</supports>
-    <description>
-      <p>1 Focus, Casting Time: 1 Action; Range: Self; Components: Somatic; Duration: Instantaneous; Jump up to twice your movement speed and make a melee weapon attack. This doesn't provoke Opportunity Attacks. Per extra Focus spent to a max of half your Knight level (rounded up), you can jump an additional 5 feet.</p>
+<description>
+      <p>1 Focus, Action. Jump up to twice your movement and make a melee weapon attack. This does not provoke Opportunity Attacks. Per extra Focus spent to a max of half your Knight level (rounded up), you can jump an additional 5 feet.</p>
     </description>
     <sheet action="Action">
       <description>1 Focus, 1 Action. Range: Self. Jump up to 2x movement and attack. No OA. Extra Focus: +5 feet per Focus (max half level).</description>
@@ -729,8 +729,8 @@
 
   <element id="ID_KNIGHT_FORM_ATARU_ABILITY_SLOW_FALL" name="Slow Fall" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Knight</supports>
-    <description>
-      <p>1 Focus, Casting Time: 1 Reaction; Range: Self; Components: Somatic; Duration: Instantaneous; When falling, use your reaction to slow your descent and take only half fall damage.</p>
+<description>
+      <p>1 Focus, Reaction. Use the Force to slow yourself when falling, taking only half fall damage.</p>
     </description>
     <sheet action="Reaction">
       <description>1 Focus, 1 Reaction. Range: Self. Take half fall damage.</description>
@@ -764,8 +764,8 @@
 
   <element id="ID_KNIGHT_FORM_SHIEN_ABILITY_REDIRECT" name="Redirect" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Knight</supports>
-    <description>
-      <p>1 Focus, Casting Time: 1 Reaction; Range: Self; Components: Somatic; Duration: Instantaneous; When wielding a lightweapon and a ranged attack would hit you, you can use your reaction to Redirect it at a creature. This counts as a ranged Force attack with the range of the incoming attack. Works on Force Lightning but not sonic/kinetic weapons.</p>
+<description>
+      <p>1 Focus, Reaction. Must wield a lightweapon. Use the Force to send a ranged attack that would have hit you to a creature. This counts as a ranged Force attack with the range of the incoming attack. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</p>
     </description>
     <sheet action="Reaction">
       <description>1 Focus, 1 Reaction. Range: Self. Redirect a ranged attack (not sonic/kinetic) or Force Lightning at a creature while wielding a lightweapon.</description>
@@ -800,8 +800,8 @@
 
   <element id="ID_KNIGHT_FORM_DJEM_SO_ABILITY_PASSIONATE_STRIKE" name="Passionate Strike" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Knight</supports>
-    <description>
-      <p>2 Focus, Casting Time: 1 Action; Range: Self; Components: Somatic; Duration: Instantaneous; Make a melee attack with advantage.</p>
+<description>
+      <p>2 Focus, Action. Make a melee attack and gain advantage on that attack.</p>
     </description>
     <sheet action="Action">
       <description>2 Focus, 1 Action. Range: Self. Make a melee attack with advantage.</description>
@@ -822,10 +822,10 @@
     </setters>
   </element>
 
-  <element id="ID_KNIGHT_FORM_DJEM_SO_ABILITY_DEFLECT" name="Deflect" type="Spell" level="0" source="SW-MSV-Edition">
+<element id="ID_KNIGHT_FORM_DJEM_SO_ABILITY_DEFLECT" name="Deflect" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Knight</supports>
     <description>
-      <p>1 Focus, Casting Time: 1 Reaction; Range: Self; Components: Somatic; Duration: Instantaneous; When wielding a lightweapon and a ranged attack would hit you, you can use your reaction to Deflect it. This also works on Force Lightning abilities but not against weapons that deal sonic or kinetic damage.</p>
+      <p>1 Focus, Reaction. Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</p>
     </description>
     <sheet action="Reaction">
       <description>1 Focus, 1 Reaction. Range: Self. Deflect a ranged attack (not sonic/kinetic) or Force Lightning while wielding a lightweapon.</description>
@@ -880,8 +880,8 @@
 
   <element id="ID_KNIGHT_FORM_JUYO_ABILITY_CYCLONE" name="Cyclone" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Knight</supports>
-    <description>
-      <p>2 Focus, Casting Time: 1 Action; Range: Self; Components: Somatic; Duration: Instantaneous; Make a flurry of attacks - two attacks that count as one attack against the same target. Roll both to hit. Per extra Focus spent to a max of half your Knight level (rounded up), you can make an additional attack.</p>
+<description>
+      <p>2 Focus, Action. Make a flurry of attacks in one swift movement. You make two attacks that count as one attack against the same target. You roll both to hit. Per 2 extra Focus spent to a max of half your Knight level (rounded up), you make an additional attack within that flurry.</p>
     </description>
     <sheet action="Action">
       <description>2 Focus, 1 Action. Range: Self. Make two attacks as one against the same target. Extra Focus: +1 attack per 2 Focus (max half level).</description>

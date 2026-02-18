@@ -3,7 +3,7 @@
   <info>
     <name>Marauder Class</name>
     <description>Marauder Class for SW-MSV-Edition.</description>
-    <update version="2.0.9">
+    <update version="2.1.0">
       <file name="class-marauder.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-marauder.xml" />
     </update>
   </info>
@@ -230,10 +230,10 @@
   <element id="ID_CLASS_MARAUDER_FEATURE_FORCE_PUSH" name="Force Push" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
     <description>
-      <p>1 Rage, Casting Time: 1 Action; Range: Self; Components: Somatic; Duration: Instantaneous; Use the Force to push someone away. Each creature in a 15-foot line must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and are pushed 10 feet away. On a successful save, the creature takes half damage and isn't pushed. Per extra Rage spent to a max of half your Marauder level (rounded up), the ability deals an additional 1d8 kinetic damage and pushes 5 extra feet.</p>
+      <p>1 Rage. Use the Force to push someone away. Each creature in a 15-foot line must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and are pushed 10 feet away. On a successful save, the creature takes half damage and isn't pushed. Per extra Rage spent to a max of half your Marauder level (rounded up), the ability deals an additional 1d8 kinetic damage and pushes 5 extra feet.</p>
     </description>
     <sheet>
-      <description>1 Rage. 15-foot line, Con save. Fail: 2d8 kinetic + pushed 10 feet. Success: half damage, not pushed. Extra Rage: +1d8 damage and +5 feet push per Rage (max half Marauder level).</description>
+      <description>1 Rage. Use the Force to push someone away. Each creature in a 15-foot line must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and are pushed 10 feet away. On a successful save, the creature takes half damage and isn't pushed. Per extra Rage spent to a max of half your Marauder level (rounded up), the ability deals an additional 1d8 kinetic damage and pushes 5 extra feet.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -255,10 +255,10 @@
   <element id="ID_CLASS_MARAUDER_FEATURE_FORCE_PULL" name="Force Pull" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
     <description>
-      <p>1 Rage, Casting Time: 1 Action; Range: Self; Components: Somatic; Duration: Instantaneous; Use the Force to pull someone toward you. Each creature within a 15-foot cone originating from you must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and is pulled 10 feet closer. On a successful save, the creature take half damage and isn't pulled. Per extra Rage spent to a max of half your Marauder level (rounded up), the ability deals an additional 1d8 kinetic damage, increases the cone size by 5 feet, and pulls creatures an additional 5 feet.</p>
+      <p>1 Rage. Use the Force to pull someone toward you. Each creature within a 15-foot cone originating from you must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and is pulled 10 feet closer. On a successful save, the creature take half damage and isn't pulled. Per extra Rage spent to a max of half your Marauder level (rounded up), the ability deals an additional 1d8 kinetic damage, increases the cone size by 5 feet, and pulls creatures an additional 5 feet.</p>
     </description>
     <sheet>
-      <description>1 Rage. 15-foot cone, Con save. Fail: 2d8 kinetic + pulled 10 feet. Success: half damage, not pulled. Extra Rage: +1d8 damage, +5 feet cone, +5 feet pull per Rage (max half Marauder level).</description>
+      <description>1 Rage. Use the Force to pull someone toward you. Each creature within a 15-foot cone originating from you must make a Constitution saving throw. On a failed save, the creature takes 2d8 kinetic damage and is pulled 10 feet closer. On a successful save, the creature take half damage and isn't pulled. Per extra Rage spent to a max of half your Marauder level (rounded up), the ability deals an additional 1d8 kinetic damage, increases the cone size by 5 feet, and pulls creatures an additional 5 feet.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -280,10 +280,10 @@
   <element id="ID_CLASS_MARAUDER_FEATURE_TAUNT" name="Taunt" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
     <description>
-      <p>Casting Time: 1 Bonus Action; Range: 60 feet; Components: Verbal; Duration: Instantaneous; Taunt an enemy you see within range. The creature must make a Wisdom saving throw. On a failed save, the creature gets taunted so that when they try to attack anyone other than you, they have disadvantage. On a successful save, the creature isn't taunted.</p>
+      <p>Taunt an enemy you see within range. The creature must make a Wisdom saving throw. On a failed save, the creature gets taunted so that when they try to attack anyone other than you, they have disadvantage. On a successful save, the creature isn't taunted.</p>
     </description>
     <sheet action="Bonus Action">
-      <description>Taunt an enemy within 60 feet. Wis save or they have disadvantage when attacking anyone other than you.</description>
+      <description>Taunt an enemy you see within range. The creature must make a Wisdom saving throw. On a failed save, the creature gets taunted so that when they try to attack anyone other than you, they have disadvantage. On a successful save, the creature isn't taunted.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -316,10 +316,10 @@
   <element id="ID_CLASS_MARAUDER_FEATURE_MINOR_TELEKINESIS" name="Minor Telekinesis" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
     <description>
-      <p>1 Rage, Casting Time: 1 Action; Range: 45 feet; Components: Somatic; Duration: Concentration, Up to 1 round; You use the Force to manipulate a small or medium object, or a small creature, that you can see within range. You make an ability check using your Force ability, contested by the target's Strength check. On a success, you may suspend and/or move up to 30 feet or throw the target. If you choose to suspend the target, it remains suspended for the duration. If you throw the target, make a ranged Force attack with a range of 30/60 feet. On a hit, the target you throw at takes kinetic damage based on what is thrown: Small object: 2d4 kinetic damage, Medium object: 2d6 kinetic damage, Small creature: 1d4 kinetic damage. If a creature is thrown, the thrown small creature takes 1d8 + your Force ability modifier kinetic damage.</p>
+      <p>1 Rage. You use the Force to manipulate a small or medium object, or a small creature, that you can see within range. You make an ability check using your Force ability, contested by the target's Strength check. On a success, you may suspend and/or move up to 30 feet or throw the target. If you choose to suspend the target, it remains suspended for the duration. If you throw the target, make a ranged Force attack with a range of 30/60 feet. On a hit, the target you throw at takes kinetic damage based on what is thrown: Small object: 2d4 kinetic damage, Medium object: 2d6 kinetic damage, Small creature: 1d4 kinetic damage. If a creature is thrown, the thrown small creature takes 1d8 + your Force ability modifier kinetic damage.</p>
     </description>
     <sheet>
-      <description>1 Rage. Force check vs target's Str. Success: suspend/move 30 feet or throw (30/60 range). Thrown object damage: Small 2d4, Medium 2d6, Small creature 1d4 to target + 1d8+mod to thrown creature.</description>
+      <description>1 Rage. You use the Force to manipulate a small or medium object, or a small creature, that you can see within range. You make an ability check using your Force ability, contested by the target's Strength check. On a success, you may suspend and/or move up to 30 feet or throw the target. If you choose to suspend the target, it remains suspended for the duration. If you throw the target, make a ranged Force attack with a range of 30/60 feet. On a hit, the target you throw at takes kinetic damage based on what is thrown: Small object: 2d4 kinetic damage, Medium object: 2d6 kinetic damage, Small creature: 1d4 kinetic damage. If a creature is thrown, the thrown small creature takes 1d8 + your Force ability modifier kinetic damage.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -352,10 +352,10 @@
   <element id="ID_CLASS_MARAUDER_FEATURE_SABER_THROW" name="Saber Throw" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
     <description>
-      <p>1 Rage, Action; Make a ranged attack of 30/60 with your melee weapon using your Dexterity modifier for attack and damage rolls. If you are proficient with you weapon you add your proficiency bonus to the attack roll. Per extra Rage spent to a max of half your Marauder level (rounded up), your range increases by 10/15 feet.</p>
+      <p>1 Rage. Make a ranged attack of 30/60 with your melee weapon using your Dexterity modifier for attack and damage rolls. If you are proficient with you weapon you add your proficiency bonus to the attack roll. Per extra Rage spent to a max of half your Marauder level (rounded up), your range increases by 10/15 feet.</p>
     </description>
     <sheet>
-      <description>1 Rage. Ranged attack 30/60 with melee weapon using Dex. Proficiency bonus added if proficient. Extra Rage: +10/15 range per Rage (max half Marauder level).</description>
+      <description>1 Rage. Make a ranged attack of 30/60 with your melee weapon using your Dexterity modifier for attack and damage rolls. If you are proficient with you weapon you add your proficiency bonus to the attack roll. Per extra Rage spent to a max of half your Marauder level (rounded up), your range increases by 10/15 feet.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -377,10 +377,10 @@
   <element id="ID_CLASS_MARAUDER_FEATURE_FORCE_REPULSE" name="Force Repulse" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
     <description>
-      <p>2 Rage, Casting Time: 1 Action; Range: Self; Components: Somatic; Duration: Instantaneous; Use the Force to push everyone around you away. Each creature within 5 feet must make a Constitution saving throw. On a failed save, the creature takes 2d8 energy damage and is pushed 10 feet away. On a successful save, the creature takes half damage and isn't pushed. Per extra Rage spent, to a max of half your Marauder level (rounded up), the ability deals an additional 1d8 energy damage and pushes 5 extra feet.</p>
+      <p>2 Rage. Use the Force to push everyone around you away. Each creature within 5 feet must make a Constitution saving throw. On a failed save, the creature takes 2d8 energy damage and is pushed 10 feet away. On a successful save, the creature takes half damage and isn't pushed. Per extra Rage spent, to a max of half your Marauder level (rounded up), the ability deals an additional 1d8 energy damage and pushes 5 extra feet.</p>
     </description>
     <sheet>
-      <description>2 Rage. All within 5 feet Con save. Fail: 2d8 energy + pushed 10 feet. Success: half damage, not pushed. Extra Rage: +1d8 damage and +5 feet push per Rage (max half Marauder level).</description>
+      <description>2 Rage. Use the Force to push everyone around you away. Each creature within 5 feet must make a Constitution saving throw. On a failed save, the creature takes 2d8 energy damage and is pushed 10 feet away. On a successful save, the creature takes half damage and isn't pushed. Per extra Rage spent, to a max of half your Marauder level (rounded up), the ability deals an additional 1d8 energy damage and pushes 5 extra feet.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -418,10 +418,10 @@
   <element id="ID_CLASS_MARAUDER_FEATURE_FORCE_CHOKE" name="Force Choke" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
     <description>
-      <p>2 Rage, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: Concentration, Up to 3 rounds; Use the Force to choke a creature within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 kinetic damage and is Incapacitated. On a successful save, the target takes no damage and is not incapacitated. Your next turn you must use a Bonus Action to choke again or the target is released. The target must make another Constitution saving throw. On a failed save, the target takes 1d8 kinetic damage and is Incapacitated. On a successful save, the target takes no damage and is not Incapacitated. On your third turn using this ability you must use a Bonus Action one last time or the target is released. The target must make a last Constitution saving throw. On a failed save, the target takes 2d6 kinetic damage, but is no longer Incapacitated. On a successful save, the target takes no damage and is not Incapacitated. Per extra Rage spent, to a max of half your Marauder level (rounded up), the ability deals an addional 1d6 kinetic damage per choke.</p>
+      <p>2 Rage. Use the Force to choke a creature within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 kinetic damage and is Incapacitated. On a successful save, the target takes no damage and is not incapacitated. Your next turn you must use a Bonus Action to choke again or the target is released. The target must make another Constitution saving throw. On a failed save, the target takes 1d8 kinetic damage and is Incapacitated. On a successful save, the target takes no damage and is not Incapacitated. On your third turn using this ability you must use a Bonus Action one last time or the target is released. The target must make a last Constitution saving throw. On a failed save, the target takes 2d6 kinetic damage, but is no longer Incapacitated. On a successful save, the target takes no damage and is not Incapacitated. Per extra Rage spent, to a max of half your Marauder level (rounded up), the ability deals an addional 1d6 kinetic damage per choke.</p>
     </description>
     <sheet>
-      <description>2 Rage. Target Con save or 1d6 kinetic + Incapacitated. Must use Bonus Action on subsequent turns to continue. Round 2: 1d8 damage. Round 3: 2d6 damage and released. Extra Rage: +1d6 per choke per Rage (max half Marauder level).</description>
+      <description>2 Rage. Use the Force to choke a creature within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 kinetic damage and is Incapacitated. On a successful save, the target takes no damage and is not incapacitated. Your next turn you must use a Bonus Action to choke again or the target is released. The target must make another Constitution saving throw. On a failed save, the target takes 1d8 kinetic damage and is Incapacitated. On a successful save, the target takes no damage and is not Incapacitated. On your third turn using this ability you must use a Bonus Action one last time or the target is released. The target must make a last Constitution saving throw. On a failed save, the target takes 2d6 kinetic damage, but is no longer Incapacitated. On a successful save, the target takes no damage and is not Incapacitated. Per extra Rage spent, to a max of half your Marauder level (rounded up), the ability deals an addional 1d6 kinetic damage per choke.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -490,10 +490,10 @@
   <element id="ID_CLASS_MARAUDER_FEATURE_FORCE_SHOCK" name="Force Shock" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
     <description>
-      <p>1 Rage, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: Instantaneous; Use the Force to electrocute a target within range. On hit, deals 2d8 lightning damage. Per extra Rage spent, to a max of half your Marauder level (rounded up), the attack deals an additional 1d8 damage.</p>
+      <p>1 Rage. Use the Force to electrocute a target within range. On hit, deals 2d8 lightning damage. Per extra Rage spent, to a max of half your Marauder level (rounded up), the attack deals an additional 1d8 damage.</p>
     </description>
     <sheet>
-      <description>1 Rage. Ranged Force attack, 2d8 lightning damage. Extra Rage: +1d8 per Rage (max half Marauder level).</description>
+      <description>1 Rage. Use the Force to electrocute a target within range. On hit, deals 2d8 lightning damage. Per extra Rage spent, to a max of half your Marauder level (rounded up), the attack deals an additional 1d8 damage.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -548,10 +548,10 @@
   <element id="ID_CLASS_MARAUDER_FEATURE_INTIMIDATING_PRESENCE" name="Intimidating Presence" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
     <description>
-      <p>Casting Time: 1 Bonus Action; Range: 60 feet; Components: None; Duration: 2 rounds; Instill fear on a target by simply being there. The target must make a Wisdom saving throw. On a failed save, the target becomes frightened until the end of its turn. On a successful save, the target is not affected.</p>
+      <p>Instill fear on a target by simply being there. The target must make a Wisdom saving throw. On a failed save, the target becomes frightened until the end of its turn. On a successful save, the target is not affected.</p>
     </description>
     <sheet action="Bonus Action">
-      <description>Target within 60 feet Wis save or frightened until end of its turn.</description>
+      <description>Instill fear on a target by simply being there. The target must make a Wisdom saving throw. On a failed save, the target becomes frightened until the end of its turn. On a successful save, the target is not affected.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -646,7 +646,7 @@
   <element id="ID_MARAUDER_FORM_MAKASHI_ABILITY_RIPOSTE" name="Riposte" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
     <description>
-      <p>1 Rage, Reaction; When a creature misses you with a melee attack, you can make a melee weapon attack against that creature.</p>
+      <p>1 Rage. When a creature misses you with a melee attack, you can make a melee weapon attack against that creature.</p>
     </description>
     <sheet action="Reaction">
       <description>1 Rage. When a creature misses you with a melee attack, make a melee weapon attack against them.</description>
@@ -682,7 +682,7 @@
   <element id="ID_MARAUDER_FORM_SORESU_ABILITY_BLOCK" name="Block" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
     <description>
-      <p>1 Rage, Reaction; Block to negate a melee attack that would have hit you.</p>
+      <p>1 Rage. Block to negate a melee attack that would have hit you.</p>
     </description>
     <sheet action="Reaction">
       <description>1 Rage. Negate a melee attack that would have hit you.</description>
@@ -706,7 +706,7 @@
   <element id="ID_MARAUDER_FORM_SORESU_ABILITY_DEFLECT" name="Deflect" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
     <description>
-      <p>1 Rage, Reaction; Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</p>
+      <p>1 Rage. Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</p>
     </description>
     <sheet action="Reaction">
       <description>1 Rage. Deflect a ranged attack (not sonic/kinetic) or Force Lightning while wielding a lightweapon.</description>
@@ -742,10 +742,10 @@
   <element id="ID_MARAUDER_FORM_ATARU_ABILITY_FORCE_LEAP" name="Force Leap" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
     <description>
-      <p>1 Rage, Action; Jump up to twice your movement and make a melee weapon attack. This does not provoke Opportunity Attacks. Per extra Rage spent to a max of half your Marauder level (rounded up), you can jump an additional 5 feet.</p>
+      <p>1 Rage. Jump up to twice your movement and make a melee weapon attack. This does not provoke Opportunity Attacks. Per extra Rage spent to a max of half your Marauder level (rounded up), you can jump an additional 5 feet.</p>
     </description>
     <sheet action="Action">
-      <description>1 Rage. Jump up to 2x movement and attack. No OA. Extra Rage: +5 feet per Rage (max half level).</description>
+      <description>1 Rage. Jump up to twice your movement and make a melee weapon attack. This does not provoke Opportunity Attacks. Per extra Rage spent to a max of half your Marauder level (rounded up), you can jump an additional 5 feet.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -766,10 +766,10 @@
   <element id="ID_MARAUDER_FORM_ATARU_ABILITY_SLOW_FALL" name="Slow Fall" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
     <description>
-      <p>1 Rage, Reaction; Use the Force to slow yourself when falling, taking only half fall damage.</p>
+      <p>1 Rage. Use the Force to slow yourself when falling, taking only half fall damage.</p>
     </description>
     <sheet action="Reaction">
-      <description>1 Rage. Take half fall damage.</description>
+      <description>1 Rage. Use the Force to slow yourself when falling, taking only half fall damage.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -801,7 +801,7 @@
   <element id="ID_MARAUDER_FORM_SHIEN_ABILITY_REDIRECT" name="Redirect" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
     <description>
-      <p>1 Rage, Reaction; Must wield a lightweapon. Use the Force to send a ranged attack that would have hit you to a creature. This counts as a ranged Force attack with the range of the incoming attack. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</p>
+      <p>1 Rage. Must wield a lightweapon. Use the Force to send a ranged attack that would have hit you to a creature. This counts as a ranged Force attack with the range of the incoming attack. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</p>
     </description>
     <sheet action="Reaction">
       <description>1 Rage. Redirect a ranged attack (not sonic/kinetic) or Force Lightning at a creature while wielding a lightweapon.</description>
@@ -837,10 +837,10 @@
   <element id="ID_MARAUDER_FORM_DJEM_SO_ABILITY_PASSIONATE_STRIKE" name="Passionate Strike" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
     <description>
-      <p>2 Rage, Action; Make a melee attack and gain advantage on that attack.</p>
+      <p>2 Rage. Make a melee attack and gain advantage on that attack.</p>
     </description>
     <sheet action="Action">
-      <description>2 Rage. Make a melee attack with advantage.</description>
+      <description>2 Rage. Make a melee attack and gain advantage on that attack.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -861,7 +861,7 @@
   <element id="ID_MARAUDER_FORM_DJEM_SO_ABILITY_DEFLECT" name="Deflect" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
     <description>
-      <p>1 Rage, Reaction; Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</p>
+      <p>1 Rage. Must wield a lightweapon. Use the Force to deflect a ranged attack that would have hit you. This also works on Force Lightning abilities. This does not work against weapons that deal sonic or kinetic damage.</p>
     </description>
     <sheet action="Reaction">
       <description>1 Rage. Deflect a ranged attack (not sonic/kinetic) or Force Lightning while wielding a lightweapon.</description>
@@ -917,7 +917,7 @@
   <element id="ID_MARAUDER_FORM_JUYO_ABILITY_CYCLONE" name="Cyclone" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Marauder</supports>
     <description>
-      <p>2 Rage, Action; Make a flurry of attacks in one swift movement. You make two attacks that count as one attack against the same target. You roll both to hit. Per 2 extra Rage spent to a max of half your Marauder level (rounded up), you make an additional attack within that flurry.</p>
+      <p>2 Rage. Make a flurry of attacks in one swift movement. You make two attacks that count as one attack against the same target. You roll both to hit. Per 2 extra Rage spent to a max of half your Marauder level (rounded up), you make an additional attack within that flurry.</p>
     </description>
     <sheet action="Action">
       <description>2 Rage. Make two attacks as one against the same target. Extra Rage: +1 attack per 2 Rage (max half level).</description>
