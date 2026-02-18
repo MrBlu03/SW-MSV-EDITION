@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Proficiencies</name>
-    <update version="2.0.6">
+    <update version="2.0.7">
       <file name="proficiencies.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/proficiencies.xml" />
     </update>
   </info>
@@ -403,127 +403,8 @@
   </element>
 
   <!-- EXPERTISE ELEMENTS -->
-  <!-- These allow classes with Expertise features to select skills for doubled proficiency bonus -->
-
-  <element name="Skill Expertise (Acrobatics)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SKILL_ACROBATICS">
-    <supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
-    <requirements>ID_PROFICIENCY_SKILL_ACROBATICS</requirements>
-    <description>
-      <p>Your proficiency bonus is doubled for any Acrobatics check you make.</p>
-    </description>
-    <sheet display="false" />
-    <rules>
-      <stat name="acrobatics:proficiency" value="proficiency" bonus="double" />
-    </rules>
-  </element>
-
-  <element name="Skill Expertise (Athletics)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SKILL_ATHLETICS">
-    <supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
-    <requirements>ID_PROFICIENCY_SKILL_ATHLETICS</requirements>
-    <description>
-      <p>Your proficiency bonus is doubled for any Athletics check you make.</p>
-    </description>
-    <sheet display="false" />
-    <rules>
-      <stat name="athletics:proficiency" value="proficiency" bonus="double" />
-    </rules>
-  </element>
-
-  <element name="Skill Expertise (Deception)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SKILL_DECEPTION">
-    <supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
-    <requirements>ID_PROFICIENCY_SKILL_DECEPTION</requirements>
-    <description>
-      <p>Your proficiency bonus is doubled for any Deception check you make.</p>
-    </description>
-    <sheet display="false" />
-    <rules>
-      <stat name="deception:proficiency" value="proficiency" bonus="double" />
-    </rules>
-  </element>
-
-  <element name="Skill Expertise (Insight)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SKILL_INSIGHT">
-    <supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
-    <requirements>ID_PROFICIENCY_SKILL_INSIGHT</requirements>
-    <description>
-      <p>Your proficiency bonus is doubled for any Insight check you make.</p>
-    </description>
-    <sheet display="false" />
-    <rules>
-      <stat name="insight:proficiency" value="proficiency" bonus="double" />
-    </rules>
-  </element>
-
-  <element name="Skill Expertise (Intimidation)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SKILL_INTIMIDATION">
-    <supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
-    <requirements>ID_PROFICIENCY_SKILL_INTIMIDATION</requirements>
-    <description>
-      <p>Your proficiency bonus is doubled for any Intimidation check you make.</p>
-    </description>
-    <sheet display="false" />
-    <rules>
-      <stat name="intimidation:proficiency" value="proficiency" bonus="double" />
-    </rules>
-  </element>
-
-  <element name="Skill Expertise (Investigation)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SKILL_INVESTIGATION">
-    <supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
-    <requirements>ID_PROFICIENCY_SKILL_INVESTIGATION</requirements>
-    <description>
-      <p>Your proficiency bonus is doubled for any Investigation check you make.</p>
-    </description>
-    <sheet display="false" />
-    <rules>
-      <stat name="investigation:proficiency" value="proficiency" bonus="double" />
-    </rules>
-  </element>
-
-  <element name="Skill Expertise (Perception)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SKILL_PERCEPTION">
-    <supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
-    <requirements>ID_PROFICIENCY_SKILL_PERCEPTION</requirements>
-    <description>
-      <p>Your proficiency bonus is doubled for any Perception check you make.</p>
-    </description>
-    <sheet display="false" />
-    <rules>
-      <stat name="perception:proficiency" value="proficiency" bonus="double" />
-    </rules>
-  </element>
-
-  <element name="Skill Expertise (Persuasion)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SKILL_PERSUASION">
-    <supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
-    <requirements>ID_PROFICIENCY_SKILL_PERSUASION</requirements>
-    <description>
-      <p>Your proficiency bonus is doubled for any Persuasion check you make.</p>
-    </description>
-    <sheet display="false" />
-    <rules>
-      <stat name="persuasion:proficiency" value="proficiency" bonus="double" />
-    </rules>
-  </element>
-
-  <element name="Skill Expertise (Sleight of Hand)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SKILL_SLEIGHTOFHAND">
-    <supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
-    <requirements>ID_PROFICIENCY_SKILL_SLEIGHTOFHAND</requirements>
-    <description>
-      <p>Your proficiency bonus is doubled for any Sleight of Hand check you make.</p>
-    </description>
-    <sheet display="false" />
-    <rules>
-      <stat name="sleight of hand:proficiency" value="proficiency" bonus="double" />
-    </rules>
-  </element>
-
-  <element name="Skill Expertise (Stealth)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_SKILL_STEALTH">
-    <supports>Expertise, Skill, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
-    <requirements>ID_PROFICIENCY_SKILL_STEALTH</requirements>
-    <description>
-      <p>Your proficiency bonus is doubled for any Stealth check you make.</p>
-    </description>
-    <sheet display="false" />
-    <rules>
-      <stat name="stealth:proficiency" value="proficiency" bonus="double" />
-    </rules>
-  </element>
+  <!-- Skill expertise uses PHB elements from class-rogue.xml -->
+  <!-- Only SW-MSV specific tool expertise defined here -->
 
   <element name="Tool Expertise (Slicing Kit)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_TOOL_SLICING_KIT">
     <supports>Expertise, Tool, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
