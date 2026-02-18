@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Musical Instruments</name>
-    <update version="2.0.5">
+    <update version="2.0.6">
       <file name="items-instruments.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-instruments.xml" />
     </update>
   </info>

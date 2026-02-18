@@ -3,7 +3,7 @@
   <info>
     <name>Inquisitor Class</name>
     <description>Inquisitor Class for SW-MSV-Edition.</description>
-    <update version="2.0.5">
+    <update version="2.0.6">
       <file name="class-inquisitor.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-inquisitor.xml" />
     </update>
   </info>
@@ -109,7 +109,6 @@
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SUBCLASS" level="3" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_ABILITY_SCORE_IMPROVEMENT" level="4" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_UNCANNY_DODGE" level="5" />
-      <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_EXPERTISE" level="6" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_EVASION" level="7" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_ABILITY_SCORE_IMPROVEMENT" level="8" />
       <grant type="Class Feature" id="ID_CLASS_INQUISITOR_FEATURE_SUBCLASS_9" level="9" />
