@@ -3,7 +3,7 @@
   <info>
     <name>Warrior Class</name>
     <description>Warrior Class for SW-MSV-Edition.</description>
-    <update version="2.0.2">
+    <update version="2.0.3">
       <file name="class-warrior.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-warrior.xml" />
     </update>
   </info>

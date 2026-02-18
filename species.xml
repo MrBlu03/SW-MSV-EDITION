@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Species</name>
-    <update version="2.0.2">
+    <update version="2.0.3">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
@@ -2236,56 +2236,6 @@
     <sheet action="Bonus Action" usage="1/Short Rest">
       <description>Quickly repair some damage on your body. Regain 1d10 + {{level}} hit points.</description>
     </sheet>
-  </element>
-
-  <!-- CONDITIONS -->
-  <element name="Ion Damage Vulnerability" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION">
-    <description><p>You are vulnerable to ion damage.</p></description>
-    <sheet><description>Vulnerable to ion damage.</description></sheet>
-  </element>
-  <element name="Sonic Damage Vulnerability" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_SONIC">
-    <description><p>You are vulnerable to sonic damage.</p></description>
-    <sheet><description>Vulnerable to sonic damage.</description></sheet>
-  </element>
-  <element name="Kinetic Damage Vulnerability" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_KINETIC">
-    <description><p>You are vulnerable to kinetic damage.</p></description>
-    <sheet><description>Vulnerable to kinetic damage.</description></sheet>
-  </element>
-  <element name="Energy Damage Vulnerability" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ENERGY">
-    <description><p>You are vulnerable to energy damage.</p></description>
-    <sheet><description>Vulnerable to energy damage.</description></sheet>
-  </element>
-  <element name="Kinetic Damage Resistance" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_KINETIC">
-    <description><p>You are resistant to kinetic damage.</p></description>
-    <sheet><description>Resistant to kinetic damage.</description></sheet>
-  </element>
-  <element name="Energy Damage Resistance" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_ENERGY">
-    <description><p>You are resistant to energy damage.</p></description>
-    <sheet><description>Resistant to energy damage.</description></sheet>
-  </element>
-  <element name="Ion Damage Resistance" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_ION">
-    <description><p>You are resistant to ion damage.</p></description>
-    <sheet><description>Resistant to ion damage.</description></sheet>
-  </element>
-  <element name="Sonic Damage Resistance" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_SONIC">
-    <description><p>You are resistant to sonic damage.</p></description>
-    <sheet><description>Resistant to sonic damage.</description></sheet>
-  </element>
-  <element name="Ion Damage Immunity" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_ION">
-    <description><p>You are immune to ion damage.</p></description>
-    <sheet><description>Immune to ion damage.</description></sheet>
-  </element>
-  <element name="Sonic Damage Immunity" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_SONIC">
-    <description><p>You are immune to sonic damage.</p></description>
-    <sheet><description>Immune to sonic damage.</description></sheet>
-  </element>
-  <element name="Kinetic Damage Immunity" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_KINETIC">
-    <description><p>You are immune to kinetic damage.</p></description>
-    <sheet><description>Immune to kinetic damage.</description></sheet>
-  </element>
-  <element name="Energy Damage Immunity" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_ENERGY">
-    <description><p>You are immune to energy damage.</p></description>
-    <sheet><description>Immune to energy damage.</description></sheet>
   </element>
 
   <!-- CYBORG SUBSPECIES -->

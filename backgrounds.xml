@@ -3,7 +3,7 @@
   <info>
     <name>Backgrounds</name>
     <description>Backgrounds for SW-MSV-Edition.</description>
-    <update version="2.0.2">
+    <update version="2.0.3">
       <file name="backgrounds.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/backgrounds.xml" />
     </update>
   </info>
@@ -426,7 +426,7 @@
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Mandalorian)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_HISTORY" />
       <select type="Background Feature" name="Mandalorian Clan" supports="Mandalorian Clan" number="1" />
-      <grant type="Language" id="ID_MSV_LANGUAGE_MANDOA" />
+      <grant type="Language" id="ID_LANGUAGE_MANDOA_LANGUAGE" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
