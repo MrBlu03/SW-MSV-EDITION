@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Weapons</name>
-    <update version="2.0.1">
+    <update version="2.0.2">
       <file name="weapons.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/weapons.xml" />
     </update>
   </info>
@@ -412,39 +412,6 @@
     </setters>
     <rules>
       <grant type="Tag" name="Disguised" />
-      <grant type="Tag" name="Can't be Disarmed" />
-      <grant type="Action" id="ID_ACTION_SHOOT" />
-      <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
-    </rules>
-  </element>
-  <element name="wrist launcher" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER">
-    <compendium display="false" />
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
-    <description>
-      <p>
-        <strong>Wrist Launcher</strong>
-      </p>
-      <p>
-        <em>Simple Blaster</em>
-      </p>
-      <p>
-        <em>one-handed</em>
-      </p>
-      <p>A wrist-mounted launcher that can fire various projectiles. (can't be disarmed, can still use hand but when holding something can't use weapon). can use: darts, rockets, wrist launcher attachments</p>
-      <p>
-        <strong>Actions:</strong>
-      </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Quick Shot:</strong> Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
-    </description>
-    <setters>
-      <set name="category">Weapons</set>
-      <set name="cost" currency="gp">0</set>
-      <set name="weight" lb="1">1 lb.</set>
-      <set name="slot">onehand</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER</set>
-    </setters>
-    <rules>
       <grant type="Tag" name="Can't be Disarmed" />
       <grant type="Action" id="ID_ACTION_SHOOT" />
       <grant type="Action" id="ID_ACTION_QUICK_SHOT" />

@@ -3,7 +3,7 @@
   <info>
     <name>Inquisitor Class</name>
     <description>Inquisitor Class for SW-MSV-Edition.</description>
-    <update version="2.0.1">
+    <update version="2.0.2">
       <file name="class-inquisitor.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-inquisitor.xml" />
     </update>
   </info>
@@ -179,24 +179,23 @@
   <element id="ID_CLASS_INQUISITOR_FEATURE_ASSASSINATE" name="Assassinate" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>Once per turn, you can deal an extra 1d6 damage (the type of damage is determined by the weapon you use) to one creature you hit with an attack if you have advantage on the attack roll. You must use a finesse or a ranged weapon.</p>
+      <p>Once per turn, you can deal extra damage ({{assassinate:die}}) to one creature you hit with an attack if you have advantage on the attack roll. You must use a finesse or a ranged weapon.</p>
       <p class="indent">You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</p>
-      <p class="indent">The amount of the extra damage increases as you gain levels in this class, as shown in the Assassinate column of the Inquisitor table.</p>
     </description>
     <sheet>
-      <description>Once per turn, deal extra {{assassinate:dice}} damage when you hit with advantage using a finesse or ranged weapon. No advantage needed if enemy of target is within 5 feet and not incapacitated.</description>
+      <description>Once per turn, deal extra {{assassinate:die}} damage if you have advantage on attack roll. Finesse or ranged weapon required. You don't need advantage if another enemy is within 5 feet and not incapacitated, and you don't have disadvantage.</description>
     </sheet>
     <rules>
-      <stat name="assassinate:dice" value="1d6" level="1" />
-      <stat name="assassinate:dice" value="2d6" level="3" />
-      <stat name="assassinate:dice" value="3d6" level="5" />
-      <stat name="assassinate:dice" value="4d6" level="7" />
-      <stat name="assassinate:dice" value="5d6" level="9" />
-      <stat name="assassinate:dice" value="6d6" level="11" />
-      <stat name="assassinate:dice" value="7d6" level="13" />
-      <stat name="assassinate:dice" value="8d6" level="15" />
-      <stat name="assassinate:dice" value="9d6" level="17" />
-      <stat name="assassinate:dice" value="10d6" level="19" />
+      <stat name="assassinate:die" value="1d6" level="1" />
+      <stat name="assassinate:die" value="2d6" level="3" />
+      <stat name="assassinate:die" value="3d6" level="5" />
+      <stat name="assassinate:die" value="4d6" level="7" />
+      <stat name="assassinate:die" value="5d6" level="9" />
+      <stat name="assassinate:die" value="6d6" level="11" />
+      <stat name="assassinate:die" value="7d6" level="13" />
+      <stat name="assassinate:die" value="8d6" level="15" />
+      <stat name="assassinate:die" value="9d6" level="17" />
+      <stat name="assassinate:die" value="10d6" level="19" />
     </rules>
   </element>
 
@@ -204,10 +203,10 @@
   <element id="ID_CLASS_INQUISITOR_FEATURE_MINOR_TELEKINESIS" name="Minor Telekinesis" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Inquisitor</supports>
     <description>
-      <p>You use the Force to manipulate a small or medium object, or a small creature, that you can see within range. You make an ability check using your Force ability, contested by the target's Strength check. On a success, you may suspend and/or move up to 30 feet or throw the target. If you choose to suspend the target, it remains suspended for the duration. If you throw the target, make a ranged Force attack with a range of 30/60 feet. On a hit, the target you throw at takes kinetic damage based on what is thrown: Small object: 2d4 kinetic damage, Medium object: 2d6 kinetic damage, Small creature: 1d4 kinetic damage. If a creature is thrown, the thrown small creature takes 1d8 + your Force ability modifier kinetic damage.</p>
+      <p>Cantrip, Casting Time: 1 Action; Range: 45 feet; Components: Somatic; Duration: Concentration, Up to 1 round; You use the Force to manipulate a small or medium object, or a small creature, that you can see within range. You make an ability check using your Force ability, contested by the target's Strength check. On a success, you may suspend and/or move up to 30 feet or throw the target. If you choose to suspend the target, it remains suspended for the duration. If you throw the target, make a ranged Force attack with a range of 30/60 feet. On a hit, the target you throw at takes kinetic damage based on what is thrown: Small object: 2d4 kinetic damage, Medium object: 2d6 kinetic damage, Small creature: 1d4 kinetic damage. If a creature is thrown, the thrown small creature takes 1d8 + your Force ability modifier kinetic damage.</p>
     </description>
     <sheet>
-      <description>You use the Force to manipulate a small or medium object, or a small creature, that you can see within range. You make an ability check using your Force ability, contested by the target's Strength check. On a success, you may suspend and/or move up to 30 feet or throw the target. If you choose to suspend the target, it remains suspended for the duration. If you throw the target, make a ranged Force attack with a range of 30/60 feet. On a hit, the target you throw at takes kinetic damage based on what is thrown: Small object: 2d4 kinetic damage, Medium object: 2d6 kinetic damage, Small creature: 1d4 kinetic damage. If a creature is thrown, the thrown small creature takes 1d8 + your Force ability modifier kinetic damage.</description>
+      <description>Cantrip, Casting Time: 1 Action; Range: 45 feet; Components: Somatic; Duration: Concentration, Up to 1 round; You use the Force to manipulate a small or medium object, or a small creature, that you can see within range. You make an ability check using your Force ability, contested by the target's Strength check. On a success, you may suspend and/or move up to 30 feet or throw the target. If you choose to suspend the target, it remains suspended for the duration. If you throw the target, make a ranged Force attack with a range of 30/60 feet. On a hit, the target you throw at takes kinetic damage based on what is thrown: Small object: 2d4 kinetic damage, Medium object: 2d6 kinetic damage, Small creature: 1d4 kinetic damage. If a creature is thrown, the thrown small creature takes 1d8 + your Force ability modifier kinetic damage.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -229,13 +228,12 @@
   <element id="ID_CLASS_INQUISITOR_FEATURE_EXPERTISE" name="Expertise" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>At 1st level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
-      <p class="indent">At 6th level, you can choose two more of your proficiencies to gain this benefit.</p>
+      <p>Gain expertise in a skill you're proficient with.</p>
     </description>
     <sheet display="false" />
     <rules>
-      <select type="Expertise" name="Expertise (Inquisitor)" level="1" number="2" supports="ID_EXPERTISE_ACROBATICS|ID_EXPERTISE_ATHLETICS|ID_EXPERTISE_DECEPTION|ID_EXPERTISE_INSIGHT|ID_EXPERTISE_INTIMIDATION|ID_EXPERTISE_INVESTIGATION|ID_EXPERTISE_PERCEPTION|ID_EXPERTISE_PERSUASION|ID_EXPERTISE_SLEIGHTOFHAND|ID_EXPERTISE_STEALTH" />
-      <select type="Expertise" name="Expertise (Inquisitor)" level="6" number="2" supports="ID_EXPERTISE_ACROBATICS|ID_EXPERTISE_ATHLETICS|ID_EXPERTISE_DECEPTION|ID_EXPERTISE_INSIGHT|ID_EXPERTISE_INTIMIDATION|ID_EXPERTISE_INVESTIGATION|ID_EXPERTISE_PERCEPTION|ID_EXPERTISE_PERSUASION|ID_EXPERTISE_SLEIGHTOFHAND|ID_EXPERTISE_STEALTH" />
+      <select type="Class Feature" name="Expertise (Inquisitor)" level="1" number="2" supports="Expertise" />
+      <select type="Class Feature" name="Expertise (Inquisitor)" level="6" number="2" supports="Expertise" />
     </rules>
   </element>
 
@@ -282,10 +280,10 @@
   <element id="ID_CLASS_INQUISITOR_FEATURE_UNCANNY_DODGE" name="Uncanny Dodge" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</p>
+      <p>Reaction; When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</p>
     </description>
     <sheet action="Reaction">
-      <description>When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</description>
+      <description>When an attacker that you can see hits you with an attack, halve the attack's damage against you.</description>
     </sheet>
   </element>
 
@@ -293,10 +291,10 @@
   <element id="ID_CLASS_INQUISITOR_FEATURE_EVASION" name="Evasion" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>You can nimbly dodge out of the way of certain area effects. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+      <p>When making a Dexterity saving throw: On a failed save take half damage. On a successgul save take no damage (can't use when incapacitated).</p>
     </description>
     <sheet>
-      <description>When you make a Dexterity saving throw against an effect that deals half damage on a success, you take no damage on a success and half damage on a failure.</description>
+      <description>When making a Dexterity saving throw: On a failed save take half damage. On a successful save take no damage (can't use when incapacitated).</description>
     </sheet>
   </element>
 
@@ -329,10 +327,10 @@
   <element id="ID_CLASS_INQUISITOR_FEATURE_RELIABLE_TALENT" name="Reliable Talent" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.</p>
+      <p>When you make an ability check with a skill you're proficient with, the lowest you can throw is 10.</p>
     </description>
     <sheet>
-      <description>Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.</description>
+      <description>When you make an ability check with a skill you're proficient with, the lowest you can throw is 10.</description>
     </sheet>
   </element>
 
@@ -340,7 +338,7 @@
   <element id="ID_CLASS_INQUISITOR_FEATURE_SLIPPERY_MIND" name="Slippery Mind" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws.</p>
+      <p>You gain proficiency in Wisdom saving throws.</p>
     </description>
     <sheet>
       <description>You gain proficiency in Wisdom saving throws.</description>
@@ -354,10 +352,10 @@
   <element id="ID_CLASS_INQUISITOR_FEATURE_ELUSIVE" name="Elusive" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't incapacitated.</p>
+      <p>No attack roll can have advantage on you unless you're incapacitated.</p>
     </description>
     <sheet>
-      <description>No attack roll has advantage against you while you aren't incapacitated.</description>
+      <description>No attack roll can have advantage on you unless you're incapacitated.</description>
     </sheet>
   </element>
 
@@ -365,10 +363,10 @@
   <element id="ID_CLASS_INQUISITOR_FEATURE_UNSTOPPABLE" name="Unstoppable" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>At 20th level, you have become the ultimate hunter. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can turn the roll into a 20. Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+      <p>If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, turn the roll into a 20 once per short rest.</p>
     </description>
     <sheet usage="1/Short Rest">
-      <description>If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can turn the roll into a 20.</description>
+      <description>If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, turn the roll into a 20.</description>
     </sheet>
   </element>
 
@@ -403,10 +401,10 @@
   <element id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_BLIND" name="Force Blind" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Inquisitor</supports>
     <description>
-      <p>Choose a target you can see within range. That creature must make a Constitution saving throw. On a failed save, the creature is blinded. On a successful save, the creature isn't blinded.</p>
+      <p>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: 10 turns; Choose a target you can see within range. That creature must make a Constitution saving throw. On a failed save, the creature is blinded. On a successful save, the creature isn't blinded.</p>
     </description>
     <sheet>
-      <description>Target makes Con save or is blinded for 10 turns.</description>
+      <description>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: 10 turns; Choose a target you can see within range. That creature must make a Constitution saving throw. On a failed save, the creature is blinded. On a successful save, the creature isn't blinded.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -427,10 +425,10 @@
   <element id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_CLOAK" name="Force Cloak" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Inquisitor</supports>
     <description>
-      <p>When hiding successfully, you can turn invisible until the end of your next turn.</p>
+      <p>Cantrip, Casting Time: 1 Bonus Action; Range: Self; Components: None; Duration: Until the end of your next turn; When hiding successfully, you can turn invisible.</p>
     </description>
     <sheet>
-      <description>When hiding successfully, turn invisible until end of next turn.</description>
+      <description>Cantrip, Casting Time: 1 Bonus Action; Range: Self; Components: None; Duration: Until the end of your next turn; When hiding successfully, you can turn invisible.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -464,10 +462,10 @@
   <element id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_FADE" name="Force Fade" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Inquisitor</supports>
     <description>
-      <p>When killing a creature, turn invisible until the end of your next turn.</p>
+      <p>Cantrip, Casting Time: 1 Reaction; Range: Self; Components: None; Duration: Until the end of your next turn; When killing a creature, turn invisible.</p>
     </description>
     <sheet>
-      <description>When killing a creature, turn invisible until end of next turn.</description>
+      <description>Cantrip, Casting Time: 1 Reaction; Range: Self; Components: None; Duration: Until the end of your next turn; When killing a creature, turn invisible.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -501,10 +499,10 @@
   <element id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_DARKNESS" name="Force Darkness" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Inquisitor</supports>
     <description>
-      <p>Choose a point within range and create a circle with a radius of 20 feet. The area becomes pitch black and is heavily obscured to all who stand in it except yourself.</p>
+      <p>Cantrip, Casting Time: Action; Range: 60 feet; Components: Somatic; Duration: Concentration, Up to 4 rounds; Choose a point within range and create a circle with a radius of 20 feet. The area becomes pitch black and is heavily obscured to all who stand in it except yourself.</p>
     </description>
     <sheet>
-      <description>20-foot radius heavily obscured darkness for up to 4 rounds (concentration).</description>
+      <description>Cantrip, Casting Time: Action; Range: 60 feet; Components: Somatic; Duration: Concentration, Up to 4 rounds; Choose a point within range and create a circle with a radius of 20 feet. The area becomes pitch black and is heavily obscured to all who stand in it except yourself.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -538,10 +536,10 @@
   <element id="ID_SUBCLASS_SHADOW_ABILITY_FORCE_PHANTOM" name="Force Phantom" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Inquisitor</supports>
     <description>
-      <p>This ability allows you to walk through walls. You may pass through up to 5 feet of solid material and must end your movement outside the wall.</p>
+      <p>Cantrip, Casting Time: 1 Action; Range: Self; Components: None; Duration: Instantaneous; This ability allows you to walk through walls. You may pass through up to 5 feet of solid material and must end your movement outside the wall</p>
     </description>
     <sheet>
-      <description>Pass through up to 5 feet of solid material.</description>
+      <description>Cantrip, Casting Time: 1 Action; Range: Self; Components: None; Duration: Instantaneous; This ability allows you to walk through walls. You may pass through up to 5 feet of solid material and must end your movement outside the wall</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -590,10 +588,10 @@
   <element id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_DISGUISE" name="Force Disguise" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Inquisitor</supports>
     <description>
-      <p>Use the Force to disguise yourself by altering people's perception of you.</p>
+      <p>Cantrip, Casting Time: 1 Action; Range: Self; Components: None; Duration: Concentration, Up to 10 minutes; Use the Force to disguise yourself by altering people's perception of you.</p>
     </description>
     <sheet>
-      <description>Disguise yourself by altering perception (concentration, up to 10 minutes).</description>
+      <description>Cantrip, Casting Time: 1 Action; Range: Self; Components: None; Duration: Concentration, Up to 10 minutes; Use the Force to disguise yourself by altering people's perception of you.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -614,10 +612,10 @@
   <element id="ID_SUBCLASS_TRICKSTER_ABILITY_PHANTOM_STRIDE" name="Phantom Stride" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Inquisitor</supports>
     <description>
-      <p>You can teleport to an enemy up to double your movement away. This does not break stealth unless you teleport into line of sight.</p>
+      <p>Cantrip, Casting Time: 1 Bonus Action; Range: Up to double your movement; Components: None; Duration: Instantaneous; You can teleport to an enemy up to double your movement away. This does not break stealth unless you teleport into line of sight.</p>
     </description>
     <sheet>
-      <description>Teleport up to double your movement. Doesn't break stealth unless entering line of sight.</description>
+      <description>Cantrip, Casting Time: 1 Bonus Action; Range: Up to double your movement; Components: None; Duration: Instantaneous; You can teleport to an enemy up to double your movement away. This does not break stealth unless you teleport into line of sight.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -651,10 +649,10 @@
   <element id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_ILLUSION" name="Force Illusion" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Inquisitor</supports>
     <description>
-      <p>Use the Force to make an illusion within range. Targets who can see the illusion must make a Wisdom saving throw. On a failed save, the target becomes distracted. Creatures attacking a distracted target have advantage, and distracted targets have disadvantage on saving throws. As soon as they're hit, they are no longer distracted. On a successful save, the creature isn't distracted.</p>
+      <p>Cantrip, Casting Time: 1 Bonus Action; Range: 60 feet; Components: Somatic; Duration: 2 rounds; Use the Force to make an illusion within range. Targets who can see the illusion must make a Wisdom saving throw. On a failed save, the target becomes distracted. Creatures attacking a distracted target have advantage, and distracted targets have disadvantage on saving throws. As soon as they're hit, they are no longer distracted. On a successful save, the creature isn't distracted.</p>
     </description>
     <sheet>
-      <description>Create illusion. Wis save or distracted (attackers have adv, dis on saves) until hit or 2 rounds.</description>
+      <description>Cantrip, Casting Time: 1 Bonus Action; Range: 60 feet; Components: Somatic; Duration: 2 rounds; Use the Force to make an illusion within range. Targets who can see the illusion must make a Wisdom saving throw. On a failed save, the target becomes distracted. Creatures attacking a distracted target have advantage, and distracted targets have disadvantage on saving throws. As soon as they're hit, they are no longer distracted. On a successful save, the creature isn't distracted.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -688,10 +686,10 @@
   <element id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_NIGHTMARE" name="Force Nightmare" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Inquisitor</supports>
     <description>
-      <p>Use the Force to make a creature's worst nightmare seem real. All creatures within range must make a Wisdom saving throw. On a failed save, the creature becomes frightened. On a successful save, the creature doesn't become frightened.</p>
+      <p>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: None; Duration: 1 round; Use the Force to make a creature's worst nightmare seem real. All creatures within range must make a Wisdom saving throw. On a failed save, the creature becomes frightened. On a successful save, the creature doesn't become frightened.</p>
     </description>
     <sheet>
-      <description>All within 30 feet Wis save or frightened for 1 round.</description>
+      <description>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: None; Duration: 1 round; Use the Force to make a creature's worst nightmare seem real. All creatures within range must make a Wisdom saving throw. On a failed save, the creature becomes frightened. On a successful save, the creature doesn't become frightened.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -725,10 +723,10 @@
   <element id="ID_SUBCLASS_TRICKSTER_ABILITY_FORCE_SPIRIT" name="Force Spirit" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Inquisitor</supports>
     <description>
-      <p>Make a dark spirit clone of yourself that has 1 Hit Point within range. This dark spirit must roll initiative, has 3/4th of your AC rounded up, and has all your abilities except your subclass abilities. You are limited to 1 spirit at a time.</p>
+      <p>Cantrip, Casting Time: 1 Action; Range: 15 feet; Components: None; Duration: Instantaneous; Make a dark spirit clone of yourself that has 1 Hit Point within range. This dark spirit must roll initiative, has 3/4th of your AC rounded up, and has all your abilities except your subclass abilities. You are limited to 1 spirit at a time.</p>
     </description>
     <sheet>
-      <description>Create spirit clone (1 HP, 3/4 AC, your abilities) within 15 feet. Limit 1.</description>
+      <description>Cantrip, Casting Time: 1 Action; Range: 15 feet; Components: None; Duration: Instantaneous; Make a dark spirit clone of yourself that has 1 Hit Point within range. This dark spirit must roll initiative, has 3/4th of your AC rounded up, and has all your abilities except your subclass abilities. You are limited to 1 spirit at a time.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -777,10 +775,10 @@
   <element id="ID_SUBCLASS_MANIPULATOR_ABILITY_MIND_TRAP" name="Mind Trap" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Inquisitor</supports>
     <description>
-      <p>Use the Force to trap someone in their own mind. The creature must make an Intelligence saving throw. On a failed save, they become trapped. Stunning them for the duration or until they get hit. On a successful save, they don't get trapped.</p>
+      <p>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: Until the end of their next turn; Use the Force to trap someone in their own mind. The creature must make an Intelligence saving throw. On a failed save, they become trapped. Stunning them for the duration or until they get hit. On a successful save, they don't get trapped.</p>
     </description>
     <sheet>
-      <description>Target Int save or stunned until end of their next turn or until hit.</description>
+      <description>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: Until the end of their next turn; Use the Force to trap someone in their own mind. The creature must make an Intelligence saving throw. On a failed save, they become trapped. Stunning them for the duration or until they get hit. On a successful save, they don't get trapped.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -801,10 +799,10 @@
   <element id="ID_SUBCLASS_MANIPULATOR_ABILITY_FORCE_STASIS" name="Force Stasis" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Inquisitor</supports>
     <description>
-      <p>Use the Force to freeze someone in place. You make an ability check using your Force ability, contested by the target's Strength check. On a success, the target is immobilized.</p>
+      <p>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: Concentration, Up to 1 round; Use the Force to freeze someone in place. You make an ability check using your Force ability, contested by the target's Strength check. On a success, the target is immobilized.</p>
     </description>
     <sheet>
-      <description>Force check vs target's Str check. Success = immobilized for up to 1 round (concentration).</description>
+      <description>Cantrip, Casting Time: 1 Action; Range: 30 feet; Components: Somatic; Duration: Concentration, Up to 1 round; Use the Force to freeze someone in place. You make an ability check using your Force ability, contested by the target's Strength check. On a success, the target is immobilized.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -838,10 +836,10 @@
   <element id="ID_SUBCLASS_MANIPULATOR_ABILITY_CONFUSE" name="Confuse" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Inquisitor</supports>
     <description>
-      <p>Use the Force to confuse a creature. The creature must make a Wisdom saving throw. On a failed save, they must attack the nearest creature on their next turn. On a successful save, the creature is unaffected.</p>
+      <p>Cantrip, Casting Time: 1 Action; Range: 60 feet; Components: None; Duration: Until the end of their next turn; Use the Force to confuse a creature. The creature must make an Wisdom saving throw. On a failed save, they must attack the nearest creature on their next turn. On a successful save, the creature is unaffected.</p>
     </description>
     <sheet>
-      <description>Target Wis save or must attack nearest creature on their next turn.</description>
+      <description>Cantrip, Casting Time: 1 Action; Range: 60 feet; Components: None; Duration: Until the end of their next turn; Use the Force to confuse a creature. The creature must make an Wisdom saving throw. On a failed save, they must attack the nearest creature on their next turn. On a successful save, the creature is unaffected.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -875,10 +873,10 @@
   <element id="ID_SUBCLASS_MANIPULATOR_ABILITY_MIND_PROBE" name="Mind Probe" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Inquisitor</supports>
     <description>
-      <p>Use the Force to forcibly read a creature's mind, accessing both current thoughts and hidden memories. The target must be restrained in order to use this.</p>
+      <p>Cantrip, Casting Time: 1 Action; Range: Touch; Components: None; Duration: 1 minute; Use the Force to forcibly read a creature's mind, accessing both current thoughts and hidden memories. The target must be restrained in order to use this.</p>
     </description>
     <sheet>
-      <description>Read restrained creature's mind for up to 1 minute.</description>
+      <description>Cantrip, Casting Time: 1 Action; Range: Touch; Components: None; Duration: 1 minute; Use the Force to forcibly read a creature's mind, accessing both current thoughts and hidden memories. The target must be restrained in order to use this.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>
@@ -912,10 +910,10 @@
   <element id="ID_SUBCLASS_MANIPULATOR_ABILITY_FORCE_LINK" name="Force Link" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Inquisitor</supports>
     <description>
-      <p>Use the Force to link your life force to a hostile creature. Whenever you take damage, the linked creature must make an Intelligence saving throw. On a failed save, the creature takes half of the damage as kinetic damage you would have taken and you take half of the damage as the damage type of the original attack. On a successful save, the creature takes no damage and you take full damage as the damage type of the original attack. You can only link to one creature.</p>
+      <p>Cantrip, Casting Time: 1 Action; Range: 60 feet; Components: None; Duration: 3 rounds; Use the Force to link your life force to a hostile creature. Whenever you take damage, the linked creature must make an Intelligence saving throw. On a failed save, the creature takes half of the damage as kinetic damage you would have taken and you take half of the damage as the damage type of the original attack. On a successful save, the creature takes no damage and you take full damage as the damage type of the original attack. You can only link to one creature.</p>
     </description>
     <sheet>
-      <description>Link to hostile creature for 3 rounds. When you take damage, they Int save: fail = they take half (kinetic), you take half; success = no damage to them, you take full.</description>
+      <description>Cantrip, Casting Time: 1 Action; Range: 60 feet; Components: None; Duration: 3 rounds; Use the Force to link your life force to a hostile creature. Whenever you take damage, the linked creature must make an Intelligence saving throw. On a failed save, the creature takes half of the damage as kinetic damage you would have taken and you take half of the damage as the damage type of the original attack. On a successful save, the creature takes no damage and you take full damage as the damage type of the original attack. You can only link to one creature.</description>
     </sheet>
     <setters>
       <set name="keywords">force</set>

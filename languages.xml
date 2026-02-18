@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Languages</name>
-    <update version="2.0.1">
+    <update version="2.0.2">
       <file name="languages.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/languages.xml" />
     </update>
   </info>

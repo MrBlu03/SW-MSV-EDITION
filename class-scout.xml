@@ -3,7 +3,7 @@
   <info>
     <name>Scout Class</name>
     <description>Scout Class for SW-MSV-Edition.</description>
-    <update version="2.0.1">
+    <update version="2.0.2">
       <file name="class-scout.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-scout.xml" />
     </update>
   </info>
@@ -136,24 +136,25 @@
   <element id="ID_CLASS_SCOUT_FEATURE_SNEAK_ATTACK" name="Sneak Attack" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.</p>
-      <p class="indent">You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</p>
-      <p class="indent">The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Scout table.</p>
+      <p>Once per turn, you can deal extra damage ({{sneak-attack:count}}d{{sneak-attack:die}}) to one creature you hit with an attack if you have advantage on the attack roll. You must use a Finesse or ranged weapon.</p>
+      <p class="indent">You don't need advantage on the attack roll if another enemy of the target is within 5 feet, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</p>
     </description>
     <sheet>
-      <description>Once per turn, deal extra {{sneak-attack:dice}} damage when you hit with advantage using a finesse or ranged weapon. No advantage needed if enemy of target is within 5 feet and not incapacitated.</description>
+      <description>Once per turn, you can deal an extra {{sneak-attack:count}}d{{sneak-attack:die}} damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
+      You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</description>
     </sheet>
     <rules>
-      <stat name="sneak-attack:dice" value="1d6" level="1" />
-      <stat name="sneak-attack:dice" value="2d6" level="3" />
-      <stat name="sneak-attack:dice" value="3d6" level="5" />
-      <stat name="sneak-attack:dice" value="4d6" level="7" />
-      <stat name="sneak-attack:dice" value="5d6" level="9" />
-      <stat name="sneak-attack:dice" value="6d6" level="11" />
-      <stat name="sneak-attack:dice" value="7d6" level="13" />
-      <stat name="sneak-attack:dice" value="8d6" level="15" />
-      <stat name="sneak-attack:dice" value="9d6" level="17" />
-      <stat name="sneak-attack:dice" value="10d6" level="19" />
+      <stat name="sneak-attack:count" value="1" level="1" />
+      <stat name="sneak-attack:count" value="1" level="3" />
+      <stat name="sneak-attack:count" value="1" level="5" />
+      <stat name="sneak-attack:count" value="1" level="7" />
+      <stat name="sneak-attack:count" value="1" level="9" />
+      <stat name="sneak-attack:count" value="1" level="11" />
+      <stat name="sneak-attack:count" value="1" level="13" />
+      <stat name="sneak-attack:count" value="1" level="15" />
+      <stat name="sneak-attack:count" value="1" level="17" />
+      <stat name="sneak-attack:count" value="1" level="19" />
+      <stat name="sneak-attack:die" value="6" bonus="die" />
     </rules>
   </element>
 
@@ -161,13 +162,12 @@
   <element id="ID_CLASS_SCOUT_FEATURE_EXPERTISE" name="Expertise" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>At 1st level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
-      <p class="indent">At 6th level, you can choose two more of your proficiencies to gain this benefit.</p>
+      <p>Gain expertise in skills you're proficient with.</p>
     </description>
     <sheet display="false" />
     <rules>
-      <select type="Expertise" name="Expertise (Scout)" level="1" number="2" supports="ID_EXPERTISE_ACROBATICS|ID_EXPERTISE_ATHLETICS|ID_EXPERTISE_DECEPTION|ID_EXPERTISE_INSIGHT|ID_EXPERTISE_INTIMIDATION|ID_EXPERTISE_INVESTIGATION|ID_EXPERTISE_PERCEPTION|ID_EXPERTISE_PERSUASION|ID_EXPERTISE_SLEIGHTOFHAND|ID_EXPERTISE_STEALTH" />
-      <select type="Expertise" name="Expertise (Scout)" level="6" number="2" supports="ID_EXPERTISE_ACROBATICS|ID_EXPERTISE_ATHLETICS|ID_EXPERTISE_DECEPTION|ID_EXPERTISE_INSIGHT|ID_EXPERTISE_INTIMIDATION|ID_EXPERTISE_INVESTIGATION|ID_EXPERTISE_PERCEPTION|ID_EXPERTISE_PERSUASION|ID_EXPERTISE_SLEIGHTOFHAND|ID_EXPERTISE_STEALTH" />
+      <select type="Class Feature" name="Expertise (Scout)" level="1" number="2" supports="Expertise" />
+      <select type="Class Feature" name="Expertise (Scout)" level="6" number="2" supports="Expertise" />
     </rules>
   </element>
 
@@ -225,10 +225,10 @@
   <element id="ID_CLASS_SCOUT_FEATURE_UNCANNY_DODGE" name="Uncanny Dodge" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</p>
+      <p>Reaction; When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</p>
     </description>
     <sheet action="Reaction">
-      <description>When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</description>
+      <description>Reaction; When an attacker that you can see hits you with an attack, you can halve the attack's damage against you.</description>
     </sheet>
   </element>
 
@@ -236,10 +236,10 @@
   <element id="ID_CLASS_SCOUT_FEATURE_EVASION" name="Evasion" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>You can nimbly dodge out of the way of certain area effects. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+      <p>When making a Dexterity saving throw: On a failed save, take half damage. On a successful save, take no damage (can't use when incapacitated).</p>
     </description>
     <sheet>
-      <description>When you make a Dexterity saving throw against an effect that deals half damage on a success, you take no damage on a success and half damage on a failure.</description>
+      <description>When making a Dexterity saving throw: On a failed save, take half damage. On a successful save, take no damage (can't use when incapacitated).</description>
     </sheet>
   </element>
 
@@ -272,10 +272,10 @@
   <element id="ID_CLASS_SCOUT_FEATURE_RELIABLE_TALENT" name="Reliable Talent" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.</p>
+      <p>When you make an ability check with a skill you're proficient with, the lowest you can roll is 10.</p>
     </description>
     <sheet>
-      <description>Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.</description>
+      <description>When you make an ability check with a skill you're proficient with, the lowest you can roll is 10.</description>
     </sheet>
   </element>
 
@@ -283,7 +283,7 @@
   <element id="ID_CLASS_SCOUT_FEATURE_SLIPPERY_MIND" name="Slippery Mind" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws.</p>
+      <p>You gain proficiency in Wisdom saving throws.</p>
     </description>
     <sheet>
       <description>You gain proficiency in Wisdom saving throws.</description>
@@ -297,10 +297,10 @@
   <element id="ID_CLASS_SCOUT_FEATURE_ELUSIVE" name="Elusive" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't incapacitated.</p>
+      <p>No attack roll can have advantage on you unless you're incapacitated</p>
     </description>
     <sheet>
-      <description>No attack roll has advantage against you while you aren't incapacitated.</description>
+      <description>No attack roll can have advantage on you unless you're incapacitated</description>
     </sheet>
   </element>
 
@@ -308,10 +308,10 @@
   <element id="ID_CLASS_SCOUT_FEATURE_STROKE_OF_LUCK" name="Stroke of Luck" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>At 20th level, you have an uncanny knack for succeeding when you need it. Your Dexterity and Intelligence scores increase by 2. Your maximum for those scores increases by 2. Additionally, if your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20. Once you use this feature, you can't use it again until you finish a long rest.</p>
+      <p>You have an uncanny knack for succeeding when you need it. Your Dexterity and Intelligence scores increase by 2. Your maximum for those scores increases by 2. Additionally, if your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20. Once per long rest.</p>
     </description>
     <sheet usage="1/Long Rest">
-      <description>Your Dexterity and Intelligence scores increase by 2 (max 22). If your attack misses, you can turn it into a hit. Alternatively, if you fail an ability check, you can treat the roll as a 20.</description>
+      <description>You have an uncanny knack for succeeding when you need it. Your Dexterity and Intelligence scores increase by 2. Your maximum for those scores increases by 2. Additionally, if your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20. Once per long rest.</description>
     </sheet>
     <rules>
       <stat name="dexterity" value="2" />

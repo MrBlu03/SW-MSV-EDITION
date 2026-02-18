@@ -27,7 +27,7 @@ Simple Blaster:
 		- Dart Attachment (dart, range 25/100, Reload 1, Dexterity modifier), Dart
 		- Rocket Attachment (rocket, range 35/140, Reload 1, Dexterity modifier), Rocket
 		- Fibercord Whip (15 feet line, The target must make a DC 8 + proficiency + Dexterity modifier, Dexterity saving throw. On a failed save, the target is restrained. On a successful save, the target isn't restrained. If the target is restrained he target can on their turn use an Action to do a Strength saving throw against 8 + proficiency + Strength modifier of the restrainer. On a failed save, the targets stays restrained. On a successful save, the target is freed. The Restrainer can't use Bonus Actions or hold something in that hand when restraining someone), Whip
-		- Wristflame (1d10 fire, Reload 2, canister, 15 feet line, Dexterity modifier), Flame
+		- Wristflame (1d10 fire, Reload 2, canister, 15 feet cone, Dexterity modifier), Flame
 Martial Blaster
 	blaster rifle (1d8 energy, power cell, range 105/420, Reload 12, two-handed, Dexterity modifier), Shoot
 	disruptor rifle (1d8 acid, power cell, range 120/470, Reload 9, two-handed, Dexterity modifier), Shoot

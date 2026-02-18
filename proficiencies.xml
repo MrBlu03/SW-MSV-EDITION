@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Proficiencies</name>
-    <update version="2.0.1">
+    <update version="2.0.2">
       <file name="proficiencies.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/proficiencies.xml" />
     </update>
   </info>
@@ -385,72 +385,72 @@
   
   <element name="Bandfill" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_BANDFILL" source="SW-MSV-Edition">
     <description><p>Proficiency with the bandfill.</p></description>
-    <sheet display="true" />
+    <sheet alt="Bandfill" />
     <supports>Tool, Musical Instrument, ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
   </element>
   <element name="Chindinkalu Horn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_CHINDINKALU_HORN" source="SW-MSV-Edition">
     <description><p>Proficiency with the chindinkalu horn.</p></description>
-    <sheet display="true" />
+    <sheet alt="Chindinkalu Horn" />
     <supports>Tool, Musical Instrument, ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
   </element>
   <element name="Drum" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_DRUM" source="SW-MSV-Edition">
     <description><p>Proficiency with the drum.</p></description>
-    <sheet display="true" />
+    <sheet alt="Drum" />
     <supports>Tool, Musical Instrument, ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
   </element>
   <element name="Fanfar" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FANFAR" source="SW-MSV-Edition">
     <description><p>Proficiency with the fanfar.</p></description>
-    <sheet display="true" />
+    <sheet alt="Fanfar" />
     <supports>Tool, Musical Instrument, ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
   </element>
   <element name="Fizzz" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FIZZZ" source="SW-MSV-Edition">
     <description><p>Proficiency with the fizzz.</p></description>
-    <sheet display="true" />
+    <sheet alt="Fizzz" />
     <supports>Tool, Musical Instrument, ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
   </element>
   <element name="Flute" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FLUTE" source="SW-MSV-Edition">
     <description><p>Proficiency with the flute.</p></description>
-    <sheet display="true" />
+    <sheet alt="Flute" />
     <supports>Tool, Musical Instrument, ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
   </element>
   <element name="Kloo Horn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_KLOO_HORN" source="SW-MSV-Edition">
     <description><p>Proficiency with the kloo horn.</p></description>
-    <sheet display="true" />
+    <sheet alt="Kloo Horn" />
     <supports>Tool, Musical Instrument, ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
   </element>
   <element name="Lute" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_LUTE" source="SW-MSV-Edition">
     <description><p>Proficiency with the lute.</p></description>
-    <sheet display="true" />
+    <sheet alt="Lute" />
     <supports>Tool, Musical Instrument, ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
   </element>
   <element name="Mandoviol" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_MANDOVIOL" source="SW-MSV-Edition">
     <description><p>Proficiency with the mandoviol.</p></description>
-    <sheet display="true" />
+    <sheet alt="Mandoviol" />
     <supports>Tool, Musical Instrument, ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
   </element>
   <element name="Ommni Box" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_OMMNI_BOX" source="SW-MSV-Edition">
     <description><p>Proficiency with the ommni box.</p></description>
-    <sheet display="true" />
+    <sheet alt="Ommni Box" />
     <supports>Tool, Musical Instrument, ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
   </element>
   <element name="Slitherhorn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_SLITHERHORN" source="SW-MSV-Edition">
     <description><p>Proficiency with the slitherhorn.</p></description>
-    <sheet display="true" />
+    <sheet alt="Slitherhorn" />
     <supports>Tool, Musical Instrument, ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
   </element>
   <element name="Traz" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_TRAZ" source="SW-MSV-Edition">
     <description><p>Proficiency with the traz.</p></description>
-    <sheet display="true" />
+    <sheet alt="Traz" />
     <supports>Tool, Musical Instrument, ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
   </element>
   <element name="Valahorn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_VALAHORN" source="SW-MSV-Edition">
     <description><p>Proficiency with the valahorn.</p></description>
-    <sheet display="true" />
+    <sheet alt="Valahorn" />
     <supports>Tool, Musical Instrument, ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
   </element>
   <element name="Xantha" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_XANTHA" source="SW-MSV-Edition">
     <description><p>Proficiency with the xantha.</p></description>
-    <sheet display="true" />
+    <sheet alt="Xantha" />
     <supports>Tool, Musical Instrument, ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
   </element>
   
@@ -473,8 +473,8 @@
     <supports>ID_PROFICIENCY_SKILL_PERSUASION||ID_PROFICIENCY_SKILL_INTIMIDATION</supports>
   </element>
   
-  <element name="Acrobatics" type="Expertise" id="ID_EXPERTISE_ACROBATICS" source="SW-MSV-Edition">
-    <supports>ID_PROFICIENCY_SKILL_ACROBATICS</supports>
+  <element name="Acrobatics" type="Class Feature" id="ID_EXPERTISE_ACROBATICS" source="SW-MSV-Edition">
+    <supports>Expertise</supports>
     <requirements>ID_PROFICIENCY_SKILL_ACROBATICS</requirements>
     <description><p>Your proficiency bonus is doubled for Acrobatics checks.</p></description>
     <sheet display="false" />
@@ -482,8 +482,8 @@
       <stat name="acrobatics:proficiency" value="proficiency" bonus="double" />
     </rules>
   </element>
-  <element name="Athletics" type="Expertise" id="ID_EXPERTISE_ATHLETICS" source="SW-MSV-Edition">
-    <supports>ID_PROFICIENCY_SKILL_ATHLETICS</supports>
+  <element name="Athletics" type="Class Feature" id="ID_EXPERTISE_ATHLETICS" source="SW-MSV-Edition">
+    <supports>Expertise</supports>
     <requirements>ID_PROFICIENCY_SKILL_ATHLETICS</requirements>
     <description><p>Your proficiency bonus is doubled for Athletics checks.</p></description>
     <sheet display="false" />
@@ -491,8 +491,8 @@
       <stat name="athletics:proficiency" value="proficiency" bonus="double" />
     </rules>
   </element>
-  <element name="Deception" type="Expertise" id="ID_EXPERTISE_DECEPTION" source="SW-MSV-Edition">
-    <supports>ID_PROFICIENCY_SKILL_DECEPTION</supports>
+  <element name="Deception" type="Class Feature" id="ID_EXPERTISE_DECEPTION" source="SW-MSV-Edition">
+    <supports>Expertise</supports>
     <requirements>ID_PROFICIENCY_SKILL_DECEPTION</requirements>
     <description><p>Your proficiency bonus is doubled for Deception checks.</p></description>
     <sheet display="false" />
@@ -500,8 +500,8 @@
       <stat name="deception:proficiency" value="proficiency" bonus="double" />
     </rules>
   </element>
-  <element name="Insight" type="Expertise" id="ID_EXPERTISE_INSIGHT" source="SW-MSV-Edition">
-    <supports>ID_PROFICIENCY_SKILL_INSIGHT</supports>
+  <element name="Insight" type="Class Feature" id="ID_EXPERTISE_INSIGHT" source="SW-MSV-Edition">
+    <supports>Expertise</supports>
     <requirements>ID_PROFICIENCY_SKILL_INSIGHT</requirements>
     <description><p>Your proficiency bonus is doubled for Insight checks.</p></description>
     <sheet display="false" />
@@ -509,8 +509,8 @@
       <stat name="insight:proficiency" value="proficiency" bonus="double" />
     </rules>
   </element>
-  <element name="Intimidation" type="Expertise" id="ID_EXPERTISE_INTIMIDATION" source="SW-MSV-Edition">
-    <supports>ID_PROFICIENCY_SKILL_INTIMIDATION</supports>
+  <element name="Intimidation" type="Class Feature" id="ID_EXPERTISE_INTIMIDATION" source="SW-MSV-Edition">
+    <supports>Expertise</supports>
     <requirements>ID_PROFICIENCY_SKILL_INTIMIDATION</requirements>
     <description><p>Your proficiency bonus is doubled for Intimidation checks.</p></description>
     <sheet display="false" />
@@ -518,8 +518,8 @@
       <stat name="intimidation:proficiency" value="proficiency" bonus="double" />
     </rules>
   </element>
-  <element name="Investigation" type="Expertise" id="ID_EXPERTISE_INVESTIGATION" source="SW-MSV-Edition">
-    <supports>ID_PROFICIENCY_SKILL_INVESTIGATION</supports>
+  <element name="Investigation" type="Class Feature" id="ID_EXPERTISE_INVESTIGATION" source="SW-MSV-Edition">
+    <supports>Expertise</supports>
     <requirements>ID_PROFICIENCY_SKILL_INVESTIGATION</requirements>
     <description><p>Your proficiency bonus is doubled for Investigation checks.</p></description>
     <sheet display="false" />
@@ -527,8 +527,8 @@
       <stat name="investigation:proficiency" value="proficiency" bonus="double" />
     </rules>
   </element>
-  <element name="Perception" type="Expertise" id="ID_EXPERTISE_PERCEPTION" source="SW-MSV-Edition">
-    <supports>ID_PROFICIENCY_SKILL_PERCEPTION</supports>
+  <element name="Perception" type="Class Feature" id="ID_EXPERTISE_PERCEPTION" source="SW-MSV-Edition">
+    <supports>Expertise</supports>
     <requirements>ID_PROFICIENCY_SKILL_PERCEPTION</requirements>
     <description><p>Your proficiency bonus is doubled for Perception checks.</p></description>
     <sheet display="false" />
@@ -536,8 +536,8 @@
       <stat name="perception:proficiency" value="proficiency" bonus="double" />
     </rules>
   </element>
-  <element name="Persuasion" type="Expertise" id="ID_EXPERTISE_PERSUASION" source="SW-MSV-Edition">
-    <supports>ID_PROFICIENCY_SKILL_PERSUASION</supports>
+  <element name="Persuasion" type="Class Feature" id="ID_EXPERTISE_PERSUASION" source="SW-MSV-Edition">
+    <supports>Expertise</supports>
     <requirements>ID_PROFICIENCY_SKILL_PERSUASION</requirements>
     <description><p>Your proficiency bonus is doubled for Persuasion checks.</p></description>
     <sheet display="false" />
@@ -545,8 +545,8 @@
       <stat name="persuasion:proficiency" value="proficiency" bonus="double" />
     </rules>
   </element>
-  <element name="Sleight of Hand" type="Expertise" id="ID_EXPERTISE_SLEIGHTOFHAND" source="SW-MSV-Edition">
-    <supports>ID_PROFICIENCY_SKILL_SLEIGHTOFHAND</supports>
+  <element name="Sleight of Hand" type="Class Feature" id="ID_EXPERTISE_SLEIGHTOFHAND" source="SW-MSV-Edition">
+    <supports>Expertise</supports>
     <requirements>ID_PROFICIENCY_SKILL_SLEIGHTOFHAND</requirements>
     <description><p>Your proficiency bonus is doubled for Sleight of Hand checks.</p></description>
     <sheet display="false" />
@@ -554,8 +554,8 @@
       <stat name="sleight of hand:proficiency" value="proficiency" bonus="double" />
     </rules>
   </element>
-  <element name="Stealth" type="Expertise" id="ID_EXPERTISE_STEALTH" source="SW-MSV-Edition">
-    <supports>ID_PROFICIENCY_SKILL_STEALTH</supports>
+  <element name="Stealth" type="Class Feature" id="ID_EXPERTISE_STEALTH" source="SW-MSV-Edition">
+    <supports>Expertise</supports>
     <requirements>ID_PROFICIENCY_SKILL_STEALTH</requirements>
     <description><p>Your proficiency bonus is doubled for Stealth checks.</p></description>
     <sheet display="false" />

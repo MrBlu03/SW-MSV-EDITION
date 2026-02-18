@@ -3,7 +3,7 @@
   <info>
     <name>Backgrounds</name>
     <description>Backgrounds for SW-MSV-Edition.</description>
-    <update version="2.0.1">
+    <update version="2.0.2">
       <file name="backgrounds.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/backgrounds.xml" />
     </update>
   </info>
@@ -23,12 +23,13 @@
     <setters>
       <set name="short">Deception, Investigation, Persuasion, Stealth, 2 Languages</set>
     </setters>
+    <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Agent)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_STEALTH" />
       <select type="Language" name="Language (Agent)" number="2" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_FACTION_CONTACT" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="1">
+      <select type="List" name="Personality Trait" number="2">
         <item id="1">I idolize a particular hero of my faction, and constantly refer to that person's deeds and example.</item>
         <item id="2">I can find common ground between the fiercest enemies, empathizing with them and always working towards peace.</item>
         <item id="3">I see omens in every event and action.</item>
@@ -39,12 +40,12 @@
         <item id="8">I have little practical experience dealing with people in the world.</item>
       </select>
       <select type="List" name="Ideal">
-        <item id="1">Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld.</item>
-        <item id="2">Charity. I always try to help those in need, no matter what the personal cost.</item>
-        <item id="3">Change. We must help bring about the changes the gods are constantly working in the world.</item>
-        <item id="4">Power. I hope to one day rise to the top of my faith's religious hierarchy.</item>
-        <item id="5">Faith. I trust that my leader will guide my actions, I have faith that if I work hard, things will go well.</item>
-        <item id="6">Aspiration. I seek to prove myself worthy of my leader's favor by matching my actions against his or her teachings.</item>
+        <item id="1">Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld. (Lawful)</item>
+        <item id="2">Charity. I always try to help those in need, no matter what the personal cost. (Good)</item>
+        <item id="3">Change. We must help bring about the changes the gods are constantly working in the world. (Chaotic)</item>
+        <item id="4">Power. I hope to one day rise to the top of my faith's religious hierarchy. (Evil)</item>
+        <item id="5">Faith. I trust that my leader will guide my actions, I have faith that if I work hard, things will go well. (Neutral)</item>
+        <item id="6">Aspiration. I seek to prove myself worthy of my leader's favor by matching my actions against his or her teachings. (Any)</item>
       </select>
       <select type="List" name="Bond">
         <item id="1">I would die to recover an artifact of my faction that was lost long ago.</item>
@@ -89,13 +90,14 @@
     <setters>
       <set name="short">Deception, Insight, Persuasion, Perception, Slicing Kit, 1 Language</set>
     </setters>
+    <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Bounty Hunter)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_PERCEPTION" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
       <select type="Language" name="Language (Bounty Hunter)" number="1" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_WANTED_POSTER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="1">
+      <select type="List" name="Personality Trait" number="2">
         <item id="1">I always have a plan for what to do when things go wrong.</item>
         <item id="2">I am always calm, no matter what the situation. I never raise my voice or let my emotions control me.</item>
         <item id="3">The first thing I do in a new place is note the locations of everything valuable or where such things could be hidden.</item>
@@ -106,12 +108,12 @@
         <item id="8">I blow up at the slightest insult.</item>
       </select>
       <select type="List" name="Ideal">
-        <item id="1">Honor. I don't steal from others in the trade.</item>
-        <item id="2">Freedom. Chains are meant to be broken, as are those who would forge them.</item>
-        <item id="3">Charity. I steal from the wealthy so that I can help people in need.</item>
-        <item id="4">Greed. I will do whatever it takes to become wealthy.</item>
-        <item id="5">People. I'm loyal to my friends, not to any ideals, and everyone else can jog on for all I care.</item>
-        <item id="6">Redemption. There's a spark of good in everyone.</item>
+        <item id="1">Honor. I don't steal from others in the trade. (Lawful)</item>
+        <item id="2">Freedom. Chains are meant to be broken, as are those who would forge them. (Good)</item>
+        <item id="3">Charity. I steal from the wealthy so that I can help people in need. (Chaotic)</item>
+        <item id="4">Greed. I will do whatever it takes to become wealthy. (Evil)</item>
+        <item id="5">People. I'm loyal to my friends, not to any ideals, and everyone else can jog on for all I care. (Neutral)</item>
+        <item id="6">Redemption. There's a spark of good in everyone. (Any)</item>
       </select>
       <select type="List" name="Bond">
         <item id="1">I'm trying to pay off an old debt I owe to a generous benefactor.</item>
@@ -155,12 +157,13 @@
     <setters>
       <set name="short">Deception, Intimidation, Sleight of Hand, Stealth, Slicing Kit</set>
     </setters>
+    <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Criminal)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CRIMINAL_CONTACT" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="1">
+      <select type="List" name="Personality Trait" number="2">
         <item id="1">I always have a plan for what to do when things go wrong.</item>
         <item id="2">I am always calm, no matter what the situation. I never raise my voice or let my emotions control me.</item>
         <item id="3">The first thing I do in a new place is note the locations of everything valuable or where such things could be hidden.</item>
@@ -171,12 +174,12 @@
         <item id="8">I blow up at the slightest insult.</item>
       </select>
       <select type="List" name="Ideal">
-        <item id="1">Honor. I don't steal from others in the trade.</item>
-        <item id="2">Freedom. Chains are meant to be broken, as are those who would forge them.</item>
-        <item id="3">Charity. I steal from the wealthy so that I can help people in need.</item>
-        <item id="4">Greed. I will do whatever it takes to become wealthy.</item>
-        <item id="5">People. I'm loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care.</item>
-        <item id="6">Redemption. There's a spark of good in everyone.</item>
+        <item id="1">Honor. I don't steal from others in the trade. (Lawful)</item>
+        <item id="2">Freedom. Chains are meant to be broken, as are those who would forge them. (Good)</item>
+        <item id="3">Charity. I steal from the wealthy so that I can help people in need. (Chaotic)</item>
+        <item id="4">Greed. I will do whatever it takes to become wealthy. (Evil)</item>
+        <item id="5">People. I'm loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care. (Neutral)</item>
+        <item id="6">Redemption. There's a spark of good in everyone. (Any)</item>
       </select>
       <select type="List" name="Bond">
         <item id="1">I'm trying to pay off an old debt I owe to a generous benefactor.</item>
@@ -220,12 +223,13 @@
     <setters>
       <set name="short">Acrobatics, Insight, Performance, Sleight of Hand, Musical Instrument</set>
     </setters>
+    <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Entertainer)" number="2" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
-      <select type="Proficiency" name="Musical Instrument (Entertainer)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1" />
+      <select type="Proficiency" name="Musical Instrument (Entertainer)" supports="Musical Instrument" number="1" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_BY_POPULAR_DEMAND" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="1">
+      <select type="List" name="Personality Trait" number="2">
         <item id="1">I know a story relevant to almost every situation.</item>
         <item id="2">Whenever I come to a new place, I collect local rumors and spread gossip.</item>
         <item id="3">I'm a hopeless romantic, always searching for that special someone.</item>
@@ -236,12 +240,12 @@
         <item id="8">I change my mood or my mind as quickly as I change key in a song.</item>
       </select>
       <select type="List" name="Ideal">
-        <item id="1">Beauty. When I perform, I make the world better than it was.</item>
-        <item id="2">Tradition. The stories, legends, and songs of the past must never be forgotten, for they teach us who we are.</item>
-        <item id="3">Creativity. The world is in need of new ideas and bold action.</item>
-        <item id="4">Greed. I'm only in it for the money and fame.</item>
-        <item id="5">People. I like seeing the smiles on people's faces when I perform. That's all that matters.</item>
-        <item id="6">Honesty. Art should reflect the soul; it should come from within and reveal who we really are.</item>
+        <item id="1">Beauty. When I perform, I make the world better than it was. (Lawful)</item>
+        <item id="2">Tradition. The stories, legends, and songs of the past must never be forgotten, for they teach us who we are. (Good)</item>
+        <item id="3">Creativity. The world is in need of new ideas and bold action. (Chaotic)</item>
+        <item id="4">Greed. I'm only in it for the money and fame. (Evil)</item>
+        <item id="5">People. I like seeing the smiles on people's faces when I perform. That's all that matters. (Neutral)</item>
+        <item id="6">Honesty. Art should reflect the soul; it should come from within and reveal who we really are. (Any)</item>
       </select>
       <select type="List" name="Bond">
         <item id="1">My instrument is my most treasured possession, and it reminds me of someone I love.</item>
@@ -285,12 +289,13 @@
     <setters>
       <set name="short">Investigation, Sleight of Hand, Athletics, History, Repair Kit</set>
     </setters>
+    <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Engineer)" number="2" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_REPAIR_KIT" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_TINKERER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="1">
+      <select type="List" name="Personality Trait" number="2">
         <item id="1">I look up to a renowned engineer in my field, and often talk about their work.</item>
         <item id="2">I constantly compare my current situation to my past experiments, many of which went terrifyingly wrong.</item>
         <item id="3">I believe scientific results always comes first.</item>
@@ -301,12 +306,12 @@
         <item id="8">I was, in fact, grown and raised in a laboratory.</item>
       </select>
       <select type="List" name="Ideal">
-        <item id="1">Transparency. All discoveries should be open to everyone.</item>
-        <item id="2">Logic. Emotions must not cloud our sense of what is right and true, or our logical thinking.</item>
-        <item id="3">Greed. I'm only in it for the money and fame.</item>
-        <item id="4">Free Thinking. Inquiry and curiosity are the pillars of progress.</item>
-        <item id="5">Live and Let Live. Meddling in the affairs of others only causes trouble.</item>
-        <item id="6">Aspiration. I work hard to be the best there is at my craft.</item>
+        <item id="1">Transparency. All discoveries should be open to everyone. (Lawful)</item>
+        <item id="2">Logic. Emotions must not cloud our sense of what is right and true, or our logical thinking. (Good)</item>
+        <item id="3">Greed. I'm only in it for the money and fame. (Chaotic)</item>
+        <item id="4">Free Thinking. Inquiry and curiosity are the pillars of progress. (Evil)</item>
+        <item id="5">Live and Let Live. Meddling in the affairs of others only causes trouble. (Neutral)</item>
+        <item id="6">Aspiration. I work hard to be the best there is at my craft. (Any)</item>
       </select>
       <select type="List" name="Bond">
         <item id="1">My research is also my best companion.</item>
@@ -350,12 +355,13 @@
     <setters>
       <set name="short">Insight, Investigation, History, Persuasion, Arcana, 1 Language</set>
     </setters>
+    <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Jedi)" number="2" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_ARCANA" />
       <select type="Language" name="Language (Jedi)" number="1" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_JEDI_CODE_KNOWLEDGE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="1">
+      <select type="List" name="Personality Trait" number="2">
         <item id="1">I idolize a particular Jedi, and constantly refer to that person's deeds and example.</item>
         <item id="2">I can find common ground between the fiercest enemies, empathizing with them and always working towards peace.</item>
         <item id="3">I see omens in every event and action. The Force tries to speak to us, we just need to listen</item>
@@ -366,12 +372,12 @@
         <item id="8">I've spent so long in the Jedi temple that I have little practical experience dealing with people in the world.</item>
       </select>
       <select type="List" name="Ideal">
-        <item id="1">Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld.</item>
-        <item id="2">Charity. I always try to help those in need, no matter what the personal cost.</item>
-        <item id="3">Change. We must help bring about the changes the Force is constantly working in the world.</item>
-        <item id="4">Power. I hope to one day rise to the rank of Jedi Master.</item>
-        <item id="5">Faith. I trust that the Force will guide my actions; I have faith that if I work hard, things will go well.</item>
-        <item id="6">Aspiration. I seek to prove myself worthy of the Force by matching my actions against the Jedi teachings.</item>
+        <item id="1">Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld. (Lawful)</item>
+        <item id="2">Charity. I always try to help those in need, no matter what the personal cost. (Good)</item>
+        <item id="3">Change. We must help bring about the changes the Force is constantly working in the world. (Chaotic)</item>
+        <item id="4">Power. I hope to one day rise to the rank of Jedi Master. (Evil)</item>
+        <item id="5">Faith. I trust that the Force will guide my actions; I have faith that if I work hard, things will go well. (Neutral)</item>
+        <item id="6">Aspiration. I seek to prove myself worthy of the Force by matching my actions against the Jedi teachings. (Any)</item>
       </select>
       <select type="List" name="Bond">
         <item id="1">I would die to recover an ancient Jedi relic that was lost long ago.</item>
@@ -416,13 +422,15 @@
     <setters>
       <set name="short">Athletics, Intimidation, Survival, History, Hover Pack, Mando'a</set>
     </setters>
+    <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Mandalorian)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_HISTORY" />
+      <select type="Background Feature" name="Mandalorian Clan" supports="Mandalorian Clan" number="1" />
       <grant type="Language" id="ID_MSV_LANGUAGE_MANDOA" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="1">
+      <select type="List" name="Personality Trait" number="2">
         <item id="1">I try and bring my culture to outsiders.</item>
         <item id="2">I always put my clan first.</item>
         <item id="3">I follow the Resol'nare to the letter.</item>
@@ -433,12 +441,12 @@
         <item id="8">I've seen the horrors of battle and try to prevent it.</item>
       </select>
       <select type="List" name="Ideal">
-        <item id="1">Tradition. I live by my clan's ways, and will continue to do so.</item>
-        <item id="2">Power. I strive to be the best warrior, no matter who stands in my way.</item>
-        <item id="3">Respect. I have earned the respect of many, and I intend to keep it.</item>
-        <item id="4">Freedom. I enjoy having the ability to do whatever I want.</item>
-        <item id="5">Comradery. I'll put everything on the line for those dear to me.</item>
-        <item id="6">Aspiration. I'll succeed in my goals, it just takes time and effort.</item>
+        <item id="1">Tradition. I live by my clan's ways, and will continue to do so. (Lawful)</item>
+        <item id="2">Power. I strive to be the best warrior, no matter who stands in my way. (Good)</item>
+        <item id="3">Respect. I have earned the respect of many, and I intend to keep it. (Chaotic)</item>
+        <item id="4">Freedom. I enjoy having the ability to do whatever I want. (Evil)</item>
+        <item id="5">Comradery. I'll put everything on the line for those dear to me. (Neutral)</item>
+        <item id="6">Aspiration. I'll succeed in my goals, it just takes time and effort. (Any)</item>
       </select>
       <select type="List" name="Bond">
         <item id="1">I lost someone dear to me in battle, I will always honor them.</item>
@@ -482,12 +490,13 @@
     <setters>
       <set name="short">Athletics, Investigation, Deception, Intimidation, 1 Language</set>
     </setters>
+    <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Mercenary)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION" />
       <select type="Language" name="Language (Mercenary)" number="1" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_MERCENARY_CONTRACT" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="1">
+      <select type="List" name="Personality Trait" number="2">
         <item id="1">I do not fear death, but accept it as part of life.</item>
         <item id="2">I have a crude sense of humor.</item>
         <item id="3">I face problems head-on. A simple, direct solution is the best path to success.</item>
@@ -498,12 +507,12 @@
         <item id="8">I like a job well done, especially if I'm not the one doing it.</item>
       </select>
       <select type="List" name="Ideal">
-        <item id="1">Greed. I'm only doing it for the money.</item>
-        <item id="2">Fairness. We all did the work. it is only right that everyone gets a share of the reward.</item>
-        <item id="3">Live and Let Live. You may not have a family left, but your enemy may. A little compassion goes a long way.</item>
-        <item id="4">Measure of Last Resort. Sometimes we have to do things that we REALLY don't want to do, but we must remember that we only do them because we have to.</item>
-        <item id="5">Debts. I never leave a favor left undone and nor will I leave those whom owe me favors on the hook.</item>
-        <item id="6">Aspiration. I have heard a tale of a legendary person of my class. I strive to be more like them.</item>
+        <item id="1">Greed. I'm only doing it for the money. (Lawful)</item>
+        <item id="2">Fairness. We all did the work. it is only right that everyone gets a share of the reward. (Good)</item>
+        <item id="3">Live and Let Live. You may not have a family left, but your enemy may. A little compassion goes a long way. (Chaotic)</item>
+        <item id="4">Measure of Last Resort. Sometimes we have to do things that we REALLY don't want to do, but we must remember that we only do them because we have to. (Evil)</item>
+        <item id="5">Debts. I never leave a favor left undone and nor will I leave those whom owe me favors on the hook. (Neutral)</item>
+        <item id="6">Aspiration. I have heard a tale of a legendary person of my class. I strive to be more like them. (Any)</item>
       </select>
       <select type="List" name="Bond">
         <item id="1">I have a personal debt that must be paid.</item>
@@ -547,12 +556,13 @@
     <setters>
       <set name="short">Deception, Insight, History, Persuasion, 1 Language</set>
     </setters>
+    <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Noble)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_PERSUASION" />
       <select type="Language" name="Language (Noble)" number="1" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_POSITION_OF_PRIVILEGE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="1">
+      <select type="List" name="Personality Trait" number="2">
         <item id="1">My eloquent flattery makes everyone I talk to feel like the most wonderful and important person in the world.</item>
         <item id="2">The common folk love me for my kindness and generosity.</item>
         <item id="3">No one could doubt by looking at my regal bearing that I am a cut above the unwashed masses.</item>
@@ -563,12 +573,12 @@
         <item id="8">If you do me an injury, I will crush you, ruin your name, and salt your fields.</item>
       </select>
       <select type="List" name="Ideal">
-        <item id="1">Respect. Respect is due to me because of my position, but all people regardless of station deserve to be treated with dignity.</item>
-        <item id="2">Responsibility. It is my duty to respect the authority of those above me, just as those below me must respect mine.</item>
-        <item id="3">Independence. I must prove that I can handle myself without the coddling of my family.</item>
-        <item id="4">Power. If I can attain more power, no one will tell me what to do.</item>
-        <item id="5">Family. Blood runs thicker than water.</item>
-        <item id="6">Noble Obligation. It is my duty to protect and care for the people beneath me.</item>
+        <item id="1">Respect. Respect is due to me because of my position, but all people regardless of station deserve to be treated with dignity. (Lawful)</item>
+        <item id="2">Responsibility. It is my duty to respect the authority of those above me, just as those below me must respect mine. (Good)</item>
+        <item id="3">Independence. I must prove that I can handle myself without the coddling of my family. (Chaotic)</item>
+        <item id="4">Power. If I can attain more power, no one will tell me what to do. (Evil)</item>
+        <item id="5">Family. Blood runs thicker than water. (Neutral)</item>
+        <item id="6">Noble Obligation. It is my duty to protect and care for the people beneath me. (Any)</item>
       </select>
       <select type="List" name="Bond">
         <item id="1">I will face any challenge to win the approval of my family.</item>
@@ -613,13 +623,14 @@
     <setters>
       <set name="short">Animal Handling, Athletics, Survival, Medicine, Musical Instrument, 1 Language</set>
     </setters>
+    <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Nomad)" number="2" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_MEDICINE" />
-      <select type="Proficiency" name="Musical Instrument (Nomad)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1" />
+      <select type="Proficiency" name="Musical Instrument (Nomad)" supports="Musical Instrument" number="1" />
       <select type="Language" name="Language (Nomad)" number="1" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_WANDERER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="1">
+      <select type="List" name="Personality Trait" number="2">
         <item id="1">I'm driven by a wanderlust that led me away from home.</item>
         <item id="2">I watch over my friends as if they were a litter of newborn pups.</item>
         <item id="3">I once ran twenty-five miles without stopping to warn my clan of an approaching horde. I'd do it again if I had to.</item>
@@ -630,12 +641,12 @@
         <item id="8">I was, in fact, raised by wampas.</item>
       </select>
       <select type="List" name="Ideal">
-        <item id="1">Change. Life is like the seasons, in constant change, and we must change with it.</item>
-        <item id="2">Greater Good. It is each person's responsibility to make the most happiness for the whole tribe.</item>
-        <item id="3">Honor. If I dishonor myself, I dishonor my whole clan.</item>
-        <item id="4">Might. The strongest are meant to rule.</item>
-        <item id="5">Nature. The natural world is more important than all the constructs of civilization.</item>
-        <item id="6">Glory. I must earn glory in battle, for myself and my clan.</item>
+        <item id="1">Change. Life is like the seasons, in constant change, and we must change with it. (Lawful)</item>
+        <item id="2">Greater Good. It is each person's responsibility to make the most happiness for the whole tribe. (Good)</item>
+        <item id="3">Honor. If I dishonor myself, I dishonor my whole clan. (Chaotic)</item>
+        <item id="4">Might. The strongest are meant to rule. (Evil)</item>
+        <item id="5">Nature. The natural world is more important than all the constructs of civilization. (Neutral)</item>
+        <item id="6">Glory. I must earn glory in battle, for myself and my clan. (Any)</item>
       </select>
       <select type="List" name="Bond">
         <item id="1">My family, clan, or tribe is the most important thing in my life, even when they are far from me.</item>
@@ -679,12 +690,13 @@
     <setters>
       <set name="short">Athletics, Deception, Intimidation, Sleight of Hand, Slicing Kit</set>
     </setters>
+    <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Pirate)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_SHIP_PASSAGE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="1">
+      <select type="List" name="Personality Trait" number="2">
         <item id="1">I respect my captain and trust my crew. It may be all that saves my life one day.</item>
         <item id="2">Whether the credits comes from the split of the spoils or from a side wager, I'll get my hands on it.</item>
         <item id="3">When my blood gets up, my swearing could boil the icy tundra of Hoth.</item>
@@ -695,12 +707,12 @@
         <item id="8">I assume everyone else wants to take what I have.</item>
       </select>
       <select type="List" name="Ideal">
-        <item id="1">Equal Shares. All hands who spend sweat and blood earn their share of the credits.</item>
-        <item id="2">Adventure. I'm far from home, and everything is strange and wonderful!</item>
-        <item id="3">Greater Good. I raid to weaken the Empire that threatens my people, but I don't steal from civilians.</item>
-        <item id="4">Strength. The weak exist to feed the strong, and I am strong.</item>
-        <item id="5">Crew. A ship is nothing without her crew. Protect your mates.</item>
-        <item id="6">Ambition. One day I will be so much more than a captain.</item>
+        <item id="1">Equal Shares. All hands who spend sweat and blood earn their share of the credits. (Lawful)</item>
+        <item id="2">Adventure. I'm far from home, and everything is strange and wonderful! (Good)</item>
+        <item id="3">Greater Good. I raid to weaken the Empire that threatens my people, but I don't steal from civilians. (Chaotic)</item>
+        <item id="4">Strength. The weak exist to feed the strong, and I am strong. (Evil)</item>
+        <item id="5">Crew. A ship is nothing without her crew. Protect your mates. (Neutral)</item>
+        <item id="6">Ambition. One day I will be so much more than a captain. (Any)</item>
       </select>
       <select type="List" name="Bond">
         <item id="1">My band and I will be known across the world, and we'll never be forgotten.</item>
@@ -745,13 +757,14 @@
     <setters>
       <set name="short">History, Medicine, Nature, Investigation, Slicing Kit, 1 Language</set>
     </setters>
+    <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Scientist)" number="2" supports="ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_INVESTIGATION" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
       <select type="Language" name="Language (Scientist)" number="1" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_RESEARCHER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="1">
+      <select type="List" name="Personality Trait" number="2">
         <item id="1">I look up to a renowned scientist in my field, and often talk about their work.</item>
         <item id="2">I constantly compare my current situation to my past experiments, many of which went terrifyingly wrong.</item>
         <item id="3">I believe scientific results always comes first.</item>
@@ -762,12 +775,12 @@
         <item id="8">I was, in fact, grown and raised in a laboratory.</item>
       </select>
       <select type="List" name="Ideal">
-        <item id="1">Transparency. All discoveries should be open to everyone.</item>
-        <item id="2">Logic. Emotions must not cloud our sense of what is right and true, or our logical thinking.</item>
-        <item id="3">Greed. I'm only in it for the money and fame.</item>
-        <item id="4">Free Thinking. Inquiry and curiosity are the pillars of progress.</item>
-        <item id="5">Live and Let Live. Meddling in the affairs of others only causes trouble.</item>
-        <item id="6">Aspiration. I work hard to be the best there is at my craft.</item>
+        <item id="1">Transparency. All discoveries should be open to everyone. (Lawful)</item>
+        <item id="2">Logic. Emotions must not cloud our sense of what is right and true, or our logical thinking. (Good)</item>
+        <item id="3">Greed. I'm only in it for the money and fame. (Chaotic)</item>
+        <item id="4">Free Thinking. Inquiry and curiosity are the pillars of progress. (Evil)</item>
+        <item id="5">Live and Let Live. Meddling in the affairs of others only causes trouble. (Neutral)</item>
+        <item id="6">Aspiration. I work hard to be the best there is at my craft. (Any)</item>
       </select>
       <select type="List" name="Bond">
         <item id="1">My research is also my best companion.</item>
@@ -811,12 +824,13 @@
     <setters>
       <set name="short">Deception, Insight, Performance, Sleight of Hand, Forgery Kit</set>
     </setters>
+    <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Scoundrel)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_FALSE_IDENTITY" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="1">
+      <select type="List" name="Personality Trait" number="2">
         <item id="1">I fall in and out of love easily, and am always pursuing someone.</item>
         <item id="2">I have a joke for every occasion, especially occasions where humor is inappropriate.</item>
         <item id="3">Flattery is my preferred trick for getting what I want.</item>
@@ -827,12 +841,12 @@
         <item id="8">I pocket anything I see that might have some value.</item>
       </select>
       <select type="List" name="Ideal">
-        <item id="1">Independence. I am a free spirit no one tells me what to do.</item>
-        <item id="2">Fairness. I never target people who can't afford to lose a few creds.</item>
-        <item id="3">Charity. I distribute the money I acquire to the people who really need it.</item>
-        <item id="4">Creativity. I never run the same con twice.</item>
-        <item id="5">Friendship. Material goods come and go. Bonds of friendship last forever.</item>
-        <item id="6">Aspiration. I'm determined to make something of myself.</item>
+        <item id="1">Independence. I am a free spirit no one tells me what to do. (Lawful)</item>
+        <item id="2">Fairness. I never target people who can't afford to lose a few creds. (Good)</item>
+        <item id="3">Charity. I distribute the money I acquire to the people who really need it. (Chaotic)</item>
+        <item id="4">Creativity. I never run the same con twice. (Evil)</item>
+        <item id="5">Friendship. Material goods come and go. Bonds of friendship last forever. (Neutral)</item>
+        <item id="6">Aspiration. I'm determined to make something of myself. (Any)</item>
       </select>
       <select type="List" name="Bond">
         <item id="1">I fleeced the wrong person and must work to ensure that this individual never crosses paths with me or those I care about.</item>
@@ -876,12 +890,13 @@
     <setters>
       <set name="short">Deception, Insight, Intimidation, History, Arcana, 1 Language</set>
     </setters>
+    <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Sith)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_ARCANA" />
       <select type="Language" name="Language (Sith)" number="1" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_SITH_CODE_KNOWLEDGE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="1">
+      <select type="List" name="Personality Trait" number="2">
         <item id="1">I idolize a particular Sith, and constantly refer to that person's deeds and example.</item>
         <item id="2">I seek power above all else.</item>
         <item id="3">I prefer using a lightsaber to solve my problems.</item>
@@ -892,12 +907,12 @@
         <item id="8">Lying and scheming are second nature to me.</item>
       </select>
       <select type="List" name="Ideal">
-        <item id="1">Patience. I will defeat my enemies in the end, I'm in no rush.</item>
-        <item id="2">Disdain. I never try to help those in need, regardless of how simple it would be.</item>
-        <item id="3">Knowledge. The path to power and self-improvement is through knowledge.</item>
-        <item id="4">Power. I hope to one day rise to the rank of Dark Lord of the Sith.</item>
-        <item id="5">Might. If I become strong, I can take what I want what I deserve.</item>
-        <item id="6">Aspiration. I'll succeed in my goals at any cost.</item>
+        <item id="1">Patience. I will defeat my enemies in the end, I'm in no rush. (Lawful)</item>
+        <item id="2">Disdain. I never try to help those in need, regardless of how simple it would be. (Good)</item>
+        <item id="3">Knowledge. The path to power and self-improvement is through knowledge. (Chaotic)</item>
+        <item id="4">Power. I hope to one day rise to the rank of Dark Lord of the Sith. (Evil)</item>
+        <item id="5">Might. If I become strong, I can take what I want what I deserve. (Neutral)</item>
+        <item id="6">Aspiration. I'll succeed in my goals at any cost. (Any)</item>
       </select>
       <select type="List" name="Bond">
         <item id="1">I would die to recover an ancient Sith relic that was lost long ago.</item>
@@ -940,11 +955,12 @@
     <setters>
       <set name="short">Deception, Sleight of Hand, Stealth, Acrobatics</set>
     </setters>
+    <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Smuggler)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_ACROBATICS" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_SMUGGLER_NETWORK" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="1">
+      <select type="List" name="Personality Trait" number="2">
         <item id="1">I am extremely sociable, especially over a mug of ale.</item>
         <item id="2">I always keep my wares close to me, you never know who might stumble across them otherwise.</item>
         <item id="3">The best way to hide is out in the open.</item>
@@ -955,12 +971,12 @@
         <item id="8">I act irrationally confident in the face of danger, nobody suspects anything when you seem like you're in charge.</item>
       </select>
       <select type="List" name="Ideal">
-        <item id="1">Morals. I only smuggle things to improve the lives of the common folk.</item>
-        <item id="2">Ruthless. I will rise to the top of the heap by any means necessary.</item>
-        <item id="3">Friendship. My associates are dear to me, and I want them to rise with me when I hit it big.</item>
-        <item id="4">Dauntless. No border crossing or bribe is too difficult- that's just the coward's way of saying exciting!</item>
-        <item id="5">Greater Good. I work for a greater cause, and ply my trade only in service to it.</item>
-        <item id="6">Unperturbed. I only want to make a living for myself, and smuggling is just an edge I can use to do so.</item>
+        <item id="1">Morals. I only smuggle things to improve the lives of the common folk. (Lawful)</item>
+        <item id="2">Ruthless. I will rise to the top of the heap by any means necessary. (Good)</item>
+        <item id="3">Friendship. My associates are dear to me, and I want them to rise with me when I hit it big. (Chaotic)</item>
+        <item id="4">Dauntless. No border crossing or bribe is too difficult- that's just the coward's way of saying exciting! (Evil)</item>
+        <item id="5">Greater Good. I work for a greater cause, and ply my trade only in service to it. (Neutral)</item>
+        <item id="6">Unperturbed. I only want to make a living for myself, and smuggling is just an edge I can use to do so. (Any)</item>
       </select>
       <select type="List" name="Bond">
         <item id="1">A corrupt official shut me down back in my honest days. I aim to show him a thing or two about recovery.</item>
@@ -1004,12 +1020,13 @@
     <setters>
       <set name="short">Athletics, Intimidation, Persuasion, Investigation, 1 Language</set>
     </setters>
+    <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Soldier)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_INVESTIGATION" />
       <select type="Language" name="Language (Soldier)" number="1" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_MILITARY_RANK" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
-      <select type="List" name="Personality Trait" number="1">
+      <select type="List" name="Personality Trait" number="2">
         <item id="1">I'm always polite and respectful.</item>
         <item id="2">I'm haunted by memories of war. I can't get the images of violence out of my mind.</item>
         <item id="3">I've lost too many friends, and I'm slow to make new ones.</item>
@@ -1020,12 +1037,12 @@
         <item id="8">I face problems head-on. A simple, direct solution is the best path to success.</item>
       </select>
       <select type="List" name="Ideal">
-        <item id="1">Greater Good. Our lot is to lay down our lives in defense of others.</item>
-        <item id="2">Responsibility. I do what I must and obey just authority.</item>
-        <item id="3">Independence. When people follow orders blindly, they embrace a kind of tyranny.</item>
-        <item id="4">Might. In life as in war, the stronger force wins.</item>
-        <item id="5">Live and Let Live. Ideals aren't worth killing over or going to war for.</item>
-        <item id="6">Nation. My city, nation, or people are all that matter.</item>
+        <item id="1">Greater Good. Our lot is to lay down our lives in defense of others. (Lawful)</item>
+        <item id="2">Responsibility. I do what I must and obey just authority. (Good)</item>
+        <item id="3">Independence. When people follow orders blindly, they embrace a kind of tyranny. (Chaotic)</item>
+        <item id="4">Might. In life as in war, the stronger force wins. (Evil)</item>
+        <item id="5">Live and Let Live. Ideals aren't worth killing over or going to war for. (Neutral)</item>
+        <item id="6">Nation. My city, nation, or people are all that matter. (Any)</item>
       </select>
       <select type="List" name="Bond">
         <item id="1">I would still lay down my life for the people I served with.</item>
@@ -1052,6 +1069,63 @@
       <p>You have a military rank from your career as a soldier. Soldiers loyal to your former military organization still recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment for temporary use.</p>
     </description>
     <sheet alt="Military Rank" />
+  </element>
+
+  <!-- MANDALORIAN CLANS -->
+  <element name="Clan Vizsla" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_VIZSLA">
+    <supports>Mandalorian Clan</supports>
+    <description>
+      <p>You are a member of Clan Vizsla, one of the most ancient and respected Mandalorian clans, known for producing many great leaders and warriors.</p>
+    </description>
+    <sheet alt="Clan Vizsla" />
+  </element>
+
+  <element name="Clan Fett" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_FETT">
+    <supports>Mandalorian Clan</supports>
+    <description>
+      <p>You are a member of Clan Fett, a clan known for its bounty hunters and mercenaries who have left their mark on galactic history.</p>
+    </description>
+    <sheet alt="Clan Fett" />
+  </element>
+
+  <element name="Clan Varad" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_VARAD">
+    <supports>Mandalorian Clan</supports>
+    <description>
+      <p>You are a member of Clan Varad, known for their fierce warriors and tactical brilliance in battle.</p>
+    </description>
+    <sheet alt="Clan Varad" />
+  </element>
+
+  <element name="Clan Ordo" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_ORDO">
+    <supports>Mandalorian Clan</supports>
+    <description>
+      <p>You are a member of Clan Ordo, a clan with a proud military tradition and honor-bound warriors.</p>
+    </description>
+    <sheet alt="Clan Ordo" />
+  </element>
+
+  <element name="Clan Lok" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_LOK">
+    <supports>Mandalorian Clan</supports>
+    <description>
+      <p>You are a member of Clan Lok, known for their stealth and precision in combat.</p>
+    </description>
+    <sheet alt="Clan Lok" />
+  </element>
+
+  <element name="Clan Cadera" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_CADERA">
+    <supports>Mandalorian Clan</supports>
+    <description>
+      <p>You are a member of Clan Cadera, a clan that values honor and tradition above all else.</p>
+    </description>
+    <sheet alt="Clan Cadera" />
+  </element>
+
+  <element name="Clanless" type="Background Feature" source="SW-MSV-Edition" id="ID_SW_BACKGROUND_FEATURE_CLAN_CLANLESS">
+    <supports>Mandalorian Clan</supports>
+    <description>
+      <p>You have no clan affiliation, either by choice or circumstance. You walk your own path among the Mandalorians.</p>
+    </description>
+    <sheet alt="Clanless" />
   </element>
 
 </elements>

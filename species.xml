@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Species</name>
-    <update version="2.0.1">
+    <update version="2.0.2">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
@@ -61,7 +61,7 @@
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_SONIC" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_BITH_INVESTIGATION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_BITH_PERCEPTION" />
-      <select type="Proficiency" name="Musical Instrument (Bith)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1" />
+      <select type="Proficiency" name="Musical Instrument (Bith)" supports="Musical Instrument" number="1" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_BITH" />
@@ -451,7 +451,7 @@
       <grant type="Racial Trait" id="ID_RACE_TRAIT_SMALL_BUILD" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
-      <select type="Proficiency" name="Musical Instrument (Ewok)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1" />
+      <select type="Proficiency" name="Musical Instrument (Ewok)" supports="Musical Instrument" number="1" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_EWOKESE" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_UNDERSTAND_ONLY_BASIC" />
@@ -866,7 +866,7 @@
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_MON_CALAMARI_AMPHIBIOUS" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_MON_CALAMARI_SLOW_RESISTANCE" />
-      <select type="Proficiency" name="Musical Instrument (Mon Calamari)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1" />
+      <select type="Proficiency" name="Musical Instrument (Mon Calamari)" supports="Musical Instrument" number="1" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_MON_CAL" />
       <select type="Language" name="Language (Mon Calamari)" supports="Standard||Exotic" number="1" />
@@ -983,7 +983,7 @@
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_ORTOLAN_SURVIVAL_EXPERTISE" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_ORTOLAN_KEEN_SENSES" />
-      <select type="Proficiency" name="Musical Instrument (Ortolan)" supports="ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT" number="1" />
+      <select type="Proficiency" name="Musical Instrument (Ortolan)" supports="Musical Instrument" number="1" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_ORTOLAN_NIMBLE" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_ORTOLAN" />
@@ -1885,11 +1885,12 @@
     <rules><stat name="innate speed:fly" value="30" bonus="base" /></rules>
   </element>
   <element name="Natural Armor" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_GEONOSIAN_NATURAL_ARMOR">
-    <description><p>When unarmored or wearing light armor, your AC equals 12 + your Dexterity modifier.</p></description>
-    <sheet><description>Unarmored/light armor AC = 12 + Dexterity modifier.</description></sheet>
+    <description><p>When unarmored, your AC equals 12 + your Dexterity modifier.</p></description>
+    <sheet><description>Unarmored AC = 12 + Dexterity modifier.</description></sheet>
     <rules>
-      <stat name="ac:calculation" value="12" bonus="base" requirements="[armor:none]||[armor:light]" />
-      <stat name="ac:calculation" value="dexterity:modifier" bonus="modifier" requirements="[armor:none]||[armor:light]" />
+      <stat name="ac:natural armor geonosian" value="12" />
+      <stat name="ac:natural armor geonosian" value="dexterity:modifier" />
+      <stat name="ac:calculation" value="ac:natural armor geonosian" bonus="calculation" equipped="[armor:none]" alt="Natural Armor (Geonosian)" />
     </rules>
   </element>
 
@@ -1976,11 +1977,12 @@
     <sheet><description>You can breathe air and water.</description></sheet>
   </element>
   <element name="Natural Armor" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_NAUTOLAN_NATURAL_ARMOR">
-    <description><p>When unarmored or wearing light armor, your AC equals 12 + your Dexterity modifier.</p></description>
-    <sheet><description>Unarmored/light armor AC = 12 + Dexterity modifier.</description></sheet>
+    <description><p>When unarmored, your AC equals 12 + your Dexterity modifier.</p></description>
+    <sheet><description>Unarmored AC = 12 + Dexterity modifier.</description></sheet>
     <rules>
-      <stat name="ac:calculation" value="12" bonus="base" requirements="[armor:none]||[armor:light]" />
-      <stat name="ac:calculation" value="dexterity:modifier" bonus="modifier" requirements="[armor:none]||[armor:light]" />
+      <stat name="ac:natural armor nautolan" value="12" />
+      <stat name="ac:natural armor nautolan" value="dexterity:modifier" />
+      <stat name="ac:calculation" value="ac:natural armor nautolan" bonus="calculation" equipped="[armor:none]" alt="Natural Armor (Nautolan)" />
     </rules>
   </element>
 
@@ -2057,11 +2059,12 @@
     <sheet><description>Melee reach is 5 feet greater than normal.</description></sheet>
   </element>
   <element name="Natural Armor" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_TALZ_NATURAL_ARMOR">
-    <description><p>When unarmored or wearing light armor, your AC equals 12 + your Dexterity modifier.</p></description>
-    <sheet><description>Unarmored/light armor AC = 12 + Dexterity modifier.</description></sheet>
+    <description><p>When unarmored, your AC equals 12 + your Dexterity modifier.</p></description>
+    <sheet><description>Unarmored AC = 12 + Dexterity modifier.</description></sheet>
     <rules>
-      <stat name="ac:calculation" value="12" bonus="base" requirements="[armor:none]||[armor:light]" />
-      <stat name="ac:calculation" value="dexterity:modifier" bonus="modifier" requirements="[armor:none]||[armor:light]" />
+      <stat name="ac:natural armor talz" value="12" />
+      <stat name="ac:natural armor talz" value="dexterity:modifier" />
+      <stat name="ac:calculation" value="ac:natural armor talz" bonus="calculation" equipped="[armor:none]" alt="Natural Armor (Talz)" />
     </rules>
   </element>
 
@@ -2077,11 +2080,12 @@
     <sheet><description>Unarmed strikes deal 1d4 kinetic damage.</description></sheet>
   </element>
   <element name="Natural Armor" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_TRANDOSHAN_NATURAL_ARMOR">
-    <description><p>When unarmored or wearing light armor, your AC equals 12 + your Dexterity modifier.</p></description>
-    <sheet><description>Unarmored/light armor AC = 12 + Dexterity modifier.</description></sheet>
+    <description><p>When unarmored, your AC equals 12 + your Dexterity modifier.</p></description>
+    <sheet><description>Unarmored AC = 12 + Dexterity modifier.</description></sheet>
     <rules>
-      <stat name="ac:calculation" value="12" bonus="base" requirements="[armor:none]||[armor:light]" />
-      <stat name="ac:calculation" value="dexterity:modifier" bonus="modifier" requirements="[armor:none]||[armor:light]" />
+      <stat name="ac:natural armor trandoshan" value="12" />
+      <stat name="ac:natural armor trandoshan" value="dexterity:modifier" />
+      <stat name="ac:calculation" value="ac:natural armor trandoshan" bonus="calculation" equipped="[armor:none]" alt="Natural Armor (Trandoshan)" />
     </rules>
   </element>
   <element name="Regeneration" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_TRANDOSHAN_REGENERATION">
@@ -2137,11 +2141,12 @@
     <sheet><description>On a critical hit, add one additional weapon damage die.</description></sheet>
   </element>
   <element name="Natural Armor" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_WEEQUAY_NATURAL_ARMOR">
-    <description><p>When unarmored or wearing light armor, your AC equals 13 + your Dexterity modifier.</p></description>
-    <sheet><description>Unarmored/light armor AC = 13 + Dexterity modifier.</description></sheet>
+    <description><p>When unarmored, your AC equals 13 + your Dexterity modifier.</p></description>
+    <sheet><description>Unarmored AC = 13 + Dexterity modifier.</description></sheet>
     <rules>
-      <stat name="ac:calculation" value="13" bonus="base" requirements="[armor:none]||[armor:light]" />
-      <stat name="ac:calculation" value="dexterity:modifier" bonus="modifier" requirements="[armor:none]||[armor:light]" />
+      <stat name="ac:natural armor weequay" value="13" />
+      <stat name="ac:natural armor weequay" value="dexterity:modifier" />
+      <stat name="ac:calculation" value="ac:natural armor weequay" bonus="calculation" equipped="[armor:none]" alt="Natural Armor (Weequay)" />
     </rules>
   </element>
 
@@ -2151,11 +2156,12 @@
     <sheet><description>Unarmed strikes deal 1d4 kinetic damage.</description></sheet>
   </element>
   <element name="Natural Armor" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_WOOKIE_NATURAL_ARMOR">
-    <description><p>When unarmored or wearing light armor, your AC equals 13 + your Dexterity modifier.</p></description>
-    <sheet><description>Unarmored/light armor AC = 13 + Dexterity modifier.</description></sheet>
+    <description><p>When unarmored, your AC equals 13 + your Dexterity modifier.</p></description>
+    <sheet><description>Unarmored AC = 13 + Dexterity modifier.</description></sheet>
     <rules>
-      <stat name="ac:calculation" value="13" bonus="base" requirements="[armor:none]||[armor:light]" />
-      <stat name="ac:calculation" value="dexterity:modifier" bonus="modifier" requirements="[armor:none]||[armor:light]" />
+      <stat name="ac:natural armor wookiee" value="13" />
+      <stat name="ac:natural armor wookiee" value="dexterity:modifier" />
+      <stat name="ac:calculation" value="ac:natural armor wookiee" bonus="calculation" equipped="[armor:none]" alt="Natural Armor (Wookiee)" />
     </rules>
   </element>
 
@@ -2218,8 +2224,8 @@
     <description>
       <p>Quickly repair some damage on your body. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
     </description>
-    <sheet>
-      <description>Use a bonus action to regain 1d10 + level HP. 1/Short Rest.</description>
+    <sheet action="Bonus Action" usage="1/Short Rest">
+      <description>Quickly repair some damage on your body. Regain 1d10 + {{level}} hit points.</description>
     </sheet>
   </element>
 
@@ -2228,7 +2234,7 @@
       <p>Quickly repair some damage on your body. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
     </description>
     <sheet action="Bonus Action" usage="1/Short Rest">
-      <description>Regain 1d10 + {{level}} HP.</description>
+      <description>Quickly repair some damage on your body. Regain 1d10 + {{level}} hit points.</description>
     </sheet>
   </element>
 
@@ -2280,5 +2286,51 @@
   <element name="Energy Damage Immunity" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_ENERGY">
     <description><p>You are immune to energy damage.</p></description>
     <sheet><description>Immune to energy damage.</description></sheet>
+  </element>
+
+  <!-- CYBORG SUBSPECIES -->
+  <element name="Cyborg (Arm)" type="Sub Race" source="SW-MSV-Edition" id="ID_SUBRACE_CYBORG_ARM">
+    <supports>ID_RACE_BITH|ID_RACE_BOTHAN|ID_RACE_CATHAR|ID_RACE_CHAGRIAN|ID_RACE_CHISS|ID_RACE_DEVARONIAN|ID_RACE_DUROS|ID_RACE_EWOK|ID_RACE_GAMORREAN|ID_RACE_GEONOSIAN|ID_RACE_GRAN|ID_RACE_HUMAN_STANDARD|ID_RACE_HUMAN_VARIANT|ID_RACE_ITHORIAN|ID_RACE_JAWA|ID_RACE_KALEESH|ID_RACE_KEL_DOR|ID_RACE_MIRIALAN|ID_RACE_MON_CALAMARI|ID_RACE_NAUTOLAN|ID_RACE_NEIMOIDIAN|ID_RACE_ORTOLAN|ID_RACE_RAKATA|ID_RACE_RATTATAKI|ID_RACE_RODIAN|ID_RACE_SITH_PUREBLOOD|ID_RACE_SULLUSTAN|ID_RACE_TALZ|ID_RACE_TOGRUTA|ID_RACE_TRANDOSHAN|ID_RACE_TUSKEN|ID_RACE_TWILEK|ID_RACE_UGNAUGHT|ID_RACE_WEEQUAY|ID_RACE_WOOKIE|ID_RACE_ZABRAK</supports>
+    <description>
+      <p>You have a cybernetic arm enhancement that increases your strength.</p>
+      <p class="indent"><strong><em>Cybernetic Arm.</em></strong> Your Strength score increases by 1.</p>
+    </description>
+    <sheet>
+      <description>Cybernetic arm: +1 Strength.</description>
+    </sheet>
+    <rules>
+      <stat name="strength" value="1" />
+    </rules>
+  </element>
+
+  <element name="Cyborg (Leg)" type="Sub Race" source="SW-MSV-Edition" id="ID_SUBRACE_CYBORG_LEG">
+    <supports>ID_RACE_BITH|ID_RACE_BOTHAN|ID_RACE_CATHAR|ID_RACE_CHAGRIAN|ID_RACE_CHISS|ID_RACE_DEVARONIAN|ID_RACE_DUROS|ID_RACE_EWOK|ID_RACE_GAMORREAN|ID_RACE_GEONOSIAN|ID_RACE_GRAN|ID_RACE_HUMAN_STANDARD|ID_RACE_HUMAN_VARIANT|ID_RACE_ITHORIAN|ID_RACE_JAWA|ID_RACE_KALEESH|ID_RACE_KEL_DOR|ID_RACE_MIRIALAN|ID_RACE_MON_CALAMARI|ID_RACE_NAUTOLAN|ID_RACE_NEIMOIDIAN|ID_RACE_ORTOLAN|ID_RACE_RAKATA|ID_RACE_RATTATAKI|ID_RACE_RODIAN|ID_RACE_SITH_PUREBLOOD|ID_RACE_SULLUSTAN|ID_RACE_TALZ|ID_RACE_TOGRUTA|ID_RACE_TRANDOSHAN|ID_RACE_TUSKEN|ID_RACE_TWILEK|ID_RACE_UGNAUGHT|ID_RACE_WEEQUAY|ID_RACE_WOOKIE|ID_RACE_ZABRAK</supports>
+    <description>
+      <p>You have a cybernetic leg enhancement that increases your agility.</p>
+      <p class="indent"><strong><em>Cybernetic Leg.</em></strong> Your Dexterity score increases by 1.</p>
+    </description>
+    <sheet>
+      <description>Cybernetic leg: +1 Dexterity.</description>
+    </sheet>
+    <rules>
+      <stat name="dexterity" value="1" />
+    </rules>
+  </element>
+
+  <element name="Cyborg (Both)" type="Sub Race" source="SW-MSV-Edition" id="ID_SUBRACE_CYBORG_BOTH">
+    <supports>ID_RACE_BITH|ID_RACE_BOTHAN|ID_RACE_CATHAR|ID_RACE_CHAGRIAN|ID_RACE_CHISS|ID_RACE_DEVARONIAN|ID_RACE_DUROS|ID_RACE_EWOK|ID_RACE_GAMORREAN|ID_RACE_GEONOSIAN|ID_RACE_GRAN|ID_RACE_HUMAN_STANDARD|ID_RACE_HUMAN_VARIANT|ID_RACE_ITHORIAN|ID_RACE_JAWA|ID_RACE_KALEESH|ID_RACE_KEL_DOR|ID_RACE_MIRIALAN|ID_RACE_MON_CALAMARI|ID_RACE_NAUTOLAN|ID_RACE_NEIMOIDIAN|ID_RACE_ORTOLAN|ID_RACE_RAKATA|ID_RACE_RATTATAKI|ID_RACE_RODIAN|ID_RACE_SITH_PUREBLOOD|ID_RACE_SULLUSTAN|ID_RACE_TALZ|ID_RACE_TOGRUTA|ID_RACE_TRANDOSHAN|ID_RACE_TUSKEN|ID_RACE_TWILEK|ID_RACE_UGNAUGHT|ID_RACE_WEEQUAY|ID_RACE_WOOKIE|ID_RACE_ZABRAK</supports>
+    <description>
+      <p>You have both cybernetic arm and leg enhancements, but this leaves you vulnerable to ion damage.</p>
+      <p class="indent"><strong><em>Cybernetic Enhancements.</em></strong> Your Strength and Dexterity scores each increase by 1.</p>
+      <p class="indent"><strong><em>Ion Vulnerability.</em></strong> You are vulnerable to ion damage.</p>
+    </description>
+    <sheet>
+      <description>Cybernetic arm &amp; leg: +1 Str, +1 Dex. Vulnerable to ion damage.</description>
+    </sheet>
+    <rules>
+      <stat name="strength" value="1" />
+      <stat name="dexterity" value="1" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
+    </rules>
   </element>
 </elements>
