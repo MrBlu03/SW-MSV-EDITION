@@ -3,7 +3,7 @@
   <info>
     <name>Fighting Styles</name>
     <description>Fighting Styles for SW-MSV-Edition.</description>
-    <update version="2.0.3">
+    <update version="2.0.4">
       <file name="fighting-styles.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/fighting-styles.xml" />
     </update>
   </info>
