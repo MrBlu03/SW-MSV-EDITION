@@ -2,81 +2,99 @@
 <elements>
   <info>
     <name>Tools</name>
-    <update version="2.1.2">
+    <update version="2.1.3">
       <file name="items-tools.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-tools.xml" />
     </update>
   </info>
   
   <element name="Slicing Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" source="SW-MSV-Edition">
+    <supports>Tool</supports>
     <description>
       <p>Proficiency with the slicing kit allows you to slice terminals to open locks or disarm traps.</p>
     </description>
-    <supports>Tool, ID_INTERNAL_TOOL</supports>
-    <sheet alt="Slicing Kit" />
+    <sheet alt="Slicing Kit">
+      <description>Proficiency with slicing kits allows you to slice terminals to open locks or disarm traps.</description>
+    </sheet>
   </element>
 
   <element name="Hacking Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HACKING_KIT" source="SW-MSV-Edition">
+    <supports>Tool</supports>
     <description>
       <p>Proficiency with the hacking kit allows you to hack "unconscious" droids or security systems.</p>
     </description>
-    <supports>Tool, ID_INTERNAL_TOOL</supports>
-    <sheet alt="Hacking Kit" />
+    <sheet alt="Hacking Kit">
+      <description>Proficiency with hacking kits allows you to hack unconscious droids or security systems.</description>
+    </sheet>
   </element>
 
   <element name="Disguise Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_DISGUISE_KIT" source="SW-MSV-Edition">
+    <supports>Tool</supports>
     <description>
       <p>Proficiency with the disguise kit allows you to completely change your look.</p>
     </description>
-    <supports>Tool, ID_INTERNAL_TOOL</supports>
-    <sheet alt="Disguise Kit" />
+    <sheet alt="Disguise Kit">
+      <description>Proficiency with disguise kits allows you to completely change your look.</description>
+    </sheet>
   </element>
 
   <element name="Poisoning Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_POISONING_KIT" source="SW-MSV-Edition">
+    <supports>Tool</supports>
     <description>
       <p>Proficiency with the poisoning kit allows you to coat your weapons with poisons.</p>
     </description>
-    <supports>Tool, ID_INTERNAL_TOOL</supports>
-    <sheet alt="Poisoning Kit" />
+    <sheet alt="Poisoning Kit">
+      <description>Proficiency with poisoning kits allows you to coat your weapons with poisons.</description>
+    </sheet>
   </element>
 
   <element name="Jumppack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JUMPPACK" source="SW-MSV-Edition">
+    <supports>Tool</supports>
     <description>
       <p>Proficiency with jumppack and jump boots operation.</p>
     </description>
-    <supports>Tool, ID_INTERNAL_TOOL</supports>
-    <sheet alt="Jumppack" />
+    <sheet alt="Jumppack">
+      <description>Proficiency with jumppacks and jump boots.</description>
+    </sheet>
   </element>
 
   <element name="Hoverpack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" source="SW-MSV-Edition">
+    <supports>Tool</supports>
     <description>
       <p>Proficiency with hoverpack and hover boots operation.</p>
     </description>
-    <supports>Tool, ID_INTERNAL_TOOL</supports>
-    <sheet alt="Hoverpack" />
+    <sheet alt="Hoverpack">
+      <description>Proficiency with hoverpacks and hover boots.</description>
+    </sheet>
   </element>
 
   <element name="Jetpack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JETPACK" source="SW-MSV-Edition">
+    <supports>Tool</supports>
     <description>
       <p>Proficiency with jetpack and jet boots operation.</p>
     </description>
-    <supports>Tool, ID_INTERNAL_TOOL</supports>
-    <sheet alt="Jetpack" />
+    <sheet alt="Jetpack">
+      <description>Proficiency with jetpacks and jet boots.</description>
+    </sheet>
   </element>
 
   <element name="Repair Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_REPAIR_KIT" source="SW-MSV-Edition">
+    <supports>Tool</supports>
     <description>
       <p>Proficiency with the repair kit allows you to repair weapons/armors or any technology.</p>
     </description>
-    <supports>Tool, ID_INTERNAL_TOOL</supports>
-    <sheet alt="Repair Kit" />
+    <sheet alt="Repair Kit">
+      <description>Proficiency with repair kits allows you to repair weapons, armor, or any technology.</description>
+    </sheet>
   </element>
 
   <element name="Forgery Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT" source="SW-MSV-Edition">
+    <supports>Tool</supports>
     <description>
       <p>Proficiency with the forgery kit allows you to forge documents and make counterfeit credits.</p>
     </description>
-    <supports>Tool, ID_INTERNAL_TOOL</supports>
-    <sheet alt="Forgery Kit" />
+    <sheet alt="Forgery Kit">
+      <description>Proficiency with forgery kits allows you to forge documents and make counterfeit credits.</description>
+    </sheet>
   </element>
 
   
