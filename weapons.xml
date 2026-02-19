@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Weapons</name>
-    <update version="2.1.1">
+    <update version="2.1.2">
       <file name="weapons.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/weapons.xml" />
     </update>
   </info>
@@ -440,7 +440,8 @@
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="range">30/120</set>
+      <set name="range">25/100</set>
+      <set name="reload">1</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER</set>
     </setters>
     <rules>
@@ -471,7 +472,8 @@
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
-      <set name="range">30/120</set>
+      <set name="range">35/140</set>
+      <set name="reload">1</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER</set>
     </setters>
     <rules>
@@ -809,7 +811,7 @@
         <em>Martial Blaster</em>
       </p>
       <p>
-        <em>2d4 lightning, power cell, can hit a secondary target in the same line: 1d4 lightning, range 60/240, Reload 9, requires Strength 11 to use, two-handed, Dexterity modifier</em>
+        <em>2d4 lightning, power cell, can hit a secondary target within 10 feet of the primary target: 1d4 lightning, range 60/240, Reload 9, requires Strength 11 to use, two-handed, Dexterity modifier</em>
       </p>
       <p>This weapon fires arcing bolts of electricity that can chain to nearby targets. It uses power cells and has a low capacity. Requires Strength 11 to use.</p>
       <p>

@@ -3,7 +3,7 @@
   <info>
     <name>Inquisitor Class</name>
     <description>Inquisitor Class for SW-MSV-Edition.</description>
-    <update version="2.1.1">
+    <update version="2.1.2">
       <file name="class-inquisitor.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-inquisitor.xml" />
     </update>
   </info>
@@ -291,7 +291,7 @@
   <element id="ID_CLASS_INQUISITOR_FEATURE_EVASION" name="Evasion" type="Class Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>When making a Dexterity saving throw: On a failed save take half damage. On a successgul save take no damage (can't use when incapacitated).</p>
+      <p>When making a Dexterity saving throw: On a failed save take half damage. On a successful save take no damage (can't use when incapacitated).</p>
     </description>
     <sheet>
       <description>When making a Dexterity saving throw: On a failed save take half damage. On a successful save take no damage (can't use when incapacitated).</description>
@@ -836,7 +836,7 @@
   <element id="ID_SUBCLASS_MANIPULATOR_ABILITY_CONFUSE" name="Confuse" type="Spell" level="0" source="SW-MSV-Edition">
     <supports>Inquisitor</supports>
     <description>
-      <p>Use the Force to confuse a creature. The creature must make an Wisdom saving throw. On a failed save, they must attack the nearest creature on their next turn. On a successful save, the creature is unaffected.</p>
+      <p>Use the Force to confuse a creature. The creature must make a Wisdom saving throw. On a failed save, they must attack the nearest creature on their next turn. On a successful save, the creature is unaffected.</p>
     </description>
     <sheet>
       <description>Use the Force to confuse a creature. The creature must make an Wisdom saving throw. On a failed save, they must attack the nearest creature on their next turn. On a successful save, the creature is unaffected.</description>

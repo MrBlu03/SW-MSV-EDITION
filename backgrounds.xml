@@ -3,7 +3,7 @@
   <info>
     <name>Backgrounds</name>
     <description>Backgrounds for SW-MSV-Edition.</description>
-    <update version="2.1.1">
+    <update version="2.1.2">
       <file name="backgrounds.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/backgrounds.xml" />
     </update>
   </info>
@@ -112,7 +112,7 @@
         <item id="2">Freedom. Chains are meant to be broken, as are those who would forge them. (Good)</item>
         <item id="3">Charity. I steal from the wealthy so that I can help people in need. (Chaotic)</item>
         <item id="4">Greed. I will do whatever it takes to become wealthy. (Evil)</item>
-        <item id="5">People. I'm loyal to my friends, not to any ideals, and everyone else can jog on for all I care. (Neutral)</item>
+        <item id="5">People. I'm loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care. (Neutral)</item>
         <item id="6">Redemption. There's a spark of good in everyone. (Any)</item>
       </select>
       <select type="List" name="Bond">

@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Species</name>
-    <update version="2.1.1">
+    <update version="2.1.2">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
@@ -276,7 +276,7 @@
       <p class="indent"><strong><em>Force Insensitive.</em></strong> You cannot use Force powers.</p>
       <p class="indent"><strong><em>Integrated Armor.</em></strong> You cannot wear armor, but you can have armor plating attached.</p>
       <p class="indent"><strong><em>Machine.</em></strong> You cannot be healed by kolto, bacta, or Force powers.</p>
-      <p class="indent"><strong><em>Tune-Up.</em></strong> As a bonus action, you can regain hit points equal to 1d10 + your level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+      <p class="indent"><strong><em>Tune-Up.</em></strong> Quickly repair some damage on your body. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
       <p class="indent"><strong><em>History Training.</em></strong> You are proficient in the History skill.</p>
       <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write all languages.</p>
     </description>
@@ -297,7 +297,7 @@
       <grant type="Action" id="ID_ACTION_DROID_TUNE_UP" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
-      <grant type="Language" id="ID_LANGUAGE_BINARY" />
+      <select type="Language" name="Language (Combat Droid)" supports="Standard||Exotic" number="1" />
       <grant type="Language" id="ID_LANGUAGE_BITH" />
       <grant type="Language" id="ID_LANGUAGE_BOTHESE" />
       <grant type="Language" id="ID_LANGUAGE_CATHARESE" />
@@ -351,10 +351,10 @@
       <p class="indent"><strong><em>Force Insensitive.</em></strong> You cannot use Force powers.</p>
       <p class="indent"><strong><em>Integrated Armor.</em></strong> You cannot wear armor, but you can have armor plating attached.</p>
       <p class="indent"><strong><em>Machine.</em></strong> You cannot be healed by kolto, bacta, or Force powers.</p>
-      <p class="indent"><strong><em>Tune-Up.</em></strong> As a bonus action, you can regain hit points equal to 1d10 + your level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+      <p class="indent"><strong><em>Tune-Up.</em></strong> Quickly repair some damage on your body. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
       <p class="indent"><strong><em>Armor Training.</em></strong> You are proficient with light armor and medium armor.</p>
       <p class="indent"><strong><em>Weapon Training.</em></strong> You are proficient with two simple or martial vibroweapons of your choice.</p>
-      <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Galactic Basic and Binary. You can understand Binary.</p>
+      <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Galactic Basic and one additional language of your choice. You can understand Binary.</p>
     </description>
     <sheet display="false" />
     <rules>
@@ -376,7 +376,8 @@
       <select type="Proficiency" name="Weapon Proficiency (Combat Droid 1)" supports="Vibroweapon||Simple Weapon||Martial Weapon" number="1" />
       <select type="Proficiency" name="Weapon Proficiency (Combat Droid 2)" supports="Vibroweapon||Simple Weapon||Martial Weapon" number="1" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
-      <grant type="Language" id="ID_LANGUAGE_BINARY" />
+      <select type="Language" name="Language (Combat Droid)" supports="Standard||Exotic" number="1" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_UNDERSTAND_BINARY" />
     </rules>
   </element>
 
@@ -981,6 +982,7 @@
       <stat name="innate speed" value="25" bonus="base" />
       <grant type="Size" id="ID_SIZE_SMALL" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_ORTOLAN_SURVIVAL_EXPERTISE" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_ORTOLAN_KEEN_SENSES" />
       <select type="Proficiency" name="Musical Instrument (Ortolan)" supports="Musical Instrument" number="1" />
@@ -1006,7 +1008,7 @@
       <p class="indent"><strong><em>Force Insensitive.</em></strong> You cannot use Force powers.</p>
       <p class="indent"><strong><em>Natural Weapons.</em></strong> Your unarmed strikes deal 1d6 kinetic damage.</p>
       <p class="indent"><strong><em>Slicer Training.</em></strong> You are proficient with slicing kits.</p>
-      <p class="indent"><strong><em>Consume Corpse.</em></strong> As an action, you can eat a corpse to gain temporary hit points equal to your Constitution modifier + your hit die.</p>
+      <p class="indent"><strong><em>Consume Corpse.</em></strong> As an action, you can eat a corpse to gain temporary hit points equal to your Constitution modifier.</p>
       <p class="indent"><strong><em>Swimmer.</em></strong> You have a swimming speed of 30 feet.</p>
       <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Galactic Basic and Rakata.</p>
       <p class="indent"><strong><em>Cyborg Option.</em></strong> You may choose to become a Cyborg, gaining cybernetic enhancements.</p>
@@ -1176,6 +1178,7 @@
       <grant type="Sense" id="ID_SENSE_DARKVISION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_SULLUSTAN_KEEN_HEARING" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_SULLUSTAN_PERSUASION_EXPERTISE" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_SULLUSTESE" />
@@ -1447,8 +1450,8 @@
       <grant type="Racial Trait" id="ID_RACE_TRAIT_WEEQUAY_KEEN_SMELL" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_WEEQUAY_BRUTAL_CRITICAL" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_WEEQUAY_NATURAL_ARMOR" />
-      <select type="Proficiency" name="Weapon Proficiency (Weequay 1)" supports="ID_INTERNAL_PROFICIENCY_WEAPON" number="1" />
-      <select type="Proficiency" name="Weapon Proficiency (Weequay 2)" supports="ID_INTERNAL_PROFICIENCY_WEAPON" number="1" />
+      <select type="Proficiency" name="Weapon Proficiency (Weequay 1)" supports="Vibroweapon||Blaster" number="1" />
+      <select type="Proficiency" name="Weapon Proficiency (Weequay 2)" supports="Vibroweapon||Blaster" number="1" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_SRILUURIAN" />
       <select type="Sub Race" name="Weequay Subrace" supports="ID_RACE_WEEQUAY" optional="true" />
@@ -1844,6 +1847,10 @@
     <description><p>You cannot be healed by kolto, bacta, or Force powers. Cannot wear armor, but can have armor plating attached.</p></description>
     <sheet><description>Cannot be healed by kolto, bacta, or Force powers. Cannot wear armor (can have armor attached).</description></sheet>
   </element>
+  <element name="Understand Binary" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_DROID_UNDERSTAND_BINARY">
+    <description><p>You can understand Binary but cannot speak it.</p></description>
+    <sheet><description>Understands Binary but cannot speak it.</description></sheet>
+  </element>
 
   <!-- EWOK TRAITS -->
   <element name="Keen Smell" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_EWOK_KEEN_SMELL">
@@ -2022,8 +2029,8 @@
     <sheet><description>Unarmed strikes deal 1d6 kinetic damage.</description></sheet>
   </element>
   <element name="Consume Corpse" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_RAKATA_CONSUME_CORPSE">
-    <description><p>As an Action, Eat a corpse to gain temporary Hit Points equal to your hit die + Constitution modifier.</p></description>
-    <sheet><description>As an Action, Eat a corpse to gain temporary Hit Points equal to your hit die + Constitution modifier.</description></sheet>
+    <description><p>As an Action, Eat a corpse to gain temporary Hit Points equal to your Constitution modifier.</p></description>
+    <sheet><description>As an Action, Eat a corpse to gain temporary Hit Points equal to your Constitution modifier.</description></sheet>
   </element>
 
   <!-- RATTATAKI TRAITS -->

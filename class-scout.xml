@@ -3,7 +3,7 @@
   <info>
     <name>Scout Class</name>
     <description>Scout Class for SW-MSV-Edition.</description>
-    <update version="2.1.1">
+    <update version="2.1.2">
       <file name="class-scout.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-scout.xml" />
     </update>
   </info>
@@ -451,7 +451,7 @@
   <element id="ID_SUBCLASS_ASSASSIN_ABILITY_DEATH_STRIKE" name="Death Strike" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>When you attack and hit a surprised creature, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack. On a successful save, your attack does normal damage.</p>
+      <p>When you attack and hit a surprised creature, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack. On a successful save, your attack will do normal damage.</p>
     </description>
     <sheet>
       <description>When you attack and hit a surprised creature, it must make a Con save. On a failed save, double the damage of your attack.</description>
