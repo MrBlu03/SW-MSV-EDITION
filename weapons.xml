@@ -433,8 +433,6 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Quick Shot:</strong> Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
       <p>• <strong>Dart:</strong> Action; Shoot a Dart with the weapon at a target. On hit: Damage and conditions depend on the dart.</p>
     </description>
     <setters>
@@ -447,8 +445,6 @@
     </setters>
     <rules>
       <grant type="Tag" name="Can't be Disarmed" />
-      <grant type="Action" id="ID_ACTION_SHOOT" />
-      <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
       <grant type="Action" id="ID_ACTION_DART" />
     </rules>
   </element>
@@ -468,8 +464,6 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Quick Shot:</strong> Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
       <p>• <strong>Rocket:</strong> Action; Shoot a Rocket with the weapon at a target. On hit: Damage and conditions depend on the rocket.</p>
     </description>
     <setters>
@@ -482,8 +476,6 @@
     </setters>
     <rules>
       <grant type="Tag" name="Can't be Disarmed" />
-      <grant type="Action" id="ID_ACTION_SHOOT" />
-      <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
       <grant type="Action" id="ID_ACTION_ROCKET" />
     </rules>
   </element>
@@ -503,8 +495,6 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Quick Shot:</strong> Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
       <p>• <strong>Whip:</strong> Action; 15 feet line, The target must make a DC 8 + proficiency + Dexterity modifier, Dexterity saving throw. On a failed save, the target is restrained. On a successful save, the target isn't restrained. If the target is restrained he target can on their turn use an Action to do a Strength saving throw against 8 + proficiency + Strength modifier of the restrainer. On a failed save, the targets stays restrained. On a successful save, the target is freed. The Restrainer can't use Bonus Actions or hold something in that hand when restraining someone.</p>
     </description>
     <setters>
@@ -517,8 +507,6 @@
     </setters>
     <rules>
       <grant type="Tag" name="Can't be Disarmed" />
-      <grant type="Action" id="ID_ACTION_SHOOT" />
-      <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
       <grant type="Action" id="ID_ACTION_WHIP" />
     </rules>
   </element>
@@ -538,8 +526,6 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Quick Shot:</strong> Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
       <p>• <strong>Flame:</strong> Action; Flame multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes full damage and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn. (Damage: Weapon Damage and add modifier)</p>
     </description>
     <setters>
@@ -554,8 +540,6 @@
     </setters>
     <rules>
       <grant type="Tag" name="Can't be Disarmed" />
-      <grant type="Action" id="ID_ACTION_SHOOT" />
-      <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
       <grant type="Action" id="ID_ACTION_FLAME" />
     </rules>
   </element>
@@ -621,7 +605,6 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
-      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="heavy bowcaster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_HEAVY_BOWCASTER">
@@ -654,7 +637,6 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
-      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="ion rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_RIFLE">
@@ -687,7 +669,6 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
-      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="sonic rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SONIC_RIFLE">
@@ -720,7 +701,6 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
-      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="slugthrower rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLUGTHROWER_RIFLE">
@@ -753,7 +733,6 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
-      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="cryo rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_RIFLE">
@@ -786,7 +765,6 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
-      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="railgun" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_RAILGUN">
@@ -819,7 +797,6 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
-      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="arc caster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ARC_CASTER">
@@ -852,7 +829,7 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
-      <grant type="Action" id="ID_ACTION_RELOAD" />
+      <grant type="Action" id="ID_ACTION_DART" />
     </rules>
   </element>
   <element name="sniper rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SNIPER_RIFLE">
@@ -872,6 +849,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+      <p>• <strong>Dart:</strong> Action; Shoot a Dart with the weapon at a target. On hit: Damage and conditions depend on the dart.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -917,7 +895,6 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_BLAST" />
-      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="flamethrower" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FLAMETHROWER">
@@ -949,7 +926,6 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_FLAME" />
-      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="cycler rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CYCLER_RIFLE">
@@ -982,7 +958,6 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
-      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSABER">

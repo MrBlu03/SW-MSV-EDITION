@@ -104,25 +104,19 @@
     <description>
       <p>Vulnerability to ion damage.</p>
     </description>
-    <sheet>
-      <description>Vulnerable to ion damage.</description>
-    </sheet>
+    <sheet alt="Vulnerable to ion damage" />
   </element>
   <element name="Resistance to Ion" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_ION">
     <description>
       <p>Resistance to ion damage.</p>
     </description>
-    <sheet>
-      <description>Resistant to ion damage.</description>
-    </sheet>
+    <sheet alt="Resistant to ion damage" />
   </element>
   <element name="Immunity to Ion" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_ION">
     <description>
       <p>Immunity to ion damage.</p>
     </description>
-    <sheet>
-      <description>Immune to ion damage.</description>
-    </sheet>
+    <sheet alt="Immune to ion damage" />
   </element>
 
   <!-- KINETIC DAMAGE -->
@@ -130,25 +124,19 @@
     <description>
       <p>Vulnerability to kinetic damage.</p>
     </description>
-    <sheet>
-      <description>Vulnerable to kinetic damage.</description>
-    </sheet>
+    <sheet alt="Vulnerable to kinetic damage" />
   </element>
   <element name="Resistance to Kinetic" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_KINETIC">
     <description>
       <p>Resistance to kinetic damage.</p>
     </description>
-    <sheet>
-      <description>Resistant to kinetic damage.</description>
-    </sheet>
+    <sheet alt="Resistant to kinetic damage" />
   </element>
   <element name="Immunity to Kinetic" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_KINETIC">
     <description>
       <p>Immunity to kinetic damage.</p>
     </description>
-    <sheet>
-      <description>Immune to kinetic damage.</description>
-    </sheet>
+    <sheet alt="Immune to kinetic damage" />
   </element>
 
   <!-- SONIC DAMAGE -->
@@ -156,25 +144,19 @@
     <description>
       <p>Vulnerability to sonic damage.</p>
     </description>
-    <sheet>
-      <description>Vulnerable to sonic damage.</description>
-    </sheet>
+    <sheet alt="Vulnerable to sonic damage" />
   </element>
   <element name="Resistance to Sonic" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_SONIC">
     <description>
       <p>Resistance to sonic damage.</p>
     </description>
-    <sheet>
-      <description>Resistant to sonic damage.</description>
-    </sheet>
+    <sheet alt="Resistant to sonic damage" />
   </element>
   <element name="Immunity to Sonic" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_SONIC">
     <description>
       <p>Immunity to sonic damage.</p>
     </description>
-    <sheet>
-      <description>Immune to sonic damage.</description>
-    </sheet>
+    <sheet alt="Immune to sonic damage" />
   </element>
 
   <!-- ENERGY DAMAGE -->
@@ -182,24 +164,18 @@
     <description>
       <p>Vulnerability to energy damage.</p>
     </description>
-    <sheet>
-      <description>Vulnerable to energy damage.</description>
-    </sheet>
+    <sheet alt="Vulnerable to energy damage" />
   </element>
   <element name="Resistance to Energy" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_ENERGY">
     <description>
       <p>Resistance to energy damage.</p>
     </description>
-    <sheet>
-      <description>Resistant to energy damage.</description>
-    </sheet>
+    <sheet alt="Resistant to energy damage" />
   </element>
   <element name="Immunity to Energy" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_ENERGY">
     <description>
       <p>Immunity to energy damage.</p>
     </description>
-    <sheet>
-      <description>Immune to energy damage.</description>
-    </sheet>
+    <sheet alt="Immune to energy damage" />
   </element>
 </elements>
