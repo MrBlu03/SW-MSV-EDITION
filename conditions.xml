@@ -2,12 +2,135 @@
 <elements>
   <info>
     <name>Conditions</name>
-    <update version="2.1.4">
+    <update version="2.1.5">
       <file name="conditions.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/conditions.xml" />
     </update>
   </info>
   
-  <!-- DAMAGE TYPE RULES -->
+  <!-- ============================================================ -->
+  <!-- INTERNAL DAMAGE TYPE CONDITIONS - For Aurora Engine Support  -->
+  <!-- ============================================================ -->
+  
+  <!-- ENERGY DAMAGE (Custom SW Damage Type) -->
+  <element name="Resistance to Energy" type="Condition" source="SW-MSV-Edition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ENERGY">
+    <description>
+      <p>Resistance to energy damage.</p>
+    </description>
+    <sheet alt="Resistant to energy damage" />
+    <rules>
+      <stat name="energy:resistance" value="1" />
+    </rules>
+  </element>
+  <element name="Vulnerability to Energy" type="Condition" source="SW-MSV-Edition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ENERGY">
+    <description>
+      <p>Vulnerability to energy damage.</p>
+    </description>
+    <sheet alt="Vulnerable to energy damage" />
+    <rules>
+      <stat name="energy:vulnerability" value="1" />
+    </rules>
+  </element>
+  <element name="Immunity to Energy" type="Condition" source="SW-MSV-Edition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_ENERGY">
+    <description>
+      <p>Immunity to energy damage.</p>
+    </description>
+    <sheet alt="Immune to energy damage" />
+    <rules>
+      <stat name="energy:immunity" value="1" />
+    </rules>
+  </element>
+
+  <!-- KINETIC DAMAGE (Custom SW Damage Type) -->
+  <element name="Resistance to Kinetic" type="Condition" source="SW-MSV-Edition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_KINETIC">
+    <description>
+      <p>Resistance to kinetic damage.</p>
+    </description>
+    <sheet alt="Resistant to kinetic damage" />
+    <rules>
+      <stat name="kinetic:resistance" value="1" />
+    </rules>
+  </element>
+  <element name="Vulnerability to Kinetic" type="Condition" source="SW-MSV-Edition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_KINETIC">
+    <description>
+      <p>Vulnerability to kinetic damage.</p>
+    </description>
+    <sheet alt="Vulnerable to kinetic damage" />
+    <rules>
+      <stat name="kinetic:vulnerability" value="1" />
+    </rules>
+  </element>
+  <element name="Immunity to Kinetic" type="Condition" source="SW-MSV-Edition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_KINETIC">
+    <description>
+      <p>Immunity to kinetic damage.</p>
+    </description>
+    <sheet alt="Immune to kinetic damage" />
+    <rules>
+      <stat name="kinetic:immunity" value="1" />
+    </rules>
+  </element>
+
+  <!-- ION DAMAGE (Custom SW Damage Type) -->
+  <element name="Resistance to Ion" type="Condition" source="SW-MSV-Edition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ION">
+    <description>
+      <p>Resistance to ion damage.</p>
+    </description>
+    <sheet alt="Resistant to ion damage" />
+    <rules>
+      <stat name="ion:resistance" value="1" />
+    </rules>
+  </element>
+  <element name="Vulnerability to Ion" type="Condition" source="SW-MSV-Edition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION">
+    <description>
+      <p>Vulnerability to ion damage.</p>
+    </description>
+    <sheet alt="Vulnerable to ion damage" />
+    <rules>
+      <stat name="ion:vulnerability" value="1" />
+    </rules>
+  </element>
+  <element name="Immunity to Ion" type="Condition" source="SW-MSV-Edition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_ION">
+    <description>
+      <p>Immunity to ion damage.</p>
+    </description>
+    <sheet alt="Immune to ion damage" />
+    <rules>
+      <stat name="ion:immunity" value="1" />
+    </rules>
+  </element>
+
+  <!-- SONIC DAMAGE (Custom SW Damage Type) -->
+  <element name="Resistance to Sonic" type="Condition" source="SW-MSV-Edition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SONIC">
+    <description>
+      <p>Resistance to sonic damage.</p>
+    </description>
+    <sheet alt="Resistant to sonic damage" />
+    <rules>
+      <stat name="sonic:resistance" value="1" />
+    </rules>
+  </element>
+  <element name="Vulnerability to Sonic" type="Condition" source="SW-MSV-Edition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_SONIC">
+    <description>
+      <p>Vulnerability to sonic damage.</p>
+    </description>
+    <sheet alt="Vulnerable to sonic damage" />
+    <rules>
+      <stat name="sonic:vulnerability" value="1" />
+    </rules>
+  </element>
+  <element name="Immunity to Sonic" type="Condition" source="SW-MSV-Edition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_SONIC">
+    <description>
+      <p>Immunity to sonic damage.</p>
+    </description>
+    <sheet alt="Immune to sonic damage" />
+    <rules>
+      <stat name="sonic:immunity" value="1" />
+    </rules>
+  </element>
+
+  <!-- ============================================================ -->
+  <!-- DAMAGE TYPE DESCRIPTIONS (Informational)                     -->
+  <!-- ============================================================ -->
+  
   <element name="Energy Damage" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_TYPE_ENERGY">
     <description>
       <p>Standard damage type for energy-based weapons.</p>
@@ -80,7 +203,10 @@
     </sheet>
   </element>
 
-  <!-- CUSTOM CONDITIONS -->
+  <!-- ============================================================ -->
+  <!-- CUSTOM CONDITIONS                                            -->
+  <!-- ============================================================ -->
+  
   <element name="Burning" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_BURNING">
     <description>
       <p>A burning creature takes 1d10 damage at the start of each of its turns. A creature can use an action to douse the flames.</p>
@@ -99,83 +225,137 @@
     </sheet>
   </element>
 
-  <!-- ION DAMAGE MODIFIERS -->
-  <element name="Vulnerability to Ion" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION">
+  <!-- ============================================================ -->
+  <!-- LEGACY CONDITIONS (Backward Compatibility)                   -->
+  <!-- These map to the internal conditions for compatibility       -->
+  <!-- ============================================================ -->
+  
+  <!-- Legacy Ion Conditions -->
+  <element name="Vulnerability to Ion (Legacy)" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION">
+    <compendium display="false" />
     <description>
       <p>Vulnerability to ion damage.</p>
     </description>
     <sheet alt="Vulnerable to ion damage" />
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+    </rules>
   </element>
-  <element name="Resistance to Ion" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_ION">
+  <element name="Resistance to Ion (Legacy)" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_ION">
+    <compendium display="false" />
     <description>
       <p>Resistance to ion damage.</p>
     </description>
     <sheet alt="Resistant to ion damage" />
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ION" />
+    </rules>
   </element>
-  <element name="Immunity to Ion" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_ION">
+  <element name="Immunity to Ion (Legacy)" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_ION">
+    <compendium display="false" />
     <description>
       <p>Immunity to ion damage.</p>
     </description>
     <sheet alt="Immune to ion damage" />
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_ION" />
+    </rules>
   </element>
 
-  <!-- KINETIC DAMAGE -->
-  <element name="Vulnerability to Kinetic" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_KINETIC">
+  <!-- Legacy Kinetic Conditions -->
+  <element name="Vulnerability to Kinetic (Legacy)" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_KINETIC">
+    <compendium display="false" />
     <description>
       <p>Vulnerability to kinetic damage.</p>
     </description>
     <sheet alt="Vulnerable to kinetic damage" />
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_KINETIC" />
+    </rules>
   </element>
-  <element name="Resistance to Kinetic" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_KINETIC">
+  <element name="Resistance to Kinetic (Legacy)" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_KINETIC">
+    <compendium display="false" />
     <description>
       <p>Resistance to kinetic damage.</p>
     </description>
     <sheet alt="Resistant to kinetic damage" />
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_KINETIC" />
+    </rules>
   </element>
-  <element name="Immunity to Kinetic" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_KINETIC">
+  <element name="Immunity to Kinetic (Legacy)" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_KINETIC">
+    <compendium display="false" />
     <description>
       <p>Immunity to kinetic damage.</p>
     </description>
     <sheet alt="Immune to kinetic damage" />
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_KINETIC" />
+    </rules>
   </element>
 
-  <!-- SONIC DAMAGE -->
-  <element name="Vulnerability to Sonic" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_SONIC">
+  <!-- Legacy Sonic Conditions -->
+  <element name="Vulnerability to Sonic (Legacy)" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_SONIC">
+    <compendium display="false" />
     <description>
       <p>Vulnerability to sonic damage.</p>
     </description>
     <sheet alt="Vulnerable to sonic damage" />
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_SONIC" />
+    </rules>
   </element>
-  <element name="Resistance to Sonic" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_SONIC">
+  <element name="Resistance to Sonic (Legacy)" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_SONIC">
+    <compendium display="false" />
     <description>
       <p>Resistance to sonic damage.</p>
     </description>
     <sheet alt="Resistant to sonic damage" />
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SONIC" />
+    </rules>
   </element>
-  <element name="Immunity to Sonic" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_SONIC">
+  <element name="Immunity to Sonic (Legacy)" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_SONIC">
+    <compendium display="false" />
     <description>
       <p>Immunity to sonic damage.</p>
     </description>
     <sheet alt="Immune to sonic damage" />
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_SONIC" />
+    </rules>
   </element>
 
-  <!-- ENERGY DAMAGE -->
-  <element name="Vulnerability to Energy" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ENERGY">
+  <!-- Legacy Energy Conditions -->
+  <element name="Vulnerability to Energy (Legacy)" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ENERGY">
+    <compendium display="false" />
     <description>
       <p>Vulnerability to energy damage.</p>
     </description>
     <sheet alt="Vulnerable to energy damage" />
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ENERGY" />
+    </rules>
   </element>
-  <element name="Resistance to Energy" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_ENERGY">
+  <element name="Resistance to Energy (Legacy)" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_ENERGY">
+    <compendium display="false" />
     <description>
       <p>Resistance to energy damage.</p>
     </description>
     <sheet alt="Resistant to energy damage" />
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ENERGY" />
+    </rules>
   </element>
-  <element name="Immunity to Energy" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_ENERGY">
+  <element name="Immunity to Energy (Legacy)" type="Condition" source="SW-MSV-Edition" id="ID_MSV_CONDITION_DAMAGE_IMMUNITY_ENERGY">
+    <compendium display="false" />
     <description>
       <p>Immunity to energy damage.</p>
     </description>
     <sheet alt="Immune to energy damage" />
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_ENERGY" />
+    </rules>
   </element>
+
 </elements>

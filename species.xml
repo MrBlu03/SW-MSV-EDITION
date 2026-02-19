@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Species</name>
-    <update version="2.1.4">
+    <update version="2.1.5">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
@@ -58,7 +58,7 @@
       <stat name="dexterity" value="1" />
       <stat name="innate speed" value="30" bonus="base" />
       <grant type="Size" id="ID_SIZE_MEDIUM" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_SONIC" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_SONIC" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_BITH_INVESTIGATION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_BITH_PERCEPTION" />
       <select type="Proficiency" name="Musical Instrument (Bith)" supports="Musical Instrument" number="1" />
@@ -289,7 +289,7 @@
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_ION_LIGHTNING_VULNERABILITY" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_FORCE_INSENSITIVE" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_MACHINE" />
@@ -365,7 +365,7 @@
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_ION_LIGHTNING_VULNERABILITY" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_FORCE_INSENSITIVE" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_MACHINE" />
@@ -2287,7 +2287,7 @@
     <rules>
       <stat name="strength" value="1" />
       <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
 </elements>

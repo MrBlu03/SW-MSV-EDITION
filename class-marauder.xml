@@ -3,7 +3,7 @@
   <info>
     <name>Marauder Class</name>
     <description>Marauder Class for SW-MSV-Edition.</description>
-    <update version="2.1.4">
+    <update version="2.1.5">
       <file name="class-marauder.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-marauder.xml" />
     </update>
   </info>
