@@ -3,7 +3,7 @@
   <info>
     <name>Warrior Class</name>
     <description>Warrior Class for SW-MSV-Edition.</description>
-    <update version="2.1.9">
+    <update version="2.2.0">
       <file name="class-warrior.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-warrior.xml" />
     </update>
   </info>
@@ -343,7 +343,7 @@
       <description>You gain proficiency with one type of tool of your choice.</description>
     </sheet>
     <rules>
-      <select type="Proficiency" name="Tool Proficiency (Student of War)" supports="Tool" />
+      <select type="Proficiency" name="Tool Proficiency (Student of War)" supports="ID_INTERNAL_PROFICIENCY_TOOL" />
     </rules>
   </element>
 

@@ -3,7 +3,7 @@
   <info>
     <name>Feats</name>
     <description>Feats for SW-MSV-Edition.</description>
-    <update version="2.1.9">
+    <update version="2.2.0">
       <file name="feats.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/feats.xml" />
     </update>
   </info>
@@ -522,9 +522,9 @@
       <description>You gain Proficiency in 3 Skills or 1 skill and 1 tool of your choice.</description>
     </sheet>
     <rules>
-      <select type="Proficiency" name="Proficiency (Skilled 1)" supports="Skill||Tool" />
-      <select type="Proficiency" name="Proficiency (Skilled 2)" supports="Skill||Tool" />
-      <select type="Proficiency" name="Proficiency (Skilled 3)" supports="Skill||Tool" />
+      <select type="Proficiency" name="Proficiency (Skilled 1)" supports="Skill||ID_INTERNAL_PROFICIENCY_TOOL" />
+      <select type="Proficiency" name="Proficiency (Skilled 2)" supports="Skill||ID_INTERNAL_PROFICIENCY_TOOL" />
+      <select type="Proficiency" name="Proficiency (Skilled 3)" supports="Skill||ID_INTERNAL_PROFICIENCY_TOOL" />
     </rules>
   </element>
 
