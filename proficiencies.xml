@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Proficiencies</name>
-    <update version="2.2.0">
+    <update version="2.2.1">
       <file name="proficiencies.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/proficiencies.xml" />
     </update>
   </info>
@@ -129,17 +129,17 @@
     <description>
       <p>Sniper rifle proficiency</p>
     </description>
-    <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+    <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Cycler Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CYCLER_RIFLE" source="SW-MSV-Edition">
     <description>
       <p>Cycler rifle proficiency</p>
     </description>
-    <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+    <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Rocket Launcher" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ROCKET_LAUNCHER" source="SW-MSV-Edition">
     <description><p>Rocket Launcher proficiency</p></description>
-    <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+    <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
 
   
@@ -194,47 +194,47 @@
   <element name="Weapon: Blaster Pistol" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_PISTOL" source="SW-MSV-Edition">
     <description><p>Blaster Pistol proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE</supports>
   </element>
   <element name="Weapon: Energy Bow" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ENERGY_BOW" source="SW-MSV-Edition">
     <description><p>Energy Bow proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE</supports>
   </element>
   <element name="Weapon: Ion Pistol" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ION_PISTOL" source="SW-MSV-Edition">
     <description><p>Ion Pistol proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE</supports>
   </element>
   <element name="Weapon: Sonic Pistol" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SONIC_PISTOL" source="SW-MSV-Edition">
     <description><p>Sonic Pistol proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE</supports>
   </element>
   <element name="Weapon: Cryo Pistol" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CRYO_PISTOL" source="SW-MSV-Edition">
     <description><p>Cryo Pistol proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE</supports>
   </element>
   <element name="Weapon: Slugthrower Pistol" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SLUGTHROWER_PISTOL" source="SW-MSV-Edition">
     <description><p>Slugthrower Pistol proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE</supports>
   </element>
   <element name="Weapon: Disruptor Pistol" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_DISRUPTOR_PISTOL" source="SW-MSV-Edition">
     <description><p>Disruptor Pistol proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE</supports>
   </element>
   <element name="Weapon: Stealth Pistol" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_STEALTH_PISTOL" source="SW-MSV-Edition">
     <description><p>Stealth Pistol proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE</supports>
   </element>
   <element name="Weapon: Wrist Blaster" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_BLASTER" source="SW-MSV-Edition">
     <description><p>Wrist Blaster proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE</supports>
   </element>
   <element name="Weapon: Wrist Launcher" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER" source="SW-MSV-Edition">
     <description><p>Wrist Launcher proficiency</p></description>
@@ -244,142 +244,142 @@
   <element name="Weapon: Blaster Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_RIFLE" source="SW-MSV-Edition">
     <description><p>Blaster Rifle proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Disruptor Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_DISRUPTOR_RIFLE" source="SW-MSV-Edition">
     <description><p>Disruptor Rifle proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Heavy Bowcaster" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_HEAVY_BOWCASTER" source="SW-MSV-Edition">
     <description><p>Heavy Bowcaster proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Ion Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ION_RIFLE" source="SW-MSV-Edition">
     <description><p>Ion Rifle proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Sonic Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SONIC_RIFLE" source="SW-MSV-Edition">
     <description><p>Sonic Rifle proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Slugthrower Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SLUGTHROWER_RIFLE" source="SW-MSV-Edition">
     <description><p>Slugthrower Rifle proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Cryo Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CRYO_RIFLE" source="SW-MSV-Edition">
     <description><p>Cryo Rifle proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Railgun" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_RAILGUN" source="SW-MSV-Edition">
     <description><p>Railgun proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Arc Caster" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ARC_CASTER" source="SW-MSV-Edition">
     <description><p>Arc Caster proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Minigun/Rotary Cannon" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_MINIGUN_ROTARY_CANNON" source="SW-MSV-Edition">
     <description><p>Minigun/Rotary Cannon proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Flamethrower" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_FLAMETHROWER" source="SW-MSV-Edition">
     <description><p>Flamethrower proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Lightsaber" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER" source="SW-MSV-Edition">
     <description><p>Lightsaber proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE</supports>
   </element>
   <element name="Weapon: Lightstaff" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSTAFF" source="SW-MSV-Edition">
     <description><p>Lightstaff proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE</supports>
   </element>
   <element name="Weapon: Crossguard Saber" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_CROSSGUARD_SABER" source="SW-MSV-Edition">
     <description><p>Crossguard Saber proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Lightwhip" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTWHIP" source="SW-MSV-Edition">
     <description><p>Lightwhip proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Martial Lightsaber" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_LIGHTSABER" source="SW-MSV-Edition">
     <description><p>Martial Lightsaber proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Lightsaber Pike" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTSABER_PIKE" source="SW-MSV-Edition">
     <description><p>Lightsaber Pike proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Double Bladed Lightsaber" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_BLADED_LIGHTSABER" source="SW-MSV-Edition">
     <description><p>Double Bladed Lightsaber proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Vibrospear" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSPEAR" source="SW-MSV-Edition">
     <description><p>Vibrospear proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon,ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE</supports>
   </element>
   <element name="Weapon: Vibrodagger" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBRODAGGER" source="SW-MSV-Edition">
     <description><p>Vibrodagger proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon,ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE</supports>
   </element>
   <element name="Weapon: Vibrostaff" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSTAFF" source="SW-MSV-Edition">
     <description><p>Vibrostaff proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon,ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE</supports>
   </element>
   <element name="Weapon: Vibro Double-Blade" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBRO_DOUBLE_BLADE" source="SW-MSV-Edition">
     <description><p>Vibro Double-Blade proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Electrostaff" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ELECTROSTAFF" source="SW-MSV-Edition">
     <description><p>Electrostaff proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Vibrosword" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROSWORD" source="SW-MSV-Edition">
     <description><p>Vibrosword proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Vibro-Axe" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBRO_AXE" source="SW-MSV-Edition">
     <description><p>Vibro-Axe proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Vibropike" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_VIBROPIKE" source="SW-MSV-Edition">
     <description><p>Vibropike proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Electrowhip" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ELECTROWHIP" source="SW-MSV-Edition">
     <description><p>Electrowhip proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
   <element name="Weapon: Electrobaton" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_ELECTROBATON" source="SW-MSV-Edition">
     <description><p>Electrobaton proficiency</p></description>
 
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon</supports>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,Vibroweapon,ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL</supports>
   </element>
 
   

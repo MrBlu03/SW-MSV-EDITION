@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Species</name>
-    <update version="2.2.0">
+    <update version="2.2.1">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
@@ -375,8 +375,8 @@
       <grant type="Action" id="ID_ACTION_DROID_TUNE_UP" />
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
-      <select type="Proficiency" name="Weapon Proficiency (Combat Droid 1)" supports="Vibroweapon||Simple Weapon||Martial Weapon" number="1" />
-      <select type="Proficiency" name="Weapon Proficiency (Combat Droid 2)" supports="Vibroweapon||Simple Weapon||Martial Weapon" number="1" />
+      <select type="Proficiency" name="Weapon Proficiency (Combat Droid 1)" supports="Vibroweapon||ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE||ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL" number="1" />
+      <select type="Proficiency" name="Weapon Proficiency (Combat Droid 2)" supports="Vibroweapon||ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE||ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL" number="1" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <select type="Language" name="Language (Combat Droid)" supports="Standard||Exotic" number="1" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_UNDERSTAND_BINARY" />

@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Tools</name>
-    <update version="2.2.0">
+    <update version="2.2.1">
       <file name="items-tools.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-tools.xml" />
     </update>
   </info>
@@ -12,7 +12,9 @@
     <description>
       <p>Proficiency with the slicing kit allows you to slice terminals to open locks or disarm traps.</p>
     </description>
-    <sheet alt="Slicing Kit" />
+    <sheet>
+      <description>Proficiency with the slicing kit.</description>
+    </sheet>
   </element>
 
   <element name="Hacking Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HACKING_KIT" source="SW-MSV-Edition">
@@ -20,7 +22,9 @@
     <description>
       <p>Proficiency with the hacking kit allows you to hack "unconscious" droids or security systems.</p>
     </description>
-    <sheet alt="Hacking Kit" />
+    <sheet>
+      <description>Proficiency with the hacking kit.</description>
+    </sheet>
   </element>
 
   <element name="Disguise Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_DISGUISE_KIT" source="SW-MSV-Edition">
@@ -28,7 +32,9 @@
     <description>
       <p>Proficiency with the disguise kit allows you to completely change your look.</p>
     </description>
-    <sheet alt="Disguise Kit" />
+    <sheet>
+      <description>Proficiency with the disguise kit.</description>
+    </sheet>
   </element>
 
   <element name="Poisoning Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_POISONING_KIT" source="SW-MSV-Edition">
@@ -36,7 +42,9 @@
     <description>
       <p>Proficiency with the poisoning kit allows you to coat your weapons with poisons.</p>
     </description>
-    <sheet alt="Poisoning Kit" />
+    <sheet>
+      <description>Proficiency with the poisoning kit.</description>
+    </sheet>
   </element>
 
   <element name="Jumppack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JUMPPACK" source="SW-MSV-Edition">
@@ -44,7 +52,9 @@
     <description>
       <p>Proficiency with jumppack and jump boots operation.</p>
     </description>
-    <sheet alt="Jumppack" />
+    <sheet>
+      <description>Proficiency with the jumppack.</description>
+    </sheet>
   </element>
 
   <element name="Hoverpack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" source="SW-MSV-Edition">
@@ -52,7 +62,9 @@
     <description>
       <p>Proficiency with hoverpack and hover boots operation.</p>
     </description>
-    <sheet alt="Hoverpack" />
+    <sheet>
+      <description>Proficiency with the hoverpack.</description>
+    </sheet>
   </element>
 
   <element name="Jetpack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JETPACK" source="SW-MSV-Edition">
@@ -60,7 +72,9 @@
     <description>
       <p>Proficiency with jetpack and jet boots operation.</p>
     </description>
-    <sheet alt="Jetpack" />
+    <sheet>
+      <description>Proficiency with the jetpack.</description>
+    </sheet>
   </element>
 
   <element name="Repair Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_REPAIR_KIT" source="SW-MSV-Edition">
@@ -68,7 +82,9 @@
     <description>
       <p>Proficiency with the repair kit allows you to repair weapons/armors or any technology.</p>
     </description>
-    <sheet alt="Repair Kit" />
+    <sheet>
+      <description>Proficiency with the repair kit.</description>
+    </sheet>
   </element>
 
   <element name="Forgery Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT" source="SW-MSV-Edition">
@@ -76,7 +92,9 @@
     <description>
       <p>Proficiency with the forgery kit allows you to forge documents and make counterfeit credits.</p>
     </description>
-    <sheet alt="Forgery Kit" />
+    <sheet>
+      <description>Proficiency with the forgery kit.</description>
+    </sheet>
   </element>
 
   
