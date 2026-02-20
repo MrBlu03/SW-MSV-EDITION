@@ -2,88 +2,88 @@
 <elements>
   <info>
     <name>Weapons</name>
-    <update version="2.1.5">
+    <update version="2.1.6">
       <file name="weapons.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/weapons.xml" />
     </update>
   </info>
   <element name="Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_STRIKE">
     <description>
-      <p>As an Action, Make a melee attack with the [weapon name]. On hit: [weapon damage] + your [weapon modifier(s)].</p>
+      <p>As an Action, Make a melee attack with the weapon. On hit: the weapon's damage dice + your applicable modifier.</p>
     </description>
     <sheet>
-      <description>As an Action, Make a melee attack with the [weapon name]. On hit: [weapon damage] + your [weapon modifier(s)].</description>
+      <description>As an Action, Make a melee attack with the weapon. On hit: the weapon's damage dice + your applicable modifier.</description>
     </sheet>
   </element>
   <element name="Shoot" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SHOOT">
     <description>
-      <p>As an Action, Make a ranged attack with the [weapon name]. On hit: [weapon damage] + your [weapon modifier(s)].</p>
+      <p>As an Action, Make a ranged attack with the weapon. On hit: the weapon's damage dice + your applicable modifier.</p>
     </description>
     <sheet>
-      <description>As an Action, Make a ranged attack with the [weapon name]. On hit: [weapon damage] + your [weapon modifier(s)].</description>
+      <description>As an Action, Make a ranged attack with the weapon. On hit: the weapon's damage dice + your applicable modifier.</description>
     </sheet>
   </element>
   <element name="Hilt Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_HILT_STRIKE">
     <description>
-      <p>As a Bonus Action, Make a melee attack with the hilt of [weapon name], possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your [weapon modifier(s)]. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
+      <p>As a Bonus Action, Make a melee attack with the hilt of the weapon, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your applicable modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <sheet>
-      <description>As a Bonus Action, Make a melee attack with the hilt of [weapon name], possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your [weapon modifier(s)]. On a failed save, the target becomes dazed. On a successful save, the target doesn't get dazed.</description>
+      <description>As a Bonus Action, Make a melee attack with the hilt of the weapon, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your applicable modifier. On a failed save, the target becomes dazed. On a successful save, the target doesn't get dazed.</description>
     </sheet>
   </element>
   <element name="Slash" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SLASH">
     <description>
-      <p>As an Action, Make a sweeping melee attack with the [weapon name] against all creatures standing in a 15 foot hoziontal line originating from you. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your [weapon modifier(s)]). A creature takes [weapon damage] without modifiers on a failed save, or half as much on a successful one.</p>
+      <p>As an Action, Make a sweeping melee attack with the weapon against all creatures standing in a 15 foot horizontal line originating from you. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your applicable modifier). A creature takes the weapon's damage dice without modifiers on a failed save, or half as much on a successful one.</p>
     </description>
     <sheet>
-      <description>As an Action, Make a sweeping melee attack with the [weapon name] against all creatures standing in a 15 foot hoziontal line originating from you. Each target makes a Dexterity saving throw. A creature takes [weapon damage] without modifiers on a failed save, or half as much on a successful one.</description>
+      <description>As an Action, Make a sweeping melee attack with the weapon against all creatures standing in a 15 foot horizontal line originating from you. Each target makes a Dexterity saving throw. A creature takes the weapon's damage dice without modifiers on a failed save, or half as much on a successful one.</description>
     </sheet>
   </element>
   <element name="Blast" type="Action" source="SW-MSV-Edition" id="ID_ACTION_BLAST">
     <description>
-      <p>As an Action, Blast multiple targets in a [weapon range] cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes [weapon damage] + [weapon modifier(s)]. On a successful save, the target takes half damage.</p>
+      <p>As an Action, Blast multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes the weapon's damage dice + Dexterity modifier. On a successful save, the target takes half damage.</p>
     </description>
     <sheet>
-      <description>As an Action, Blast multiple targets in a [weapon range] cone in front of you. Each target makes a Dexterity saving throw. On a failed save, the target takes [weapon damage] + [weapon modifier(s)]. On a successful save, the target takes half damage.</description>
+      <description>As an Action, Blast multiple targets in a cone in front of you. Each target makes a Dexterity saving throw. On a failed save, the target takes the weapon's damage dice + Dexterity modifier. On a successful save, the target takes half damage.</description>
     </sheet>
   </element>
   <element name="Flame" type="Action" source="SW-MSV-Edition" id="ID_ACTION_FLAME">
     <description>
-      <p>As an Action, Flame multiple targets in a [weapon range] cone in front of you. Each target must make a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes [weapon damage] + [weapon modifier(s)] and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</p>
+      <p>As an Action, Flame multiple targets in a cone in front of you. Each target must make a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes the weapon's damage dice + Dexterity modifier and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</p>
     </description>
     <sheet>
-      <description>As an Action, Flame multiple targets in a [weapon range] cone in front of you. Each target must make a Dexterity saving throw. On a failed save, the target takes [weapon damage] + [weapon modifier(s)] and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</description>
+      <description>As an Action, Flame multiple targets in a cone in front of you. Each target must make a Dexterity saving throw. On a failed save, the target takes the weapon's damage dice + Dexterity modifier and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</description>
     </sheet>
   </element>
   <element name="Off-Hand Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_OFF_HAND_STRIKE">
     <description>
-      <p>As a Bonus Action, Make a melee attack with the [weapon name] while wielding it in your off-hand. On hit: [weapon damage] without modifiers.</p>
+      <p>As a Bonus Action, Make a melee attack with the weapon while wielding it in your off-hand. On hit: the weapon's damage dice without modifiers.</p>
     </description>
     <sheet>
-      <description>As a Bonus Action, Make a melee attack with the [weapon name] while wielding it in your off-hand. On hit: [weapon damage] without modifiers.</description>
+      <description>As a Bonus Action, Make a melee attack with the weapon while wielding it in your off-hand. On hit: the weapon's damage dice without modifiers.</description>
     </sheet>
   </element>
   <element name="Quick Shot" type="Action" source="SW-MSV-Edition" id="ID_ACTION_QUICK_SHOT">
     <description>
-      <p>As a Bonus Action, Make a quick hipfire shot with the [weapon name] while wielding it in your off-hand. On hit: [weapon damage] without modifiers.</p>
+      <p>As a Bonus Action, Make a quick hipfire shot with the weapon while wielding it in your off-hand. On hit: the weapon's damage dice without modifiers.</p>
     </description>
     <sheet>
-      <description>As a Bonus Action, Make a quick hipfire shot with the [weapon name] while wielding it in your off-hand. On hit: [weapon damage] without modifiers.</description>
+      <description>As a Bonus Action, Make a quick hipfire shot with the weapon while wielding it in your off-hand. On hit: the weapon's damage dice without modifiers.</description>
     </sheet>
   </element>
   <element name="Back Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_BACK_STRIKE">
     <description>
-      <p>As a Bonus Action, Make a melee attack with the back end of the [weapon name]. On hit: [weapon damage] without modifiers.</p>
+      <p>As a Bonus Action, Make a melee attack with the back end of the weapon. On hit: the weapon's damage dice without modifiers.</p>
     </description>
     <sheet>
-      <description>As a Bonus Action, Make a melee attack with the back end of the [weapon name]. On hit: [weapon damage] without modifiers.</description>
+      <description>As a Bonus Action, Make a melee attack with the back end of the weapon. On hit: the weapon's damage dice without modifiers.</description>
     </sheet>
   </element>
   <element name="Dart" type="Action" source="SW-MSV-Edition" id="ID_ACTION_DART">
     <description>
-      <p>As an Action, Shoot a Dart with the [weapon name] at a target. On hit: Damage and conditions depend on the dart.</p>
+      <p>As an Action, Shoot a Dart with the weapon at a target. On hit: Damage and conditions depend on the dart.</p>
     </description>
     <sheet>
-      <description>As an Action, Shoot a Dart with the [weapon name] at a target. On hit: Damage and conditions depend on the dart.</description>
+      <description>As an Action, Shoot a Dart with the weapon at a target. On hit: Damage and conditions depend on the dart.</description>
     </sheet>
   </element>
   <element name="Stealth Pistol Dart" type="Action" source="SW-MSV-Edition" id="ID_ACTION_STEALTH_PISTOL_DART">
@@ -96,10 +96,10 @@
   </element>
   <element name="Rocket" type="Action" source="SW-MSV-Edition" id="ID_ACTION_ROCKET">
     <description>
-      <p>As an Action, Shoot a Rocket with the [weapon name] at a target. On hit: Damage and conditions depend on the rocket.</p>
+      <p>As an Action, Shoot a Rocket with the weapon at a target. On hit: Damage and conditions depend on the rocket.</p>
     </description>
     <sheet>
-      <description>As an Action, Shoot a Rocket with the [weapon name] at a target. On hit: Damage and conditions depend on the rocket.</description>
+      <description>As an Action, Shoot a Rocket with the weapon at a target. On hit: Damage and conditions depend on the rocket.</description>
     </sheet>
   </element>
   <element name="Whip" type="Action" source="SW-MSV-Edition" id="ID_ACTION_WHIP">
@@ -112,10 +112,10 @@
   </element>
   <element name="Reload" type="Action" source="SW-MSV-Edition" id="ID_ACTION_RELOAD">
     <description>
-      <p>Action; After x amount of shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
+      <p>Action; After the weapon's reload capacity is expended, take a full Action to fully reload your weapon.</p>
     </description>
     <sheet>
-      <description>Action; After x amount of shots your weapon needs a reload, take a full Action to fully reload your weapon.</description>
+      <description>Action; After the weapon's reload capacity is expended, take a full Action to fully reload your weapon.</description>
     </sheet>
   </element>
   <element name="blaster pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BLASTER_PISTOL">
