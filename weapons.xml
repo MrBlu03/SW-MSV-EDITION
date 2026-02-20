@@ -8,82 +8,82 @@
   </info>
   <element name="Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_STRIKE">
     <description>
-      <p>Strike: Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+      <p>As an Action, Make a melee attack with the [weapon name]. On hit: [weapon damage] + your [weapon modifier(s)].</p>
     </description>
     <sheet>
-      <description>Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</description>
+      <description>As an Action, Make a melee attack with the [weapon name]. On hit: [weapon damage] + your [weapon modifier(s)].</description>
     </sheet>
   </element>
   <element name="Shoot" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SHOOT">
     <description>
-      <p>Shoot: Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+      <p>As an Action, Make a ranged attack with the [weapon name]. On hit: [weapon damage] + your [weapon modifier(s)].</p>
     </description>
     <sheet>
-      <description>Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</description>
+      <description>As an Action, Make a ranged attack with the [weapon name]. On hit: [weapon damage] + your [weapon modifier(s)].</description>
     </sheet>
   </element>
   <element name="Hilt Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_HILT_STRIKE">
     <description>
-      <p>Hilt Strike: As a Bonus Action, When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. The target must make a Constitution saving throw: DC:8 + proficiency bonus + Strength or Dexterity modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed. (Damage: 1d4 kinetic)</p>
+      <p>As a Bonus Action, Make a melee attack with the hilt of [weapon name], possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your [weapon modifier(s)]. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <sheet>
-      <description>As a Bonus Action, Make a melee attack with the hilt of that weapon. On hit: 1d4 kinetic damage, target makes Constitution save (DC 8 + prof + Str/Dex mod) or becomes dazed.</description>
+      <description>As a Bonus Action, Make a melee attack with the hilt of [weapon name], possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your [weapon modifier(s)]. On a failed save, the target becomes dazed. On a successful save, the target doesn't get dazed.</description>
     </sheet>
   </element>
   <element name="Slash" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SLASH">
     <description>
-      <p>Slash: Action; When wielding double bladed weapon, make a melee attack that hits in a 15 feet horizontal line in front of you. (Damage: weapon damage without adding modifiers)</p>
+      <p>As an Action, Make a sweeping melee attack with the [weapon name] against all creatures standing in a 15 foot hoziontal line originating from you. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your [weapon modifier(s)]). A creature takes [weapon damage] without modifiers on a failed save, or half as much on a successful one.</p>
     </description>
     <sheet>
-      <description>Action; When wielding double bladed weapon, make a melee attack that hits in a 15 feet horizontal line in front of you. (Damage: weapon damage without adding modifiers)</description>
+      <description>As an Action, Make a sweeping melee attack with the [weapon name] against all creatures standing in a 15 foot hoziontal line originating from you. Each target makes a Dexterity saving throw. A creature takes [weapon damage] without modifiers on a failed save, or half as much on a successful one.</description>
     </sheet>
   </element>
   <element name="Blast" type="Action" source="SW-MSV-Edition" id="ID_ACTION_BLAST">
     <description>
-      <p>Blast: Action; Blast multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes full damage. On a successful save, the target takes half damage. (Damage: Weapon Damage and add modifier)</p>
+      <p>As an Action, Blast multiple targets in a [weapon range] cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes [weapon damage] + [weapon modifier(s)]. On a successful save, the target takes half damage.</p>
     </description>
     <sheet>
-      <description>Action; Blast multiple targets in a cone. Dexterity save (DC 8 + prof + Dexterity modifier). Full damage on fail, half on success. (Damage: Weapon Damage and add modifier)</description>
+      <description>As an Action, Blast multiple targets in a [weapon range] cone in front of you. Each target makes a Dexterity saving throw. On a failed save, the target takes [weapon damage] + [weapon modifier(s)]. On a successful save, the target takes half damage.</description>
     </sheet>
   </element>
   <element name="Flame" type="Action" source="SW-MSV-Edition" id="ID_ACTION_FLAME">
     <description>
-      <p>Flame: Action; Flame multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes full damage and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn. (Damage: Weapon Damage and add modifier)</p>
+      <p>As an Action, Flame multiple targets in a [weapon range] cone in front of you. Each target must make a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes [weapon damage] + [weapon modifier(s)] and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</p>
     </description>
     <sheet>
-      <description>Action; Flame multiple targets in a cone. Dexterity save (DC 8 + prof + Dexterity modifier). Full damage + burning (2 turns) on fail, half damage + burning (1 turn) on success. (Damage: Weapon Damage and add modifier)</description>
+      <description>As an Action, Flame multiple targets in a [weapon range] cone in front of you. Each target must make a Dexterity saving throw. On a failed save, the target takes [weapon damage] + [weapon modifier(s)] and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</description>
     </sheet>
   </element>
   <element name="Off-Hand Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_OFF_HAND_STRIKE">
     <description>
-      <p>Off-Hand Strike: Bonus Action; When dual-wielding, make a melee attack with the melee weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>As a Bonus Action, Make a melee attack with the [weapon name] while wielding it in your off-hand. On hit: [weapon damage] without modifiers.</p>
     </description>
     <sheet>
-      <description>Bonus Action; When dual-wielding, make a melee attack with the melee weapon in your off-hand. (Damage: weapon damage without adding modifiers)</description>
+      <description>As a Bonus Action, Make a melee attack with the [weapon name] while wielding it in your off-hand. On hit: [weapon damage] without modifiers.</description>
     </sheet>
   </element>
   <element name="Quick Shot" type="Action" source="SW-MSV-Edition" id="ID_ACTION_QUICK_SHOT">
     <description>
-      <p>Quick Shot: Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>As a Bonus Action, Make a quick hipfire shot with the [weapon name] while wielding it in your off-hand. On hit: [weapon damage] without modifiers.</p>
     </description>
     <sheet>
-      <description>Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)</description>
+      <description>As a Bonus Action, Make a quick hipfire shot with the [weapon name] while wielding it in your off-hand. On hit: [weapon damage] without modifiers.</description>
     </sheet>
   </element>
   <element name="Back Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_BACK_STRIKE">
     <description>
-      <p>Back Strike: As a Bonus Action, Make a melee attack with the other side of your weapon. On hit: weapon damage without adding modifiers.</p>
+      <p>As a Bonus Action, Make a melee attack with the back end of the [weapon name]. On hit: [weapon damage] without modifiers.</p>
     </description>
     <sheet>
-      <description>As a Bonus Action, Make a melee attack with the other side of your weapon. On hit: weapon damage without adding modifiers.</description>
+      <description>As a Bonus Action, Make a melee attack with the back end of the [weapon name]. On hit: [weapon damage] without modifiers.</description>
     </sheet>
   </element>
   <element name="Dart" type="Action" source="SW-MSV-Edition" id="ID_ACTION_DART">
     <description>
-      <p>Dart: As an Action, Shoot a Dart with the weapon at a target. On hit: Damage and conditions depend on the dart.</p>
+      <p>As an Action, Shoot a Dart with the [weapon name] at a target. On hit: Damage and conditions depend on the dart.</p>
     </description>
     <sheet>
-      <description>As an Action, Shoot a Dart with the weapon. On hit: Damage and conditions depend on the dart.</description>
+      <description>As an Action, Shoot a Dart with the [weapon name] at a target. On hit: Damage and conditions depend on the dart.</description>
     </sheet>
   </element>
   <element name="Stealth Pistol Dart" type="Action" source="SW-MSV-Edition" id="ID_ACTION_STEALTH_PISTOL_DART">
@@ -96,10 +96,10 @@
   </element>
   <element name="Rocket" type="Action" source="SW-MSV-Edition" id="ID_ACTION_ROCKET">
     <description>
-      <p>Rocket: As an Action, Shoot a Rocket with the weapon at a target. On hit: Damage and conditions depend on the rocket.</p>
+      <p>As an Action, Shoot a Rocket with the [weapon name] at a target. On hit: Damage and conditions depend on the rocket.</p>
     </description>
     <sheet>
-      <description>As an Action, Shoot a Rocket with the weapon. On hit: Damage and conditions depend on the rocket.</description>
+      <description>As an Action, Shoot a Rocket with the [weapon name] at a target. On hit: Damage and conditions depend on the rocket.</description>
     </sheet>
   </element>
   <element name="Whip" type="Action" source="SW-MSV-Edition" id="ID_ACTION_WHIP">
@@ -112,7 +112,7 @@
   </element>
   <element name="Reload" type="Action" source="SW-MSV-Edition" id="ID_ACTION_RELOAD">
     <description>
-      <p>Reload: Action; After x amount of shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
+      <p>Action; After x amount of shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <sheet>
       <description>Action; After x amount of shots your weapon needs a reload, take a full Action to fully reload your weapon.</description>
@@ -134,8 +134,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Quick Shot:</strong> Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the blaster pistol. On hit: 1d6 energy + your Dexterity modifier.</p>
+      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the blaster pistol while wielding it in your off-hand. On hit: 1d6 energy without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -168,8 +168,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Quick Shot:</strong> Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the energy bow. On hit: 1d6 energy + your Strength or Dexterity modifier.</p>
+      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the energy bow while wielding it in your off-hand. On hit: 1d6 energy without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -202,8 +202,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Quick Shot:</strong> Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the ion pistol. On hit: 1d4 ion + your Dexterity modifier.</p>
+      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the ion pistol while wielding it in your off-hand. On hit: 1d4 ion without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -236,8 +236,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Quick Shot:</strong> Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the sonic pistol. On hit: 1d4 sonic + your Dexterity modifier.</p>
+      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the sonic pistol while wielding it in your off-hand. On hit: 1d4 sonic without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -270,8 +270,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Quick Shot:</strong> Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the cryo pistol. On hit: 1d4 cold + your Dexterity modifier.</p>
+      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the cryo pistol while wielding it in your off-hand. On hit: 1d4 cold without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -304,8 +304,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Quick Shot:</strong> Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the slugthrower pistol. On hit: 1d6 kinetic + your Dexterity modifier.</p>
+      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the slugthrower pistol while wielding it in your off-hand. On hit: 1d6 kinetic without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -338,8 +338,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Quick Shot:</strong> Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the disruptor pistol. On hit: 1d6 acid + your Dexterity modifier.</p>
+      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the disruptor pistol while wielding it in your off-hand. On hit: 1d6 acid without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -372,8 +372,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Dart:</strong> Action; Shoot a Dart with the weapon at a target. On hit: Damage and conditions depend on the dart.</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the stealth pistol. On hit: 1d6 energy + your Dexterity modifier.</p>
+      <p>• <strong>Dart:</strong> As an Action, Shoot a Dart with the stealth pistol at a target. On hit: Damage and conditions depend on the dart.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -398,8 +398,8 @@
       <p><em>1d6 energy, disguised, can't be disarmed, can still use hand but when holding something can't use weapon, power cell, range 30/120, Reload 8, Dexterity modifier</em></p>
       <p>This wrist-mounted launcher with blaster attachment fires energy bolts. It can't be disarmed, you can still use your hand but can't use the weapon when holding something.</p>
       <p><strong>Actions:</strong></p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Quick Shot:</strong> Bonus Action; When dual-wielding, make a ranged attack with the ranged weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p></description>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the Wrist Launcher with Wrist Blaster Attachment. On hit: 1d6 energy + your Dexterity modifier.</p>
+      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the Wrist Launcher with Wrist Blaster Attachment while wielding it in your off-hand. On hit: 1d6 energy without modifiers.</p></description>
     <setters>
       <set name="category">Weapons</set>
       <set name="cost" currency="gp">0</set>
@@ -433,7 +433,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Dart:</strong> Action; Shoot a Dart with the weapon at a target. On hit: Damage and conditions depend on the dart.</p>
+      <p>• <strong>Dart:</strong> As an Action, Shoot a Dart with the Wrist Launcher with Dart Attachment at a target. On hit: Damage and conditions depend on the dart.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -465,7 +465,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Rocket:</strong> Action; Shoot a Rocket with the weapon at a target. On hit: Damage and conditions depend on the rocket.</p>
+      <p>• <strong>Rocket:</strong> As an Action, Shoot a Rocket with the Wrist Launcher with Rocket Attachment at a target. On hit: Damage and conditions depend on the rocket.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -528,7 +528,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Flame:</strong> Action; Flame multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes full damage and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn. (Damage: Weapon Damage and add modifier)</p>
+      <p>• <strong>Flame:</strong> As an Action, Flame multiple targets in a 15 feet cone in front of you. Each target must make a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes 1d10 fire + your Dexterity modifier and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -561,7 +561,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the blaster rifle. On hit: 1d8 energy + your Dexterity modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -593,7 +593,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the disruptor rifle. On hit: 1d8 acid + your Dexterity modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -625,7 +625,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the heavy bowcaster. On hit: 1d12 energy + your Dexterity modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -657,7 +657,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the ion rifle. On hit: 1d6 ion + your Dexterity modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -689,7 +689,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the sonic rifle. On hit: 1d8 sonic + your Dexterity modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -721,7 +721,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the slugthrower rifle. On hit: 1d8 kinetic + your Dexterity modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -753,7 +753,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the cryo rifle. On hit: 2d4 cold + your Dexterity modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -785,7 +785,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the railgun. On hit: 1d10 ion + your Dexterity modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -817,7 +817,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the arc caster. On hit: 2d4 lightning + your Dexterity modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -850,8 +850,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Dart:</strong> Action; Shoot a Dart with the weapon at a target. On hit: Damage and conditions depend on the dart.</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the sniper rifle. On hit: 1d12 energy + your Dexterity modifier.</p>
+      <p>• <strong>Dart:</strong> As an Action, Shoot a Dart with the sniper rifle at a target. On hit: Damage and conditions depend on the dart.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -884,7 +884,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Blast:</strong> Action; Blast multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes full damage. On a successful save, the target takes half damage. (Damage: Weapon Damage and add modifier)</p>
+      <p>• <strong>Blast:</strong> As an Action, Blast multiple targets in a 75 feet cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes 2d10 energy + your Dexterity modifier. On a successful save, the target takes half damage.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -915,7 +915,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Flame:</strong> Action; Flame multiple targets in a cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes full damage and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn. (Damage: Weapon Damage and add modifier)</p>
+      <p>• <strong>Flame:</strong> As an Action, Flame multiple targets in a 55 feet cone in front of you. Each target must make a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes 2d6 fire + your Dexterity modifier and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -946,7 +946,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> Action; Make a ranged attack with the ranged weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the cycler rifle. On hit: 1d10 kinetic + your Dexterity modifier.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -978,8 +978,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Strike:</strong> Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Off-Hand Strike:</strong> Bonus Action; When dual-wielding, make a melee attack with the melee weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the lightsaber. On hit: 1d6 energy + your Dexterity or Strength modifier.</p>
+      <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the lightsaber while wielding it in your off-hand. On hit: 1d6 energy without modifiers.</p>
       <p>• <strong>Hilt Strike:</strong> Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. (Damage: 1d4 kinetic)</p>
     </description>
     <setters>
@@ -1012,8 +1012,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Strike:</strong> Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Off-Hand Strike:</strong> Bonus Action; When dual-wielding, make a melee attack with the melee weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the lightstaff. On hit: 1d6/2d4 energy + your Strength modifier.</p>
+      <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the lightstaff while wielding it in your off-hand. On hit: 1d6/2d4 energy without modifiers.</p>
       <p>• <strong>Hilt Strike:</strong> Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. (Damage: 1d4 kinetic)</p>
     </description>
     <setters>
@@ -1047,7 +1047,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Strike:</strong> Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the crossguard saber. On hit: 2d6 energy + your Strength modifier.</p>
       <p>• <strong>Hilt Strike:</strong> Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. (Damage: 1d4 kinetic)</p>
     </description>
     <setters>
@@ -1079,8 +1079,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Strike:</strong> Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Off-Hand Strike:</strong> Bonus Action; When dual-wielding, make a melee attack with the melee weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the lightwhip. On hit: 1d6 energy + your Dexterity modifier.</p>
+      <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the lightwhip while wielding it in your off-hand. On hit: 1d6 energy without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1111,8 +1111,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Strike:</strong> Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Off-Hand Strike:</strong> Bonus Action; When dual-wielding, make a melee attack with the melee weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the martial lightsaber. On hit: 1d8/1d10 energy + your Strength modifier.</p>
+      <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the martial lightsaber while wielding it in your off-hand. On hit: 1d8/1d10 energy without modifiers.</p>
       <p>• <strong>Hilt Strike:</strong> Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. (Damage: 1d4 kinetic)</p>
     </description>
     <setters>
@@ -1146,7 +1146,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Strike:</strong> Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the lightsaber pike. On hit: 1d10 energy + your Strength modifier.</p>
       <p>• <strong>Hilt Strike:</strong> Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. (Damage: 1d4 kinetic)</p>
     </description>
     <setters>
@@ -1178,8 +1178,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Strike:</strong> Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Slash:</strong> Action; When wielding double bladed weapon, make a melee attack that hits in a 15 feet horizontal line in front of you. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the double bladed lightsaber. On hit: 1d8 energy + your Dexterity or Strength modifier.</p>
+      <p>• <strong>Slash:</strong> As an Action, Make a sweeping melee attack with the double bladed lightsaber against all creatures standing in a 15 foot hoziontal line originating from you. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your Dexterity or Strength modifier). A creature takes 1d8 energy without modifiers on a failed save, or half as much on a successful one.</p>
       <p>• <strong>Back Strike:</strong> Bonus Action; When wielding a double bladed weapon, make a melee attack with the other side of your weapon. (Damage: weapon damage without adding modifiers)</p>
     </description>
     <setters>
@@ -1212,8 +1212,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Strike:</strong> Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Off-Hand Strike:</strong> Bonus Action; When dual-wielding, make a melee attack with the melee weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibrospear. On hit: 1d6/2d4 kinetic + your Strength modifier.</p>
+      <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the vibrospear while wielding it in your off-hand. On hit: 1d6/2d4 kinetic without modifiers.</p>
       <p>• <strong>Hilt Strike:</strong> Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. (Damage: 1d4 kinetic)</p>
     </description>
     <setters>
@@ -1248,8 +1248,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Strike:</strong> Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Off-Hand Strike:</strong> Bonus Action; When dual-wielding, make a melee attack with the melee weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibrodagger. On hit: 1d4 kinetic + your Dexterity or Strength modifier.</p>
+      <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the vibrodagger while wielding it in your off-hand. On hit: 1d4 kinetic without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1281,8 +1281,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Strike:</strong> Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Off-Hand Strike:</strong> Bonus Action; When dual-wielding, make a melee attack with the melee weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibrostaff. On hit: 1d6/2d4 kinetic + your Strength modifier.</p>
+      <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the vibrostaff while wielding it in your off-hand. On hit: 1d6/2d4 kinetic without modifiers.</p>
       <p>• <strong>Hilt Strike:</strong> Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. (Damage: 1d4 kinetic)</p>
     </description>
     <setters>
@@ -1316,8 +1316,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Strike:</strong> Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Slash:</strong> Action; When wielding double bladed weapon, make a melee attack that hits in a 15 feet horizontal line in front of you. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibro double-blade. On hit: 1d8 kinetic + your Dexterity or Strength modifier.</p>
+      <p>• <strong>Slash:</strong> As an Action, Make a sweeping melee attack with the vibro double-blade against all creatures standing in a 15 foot hoziontal line originating from you. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your Dexterity or Strength modifier). A creature takes 1d8 kinetic without modifiers on a failed save, or half as much on a successful one.</p>
       <p>• <strong>Back Strike:</strong> Bonus Action; When wielding a double bladed weapon, make a melee attack with the other side of your weapon. (Damage: weapon damage without adding modifiers)</p>
     </description>
     <setters>
@@ -1350,8 +1350,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Strike:</strong> Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Slash:</strong> Action; When wielding double bladed weapon, make a melee attack that hits in a 15 feet horizontal line in front of you. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the electrostaff. On hit: 1d6 lightning + your Dexterity or Strength modifier.</p>
+      <p>• <strong>Slash:</strong> As an Action, Make a sweeping melee attack with the electrostaff against all creatures standing in a 15 foot hoziontal line originating from you. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your Dexterity or Strength modifier). A creature takes 1d6 lightning without modifiers on a failed save, or half as much on a successful one.</p>
       <p>• <strong>Back Strike:</strong> Bonus Action; When wielding a double bladed weapon, make a melee attack with the other side of your weapon. (Damage: weapon damage without adding modifiers)</p>
     </description>
     <setters>
@@ -1384,8 +1384,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Strike:</strong> Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Off-Hand Strike:</strong> Bonus Action; When dual-wielding, make a melee attack with the melee weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibrosword. On hit: 1d8/1d10 kinetic + your Strength modifier.</p>
+      <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the vibrosword while wielding it in your off-hand. On hit: 1d8/1d10 kinetic without modifiers.</p>
       <p>• <strong>Hilt Strike:</strong> Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. (Damage: 1d4 kinetic)</p>
     </description>
     <setters>
@@ -1451,7 +1451,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Strike:</strong> Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibropike. On hit: 1d10 kinetic + your Strength modifier.</p>
       <p>• <strong>Hilt Strike:</strong> Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. (Damage: 1d4 kinetic)</p>
     </description>
     <setters>
@@ -1483,8 +1483,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Strike:</strong> Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Off-Hand Strike:</strong> Bonus Action; When dual-wielding, make a melee attack with the melee weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the electrowhip. On hit: 1d4 lightning + your Dexterity modifier.</p>
+      <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the electrowhip while wielding it in your off-hand. On hit: 1d4 lightning without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1515,8 +1515,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Strike:</strong> Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Off-Hand Strike:</strong> Bonus Action; When dual-wielding, make a melee attack with the melee weapon in your off-hand. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the electrobaton. On hit: 1d4 lightning + your Dexterity or Strength modifier.</p>
+      <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the electrobaton while wielding it in your off-hand. On hit: 1d4 lightning without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>

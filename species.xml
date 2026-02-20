@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Species</name>
-    <update version="2.1.5">
+    <update version="2.1.4">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
@@ -58,13 +58,14 @@
       <stat name="dexterity" value="1" />
       <stat name="innate speed" value="30" bonus="base" />
       <grant type="Size" id="ID_SIZE_MEDIUM" />
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_SONIC" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_SONIC" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_BITH_INVESTIGATION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_BITH_PERCEPTION" />
       <select type="Proficiency" name="Musical Instrument (Bith)" supports="Musical Instrument" number="1" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_BITH" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
       <select type="Language" name="Language (Bith)" supports="Standard||Exotic" number="1" />
       <select type="Sub Race" name="Bith Subrace" supports="ID_RACE_BITH" optional="true" />
     </rules>
@@ -101,6 +102,7 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_BOTHESE" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
       <select type="Sub Race" name="Bothan Subrace" supports="ID_RACE_BOTHAN" optional="true" />
     </rules>
   </element>
@@ -289,7 +291,7 @@
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_ION_LIGHTNING_VULNERABILITY" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_FORCE_INSENSITIVE" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_MACHINE" />
@@ -365,7 +367,7 @@
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_ION_LIGHTNING_VULNERABILITY" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_FORCE_INSENSITIVE" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_MACHINE" />
@@ -1070,6 +1072,7 @@
       <grant type="Racial Trait" id="ID_RACE_TRAIT_RATTATAKI_NATURAL_WEAPONS" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_RATTATAKI" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
       <select type="Sub Race" name="Rattataki Subrace" supports="ID_RACE_RATTATAKI" optional="true" />
     </rules>
   </element>
@@ -2201,7 +2204,7 @@
   <!-- ITHORIAN TRAITS -->
   <element name="Sonic Scream" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_ITHORIAN_SONIC_SCREAM">
     <description>
-      <p>As an action, you can violently expel air in a 15-foot cone. When you do so, each creature in the area of the exhalation must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). A creature takes 2d6 sonic damage on a failed save, and half as much damage on a successful one. The damage increases to 4d6 at 5th level, 6d6 at 11th level, and 8d6 at 17th level. This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you complete a long rest.</p>
+      <p>As an action you can violently expel air in a 15-foot cone. When you do so, each creature in the area of the exhalation must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). A creature takes 2d6 sonic damage on a failed save, and half as much damage on a successful one. The damage increases to 4d6 at 5th level, 6d6 at 11th level, and 8d6 at 17th level. This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you complete a long rest.</p>
     </description>
     <sheet>
       <description>Expel air in a 15-ft cone (Action). Wisdom save (DC 8 + proficiency + Con mod) for 2d6/4d6/6d6/8d6 sonic damage by level (half on success). No effect on constructs. Uses = proficiency bonus per long rest.</description>
@@ -2211,7 +2214,7 @@
   <!-- ACTIONS -->
   <element name="Sonic Scream" type="Action" source="SW-MSV-Edition" id="ID_ACTION_ITHORIAN_SONIC_SCREAM">
     <description>
-      <p>As an action, you can violently expel air in a 15-foot cone. When you do so, each creature in the area of the exhalation must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). A creature takes 2d6 sonic damage on a failed save, and half as much damage on a successful one. The damage increases to 4d6 at 5th level, 6d6 at 11th level, and 8d6 at 17th level. This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you complete a long rest.</p>
+      <p>As an action you can violently expel air in a 15-foot cone. When you do so, each creature in the area of the exhalation must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). A creature takes 2d6 sonic damage on a failed save, and half as much damage on a successful one. The damage increases to 4d6 at 5th level, 6d6 at 11th level, and 8d6 at 17th level. This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you complete a long rest.</p>
     </description>
     <sheet action="Action" usage="{{proficiency}}/Long Rest">
       <description>Expel air in a 15-ft cone. Wisdom save (DC {{ithorian-scream:dc}}) for {{ithorian-scream:damage}} sonic damage (half on success). No effect on constructs.</description>
@@ -2287,7 +2290,10 @@
     <rules>
       <stat name="strength" value="1" />
       <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
+  </element>
+</elements>
+les>
   </element>
 </elements>

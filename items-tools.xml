@@ -2,77 +2,86 @@
 <elements>
   <info>
     <name>Tools</name>
-    <update version="2.1.5">
+    <update version="2.1.6">
       <file name="items-tools.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-tools.xml" />
     </update>
   </info>
   
   <element name="Slicing Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" source="SW-MSV-Edition">
-    <supports>Tool,ID_INTERNAL_TOOL</supports>
+    <supports>ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <description>
       <p>Proficiency with the slicing kit allows you to slice terminals to open locks or disarm traps.</p>
     </description>
+    <sheet alt="Slicing Kit" />
   </element>
 
   <element name="Hacking Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HACKING_KIT" source="SW-MSV-Edition">
-    <supports>Tool,ID_INTERNAL_TOOL</supports>
+    <supports>ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <description>
       <p>Proficiency with the hacking kit allows you to hack "unconscious" droids or security systems.</p>
     </description>
+    <sheet alt="Hacking Kit" />
   </element>
 
   <element name="Disguise Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_DISGUISE_KIT" source="SW-MSV-Edition">
-    <supports>Tool,ID_INTERNAL_TOOL</supports>
+    <supports>ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <description>
       <p>Proficiency with the disguise kit allows you to completely change your look.</p>
     </description>
+    <sheet alt="Disguise Kit" />
   </element>
 
   <element name="Poisoning Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_POISONING_KIT" source="SW-MSV-Edition">
-    <supports>Tool,ID_INTERNAL_TOOL</supports>
+    <supports>ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <description>
       <p>Proficiency with the poisoning kit allows you to coat your weapons with poisons.</p>
     </description>
+    <sheet alt="Poisoning Kit" />
   </element>
 
   <element name="Jumppack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JUMPPACK" source="SW-MSV-Edition">
-    <supports>Tool,ID_INTERNAL_TOOL</supports>
+    <supports>ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <description>
       <p>Proficiency with jumppack and jump boots operation.</p>
     </description>
+    <sheet alt="Jumppack" />
   </element>
 
   <element name="Hoverpack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" source="SW-MSV-Edition">
-    <supports>Tool,ID_INTERNAL_TOOL</supports>
+    <supports>ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <description>
       <p>Proficiency with hoverpack and hover boots operation.</p>
     </description>
+    <sheet alt="Hoverpack" />
   </element>
 
   <element name="Jetpack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JETPACK" source="SW-MSV-Edition">
-    <supports>Tool,ID_INTERNAL_TOOL</supports>
+    <supports>ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <description>
       <p>Proficiency with jetpack and jet boots operation.</p>
     </description>
+    <sheet alt="Jetpack" />
   </element>
 
   <element name="Repair Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_REPAIR_KIT" source="SW-MSV-Edition">
-    <supports>Tool,ID_INTERNAL_TOOL</supports>
+    <supports>ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <description>
       <p>Proficiency with the repair kit allows you to repair weapons/armors or any technology.</p>
     </description>
+    <sheet alt="Repair Kit" />
   </element>
 
   <element name="Forgery Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT" source="SW-MSV-Edition">
-    <supports>Tool,ID_INTERNAL_TOOL</supports>
+    <supports>ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <description>
       <p>Proficiency with the forgery kit allows you to forge documents and make counterfeit credits.</p>
     </description>
+    <sheet alt="Forgery Kit" />
   </element>
 
   
   <element name="Repair Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_REPAIR_KIT">
-    <supports>ID_INTERNAL_TOOL</supports>
+    <supports>Tool,ID_INTERNAL_TOOL</supports>
     <description>
       <p>With this you can repair weapons/armours or any technology (requires repair kit proficiency).</p>
       <p class="indent"><strong>Repair Weapon:</strong> DC 10</p>
@@ -89,7 +98,7 @@
   </element>
 
   <element name="Forgery Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FORGERY_KIT">
-    <supports>ID_INTERNAL_TOOL</supports>
+    <supports>Tool,ID_INTERNAL_TOOL</supports>
     <description>
       <p>With this kit you can forge documents and make counterfeit credits (requires forgery kit proficiency).</p>
       <p class="indent"><strong>Make 350 Counterfeit Credits:</strong> DC 12 but might be noticable, DC 15 perfect copy.</p>
@@ -105,7 +114,7 @@
   </element>
 
   <element name="Slicing Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_SLICING_KIT">
-    <supports>ID_INTERNAL_TOOL</supports>
+    <supports>Tool,ID_INTERNAL_TOOL</supports>
     <description>
       <p>With this kit you can slice terminals to open locks or disarm traps (requires slicing kit proficiency).</p>
       <p class="indent"><strong>Open Locked Mechanism:</strong> DC Varies</p>
@@ -121,7 +130,7 @@
   </element>
 
   <element name="Hacking Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_HACKING_KIT">
-    <supports>ID_INTERNAL_TOOL</supports>
+    <supports>Tool,ID_INTERNAL_TOOL</supports>
     <description>
       <p>With this kit you can hack "unconcious" droids or security systems (requires hacking kit proficieny).</p>
       <p class="indent"><strong>Hack Astromech:</strong> DC 10</p>
@@ -139,7 +148,7 @@
   </element>
 
   <element name="Disguise Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_DISGUISE_KIT">
-    <supports>ID_INTERNAL_TOOL</supports>
+    <supports>Tool,ID_INTERNAL_TOOL</supports>
     <description>
       <p>With this kit you can completely change your look (requires disguise kit proficiency).</p>
       <p class="indent"><strong>Cover Injuries or Distinguishing Marks:</strong> DC 10</p>
@@ -156,7 +165,7 @@
   </element>
 
   <element name="Poisoning Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_POISONING_KIT">
-    <supports>ID_INTERNAL_TOOL</supports>
+    <supports>Tool,ID_INTERNAL_TOOL</supports>
     <description>
       <p>With this kit you can coat your weapons with poisons (requires poisoning kit proficiency).</p>
       <p class="indent"><strong>Apply Poison to Vibroweapon or Slugthrowers:</strong> No DC</p>
@@ -354,9 +363,7 @@
   </element>
   <element name="Rocketpack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_ROCKETPACK">
     <description>
-      <p>Attach rockets to the back of your jump/hover/jetpack.</p>
-      <p>Action: reload rocketpack, bonus action: shoot rocket.</p>
-      <p>Can use: rockets</p>
+      <p>Attach rockets to the back of your jump/hover/jetpack. Actions: Reload, Rocket as a Bonus Action</p>
     </description>
     <setters>
       <set name="category">Equipment</set>
@@ -366,25 +373,25 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_ROCKETPACK_RELOAD" />
-      <grant type="Action" id="ID_ACTION_ROCKETPACK_FIRE" />
+      <grant type="Action" id="ID_ACTION_ROCKET" />
     </rules>
   </element>
 
-  <element name="Rocketpack Reload" type="Action" source="SW-MSV-Edition" id="ID_ACTION_ROCKETPACK_RELOAD">
+  <element name="Reload" type="Action" source="SW-MSV-Edition" id="ID_ACTION_ROCKETPACK_RELOAD">
     <description>
-      <p>Action: reload rocketpack.</p>
+      <p>Action; After x amount of shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <sheet>
-      <description>Action: reload rocketpack.</description>
+      <description>Action; After x amount of shots your weapon needs a reload, take a full Action to fully reload your weapon.</description>
     </sheet>
   </element>
 
-  <element name="Rocketpack Fire" type="Action" source="SW-MSV-Edition" id="ID_ACTION_ROCKETPACK_FIRE">
+  <element name="Rocket" type="Action" source="SW-MSV-Edition" id="ID_ACTION_ROCKET">
     <description>
-      <p>Bonus action: shoot rocket. On hit: Damage and conditions depend on the rocket.</p>
+      <p>As an Action, Shoot a Rocket with the Rocketpack at a target. On hit: Damage and conditions depend on the rocket.</p>
     </description>
     <sheet>
-      <description>Bonus action: shoot rocket. On hit: Damage and conditions depend on the rocket.</description>
+      <description>As an Action, Shoot a Rocket with the Rocketpack at a target. On hit: Damage and conditions depend on the rocket.</description>
     </sheet>
   </element>
 
