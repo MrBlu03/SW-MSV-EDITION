@@ -3,7 +3,7 @@
   <info>
     <name>Inquisitor Class</name>
     <description>Inquisitor Class for SW-MSV-Edition.</description>
-    <update version="2.1.5">
+    <update version="2.1.7">
       <file name="class-inquisitor.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-inquisitor.xml" />
     </update>
   </info>
