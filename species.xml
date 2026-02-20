@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Species</name>
-    <update version="2.1.7">
+    <update version="2.1.8">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
@@ -2292,8 +2292,5 @@
       <stat name="dexterity" value="1" />
       <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
-  </element>
-</elements>
-les>
   </element>
 </elements>
