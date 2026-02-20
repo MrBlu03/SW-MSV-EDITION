@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Healing Items</name>
-    <update version="2.1.8">
+    <update version="2.1.9">
       <file name="items-healing.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-healing.xml" />
     </update>
   </info>
