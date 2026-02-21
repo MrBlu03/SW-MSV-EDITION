@@ -2,156 +2,100 @@
 <elements>
   <info>
     <name>Tools</name>
-    <update version="2.2.5">
+    <update version="2.2.6">
       <file name="items-tools.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-tools.xml" />
     </update>
   </info>
 
   <element name="Slicing Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" source="SW-MSV-Edition">
-    <description><p>Proficiency with the slicing kit allows you to slice terminals to open locks or disarm traps.</p></description>
+    <description>
+      <p>Proficiency with the slicing kit allows you to slice terminals to open locks or disarm traps.</p>
+    </description>
     <supports>Artisan tools,ID_INTERNAL_PROFICIENCY_TOOL</supports>
-    <rules>
-      <grant type="Background Feature" id="ID_MSV_DISPLAY_TOOL_SLICING_KIT" />
-    </rules>
+    <sheet>
+      <description>Proficiency with the Slicing Kit.</description>
+    </sheet>
   </element>
 
   <element name="Hacking Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HACKING_KIT" source="SW-MSV-Edition">
-    <description><p>Proficiency with the hacking kit allows you to hack droids or security systems.</p></description>
+    <description>
+      <p>Proficiency with the hacking kit allows you to hack droids or security systems.</p>
+    </description>
     <supports>Artisan tools,ID_INTERNAL_PROFICIENCY_TOOL</supports>
-    <rules>
-      <grant type="Background Feature" id="ID_MSV_DISPLAY_TOOL_HACKING_KIT" />
-    </rules>
+    <sheet>
+      <description>Proficiency with the Hacking Kit.</description>
+    </sheet>
   </element>
 
   <element name="Disguise Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_DISGUISE_KIT" source="SW-MSV-Edition">
-    <description><p>Proficiency with the disguise kit allows you to completely change your look.</p></description>
+    <description>
+      <p>Proficiency with the disguise kit allows you to completely change your look.</p>
+    </description>
     <supports>Artisan tools,ID_INTERNAL_PROFICIENCY_TOOL</supports>
-    <rules>
-      <grant type="Background Feature" id="ID_MSV_DISPLAY_TOOL_DISGUISE_KIT" />
-    </rules>
+    <sheet>
+      <description>Proficiency with the Disguise Kit.</description>
+    </sheet>
   </element>
 
   <element name="Poisoning Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_POISONING_KIT" source="SW-MSV-Edition">
-    <description><p>Proficiency with the poisoning kit allows you to coat your weapons with poisons.</p></description>
+    <description>
+      <p>Proficiency with the poisoning kit allows you to coat your weapons with poisons.</p>
+    </description>
     <supports>Artisan tools,ID_INTERNAL_PROFICIENCY_TOOL</supports>
-    <rules>
-      <grant type="Background Feature" id="ID_MSV_DISPLAY_TOOL_POISONING_KIT" />
-    </rules>
+    <sheet>
+      <description>Proficiency with the Poisoning Kit.</description>
+    </sheet>
   </element>
 
   <element name="Jumppack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JUMPPACK" source="SW-MSV-Edition">
-    <description><p>Proficiency with jumppack and jump boots operation.</p></description>
+    <description>
+      <p>Proficiency with jumppack and jump boots operation.</p>
+    </description>
     <supports>Artisan tools,ID_INTERNAL_PROFICIENCY_TOOL</supports>
-    <rules>
-      <grant type="Background Feature" id="ID_MSV_DISPLAY_TOOL_JUMPPACK" />
-    </rules>
+    <sheet>
+      <description>Proficiency with Jumppack operation.</description>
+    </sheet>
   </element>
 
   <element name="Hoverpack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" source="SW-MSV-Edition">
-    <description><p>Proficiency with hoverpack and hover boots operation.</p></description>
+    <description>
+      <p>Proficiency with hoverpack and hover boots operation.</p>
+    </description>
     <supports>Artisan tools,ID_INTERNAL_PROFICIENCY_TOOL</supports>
-    <rules>
-      <grant type="Background Feature" id="ID_MSV_DISPLAY_TOOL_HOVERPACK" />
-    </rules>
+    <sheet>
+      <description>Proficiency with Hoverpack operation.</description>
+    </sheet>
   </element>
 
   <element name="Jetpack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JETPACK" source="SW-MSV-Edition">
-    <description><p>Proficiency with jetpack and jet boots operation.</p></description>
+    <description>
+      <p>Proficiency with jetpack and jet boots operation.</p>
+    </description>
     <supports>Artisan tools,ID_INTERNAL_PROFICIENCY_TOOL</supports>
-    <rules>
-      <grant type="Background Feature" id="ID_MSV_DISPLAY_TOOL_JETPACK" />
-    </rules>
+    <sheet>
+      <description>Proficiency with Jetpack operation.</description>
+    </sheet>
   </element>
 
   <element name="Repair Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_REPAIR_KIT" source="SW-MSV-Edition">
-    <description><p>Proficiency with the repair kit allows you to repair weapons, armors, or any technology.</p></description>
+    <description>
+      <p>Proficiency with the repair kit allows you to repair weapons, armors, or any technology.</p>
+    </description>
     <supports>Artisan tools,ID_INTERNAL_PROFICIENCY_TOOL</supports>
-    <rules>
-      <grant type="Background Feature" id="ID_MSV_DISPLAY_TOOL_REPAIR_KIT" />
-    </rules>
+    <sheet>
+      <description>Proficiency with the Repair Kit.</description>
+    </sheet>
   </element>
 
   <element name="Forgery Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT" source="SW-MSV-Edition">
-    <description><p>Proficiency with the forgery kit allows you to forge documents and make counterfeit credits.</p></description>
+    <description>
+      <p>Proficiency with the forgery kit allows you to forge documents and make counterfeit credits.</p>
+    </description>
     <supports>Artisan tools,ID_INTERNAL_PROFICIENCY_TOOL</supports>
-    <rules>
-      <grant type="Background Feature" id="ID_MSV_DISPLAY_TOOL_FORGERY_KIT" />
-    </rules>
+    <sheet>
+      <description>Proficiency with the Forgery Kit.</description>
+    </sheet>
   </element>
-
-  <!-- TOOL PROFICIENCY DISPLAY (Additional Features & Traits on printed sheet) -->
-  <element name="Tool Proficiency: Slicing Kit" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_SLICING_KIT">
-    <supports>Background Feature</supports>
-    <description>
-      <p>You are proficient with the Slicing Kit. You can add your proficiency bonus to ability checks using it.</p>
-    </description>
-    <sheet alt="Slicing Kit" />
-  </element>
-
-  <element name="Tool Proficiency: Hacking Kit" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_HACKING_KIT">
-    <supports>Background Feature</supports>
-    <description>
-      <p>You are proficient with the Hacking Kit. You can add your proficiency bonus to ability checks using it.</p>
-    </description>
-    <sheet alt="Hacking Kit" />
-  </element>
-
-  <element name="Tool Proficiency: Disguise Kit" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_DISGUISE_KIT">
-    <supports>Background Feature</supports>
-    <description>
-      <p>You are proficient with the Disguise Kit. You can add your proficiency bonus to ability checks using it.</p>
-    </description>
-    <sheet alt="Disguise Kit" />
-  </element>
-
-  <element name="Tool Proficiency: Poisoning Kit" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_POISONING_KIT">
-    <supports>Background Feature</supports>
-    <description>
-      <p>You are proficient with the Poisoning Kit. You can add your proficiency bonus to ability checks using it.</p>
-    </description>
-    <sheet alt="Poisoning Kit" />
-  </element>
-
-  <element name="Tool Proficiency: Jumppack" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_JUMPPACK">
-    <supports>Background Feature</supports>
-    <description>
-      <p>You are proficient with Jumppack and Jump Boots operation. You can add your proficiency bonus to ability checks using them.</p>
-    </description>
-    <sheet alt="Jumppack" />
-  </element>
-
-  <element name="Tool Proficiency: Hoverpack" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_HOVERPACK">
-    <supports>Background Feature</supports>
-    <description>
-      <p>You are proficient with Hoverpack and Hover Boots operation. You can add your proficiency bonus to ability checks using them.</p>
-    </description>
-    <sheet alt="Hoverpack" />
-  </element>
-
-  <element name="Tool Proficiency: Jetpack" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_JETPACK">
-    <supports>Background Feature</supports>
-    <description>
-      <p>You are proficient with Jetpack and Jet Boots operation. You can add your proficiency bonus to ability checks using them.</p>
-    </description>
-    <sheet alt="Jetpack" />
-  </element>
-
-  <element name="Tool Proficiency: Repair Kit" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_REPAIR_KIT">
-    <supports>Background Feature</supports>
-    <description>
-      <p>You are proficient with the Repair Kit. You can add your proficiency bonus to ability checks using it.</p>
-    </description>
-    <sheet alt="Repair Kit" />
-  </element>
-
-  <element name="Tool Proficiency: Forgery Kit" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_FORGERY_KIT">
-    <supports>Background Feature</supports>
-    <description>
-      <p>You are proficient with the Forgery Kit. You can add your proficiency bonus to ability checks using it.</p>
-    </description>
-    <sheet alt="Forgery Kit" />
-  </element>
-
 
   <element name="Repair Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_REPAIR_KIT">
     <supports>Tool,ID_INTERNAL_TOOL</supports>

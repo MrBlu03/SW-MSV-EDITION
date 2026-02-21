@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>SW-MSV-Edition</name>
-    <update version="2.2.5">
+    <update version="2.2.6">
       <file name="source.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/source.xml" />
     </update>
   </info>
