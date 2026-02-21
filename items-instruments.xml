@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Musical Instruments</name>
-    <update version="2.2.1">
+    <update version="2.2.2">
       <file name="items-instruments.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-instruments.xml" />
     </update>
   </info>
@@ -204,73 +204,59 @@
 
   <!-- MUSICAL INSTRUMENT PROFICIENCIES -->
   <element name="Bandfill" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_BANDFILL" source="SW-MSV-Edition">
-    <supports>Musical Instrument</supports>
     <description><p>Proficiency with the bandfill.</p></description>
-    <sheet alt="Bandfill" />
+    <supports>Musical Instrument</supports>
   </element>
   <element name="Chindinkalu Horn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_CHINDINKALU_HORN" source="SW-MSV-Edition">
-    <supports>Musical Instrument</supports>
     <description><p>Proficiency with the chindinkalu horn.</p></description>
-    <sheet alt="Chindinkalu Horn" />
+    <supports>Musical Instrument</supports>
   </element>
   <element name="Drum" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_DRUM" source="SW-MSV-Edition">
-    <supports>Musical Instrument</supports>
     <description><p>Proficiency with the drum.</p></description>
-    <sheet alt="Drum" />
+    <supports>Musical Instrument</supports>
   </element>
   <element name="Fanfar" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FANFAR" source="SW-MSV-Edition">
-    <supports>Musical Instrument</supports>
     <description><p>Proficiency with the fanfar.</p></description>
-    <sheet alt="Fanfar" />
+    <supports>Musical Instrument</supports>
   </element>
   <element name="Fizzz" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FIZZZ" source="SW-MSV-Edition">
-    <supports>Musical Instrument</supports>
     <description><p>Proficiency with the fizzz.</p></description>
-    <sheet alt="Fizzz" />
+    <supports>Musical Instrument</supports>
   </element>
   <element name="Flute" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FLUTE" source="SW-MSV-Edition">
-    <supports>Musical Instrument</supports>
     <description><p>Proficiency with the flute.</p></description>
-    <sheet alt="Flute" />
+    <supports>Musical Instrument</supports>
   </element>
   <element name="Kloo Horn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_KLOO_HORN" source="SW-MSV-Edition">
-    <supports>Musical Instrument</supports>
     <description><p>Proficiency with the kloo horn.</p></description>
-    <sheet alt="Kloo Horn" />
+    <supports>Musical Instrument</supports>
   </element>
   <element name="Lute" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_LUTE" source="SW-MSV-Edition">
-    <supports>Musical Instrument</supports>
     <description><p>Proficiency with the lute.</p></description>
-    <sheet alt="Lute" />
+    <supports>Musical Instrument</supports>
   </element>
   <element name="Mandoviol" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_MANDOVIOL" source="SW-MSV-Edition">
-    <supports>Musical Instrument</supports>
     <description><p>Proficiency with the mandoviol.</p></description>
-    <sheet alt="Mandoviol" />
+    <supports>Musical Instrument</supports>
   </element>
   <element name="Ommni Box" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_OMMNI_BOX" source="SW-MSV-Edition">
-    <supports>Musical Instrument</supports>
     <description><p>Proficiency with the ommni box.</p></description>
-    <sheet alt="Ommni Box" />
+    <supports>Musical Instrument</supports>
   </element>
   <element name="Slitherhorn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_SLITHERHORN" source="SW-MSV-Edition">
-    <supports>Musical Instrument</supports>
     <description><p>Proficiency with the slitherhorn.</p></description>
-    <sheet alt="Slitherhorn" />
+    <supports>Musical Instrument</supports>
   </element>
   <element name="Traz" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_TRAZ" source="SW-MSV-Edition">
-    <supports>Musical Instrument</supports>
     <description><p>Proficiency with the traz.</p></description>
-    <sheet alt="Traz" />
+    <supports>Musical Instrument</supports>
   </element>
   <element name="Valahorn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_VALAHORN" source="SW-MSV-Edition">
-    <supports>Musical Instrument</supports>
     <description><p>Proficiency with the valahorn.</p></description>
-    <sheet alt="Valahorn" />
+    <supports>Musical Instrument</supports>
   </element>
   <element name="Xantha" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_XANTHA" source="SW-MSV-Edition">
-    <supports>Musical Instrument</supports>
     <description><p>Proficiency with the xantha.</p></description>
-    <sheet alt="Xantha" />
+    <supports>Musical Instrument</supports>
   </element>
 </elements>
