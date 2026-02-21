@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Cyborg Elements</name>
-    <update version="2.2.2">
+    <update version="2.2.3">
       <file name="cyborg-elements.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/cyborg-elements.xml" />
     </update>
   </info>

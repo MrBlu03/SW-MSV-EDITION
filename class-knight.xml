@@ -3,7 +3,7 @@
   <info>
     <name>Knight Class</name>
     <description>Knight Class for SW-MSV-Edition.</description>
-    <update version="2.2.2">
+    <update version="2.2.3">
       <file name="class-knight.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-knight.xml" />
     </update>
   </info>

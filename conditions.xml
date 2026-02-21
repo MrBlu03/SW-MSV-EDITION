@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Conditions</name>
-    <update version="2.2.2">
+    <update version="2.2.3">
       <file name="conditions.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/conditions.xml" />
     </update>
   </info>
