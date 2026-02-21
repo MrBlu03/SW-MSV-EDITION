@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Explosives</name>
-    <update version="2.2.3">
+    <update version="2.2.4">
       <file name="items-explosives.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-explosives.xml" />
     </update>
   </info>

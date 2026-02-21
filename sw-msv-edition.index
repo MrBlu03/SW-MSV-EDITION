@@ -4,7 +4,7 @@
         <name>SW-MSV-Edition</name>
         <description>Star Wars 5E - MSV Edition Homebrew Content for Aurora Builder. Includes 40+ species, 5 classes, weapons, items, and more.</description>
         <author url="https://github.com/MrBlu03/SW-MSV-EDITION">Written by Marcus SV and Coded by MrBlu03</author>
-        <update version="2.2.3">
+        <update version="2.2.4">
             <file name="sw-msv-edition.index" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/sw-msv-edition.index" />
         </update>
     </info>

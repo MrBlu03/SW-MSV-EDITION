@@ -3,7 +3,7 @@
   <info>
     <name>Backgrounds</name>
     <description>Backgrounds for SW-MSV-Edition.</description>
-    <update version="2.2.3">
+    <update version="2.2.4">
       <file name="backgrounds.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/backgrounds.xml" />
     </update>
   </info>

@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Musical Instruments</name>
-    <update version="2.2.3">
+    <update version="2.2.4">
       <file name="items-instruments.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-instruments.xml" />
     </update>
   </info>
@@ -19,7 +19,7 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_BANDFILL</set>
     </setters>
   </element>
-  
+
   <element name="Chindinkalu horn" type="Item" source="SW-MSV-Edition" id="ID_ITEM_CHINDINKALU_HORN">
     <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
@@ -33,7 +33,7 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_CHINDINKALU_HORN</set>
     </setters>
   </element>
-  
+
   <element name="Drum" type="Item" source="SW-MSV-Edition" id="ID_ITEM_DRUM">
     <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
@@ -47,7 +47,7 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_DRUM</set>
     </setters>
   </element>
-  
+
   <element name="Fanfar" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FANFAR">
     <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
@@ -61,7 +61,7 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FANFAR</set>
     </setters>
   </element>
-  
+
   <element name="Fizzz" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FIZZZ">
     <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
@@ -75,7 +75,7 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FIZZZ</set>
     </setters>
   </element>
-  
+
   <element name="Flute" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FLUTE">
     <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
@@ -89,7 +89,7 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FLUTE</set>
     </setters>
   </element>
-  
+
   <element name="Kloo horn" type="Item" source="SW-MSV-Edition" id="ID_ITEM_KLOO_HORN">
     <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
@@ -103,7 +103,7 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_KLOO_HORN</set>
     </setters>
   </element>
-  
+
   <element name="Lute" type="Item" source="SW-MSV-Edition" id="ID_ITEM_LUTE">
     <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
@@ -117,7 +117,7 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_LUTE</set>
     </setters>
   </element>
-  
+
   <element name="Mandoviol" type="Item" source="SW-MSV-Edition" id="ID_ITEM_MANDOVIOL">
     <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
@@ -131,7 +131,7 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_MANDOVIOL</set>
     </setters>
   </element>
-  
+
   <element name="Ommni box" type="Item" source="SW-MSV-Edition" id="ID_ITEM_OMMNI_BOX">
     <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
@@ -145,7 +145,7 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_OMMNI_BOX</set>
     </setters>
   </element>
-  
+
   <element name="Slitherhorn" type="Item" source="SW-MSV-Edition" id="ID_ITEM_SLITHERHORN">
     <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
@@ -159,7 +159,7 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_SLITHERHORN</set>
     </setters>
   </element>
-  
+
   <element name="Traz" type="Item" source="SW-MSV-Edition" id="ID_ITEM_TRAZ">
     <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
@@ -173,7 +173,7 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_TRAZ</set>
     </setters>
   </element>
-  
+
   <element name="Valahorn" type="Item" source="SW-MSV-Edition" id="ID_ITEM_VALAHORN">
     <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
@@ -187,7 +187,7 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_VALAHORN</set>
     </setters>
   </element>
-  
+
   <element name="Xantha" type="Item" source="SW-MSV-Edition" id="ID_ITEM_XANTHA">
     <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
@@ -206,57 +206,171 @@
   <element name="Bandfill" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_BANDFILL" source="SW-MSV-Edition">
     <description><p>Proficiency with the bandfill.</p></description>
     <supports>Musical Instrument</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_INSTRUMENT_BANDFILL" />
+    </rules>
   </element>
   <element name="Chindinkalu Horn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_CHINDINKALU_HORN" source="SW-MSV-Edition">
     <description><p>Proficiency with the chindinkalu horn.</p></description>
     <supports>Musical Instrument</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_INSTRUMENT_CHINDINKALU_HORN" />
+    </rules>
   </element>
   <element name="Drum" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_DRUM" source="SW-MSV-Edition">
     <description><p>Proficiency with the drum.</p></description>
     <supports>Musical Instrument</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_INSTRUMENT_DRUM" />
+    </rules>
   </element>
   <element name="Fanfar" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FANFAR" source="SW-MSV-Edition">
     <description><p>Proficiency with the fanfar.</p></description>
     <supports>Musical Instrument</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_INSTRUMENT_FANFAR" />
+    </rules>
   </element>
   <element name="Fizzz" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FIZZZ" source="SW-MSV-Edition">
     <description><p>Proficiency with the fizzz.</p></description>
     <supports>Musical Instrument</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_INSTRUMENT_FIZZZ" />
+    </rules>
   </element>
   <element name="Flute" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FLUTE" source="SW-MSV-Edition">
     <description><p>Proficiency with the flute.</p></description>
     <supports>Musical Instrument</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_INSTRUMENT_FLUTE" />
+    </rules>
   </element>
   <element name="Kloo Horn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_KLOO_HORN" source="SW-MSV-Edition">
     <description><p>Proficiency with the kloo horn.</p></description>
     <supports>Musical Instrument</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_INSTRUMENT_KLOO_HORN" />
+    </rules>
   </element>
   <element name="Lute" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_LUTE" source="SW-MSV-Edition">
     <description><p>Proficiency with the lute.</p></description>
     <supports>Musical Instrument</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_INSTRUMENT_LUTE" />
+    </rules>
   </element>
   <element name="Mandoviol" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_MANDOVIOL" source="SW-MSV-Edition">
     <description><p>Proficiency with the mandoviol.</p></description>
     <supports>Musical Instrument</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_INSTRUMENT_MANDOVIOL" />
+    </rules>
   </element>
   <element name="Ommni Box" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_OMMNI_BOX" source="SW-MSV-Edition">
     <description><p>Proficiency with the ommni box.</p></description>
     <supports>Musical Instrument</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_INSTRUMENT_OMMNI_BOX" />
+    </rules>
   </element>
   <element name="Slitherhorn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_SLITHERHORN" source="SW-MSV-Edition">
     <description><p>Proficiency with the slitherhorn.</p></description>
     <supports>Musical Instrument</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_INSTRUMENT_SLITHERHORN" />
+    </rules>
   </element>
   <element name="Traz" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_TRAZ" source="SW-MSV-Edition">
     <description><p>Proficiency with the traz.</p></description>
     <supports>Musical Instrument</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_INSTRUMENT_TRAZ" />
+    </rules>
   </element>
   <element name="Valahorn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_VALAHORN" source="SW-MSV-Edition">
     <description><p>Proficiency with the valahorn.</p></description>
     <supports>Musical Instrument</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_INSTRUMENT_VALAHORN" />
+    </rules>
   </element>
   <element name="Xantha" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_XANTHA" source="SW-MSV-Edition">
     <description><p>Proficiency with the xantha.</p></description>
     <supports>Musical Instrument</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_INSTRUMENT_XANTHA" />
+    </rules>
+  </element>
+
+  <!-- INSTRUMENT PROFICIENCY DISPLAY (Additional Features & Traits on printed sheet) -->
+  <element name="Instrument Proficiency: Bandfill" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_BANDFILL">
+    <sheet alt="Instrument Proficiency: Bandfill">
+      <description>You are proficient with the Bandfill. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
+  </element>
+  <element name="Instrument Proficiency: Chindinkalu Horn" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_CHINDINKALU_HORN">
+    <sheet alt="Instrument Proficiency: Chindinkalu Horn">
+      <description>You are proficient with the Chindinkalu Horn. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
+  </element>
+  <element name="Instrument Proficiency: Drum" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_DRUM">
+    <sheet alt="Instrument Proficiency: Drum">
+      <description>You are proficient with the Drum. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
+  </element>
+  <element name="Instrument Proficiency: Fanfar" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_FANFAR">
+    <sheet alt="Instrument Proficiency: Fanfar">
+      <description>You are proficient with the Fanfar. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
+  </element>
+  <element name="Instrument Proficiency: Fizzz" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_FIZZZ">
+    <sheet alt="Instrument Proficiency: Fizzz">
+      <description>You are proficient with the Fizzz. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
+  </element>
+  <element name="Instrument Proficiency: Flute" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_FLUTE">
+    <sheet alt="Instrument Proficiency: Flute">
+      <description>You are proficient with the Flute. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
+  </element>
+  <element name="Instrument Proficiency: Kloo Horn" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_KLOO_HORN">
+    <sheet alt="Instrument Proficiency: Kloo Horn">
+      <description>You are proficient with the Kloo Horn. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
+  </element>
+  <element name="Instrument Proficiency: Lute" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_LUTE">
+    <sheet alt="Instrument Proficiency: Lute">
+      <description>You are proficient with the Lute. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
+  </element>
+  <element name="Instrument Proficiency: Mandoviol" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_MANDOVIOL">
+    <sheet alt="Instrument Proficiency: Mandoviol">
+      <description>You are proficient with the Mandoviol. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
+  </element>
+  <element name="Instrument Proficiency: Ommni Box" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_OMMNI_BOX">
+    <sheet alt="Instrument Proficiency: Ommni Box">
+      <description>You are proficient with the Ommni Box. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
+  </element>
+  <element name="Instrument Proficiency: Slitherhorn" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_SLITHERHORN">
+    <sheet alt="Instrument Proficiency: Slitherhorn">
+      <description>You are proficient with the Slitherhorn. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
+  </element>
+  <element name="Instrument Proficiency: Traz" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_TRAZ">
+    <sheet alt="Instrument Proficiency: Traz">
+      <description>You are proficient with the Traz. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
+  </element>
+  <element name="Instrument Proficiency: Valahorn" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_VALAHORN">
+    <sheet alt="Instrument Proficiency: Valahorn">
+      <description>You are proficient with the Valahorn. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
+  </element>
+  <element name="Instrument Proficiency: Xantha" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_XANTHA">
+    <sheet alt="Instrument Proficiency: Xantha">
+      <description>You are proficient with the Xantha. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
   </element>
 </elements>

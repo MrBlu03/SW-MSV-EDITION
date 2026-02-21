@@ -2,57 +2,139 @@
 <elements>
   <info>
     <name>Tools</name>
-    <update version="2.2.3">
+    <update version="2.2.4">
       <file name="items-tools.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-tools.xml" />
     </update>
   </info>
-  
+
   <element name="Slicing Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" source="SW-MSV-Edition">
     <description><p>Proficiency with the slicing kit allows you to slice terminals to open locks or disarm traps.</p></description>
     <supports>Artisan tools,ID_INTERNAL_PROFICIENCY_TOOL</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_TOOL_SLICING_KIT" />
+    </rules>
   </element>
 
   <element name="Hacking Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HACKING_KIT" source="SW-MSV-Edition">
     <description><p>Proficiency with the hacking kit allows you to hack droids or security systems.</p></description>
     <supports>Artisan tools,ID_INTERNAL_PROFICIENCY_TOOL</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_TOOL_HACKING_KIT" />
+    </rules>
   </element>
 
   <element name="Disguise Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_DISGUISE_KIT" source="SW-MSV-Edition">
     <description><p>Proficiency with the disguise kit allows you to completely change your look.</p></description>
     <supports>Artisan tools,ID_INTERNAL_PROFICIENCY_TOOL</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_TOOL_DISGUISE_KIT" />
+    </rules>
   </element>
 
   <element name="Poisoning Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_POISONING_KIT" source="SW-MSV-Edition">
     <description><p>Proficiency with the poisoning kit allows you to coat your weapons with poisons.</p></description>
     <supports>Artisan tools,ID_INTERNAL_PROFICIENCY_TOOL</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_TOOL_POISONING_KIT" />
+    </rules>
   </element>
 
   <element name="Jumppack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JUMPPACK" source="SW-MSV-Edition">
     <description><p>Proficiency with jumppack and jump boots operation.</p></description>
     <supports>Artisan tools,ID_INTERNAL_PROFICIENCY_TOOL</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_TOOL_JUMPPACK" />
+    </rules>
   </element>
 
   <element name="Hoverpack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" source="SW-MSV-Edition">
     <description><p>Proficiency with hoverpack and hover boots operation.</p></description>
     <supports>Artisan tools,ID_INTERNAL_PROFICIENCY_TOOL</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_TOOL_HOVERPACK" />
+    </rules>
   </element>
 
   <element name="Jetpack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JETPACK" source="SW-MSV-Edition">
     <description><p>Proficiency with jetpack and jet boots operation.</p></description>
     <supports>Artisan tools,ID_INTERNAL_PROFICIENCY_TOOL</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_TOOL_JETPACK" />
+    </rules>
   </element>
 
   <element name="Repair Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_REPAIR_KIT" source="SW-MSV-Edition">
     <description><p>Proficiency with the repair kit allows you to repair weapons, armors, or any technology.</p></description>
     <supports>Artisan tools,ID_INTERNAL_PROFICIENCY_TOOL</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_TOOL_REPAIR_KIT" />
+    </rules>
   </element>
 
   <element name="Forgery Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT" source="SW-MSV-Edition">
     <description><p>Proficiency with the forgery kit allows you to forge documents and make counterfeit credits.</p></description>
     <supports>Artisan tools,ID_INTERNAL_PROFICIENCY_TOOL</supports>
+    <rules>
+      <grant type="Background Feature" id="ID_MSV_DISPLAY_TOOL_FORGERY_KIT" />
+    </rules>
   </element>
 
-  
+  <!-- TOOL PROFICIENCY DISPLAY (Additional Features & Traits on printed sheet) -->
+  <element name="Tool Proficiency: Slicing Kit" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_SLICING_KIT">
+    <sheet alt="Tool Proficiency: Slicing Kit">
+      <description>You are proficient with the Slicing Kit. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
+  </element>
+
+  <element name="Tool Proficiency: Hacking Kit" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_HACKING_KIT">
+    <sheet alt="Tool Proficiency: Hacking Kit">
+      <description>You are proficient with the Hacking Kit. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
+  </element>
+
+  <element name="Tool Proficiency: Disguise Kit" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_DISGUISE_KIT">
+    <sheet alt="Tool Proficiency: Disguise Kit">
+      <description>You are proficient with the Disguise Kit. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
+  </element>
+
+  <element name="Tool Proficiency: Poisoning Kit" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_POISONING_KIT">
+    <sheet alt="Tool Proficiency: Poisoning Kit">
+      <description>You are proficient with the Poisoning Kit. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
+  </element>
+
+  <element name="Tool Proficiency: Jumppack" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_JUMPPACK">
+    <sheet alt="Tool Proficiency: Jumppack">
+      <description>You are proficient with Jumppack and Jump Boots operation. You can add your proficiency bonus to ability checks using them.</description>
+    </sheet>
+  </element>
+
+  <element name="Tool Proficiency: Hoverpack" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_HOVERPACK">
+    <sheet alt="Tool Proficiency: Hoverpack">
+      <description>You are proficient with Hoverpack and Hover Boots operation. You can add your proficiency bonus to ability checks using them.</description>
+    </sheet>
+  </element>
+
+  <element name="Tool Proficiency: Jetpack" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_JETPACK">
+    <sheet alt="Tool Proficiency: Jetpack">
+      <description>You are proficient with Jetpack and Jet Boots operation. You can add your proficiency bonus to ability checks using them.</description>
+    </sheet>
+  </element>
+
+  <element name="Tool Proficiency: Repair Kit" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_REPAIR_KIT">
+    <sheet alt="Tool Proficiency: Repair Kit">
+      <description>You are proficient with the Repair Kit. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
+  </element>
+
+  <element name="Tool Proficiency: Forgery Kit" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_FORGERY_KIT">
+    <sheet alt="Tool Proficiency: Forgery Kit">
+      <description>You are proficient with the Forgery Kit. You can add your proficiency bonus to ability checks using it.</description>
+    </sheet>
+  </element>
+
+
   <element name="Repair Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_REPAIR_KIT">
     <supports>Tool,ID_INTERNAL_TOOL</supports>
     <description>
@@ -154,7 +236,7 @@
     </setters>
   </element>
 
-  
+
   <element name="Jumppack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_JUMPPACK">
     <description>
       <p>As a Bonus Action, jump up to 25 feet vertically or horizontally without using your movement. Provokes opportunity attack when leaving or landing in enemy melee range. Requires jumppack proficiency.</p></description>
@@ -254,7 +336,7 @@
     </rules>
   </element>
 
-  
+
   <element name="Poison" type="Item" source="SW-MSV-Edition" id="ID_ITEM_POISON">
     <description>
       <p>The target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage and becomes poisoned. On a successful save, the target takes half damage and doesn't become poisoned</p>

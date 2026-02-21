@@ -3,7 +3,7 @@
   <info>
     <name>Feats</name>
     <description>Feats for SW-MSV-Edition.</description>
-    <update version="2.2.3">
+    <update version="2.2.4">
       <file name="feats.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/feats.xml" />
     </update>
   </info>
