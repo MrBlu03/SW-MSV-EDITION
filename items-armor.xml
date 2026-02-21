@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Armor</name>
-    <update version="2.2.4">
+    <update version="2.2.5">
       <file name="items-armor.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-armor.xml" />
     </update>
   </info>

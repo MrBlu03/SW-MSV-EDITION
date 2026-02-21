@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Musical Instruments</name>
-    <update version="2.2.4">
+    <update version="2.2.5">
       <file name="items-instruments.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-instruments.xml" />
     </update>
   </info>
@@ -304,73 +304,101 @@
 
   <!-- INSTRUMENT PROFICIENCY DISPLAY (Additional Features & Traits on printed sheet) -->
   <element name="Instrument Proficiency: Bandfill" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_BANDFILL">
-    <sheet alt="Instrument Proficiency: Bandfill">
-      <description>You are proficient with the Bandfill. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Bandfill. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Bandfill" />
   </element>
   <element name="Instrument Proficiency: Chindinkalu Horn" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_CHINDINKALU_HORN">
-    <sheet alt="Instrument Proficiency: Chindinkalu Horn">
-      <description>You are proficient with the Chindinkalu Horn. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Chindinkalu Horn. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Chindinkalu Horn" />
   </element>
   <element name="Instrument Proficiency: Drum" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_DRUM">
-    <sheet alt="Instrument Proficiency: Drum">
-      <description>You are proficient with the Drum. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Drum. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Drum" />
   </element>
   <element name="Instrument Proficiency: Fanfar" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_FANFAR">
-    <sheet alt="Instrument Proficiency: Fanfar">
-      <description>You are proficient with the Fanfar. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Fanfar. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Fanfar" />
   </element>
   <element name="Instrument Proficiency: Fizzz" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_FIZZZ">
-    <sheet alt="Instrument Proficiency: Fizzz">
-      <description>You are proficient with the Fizzz. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Fizzz. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Fizzz" />
   </element>
   <element name="Instrument Proficiency: Flute" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_FLUTE">
-    <sheet alt="Instrument Proficiency: Flute">
-      <description>You are proficient with the Flute. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Flute. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Flute" />
   </element>
   <element name="Instrument Proficiency: Kloo Horn" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_KLOO_HORN">
-    <sheet alt="Instrument Proficiency: Kloo Horn">
-      <description>You are proficient with the Kloo Horn. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Kloo Horn. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Kloo Horn" />
   </element>
   <element name="Instrument Proficiency: Lute" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_LUTE">
-    <sheet alt="Instrument Proficiency: Lute">
-      <description>You are proficient with the Lute. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Lute. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Lute" />
   </element>
   <element name="Instrument Proficiency: Mandoviol" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_MANDOVIOL">
-    <sheet alt="Instrument Proficiency: Mandoviol">
-      <description>You are proficient with the Mandoviol. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Mandoviol. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Mandoviol" />
   </element>
   <element name="Instrument Proficiency: Ommni Box" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_OMMNI_BOX">
-    <sheet alt="Instrument Proficiency: Ommni Box">
-      <description>You are proficient with the Ommni Box. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Ommni Box. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Ommni Box" />
   </element>
   <element name="Instrument Proficiency: Slitherhorn" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_SLITHERHORN">
-    <sheet alt="Instrument Proficiency: Slitherhorn">
-      <description>You are proficient with the Slitherhorn. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Slitherhorn. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Slitherhorn" />
   </element>
   <element name="Instrument Proficiency: Traz" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_TRAZ">
-    <sheet alt="Instrument Proficiency: Traz">
-      <description>You are proficient with the Traz. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Traz. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Traz" />
   </element>
   <element name="Instrument Proficiency: Valahorn" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_VALAHORN">
-    <sheet alt="Instrument Proficiency: Valahorn">
-      <description>You are proficient with the Valahorn. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Valahorn. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Valahorn" />
   </element>
   <element name="Instrument Proficiency: Xantha" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_INSTRUMENT_XANTHA">
-    <sheet alt="Instrument Proficiency: Xantha">
-      <description>You are proficient with the Xantha. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Xantha. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Xantha" />
   </element>
 </elements>

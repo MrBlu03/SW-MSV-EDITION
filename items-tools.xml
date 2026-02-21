@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Tools</name>
-    <update version="2.2.4">
+    <update version="2.2.5">
       <file name="items-tools.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-tools.xml" />
     </update>
   </info>
@@ -81,57 +81,75 @@
 
   <!-- TOOL PROFICIENCY DISPLAY (Additional Features & Traits on printed sheet) -->
   <element name="Tool Proficiency: Slicing Kit" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_SLICING_KIT">
-    <sheet alt="Tool Proficiency: Slicing Kit">
-      <description>You are proficient with the Slicing Kit. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Slicing Kit. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Slicing Kit" />
   </element>
 
   <element name="Tool Proficiency: Hacking Kit" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_HACKING_KIT">
-    <sheet alt="Tool Proficiency: Hacking Kit">
-      <description>You are proficient with the Hacking Kit. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Hacking Kit. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Hacking Kit" />
   </element>
 
   <element name="Tool Proficiency: Disguise Kit" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_DISGUISE_KIT">
-    <sheet alt="Tool Proficiency: Disguise Kit">
-      <description>You are proficient with the Disguise Kit. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Disguise Kit. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Disguise Kit" />
   </element>
 
   <element name="Tool Proficiency: Poisoning Kit" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_POISONING_KIT">
-    <sheet alt="Tool Proficiency: Poisoning Kit">
-      <description>You are proficient with the Poisoning Kit. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Poisoning Kit. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Poisoning Kit" />
   </element>
 
   <element name="Tool Proficiency: Jumppack" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_JUMPPACK">
-    <sheet alt="Tool Proficiency: Jumppack">
-      <description>You are proficient with Jumppack and Jump Boots operation. You can add your proficiency bonus to ability checks using them.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with Jumppack and Jump Boots operation. You can add your proficiency bonus to ability checks using them.</p>
+    </description>
+    <sheet alt="Jumppack" />
   </element>
 
   <element name="Tool Proficiency: Hoverpack" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_HOVERPACK">
-    <sheet alt="Tool Proficiency: Hoverpack">
-      <description>You are proficient with Hoverpack and Hover Boots operation. You can add your proficiency bonus to ability checks using them.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with Hoverpack and Hover Boots operation. You can add your proficiency bonus to ability checks using them.</p>
+    </description>
+    <sheet alt="Hoverpack" />
   </element>
 
   <element name="Tool Proficiency: Jetpack" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_JETPACK">
-    <sheet alt="Tool Proficiency: Jetpack">
-      <description>You are proficient with Jetpack and Jet Boots operation. You can add your proficiency bonus to ability checks using them.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with Jetpack and Jet Boots operation. You can add your proficiency bonus to ability checks using them.</p>
+    </description>
+    <sheet alt="Jetpack" />
   </element>
 
   <element name="Tool Proficiency: Repair Kit" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_REPAIR_KIT">
-    <sheet alt="Tool Proficiency: Repair Kit">
-      <description>You are proficient with the Repair Kit. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Repair Kit. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Repair Kit" />
   </element>
 
   <element name="Tool Proficiency: Forgery Kit" type="Background Feature" source="SW-MSV-Edition" id="ID_MSV_DISPLAY_TOOL_FORGERY_KIT">
-    <sheet alt="Tool Proficiency: Forgery Kit">
-      <description>You are proficient with the Forgery Kit. You can add your proficiency bonus to ability checks using it.</description>
-    </sheet>
+    <supports>Background Feature</supports>
+    <description>
+      <p>You are proficient with the Forgery Kit. You can add your proficiency bonus to ability checks using it.</p>
+    </description>
+    <sheet alt="Forgery Kit" />
   </element>
 
 
