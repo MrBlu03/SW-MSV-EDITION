@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Species</name>
-    <update version="2.2.7">
+    <update version="2.2.8">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
@@ -299,7 +299,8 @@
       <grant type="Action" id="ID_ACTION_DROID_TUNE_UP" />
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
-      <select type="Language" name="Language (Combat Droid)" supports="Standard||Exotic" number="1" />
+      <select type="Language" name="Language (Protocol Droid)" supports="Standard||Exotic" number="1" />
+      <grant type="Language" id="ID_LANGUAGE_BINARY" />
       <grant type="Language" id="ID_LANGUAGE_BITH" />
       <grant type="Language" id="ID_LANGUAGE_BOTHESE" />
       <grant type="Language" id="ID_LANGUAGE_CATHARESE" />
@@ -356,7 +357,7 @@
       <p class="indent"><strong><em>Tune-Up.</em></strong> Quickly repair some damage on your body. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
       <p class="indent"><strong><em>Armor Training.</em></strong> You are proficient with light armor and medium armor.</p>
       <p class="indent"><strong><em>Weapon Training.</em></strong> You are proficient with two simple or martial vibroweapons of your choice.</p>
-      <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Galactic Basic and one additional language of your choice. You can understand Binary.</p>
+      <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Galactic Basic and one additional language of your choice. You understand Binary but cannot speak it.</p>
     </description>
     <sheet display="false" />
     <rules>
@@ -375,11 +376,13 @@
       <grant type="Action" id="ID_ACTION_DROID_TUNE_UP" />
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
-      <select type="Proficiency" name="Weapon Proficiency (Combat Droid 1)" supports="Vibroweapon||ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE||ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL" number="1" />
-      <select type="Proficiency" name="Weapon Proficiency (Combat Droid 2)" supports="Vibroweapon||ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE||ID_INTERNAL_PROFICIENCY_WEAPON_MARTIAL" number="1" />
+      <select type="Proficiency" name="Weapon Proficiency (Combat Droid 1)" supports="Vibroweapon" number="1" />
+      <select type="Proficiency" name="Weapon Proficiency (Combat Droid 2)" supports="Vibroweapon" number="1" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
-      <select type="Language" name="Language (Combat Droid)" supports="Standard||Exotic" number="1" />
+      <select type="Language" name="Language (Combat Droid)" supports="Standard||Exotic" number="1" requirements="!ID_LANGUAGE_BINARY" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_UNDERSTAND_BINARY" />
+      <grant type="Language" id="ID_LANGUAGE_BINARY" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_CANNOT_SPEAK_BINARY" />
     </rules>
   </element>
 
@@ -510,7 +513,7 @@
       <p class="indent"><strong><em>Age.</em></strong> Geonosians have a normal lifespan comparable to humans.</p>
       <p class="indent"><strong><em>Size.</em></strong> Geonosians stand between 5 and 6 feet tall. Your size is Medium.</p>
       <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
-      <p class="indent"><strong><em>Natural Armor.</em></strong> When unarmored or wearing light armor, your AC equals 12 + your Dexterity modifier.</p>
+      <p class="indent"><strong><em>Natural Armor.</em></strong> When unarmored, your AC equals 12 + your Dexterity modifier.</p>
       <p class="indent"><strong><em>Flight.</em></strong> You have a flying speed equal to your walking speed. Your flying speed is halved when wearing medium or heavy armor.</p>
       <p class="indent"><strong><em>Sonic Weapon Training.</em></strong> You are proficient with sonic pistols and sonic rifles.</p>
       <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Galactic Basic and Geonosian.</p>
@@ -890,7 +893,7 @@
       <p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
       <p class="indent"><strong><em>Amphibious.</em></strong> You can breathe air and water.</p>
       <p class="indent"><strong><em>Perception Expertise.</em></strong> Your proficiency bonus is doubled for Perception checks.</p>
-      <p class="indent"><strong><em>Natural Armor.</em></strong> When unarmored or wearing light armor, your AC equals 12 + your Dexterity modifier.</p>
+      <p class="indent"><strong><em>Natural Armor.</em></strong> When unarmored, your AC equals 12 + your Dexterity modifier.</p>
       <p class="indent"><strong><em>Swimmer.</em></strong> You have a swimming speed of 30 feet.</p>
       <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Galactic Basic and Nautila.</p>
       <p class="indent"><strong><em>Cyborg Option.</em></strong> You may choose to become a Cyborg, gaining cybernetic enhancements.</p>
@@ -970,6 +973,7 @@
       <p class="indent"><strong><em>Keen Senses.</em></strong> You have advantage on Perception checks that involve hearing or smell.</p>
       <p class="indent"><strong><em>Musician.</em></strong> You are proficient with one musical instrument of your choice.</p>
       <p class="indent"><strong><em>Nimble.</em></strong> You can hide behind creatures that are larger than you.</p>
+      <p class="indent"><strong><em>Small Build.</em></strong> You can only wield two-handed weapons if they have the versatile property. You cannot use physical or energy shields.</p>
       <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Galactic Basic and Ortolan.</p>
       <p class="indent"><strong><em>Cyborg Option.</em></strong> You may choose to become a Cyborg, gaining cybernetic enhancements.</p>
     </description>
@@ -989,6 +993,7 @@
       <grant type="Racial Trait" id="ID_RACE_TRAIT_ORTOLAN_KEEN_SENSES" />
       <select type="Proficiency" name="Musical Instrument (Ortolan)" supports="Musical Instrument" number="1" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_ORTOLAN_NIMBLE" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_SMALL_BUILD" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_ORTOLAN" />
       <select type="Sub Race" name="Ortolan Subrace" supports="ID_RACE_ORTOLAN" optional="true" />
@@ -1010,7 +1015,7 @@
       <p class="indent"><strong><em>Force Insensitive.</em></strong> You cannot use Force powers.</p>
       <p class="indent"><strong><em>Natural Weapons.</em></strong> Your unarmed strikes deal 1d6 kinetic damage.</p>
       <p class="indent"><strong><em>Slicer Training.</em></strong> You are proficient with slicing kits.</p>
-      <p class="indent"><strong><em>Consume Corpse.</em></strong> As an action, you can eat a corpse to gain temporary hit points equal to your Constitution modifier.</p>
+      <p class="indent"><strong><em>Consume Corpse.</em></strong> As an Action, Eat a corpse to gain temporary Hit Points equal to your hit die + Constitution modifier.</p>
       <p class="indent"><strong><em>Swimmer.</em></strong> You have a swimming speed of 30 feet.</p>
       <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Galactic Basic and Rakata.</p>
       <p class="indent"><strong><em>Cyborg Option.</em></strong> You may choose to become a Cyborg, gaining cybernetic enhancements.</p>
@@ -1200,7 +1205,7 @@
       <p class="indent"><strong><em>Size.</em></strong> Talz are relatively tall, standing between 6 and 7 feet. Your size is Medium.</p>
       <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
       <p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
-      <p class="indent"><strong><em>Natural Armor.</em></strong> When unarmored or wearing light armor, your AC equals 12 + your Dexterity modifier.</p>
+      <p class="indent"><strong><em>Natural Armor.</em></strong> When unarmored, your AC equals 12 + your Dexterity modifier.</p>
       <p class="indent"><strong><em>Long Reach.</em></strong> Your melee reach is 5 feet greater than normal.</p>
       <p class="indent"><strong><em>Languages.</em></strong> You can speak Talzzi and understand Galactic Basic (though you cannot speak it).</p>
       <p class="indent"><strong><em>Cyborg Option.</em></strong> You may choose to become a Cyborg, gaining cybernetic enhancements.</p>
@@ -1271,7 +1276,7 @@
       <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
       <p class="indent"><strong><em>Natural Weapons.</em></strong> Your unarmed strikes deal 1d4 kinetic damage.</p>
       <p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
-      <p class="indent"><strong><em>Natural Armor.</em></strong> When unarmored or wearing light armor, your AC equals 12 + your Dexterity modifier.</p>
+      <p class="indent"><strong><em>Natural Armor.</em></strong> When unarmored, your AC equals 12 + your Dexterity modifier.</p>
       <p class="indent"><strong><em>Regeneration.</em></strong> When you take damage, you can use your reaction and expend a Hit Die to regain hit points as long as the damage would not reduce your hit points to 0.</p>
       <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Galactic Basic and Dosh.</p>
       <p class="indent"><strong><em>Cyborg Option.</em></strong> You may choose to become a Cyborg, gaining cybernetic enhancements.</p>
@@ -1435,7 +1440,7 @@
       <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
       <p class="indent"><strong><em>Keen Smell.</em></strong> You have advantage on Perception checks that rely on smell.</p>
       <p class="indent"><strong><em>Brutal Critical.</em></strong> When you score a critical hit with a weapon attack, you add one additional weapon damage die to the damage.</p>
-      <p class="indent"><strong><em>Natural Armor.</em></strong> When unarmored or wearing light armor, your AC equals 13 + your Dexterity modifier.</p>
+      <p class="indent"><strong><em>Natural Armor.</em></strong> When unarmored, your AC equals 13 + your Dexterity modifier.</p>
       <p class="indent"><strong><em>Weapon Training.</em></strong> You are proficient with two vibroweapons or blasters of your choice.</p>
       <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Galactic Basic and Sriluurian.</p>
       <p class="indent"><strong><em>Cyborg Option.</em></strong> You may choose to become a Cyborg, gaining cybernetic enhancements.</p>
@@ -1473,7 +1478,7 @@
       <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
       <p class="indent"><strong><em>Natural Weapons.</em></strong> Your unarmed strikes deal 1d4 kinetic damage.</p>
       <p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
-      <p class="indent"><strong><em>Natural Armor.</em></strong> When unarmored or wearing light armor, your AC equals 13 + your Dexterity modifier.</p>
+      <p class="indent"><strong><em>Natural Armor.</em></strong> When unarmored, your AC equals 13 + your Dexterity modifier.</p>
       <p class="indent"><strong><em>Intimidation Training.</em></strong> You are proficient in the Intimidation skill.</p>
       <p class="indent"><strong><em>Expert Climber.</em></strong> You have a climbing speed of 30 feet.</p>
       <p class="indent"><strong><em>Languages.</em></strong> You can speak Shyriiwook and understand Galactic Basic (though you cannot speak it).</p>
@@ -1854,6 +1859,10 @@
     <description><p>You can understand Binary but cannot speak it.</p></description>
     <sheet><description>Understands Binary but cannot speak it.</description></sheet>
   </element>
+  <element name="Cannot Speak Binary" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_DROID_CANNOT_SPEAK_BINARY">
+    <description><p>You understand Binary but cannot speak it.</p></description>
+    <sheet><description>Cannot speak Binary.</description></sheet>
+  </element>
 
   <!-- EWOK TRAITS -->
   <element name="Keen Smell" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_EWOK_KEEN_SMELL">
@@ -1955,7 +1964,10 @@
   <element name="History Expertise" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_MIRIALAN_HISTORY_EXPERTISE">
     <description><p>Your proficiency bonus is doubled for History checks.</p></description>
     <sheet><description>Double proficiency bonus on History checks (expertise).</description></sheet>
-    <rules><stat name="history:proficiency" value="proficiency" bonus="double" /></rules>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+      <stat name="history:proficiency" value="proficiency" bonus="double" />
+    </rules>
   </element>
   <element name="Surprise Attack" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_MIRIALAN_SURPRISE_ATTACK">
     <description><p>If an enemy is surprised, your first attack against it deals an extra 2d6 damage.</p></description>
@@ -2207,8 +2219,14 @@
       <p>As an action you can violently expel air in a 15-foot cone. When you do so, each creature in the area of the exhalation must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). A creature takes 2d6 sonic damage on a failed save, and half as much damage on a successful one. The damage increases to 4d6 at 5th level, 6d6 at 11th level, and 8d6 at 17th level. This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you complete a long rest.</p>
     </description>
     <sheet>
-      <description>Expel air in a 15-ft cone (Action). Wisdom save (DC 8 + proficiency + Con mod) for 2d6/4d6/6d6/8d6 sonic damage by level (half on success). No effect on constructs. Uses = proficiency bonus per long rest.</description>
+      <description>As an action, violently expel air in a 15-foot cone. Each creature in the area must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). A creature takes {{ithorian-scream:damage}} sonic damage on a failed save, and half as much damage on a successful one. This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you complete a long rest.</description>
     </sheet>
+    <rules>
+      <stat name="ithorian-scream:damage" value="2d6" level="1" />
+      <stat name="ithorian-scream:damage" value="4d6" level="5" />
+      <stat name="ithorian-scream:damage" value="6d6" level="11" />
+      <stat name="ithorian-scream:damage" value="8d6" level="17" />
+    </rules>
   </element>
 
   <!-- ACTIONS -->

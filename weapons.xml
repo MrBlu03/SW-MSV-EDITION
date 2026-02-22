@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Weapons</name>
-    <update version="2.2.7">
+    <update version="2.2.8">
       <file name="weapons.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/weapons.xml" />
     </update>
   </info>
@@ -24,7 +24,7 @@
   </element>
   <element name="Hilt Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_HILT_STRIKE">
     <description>
-      <p>As a Bonus Action, Make a melee attack with the hilt of the weapon, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your applicable modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
+      <p>Hilt Strike: As a Bonus Action, Make a melee attack with the hilt of the weapon, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your applicable modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <sheet>
       <description>As a Bonus Action, Make a melee attack with the hilt of the weapon, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your applicable modifier. On a failed save, the target becomes dazed. On a successful save, the target doesn't get dazed.</description>
@@ -72,7 +72,7 @@
   </element>
   <element name="Back Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_BACK_STRIKE">
     <description>
-      <p>As a Bonus Action, Make a melee attack with the back end of the weapon. On hit: the weapon's damage dice without modifiers.</p>
+      <p>Back Strike: As a Bonus Action, Make a melee attack with the back end of the weapon. On hit: the weapon's damage dice without modifiers.</p>
     </description>
     <sheet>
       <description>As a Bonus Action, Make a melee attack with the back end of the weapon. On hit: the weapon's damage dice without modifiers.</description>
@@ -104,18 +104,18 @@
   </element>
   <element name="Whip" type="Action" source="SW-MSV-Edition" id="ID_ACTION_WHIP">
     <description>
-      <p>Whip: Action; Use the fiber cord whip attachment. The target must make a Dexterity saving throw (DC 8 + proficiency bonus + your Dexterity modifier). On a failed save, the target is restrained. While restrained, the target can use an action on their turn to make a Strength saving throw (DC 8 + proficiency bonus + your Strength modifier). On a failed save, they remain restrained. On a successful save, they are freed. You can't use bonus actions or hold something in that hand while restraining someone.</p>
+      <p>Whip: As an Action, Fire a Fibercord Whip with the weapon at a target. The target must make a DC 8 + proficiency + Dexterity modifier Dexterity saving throw. On a failed save, the target is restrained. On a successful save, the target isn't restrained. If the target is restrained the target can on their turn use an Action to do a Strength saving throw against 8 + proficiency + Strength modifier of the restrainer. On a failed save, the targets stays restrained. On a successful save, the target is freed. The Restrainer can't use Bonus Actions or hold something in that hand when restraining someone.</p>
     </description>
     <sheet>
-      <description>Action: Use the whip attachment to restrain a target.</description>
+      <description>As an Action, Fire a Fibercord Whip at a target. Target makes DC 8 + proficiency + Dexterity modifier Dexterity save or is restrained. Restrained target can use Action to make Strength save against 8 + proficiency + Strength modifier of restrainer to escape. Restrainer can't use Bonus Actions or hold something in that hand when restraining.</description>
     </sheet>
   </element>
   <element name="Reload" type="Action" source="SW-MSV-Edition" id="ID_ACTION_RELOAD">
     <description>
-      <p>Action; After the weapon's reload capacity is expended, take a full Action to fully reload your weapon.</p>
+      <p>Reload: After the weapon's reload capacity is expended, take a full Action to fully reload your weapon.</p>
     </description>
     <sheet>
-      <description>Action; After the weapon's reload capacity is expended, take a full Action to fully reload your weapon.</description>
+      <description>Reload: After the weapon's reload capacity is expended, take a full Action to fully reload your weapon.</description>
     </sheet>
   </element>
   <element name="blaster pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BLASTER_PISTOL">
@@ -136,6 +136,7 @@
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the blaster pistol. On hit: 1d6 energy + your Dexterity modifier.</p>
       <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the blaster pistol while wielding it in your off-hand. On hit: 1d6 energy without modifiers.</p>
+      <p>• <strong>Reload:</strong> After 16 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -150,6 +151,7 @@
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
       <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="energy bow" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ENERGY_BOW">
@@ -169,7 +171,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the energy bow. On hit: 1d6 energy + your Strength or Dexterity modifier.</p>
-      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the energy bow while wielding it in your off-hand. On hit: 1d6 energy without modifiers.</p>
+      <p>• <strong>Reload:</strong> After 4 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -183,7 +185,7 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
-      <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="ion pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_PISTOL">
@@ -204,6 +206,7 @@
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the ion pistol. On hit: 1d4 ion + your Dexterity modifier.</p>
       <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the ion pistol while wielding it in your off-hand. On hit: 1d4 ion without modifiers.</p>
+      <p>• <strong>Reload:</strong> After 16 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -218,6 +221,7 @@
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
       <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="sonic pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SONIC_PISTOL">
@@ -238,6 +242,7 @@
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the sonic pistol. On hit: 1d4 sonic + your Dexterity modifier.</p>
       <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the sonic pistol while wielding it in your off-hand. On hit: 1d4 sonic without modifiers.</p>
+      <p>• <strong>Reload:</strong> After 16 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -252,6 +257,7 @@
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
       <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="cryo pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_PISTOL">
@@ -272,6 +278,7 @@
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the cryo pistol. On hit: 1d4 cold + your Dexterity modifier.</p>
       <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the cryo pistol while wielding it in your off-hand. On hit: 1d4 cold without modifiers.</p>
+      <p>• <strong>Reload:</strong> After 8 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -286,6 +293,7 @@
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
       <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="slugthrower pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLUGTHROWER_PISTOL">
@@ -306,6 +314,7 @@
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the slugthrower pistol. On hit: 1d6 kinetic + your Dexterity modifier.</p>
       <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the slugthrower pistol while wielding it in your off-hand. On hit: 1d6 kinetic without modifiers.</p>
+      <p>• <strong>Reload:</strong> After 16 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -320,6 +329,7 @@
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
       <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="disruptor pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DISRUPTOR_PISTOL">
@@ -340,6 +350,7 @@
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the disruptor pistol. On hit: 1d6 acid + your Dexterity modifier.</p>
       <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the disruptor pistol while wielding it in your off-hand. On hit: 1d6 acid without modifiers.</p>
+      <p>• <strong>Reload:</strong> After 12 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -354,6 +365,7 @@
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
       <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="stealth pistol" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_STEALTH_PISTOL">
@@ -374,12 +386,14 @@
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the stealth pistol. On hit: 1d6 energy + your Dexterity modifier.</p>
       <p>• <strong>Dart:</strong> As an Action, Shoot a Dart with the stealth pistol at a target. On hit: Damage and conditions depend on the dart.</p>
+      <p>• <strong>Reload:</strong> After 6 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">twohand</set>
+      <set name="range">80/130</set>
       <set name="damage" type="energy">1d6</set>
       <set name="reload">6</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_STEALTH_PISTOL</set>
@@ -388,6 +402,7 @@
       <grant type="Tag" name="Silent" />
       <grant type="Action" id="ID_ACTION_SHOOT" />
       <grant type="Action" id="ID_ACTION_DART" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="Wrist Launcher with Wrist Blaster Attachment" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_BLASTER">
@@ -395,11 +410,12 @@
     <description>
       <p><strong>Wrist Launcher with Wrist Blaster Attachment</strong></p>
       <p><em>Simple Blaster</em></p>
-      <p><em>1d6 energy, disguised, can't be disarmed, can still use hand but when holding something can't use weapon, power cell, range 30/120, Reload 8, Dexterity modifier</em></p>
+      <p><em>1d6 energy, power cell, range 30/120, Reload 8, Dexterity modifier</em></p>
       <p>This wrist-mounted launcher with blaster attachment fires energy bolts. It can't be disarmed, you can still use your hand but can't use the weapon when holding something.</p>
       <p><strong>Actions:</strong></p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the Wrist Launcher with Wrist Blaster Attachment. On hit: 1d6 energy + your Dexterity modifier.</p>
-      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the Wrist Launcher with Wrist Blaster Attachment while wielding it in your off-hand. On hit: 1d6 energy without modifiers.</p></description>
+      <p>• <strong>Quick Shot:</strong> As a Bonus Action, Make a quick hipfire shot with the Wrist Launcher with Wrist Blaster Attachment while wielding it in your off-hand. On hit: 1d6 energy without modifiers.</p>
+      <p>• <strong>Reload:</strong> After 8 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p></description>
     <setters>
       <set name="category">Weapons</set>
       <set name="cost" currency="gp">0</set>
@@ -411,10 +427,10 @@
       <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_BLASTER</set>
     </setters>
     <rules>
-      <grant type="Tag" name="Disguised" />
       <grant type="Tag" name="Can't be Disarmed" />
       <grant type="Action" id="ID_ACTION_SHOOT" />
       <grant type="Action" id="ID_ACTION_QUICK_SHOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="Wrist Launcher with Dart Attachment" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER_DART">
@@ -427,13 +443,14 @@
         <em>Simple Blaster</em>
       </p>
       <p>
-        <em>Range 30/120, one-handed</em>
+        <em>Range 25/100, one-handed</em>
       </p>
       <p>This wrist-mounted launcher with dart attachment. (can't be disarmed, can still use hand but when holding something can't use weapon)</p>
       <p>
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Dart:</strong> As an Action, Shoot a Dart with the Wrist Launcher with Dart Attachment at a target. On hit: Damage and conditions depend on the dart.</p>
+      <p>• <strong>Reload:</strong> After 1 shot your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -447,6 +464,7 @@
     <rules>
       <grant type="Tag" name="Can't be Disarmed" />
       <grant type="Action" id="ID_ACTION_DART" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="Wrist Launcher with Rocket Attachment" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER_ROCKET">
@@ -459,13 +477,14 @@
         <em>Simple Blaster</em>
       </p>
       <p>
-        <em>Range 30/120, one-handed</em>
+        <em>Range 35/140, one-handed</em>
       </p>
       <p>This wrist-mounted launcher with rocket attachment. (can't be disarmed, can still use hand but when holding something can't use weapon)</p>
       <p>
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Rocket:</strong> As an Action, Shoot a Rocket with the Wrist Launcher with Rocket Attachment at a target. On hit: Damage and conditions depend on the rocket.</p>
+      <p>• <strong>Reload:</strong> After 1 shot your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -479,6 +498,7 @@
     <rules>
       <grant type="Tag" name="Can't be Disarmed" />
       <grant type="Action" id="ID_ACTION_ROCKET" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="Wrist Launcher with FiberCord Whip Attachment" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER_WHIP">
@@ -497,7 +517,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Whip:</strong> Action; 15 feet line, The target must make a DC 8 + proficiency + Dexterity modifier, Dexterity saving throw. On a failed save, the target is restrained. On a successful save, the target isn't restrained. If the target is restrained he target can on their turn use an Action to do a Strength saving throw against 8 + proficiency + Strength modifier of the restrainer. On a failed save, the targets stays restrained. On a successful save, the target is freed. The Restrainer can't use Bonus Actions or hold something in that hand when restraining someone.</p>
+      <p>• <strong>Whip:</strong> As an Action, Fire a Fibercord Whip with the weapon at a target. The target must make a DC 8 + proficiency + Dexterity modifier Dexterity saving throw. On a failed save, the target is restrained. On a successful save, the target isn't restrained. If the target is restrained the target can on their turn use an Action to do a Strength saving throw against 8 + proficiency + Strength modifier of the restrainer. On a failed save, the targets stays restrained. On a successful save, the target is freed. The Restrainer can't use Bonus Actions or hold something in that hand when restraining someone.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -562,6 +582,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the blaster rifle. On hit: 1d8 energy + your Dexterity modifier.</p>
+      <p>• <strong>Reload:</strong> After 12 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -575,6 +596,7 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="disruptor rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_DISRUPTOR_RIFLE">
@@ -594,6 +616,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the disruptor rifle. On hit: 1d8 acid + your Dexterity modifier.</p>
+      <p>• <strong>Reload:</strong> After 9 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -607,6 +630,7 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="heavy bowcaster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_HEAVY_BOWCASTER">
@@ -626,6 +650,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the heavy bowcaster. On hit: 1d12 energy + your Dexterity modifier.</p>
+      <p>• <strong>Reload:</strong> After 4 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -639,6 +664,7 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="ion rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ION_RIFLE">
@@ -658,6 +684,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the ion rifle. On hit: 1d6 ion + your Dexterity modifier.</p>
+      <p>• <strong>Reload:</strong> After 8 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -671,6 +698,7 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="sonic rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SONIC_RIFLE">
@@ -690,6 +718,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the sonic rifle. On hit: 1d8 sonic + your Dexterity modifier.</p>
+      <p>• <strong>Reload:</strong> After 8 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -703,6 +732,7 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="slugthrower rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SLUGTHROWER_RIFLE">
@@ -722,6 +752,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the slugthrower rifle. On hit: 1d8 kinetic + your Dexterity modifier.</p>
+      <p>• <strong>Reload:</strong> After 12 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -735,6 +766,7 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="cryo rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CRYO_RIFLE">
@@ -754,6 +786,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the cryo rifle. On hit: 2d4 cold + your Dexterity modifier.</p>
+      <p>• <strong>Reload:</strong> After 4 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -767,6 +800,7 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="railgun" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_RAILGUN">
@@ -786,6 +820,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the railgun. On hit: 1d10 ion + your Dexterity modifier.</p>
+      <p>• <strong>Reload:</strong> After 1 shot your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -799,6 +834,7 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="arc caster" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_ARC_CASTER">
@@ -817,7 +853,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the arc caster. On hit: 2d4 lightning + your Dexterity modifier.</p>
+      <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the arc caster. On hit: 2d4 lightning + your Dexterity modifier. Can hit a secondary target within 10 feet of the primary target: 1d4 lightning.</p>
+      <p>• <strong>Reload:</strong> After 9 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -832,6 +869,7 @@
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
       <grant type="Action" id="ID_ACTION_DART" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="sniper rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_SNIPER_RIFLE">
@@ -852,6 +890,7 @@
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the sniper rifle. On hit: 1d12 energy + your Dexterity modifier.</p>
       <p>• <strong>Dart:</strong> As an Action, Shoot a Dart with the sniper rifle at a target. On hit: Damage and conditions depend on the dart.</p>
+      <p>• <strong>Reload:</strong> After 2 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -866,6 +905,7 @@
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
       <grant type="Action" id="ID_ACTION_DART" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="minigun/rotary cannon" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_MINIGUN_ROTARY_CANNON">
@@ -885,6 +925,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Blast:</strong> As an Action, Blast multiple targets in a 75 feet cone in front of you. Each target makes a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes 2d10 energy + your Dexterity modifier. On a successful save, the target takes half damage.</p>
+      <p>• <strong>Reload:</strong> After 4 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -897,6 +938,7 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_BLAST" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="flamethrower" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_FLAMETHROWER">
@@ -916,6 +958,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Flame:</strong> As an Action, Flame multiple targets in a 55 feet cone in front of you. Each target must make a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes 2d6 fire + your Dexterity modifier and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</p>
+      <p>• <strong>Reload:</strong> After 2 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -928,6 +971,7 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_FLAME" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="cycler rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_CYCLER_RIFLE">
@@ -947,6 +991,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the cycler rifle. On hit: 1d10 kinetic + your Dexterity modifier.</p>
+      <p>• <strong>Reload:</strong> After 4 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -960,6 +1005,7 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_SHOOT" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="lightsaber" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_LIGHTSABER">
@@ -1419,8 +1465,8 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Strike:</strong> Action; Make a melee attack with the melee weapon in your main hand. (Damage: weapon damage and add modifier)</p>
-      <p>• <strong>Hilt Strike:</strong> Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. (Damage: 1d4 kinetic)</p>
+      <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibro-axe. On hit: 1d12 kinetic + your Strength modifier.</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibro-axe, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1540,6 +1586,7 @@
       <p>A heavy rocket launcher that fires explosive rockets at targets. Requires Strength 13 to use.</p>
       <p>Actions:</p>
       <p>• Rocket: As an Action, Shoot a Rocket with the rocket launcher at a target. On hit: Damage and conditions depend on the rocket.</p>
+      <p>• Reload: After 1 shot your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1552,6 +1599,7 @@
     </setters>
     <rules>
       <grant type="Action" id="ID_ACTION_ROCKET" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
 </elements>

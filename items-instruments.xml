@@ -2,12 +2,13 @@
 <elements>
   <info>
     <name>Musical Instruments</name>
-    <update version="2.2.7">
+    <update version="2.2.8">
       <file name="items-instruments.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-instruments.xml" />
     </update>
   </info>
+
+  <!-- MUSICAL INSTRUMENT ITEMS -->
   <element name="Bandfill" type="Item" source="SW-MSV-Edition" id="ID_ITEM_BANDFILL">
-    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
       <p>The bandfill is a musical instrument, commonly used in jizz, that featured a number of mounted horn bells called reciprocator horns and a ploong sounder</p>
     </description>
@@ -16,12 +17,11 @@
       <set name="cost" currency="gp">15</set>
       <set name="weight" lb="3">3 lb.</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_BANDFILL</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_BANDFILL</set>
     </setters>
   </element>
 
   <element name="Chindinkalu horn" type="Item" source="SW-MSV-Edition" id="ID_ITEM_CHINDINKALU_HORN">
-    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
       <p>The Chidinkalu horn is a musical instrument made by the Kitonaks from the hollowed-out reeds of a chidinka. It produced low tones and is used in the rhythm section</p>
     </description>
@@ -30,12 +30,11 @@
       <set name="cost" currency="gp">25</set>
       <set name="weight" lb="2">2 lb.</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_CHINDINKALU_HORN</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_CHINDINKALU_HORN</set>
     </setters>
   </element>
 
   <element name="Drum" type="Item" source="SW-MSV-Edition" id="ID_ITEM_DRUM">
-    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
       <p>Drums are a type of percussive musical instrument</p>
     </description>
@@ -44,12 +43,11 @@
       <set name="cost" currency="gp">15</set>
       <set name="weight" lb="3">3 lb.</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_DRUM</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_DRUM</set>
     </setters>
   </element>
 
   <element name="Fanfar" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FANFAR">
-    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
       <p>The fanfar is a musical instrument commonly used in jizz. Fanfars appeared to be reedy instruments with a mouthpiece, and the slots along the fanfar are known as farra slots</p>
     </description>
@@ -58,12 +56,11 @@
       <set name="cost" currency="gp">20</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FANFAR</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_FANFAR</set>
     </setters>
   </element>
 
   <element name="Fizzz" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FIZZZ">
-    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
       <p>The Dorenian Beshniquel, also known as the Fizzz, is a short, single-reed wind instrument, which is adjusted via peel rod</p>
     </description>
@@ -72,12 +69,11 @@
       <set name="cost" currency="gp">18</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FIZZZ</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_FIZZZ</set>
     </setters>
   </element>
 
   <element name="Flute" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FLUTE">
-    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
       <p>Flutes are a type of woodwind instrument. One type of flute is the reed flute</p>
     </description>
@@ -86,12 +82,11 @@
       <set name="cost" currency="gp">15</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FLUTE</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_FLUTE</set>
     </setters>
   </element>
 
   <element name="Kloo horn" type="Item" source="SW-MSV-Edition" id="ID_ITEM_KLOO_HORN">
-    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
       <p>The kloo horn is a double-reeded wind instrument, larger than a Slitherhorn and a Fizzz[1] (roughly 1.5 meters tall), and one of the most commonly used instruments in the galaxy</p>
     </description>
@@ -100,12 +95,11 @@
       <set name="cost" currency="gp">30</set>
       <set name="weight" lb="4">4 lb.</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_KLOO_HORN</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_KLOO_HORN</set>
     </setters>
   </element>
 
   <element name="Lute" type="Item" source="SW-MSV-Edition" id="ID_ITEM_LUTE">
-    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
       <p>The lute-pipe is a musical instrument that is played by plucking and blowing into it</p>
     </description>
@@ -114,12 +108,11 @@
       <set name="cost" currency="gp">35</set>
       <set name="weight" lb="3">3 lb.</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_LUTE</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_LUTE</set>
     </setters>
   </element>
 
   <element name="Mandoviol" type="Item" source="SW-MSV-Edition" id="ID_ITEM_MANDOVIOL">
-    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
       <p>The mandoviol is a stringed musical instrument, it is a difficult instrument to master, but could be used to play ballads as well as energetic jizz tunes with equal aplomb</p>
     </description>
@@ -128,12 +121,11 @@
       <set name="cost" currency="gp">40</set>
       <set name="weight" lb="3">3 lb.</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_MANDOVIOL</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_MANDOVIOL</set>
     </setters>
   </element>
 
   <element name="Ommni box" type="Item" source="SW-MSV-Edition" id="ID_ITEM_OMMNI_BOX">
-    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
       <p>The ommni box is a notoriously hard-to-play instrument which enhanced music, and is commonly used in jizz. It is usually used as an amplifier to attenuate and alter the bass aspects of the music</p>
     </description>
@@ -142,12 +134,11 @@
       <set name="cost" currency="gp">50</set>
       <set name="weight" lb="8">8 lb.</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_OMMNI_BOX</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_OMMNI_BOX</set>
     </setters>
   </element>
 
   <element name="Slitherhorn" type="Item" source="SW-MSV-Edition" id="ID_ITEM_SLITHERHORN">
-    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
       <p>The slitherhorn is a musical instrument common among jizz bands. It is similar in appearance to the kloo horn, though smaller in size</p>
     </description>
@@ -156,12 +147,11 @@
       <set name="cost" currency="gp">28</set>
       <set name="weight" lb="3">3 lb.</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_SLITHERHORN</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_SLITHERHORN</set>
     </setters>
   </element>
 
   <element name="Traz" type="Item" source="SW-MSV-Edition" id="ID_ITEM_TRAZ">
-    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
       <p>The traz is a musical instrument similar in appearance and sound to the slitherhorn</p>
     </description>
@@ -170,12 +160,11 @@
       <set name="cost" currency="gp">22</set>
       <set name="weight" lb="2">2 lb.</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_TRAZ</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_TRAZ</set>
     </setters>
   </element>
 
   <element name="Valahorn" type="Item" source="SW-MSV-Edition" id="ID_ITEM_VALAHORN">
-    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
       <p>The valahorn is a type of musical instrument that is similar in appearance and sound to a Kloo horn</p>
     </description>
@@ -184,12 +173,11 @@
       <set name="cost" currency="gp">32</set>
       <set name="weight" lb="4">4 lb.</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_VALAHORN</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_VALAHORN</set>
     </setters>
   </element>
 
   <element name="Xantha" type="Item" source="SW-MSV-Edition" id="ID_ITEM_XANTHA">
-    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
     <description>
       <p>The Xantha is a difficult musical instrument that involved plucking strings and covering holes with one's fingers</p>
     </description>
@@ -198,133 +186,146 @@
       <set name="cost" currency="gp">45</set>
       <set name="weight" lb="5">5 lb.</set>
       <set name="type">Tool</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_XANTHA</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_TOOL_XANTHA</set>
     </setters>
   </element>
 
   <!-- MUSICAL INSTRUMENT PROFICIENCIES -->
-  <element name="Bandfill" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_BANDFILL" source="SW-MSV-Edition">
+  <element name="Bandfill" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_BANDFILL" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the bandfill.</p>
     </description>
-    <supports>Musical Instrument</supports>
+    <supports>Musical Instrument,ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <sheet>
       <description>Proficiency with the Bandfill.</description>
     </sheet>
   </element>
-  <element name="Chindinkalu Horn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_CHINDINKALU_HORN" source="SW-MSV-Edition">
+
+  <element name="Chindinkalu Horn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_CHINDINKALU_HORN" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the chindinkalu horn.</p>
     </description>
-    <supports>Musical Instrument</supports>
+    <supports>Musical Instrument,ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <sheet>
       <description>Proficiency with the Chindinkalu Horn.</description>
     </sheet>
   </element>
-  <element name="Drum" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_DRUM" source="SW-MSV-Edition">
+
+  <element name="Drum" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_DRUM" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the drum.</p>
     </description>
-    <supports>Musical Instrument</supports>
+    <supports>Musical Instrument,ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <sheet>
       <description>Proficiency with the Drum.</description>
     </sheet>
   </element>
-  <element name="Fanfar" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FANFAR" source="SW-MSV-Edition">
+
+  <element name="Fanfar" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FANFAR" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the fanfar.</p>
     </description>
-    <supports>Musical Instrument</supports>
+    <supports>Musical Instrument,ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <sheet>
       <description>Proficiency with the Fanfar.</description>
     </sheet>
   </element>
-  <element name="Fizzz" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FIZZZ" source="SW-MSV-Edition">
+
+  <element name="Fizzz" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FIZZZ" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the fizzz.</p>
     </description>
-    <supports>Musical Instrument</supports>
+    <supports>Musical Instrument,ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <sheet>
       <description>Proficiency with the Fizzz.</description>
     </sheet>
   </element>
-  <element name="Flute" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_FLUTE" source="SW-MSV-Edition">
+
+  <element name="Flute" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FLUTE" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the flute.</p>
     </description>
-    <supports>Musical Instrument</supports>
+    <supports>Musical Instrument,ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <sheet>
       <description>Proficiency with the Flute.</description>
     </sheet>
   </element>
-  <element name="Kloo Horn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_KLOO_HORN" source="SW-MSV-Edition">
+
+  <element name="Kloo Horn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_KLOO_HORN" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the kloo horn.</p>
     </description>
-    <supports>Musical Instrument</supports>
+    <supports>Musical Instrument,ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <sheet>
       <description>Proficiency with the Kloo Horn.</description>
     </sheet>
   </element>
-  <element name="Lute" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_LUTE" source="SW-MSV-Edition">
+
+  <element name="Lute" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_LUTE" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the lute.</p>
     </description>
-    <supports>Musical Instrument</supports>
+    <supports>Musical Instrument,ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <sheet>
       <description>Proficiency with the Lute.</description>
     </sheet>
   </element>
-  <element name="Mandoviol" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_MANDOVIOL" source="SW-MSV-Edition">
+
+  <element name="Mandoviol" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_MANDOVIOL" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the mandoviol.</p>
     </description>
-    <supports>Musical Instrument</supports>
+    <supports>Musical Instrument,ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <sheet>
       <description>Proficiency with the Mandoviol.</description>
     </sheet>
   </element>
-  <element name="Ommni Box" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_OMMNI_BOX" source="SW-MSV-Edition">
+
+  <element name="Ommni Box" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_OMMNI_BOX" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the ommni box.</p>
     </description>
-    <supports>Musical Instrument</supports>
+    <supports>Musical Instrument,ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <sheet>
       <description>Proficiency with the Ommni Box.</description>
     </sheet>
   </element>
-  <element name="Slitherhorn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_SLITHERHORN" source="SW-MSV-Edition">
+
+  <element name="Slitherhorn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLITHERHORN" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the slitherhorn.</p>
     </description>
-    <supports>Musical Instrument</supports>
+    <supports>Musical Instrument,ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <sheet>
       <description>Proficiency with the Slitherhorn.</description>
     </sheet>
   </element>
-  <element name="Traz" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_TRAZ" source="SW-MSV-Edition">
+
+  <element name="Traz" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_TRAZ" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the traz.</p>
     </description>
-    <supports>Musical Instrument</supports>
+    <supports>Musical Instrument,ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <sheet>
       <description>Proficiency with the Traz.</description>
     </sheet>
   </element>
-  <element name="Valahorn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_VALAHORN" source="SW-MSV-Edition">
+
+  <element name="Valahorn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_VALAHORN" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the valahorn.</p>
     </description>
-    <supports>Musical Instrument</supports>
+    <supports>Musical Instrument,ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <sheet>
       <description>Proficiency with the Valahorn.</description>
     </sheet>
   </element>
-  <element name="Xantha" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_PROFICIENCY_XANTHA" source="SW-MSV-Edition">
+
+  <element name="Xantha" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_XANTHA" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the xantha.</p>
     </description>
-    <supports>Musical Instrument</supports>
+    <supports>Musical Instrument,ID_INTERNAL_PROFICIENCY_TOOL</supports>
     <sheet>
       <description>Proficiency with the Xantha.</description>
     </sheet>

@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Tools</name>
-    <update version="2.2.7">
+    <update version="2.2.8">
       <file name="items-tools.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-tools.xml" />
     </update>
   </info>
@@ -100,7 +100,6 @@
 
   <!-- TOOL ITEMS -->
   <element name="Repair Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_REPAIR_KIT">
-    <supports>Tool,ID_INTERNAL_TOOL</supports>
     <description>
       <p>With this you can repair weapons/armours or any technology (requires repair kit proficiency).</p>
       <p class="indent"><strong>Repair Weapon:</strong> DC 10</p>
@@ -117,7 +116,6 @@
   </element>
 
   <element name="Forgery Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_FORGERY_KIT">
-    <supports>Tool,ID_INTERNAL_TOOL</supports>
     <description>
       <p>With this kit you can forge documents and make counterfeit credits (requires forgery kit proficiency).</p>
       <p class="indent"><strong>Make 350 Counterfeit Credits:</strong> DC 12 but might be noticable, DC 15 perfect copy.</p>
@@ -133,7 +131,6 @@
   </element>
 
   <element name="Slicing Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_SLICING_KIT">
-    <supports>Tool,ID_INTERNAL_TOOL</supports>
     <description>
       <p>With this kit you can slice terminals to open locks or disarm traps (requires slicing kit proficiency).</p>
       <p class="indent"><strong>Open Locked Mechanism:</strong> DC Varies</p>
@@ -149,7 +146,6 @@
   </element>
 
   <element name="Hacking Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_HACKING_KIT">
-    <supports>Tool,ID_INTERNAL_TOOL</supports>
     <description>
       <p>With this kit you can hack "unconcious" droids or security systems (requires hacking kit proficieny).</p>
       <p class="indent"><strong>Hack Astromech:</strong> DC 10</p>
@@ -167,7 +163,6 @@
   </element>
 
   <element name="Disguise Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_DISGUISE_KIT">
-    <supports>Tool,ID_INTERNAL_TOOL</supports>
     <description>
       <p>With this kit you can completely change your look (requires disguise kit proficiency).</p>
       <p class="indent"><strong>Cover Injuries or Distinguishing Marks:</strong> DC 10</p>
@@ -184,7 +179,6 @@
   </element>
 
   <element name="Poisoning Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_POISONING_KIT">
-    <supports>Tool,ID_INTERNAL_TOOL</supports>
     <description>
       <p>With this kit you can coat your weapons with poisons (requires poisoning kit proficiency).</p>
       <p class="indent"><strong>Apply Poison to Vibroweapon or Slugthrowers:</strong> No DC</p>
@@ -203,7 +197,8 @@
   <!-- EQUIPMENT (Not Tools - these require tool proficiencies to use) -->
   <element name="Jumppack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_JUMPPACK">
     <description>
-      <p>As a Bonus Action, jump up to 25 feet vertically or horizontally without using your movement. Provokes opportunity attack when leaving or landing in enemy melee range. Requires jumppack proficiency.</p></description>
+      <p>Requires jumppack proficiency.</p>
+      <p>• <strong>Jump:</strong> As a Bonus Action, jump up to 25 feet vertically or horizontally without using your movement. Provokes opportunity attack when leaving or landing in enemy melee range.</p></description>
     <setters>
       <set name="category">Equipment</set>
       <set name="cost" currency="gp">350</set>
@@ -218,7 +213,8 @@
 
   <element name="Jump Boots" type="Item" source="SW-MSV-Edition" id="ID_ITEM_JUMP_BOOTS">
     <description>
-      <p>As a Bonus Action, jump up to 25 feet vertically or horizontally without using your movement. Provokes opportunity attack when leaving or landing in enemy melee range. Requires jumppack proficiency.</p>
+      <p>Requires jumppack proficiency.</p>
+      <p>• <strong>Jump:</strong> As a Bonus Action, jump up to 25 feet vertically or horizontally without using your movement. Provokes opportunity attack when leaving or landing in enemy melee range.</p>
     </description>
     <setters>
       <set name="category">Equipment</set>
@@ -234,7 +230,8 @@
 
   <element name="Hoverpack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_HOVERPACK">
     <description>
-      <p>As a Bonus Action, hover up to 15 feet in the air on the same spot for 2 turns. Cannot move. While hovering, you have advantage on ranged attacks and disadvantage on Dexterity saving throws. Provokes opportunity attack when leaving or landing in enemy melee range. Requires hoverpack proficiency.</p></description>
+      <p>Requires hoverpack proficiency.</p>
+      <p>• <strong>Hover:</strong> As a Bonus Action, hover up to 15 feet in the air on the same spot for 2 turns. Cannot move. While hovering, you have advantage on ranged attacks and disadvantage on Dexterity saving throws. Provokes opportunity attack when leaving or landing in enemy melee range.</p></description>
     <setters>
       <set name="category">Equipment</set>
       <set name="cost" currency="gp">500</set>
@@ -249,7 +246,8 @@
 
   <element name="Hover Boots" type="Item" source="SW-MSV-Edition" id="ID_ITEM_HOVER_BOOTS">
     <description>
-      <p>As a Bonus Action, hover up to 15 feet in the air on the same spot for 2 turns. Cannot move. While hovering, you have advantage on ranged attacks and disadvantage on Dexterity saving throws. Provokes opportunity attack when leaving or landing in enemy melee range. Requires hoverpack proficiency.</p>
+      <p>Requires hoverpack proficiency.</p>
+      <p>• <strong>Hover:</strong> As a Bonus Action, hover up to 15 feet in the air on the same spot for 2 turns. Cannot move. While hovering, you have advantage on ranged attacks and disadvantage on Dexterity saving throws. Provokes opportunity attack when leaving or landing in enemy melee range.</p>
     </description>
     <setters>
       <set name="category">Equipment</set>
@@ -384,7 +382,9 @@
 
   <element name="Rocketpack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_ROCKETPACK">
     <description>
-      <p>Attach rockets to the back of your jump/hover/jetpack. Actions: Reload, Rocket as a Bonus Action</p>
+      <p>Attach rockets to the back of your jump/hover/jetpack.</p>
+      <p>• <strong>Rocket:</strong> As a Bonus Action, Shoot a Rocket with the Rocketpack at a target. On hit: Damage and conditions depend on the rocket.</p>
+      <p>• <strong>Reload:</strong> After 1 shot your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Equipment</set>
@@ -400,19 +400,19 @@
 
   <element name="Reload" type="Action" source="SW-MSV-Edition" id="ID_ACTION_ROCKETPACK_RELOAD">
     <description>
-      <p>Action; After x amount of shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
+      <p>Reload: After 1 shot your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <sheet>
-      <description>Action; After x amount of shots your weapon needs a reload, take a full Action to fully reload your weapon.</description>
+      <description>Reload: After 1 shot your weapon needs a reload, take a full Action to fully reload your weapon.</description>
     </sheet>
   </element>
 
   <element name="Rocket" type="Action" source="SW-MSV-Edition" id="ID_ACTION_ROCKETPACK_ROCKET">
     <description>
-      <p>As an Action, Shoot a Rocket with the Rocketpack at a target. On hit: Damage and conditions depend on the rocket.</p>
+      <p>Rocket: As a Bonus Action, Shoot a Rocket with the Rocketpack at a target. On hit: Damage and conditions depend on the rocket.</p>
     </description>
     <sheet>
-      <description>As an Action, Shoot a Rocket with the Rocketpack at a target. On hit: Damage and conditions depend on the rocket.</description>
+      <description>As a Bonus Action, Shoot a Rocket with the Rocketpack at a target. On hit: Damage and conditions depend on the rocket.</description>
     </sheet>
   </element>
 
