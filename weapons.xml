@@ -385,7 +385,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the stealth pistol. On hit: 1d6 energy + your Dexterity modifier.</p>
-      <p>• <strong>Dart:</strong> As an Action, Shoot a Dart with the stealth pistol at a target. On hit: Damage and conditions depend on the dart.</p>
+      <p>• <strong>Dart:</strong> As an Action, Shoot a Dart with the stealth pistol at a target. On hit: Damage and conditions depend on the dart. Reload 1.</p>
       <p>• <strong>Reload:</strong> After 6 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
@@ -449,7 +449,7 @@
       <p>
         <strong>Actions:</strong>
       </p>
-      <p>• <strong>Dart:</strong> As an Action, Shoot a Dart with the Wrist Launcher with Dart Attachment at a target. On hit: Damage and conditions depend on the dart.</p>
+      <p>• <strong>Dart:</strong> As an Action, Shoot a Dart with the Wrist Launcher with Dart Attachment at a target. On hit: Damage and conditions depend on the dart. Reload 1.</p>
       <p>• <strong>Reload:</strong> After 1 shot your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
@@ -889,7 +889,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Shoot:</strong> As an Action, Make a ranged attack with the sniper rifle. On hit: 1d12 energy + your Dexterity modifier.</p>
-      <p>• <strong>Dart:</strong> As an Action, Shoot a Dart with the sniper rifle at a target. On hit: Damage and conditions depend on the dart.</p>
+      <p>• <strong>Dart:</strong> As an Action, Shoot a Dart with the sniper rifle at a target. On hit: Damage and conditions depend on the dart. Reload 1.</p>
       <p>• <strong>Reload:</strong> After 2 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
