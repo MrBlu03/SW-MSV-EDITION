@@ -2,11 +2,12 @@
 <elements>
   <info>
     <name>Tools</name>
-    <update version="2.2.6">
+    <update version="2.2.7">
       <file name="items-tools.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-tools.xml" />
     </update>
   </info>
 
+  <!-- TOOL PROFICIENCY DEFINITIONS -->
   <element name="Slicing Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the slicing kit allows you to slice terminals to open locks or disarm traps.</p>
@@ -97,6 +98,7 @@
     </sheet>
   </element>
 
+  <!-- TOOL ITEMS -->
   <element name="Repair Kit" type="Item" source="SW-MSV-Edition" id="ID_ITEM_REPAIR_KIT">
     <supports>Tool,ID_INTERNAL_TOOL</supports>
     <description>
@@ -198,7 +200,7 @@
     </setters>
   </element>
 
-
+  <!-- EQUIPMENT (Not Tools - these require tool proficiencies to use) -->
   <element name="Jumppack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_JUMPPACK">
     <description>
       <p>As a Bonus Action, jump up to 25 feet vertically or horizontally without using your movement. Provokes opportunity attack when leaving or landing in enemy melee range. Requires jumppack proficiency.</p></description>
@@ -298,7 +300,7 @@
     </rules>
   </element>
 
-
+  <!-- POISONS -->
   <element name="Poison" type="Item" source="SW-MSV-Edition" id="ID_ITEM_POISON">
     <description>
       <p>The target must make a DC 13 Constitution saving throw. On a failed save, the target takes full damage and becomes poisoned. On a successful save, the target takes half damage and doesn't become poisoned</p>
@@ -343,7 +345,8 @@
     </setters>
   </element>
 
-<element name="Jumppack Jump" type="Action" source="SW-MSV-Edition" id="ID_ACTION_JUMPPACK_JUMP">
+  <!-- ACTIONS -->
+  <element name="Jumppack Jump" type="Action" source="SW-MSV-Edition" id="ID_ACTION_JUMPPACK_JUMP">
     <description>
       <p>Bonus Action: Jump up to 25 feet vertically or horizontally without using your movement. Provokes opportunity attack when leaving or landing in enemy melee range.</p>
     </description>
@@ -378,6 +381,7 @@
       <description>Bonus Action: Hover up to 15 feet for 2 turns. Can move up to 10 feet. Advantage on ranged attacks. Provokes opportunity attack when leaving or landing in enemy melee range.</description>
     </sheet>
   </element>
+
   <element name="Rocketpack" type="Item" source="SW-MSV-Edition" id="ID_ITEM_ROCKETPACK">
     <description>
       <p>Attach rockets to the back of your jump/hover/jetpack. Actions: Reload, Rocket as a Bonus Action</p>
