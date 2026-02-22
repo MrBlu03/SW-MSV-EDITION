@@ -2,12 +2,12 @@
 <elements>
   <info>
     <name>Proficiencies</name>
-    <update version="2.3.2">
+    <update version="2.3.3">
       <file name="proficiencies.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/proficiencies.xml" />
     </update>
   </info>
   <!-- TOOL PROFICIENCIES -->
-  <element name="Slicing Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" source="SW-MSV-Edition">
+  <element name="Slicing Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SLICING_KIT" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the slicing kit allows you to slice terminals to open locks or disarm traps.</p>
     </description>
@@ -21,7 +21,7 @@
     </rules>
   </element>
 
-  <element name="Hacking Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HACKING_KIT" source="SW-MSV-Edition">
+  <element name="Hacking Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HACKING_KIT" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the hacking kit allows you to hack droids or security systems.</p>
     </description>
@@ -35,7 +35,7 @@
     </rules>
   </element>
 
-  <element name="Disguise Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_DISGUISE_KIT" source="SW-MSV-Edition">
+  <element name="Disguise Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the disguise kit allows you to completely change your look.</p>
     </description>
@@ -49,7 +49,7 @@
     </rules>
   </element>
 
-  <element name="Poisoning Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_POISONING_KIT" source="SW-MSV-Edition">
+  <element name="Poisoning Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONING_KIT" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the poisoning kit allows you to coat your weapons with poisons.</p>
     </description>
@@ -63,7 +63,7 @@
     </rules>
   </element>
 
-  <element name="Jumppack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JUMPPACK" source="SW-MSV-Edition">
+  <element name="Jumppack" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_JUMPPACK" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with jumppack and jump boots operation.</p>
     </description>
@@ -77,7 +77,7 @@
     </rules>
   </element>
 
-  <element name="Hoverpack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" source="SW-MSV-Edition">
+  <element name="Hoverpack" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HOVERPACK" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with hoverpack and hover boots operation.</p>
     </description>
@@ -91,7 +91,7 @@
     </rules>
   </element>
 
-  <element name="Jetpack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JETPACK" source="SW-MSV-Edition">
+  <element name="Jetpack" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_JETPACK" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with jetpack and jet boots operation.</p>
     </description>
@@ -105,7 +105,7 @@
     </rules>
   </element>
 
-  <element name="Repair Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_REPAIR_KIT" source="SW-MSV-Edition">
+  <element name="Repair Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_REPAIR_KIT" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the repair kit allows you to repair weapons, armors, or any technology.</p>
     </description>
@@ -119,7 +119,7 @@
     </rules>
   </element>
 
-  <element name="Forgery Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT" source="SW-MSV-Edition">
+  <element name="Forgery Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" source="SW-MSV-Edition">
     <description>
       <p>Proficiency with the forgery kit allows you to forge documents and make counterfeit credits.</p>
     </description>
@@ -536,7 +536,7 @@
 
   <element name="Tool Expertise (Slicing Kit)" type="Class Feature" source="SW-MSV-Edition" id="ID_MSV_EXPERTISE_TOOL_SLICING_KIT">
     <supports>Expertise, Tool, ID_INTERNAL_SUPPORT_EXPERTISE</supports>
-    <requirements>ID_MSV_PROFICIENCY_TOOL_SLICING_KIT</requirements>
+    <requirements>ID_PROFICIENCY_TOOL_PROFICIENCY_SLICING_KIT</requirements>
     <description>
       <p>Your proficiency bonus is doubled for any ability check you make that uses Slicing Kit.</p>
     </description>

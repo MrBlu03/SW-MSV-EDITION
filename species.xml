@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Species</name>
-    <update version="2.3.2">
+    <update version="2.3.3">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
@@ -62,10 +62,10 @@
       <grant type="Racial Trait" id="ID_RACE_TRAIT_BITH_INVESTIGATION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_BITH_PERCEPTION" />
       <select type="Proficiency" name="Musical Instrument (Bith)" supports="Musical Instrument" number="1" />
-      <grant type="Proficiency" name="Tool.Slicing Kit" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SLICING_KIT" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_BITH" />
-      <grant type="Proficiency" name="Tool.Slicing Kit" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SLICING_KIT" />
       <select type="Language" name="Language (Bith)" supports="Standard||Exotic" number="1" />
       <select type="Sub Race" name="Bith Subrace" supports="ID_RACE_BITH" optional="true" />
     </rules>
@@ -102,7 +102,7 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_BOTHESE" />
-      <grant type="Proficiency" name="Tool.Slicing Kit" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SLICING_KIT" />
       <select type="Sub Race" name="Bothan Subrace" supports="ID_RACE_BOTHAN" optional="true" />
     </rules>
   </element>
@@ -1036,7 +1036,7 @@
       <grant type="Racial Trait" id="ID_RACE_TRAIT_RAKATA_AMPHIBIOUS" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_RAKATA_FORCE_INSENSITIVE" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_RAKATA_NATURAL_WEAPONS" />
-      <grant type="Proficiency" name="Tool.Slicing Kit" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SLICING_KIT" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_RAKATA_CONSUME_CORPSE" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_RAKATA" />
@@ -1077,7 +1077,7 @@
       <grant type="Racial Trait" id="ID_RACE_TRAIT_RATTATAKI_NATURAL_WEAPONS" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <grant type="Language" id="ID_LANGUAGE_RATTATAKI" />
-      <grant type="Proficiency" name="Tool.Slicing Kit" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SLICING_KIT" />
       <select type="Sub Race" name="Rattataki Subrace" supports="ID_RACE_RATTATAKI" optional="true" />
     </rules>
   </element>
@@ -1416,7 +1416,7 @@
       <stat name="innate speed" value="25" bonus="base" />
       <grant type="Size" id="ID_SIZE_SMALL" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_UGNAUGHT_NATURAL_WEAPONS" />
-      <grant type="Proficiency" name="Tool.Slicing Kit" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SLICING_KIT" />
       <grant type="Sense" id="ID_SENSE_DARKVISION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DARKVISION" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
