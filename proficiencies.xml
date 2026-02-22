@@ -2,53 +2,53 @@
 <elements>
   <info>
     <name>Proficiencies</name>
-    <update version="2.4.0">
+    <update version="2.4.2">
       <file name="proficiencies.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/proficiencies.xml" />
     </update>
   </info>
   <!-- TOOL PROFICIENCIES -->
-  <element name="Slicing Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SLICING_KIT" source="SW-MSV-Edition">
-    <supports>Tool</supports>
+  <element name="Tool Proficiency (Slicing Kit)" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SLICING_KIT" source="SW-MSV-Edition">
+    <supports>Tool, Kit</supports>
     <sheet alt="Slicing Kit" />
   </element>
 
-  <element name="Hacking Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HACKING_KIT" source="SW-MSV-Edition">
-    <supports>Tool</supports>
+  <element name="Tool Proficiency (Hacking Kit)" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HACKING_KIT" source="SW-MSV-Edition">
+    <supports>Tool, Kit</supports>
     <sheet alt="Hacking Kit" />
   </element>
 
-  <element name="Disguise Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" source="SW-MSV-Edition">
-    <supports>Tool</supports>
+  <element name="Tool Proficiency (Disguise Kit)" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" source="SW-MSV-Edition">
+    <supports>Tool, Kit</supports>
     <sheet alt="Disguise Kit" />
   </element>
 
-  <element name="Poisoning Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONING_KIT" source="SW-MSV-Edition">
-    <supports>Tool</supports>
+  <element name="Tool Proficiency (Poisoning Kit)" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONING_KIT" source="SW-MSV-Edition">
+    <supports>Tool, Kit</supports>
     <sheet alt="Poisoning Kit" />
   </element>
 
-  <element name="Jumppack" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_JUMPPACK" source="SW-MSV-Edition">
-    <supports>Tool</supports>
+  <element name="Tool Proficiency (Jumppack)" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_JUMPPACK" source="SW-MSV-Edition">
+    <supports>Tool, Equipment</supports>
     <sheet alt="Jumppack" />
   </element>
 
-  <element name="Hoverpack" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HOVERPACK" source="SW-MSV-Edition">
-    <supports>Tool</supports>
+  <element name="Tool Proficiency (Hoverpack)" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HOVERPACK" source="SW-MSV-Edition">
+    <supports>Tool, Equipment</supports>
     <sheet alt="Hoverpack" />
   </element>
 
-  <element name="Jetpack" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_JETPACK" source="SW-MSV-Edition">
-    <supports>Tool</supports>
+  <element name="Tool Proficiency (Jetpack)" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_JETPACK" source="SW-MSV-Edition">
+    <supports>Tool, Equipment</supports>
     <sheet alt="Jetpack" />
   </element>
 
-  <element name="Repair Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_REPAIR_KIT" source="SW-MSV-Edition">
-    <supports>Tool</supports>
+  <element name="Tool Proficiency (Repair Kit)" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_REPAIR_KIT" source="SW-MSV-Edition">
+    <supports>Tool, Kit</supports>
     <sheet alt="Repair Kit" />
   </element>
 
-  <element name="Forgery Kit" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" source="SW-MSV-Edition">
-    <supports>Tool</supports>
+  <element name="Tool Proficiency (Forgery Kit)" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" source="SW-MSV-Edition">
+    <supports>Tool, Kit</supports>
     <sheet alt="Forgery Kit" />
   </element>
 
