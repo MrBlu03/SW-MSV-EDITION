@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Armor</name>
-    <update version="2.4.5">
+    <update version="2.4.6">
       <file name="items-armor.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-armor.xml" />
     </update>
   </info>
@@ -162,7 +162,7 @@
     <rules>
       <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
       <stat name="ac:armored:armor" value="16" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_KINETIC" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_KINETIC" />
     </rules>
   </element>
   
@@ -184,7 +184,7 @@
     <rules>
       <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
       <stat name="ac:armored:armor" value="17" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_KINETIC" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_KINETIC" />
     </rules>
   </element>
   
@@ -206,7 +206,7 @@
     <rules>
       <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
       <stat name="ac:armored:armor" value="18" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_RESISTANCE_KINETIC" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_KINETIC" />
     </rules>
   </element>
   

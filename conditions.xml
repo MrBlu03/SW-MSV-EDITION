@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Conditions</name>
-    <update version="2.4.5">
+    <update version="2.4.6">
       <file name="conditions.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/conditions.xml" />
     </update>
   </info>
@@ -124,6 +124,35 @@
     <sheet alt="Immune to sonic damage" />
     <rules>
       <stat name="sonic:immunity" value="1" />
+    </rules>
+  </element>
+
+  <!-- LIGHTNING DAMAGE (Standard D&D 5e Damage Type) -->
+  <element name="Resistance to Lightning" type="Condition" source="SW-MSV-Edition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING">
+    <description>
+      <p>Resistance to lightning damage.</p>
+    </description>
+    <sheet alt="Resistant to lightning damage" />
+    <rules>
+      <stat name="lightning:resistance" value="1" />
+    </rules>
+  </element>
+  <element name="Vulnerability to Lightning" type="Condition" source="SW-MSV-Edition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_LIGHTNING">
+    <description>
+      <p>Vulnerability to lightning damage.</p>
+    </description>
+    <sheet alt="Vulnerable to lightning damage" />
+    <rules>
+      <stat name="lightning:vulnerability" value="1" />
+    </rules>
+  </element>
+  <element name="Immunity to Lightning" type="Condition" source="SW-MSV-Edition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_LIGHTNING">
+    <description>
+      <p>Immunity to lightning damage.</p>
+    </description>
+    <sheet alt="Immune to lightning damage" />
+    <rules>
+      <stat name="lightning:immunity" value="1" />
     </rules>
   </element>
 

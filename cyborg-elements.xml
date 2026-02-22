@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Cyborg Elements</name>
-    <update version="2.4.5">
+    <update version="2.4.6">
       <file name="cyborg-elements.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/cyborg-elements.xml" />
     </update>
   </info>
@@ -373,7 +373,7 @@
     </sheet>
     <rules>
       <select type="Racial Trait" name="Ability Score Increase (Cyborg)" supports="Cyborg Choice" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
 

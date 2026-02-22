@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Species</name>
-    <update version="2.4.5">
+    <update version="2.4.6">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
@@ -291,7 +291,7 @@
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_ION_LIGHTNING_VULNERABILITY" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_FORCE_INSENSITIVE" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_MACHINE" />
@@ -368,7 +368,7 @@
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_ION_LIGHTNING_VULNERABILITY" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_FORCE_INSENSITIVE" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_MACHINE" />
@@ -2265,28 +2265,32 @@
   <element name="Cyborg (Arm)" type="Sub Race" source="SW-MSV-Edition" id="ID_SUBRACE_CYBORG_ARM">
     <supports>ID_RACE_BITH|ID_RACE_BOTHAN|ID_RACE_CATHAR|ID_RACE_CHAGRIAN|ID_RACE_CHISS|ID_RACE_DEVARONIAN|ID_RACE_DUROS|ID_RACE_EWOK|ID_RACE_GAMORREAN|ID_RACE_GEONOSIAN|ID_RACE_GRAN|ID_RACE_HUMAN_STANDARD|ID_RACE_HUMAN_VARIANT|ID_RACE_ITHORIAN|ID_RACE_JAWA|ID_RACE_KALEESH|ID_RACE_KEL_DOR|ID_RACE_MIRIALAN|ID_RACE_MON_CALAMARI|ID_RACE_NAUTOLAN|ID_RACE_NEIMOIDIAN|ID_RACE_ORTOLAN|ID_RACE_RAKATA|ID_RACE_RATTATAKI|ID_RACE_RODIAN|ID_RACE_SITH_PUREBLOOD|ID_RACE_SULLUSTAN|ID_RACE_TALZ|ID_RACE_TOGRUTA|ID_RACE_TRANDOSHAN|ID_RACE_TUSKEN|ID_RACE_TWILEK|ID_RACE_UGNAUGHT|ID_RACE_WEEQUAY|ID_RACE_WOOKIE|ID_RACE_ZABRAK</supports>
     <description>
-      <p>You have a cybernetic arm enhancement that increases your strength.</p>
+      <p>You have a cybernetic arm enhancement that increases your strength, but this leaves you vulnerable to ion damage.</p>
       <p class="indent"><strong><em>Cybernetic Arm.</em></strong> Your Strength score increases by 1.</p>
+      <p class="indent"><strong><em>Ion Vulnerability.</em></strong> You are vulnerable to ion damage.</p>
     </description>
     <sheet>
-      <description>Cybernetic arm: +1 Strength.</description>
+      <description>Cybernetic arm: +1 Strength. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
       <stat name="strength" value="1" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
 
   <element name="Cyborg (Leg)" type="Sub Race" source="SW-MSV-Edition" id="ID_SUBRACE_CYBORG_LEG">
     <supports>ID_RACE_BITH|ID_RACE_BOTHAN|ID_RACE_CATHAR|ID_RACE_CHAGRIAN|ID_RACE_CHISS|ID_RACE_DEVARONIAN|ID_RACE_DUROS|ID_RACE_EWOK|ID_RACE_GAMORREAN|ID_RACE_GEONOSIAN|ID_RACE_GRAN|ID_RACE_HUMAN_STANDARD|ID_RACE_HUMAN_VARIANT|ID_RACE_ITHORIAN|ID_RACE_JAWA|ID_RACE_KALEESH|ID_RACE_KEL_DOR|ID_RACE_MIRIALAN|ID_RACE_MON_CALAMARI|ID_RACE_NAUTOLAN|ID_RACE_NEIMOIDIAN|ID_RACE_ORTOLAN|ID_RACE_RAKATA|ID_RACE_RATTATAKI|ID_RACE_RODIAN|ID_RACE_SITH_PUREBLOOD|ID_RACE_SULLUSTAN|ID_RACE_TALZ|ID_RACE_TOGRUTA|ID_RACE_TRANDOSHAN|ID_RACE_TUSKEN|ID_RACE_TWILEK|ID_RACE_UGNAUGHT|ID_RACE_WEEQUAY|ID_RACE_WOOKIE|ID_RACE_ZABRAK</supports>
     <description>
-      <p>You have a cybernetic leg enhancement that increases your agility.</p>
+      <p>You have a cybernetic leg enhancement that increases your agility, but this leaves you vulnerable to ion damage.</p>
       <p class="indent"><strong><em>Cybernetic Leg.</em></strong> Your Dexterity score increases by 1.</p>
+      <p class="indent"><strong><em>Ion Vulnerability.</em></strong> You are vulnerable to ion damage.</p>
     </description>
     <sheet>
-      <description>Cybernetic leg: +1 Dexterity.</description>
+      <description>Cybernetic leg: +1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
       <stat name="dexterity" value="1" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
 
@@ -2303,7 +2307,7 @@
     <rules>
       <stat name="strength" value="1" />
       <stat name="dexterity" value="1" />
-      <grant type="Condition" id="ID_MSV_CONDITION_DAMAGE_VULNERABILITY_ION" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_ION" />
     </rules>
   </element>
 </elements>
