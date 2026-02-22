@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Proficiencies</name>
-    <update version="2.3.4">
+    <update version="2.3.6">
       <file name="proficiencies.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/proficiencies.xml" />
     </update>
   </info>
@@ -11,7 +11,8 @@
     <description>
       <p>Proficiency with the slicing kit allows you to slice terminals to open locks or disarm traps.</p>
     </description>
-    <supports>Tool</supports>
+    <supports>Tool, ID_INTERNAL_PROFICIENCY_TOOL</supports>
+    <sheet alt="Slicing Kit" />
     <alias name="Tool.Slicing Kit" />
     <rules>
       <stat name="slicing kit:proficiency" value="proficiency" />
@@ -22,7 +23,8 @@
     <description>
       <p>Proficiency with the hacking kit allows you to hack droids or security systems.</p>
     </description>
-    <supports>Tool</supports>
+    <supports>Tool, ID_INTERNAL_PROFICIENCY_TOOL</supports>
+    <sheet alt="Hacking Kit" />
     <alias name="Tool.Hacking Kit" />
     <rules>
       <stat name="hacking kit:proficiency" value="proficiency" />
@@ -33,7 +35,8 @@
     <description>
       <p>Proficiency with the disguise kit allows you to completely change your look.</p>
     </description>
-    <supports>Tool</supports>
+    <supports>Tool, ID_INTERNAL_PROFICIENCY_TOOL</supports>
+    <sheet alt="Disguise Kit" />
     <alias name="Tool.Disguise Kit" />
     <rules>
       <stat name="disguise kit:proficiency" value="proficiency" />
@@ -44,7 +47,8 @@
     <description>
       <p>Proficiency with the poisoning kit allows you to coat your weapons with poisons.</p>
     </description>
-    <supports>Tool</supports>
+    <supports>Tool, ID_INTERNAL_PROFICIENCY_TOOL</supports>
+    <sheet alt="Poisoning Kit" />
     <alias name="Tool.Poisoning Kit" />
     <rules>
       <stat name="poisoning kit:proficiency" value="proficiency" />
@@ -55,7 +59,8 @@
     <description>
       <p>Proficiency with jumppack and jump boots operation.</p>
     </description>
-    <supports>Tool</supports>
+    <supports>Tool, ID_INTERNAL_PROFICIENCY_TOOL</supports>
+    <sheet alt="Jumppack" />
     <alias name="Tool.Jumppack" />
     <rules>
       <stat name="jumppack:proficiency" value="proficiency" />
@@ -66,7 +71,8 @@
     <description>
       <p>Proficiency with hoverpack and hover boots operation.</p>
     </description>
-    <supports>Tool</supports>
+    <supports>Tool, ID_INTERNAL_PROFICIENCY_TOOL</supports>
+    <sheet alt="Hoverpack" />
     <alias name="Tool.Hoverpack" />
     <rules>
       <stat name="hoverpack:proficiency" value="proficiency" />
@@ -77,7 +83,8 @@
     <description>
       <p>Proficiency with jetpack and jet boots operation.</p>
     </description>
-    <supports>Tool</supports>
+    <supports>Tool, ID_INTERNAL_PROFICIENCY_TOOL</supports>
+    <sheet alt="Jetpack" />
     <alias name="Tool.Jetpack" />
     <rules>
       <stat name="jetpack:proficiency" value="proficiency" />
@@ -88,7 +95,8 @@
     <description>
       <p>Proficiency with the repair kit allows you to repair weapons, armors, or any technology.</p>
     </description>
-    <supports>Tool</supports>
+    <supports>Tool, ID_INTERNAL_PROFICIENCY_TOOL</supports>
+    <sheet alt="Repair Kit" />
     <alias name="Tool.Repair Kit" />
     <rules>
       <stat name="repair kit:proficiency" value="proficiency" />
@@ -99,7 +107,8 @@
     <description>
       <p>Proficiency with the forgery kit allows you to forge documents and make counterfeit credits.</p>
     </description>
-    <supports>Tool</supports>
+    <supports>Tool, ID_INTERNAL_PROFICIENCY_TOOL</supports>
+    <sheet alt="Forgery Kit" />
     <alias name="Tool.Forgery Kit" />
     <rules>
       <stat name="forgery kit:proficiency" value="proficiency" />
