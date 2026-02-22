@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Species</name>
-    <update version="2.4.4">
+    <update version="2.4.5">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
@@ -379,9 +379,9 @@
       <select type="Proficiency" name="Weapon Proficiency (Combat Droid 1)" supports="Vibroweapon" number="1" />
       <select type="Proficiency" name="Weapon Proficiency (Combat Droid 2)" supports="Vibroweapon" number="1" />
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
-      <select type="Language" name="Language (Combat Droid)" supports="Standard||Exotic" number="1" requirements="!ID_LANGUAGE_BINARY" />
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_UNDERSTAND_BINARY" />
-      <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_CANNOT_SPEAK_BINARY" />
+      <select type="Language" name="Language (Combat Droid)" supports="Standard||Exotic" number="1" />
+      <grant type="Language" id="ID_LANGUAGE_BINARY" />
+      <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_BINARY" />
     </rules>
   </element>
 
@@ -1854,13 +1854,9 @@
     <description><p>You cannot be healed by kolto, bacta, or Force powers. Cannot wear armor, but can have armor plating attached.</p></description>
     <sheet><description>Cannot be healed by kolto, bacta, or Force powers. Cannot wear armor (can have armor attached).</description></sheet>
   </element>
-  <element name="Understand Binary" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_DROID_UNDERSTAND_BINARY">
-    <description><p>You can understand Binary but cannot speak it.</p></description>
-    <sheet><description>Understands Binary but cannot speak it.</description></sheet>
-  </element>
-  <element name="Cannot Speak Binary" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_DROID_CANNOT_SPEAK_BINARY">
-    <description><p>You understand Binary but cannot speak it.</p></description>
-    <sheet><description>Cannot speak Binary.</description></sheet>
+  <element name="Binary Comprehension" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_DROID_BINARY">
+    <description><p>You can understand, read, and comprehend Binary, but you cannot speak it.</p></description>
+    <sheet><description>You understand Binary but cannot speak it.</description></sheet>
   </element>
 
   <!-- EWOK TRAITS -->
@@ -2240,6 +2236,10 @@
       <stat name="ithorian-scream:dc" value="8" />
       <stat name="ithorian-scream:dc" value="proficiency" />
       <stat name="ithorian-scream:dc" value="constitution:modifier" />
+      <stat name="ithorian-scream:damage" value="2d6" level="1" bonus="base" />
+      <stat name="ithorian-scream:damage" value="4d6" level="5" bonus="base" />
+      <stat name="ithorian-scream:damage" value="6d6" level="11" bonus="base" />
+      <stat name="ithorian-scream:damage" value="8d6" level="17" bonus="base" />
     </rules>
   </element>
   <!-- DROID TRAITS -->

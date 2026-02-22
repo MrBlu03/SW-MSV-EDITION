@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Proficiencies</name>
-    <update version="2.4.4">
+    <update version="2.4.5">
       <file name="proficiencies.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/proficiencies.xml" />
     </update>
   </info>
@@ -277,11 +277,6 @@
   </element>
   <element name="Weapon: Stealth Pistol" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_STEALTH_PISTOL" source="SW-MSV-Edition">
     <description><p>Stealth Pistol proficiency</p></description>
-
-      <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE,Blaster</supports>
-  </element>
-  <element name="Weapon: Wrist Blaster" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_BLASTER" source="SW-MSV-Edition">
-    <description><p>Wrist Blaster proficiency</p></description>
 
       <supports>ID_INTERNAL_PROFICIENCY_WEAPON,ID_INTERNAL_PROFICIENCY_WEAPON_SIMPLE,Blaster</supports>
   </element>

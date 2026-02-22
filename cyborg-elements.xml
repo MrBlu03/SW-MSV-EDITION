@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Cyborg Elements</name>
-    <update version="2.4.4">
+    <update version="2.4.5">
       <file name="cyborg-elements.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/cyborg-elements.xml" />
     </update>
   </info>
@@ -369,7 +369,7 @@
       <p>Choose between +1 Strength or +1 Dexterity. However, you gain vulnerability to ion damage.</p>
     </description>
     <sheet>
-      <description>+1 to Str or Dex. Vulnerable to ion damage.</description>
+      <description>+1 to Strength or Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
       <select type="Racial Trait" name="Ability Score Increase (Cyborg)" supports="Cyborg Choice" />

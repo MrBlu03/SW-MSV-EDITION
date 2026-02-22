@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Weapons</name>
-    <update version="2.4.4">
+    <update version="2.4.5">
       <file name="weapons.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/weapons.xml" />
     </update>
   </info>
@@ -24,10 +24,10 @@
   </element>
   <element name="Hilt Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_HILT_STRIKE">
     <description>
-      <p>Hilt Strike: As a Bonus Action, Make a melee attack with the hilt of the weapon, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your applicable modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
+      <p>As a Bonus Action, Make a melee attack with the hilt of the weapon, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your applicable modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <sheet>
-      <description>As a Bonus Action, Make a melee attack with the hilt of the weapon, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your applicable modifier. On a failed save, the target becomes dazed. On a successful save, the target doesn't get dazed.</description>
+      <description>As a Bonus Action, Make a melee attack with the hilt of the weapon, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your applicable modifier. On a failed save, the target becomes dazed (disadvantage on Wis saves, can't take Reactions, loses Dex bonus to AC). On a successful save, the target doesn't get dazed.</description>
     </sheet>
   </element>
   <element name="Slash" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SLASH">
@@ -72,10 +72,10 @@
   </element>
   <element name="Back Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_BACK_STRIKE">
     <description>
-      <p>Back Strike: As a Bonus Action, Make a melee attack with the back end of the weapon. On hit: the weapon's damage dice without modifiers.</p>
+      <p>As a Bonus Action, Make a melee attack with the back end of the weapon. On hit: the weapon's damage dice without modifiers.</p>
     </description>
     <sheet>
-      <description>As a Bonus Action, Make a melee attack with the back end of the weapon. On hit: the weapon's damage dice without modifiers.</description>
+      <description>As a Bonus Action, Make a melee attack with the back end of the weapon. On hit: weapon damage without modifiers.</description>
     </sheet>
   </element>
   <element name="Dart" type="Action" source="SW-MSV-Edition" id="ID_ACTION_DART">
@@ -563,6 +563,7 @@
     <rules>
       <grant type="Tag" name="Can't be Disarmed" />
       <grant type="Action" id="ID_ACTION_FLAME" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="blaster rifle" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_BLASTER_RIFLE">

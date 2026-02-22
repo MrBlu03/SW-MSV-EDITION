@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Explosives</name>
-    <update version="2.4.4">
+    <update version="2.4.5">
       <file name="items-explosives.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-explosives.xml" />
     </update>
   </info>
@@ -392,6 +392,9 @@
       <set name="damage" type="kinetic">1d6</set>
       <set name="reload">1</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_RELOAD" />
+    </rules>
   </element>
 <element name="sleep dart" type="Item" source="SW-MSV-Edition" id="ID_ITEM_SLEEP_DART">
     <description>
@@ -404,6 +407,9 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="reload">1</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_RELOAD" />
+    </rules>
   </element>
 <element name="electrifying dart" type="Item" source="SW-MSV-Edition" id="ID_ITEM_ELECTRIFYING_DART">
     <description>
@@ -417,30 +423,41 @@
       <set name="damage" type="kinetic">1d6</set>
       <set name="reload">1</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_RELOAD" />
+    </rules>
   </element>
 <element name="panic dart" type="Item" source="SW-MSV-Edition" id="ID_ITEM_PANIC_DART">
     <description>
       <p>Darts: Can be blown out of a tube or shot out of certain weapons.</p>
-      <p>1d6 kinetic. The target must make a DC 14 Wisdom saving throw. On a failed save, the target becomes frightened for 1 round. On a successful save, the target doesn't become frightened. Dexterity modifier</p>
+      <p>1d6 kinetic. The target must make a DC 14 Wisdom saving throw. On a failed save, the target becomes frightened for 1 round. On a successful save, the target doesn't become frightened. Reload 1, Dexterity modifier</p>
     </description>
     <setters>
       <set name="category">Darts</set>
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="damage" type="kinetic">1d6</set>
+      <set name="reload">1</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_RELOAD" />
+    </rules>
   </element>
 <element name="paralysis dart" type="Item" source="SW-MSV-Edition" id="ID_ITEM_PARALYSIS_DART">
     <description>
       <p>Darts: Can be blown out of a tube or shot out of certain weapons.</p>
-      <p>1d6 kinetic. The target must make a DC 14 Constitution saving throw. On a failed save, the target becomes paralysed for 1 round, Dexterity modifier</p>
+      <p>1d6 kinetic. The target must make a DC 14 Constitution saving throw. On a failed save, the target becomes paralysed for 1 round, Reload 1, Dexterity modifier</p>
     </description>
     <setters>
       <set name="category">Darts</set>
       <set name="cost" currency="gp">0</set>
       <set name="weight" lb="1">1 lb.</set>
       <set name="damage" type="kinetic">1d6</set>
+      <set name="reload">1</set>
     </setters>
+    <rules>
+      <grant type="Action" id="ID_ACTION_RELOAD" />
+    </rules>
   </element>
 <element name="plasma rocket" type="Item" source="SW-MSV-Edition" id="ID_ITEM_PLASMA_ROCKET">
     <description>
