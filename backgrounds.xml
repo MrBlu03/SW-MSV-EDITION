@@ -3,7 +3,7 @@
   <info>
     <name>Backgrounds</name>
     <description>Backgrounds for SW-MSV-Edition.</description>
-    <update version="2.3.0">
+    <update version="2.3.1">
       <file name="backgrounds.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/backgrounds.xml" />
     </update>
   </info>
@@ -93,7 +93,7 @@
     <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Bounty Hunter)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_PERCEPTION" />
-      <grant type="Proficiency" name="Tool.Slicing Kit" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
       <select type="Language" name="Language (Bounty Hunter)" number="1" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_WANTED_POSTER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
@@ -160,7 +160,7 @@
     <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Criminal)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH" />
-      <grant type="Proficiency" name="Tool.Slicing Kit" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CRIMINAL_CONTACT" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
       <select type="List" name="Personality Trait" number="1">
@@ -292,7 +292,7 @@
     <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Engineer)" number="2" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY" />
-      <grant type="Proficiency" name="Tool.Repair Kit" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_REPAIR_KIT" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_TINKERER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
       <select type="List" name="Personality Trait" number="1">
@@ -428,7 +428,7 @@
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Mandalorian)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_HISTORY" />
       <grant type="Language" id="ID_LANGUAGE_MANDOA_LANGUAGE" />
-      <grant type="Proficiency" name="Tool.Hoverpack" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
       <select type="List" name="Personality Trait" number="1">
@@ -488,7 +488,7 @@
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Mandalorian)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_HISTORY" />
       <grant type="Language" id="ID_LANGUAGE_MANDOA_LANGUAGE" />
-      <grant type="Proficiency" name="Tool.Hoverpack" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
       <select type="List" name="Personality Trait" number="1">
@@ -548,7 +548,7 @@
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Mandalorian)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_HISTORY" />
       <grant type="Language" id="ID_LANGUAGE_MANDOA_LANGUAGE" />
-      <grant type="Proficiency" name="Tool.Hoverpack" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
       <select type="List" name="Personality Trait" number="1">
@@ -608,7 +608,7 @@
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Mandalorian)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_HISTORY" />
       <grant type="Language" id="ID_LANGUAGE_MANDOA_LANGUAGE" />
-      <grant type="Proficiency" name="Tool.Hoverpack" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
       <select type="List" name="Personality Trait" number="1">
@@ -668,7 +668,7 @@
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Mandalorian)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_HISTORY" />
       <grant type="Language" id="ID_LANGUAGE_MANDOA_LANGUAGE" />
-      <grant type="Proficiency" name="Tool.Hoverpack" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
       <select type="List" name="Personality Trait" number="1">
@@ -728,7 +728,7 @@
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Mandalorian)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_HISTORY" />
       <grant type="Language" id="ID_LANGUAGE_MANDOA_LANGUAGE" />
-      <grant type="Proficiency" name="Tool.Hoverpack" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
       <select type="List" name="Personality Trait" number="1">
@@ -788,7 +788,7 @@
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Mandalorian)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_HISTORY" />
       <grant type="Language" id="ID_LANGUAGE_MANDOA_LANGUAGE" />
-      <grant type="Proficiency" name="Tool.Hoverpack" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_CLAN_CONNECTION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
       <select type="List" name="Personality Trait" number="1">
@@ -1054,7 +1054,7 @@
     <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Pirate)" number="2" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
-      <grant type="Proficiency" name="Tool.Slicing Kit" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_SHIP_PASSAGE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
       <select type="List" name="Personality Trait" number="1">
@@ -1121,7 +1121,7 @@
     <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Scientist)" number="2" supports="ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_INVESTIGATION" />
-      <grant type="Proficiency" name="Tool.Slicing Kit" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLICING_KIT" />
       <select type="Language" name="Language (Scientist)" number="1" supports="Standard||Exotic" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_RESEARCHER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
@@ -1188,7 +1188,7 @@
     <sheet display="false" />
     <rules>
       <select type="Proficiency" name="Skill Proficiency (Scoundrel)" number="2" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
-      <grant type="Proficiency" name="Tool.Forgery Kit" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT" />
       <grant type="Background Feature" id="ID_SW_BACKGROUND_FEATURE_FALSE_IDENTITY" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
       <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
       <select type="List" name="Personality Trait" number="1">
