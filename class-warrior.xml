@@ -3,7 +3,7 @@
   <info>
     <name>Warrior Class</name>
     <description>Warrior Class for SW-MSV-Edition.</description>
-    <update version="2.2.8">
+    <update version="2.2.9">
       <file name="class-warrior.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-warrior.xml" />
     </update>
   </info>
@@ -140,7 +140,7 @@
       <description>You adopt a particular style of fighting as your specialty.</description>
     </sheet>
     <rules>
-      <select type="Class Feature" name="Fighting Style" supports="Fighting Style" level="1" />
+      <select type="Class Feature" name="Fighting Style" supports="MSV Fighting Style" level="1" />
     </rules>
   </element>
 
@@ -327,10 +327,10 @@
       <description>You have superiority dice (d8s) that fuel your maneuvers. You learn 3 maneuvers at 3rd level, and 2 more at 7th, 10th, and 15th level. Maneuver save DC = 8 + proficiency + Str or Dex modifier.</description>
     </sheet>
     <rules>
-      <select type="Archetype Feature" name="Maneuvers" supports="MSV Maneuver" level="3" number="3" />
-      <select type="Archetype Feature" name="Maneuvers" supports="MSV Maneuver" level="7" number="2" />
-      <select type="Archetype Feature" name="Maneuvers" supports="MSV Maneuver" level="10" number="2" />
-      <select type="Archetype Feature" name="Maneuvers" supports="MSV Maneuver" level="15" number="2" />
+      <select type="Maneuver" name="Maneuvers" supports="MSV Maneuver" level="3" number="3" />
+      <select type="Maneuver" name="Maneuvers" supports="MSV Maneuver" level="7" number="2" />
+      <select type="Maneuver" name="Maneuvers" supports="MSV Maneuver" level="10" number="2" />
+      <select type="Maneuver" name="Maneuvers" supports="MSV Maneuver" level="15" number="2" />
     </rules>
   </element>
 
@@ -421,7 +421,7 @@
       <description>You can choose a second Fighting Style.</description>
     </sheet>
     <rules>
-      <select type="Class Feature" name="Additional Fighting Style" supports="Fighting Style" />
+      <select type="Class Feature" name="Additional Fighting Style" supports="MSV Fighting Style" />
     </rules>
   </element>
 
