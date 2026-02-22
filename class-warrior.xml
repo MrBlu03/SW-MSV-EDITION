@@ -3,7 +3,7 @@
   <info>
     <name>Warrior Class</name>
     <description>Warrior Class for SW-MSV-Edition.</description>
-    <update version="2.3.1">
+    <update version="2.3.2">
       <file name="class-warrior.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-warrior.xml" />
     </update>
   </info>
@@ -470,7 +470,7 @@
       <description>You gain Jump Pack proficiency.</description>
     </sheet>
     <rules>
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JUMPPACK" />
+      <grant type="Proficiency" name="Tool.Jumppack" />
     </rules>
   </element>
 
@@ -483,7 +483,7 @@
       <description>You gain Hover Pack proficiency.</description>
     </sheet>
     <rules>
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" />
+      <grant type="Proficiency" name="Tool.Hoverpack" />
     </rules>
   </element>
 
@@ -496,7 +496,7 @@
       <description>You gain Jetpack proficiency.</description>
     </sheet>
     <rules>
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JETPACK" />
+      <grant type="Proficiency" name="Tool.Jetpack" />
     </rules>
   </element>
 

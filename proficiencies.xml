@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Proficiencies</name>
-    <update version="2.3.1">
+    <update version="2.3.2">
       <file name="proficiencies.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/proficiencies.xml" />
     </update>
   </info>
@@ -15,6 +15,7 @@
     <sheet>
       <description>Proficiency with the Slicing Kit.</description>
     </sheet>
+    <alias name="Tool.Slicing Kit" />
     <rules>
       <stat name="slicing kit:proficiency" value="proficiency" />
     </rules>
@@ -28,6 +29,7 @@
     <sheet>
       <description>Proficiency with the Hacking Kit.</description>
     </sheet>
+    <alias name="Tool.Hacking Kit" />
     <rules>
       <stat name="hacking kit:proficiency" value="proficiency" />
     </rules>
@@ -41,6 +43,7 @@
     <sheet>
       <description>Proficiency with the Disguise Kit.</description>
     </sheet>
+    <alias name="Tool.Disguise Kit" />
     <rules>
       <stat name="disguise kit:proficiency" value="proficiency" />
     </rules>
@@ -54,6 +57,7 @@
     <sheet>
       <description>Proficiency with the Poisoning Kit.</description>
     </sheet>
+    <alias name="Tool.Poisoning Kit" />
     <rules>
       <stat name="poisoning kit:proficiency" value="proficiency" />
     </rules>
@@ -67,6 +71,7 @@
     <sheet>
       <description>Proficiency with Jumppack operation.</description>
     </sheet>
+    <alias name="Tool.Jumppack" />
     <rules>
       <stat name="jumppack:proficiency" value="proficiency" />
     </rules>
@@ -80,6 +85,7 @@
     <sheet>
       <description>Proficiency with Hoverpack operation.</description>
     </sheet>
+    <alias name="Tool.Hoverpack" />
     <rules>
       <stat name="hoverpack:proficiency" value="proficiency" />
     </rules>
@@ -93,6 +99,7 @@
     <sheet>
       <description>Proficiency with Jetpack operation.</description>
     </sheet>
+    <alias name="Tool.Jetpack" />
     <rules>
       <stat name="jetpack:proficiency" value="proficiency" />
     </rules>
@@ -106,6 +113,7 @@
     <sheet>
       <description>Proficiency with the Repair Kit.</description>
     </sheet>
+    <alias name="Tool.Repair Kit" />
     <rules>
       <stat name="repair kit:proficiency" value="proficiency" />
     </rules>
@@ -119,6 +127,7 @@
     <sheet>
       <description>Proficiency with the Forgery Kit.</description>
     </sheet>
+    <alias name="Tool.Forgery Kit" />
     <rules>
       <stat name="forgery kit:proficiency" value="proficiency" />
     </rules>
