@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Species</name>
-    <update version="2.4.6">
+    <update version="2.4.7">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
@@ -2214,13 +2214,13 @@
       <p>As an action you can violently expel air in a 15-foot cone. When you do so, each creature in the area of the exhalation must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). A creature takes 2d6 sonic damage on a failed save, and half as much damage on a successful one. The damage increases to 4d6 at 5th level, 6d6 at 11th level, and 8d6 at 17th level. This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you complete a long rest.</p>
     </description>
     <sheet>
-      <description>As an action, violently expel air in a 15-foot cone. Each creature in the area must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). A creature takes {{ithorian-scream:damage}} sonic damage on a failed save, and half as much damage on a successful one. This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you complete a long rest.</description>
+      <description>As an action, violently expel air in a 15-foot cone. Each creature in the area must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). A creature takes {{ithorian_scream_damage}} sonic damage on a failed save, and half as much damage on a successful one. This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you complete a long rest.</description>
     </sheet>
     <rules>
-      <stat name="ithorian-scream:damage" value="2d6" level="1" bonus="base" />
-      <stat name="ithorian-scream:damage" value="4d6" level="5" bonus="base" />
-      <stat name="ithorian-scream:damage" value="6d6" level="11" bonus="base" />
-      <stat name="ithorian-scream:damage" value="8d6" level="17" bonus="base" />
+      <stat name="ithorian_scream_damage" value="2d6" level="1" bonus="base" />
+      <stat name="ithorian_scream_damage" value="4d6" level="5" bonus="base" />
+      <stat name="ithorian_scream_damage" value="6d6" level="11" bonus="base" />
+      <stat name="ithorian_scream_damage" value="8d6" level="17" bonus="base" />
     </rules>
   </element>
 
@@ -2230,16 +2230,16 @@
       <p>As an action you can violently expel air in a 15-foot cone. When you do so, each creature in the area of the exhalation must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). A creature takes 2d6 sonic damage on a failed save, and half as much damage on a successful one. The damage increases to 4d6 at 5th level, 6d6 at 11th level, and 8d6 at 17th level. This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you complete a long rest.</p>
     </description>
     <sheet action="Action" usage="{{proficiency}}/Long Rest">
-      <description>Expel air in a 15-ft cone. Wisdom save (DC {{ithorian-scream:dc}}) for {{ithorian-scream:damage}} sonic damage (half on success). No effect on constructs.</description>
+      <description>Expel air in a 15-ft cone. Wisdom save (DC {{ithorian_scream_dc}}) for {{ithorian_scream_damage}} sonic damage (half on success). No effect on constructs.</description>
     </sheet>
     <rules>
-      <stat name="ithorian-scream:dc" value="8" />
-      <stat name="ithorian-scream:dc" value="proficiency" />
-      <stat name="ithorian-scream:dc" value="constitution:modifier" />
-      <stat name="ithorian-scream:damage" value="2d6" level="1" bonus="base" />
-      <stat name="ithorian-scream:damage" value="4d6" level="5" bonus="base" />
-      <stat name="ithorian-scream:damage" value="6d6" level="11" bonus="base" />
-      <stat name="ithorian-scream:damage" value="8d6" level="17" bonus="base" />
+      <stat name="ithorian_scream_dc" value="8" />
+      <stat name="ithorian_scream_dc" value="proficiency" />
+      <stat name="ithorian_scream_dc" value="constitution:modifier" />
+      <stat name="ithorian_scream_damage" value="2d6" level="1" bonus="base" />
+      <stat name="ithorian_scream_damage" value="4d6" level="5" bonus="base" />
+      <stat name="ithorian_scream_damage" value="6d6" level="11" bonus="base" />
+      <stat name="ithorian_scream_damage" value="8d6" level="17" bonus="base" />
     </rules>
   </element>
   <!-- DROID TRAITS -->

@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Proficiencies</name>
-    <update version="2.4.6">
+    <update version="2.4.7">
       <file name="proficiencies.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/proficiencies.xml" />
     </update>
   </info>
@@ -68,8 +68,13 @@
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_SLUGTHROWER_PISTOL" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_DISRUPTOR_PISTOL" />
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_STEALTH_PISTOL" />
-      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_BLASTER" />
+
       <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER_DART" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_BLASTER" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_FLAME" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_ROCKET" />
+      <grant type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_WHIP" />
     </rules>
   </element>
   <element name="Weapon: Martial Blasters" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS" source="SW-MSV-Edition">
@@ -283,6 +288,26 @@
   <element name="Weapon: Wrist Launcher" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER" source="SW-MSV-Edition">
     <description><p>Wrist Launcher proficiency</p></description>
 
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+  </element>
+  <element name="Weapon: Wrist Launcher with Dart Attachment" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER_DART" source="SW-MSV-Edition">
+    <description><p>Wrist Launcher with Dart Attachment proficiency</p></description>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+  </element>
+  <element name="Weapon: Wrist Launcher with Wrist Blaster Attachment" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_BLASTER" source="SW-MSV-Edition">
+    <description><p>Wrist Launcher with Wrist Blaster Attachment proficiency</p></description>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+  </element>
+  <element name="Weapon: Wrist Launcher with WristFlame Attachment" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_FLAME" source="SW-MSV-Edition">
+    <description><p>Wrist Launcher with WristFlame Attachment proficiency</p></description>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+  </element>
+  <element name="Weapon: Wrist Launcher with Rocket Attachment" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_ROCKET" source="SW-MSV-Edition">
+    <description><p>Wrist Launcher with Rocket Attachment proficiency</p></description>
+      <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
+  </element>
+  <element name="Weapon: Wrist Launcher with FiberCord Whip Attachment" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_WHIP" source="SW-MSV-Edition">
+    <description><p>Wrist Launcher with FiberCord Whip Attachment proficiency</p></description>
       <supports>ID_INTERNAL_PROFICIENCY_WEAPON</supports>
   </element>
   <element name="Weapon: Blaster Rifle" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_BLASTER_RIFLE" source="SW-MSV-Edition">

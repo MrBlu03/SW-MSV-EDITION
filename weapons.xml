@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Weapons</name>
-    <update version="2.4.6">
+    <update version="2.4.7">
       <file name="weapons.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/weapons.xml" />
     </update>
   </info>
@@ -27,7 +27,7 @@
       <p>As a Bonus Action, Make a melee attack with the hilt of the weapon, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your applicable modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <sheet>
-      <description>As a Bonus Action, Make a melee attack with the hilt of the weapon, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your applicable modifier. On a failed save, the target becomes dazed (disadvantage on Wis saves, can't take Reactions, loses Dex bonus to AC). On a successful save, the target doesn't get dazed.</description>
+      <description>Hilt Strike: As a Bonus Action, make a melee attack with the hilt of the weapon, possibly dazing them. On hit: 1d4 kinetic damage and Con save (DC 8 + prof + modifier). On failed save: dazed (disadvantage on Wis saves, can't take Reactions, loses Dex bonus to AC). On success: not dazed.</description>
     </sheet>
   </element>
   <element name="Slash" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SLASH">
@@ -72,10 +72,10 @@
   </element>
   <element name="Back Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_BACK_STRIKE">
     <description>
-      <p>As a Bonus Action, Make a melee attack with the back end of the weapon. On hit: the weapon's damage dice without modifiers.</p>
+      <p>Back Strike: As a Bonus Action, Make a melee attack with the back end of the weapon. On hit: the weapon's damage dice without modifiers.</p>
     </description>
     <sheet>
-      <description>As a Bonus Action, Make a melee attack with the back end of the weapon. On hit: weapon damage without modifiers.</description>
+      <description>Back Strike: As a Bonus Action, make a melee attack with the back end of the weapon. On hit: weapon damage dice without modifiers.</description>
     </sheet>
   </element>
   <element name="Dart" type="Action" source="SW-MSV-Edition" id="ID_ACTION_DART">
@@ -459,7 +459,7 @@
       <set name="slot">onehand</set>
       <set name="range">25/100</set>
       <set name="reload">1</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER_DART</set>
     </setters>
     <rules>
       <grant type="Tag" name="Can't be Disarmed" />
@@ -493,7 +493,7 @@
       <set name="slot">onehand</set>
       <set name="range">35/140</set>
       <set name="reload">1</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_ROCKET</set>
     </setters>
     <rules>
       <grant type="Tag" name="Can't be Disarmed" />
@@ -525,7 +525,7 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="range">15 feet</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_WHIP</set>
     </setters>
     <rules>
       <grant type="Tag" name="Can't be Disarmed" />
@@ -549,6 +549,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Flame:</strong> As an Action, Flame multiple targets in a 15 feet cone in front of you. Each target must make a Dexterity saving throw, DC 8 + proficiency bonus (if applicable) + Dexterity modifier. On a failed save, the target takes 1d10 fire + your Dexterity modifier and is inflicted burning for 2 turns. On a successful save, the target takes half damage and is inflicted burning for 1 turn.</p>
+      <p>• <strong>Reload:</strong> After 2 shots your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -558,7 +559,7 @@
       <set name="range">15 feet</set>
       <set name="damage" type="fire">1d10</set>
       <set name="reload">2</set>
-      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_LAUNCHER</set>
+      <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_FLAME</set>
     </setters>
     <rules>
       <grant type="Tag" name="Can't be Disarmed" />
