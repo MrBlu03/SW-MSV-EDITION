@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Proficiencies</name>
-    <update version="2.4.2">
+    <update version="2.4.3">
       <file name="proficiencies.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/proficiencies.xml" />
     </update>
   </info>
@@ -54,6 +54,7 @@
 
   <!-- WEAPON PROFICIENCIES -->
   <element name="Weapon: Simple Blasters" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_SIMPLE_BLASTERS" source="SW-MSV-Edition">
+    <supports>Blaster</supports>
     <description>
       <p>Simple blaster weapon proficiency</p>
     </description>
@@ -72,6 +73,7 @@
     </rules>
   </element>
   <element name="Weapon: Martial Blasters" type="Proficiency" id="ID_MSV_PROFICIENCY_WEAPON_MARTIAL_BLASTERS" source="SW-MSV-Edition">
+    <supports>Blaster</supports>
     <description>
       <p>Martial blaster weapon proficiency</p>
     </description>

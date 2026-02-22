@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Species</name>
-    <update version="2.4.2">
+    <update version="2.4.3">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
@@ -381,7 +381,6 @@
       <grant type="Language" id="ID_LANGUAGE_GALACTIC_BASIC" />
       <select type="Language" name="Language (Combat Droid)" supports="Standard||Exotic" number="1" requirements="!ID_LANGUAGE_BINARY" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_UNDERSTAND_BINARY" />
-      <grant type="Language" id="ID_LANGUAGE_BINARY" />
       <grant type="Racial Trait" id="ID_RACE_TRAIT_DROID_CANNOT_SPEAK_BINARY" />
     </rules>
   </element>
@@ -2044,8 +2043,8 @@
     <sheet><description>Unarmed strikes deal 1d6 kinetic damage.</description></sheet>
   </element>
   <element name="Consume Corpse" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_RAKATA_CONSUME_CORPSE">
-    <description><p>As an Action, Eat a corpse to gain temporary Hit Points equal to your Constitution modifier.</p></description>
-    <sheet><description>As an Action, Eat a corpse to gain temporary Hit Points equal to your Constitution modifier.</description></sheet>
+    <description><p>As an Action, Eat a corpse to gain temporary Hit Points equal to your hit die + Constitution modifier.</p></description>
+    <sheet><description>As an Action, Eat a corpse to gain temporary Hit Points equal to your hit die + Constitution modifier.</description></sheet>
   </element>
 
   <!-- RATTATAKI TRAITS -->
@@ -2222,10 +2221,10 @@
       <description>As an action, violently expel air in a 15-foot cone. Each creature in the area must make a Wisdom saving throw (DC = 8 + your proficiency bonus + your Constitution modifier). A creature takes {{ithorian-scream:damage}} sonic damage on a failed save, and half as much damage on a successful one. This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you complete a long rest.</description>
     </sheet>
     <rules>
-      <stat name="ithorian-scream:damage" value="2d6" level="1" />
-      <stat name="ithorian-scream:damage" value="4d6" level="5" />
-      <stat name="ithorian-scream:damage" value="6d6" level="11" />
-      <stat name="ithorian-scream:damage" value="8d6" level="17" />
+      <stat name="ithorian-scream:damage" value="2d6" level="1" bonus="base" />
+      <stat name="ithorian-scream:damage" value="4d6" level="5" bonus="base" />
+      <stat name="ithorian-scream:damage" value="6d6" level="11" bonus="base" />
+      <stat name="ithorian-scream:damage" value="8d6" level="17" bonus="base" />
     </rules>
   </element>
 
@@ -2241,10 +2240,6 @@
       <stat name="ithorian-scream:dc" value="8" />
       <stat name="ithorian-scream:dc" value="proficiency" />
       <stat name="ithorian-scream:dc" value="constitution:modifier" />
-      <stat name="ithorian-scream:damage" value="2d6" level="1" />
-      <stat name="ithorian-scream:damage" value="4d6" level="5" />
-      <stat name="ithorian-scream:damage" value="6d6" level="11" />
-      <stat name="ithorian-scream:damage" value="8d6" level="17" />
     </rules>
   </element>
   <!-- DROID TRAITS -->
@@ -2303,7 +2298,7 @@
       <p class="indent"><strong><em>Ion Vulnerability.</em></strong> You are vulnerable to ion damage.</p>
     </description>
     <sheet>
-      <description>Cybernetic arm &amp; leg: +1 Str, +1 Dex. Vulnerable to ion damage.</description>
+      <description>Cybernetic arm &amp; leg: +1 Strength, +1 Dexterity. Vulnerable to ion damage.</description>
     </sheet>
     <rules>
       <stat name="strength" value="1" />
