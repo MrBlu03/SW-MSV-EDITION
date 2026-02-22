@@ -9,7 +9,8 @@
       "Bash(curl:*)",
       "Bash(done)",
       "Bash(find C:\\\\Users\\\\james\\\\OneDrive\\\\Docs and windows stuff\\\\documenten\\\\5e Character Builder\\\\custom\\\\core\\\\players-handbook:*)",
-      "Bash(find C:\\\\Users\\\\james\\\\OneDrive\\\\Docs and windows stuff\\\\documenten\\\\5e Character Builder\\\\custom\\\\core:*)"
+      "Bash(find C:\\\\Users\\\\james\\\\OneDrive\\\\Docs and windows stuff\\\\documenten\\\\5e Character Builder\\\\custom\\\\core:*)",
+      "Bash(cd:*)"
     ]
   }
 }

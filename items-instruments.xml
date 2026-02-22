@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Musical Instruments</name>
-    <update version="2.4.2">
+    <update version="2.4.4">
       <file name="items-instruments.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-instruments.xml" />
     </update>
   </info>
@@ -191,102 +191,74 @@
   </element>
 
   <!-- MUSICAL INSTRUMENT PROFICIENCIES -->
-  <element name="Bandfill" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_BANDFILL" source="SW-MSV-Edition">
-    <description>
-      <p>Proficiency with the bandfill.</p>
-    </description>
+  <element name="Tool Proficiency (Bandfill)" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_BANDFILL" source="SW-MSV-Edition">
     <supports>Tool, Musical Instrument, ID_PROFICIENCY_MUSICAL_INSTRUMENT</supports>
+    <sheet alt="Bandfill" />
   </element>
 
-  <element name="Chindinkalu Horn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_CHINDINKALU_HORN" source="SW-MSV-Edition">
-    <description>
-      <p>Proficiency with the chindinkalu horn.</p>
-    </description>
+  <element name="Tool Proficiency (Chindinkalu Horn)" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_CHINDINKALU_HORN" source="SW-MSV-Edition">
     <supports>Tool, Musical Instrument, ID_PROFICIENCY_MUSICAL_INSTRUMENT</supports>
+    <sheet alt="Chindinkalu Horn" />
   </element>
 
-  <element name="Drum" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_DRUM" source="SW-MSV-Edition">
-    <description>
-      <p>Proficiency with the drum.</p>
-    </description>
+  <element name="Tool Proficiency (Drum)" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_DRUM" source="SW-MSV-Edition">
     <supports>Tool, Musical Instrument, ID_PROFICIENCY_MUSICAL_INSTRUMENT</supports>
+    <sheet alt="Drum" />
   </element>
 
-  <element name="Fanfar" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FANFAR" source="SW-MSV-Edition">
-    <description>
-      <p>Proficiency with the fanfar.</p>
-    </description>
+  <element name="Tool Proficiency (Fanfar)" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FANFAR" source="SW-MSV-Edition">
     <supports>Tool, Musical Instrument, ID_PROFICIENCY_MUSICAL_INSTRUMENT</supports>
+    <sheet alt="Fanfar" />
   </element>
 
-  <element name="Fizzz" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FIZZZ" source="SW-MSV-Edition">
-    <description>
-      <p>Proficiency with the fizzz.</p>
-    </description>
+  <element name="Tool Proficiency (Fizzz)" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FIZZZ" source="SW-MSV-Edition">
     <supports>Tool, Musical Instrument, ID_PROFICIENCY_MUSICAL_INSTRUMENT</supports>
+    <sheet alt="Fizzz" />
   </element>
 
-  <element name="Flute" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FLUTE" source="SW-MSV-Edition">
-    <description>
-      <p>Proficiency with the flute.</p>
-    </description>
+  <element name="Tool Proficiency (Flute)" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FLUTE" source="SW-MSV-Edition">
     <supports>Tool, Musical Instrument, ID_PROFICIENCY_MUSICAL_INSTRUMENT</supports>
+    <sheet alt="Flute" />
   </element>
 
-  <element name="Kloo Horn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_KLOO_HORN" source="SW-MSV-Edition">
-    <description>
-      <p>Proficiency with the kloo horn.</p>
-    </description>
+  <element name="Tool Proficiency (Kloo Horn)" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_KLOO_HORN" source="SW-MSV-Edition">
     <supports>Tool, Musical Instrument, ID_PROFICIENCY_MUSICAL_INSTRUMENT</supports>
+    <sheet alt="Kloo Horn" />
   </element>
 
-  <element name="Lute" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_LUTE" source="SW-MSV-Edition">
-    <description>
-      <p>Proficiency with the lute.</p>
-    </description>
+  <element name="Tool Proficiency (Lute)" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_LUTE" source="SW-MSV-Edition">
     <supports>Tool, Musical Instrument, ID_PROFICIENCY_MUSICAL_INSTRUMENT</supports>
+    <sheet alt="Lute" />
   </element>
 
-  <element name="Mandoviol" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_MANDOVIOL" source="SW-MSV-Edition">
-    <description>
-      <p>Proficiency with the mandoviol.</p>
-    </description>
+  <element name="Tool Proficiency (Mandoviol)" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_MANDOVIOL" source="SW-MSV-Edition">
     <supports>Tool, Musical Instrument, ID_PROFICIENCY_MUSICAL_INSTRUMENT</supports>
+    <sheet alt="Mandoviol" />
   </element>
 
-  <element name="Ommni Box" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_OMMNI_BOX" source="SW-MSV-Edition">
-    <description>
-      <p>Proficiency with the ommni box.</p>
-    </description>
+  <element name="Tool Proficiency (Ommni Box)" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_OMMNI_BOX" source="SW-MSV-Edition">
     <supports>Tool, Musical Instrument, ID_PROFICIENCY_MUSICAL_INSTRUMENT</supports>
+    <sheet alt="Ommni Box" />
   </element>
 
-  <element name="Slitherhorn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLITHERHORN" source="SW-MSV-Edition">
-    <description>
-      <p>Proficiency with the slitherhorn.</p>
-    </description>
+  <element name="Tool Proficiency (Slitherhorn)" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_SLITHERHORN" source="SW-MSV-Edition">
     <supports>Tool, Musical Instrument, ID_PROFICIENCY_MUSICAL_INSTRUMENT</supports>
+    <sheet alt="Slitherhorn" />
   </element>
 
-  <element name="Traz" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_TRAZ" source="SW-MSV-Edition">
-    <description>
-      <p>Proficiency with the traz.</p>
-    </description>
+  <element name="Tool Proficiency (Traz)" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_TRAZ" source="SW-MSV-Edition">
     <supports>Tool, Musical Instrument, ID_PROFICIENCY_MUSICAL_INSTRUMENT</supports>
+    <sheet alt="Traz" />
   </element>
 
-  <element name="Valahorn" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_VALAHORN" source="SW-MSV-Edition">
-    <description>
-      <p>Proficiency with the valahorn.</p>
-    </description>
+  <element name="Tool Proficiency (Valahorn)" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_VALAHORN" source="SW-MSV-Edition">
     <supports>Tool, Musical Instrument, ID_PROFICIENCY_MUSICAL_INSTRUMENT</supports>
+    <sheet alt="Valahorn" />
   </element>
 
-  <element name="Xantha" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_XANTHA" source="SW-MSV-Edition">
-    <description>
-      <p>Proficiency with the xantha.</p>
-    </description>
+  <element name="Tool Proficiency (Xantha)" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_XANTHA" source="SW-MSV-Edition">
     <supports>Tool, Musical Instrument, ID_PROFICIENCY_MUSICAL_INSTRUMENT</supports>
+    <sheet alt="Xantha" />
   </element>
 
 </elements>
