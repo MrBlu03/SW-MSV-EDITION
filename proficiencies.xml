@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Proficiencies</name>
-    <update version="2.2.9">
+    <update version="2.3.0">
       <file name="proficiencies.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/proficiencies.xml" />
     </update>
   </info>
@@ -15,6 +15,9 @@
     <sheet>
       <description>Proficiency with the Slicing Kit.</description>
     </sheet>
+    <rules>
+      <stat name="slicing kit:proficiency" value="proficiency" />
+    </rules>
   </element>
 
   <element name="Hacking Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HACKING_KIT" source="SW-MSV-Edition">
@@ -25,6 +28,9 @@
     <sheet>
       <description>Proficiency with the Hacking Kit.</description>
     </sheet>
+    <rules>
+      <stat name="hacking kit:proficiency" value="proficiency" />
+    </rules>
   </element>
 
   <element name="Disguise Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_DISGUISE_KIT" source="SW-MSV-Edition">
@@ -35,6 +41,9 @@
     <sheet>
       <description>Proficiency with the Disguise Kit.</description>
     </sheet>
+    <rules>
+      <stat name="disguise kit:proficiency" value="proficiency" />
+    </rules>
   </element>
 
   <element name="Poisoning Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_POISONING_KIT" source="SW-MSV-Edition">
@@ -45,6 +54,9 @@
     <sheet>
       <description>Proficiency with the Poisoning Kit.</description>
     </sheet>
+    <rules>
+      <stat name="poisoning kit:proficiency" value="proficiency" />
+    </rules>
   </element>
 
   <element name="Jumppack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JUMPPACK" source="SW-MSV-Edition">
@@ -55,6 +67,9 @@
     <sheet>
       <description>Proficiency with Jumppack operation.</description>
     </sheet>
+    <rules>
+      <stat name="jumppack:proficiency" value="proficiency" />
+    </rules>
   </element>
 
   <element name="Hoverpack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_HOVERPACK" source="SW-MSV-Edition">
@@ -65,6 +80,9 @@
     <sheet>
       <description>Proficiency with Hoverpack operation.</description>
     </sheet>
+    <rules>
+      <stat name="hoverpack:proficiency" value="proficiency" />
+    </rules>
   </element>
 
   <element name="Jetpack" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_JETPACK" source="SW-MSV-Edition">
@@ -75,6 +93,9 @@
     <sheet>
       <description>Proficiency with Jetpack operation.</description>
     </sheet>
+    <rules>
+      <stat name="jetpack:proficiency" value="proficiency" />
+    </rules>
   </element>
 
   <element name="Repair Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_REPAIR_KIT" source="SW-MSV-Edition">
@@ -85,6 +106,9 @@
     <sheet>
       <description>Proficiency with the Repair Kit.</description>
     </sheet>
+    <rules>
+      <stat name="repair kit:proficiency" value="proficiency" />
+    </rules>
   </element>
 
   <element name="Forgery Kit" type="Proficiency" id="ID_MSV_PROFICIENCY_TOOL_FORGERY_KIT" source="SW-MSV-Edition">
@@ -95,6 +119,9 @@
     <sheet>
       <description>Proficiency with the Forgery Kit.</description>
     </sheet>
+    <rules>
+      <stat name="forgery kit:proficiency" value="proficiency" />
+    </rules>
   </element>
 
   <!-- WEAPON PROFICIENCIES -->
