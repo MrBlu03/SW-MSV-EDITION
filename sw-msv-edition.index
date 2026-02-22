@@ -16,6 +16,7 @@
         <file name="class-scout.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-scout.xml" />
         <file name="class-warrior.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-warrior.xml" />
         <file name="class-inquisitor.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-inquisitor.xml" />
+        <file name="proficiencies.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/proficiencies.xml" />
         <file name="feats.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/feats.xml" />
         <file name="backgrounds.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/backgrounds.xml" />
         <file name="languages.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/languages.xml" />
@@ -27,7 +28,6 @@
         <file name="items-tools.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-tools.xml" />
         <file name="items-explosives.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-explosives.xml" />
         <file name="items-healing.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/items-healing.xml" />
-        <file name="proficiencies.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/proficiencies.xml" />
         <file name="conditions.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/conditions.xml" />
         <file name="cyborg-elements.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/cyborg-elements.xml" />
     </files>
