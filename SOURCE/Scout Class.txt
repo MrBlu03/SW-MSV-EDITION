@@ -72,7 +72,7 @@ lv 13: Master of Tactics
 lv 17: Sudden Strike
 
 Skirmisher: You can move up to half your speed rounded up as a Reaction when an enemy ends its turn within 5 feet of you. This movement doesn’t provoke opportunity attacks.
-Misdirection: When you are targeted by an attack while a creature within 5 feet of you is granting you cover, you can use your Reaction to have the attack target that creature instead of you.
+Misdirection: When you are targeted by an attack while a Medium or smaller creature is within 5 feet of you, you can use your Reaction to redirect that attack toward that creature, causing it to target them instead of you.
 Superior Mobility: Your walking speed increases by 10 feet. If you have a climbing or swimming speed, this increase applies to that speed as well.
 Master of Tactics: You can use the Help action as a Bonus Action, and you can adopt a Fighting Style.
 Sudden Strike: If you take the attack action on your turn, you can make one additional attack as a Bonus Action. This attack can benefit from your Sneak Attack even if you have already used it this turn, but you can’t use Sneak Attack against the same target more than once per turn.

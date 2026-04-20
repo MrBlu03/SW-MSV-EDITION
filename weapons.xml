@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Weapons</name>
-    <update version="2.4.7">
+    <update version="2.4.8">
       <file name="weapons.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/weapons.xml" />
     </update>
   </info>
@@ -24,10 +24,10 @@
   </element>
   <element name="Hilt Strike" type="Action" source="SW-MSV-Edition" id="ID_ACTION_HILT_STRIKE">
     <description>
-      <p>As a Bonus Action, Make a melee attack with the hilt of the weapon, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your applicable modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
+      <p>Hilt Strike: As a Bonus Action, Make a melee attack with the hilt of the weapon, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength or Dexterity modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <sheet>
-      <description>Hilt Strike: As a Bonus Action, make a melee attack with the hilt of the weapon, possibly dazing them. On hit: 1d4 kinetic damage and Con save (DC 8 + prof + modifier). On failed save: dazed (disadvantage on Wis saves, can't take Reactions, loses Dex bonus to AC). On success: not dazed.</description>
+      <description>Hilt Strike: As a Bonus Action, Make a melee attack with the hilt of the weapon, possibly dazing them. On hit: 1d4 kinetic damage and Con save (DC 8 + proficiency bonus + Str or Dex modifier). On failed save: dazed (disadvantage on Wis saves, can't take Reactions, loses Dex bonus to AC). On success: not dazed.</description>
     </sheet>
   </element>
   <element name="Slash" type="Action" source="SW-MSV-Edition" id="ID_ACTION_SLASH">
@@ -75,7 +75,7 @@
       <p>Back Strike: As a Bonus Action, Make a melee attack with the back end of the weapon. On hit: the weapon's damage dice without modifiers.</p>
     </description>
     <sheet>
-      <description>Back Strike: As a Bonus Action, make a melee attack with the back end of the weapon. On hit: weapon damage dice without modifiers.</description>
+      <description>Back Strike: As a Bonus Action, Make a melee attack with the back end of the weapon. On hit: weapon damage dice without modifiers.</description>
     </sheet>
   </element>
   <element name="Dart" type="Action" source="SW-MSV-Edition" id="ID_ACTION_DART">
@@ -518,6 +518,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Whip:</strong> As an Action, Fire a Fibercord Whip with the weapon at a target. The target must make a DC 8 + proficiency + Dexterity modifier Dexterity saving throw. On a failed save, the target is restrained. On a successful save, the target isn't restrained. If the target is restrained the target can on their turn use an Action to do a Strength saving throw against 8 + proficiency + Strength modifier of the restrainer. On a failed save, the targets stays restrained. On a successful save, the target is freed. The Restrainer can't use Bonus Actions or hold something in that hand when restraining someone.</p>
+      <p>• <strong>Reload:</strong> After 1 shot your weapon needs a reload, take a full Action to fully reload your weapon.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -525,11 +526,13 @@
       <set name="weight" lb="1">1 lb.</set>
       <set name="slot">onehand</set>
       <set name="range">15 feet</set>
+      <set name="reload">1</set>
       <set name="proficiency">ID_MSV_PROFICIENCY_WEAPON_PROFICIENCY_WRIST_WHIP</set>
     </setters>
     <rules>
       <grant type="Tag" name="Can't be Disarmed" />
       <grant type="Action" id="ID_ACTION_WHIP" />
+      <grant type="Action" id="ID_ACTION_RELOAD" />
     </rules>
   </element>
   <element name="Wrist Launcher with WristFlame Attachment" type="Weapon" source="SW-MSV-Edition" id="ID_WEAPON_WRIST_LAUNCHER_FLAME">
@@ -1028,7 +1031,7 @@
       </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the lightsaber. On hit: 1d6 energy + your Dexterity or Strength modifier.</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the lightsaber while wielding it in your off-hand. On hit: 1d6 energy without modifiers.</p>
-      <p>• <strong>Hilt Strike:</strong> Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. (Damage: 1d4 kinetic)</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the lightsaber, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Dexterity or Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1062,7 +1065,7 @@
       </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the lightstaff. On hit: 1d6/2d4 energy + your Strength modifier.</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the lightstaff while wielding it in your off-hand. On hit: 1d6/2d4 energy without modifiers.</p>
-      <p>• <strong>Hilt Strike:</strong> Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. (Damage: 1d4 kinetic)</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the lightstaff, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1096,7 +1099,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the crossguard saber. On hit: 2d6 energy + your Strength modifier.</p>
-      <p>• <strong>Hilt Strike:</strong> Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. (Damage: 1d4 kinetic)</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the crossguard saber, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1161,7 +1164,7 @@
       </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the martial lightsaber. On hit: 1d8/1d10 energy + your Strength modifier.</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the martial lightsaber while wielding it in your off-hand. On hit: 1d8/1d10 energy without modifiers.</p>
-      <p>• <strong>Hilt Strike:</strong> Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. (Damage: 1d4 kinetic)</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the martial lightsaber, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1195,7 +1198,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the lightsaber pike. On hit: 1d10 energy + your Strength modifier.</p>
-      <p>• <strong>Hilt Strike:</strong> Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. (Damage: 1d4 kinetic)</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the lightsaber pike, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1228,7 +1231,7 @@
       </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the double bladed lightsaber. On hit: 1d8 energy + your Dexterity or Strength modifier.</p>
       <p>• <strong>Slash:</strong> As an Action, Make a sweeping melee attack with the double bladed lightsaber against all creatures standing in a 15 foot hoziontal line originating from you. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your Dexterity or Strength modifier). A creature takes 1d8 energy without modifiers on a failed save, or half as much on a successful one.</p>
-      <p>• <strong>Back Strike:</strong> Bonus Action; When wielding a double bladed weapon, make a melee attack with the other side of your weapon. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Back Strike:</strong> As a Bonus Action, Make a melee attack with the back end of the double-bladed lightsaber. On hit: 1d8 energy damage without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1262,7 +1265,7 @@
       </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibrospear. On hit: 1d6/2d4 kinetic + your Strength modifier.</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the vibrospear while wielding it in your off-hand. On hit: 1d6/2d4 kinetic without modifiers.</p>
-      <p>• <strong>Hilt Strike:</strong> Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. (Damage: 1d4 kinetic)</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibrospear, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1331,7 +1334,7 @@
       </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibrostaff. On hit: 1d6/2d4 kinetic + your Strength modifier.</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the vibrostaff while wielding it in your off-hand. On hit: 1d6/2d4 kinetic without modifiers.</p>
-      <p>• <strong>Hilt Strike:</strong> Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. (Damage: 1d4 kinetic)</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibrostaff, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1366,7 +1369,7 @@
       </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibro double-blade. On hit: 1d8 kinetic + your Dexterity or Strength modifier.</p>
       <p>• <strong>Slash:</strong> As an Action, Make a sweeping melee attack with the vibro double-blade against all creatures standing in a 15 foot hoziontal line originating from you. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your Dexterity or Strength modifier). A creature takes 1d8 kinetic without modifiers on a failed save, or half as much on a successful one.</p>
-      <p>• <strong>Back Strike:</strong> Bonus Action; When wielding a double bladed weapon, make a melee attack with the other side of your weapon. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Back Strike:</strong> As a Bonus Action, Make a melee attack with the back end of the double-bladed lightsaber. On hit: 1d8 energy damage without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1400,7 +1403,7 @@
       </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the electrostaff. On hit: 1d6 lightning + your Dexterity or Strength modifier.</p>
       <p>• <strong>Slash:</strong> As an Action, Make a sweeping melee attack with the electrostaff against all creatures standing in a 15 foot hoziontal line originating from you. Each target makes a Dexterity saving throw (DC 8 + your proficiency bonus + your Dexterity or Strength modifier). A creature takes 1d6 lightning without modifiers on a failed save, or half as much on a successful one.</p>
-      <p>• <strong>Back Strike:</strong> Bonus Action; When wielding a double bladed weapon, make a melee attack with the other side of your weapon. (Damage: weapon damage without adding modifiers)</p>
+      <p>• <strong>Back Strike:</strong> As a Bonus Action, Make a melee attack with the back end of the double-bladed lightsaber. On hit: 1d8 energy damage without modifiers.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1434,7 +1437,7 @@
       </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibrosword. On hit: 1d8/1d10 kinetic + your Strength modifier.</p>
       <p>• <strong>Off-Hand Strike:</strong> As a Bonus Action, Make a melee attack with the vibrosword while wielding it in your off-hand. On hit: 1d8/1d10 kinetic without modifiers.</p>
-      <p>• <strong>Hilt Strike:</strong> Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. (Damage: 1d4 kinetic)</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibrosword, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>
@@ -1500,7 +1503,7 @@
         <strong>Actions:</strong>
       </p>
       <p>• <strong>Strike:</strong> As an Action, Make a melee attack with the vibropike. On hit: 1d10 kinetic + your Strength modifier.</p>
-      <p>• <strong>Hilt Strike:</strong> Bonus Action; When wielding a single-bladed weapon in your main or off-hand, make a melee attack with the hilt of that weapon, possibly dazing them. (Damage: 1d4 kinetic)</p>
+      <p>• <strong>Hilt Strike:</strong> As a Bonus Action, Make a melee attack with the hilt of the vibropike, possibly dazing them. On hit: The target takes 1d4 kinetic damage and must make a Constitution saving throw: DC:8 + proficiency bonus + your Strength modifier. On a failed save, the target becomes dazed (dazed: has disadvantage on Wisdom saving throws, can't take Reactions and loses the Dexterity bonus to their AC). On a successful save, the target doesn't get dazed.</p>
     </description>
     <setters>
       <set name="category">Weapons</set>

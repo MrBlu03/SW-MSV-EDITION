@@ -3,7 +3,7 @@
   <info>
     <name>Marauder Class</name>
     <description>Marauder Class for SW-MSV-Edition.</description>
-    <update version="2.4.7">
+    <update version="2.4.8">
       <file name="class-marauder.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-marauder.xml" />
     </update>
   </info>
@@ -179,11 +179,11 @@
       </p>
       <p class="indent">
         <strong>Spell Save DC</strong>
-         = 8 + your proficiency bonus + your Charisma modifier
+         = {{spellcasting:dc:marauder}}
       </p>
       <p class="indent">
         <strong>Spell Attack Modifier</strong>
-         = your proficiency bonus + your Charisma modifier
+         = {{spellcasting:attack:marauder}}
       </p>
     </description>
     <sheet display="false" />
@@ -623,6 +623,8 @@
     <supports>ID_CLASS_MARAUDER</supports>
     <description>
       <p>Makashi is a dueling form focused on precision and finesse. Practitioners gain the Dueling fighting style and learn to Riposte against their enemies.</p>
+      <div element="ID_MARAUDER_FORM_MAKASHI_ABILITY_DUELING" />
+      <div element="ID_MARAUDER_FORM_MAKASHI_ABILITY_RIPOSTE" />
     </description>
     <rules>
       <grant type="Archetype Feature" id="ID_MARAUDER_FORM_MAKASHI_ABILITY_DUELING" level="2" />
@@ -639,7 +641,7 @@
       <description>You gain the Dueling Fighting Style.</description>
     </sheet>
     <rules>
-      <grant type="Class Feature" id="ID_FIGHTING_STYLE_DUELING" />
+      <grant type="Class Feature" id="ID_SW_FIGHTING_STYLE_DUELING" />
     </rules>
   </element>
 
@@ -672,6 +674,8 @@
     <supports>ID_CLASS_MARAUDER</supports>
     <description>
       <p>Soresu is a defensive form designed to protect against all attacks. Practitioners learn to Block melee attacks and Deflect ranged attacks.</p>
+      <div element="ID_MARAUDER_FORM_SORESU_ABILITY_BLOCK" />
+      <div element="ID_MARAUDER_FORM_SORESU_ABILITY_DEFLECT" />
     </description>
     <rules>
       <grant type="Spell" id="ID_MARAUDER_FORM_SORESU_ABILITY_BLOCK" level="2" spellcasting="Marauder" />
@@ -732,6 +736,8 @@
     <supports>ID_CLASS_MARAUDER</supports>
     <description>
       <p>Ataru is an aggressive acrobatic form. Practitioners learn to leap great distances and fall gracefully.</p>
+      <div element="ID_MARAUDER_FORM_ATARU_ABILITY_FORCE_LEAP" />
+      <div element="ID_MARAUDER_FORM_ATARU_ABILITY_SLOW_FALL" />
     </description>
     <rules>
       <grant type="Spell" id="ID_MARAUDER_FORM_ATARU_ABILITY_FORCE_LEAP" level="2" spellcasting="Marauder" />
@@ -792,6 +798,7 @@
     <supports>ID_CLASS_MARAUDER</supports>
     <description>
       <p>Shien focuses on deflecting ranged attacks back at attackers. Practitioners learn to Redirect incoming attacks.</p>
+      <div element="ID_MARAUDER_FORM_SHIEN_ABILITY_REDIRECT" />
     </description>
     <rules>
       <grant type="Spell" id="ID_MARAUDER_FORM_SHIEN_ABILITY_REDIRECT" level="2" spellcasting="Marauder" />
@@ -827,6 +834,8 @@
     <supports>ID_CLASS_MARAUDER</supports>
     <description>
       <p>Djem So emphasizes brute strength and overpowering offense. Practitioners learn Passionate Strike and Deflect.</p>
+      <div element="ID_MARAUDER_FORM_DJEM_SO_ABILITY_PASSIONATE_STRIKE" />
+      <div element="ID_MARAUDER_FORM_DJEM_SO_ABILITY_DEFLECT" />
     </description>
     <rules>
       <grant type="Spell" id="ID_MARAUDER_FORM_DJEM_SO_ABILITY_PASSIONATE_STRIKE" level="2" spellcasting="Marauder" />
@@ -887,6 +896,7 @@
     <supports>ID_CLASS_MARAUDER</supports>
     <description>
       <p>Niman balances all aspects of combat. Practitioners can use Force Push and Force Pull as Bonus Actions.</p>
+      <div element="ID_MARAUDER_FORM_NIMAN_ABILITY_BONUS_ACTION" />
     </description>
     <rules>
       <grant type="Archetype Feature" id="ID_MARAUDER_FORM_NIMAN_ABILITY_BONUS_ACTION" level="2" />
@@ -908,6 +918,7 @@
     <supports>ID_CLASS_MARAUDER</supports>
     <description>
       <p>Juyo is an aggressive form that channels raw emotion into devastating attacks. Practitioners learn Cyclone to unleash flurries of strikes.</p>
+      <div element="ID_MARAUDER_FORM_JUYO_ABILITY_CYCLONE" />
     </description>
     <rules>
       <grant type="Spell" id="ID_MARAUDER_FORM_JUYO_ABILITY_CYCLONE" level="2" spellcasting="Marauder" />

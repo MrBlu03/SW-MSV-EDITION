@@ -3,7 +3,7 @@
   <info>
     <name>Warrior Class</name>
     <description>Warrior Class for SW-MSV-Edition.</description>
-    <update version="2.4.7">
+    <update version="2.4.8">
       <file name="class-warrior.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/class-warrior.xml" />
     </update>
   </info>
@@ -321,14 +321,14 @@
       <p>When you choose this archetype at 3rd level, you learn maneuvers that are fueled by special dice called superiority dice.</p>
       <p class="indent"><strong>Maneuvers.</strong> You learn three maneuvers of your choice. Many maneuvers enhance an attack in some way. You can use only one maneuver per attack. You learn two additional maneuvers of your choice at 7th, 10th, and 15th level. Each time you learn new maneuvers, you can also replace one maneuver you know with a different one.</p>
       <p class="indent"><strong>Superiority Dice.</strong> You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest. You gain another superiority die at 7th level and one more at 15th level.</p>
-      <p class="indent"><strong>Saving Throws.</strong> Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC is calculated as follows: <strong>Maneuver save DC</strong> = 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).</p>
+      <p class="indent"><strong>Saving Throws.</strong> Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. <strong>Maneuver save DC</strong> = {{maneuver:dc:base}} + your Strength or Dexterity modifier (your choice).</p>
     </description>
     <sheet>
-      <description level="3">You have 4 superiority dice (d8s) that fuel your maneuvers. You know 3 maneuvers. Maneuver save DC: $(maneuver:dc:base) + Str or Dex modifier.</description>
-      <description level="7">You have 5 superiority dice (d8s) that fuel your maneuvers. You know 5 maneuvers. Maneuver save DC: $(maneuver:dc:base) + Str or Dex modifier.</description>
-      <description level="10">You have 5 superiority dice (d10s) that fuel your maneuvers. You know 7 maneuvers. Maneuver save DC: $(maneuver:dc:base) + Str or Dex modifier.</description>
-      <description level="15">You have 6 superiority dice (d10s) that fuel your maneuvers. You know 9 maneuvers. Maneuver save DC: $(maneuver:dc:base) + Str or Dex modifier.</description>
-      <description level="18">You have 6 superiority dice (d12s) that fuel your maneuvers. You know 9 maneuvers. Maneuver save DC: $(maneuver:dc:base) + Str or Dex modifier.</description>
+      <description level="3">You have 4 superiority dice (d8s). You know 3 maneuvers. Maneuver save DC: {{maneuver:dc:base}} + Str or Dex modifier (your choice).</description>
+      <description level="7">You have 5 superiority dice (d8s). You know 5 maneuvers. Maneuver save DC: {{maneuver:dc:base}} + Str or Dex modifier (your choice).</description>
+      <description level="10">You have 5 superiority dice (d10s). You know 7 maneuvers. Maneuver save DC: {{maneuver:dc:base}} + Str or Dex modifier (your choice).</description>
+      <description level="15">You have 6 superiority dice (d10s). You know 9 maneuvers. Maneuver save DC: {{maneuver:dc:base}} + Str or Dex modifier (your choice).</description>
+      <description level="18">You have 6 superiority dice (d12s). You know 9 maneuvers. Maneuver save DC: {{maneuver:dc:base}} + Str or Dex modifier (your choice).</description>
     </sheet>
     <rules>
       <select type="Maneuver" name="Maneuvers" supports="MSV Maneuver" level="3" number="3" />
@@ -369,7 +369,8 @@
       <p>At 10th level, your superiority dice turn into d10s. At 18th level, they turn into d12s.</p>
     </description>
     <sheet>
-      <description>Your superiority dice become d10s (d12s at 18th level).</description>
+      <description level="10">Your superiority dice are now d10s.</description>
+      <description level="18">Your superiority dice are now d12s.</description>
     </sheet>
   </element>
 
@@ -401,11 +402,17 @@
   <element id="ID_SUBCLASS_BRUTE_ABILITY_BRUTE_FORCE" name="Brute Force" type="Archetype Feature" source="SW-MSV-Edition">
     <compendium display="true" />
     <description>
-      <p>Starting at 3rd level, you're able to strike with your weapons with especially brutal force. Whenever you hit with a weapon that you're proficient with and deal damage, the weapon's damage increases by an amount based on your level in this class: levels 3-9: +1d4, levels 10-15: +1d6, levels 16-19: +1d8, level 20: +1d10.</p>
+      <p>You are able to strike with your weapons with especially brutal force. Whenever you hit with a weapon that you are proficient with and deal damage, the weapon's damage increases by {{brute_force_die}}.</p>
     </description>
     <sheet>
-      <description>When you hit with a proficient weapon, add bonus damage: lv 3-9: +1d4, lv 10-15: +1d6, lv 16-19: +1d8, lv 20: +1d10.</description>
+      <description>You are able to strike with your weapons with especially brutal force. Whenever you hit with a weapon that you are proficient with and deal damage, the weapon's damage increases by {{brute_force_die}}.</description>
     </sheet>
+    <rules>
+      <stat name="brute_force_die" value="1d4" level="3" bonus="base" />
+      <stat name="brute_force_die" value="1d6" level="10" bonus="base" />
+      <stat name="brute_force_die" value="1d8" level="16" bonus="base" />
+      <stat name="brute_force_die" value="1d10" level="20" bonus="base" />
+    </rules>
   </element>
 
   <element id="ID_SUBCLASS_BRUTE_ABILITY_BRUTISH_DURABILITY" name="Brutish Durability" type="Archetype Feature" source="SW-MSV-Edition">
