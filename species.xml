@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Species</name>
-    <update version="2.4.8">
+    <update version="2.4.9">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
@@ -1806,7 +1806,7 @@
     <description><p>Your unarmed strikes deal {{cathar_unarmed_die}} kinetic damage instead of the normal bludgeoning damage and have the finesse property.</p></description>
     <sheet><description>Your unarmed strikes deal {{cathar_unarmed_die}} kinetic damage and have finesse.</description></sheet>
     <rules>
-      <stat name="cathar_unarmed_die" value="1d6" />
+      <stat name="cathar_unarmed_die" value="1d6" bonus="base" />
       <stat name="unarmed damage" value="1d6" />
       <stat name="unarmed damage type" value="kinetic" />
     </rules>
@@ -1927,7 +1927,7 @@
     <description><p>You can add {{human_determination_die}} to one ability check, saving throw, or attack roll. Once you use this feature, you must finish a short or long rest before you can use it again.</p></description>
     <sheet><description>Add {{human_determination_die}} to one ability check, saving throw, or attack roll per short rest.</description></sheet>
     <rules>
-      <stat name="human_determination_die" value="1d4" />
+      <stat name="human_determination_die" value="1d4" bonus="base" />
     </rules>
   </element>
 
@@ -1970,14 +1970,14 @@
     <description><p>If an enemy is surprised, your first attack against it deals an extra {{mirialan_surprise_die}} damage.</p></description>
     <sheet><description>If enemy is surprised, first attack deals extra {{mirialan_surprise_die}} damage.</description></sheet>
     <rules>
-      <stat name="mirialan_surprise_die" value="2d6" />
+      <stat name="mirialan_surprise_die" value="2d6" bonus="base" />
     </rules>
   </element>
   <element name="Natural Weapons" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_MIRIALAN_NATURAL_WEAPONS">
     <description><p>Your unarmed strikes deal {{mirialan_unarmed_die}} kinetic damage and have the finesse property.</p></description>
     <sheet><description>Unarmed strikes deal {{mirialan_unarmed_die}} kinetic damage and have finesse.</description></sheet>
     <rules>
-      <stat name="mirialan_unarmed_die" value="1d4" />
+      <stat name="mirialan_unarmed_die" value="1d4" bonus="base" />
     </rules>
   </element>
 
@@ -2046,7 +2046,7 @@
     <description><p>Your unarmed strikes deal {{rakata_unarmed_die}} kinetic damage.</p></description>
     <sheet><description>Unarmed strikes deal {{rakata_unarmed_die}} kinetic damage.</description></sheet>
     <rules>
-      <stat name="rakata_unarmed_die" value="1d6" />
+      <stat name="rakata_unarmed_die" value="1d6" bonus="base" />
     </rules>
   </element>
   <element name="Consume Corpse" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_RAKATA_CONSUME_CORPSE">
@@ -2059,14 +2059,14 @@
     <description><p>If an enemy is surprised, your first attack against it deals an extra {{rattataki_surprise_die}} damage.</p></description>
     <sheet><description>If enemy is surprised, first attack deals extra {{rattataki_surprise_die}} damage.</description></sheet>
     <rules>
-      <stat name="rattataki_surprise_die" value="2d6" />
+      <stat name="rattataki_surprise_die" value="2d6" bonus="base" />
     </rules>
   </element>
   <element name="Natural Weapons" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_RATTATAKI_NATURAL_WEAPONS">
     <description><p>Your unarmed strikes deal {{rattataki_unarmed_die}} kinetic damage and have the finesse property.</p></description>
     <sheet><description>Unarmed strikes deal {{rattataki_unarmed_die}} kinetic damage and have finesse.</description></sheet>
     <rules>
-      <stat name="rattataki_unarmed_die" value="1d4" />
+      <stat name="rattataki_unarmed_die" value="1d4" bonus="base" />
     </rules>
   </element>
 
@@ -2113,7 +2113,7 @@
     <description><p>Your unarmed strikes deal {{trandoshan_unarmed_die}} kinetic damage.</p></description>
     <sheet><description>Unarmed strikes deal {{trandoshan_unarmed_die}} kinetic damage.</description></sheet>
     <rules>
-      <stat name="trandoshan_unarmed_die" value="1d4" />
+      <stat name="trandoshan_unarmed_die" value="1d4" bonus="base" />
     </rules>
   </element>
   <element name="Natural Armor" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_TRANDOSHAN_NATURAL_ARMOR">
@@ -2157,7 +2157,7 @@
     <description><p>Your unarmed strikes deal {{twilek_unarmed_die}} kinetic damage and have the finesse property.</p></description>
     <sheet><description>Unarmed strikes deal {{twilek_unarmed_die}} kinetic damage and have finesse.</description></sheet>
     <rules>
-      <stat name="twilek_unarmed_die" value="1d4" />
+      <stat name="twilek_unarmed_die" value="1d4" bonus="base" />
     </rules>
   </element>
 
@@ -2166,7 +2166,7 @@
     <description><p>Your unarmed strike (tusk) deals {{ugnaught_unarmed_die}} kinetic damage.</p></description>
     <sheet><description>Unarmed strike (tusk) deals {{ugnaught_unarmed_die}} kinetic damage.</description></sheet>
     <rules>
-      <stat name="ugnaught_unarmed_die" value="1d6" />
+      <stat name="ugnaught_unarmed_die" value="1d6" bonus="base" />
     </rules>
   </element>
   <element name="Nimble" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_UGNAUGHT_NIMBLE">
@@ -2198,7 +2198,7 @@
     <description><p>Your unarmed strikes deal {{wookiee_unarmed_die}} kinetic damage.</p></description>
     <sheet><description>Unarmed strikes deal {{wookiee_unarmed_die}} kinetic damage.</description></sheet>
     <rules>
-      <stat name="wookiee_unarmed_die" value="1d4" />
+      <stat name="wookiee_unarmed_die" value="1d4" bonus="base" />
     </rules>
   </element>
   <element name="Natural Armor" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_WOOKIE_NATURAL_ARMOR">
@@ -2216,7 +2216,7 @@
     <description><p>Your unarmed strikes deal {{zabrak_unarmed_die}} kinetic damage and have the finesse property.</p></description>
     <sheet><description>Unarmed strikes deal {{zabrak_unarmed_die}} kinetic damage and have finesse.</description></sheet>
     <rules>
-      <stat name="zabrak_unarmed_die" value="1d4" />
+      <stat name="zabrak_unarmed_die" value="1d4" bonus="base" />
       <stat name="unarmed damage" value="1d4" />
       <stat name="unarmed damage type" value="kinetic" />
     </rules>
@@ -2281,7 +2281,7 @@
       <description>Quickly repair some damage on your body. Regain {{droid_tune_up_die}} + {{level}} hit points.</description>
     </sheet>
     <rules>
-      <stat name="droid_tune_up_die" value="1d10" />
+      <stat name="droid_tune_up_die" value="1d10" bonus="base" />
     </rules>
   </element>
 
