@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Species</name>
-    <update version="2.4.9">
+    <update version="2.5.0">
       <file name="species.xml" url="https://raw.githubusercontent.com/MrBlu03/SW-MSV-EDITION/main/species.xml" />
     </update>
   </info>
@@ -1803,8 +1803,8 @@
 
   <!-- CATHAR TRAITS -->
   <element name="Natural Weapons" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_CATHAR_NATURAL_WEAPONS">
-    <description><p>Your unarmed strikes deal {{cathar_unarmed_die}} kinetic damage instead of the normal bludgeoning damage and have the finesse property.</p></description>
-    <sheet><description>Your unarmed strikes deal {{cathar_unarmed_die}} kinetic damage and have finesse.</description></sheet>
+    <description><p>Your unarmed strikes deal 1d6 kinetic damage instead of the normal bludgeoning damage and have the finesse property.</p></description>
+    <sheet><description>Your unarmed strikes deal 1d6 kinetic damage and have finesse.</description></sheet>
     <rules>
       <stat name="cathar_unarmed_die" value="1d6" bonus="base" />
       <stat name="unarmed damage" value="1d6" />
@@ -1924,8 +1924,8 @@
 
   <!-- HUMAN TRAITS -->
   <element name="Determination" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_HUMAN_DETERMINATION">
-    <description><p>You can add {{human_determination_die}} to one ability check, saving throw, or attack roll. Once you use this feature, you must finish a short or long rest before you can use it again.</p></description>
-    <sheet><description>Add {{human_determination_die}} to one ability check, saving throw, or attack roll per short rest.</description></sheet>
+    <description><p>You can add 1d4 to one ability check, saving throw, or attack roll. Once you use this feature, you must finish a short or long rest before you can use it again.</p></description>
+    <sheet><description>Add 1d4 to one ability check, saving throw, or attack roll per short rest.</description></sheet>
     <rules>
       <stat name="human_determination_die" value="1d4" bonus="base" />
     </rules>
@@ -1967,15 +1967,15 @@
     </rules>
   </element>
   <element name="Surprise Attack" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_MIRIALAN_SURPRISE_ATTACK">
-    <description><p>If an enemy is surprised, your first attack against it deals an extra {{mirialan_surprise_die}} damage.</p></description>
-    <sheet><description>If enemy is surprised, first attack deals extra {{mirialan_surprise_die}} damage.</description></sheet>
+    <description><p>If an enemy is surprised, your first attack against it deals an extra 2d6 damage.</p></description>
+    <sheet><description>If enemy is surprised, first attack deals extra 2d6 damage.</description></sheet>
     <rules>
       <stat name="mirialan_surprise_die" value="2d6" bonus="base" />
     </rules>
   </element>
   <element name="Natural Weapons" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_MIRIALAN_NATURAL_WEAPONS">
-    <description><p>Your unarmed strikes deal {{mirialan_unarmed_die}} kinetic damage and have the finesse property.</p></description>
-    <sheet><description>Unarmed strikes deal {{mirialan_unarmed_die}} kinetic damage and have finesse.</description></sheet>
+    <description><p>Your unarmed strikes deal 1d4 kinetic damage and have the finesse property.</p></description>
+    <sheet><description>Unarmed strikes deal 1d4 kinetic damage and have finesse.</description></sheet>
     <rules>
       <stat name="mirialan_unarmed_die" value="1d4" bonus="base" />
     </rules>
@@ -2043,8 +2043,8 @@
     <sheet><description>You can breathe air and water.</description></sheet>
   </element>
   <element name="Natural Weapons" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_RAKATA_NATURAL_WEAPONS">
-    <description><p>Your unarmed strikes deal {{rakata_unarmed_die}} kinetic damage.</p></description>
-    <sheet><description>Unarmed strikes deal {{rakata_unarmed_die}} kinetic damage.</description></sheet>
+    <description><p>Your unarmed strikes deal 1d6 kinetic damage.</p></description>
+    <sheet><description>Unarmed strikes deal 1d6 kinetic damage.</description></sheet>
     <rules>
       <stat name="rakata_unarmed_die" value="1d6" bonus="base" />
     </rules>
@@ -2056,15 +2056,15 @@
 
   <!-- RATTATAKI TRAITS -->
   <element name="Surprise Attack" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_RATTATAKI_SURPRISE_ATTACK">
-    <description><p>If an enemy is surprised, your first attack against it deals an extra {{rattataki_surprise_die}} damage.</p></description>
-    <sheet><description>If enemy is surprised, first attack deals extra {{rattataki_surprise_die}} damage.</description></sheet>
+    <description><p>If an enemy is surprised, your first attack against it deals an extra 2d6 damage.</p></description>
+    <sheet><description>If enemy is surprised, first attack deals extra 2d6 damage.</description></sheet>
     <rules>
       <stat name="rattataki_surprise_die" value="2d6" bonus="base" />
     </rules>
   </element>
   <element name="Natural Weapons" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_RATTATAKI_NATURAL_WEAPONS">
-    <description><p>Your unarmed strikes deal {{rattataki_unarmed_die}} kinetic damage and have the finesse property.</p></description>
-    <sheet><description>Unarmed strikes deal {{rattataki_unarmed_die}} kinetic damage and have finesse.</description></sheet>
+    <description><p>Your unarmed strikes deal 1d4 kinetic damage and have the finesse property.</p></description>
+    <sheet><description>Unarmed strikes deal 1d4 kinetic damage and have finesse.</description></sheet>
     <rules>
       <stat name="rattataki_unarmed_die" value="1d4" bonus="base" />
     </rules>
@@ -2110,8 +2110,8 @@
 
   <!-- TRANDOSHAN TRAITS -->
   <element name="Natural Weapons" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_TRANDOSHAN_NATURAL_WEAPONS">
-    <description><p>Your unarmed strikes deal {{trandoshan_unarmed_die}} kinetic damage.</p></description>
-    <sheet><description>Unarmed strikes deal {{trandoshan_unarmed_die}} kinetic damage.</description></sheet>
+    <description><p>Your unarmed strikes deal 1d4 kinetic damage.</p></description>
+    <sheet><description>Unarmed strikes deal 1d4 kinetic damage.</description></sheet>
     <rules>
       <stat name="trandoshan_unarmed_die" value="1d4" bonus="base" />
     </rules>
@@ -2154,8 +2154,8 @@
     <sheet><description>Advantage on saving throws against poison.</description></sheet>
   </element>
   <element name="Natural Weapons" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_TWILEK_NATURAL_WEAPONS">
-    <description><p>Your unarmed strikes deal {{twilek_unarmed_die}} kinetic damage and have the finesse property.</p></description>
-    <sheet><description>Unarmed strikes deal {{twilek_unarmed_die}} kinetic damage and have finesse.</description></sheet>
+    <description><p>Your unarmed strikes deal 1d4 kinetic damage and have the finesse property.</p></description>
+    <sheet><description>Unarmed strikes deal 1d4 kinetic damage and have finesse.</description></sheet>
     <rules>
       <stat name="twilek_unarmed_die" value="1d4" bonus="base" />
     </rules>
@@ -2163,8 +2163,8 @@
 
   <!-- UGNAUGHT TRAITS -->
   <element name="Natural Weapons (Tusk)" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_UGNAUGHT_NATURAL_WEAPONS">
-    <description><p>Your unarmed strike (tusk) deals {{ugnaught_unarmed_die}} kinetic damage.</p></description>
-    <sheet><description>Unarmed strike (tusk) deals {{ugnaught_unarmed_die}} kinetic damage.</description></sheet>
+    <description><p>Your unarmed strike (tusk) deals 1d6 kinetic damage.</p></description>
+    <sheet><description>Unarmed strike (tusk) deals 1d6 kinetic damage.</description></sheet>
     <rules>
       <stat name="ugnaught_unarmed_die" value="1d6" bonus="base" />
     </rules>
@@ -2195,8 +2195,8 @@
 
   <!-- WOOKIEE TRAITS -->
   <element name="Natural Weapons" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_WOOKIE_NATURAL_WEAPONS">
-    <description><p>Your unarmed strikes deal {{wookiee_unarmed_die}} kinetic damage.</p></description>
-    <sheet><description>Unarmed strikes deal {{wookiee_unarmed_die}} kinetic damage.</description></sheet>
+    <description><p>Your unarmed strikes deal 1d4 kinetic damage.</p></description>
+    <sheet><description>Unarmed strikes deal 1d4 kinetic damage.</description></sheet>
     <rules>
       <stat name="wookiee_unarmed_die" value="1d4" bonus="base" />
     </rules>
@@ -2213,8 +2213,8 @@
 
   <!-- ZABRAK TRAITS -->
   <element name="Natural Weapons" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_ZABRAK_NATURAL_WEAPONS">
-    <description><p>Your unarmed strikes deal {{zabrak_unarmed_die}} kinetic damage and have the finesse property.</p></description>
-    <sheet><description>Unarmed strikes deal {{zabrak_unarmed_die}} kinetic damage and have finesse.</description></sheet>
+    <description><p>Your unarmed strikes deal 1d4 kinetic damage and have the finesse property.</p></description>
+    <sheet><description>Unarmed strikes deal 1d4 kinetic damage and have finesse.</description></sheet>
     <rules>
       <stat name="zabrak_unarmed_die" value="1d4" bonus="base" />
       <stat name="unarmed damage" value="1d4" />
@@ -2241,44 +2241,45 @@
   <!-- ITHORIAN TRAITS -->
   <element name="Sonic Scream" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_ITHORIAN_SONIC_SCREAM">
     <description>
-      <p>As an action you can violently expel air in a 15-foot cone. When you do so, each creature in the area of the exhalation must make a Wisdom saving throw (DC {{ithorian_scream_dc}}). A creature takes {{ithorian_scream_damage}} sonic damage on a failed save, and half as much damage on a successful one. This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you complete a long rest.</p>
+      <p>As an action you can violently expel air in a 15-foot cone. When you do so, each creature in the area of the exhalation must make a Wisdom saving throw (DC {{ithorian_scream_dc}}). A creature takes sonic damage on a failed save, and half as much damage on a successful one (2d6 at level 1; 4d6 at level 5; 6d6 at level 11; 8d6 at level 17). This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you complete a long rest.</p>
     </description>
     <sheet>
-      <description>As an action, violently expel air in a 15-foot cone. Each creature in the area must make a Wisdom saving throw (DC {{ithorian_scream_dc}}). A creature takes {{ithorian_scream_damage}} sonic damage on a failed save, and half as much damage on a successful one. This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you complete a long rest.</description>
+      <description level="1">As an action, violently expel air in a 15-ft cone. Wisdom save (DC {{ithorian_scream_dc}}) for 2d6 sonic damage (half on success). No effect on constructs. Uses: {{proficiency}}/Long Rest.</description>
+      <description level="5">As an action, violently expel air in a 15-ft cone. Wisdom save (DC {{ithorian_scream_dc}}) for 4d6 sonic damage (half on success). No effect on constructs. Uses: {{proficiency}}/Long Rest.</description>
+      <description level="11">As an action, violently expel air in a 15-ft cone. Wisdom save (DC {{ithorian_scream_dc}}) for 6d6 sonic damage (half on success). No effect on constructs. Uses: {{proficiency}}/Long Rest.</description>
+      <description level="17">As an action, violently expel air in a 15-ft cone. Wisdom save (DC {{ithorian_scream_dc}}) for 8d6 sonic damage (half on success). No effect on constructs. Uses: {{proficiency}}/Long Rest.</description>
     </sheet>
     <rules>
-      <stat name="ithorian_scream_damage" value="2d6" level="1" bonus="base" />
-      <stat name="ithorian_scream_damage" value="4d6" level="5" bonus="base" />
-      <stat name="ithorian_scream_damage" value="6d6" level="11" bonus="base" />
-      <stat name="ithorian_scream_damage" value="8d6" level="17" bonus="base" />
+      <stat name="ithorian_scream_dc" value="8" />
+      <stat name="ithorian_scream_dc" value="proficiency" />
+      <stat name="ithorian_scream_dc" value="constitution:modifier" />
     </rules>
   </element>
 
   <!-- ACTIONS -->
   <element name="Sonic Scream" type="Action" source="SW-MSV-Edition" id="ID_ACTION_ITHORIAN_SONIC_SCREAM">
     <description>
-      <p>As an action you can violently expel air in a 15-foot cone. When you do so, each creature in the area of the exhalation must make a Wisdom saving throw (DC {{ithorian_scream_dc}}). A creature takes {{ithorian_scream_damage}} sonic damage on a failed save, and half as much damage on a successful one. This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you complete a long rest.</p>
+      <p>As an action you can violently expel air in a 15-foot cone. When you do so, each creature in the area of the exhalation must make a Wisdom saving throw (DC {{ithorian_scream_dc}}). A creature takes sonic damage on a failed save, and half as much damage on a successful one (2d6 at level 1; 4d6 at level 5; 6d6 at level 11; 8d6 at level 17). This ability has no effect on constructs. You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you complete a long rest.</p>
     </description>
     <sheet action="Action" usage="{{proficiency}}/Long Rest">
-      <description>Expel air in a 15-ft cone. Wisdom save (DC {{ithorian_scream_dc}}) for {{ithorian_scream_damage}} sonic damage (half on success). No effect on constructs.</description>
+      <description level="1">Expel air in a 15-ft cone. Wisdom save (DC {{ithorian_scream_dc}}) for 2d6 sonic damage (half on success). No effect on constructs.</description>
+      <description level="5">Expel air in a 15-ft cone. Wisdom save (DC {{ithorian_scream_dc}}) for 4d6 sonic damage (half on success). No effect on constructs.</description>
+      <description level="11">Expel air in a 15-ft cone. Wisdom save (DC {{ithorian_scream_dc}}) for 6d6 sonic damage (half on success). No effect on constructs.</description>
+      <description level="17">Expel air in a 15-ft cone. Wisdom save (DC {{ithorian_scream_dc}}) for 8d6 sonic damage (half on success). No effect on constructs.</description>
     </sheet>
     <rules>
       <stat name="ithorian_scream_dc" value="8" />
       <stat name="ithorian_scream_dc" value="proficiency" />
       <stat name="ithorian_scream_dc" value="constitution:modifier" />
-      <stat name="ithorian_scream_damage" value="2d6" level="1" bonus="base" />
-      <stat name="ithorian_scream_damage" value="4d6" level="5" bonus="base" />
-      <stat name="ithorian_scream_damage" value="6d6" level="11" bonus="base" />
-      <stat name="ithorian_scream_damage" value="8d6" level="17" bonus="base" />
     </rules>
   </element>
   <!-- DROID TRAITS -->
   <element name="Tune-Up" type="Racial Trait" source="SW-MSV-Edition" id="ID_RACE_TRAIT_DROID_TUNE_UP">
     <description>
-      <p>Quickly repair some damage on your body. On your turn, you can use a bonus action to regain hit points equal to {{droid_tune_up_die}} + your level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+      <p>Quickly repair some damage on your body. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
     </description>
     <sheet action="Bonus Action" usage="1/Short Rest">
-      <description>Quickly repair some damage on your body. Regain {{droid_tune_up_die}} + {{level}} hit points.</description>
+      <description>Quickly repair some damage on your body. Regain 1d10 + {{level}} hit points.</description>
     </sheet>
     <rules>
       <stat name="droid_tune_up_die" value="1d10" bonus="base" />
@@ -2287,10 +2288,10 @@
 
   <element name="Tune-Up" type="Action" source="SW-MSV-Edition" id="ID_ACTION_DROID_TUNE_UP">
     <description>
-      <p>Quickly repair some damage on your body. On your turn, you can use a bonus action to regain hit points equal to {{droid_tune_up_die}} + your level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+      <p>Quickly repair some damage on your body. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
     </description>
     <sheet action="Bonus Action" usage="1/Short Rest">
-      <description>Quickly repair some damage on your body. Regain {{droid_tune_up_die}} + {{level}} hit points.</description>
+      <description>Quickly repair some damage on your body. Regain 1d10 + {{level}} hit points.</description>
     </sheet>
   </element>
 
